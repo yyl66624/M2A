@@ -1,0 +1,187 @@
+{
+ "schema": "m2a.phase3.results.v1",
+ "prereg_sha256": "10696eafc86c04a3f0057f4b47dfb07477bd5f46b1a5806b9945bffb80916b43",
+ "steps_l3": 100000,
+ "seeds": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9
+ ],
+ "L1": {
+  "rows": {
+   "2": {
+    "theta_s": 1.4722194895832201,
+    "theta_j": -0.47221948958322013,
+    "window": null,
+    "width_pred": null,
+    "gap_theta_s_minus_theta_j": 1.9444389791664403
+   },
+   "4": {
+    "theta_s": 0.7361097447916101,
+    "theta_j": 0.26389025520838993,
+    "window": null,
+    "width_pred": null,
+    "gap_theta_s_minus_theta_j": 0.47221948958322013
+   },
+   "6": {
+    "theta_s": 0.4907398298610734,
+    "theta_j": 0.5092601701389265,
+    "window": [
+     0.4907398298610734,
+     0.5092601701389265
+    ],
+    "width_pred": 0.018520340277853153,
+    "single_at_boundary": 0.05395,
+    "joint_at_boundary": 0.949,
+    "single_far_inside": 0.01595,
+    "joint_far_inside": 0.9828
+   },
+   "8": {
+    "theta_s": 0.36805487239580503,
+    "theta_j": 0.631945127604195,
+    "window": [
+     0.36805487239580503,
+     0.631945127604195
+    ],
+    "width_pred": 0.26389025520838993,
+    "single_at_boundary": 0.04975,
+    "joint_at_boundary": 0.94995,
+    "single_far_inside": 0.01005,
+    "joint_far_inside": 0.9897
+   },
+   "10": {
+    "theta_s": 0.29444389791664405,
+    "theta_j": 0.705556102083356,
+    "window": [
+     0.29444389791664405,
+     0.705556102083356
+    ],
+    "width_pred": 0.4111122041667119,
+    "single_at_boundary": 0.04795,
+    "joint_at_boundary": 0.9486,
+    "single_far_inside": 0.0079,
+    "joint_far_inside": 0.99355
+   }
+  },
+  "duality_mc_abs_diff": {
+   "beta6_theta0.3": 0.0012499999999999734,
+   "beta6_theta0.5": 0.0006499999999999284,
+   "beta6_theta0.7": 0.00019999999999997797,
+   "beta8_theta0.3": 0.0008500000000000174,
+   "beta8_theta0.5": 0.0018500000000000183,
+   "beta8_theta0.7": 0.003649999999999931
+  },
+  "checks": {
+   "no_window_for_beta_2_4": true,
+   "window_for_beta_6_8_10": true,
+   "single_boundary_equals_alpha": true,
+   "joint_boundary_equals_095": true,
+   "single_far_inside_below_002": true,
+   "joint_far_inside_above_098": true,
+   "duality_mc_within_002": true
+  },
+  "verdict": "SUPPORTED"
+ },
+ "L2": {
+  "curves": {
+   "0.0": {
+    "rho": -1.0,
+    "p0": 0.04742587317756678,
+    "p1": 0.00012339457598623172,
+    "max_step": 0.0013370461402871445
+   },
+   "0.25": {
+    "rho": -1.0,
+    "p0": 0.04742587317756678,
+    "p1": 0.0024726231566347743,
+    "max_step": 0.0006730680780190068
+   },
+   "0.5": {
+    "rho": -0.5584424412590513,
+    "p0": 0.04742587317756678,
+    "p1": 0.04742587317756678,
+    "max_step": 0.0
+   },
+   "0.75": {
+    "rho": 1.0,
+    "p0": 0.04742587317756678,
+    "p1": 0.5,
+    "max_step": 0.003749929689081999
+   },
+   "1.0": {
+    "rho": 1.0,
+    "p0": 0.04742587317756678,
+    "p1": 0.9525741268224334,
+    "max_step": 0.00749943755062038
+   }
+  },
+  "sat_slope": 0.0003801565319850077,
+  "checks": {
+   "o1_positive": true,
+   "o075_positive": true,
+   "o025_negative": true,
+   "o0_negative": true,
+   "o05_flat": true,
+   "saturation_masks_flip": true
+  },
+  "verdict": "SUPPORTED"
+ },
+ "L3": {
+  "rows": {
+   "0.5": {
+    "mean": 0.0024396096617298356,
+    "sd": 0.0013472898549527958,
+    "pred": 0.0,
+    "abs_diff": 0.0024396096617298356
+   },
+   "0.6": {
+    "mean": 0.06179390881206574,
+    "sd": 0.0030248028310687234,
+    "pred": 0.072,
+    "abs_diff": 0.010206091187934252
+   },
+   "0.7": {
+    "mean": 0.12582016691900083,
+    "sd": 0.0030226580205860634,
+    "pred": 0.144,
+    "abs_diff": 0.018179833080999158
+   },
+   "0.8": {
+    "mean": 0.19446563077693507,
+    "sd": 0.0024761465853725016,
+    "pred": 0.21600000000000005,
+    "abs_diff": 0.02153436922306498
+   },
+   "0.9": {
+    "mean": 0.27006105580584394,
+    "sd": 0.001894850605949279,
+    "pred": 0.28800000000000003,
+    "abs_diff": 0.017938944194156092
+   },
+   "1.0": {
+    "mean": 0.35898819466673726,
+    "sd": 0.00028763166357739827,
+    "pred": 0.36000000000000004,
+    "abs_diff": 0.001011805333262783
+   }
+  },
+  "checks": {
+   "within_tol_all_q": true,
+   "q05_near_zero": true,
+   "monotone_in_q": true
+  },
+  "verdict": "SUPPORTED"
+ },
+ "verdicts": {
+  "L1": "SUPPORTED",
+  "L2": "SUPPORTED",
+  "L3": "SUPPORTED"
+ }
+}
