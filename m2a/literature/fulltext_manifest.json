@@ -1,0 +1,133 @@
+{
+ "schema": "m2a.phase1prime.fulltext_manifest.v1",
+ "records": {
+  "R01": {
+   "status": "fetched",
+   "chars": 7861,
+   "source": "http://www.aclweb.org/anthology/P98-1013"
+  },
+  "R05": {
+   "status": "fetched",
+   "chars": 330482,
+   "source": "https://arxiv.org/pdf/1205.4176"
+  },
+  "R06": {
+   "status": "fetched",
+   "chars": 22423,
+   "source": "https://arxiv.org/pdf/1209.1179"
+  },
+  "R09": {
+   "status": "fetched",
+   "chars": 111677,
+   "source": "https://www.ncbi.nlm.nih.gov/pmc/articles/3786574"
+  },
+  "R10": {
+   "status": "failed",
+   "tried": [
+    "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11598642/fullTextXML"
+   ]
+  },
+  "R13": {
+   "status": "fetched",
+   "chars": 186541,
+   "source": "https://doi.org/10.1038/s41586-025-08828-z"
+  },
+  "R14": {
+   "status": "fetched",
+   "chars": 136487,
+   "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10081323/fullTextXML"
+  },
+  "R15": {
+   "status": "fetched",
+   "chars": 45027,
+   "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11287270/fullTextXML"
+  },
+  "R17": {
+   "status": "fetched",
+   "chars": 57563,
+   "source": "https://implementationscience.biomedcentral.com/counter/pdf/10.1186/1748-5908-6-42"
+  },
+  "R18": {
+   "status": "failed",
+   "tried": [
+    "https://www.cell.com/trends/ecology-evolution/pdf/S0169-5347(19)30037-4.pdf"
+   ]
+  },
+  "R20": {
+   "status": "fetched",
+   "chars": 137404,
+   "source": "https://arxiv.org/pdf/2312.16719"
+  },
+  "R24": {
+   "status": "fetched",
+   "chars": 273734,
+   "source": "https://arxiv.org/pdf/2403.09865"
+  },
+  "G6-07": {
+   "status": "fetched",
+   "chars": 84792,
+   "source": "https://implementationscience.biomedcentral.com/counter/pdf/10.1186/1748-5908-4-50"
+  },
+  "G8-01": {
+   "status": "fetched",
+   "chars": 103245,
+   "source": "http://www.mitpressjournals.org/doi/pdf/10.1162/0891201053630264"
+  },
+  "G8-05": {
+   "status": "fetched",
+   "chars": 35821,
+   "source": "https://www.ncbi.nlm.nih.gov/pmc/articles/3037419"
+  },
+  "G8-06": {
+   "status": "failed",
+   "tried": [
+    "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.1145/2629489%22&format=json"
+   ]
+  },
+  "G8-07": {
+   "status": "failed",
+   "tried": [
+    "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2814061/fullTextXML"
+   ]
+  },
+  "X-K4-01": {
+   "status": "fetched",
+   "chars": 17938,
+   "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2191554/fullTextXML"
+  },
+  "X-K4-02": {
+   "status": "fetched",
+   "chars": 57310,
+   "source": "https://www.ncbi.nlm.nih.gov/pmc/articles/2212721"
+  },
+  "X-K4-03": {
+   "status": "failed",
+   "tried": [
+    "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3398428/fullTextXML"
+   ]
+  },
+  "X-K4-05": {
+   "status": "fetched",
+   "chars": 50347,
+   "source": "https://www.nature.com/articles/ncomms6945.pdf"
+  },
+  "X-K10-04": {
+   "status": "failed",
+   "tried": [
+    "https://e-archivo.uc3m.es/bitstreams/6d1fb731-bd06-4252-a6a9-dc7754ad0a4e/download"
+   ]
+  },
+  "X-K4-07": {
+   "status": "fetched",
+   "chars": 80505,
+   "source": "https://www.ncbi.nlm.nih.gov/pmc/articles/3071735"
+  },
+  "X-K9-05": {
+   "status": "failed",
+   "tried": [
+    "https://www.jbc.org/article/S0021-9258(19)83072-7/pdf",
+    "https://www.jbc.org/article/S0021-9258(20)X0000-0/pdf"
+   ]
+  }
+ }
+}

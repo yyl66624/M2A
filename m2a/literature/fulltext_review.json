@@ -1,0 +1,301 @@
+{
+ "schema": "m2a.phase1prime.fulltext_review.v1",
+ "records": {
+  "R01": {
+   "chars": 19557,
+   "families": [
+    "K1",
+    "K11"
+   ],
+   "counts": {
+    "K1": 0,
+    "K11": 4
+   },
+   "best_family": "K11",
+   "best_score": 1,
+   "snippet": "SThe database will ultimately contain at least 5,000 \nlexical entries together with a parallel annotated cor- \npus, these in formats suitable for integration into appli- \ncations which use other lexical resources such as Word- \nNet and COMLEX."
+  },
+  "R02": {
+   "chars": 28872,
+   "families": [
+    "K8"
+   ],
+   "counts": {
+    "K8": 0
+   },
+   "best_family": null,
+   "best_score": 0,
+   "snippet": ""
+  },
+  "R05": {
+   "chars": 330482,
+   "families": [
+    "K6",
+    "K11"
+   ],
+   "counts": {
+    "K6": 33,
+    "K11": 36
+   },
+   "best_family": "K6",
+   "best_score": 1,
+   "snippet": "Ramiﬁcations and applicati ons of these concepts\ninclude optimal driving between speciﬁed states in ﬁnite ti me, the role of\nmeasurement-based feedback processes and the relation bet ween dissipation and\nirreversibility."
+  },
+  "R06": {
+   "chars": 22423,
+   "families": [
+    "K1",
+    "K11"
+   ],
+   "counts": {
+    "K1": 0,
+    "K11": 4
+   },
+   "best_family": "K11",
+   "best_score": 1,
+   "snippet": "England\nDepartment of Physics, Massachusetts Institute of Technology,\nBuilding 6C, 77 Massachusetts Avenue, Cambridge, MA 02139\n(Dated: November 27, 2024)\nSelf-replication is a capacity common to every species of living thing, and simple physical intuition\ndictates that such a process must invariabl"
+  },
+  "R09": {
+   "chars": 111677,
+   "families": [
+    "K2",
+    "K4"
+   ],
+   "counts": {
+    "K2": 138,
+    "K4": 21
+   },
+   "best_family": "K2",
+   "best_score": 3,
+   "snippet": "IgSF co-inhibitory signalling: shared and unique mechanisms \n IgSF co-inhibitory receptors use several mechanisms to inhibit T cell function."
+  },
+  "R13": {
+   "chars": 200960,
+   "families": [
+    "K5",
+    "K6"
+   ],
+   "counts": {
+    "K5": 170,
+    "K6": 97
+   },
+   "best_family": "K6",
+   "best_score": 3,
+   "snippet": "This learning process is essential for survival — nutritious foods are valuable, while poisonous foods can be deadly — but it remains unknown how the brain is able to associate a stimulus (flavor) with a delayed reinforcement signal (postingestive feedback from the gut) that can arrive much later."
+  },
+  "R14": {
+   "chars": 136487,
+   "families": [
+    "K5",
+    "K6"
+   ],
+   "counts": {
+    "K5": 78,
+    "K6": 337
+   },
+   "best_family": "K6",
+   "best_score": 6,
+   "snippet": "As a consequence, we empirically demonstrate that 1) removal of up to 19 out of 20 cue-reward experiences has zero impact on overall behavioral and dopaminergic learning if total conditioning time is maintained (thereby implying that repetition over a fixed total time has no impact on learning), 2) "
+  },
+  "R15": {
+   "chars": 45027,
+   "families": [
+    "K5",
+    "K12"
+   ],
+   "counts": {
+    "K5": 127,
+    "K12": 0
+   },
+   "best_family": "K5",
+   "best_score": 4,
+   "snippet": "The strength of the statistical association between responses, r, and reinforcements, R was estimated by prospective and retrospective mutual temporal information, denoted by I r → R and I r R ← : [1] I r → R = log λ R | r λ R = log μ R ↔ R μ r → R , [2] I r R ← = log λ r | R ← λ r = log μ r ↔ r μ r"
+  },
+  "R17": {
+   "chars": 57563,
+   "families": [
+    "K1",
+    "K2",
+    "K11",
+    "K12"
+   ],
+   "counts": {
+    "K1": 2,
+    "K2": 1,
+    "K11": 11,
+    "K12": 8
+   },
+   "best_family": "K11",
+   "best_score": 2,
+   "snippet": "The most important test\nof this framework will be whether it provides a more\nTable 1 Definitions of interventions and policies\nInterventions Definition Examples\nEducation Increasing knowledge or understanding Providing information to promote healthy eating\nPersuasion Using communication to induce po"
+  },
+  "R20": {
+   "chars": 137404,
+   "families": [
+    "K2",
+    "K11"
+   ],
+   "counts": {
+    "K2": 2,
+    "K11": 93
+   },
+   "best_family": "K11",
+   "best_score": 3,
+   "snippet": "We\npresent novel CBFs and methods that handle safety constraints (i) with time\nand input constraints under disturbances, (ii) with high-relative de gree under\ndisturbances and input constraints, and (iii) that are aﬀected by a dversarial\ninputs and sampled-data eﬀects."
+  },
+  "R24": {
+   "chars": 273734,
+   "families": [
+    "K2",
+    "K7"
+   ],
+   "counts": {
+    "K2": 8,
+    "K7": 1
+   },
+   "best_family": "K2",
+   "best_score": 1,
+   "snippet": "Motivated by these limitations,\nresearchers have begun to investigate constructive tech-\nniques for safety-critical control and CBFs."
+  },
+  "G6-07": {
+   "chars": 84792,
+   "families": [
+    "K2",
+    "K11"
+   ],
+   "counts": {
+    "K2": 3,
+    "K11": 24
+   },
+   "best_family": "K11",
+   "best_score": 4,
+   "snippet": "Cost\nCosts of the intervention and costs associated with imple-\nmenting that intervention, including investment, supply,\nand opportunity costs."
+  },
+  "G8-01": {
+   "chars": 103245,
+   "families": [
+    "K1",
+    "K10"
+   ],
+   "counts": {
+    "K1": 3,
+    "K10": 175
+   },
+   "best_family": "K10",
+   "best_score": 4,
+   "snippet": "PðAÞ PðEÞ k\nIncluding ArgM Role identification .99 .89 .93\nRole classification .95 .27 .93\nCombined decision .99 .88 .91\nExcluding ArgM Role identification .99 .91 .94\nRole classification .98 .41 .96\nCombined decision .99 .91 .93\nComputational Linguistics Volume 31, Number 1\nDownloaded from www.​mit"
+  },
+  "G8-03": {
+   "chars": 35756,
+   "families": [
+    "K11"
+   ],
+   "counts": {
+    "K11": 2
+   },
+   "best_family": "K11",
+   "best_score": 1,
+   "snippet": "These resources have featured in other attempts at uni-\nversal standards."
+  },
+  "G8-04": {
+   "chars": 22587,
+   "families": [
+    "K1"
+   ],
+   "counts": {
+    "K1": 0
+   },
+   "best_family": null,
+   "best_score": 0,
+   "snippet": ""
+  },
+  "G8-05": {
+   "chars": 35821,
+   "families": [
+    "K11",
+    "K12"
+   ],
+   "counts": {
+    "K11": 8,
+    "K12": 3
+   },
+   "best_family": "K11",
+   "best_score": 1,
+   "snippet": "Although these resources remain essential, and our proposed system will continue to link to and depend on them, they are not sufficient in themselves to allow automatic transfers of annotation."
+  },
+  "G8-08": {
+   "chars": 35098,
+   "families": [
+    "K1",
+    "K5",
+    "K8"
+   ],
+   "counts": {
+    "K1": 1,
+    "K5": 29,
+    "K8": 0
+   },
+   "best_family": "K5",
+   "best_score": 2,
+   "snippet": "793\nThere are a number of algorithms for determining\nthe temporal relationship between two events (Mani\net al., 2006; Lapata and Lascarides, 2006; Cham-\nbers et al., 2007), many of them trained on the Time-\nBank Corpus (Pustejovsky et al., 2003) which codes\nevents and their temporal relationships."
+  },
+  "X-K4-01": {
+   "chars": 17938,
+   "families": [
+    "K1",
+    "K4"
+   ],
+   "counts": {
+    "K1": 4,
+    "K4": 9
+   },
+   "best_family": "K1",
+   "best_score": 1,
+   "snippet": "We show here that interleukin 12 (IL-12), a cytokine also produced by APCs (monocyte/macrophages and B cells) and active on T and natural killer cells, has a strong synergistic effect with the B7/CD28 interaction in inducing proliferation and cytokine production in both mitogen-activated and freshly"
+  },
+  "X-K4-02": {
+   "chars": 57310,
+   "families": [
+    "K1",
+    "K4"
+   ],
+   "counts": {
+    "K1": 28,
+    "K4": 52
+   },
+   "best_family": "K1",
+   "best_score": 2,
+   "snippet": "TLR/CD40 Triggering Elicits Long-Term, Antigen-specific CD8 + T Cell Immunity."
+  },
+  "X-K4-05": {
+   "chars": 50347,
+   "families": [
+    "K1",
+    "K3",
+    "K7"
+   ],
+   "counts": {
+    "K1": 18,
+    "K3": 3,
+    "K7": 0
+   },
+   "best_family": "K1",
+   "best_score": 3,
+   "snippet": "The general consensus is that\nbacteria trigger the QS response only when their cell density has\nreached a certain threshold (the ‘quorum’), on which the\nexpression of target genes is either activated or repressed."
+  },
+  "X-K4-07": {
+   "chars": 80505,
+   "families": [
+    "K4",
+    "K6"
+   ],
+   "counts": {
+    "K4": 51,
+    "K6": 1
+   },
+   "best_family": "K4",
+   "best_score": 2,
+   "snippet": "Whether most STDP rules involve a single, postsynaptic NMDAR-based coincidence detector or multiple coincidence detector pathways is not known."
+  }
+ }
+}
