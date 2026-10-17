@@ -1,18 +1,18 @@
 # Phase I′ 扩展第一批：K4 / K10 / K9 的覆盖补齐与 **O-03 的修正**
 
-> 日期：2026-10-17 ｜ 产出：`expansion_registry.md` + `expansion_registry.json`（12 条，全部 IDENTITY_VERIFIED）
+> 日期：2026-10-17 ｜ 产出：`expansion_registry.md` + `expansion_registry.json`（**19 条**，全部 IDENTITY_VERIFIED）
 > 工具：`discovery_expansion.py`（Crossref，原始命中）、`discovery_openalex.py`、`discovery_epmc.py`（Europe PMC）、
 > `build_expansion_registry.py`（核验 + 生成，可复跑）
 
 ---
 
-## 1 本轮补了什么（12 条，按族）
+## 1 本轮补了什么（19 条，按族；每族已达计划闸门 ① 的 ≥6 条）
 
 | 族 | 新增 | 记录 |
 | --- | --- | --- |
-| **K4 协同** | **+5** | `X-K4-01` Kubin 1994（IL-12 × B7/CD28 合取）；`X-K4-02` Ahonen 2004（TLR × CD40 联合触发）；`X-K4-03` Fetsch 2011（可靠性加权多感觉合并）；`X-K4-04` Agmon-Snir 1998（听觉重合检测 = 时间合取）；`X-K4-05` Cárcamo-Oyarce 2015（QS 阈值 × 随机切换） |
-| **K10 角色重排** | **+4** | `X-K10-01` Monsell 2003（任务切换）；`X-K10-02` Vandierendonck 2010（重配置 vs 干扰控制）；`X-K10-03` Takahashi 2016（转录因子重编程细胞身份）；`X-K10-04` Rico 2019（团队角色/协调适应） |
-| **K9 省略（物理化学）** | **+3** | `X-K9-01` Doyle 1998（K⁺ 通道选择性）；`X-K9-02` Åqvist 2000（通过/拒绝的自由能机制）；`X-K9-03` Cordero-Morales 2006（过滤器构象门控） |
+| **K4 协同** | **+7** | 第一批：`X-K4-01` Kubin 1994（IL-12 × B7/CD28 合取）；`X-K4-02` Ahonen 2004（TLR × CD40）；`X-K4-03` Fetsch 2011（可靠性加权合并）；`X-K4-04` Agmon-Snir 1998（听觉重合检测）；`X-K4-05` Cárcamo-Oyarce 2015（QS 阈值 × 随机切换）。第二批：`X-K4-06` König 1996（积分器 vs 重合检测器 = 可切换体制）；`X-K4-07` Bender 2006（STDP 的两个重合检测器） |
+| **K10 角色重排** | **+6** | 第一批：`X-K10-01` Monsell 2003；`X-K10-02` Vandierendonck 2010（重配置 vs 干扰）；`X-K10-03` Takahashi 2016（细胞身份重编程）；`X-K10-04` Rico 2019（团队协调适应）。第二批：`X-K10-05` Colleman 2009（与格交替：角色重排受词汇约束）；`X-K10-06` Beersma 2009（角色分配决策改变适应） |
+| **K9 省略（物理化学）** | **+6** | 第一批：`X-K9-01` Doyle 1998（K⁺ 选择性）；`X-K9-02` Åqvist 2000（自由能机制）；`X-K9-03` Cordero-Morales 2006（过滤器门控）。第二批：`X-K9-04` Poulos 1987（P450cam 活性位点与底物专一性）；`X-K9-05` Knäuper 1996（胶原酶-3 底物谱）；`X-K9-06` Miller 2012（K2P1 结构 = 另一种选择性实现） |
 
 **覆盖推算（按 Phase I 的 8 集群口径）**：
 
@@ -91,7 +91,18 @@ Phase I 的工作假设（`M2A_HYPOTHESIS`，非结论）是：
 
 ---
 
-## 6 下一步（第二轮 I′ → II）
+## 6 闸门状态与本轮结论
+
+| Phase I′ 闸门条件 | 状态 |
+| --- | --- |
+| ① 最弱两族（K4/K10）各补 ≥6 条 | ✅ **达成**（K4 7 条、K10 6 条；K9 物理化学 6 条） |
+| ② 核心子集 ≥20 条达 FULLTEXT_REVIEWED 或给出不可得理由 | ⏳ 未开始（当前 19 条扩展全为 IDENTITY_VERIFIED） |
+| ③ 计票与报告结论一致性检查 | ⏳ 未开始（需机器化注册表） |
+
+**本轮的实质结论有两条**：(i) K9 的物理化学覆盖**不是零**，"省略需表征"必须按 §2 拆成 S/C 两层；
+(ii) K4 至少有**三种可测形态**（分子合取、精度加权、时间合取），为 Phase II 的 E1 提供三个原型。
+
+## 7 下一步（第二轮 I′ → II）
 
 1. **机器化注册表**：把 Phase I 的 87 条解析为 `registry.json`（与 `expansion_registry.json` 合并），
    重算 K×集群矩阵与方向性计票（O-12）；

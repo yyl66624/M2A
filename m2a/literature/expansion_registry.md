@@ -1,6 +1,6 @@
 # M2A Phase I′ 扩展注册表（K4 / K10 / K9-物理化学）
 
-> 自动生成：`build_expansion_registry.py` ｜ 记录 12 条 ｜ IDENTITY_VERIFIED 12 条 ｜ MISMATCH 0 条
+> 自动生成：`build_expansion_registry.py` ｜ 记录 19 条 ｜ IDENTITY_VERIFIED 19 条 ｜ MISMATCH 0 条
 > 核验：Crossref DOI + 标题 token 重叠 ≥0.85 + 年份一致；摘要取自 Europe PMC（若有）。
 > 目的：补齐 Phase I 最弱的三格（K4 协同 3/8、K10 角色重排 2/8、K9 物理化学 0）。
 
@@ -87,3 +87,52 @@
 - 核验：IDENTITY_VERIFIED（Crossref，jaccard=1.0，cited_by=401）
 - 标注：K2（主）K7（辅）；L1；D±；证据类型：causal_intervention
 - 机制分析：过滤器构象变化**门控**传导（开/关切换）——K2 与 K7 在分子层的合取实例：门既是选择器也是开关。
+
+### X-K4-06 — König (1996)
+- 引文：Integrator or coincidence detector? The role of the cortical neuron revisited. *Trends in Neurosciences*.
+- 定位：DOI 10.1016/s0166-2236(96)80019-1
+- 核验：IDENTITY_VERIFIED（Crossref，jaccard=1.0，cited_by=511）
+- 标注：K4（主）K1（辅）；L3；D±；证据类型：observational
+- 机制分析：皮层神经元被区分为**积分器与重合检测器**两类——合取不是普遍属性，而是由神经元的输入时间常数决定的**可切换体制**。
+
+### X-K4-07 — Bender (2006)
+- 引文：Two Coincidence Detectors for Spike Timing-Dependent Plasticity in Somatosensory Cortex. *The Journal of Neuroscience*.
+- 定位：DOI 10.1523/jneurosci.0176-06.2006
+- 核验：IDENTITY_VERIFIED（Crossref，jaccard=1.0，cited_by=345）
+- 标注：K4（主）K6（辅）；L3；D+；证据类型：causal_intervention
+- 机制分析：突触可塑性需要**前后放电在毫秒级重合**（两个重合检测器）——K4 在可塑性层的形式：合取窗口决定何时发生学习。
+
+### X-K10-05 — Colleman (2009)
+- 引文：Verb disposition in argument structure alternations: a corpus study of the dative alternation in Dutch. *Language Sciences*.
+- 定位：DOI 10.1016/j.langsci.2008.01.001
+- 核验：IDENTITY_VERIFIED（Crossref，jaccard=1.0，cited_by=38）
+- 标注：K10（主）K11（辅）；L2；D±；证据类型：observational
+- 机制分析：同一动词在两个论元结构间**交替**（与格交替），动词的语义倾向决定概率——K10 在句法层：角色重排受词汇约束而非自由。
+
+### X-K10-06 — Beersma (2009)
+- 引文：Cutthroat cooperation: The effects of team role decisions on adaptation to alternative reward structures. *Organizational Behavior and Human Decision Processes*.
+- 定位：DOI 10.1016/j.obhdp.2008.07.002
+- 核验：IDENTITY_VERIFIED（Crossref，jaccard=1.0，cited_by=57）
+- 标注：K10（主）K6（辅）；L6；D±；证据类型：causal_intervention
+- 机制分析：**角色分配决策**改变团队对奖励结构的适应方式——K10 的社会层因果证据：重排规则本身是可操控的变量。
+
+### X-K9-04 — Poulos (1987)
+- 引文：High-resolution crystal structure of cytochrome P450cam. *Journal of Molecular Biology*.
+- 定位：DOI 10.1016/0022-2836(87)90190-2
+- 核验：IDENTITY_VERIFIED（Crossref，jaccard=1.0，cited_by=1196）
+- 标注：K2（主）K9（辅）；L1；D±；证据类型：observational
+- 机制分析：P450cam 的活性位点结构解释了**底物专一性**（哪些底物被接受、哪些被拒绝）——K9 的 S 层在没有表征的分子系统中再次成立。
+
+### X-K9-05 — Knäuper (1996)
+- 引文：Biochemical Characterization of Human Collagenase-3. *Journal of Biological Chemistry*.
+- 定位：DOI 10.1074/jbc.271.3.1544
+- 核验：IDENTITY_VERIFIED（Crossref，jaccard=1.0，cited_by=716）
+- 标注：K2（主）K9（辅）；L1；D±；证据类型：observational
+- 机制分析：对底物谱的生化刻画显示**选择性切割/不切割**——酶对可用底物的拒绝是可定量的（动力学参数），不涉及表征。
+
+### X-K9-06 — Miller (2012)
+- 引文：Crystal Structure of the Human Two-Pore Domain Potassium Channel K2P1. *Science*.
+- 定位：DOI 10.1126/science.1213274
+- 核验：IDENTITY_VERIFIED（Crossref，jaccard=1.0，cited_by=324）
+- 标注：K2（主）K9（辅）；L1；D±；证据类型：observational
+- 机制分析：双孔域钾通道的结构给出另一类**选择性通行/拒绝**实现——说明 S 层在物理化学中有多种独立实现，符合「机制趋同、实现不同」的判断。

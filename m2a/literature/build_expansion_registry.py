@@ -100,6 +100,52 @@ RECORDS = [
          k="K2（主）K7（辅）", layer="L1", role="D±", evidence="causal_intervention",
          analysis="过滤器构象变化**门控**传导（开/关切换）——K2 与 K7 在分子层的合取实例："
                   "门既是选择器也是开关。"),
+    # ---- second batch: bring each weak family to at least six verified sources (the Phase I' gate) ----
+    dict(id="X-K4-06", doi="10.1016/s0166-2236(96)80019-1", family="K4",
+         title_clean="Integrator or coincidence detector? The role of the cortical neuron revisited",
+         year=1996, first_author="König",
+         k="K4（主）K1（辅）", layer="L3", role="D±", evidence="observational",
+         analysis="皮层神经元被区分为**积分器与重合检测器**两类——合取不是普遍属性，"
+                  "而是由神经元的输入时间常数决定的**可切换体制**。"),
+    dict(id="X-K4-07", doi="10.1523/jneurosci.0176-06.2006", family="K4",
+         title_clean="Two Coincidence Detectors for Spike Timing-Dependent Plasticity in "
+                     "Somatosensory Cortex",
+         year=2006, first_author="Bender",
+         k="K4（主）K6（辅）", layer="L3", role="D+", evidence="causal_intervention",
+         analysis="突触可塑性需要**前后放电在毫秒级重合**（两个重合检测器）——K4 在可塑性层的形式："
+                  "合取窗口决定何时发生学习。"),
+    dict(id="X-K10-05", doi="10.1016/j.langsci.2008.01.001", family="K10",
+         title_clean="Verb disposition in argument structure alternations: a corpus study of the "
+                     "dative alternation in Dutch",
+         year=2009, first_author="Colleman",
+         k="K10（主）K11（辅）", layer="L2", role="D±", evidence="observational",
+         analysis="同一动词在两个论元结构间**交替**（与格交替），动词的语义倾向决定概率——"
+                  "K10 在句法层：角色重排受词汇约束而非自由。"),
+    dict(id="X-K10-06", doi="10.1016/j.obhdp.2008.07.002", family="K10",
+         title_clean="Cutthroat cooperation: The effects of team role decisions on adaptation to "
+                     "alternative reward structures",
+         year=2009, first_author="Beersma",
+         k="K10（主）K6（辅）", layer="L6", role="D±", evidence="causal_intervention",
+         analysis="**角色分配决策**改变团队对奖励结构的适应方式——K10 的社会层因果证据："
+                  "重排规则本身是可操控的变量。"),
+    dict(id="X-K9-04", doi="10.1016/0022-2836(87)90190-2", family="K9",
+         title_clean="High-resolution crystal structure of cytochrome P450cam",
+         year=1987, first_author="Poulos",
+         k="K2（主）K9（辅）", layer="L1", role="D±", evidence="observational",
+         analysis="P450cam 的活性位点结构解释了**底物专一性**（哪些底物被接受、哪些被拒绝）——"
+                  "K9 的 S 层在没有表征的分子系统中再次成立。"),
+    dict(id="X-K9-05", doi="10.1074/jbc.271.3.1544", family="K9",
+         title_clean="Biochemical Characterization of Human Collagenase-3",
+         year=1996, first_author="Knäuper",
+         k="K2（主）K9（辅）", layer="L1", role="D±", evidence="observational",
+         analysis="对底物谱的生化刻画显示**选择性切割/不切割**——酶对可用底物的拒绝是"
+                  "可定量的（动力学参数），不涉及表征。"),
+    dict(id="X-K9-06", doi="10.1126/science.1213274", family="K9",
+         title_clean="Crystal Structure of the Human Two-Pore Domain Potassium Channel K2P1",
+         year=2012, first_author="Miller",
+         k="K2（主）K9（辅）", layer="L1", role="D±", evidence="observational",
+         analysis="双孔域钾通道的结构给出另一类**选择性通行/拒绝**实现——"
+                  "说明 S 层在物理化学中有多种独立实现，符合「机制趋同、实现不同」的判断。"),
 ]
 
 
