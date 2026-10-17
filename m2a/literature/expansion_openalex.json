@@ -1,0 +1,661 @@
+{
+ "schema": "m2a.phase1prime.openalex.v1",
+ "note": "raw OpenAlex hits, UNVERIFIED and not citable",
+ "families": {
+  "K4": {
+   "multisensory": {
+    "query": "multisensory integration optimal combination cues",
+    "hits": [
+     {
+      "doi": "10.1016/j.ijinfomgt.2022.102542",
+      "title": "Metaverse beyond the hype: Multidisciplinary perspectives on emerging challenges, opportunities, and agenda for research, practice and policy",
+      "year": 2022,
+      "venue": "International Journal of Information Management",
+      "first_author": "Yogesh Kumar Dwivedi",
+      "cited_by": 2738,
+      "abstract": "The metaverse has the potential to extend the physical world using augmented and virtual reality technologies allowing users to seamlessly interact within real and simulated environments using avatars and holograms. Virtual environments and immersive games (such as, Second Life, Fortnite, Roblox and VRChat) have been described as antecedents of the metaverse and offer some insight to the potential socio-economic impact of a fully functional persistent cross platform metaverse. Separating the hype and “meta…” rebranding from current reality is difficult, as “big tech” paints a picture of the transformative nature of the metaverse and how it will positively impact people in their work, leisure"
+     },
+     {
+      "doi": "10.1017/s0140525x16001837",
+      "title": "Building machines that learn and think like people",
+      "year": 2016,
+      "venue": "Behavioral and Brain Sciences",
+      "first_author": "Brenden M. Lake",
+      "cited_by": 2534,
+      "abstract": "Recent progress in artificial intelligence has renewed interest in building systems that learn and think like people. Many advances have come from using deep neural networks trained end-to-end in tasks such as object recognition, video games, and board games, achieving performance that equals or even beats that of humans in some respects. Despite their biological inspiration and performance achievements, these systems differ from human intelligence in crucial ways. We review progress in cognitive science suggesting that truly human-like learning and thinking machines will have to reach beyond current engineering trends in both what they learn and how they learn it. Specifically, we argue tha"
+     },
+     {
+      "doi": "10.3389/frobt.2016.00074",
+      "title": "Enhancing Our Lives with Immersive Virtual Reality",
+      "year": 2016,
+      "venue": "Frontiers in Robotics and AI",
+      "first_author": "Mel Slater",
+      "cited_by": 1973,
+      "abstract": "Virtual reality (VR) started about 50 years ago in a form we would recognize today [stereo head-mounted display (HMD), head tracking, computer graphics generated images] – although the hardware was completely different. In the 1980s and 1990s, VR emerged again based on a different generation of hardware (e.g., CRT displays rather than vector refresh, electromagnetic tracking instead of mechanical). This reached the attention of the public, and VR was hailed by many engineers, scientists, celebrities, and business people as the beginning of a new era, when VR would soon change the world for the better. Then, VR disappeared from public view and was rumored to be “dead.” In the intervening 25 y"
+     },
+     {
+      "doi": "10.1167/15.6.4",
+      "title": "The steady-state visual evoked potential in vision research: A review",
+      "year": 2015,
+      "venue": "Journal of Vision",
+      "first_author": "Anthony M. Norcia",
+      "cited_by": 1227,
+      "abstract": "Periodic visual stimulation and analysis of the resulting steady-state visual evoked potentials were first introduced over 80 years ago as a means to study visual sensation and perception. From the first single-channel recording of responses to modulated light to the present use of sophisticated digital displays composed of complex visual stimuli and high-density recording arrays, steady-state methods have been applied in a broad range of scientific and applied settings.The purpose of this article is to describe the fundamental stimulation paradigms for steady-state visual evoked potentials and to illustrate these principles through research findings across a range of applications in vision "
+     },
+     {
+      "doi": "10.1017/s0140525x15000965",
+      "title": "Cognition does not affect perception: Evaluating the evidence for “top-down” effects",
+      "year": 2015,
+      "venue": "Behavioral and Brain Sciences",
+      "first_author": "Chaz Firestone",
+      "cited_by": 1195,
+      "abstract": "What determines what we see? In contrast to the traditional \"modular\" understanding of perception, according to which visual processing is encapsulated from higher-level cognition, a tidal wave of recent research alleges that states such as beliefs, desires, emotions, motivations, intentions, and linguistic representations exert direct, top-down influences on what we see. There is a growing consensus that such effects are ubiquitous, and that the distinction between perception and cognition may itself be unsustainable. We argue otherwise: None of these hundreds of studies - either individually or collectively - provides compelling evidence for true top-down effects on perception, or \"cogniti"
+     },
+     {
+      "doi": "10.1162/neco_a_00912",
+      "title": "Active Inference: A Process Theory",
+      "year": 2016,
+      "venue": "Neural Computation",
+      "first_author": "Karl John Friston",
+      "cited_by": 1141,
+      "abstract": "This article describes a process theory based on active inference and belief propagation. Starting from the premise that all neuronal processing (and action selection) can be explained by maximizing Bayesian model evidence-or minimizing variational free energy-we ask whether neuronal responses can be described as a gradient descent on variational free energy. Using a standard (Markov decision process) generative model, we derive the neuronal dynamics implicit in this description and reproduce a remarkable range of well-characterized neuronal phenomena. These include repetition suppression, mismatch negativity, violation responses, place-cell activity, phase precession, theta sequences, theta"
+     }
+    ]
+   },
+   "coincidence": {
+    "query": "coincidence detection AND logic molecular circuit",
+    "hits": [
+     {
+      "doi": "10.1063/1.5089550",
+      "title": "A quantum engineer's guide to superconducting qubits",
+      "year": 2019,
+      "venue": "Applied Physics Reviews",
+      "first_author": "Philip Krantz",
+      "cited_by": 2027,
+      "abstract": "The aim of this review is to provide quantum engineers with an introductory guide to the central concepts and challenges in the rapidly accelerating field of superconducting quantum circuits. Over the past twenty years, the field has matured from a predominantly basic research endeavor to a one that increasingly explores the engineering of larger-scale superconducting quantum systems. Here, we review several foundational elements—qubit design, noise properties, qubit control, and readout techniques—developed during this period, bridging fundamental concepts in circuit quantum electrodynamics and contemporary, state-of-the-art applications in gate-model quantum computation."
+     },
+     {
+      "doi": "10.1088/1748-0221/3/08/s08005",
+      "title": "The LHCb Detector at the LHC",
+      "year": 2008,
+      "venue": "Journal of Instrumentation",
+      "first_author": "Antonio Augusto Alves Junior",
+      "cited_by": 1998,
+      "abstract": "The LHCb experiment is dedicated to precision measurements of CP violation and rare decays of B hadrons at the Large Hadron Collider (LHC) at CERN (Geneva). The initial configuration and expected performance of the detector and associated systems, as established by test beam measurements and simulation studies, is described."
+     },
+     {
+      "doi": "10.1523/jneurosci.13-01-00334.1993",
+      "title": "The highly irregular firing of cortical cells is inconsistent with temporal integration of random EPSPs",
+      "year": 1993,
+      "venue": "Journal of Neuroscience",
+      "first_author": "William R. Softky",
+      "cited_by": 1684,
+      "abstract": "How random is the discharge pattern of cortical neurons? We examined recordings from primary visual cortex (V1; Knierim and Van Essen, 1992) and extrastriate cortex (MT; Newsome et al., 1989a) of awake, behaving macaque monkey and compared them to analytical predictions. For nonbursting cells firing at sustained rates up to 300 Hz, we evaluated two indices of firing variability: the ratio of the variance to the mean for the number of action potentials evoked by a constant stimulus, and the rate-normalized coefficient of variation (Cv) of the interspike interval distribution. Firing in virtually all V1 and MT neurons was nearly consistent with a completely random process (e.g., Cv approximate"
+     },
+     {
+      "doi": "10.1103/revmodphys.84.777",
+      "title": "Multiphoton entanglement and interferometry",
+      "year": 2012,
+      "venue": "Reviews of Modern Physics",
+      "first_author": "Jian-Wei Pan",
+      "cited_by": 1409,
+      "abstract": "Multiphoton interference reveals strictly nonclassical phenomena. Its applications range from fundamental tests of quantum mechanics to photonic quantum information processing, where a significant fraction of key experiments achieved so far comes from multiphoton state manipulation. The progress, both theoretical and experimental, of this rapidly advancing research is reviewed. The emphasis is given to the creation of photonic entanglement of various forms, tests of the completeness of quantum mechanics (in particular, violations of local realism), quantum information protocols for quantum communication (e.g., quantum teleportation, entanglement purification, and quantum repeater), and quant"
+     },
+     {
+      "doi": "10.1088/1367-2630/12/7/075008",
+      "title": "Control of quantum phenomena: past, present and future",
+      "year": 2010,
+      "venue": "New Journal of Physics",
+      "first_author": "Constantin Brif",
+      "cited_by": 922,
+      "abstract": "Quantum control is concerned with active manipulation of physical and chemical processes on the atomic and molecular scale. This work presents a perspective of progress in the field of control over quantum phenomena, tracing the evolution of theoretical concepts and experimental methods from early developments to the most recent advances. Among numerous theoretical insights and technological improvements that produced the present state-of-the-art in quantum control, there have been several breakthroughs of foremost importance. On the technology side, the current experimental successes would be impossible without the development of intense femtosecond laser sources and pulse shapers. On the t"
+     },
+     {
+      "doi": "10.1016/j.nima.2015.06.058",
+      "title": "The Pierre Auger Cosmic Ray Observatory",
+      "year": 2015,
+      "venue": "Nuclear Instruments and Methods in Physics Research Section A Accelerators Spectrometers Detectors and Associated Equipment",
+      "first_author": "The Pierre Auger Collaboration",
+      "cited_by": 867,
+      "abstract": "shown on this cover page is limited to 10 maximum."
+     }
+    ]
+   },
+   "joint_action": {
+    "query": "joint action synergy interpersonal coordination",
+    "hits": [
+     {
+      "doi": "10.1002/1097-0266(200010/11)21:10/11<1105::aid-smj133>3.0.co;2-e",
+      "title": "Dynamic capabilities: what are they?",
+      "year": 2000,
+      "venue": "Strategic Management Journal",
+      "first_author": "Kathleen M. Eisenhardt",
+      "cited_by": 14899,
+      "abstract": "This paper focuses on dynamic capabilities and, more generally, the resource-based view of the firm. We argue that dynamic capabilities are a set of specific and identifiable processes such as product development, strategic decision making, and alliancing. They are neither vague nor tautological. Although dynamic capabilities are idiosyncratic in their details and path dependent in their emergence, they have significant commonalities across firms (popularly termed ‘best practice’). This suggests that they are more homogeneous, fungible, equifinal, and substitutable than is usually assumed. In moderately dynamic markets, dynamic capabilities resemble the traditional conception of routines. Th"
+     },
+     {
+      "doi": "10.1177/0149206314527128",
+      "title": "Innovation and Creativity in Organizations",
+      "year": 2014,
+      "venue": "Journal of Management",
+      "first_author": "Neil R. Anderson",
+      "cited_by": 3087,
+      "abstract": "Creativity and innovation in any organization are vital to its successful performance. The authors review the rapidly growing body of research in this area with particular attention to the period 2002 to 2013, inclusive. Conceiving of both creativity and innovation as being integral parts of essentially the same process, we propose a new, integrative definition. We note that research into creativity has typically examined the stage of idea generation, whereas innovation studies have commonly also included the latter phase of idea implementation. The authors discuss several seminal theories of creativity and innovation and then apply a comprehensive levels-of-analysis framework to review exta"
+     },
+     {
+      "doi": "10.1007/s11432-020-2955-6",
+      "title": "Towards 6G wireless communication networks: vision, enabling technologies, and new paradigm shifts",
+      "year": 2020,
+      "venue": "Science China Information Sciences",
+      "first_author": "Xiaohu You",
+      "cited_by": 2028,
+      "abstract": "Abstract The fifth generation (5G) wireless communication networks are being deployed worldwide from 2020 and more capabilities are in the process of being standardized, such as mass connectivity, ultra-reliability, and guaranteed low latency. However, 5G will not meet all requirements of the future in 2030 and beyond, and sixth generation (6G) wireless communication networks are expected to provide global coverage, enhanced spectral/energy/cost efficiency, better intelligence level and security, etc. To meet these requirements, 6G networks will rely on new enabling technologies, i.e., air interface and transmission technologies and novel network architecture, such as waveform design, multip"
+     },
+     {
+      "doi": "10.1037//0003-066x.55.1.170",
+      "title": "Toward a psychology of positive youth development.",
+      "year": 2000,
+      "venue": "American Psychologist",
+      "first_author": "Reed W. Larson",
+      "cited_by": 1796,
+      "abstract": "This article analyzes the development of initiative as an exemplar of one of many learning experiences that should be studied as part of positive youth development. The capacity for initiative is essential for adults in our society and will become more important in the 21st century, yet adolescents have few opportunities to learn it. Their typical experiences during schoolwork and unstructured leisure do not reflect conditions for learning initiative. The context best suited to the development of initiative appears to be that of structured voluntary activities, such as sports, arts, and participation in organizations, in which youths experience the rare combination of intrinsic motivation in"
+     },
+     {
+      "doi": "10.1017/s0140525x12001495",
+      "title": "An integrated theory of language production and comprehension",
+      "year": 2013,
+      "venue": "Behavioral and Brain Sciences",
+      "first_author": "Martin John Pickering",
+      "cited_by": 1566,
+      "abstract": "Currently, production and comprehension are regarded as quite distinct in accounts of language processing. In rejecting this dichotomy, we instead assert that producing and understanding are interwoven, and that this interweaving is what enables people to predict themselves and each other. We start by noting that production and comprehension are forms of action and action perception. We then consider the evidence for interweaving in action, action perception, and joint action, and explain such evidence in terms of prediction. Specifically, we assume that actors construct forward models of their actions before they execute those actions, and that perceivers of others' actions covertly imitate"
+     },
+     {
+      "doi": "10.1016/s0149-2063(99)00008-2",
+      "title": "Theory and research in strategic management: Swings of a pendulum",
+      "year": 1999,
+      "venue": "Journal of Management",
+      "first_author": "Robert E. Hoskisson",
+      "cited_by": 1364,
+      "abstract": "The development of the field of strategic management within the last two decades has been dramatic. While its roots have been in a more applied area, often referred to as business policy, the current field of strategic management is strongly theory based, with substantial empirical research, and is eclectic in nature. This review of the development of the field and its current position examines the field’s early development and the primary theoretical and methodological bases through its history. Early developments include Chandler’s (1962) Strategy and Structure and Ansoff’s (1965) Corporate Strategy. These early works took on a contingency perspective (fit between strategy and structure) a"
+     }
+    ]
+   },
+   "quorum": {
+    "query": "quorum sensing collective decision threshold bacteria",
+    "hits": [
+     {
+      "doi": "10.1038/ncomms6945",
+      "title": "Quorum sensing triggers the stochastic escape of individual cells from Pseudomonas putida biofilms",
+      "year": 2015,
+      "venue": "Nature Communications",
+      "first_author": "Gerardo Cárcamo‐Oyarce",
+      "cited_by": 958,
+      "abstract": "The term 'quorum sensing' (QS) is generally used to describe the phenomenon that bacteria release and perceive signal molecules to coordinate cooperative behaviour in response to their population size. QS-based communication has therefore been considered a social trait. Here we show that QS signals (N-acyl-homoserine lactones, AHLs) are stochastically produced in young biofilms of Pseudomonas putida and act mainly as self-regulatory signals rather than inducing neighbouring cells. We demonstrate that QS induces the expression of putisolvin biosurfactants that are not public goods, thereby triggering asocial motility of induced cells out of microcolonies. Phenotypic heterogeneity is most prom"
+     },
+     {
+      "doi": "10.1002/alr.21695",
+      "title": "International Consensus Statement on Allergy and Rhinology: Rhinosinusitis",
+      "year": 2016,
+      "venue": "International Forum of Allergy & Rhinology",
+      "first_author": "Richard R. Orlandi",
+      "cited_by": 896,
+      "abstract": "Contributing Authors Isam Alobid, MD, PhD 1 , Nithin D. Adappa, MD 2 , Henry P. Barham, MD 3 , Thiago Bezerra, MD 4 , Nadieska Caballero, MD 5 , Eugene G. Chang, MD 6 , Gaurav Chawdhary, MD 7 , Philip Chen, MD 8 , John P. Dahl, MD, PhD 9 , Anthony Del Signore, MD 10 , Carrie Flanagan, MD 11 , Daniel N. Frank, PhD 12 , Kai Fruth, MD, PhD 13 , Anne Getz, MD 14 , Samuel Greig, MD 15 , Elisa A. Illing, MD 16 , David W. Jang, MD 17 , Yong Gi Jung, MD 18 , Sammy Khalili, MD, MSc 19 , Cristobal Langdon, MD 20 , Kent Lam, MD 21 , Stella Lee, MD 22 , Seth Lieberman, MD 23 , Patricia Loftus, MD 24 , Luis Macias‐Valle, MD 25 , R. Peter Manes, MD 26 , Jill Mazza, MD 27 , Leandra Mfuna, MD 28 , David Mor"
+     },
+     {
+      "doi": "10.1186/s12865-016-0187-3",
+      "title": "Role of intestinal microbiota and metabolites on gut homeostasis and human diseases",
+      "year": 2017,
+      "venue": "BMC Immunology",
+      "first_author": "Lan Lin",
+      "cited_by": 729,
+      "abstract": "BACKGROUND: A vast diversity of microbes colonizes in the human gastrointestinal tract, referred to intestinal microbiota. Microbiota and products thereof are indispensable for shaping the development and function of host innate immune system, thereby exerting multifaceted impacts in gut health. METHODS: This paper reviews the effects on immunity of gut microbe-derived nucleic acids, and gut microbial metabolites, as well as the involvement of commensals in the gut homeostasis. We focus on the recent findings with an intention to illuminate the mechanisms by which the microbiota and products thereof are interacting with host immunity, as well as to scrutinize imbalanced gut microbiota (dysbi"
+     },
+     {
+      "doi": "10.1128/mbio.02331-17",
+      "title": "Bacterial Quorum Sensing and Microbial Community Interactions",
+      "year": 2018,
+      "venue": "mBio",
+      "first_author": "Rhea G. Abisado",
+      "cited_by": 677,
+      "abstract": "Many bacteria use a cell-cell communication system called quorum sensing to coordinate population density-dependent changes in behavior. Quorum sensing involves production of and response to diffusible or secreted signals, which can vary substantially across different types of bacteria. In many species, quorum sensing modulates virulence functions and is important for pathogenesis. Over the past half-century, there has been a significant accumulation of knowledge of the molecular mechanisms, signal structures, gene regulons, and behavioral responses associated with quorum-sensing systems in diverse bacteria. More recent studies have focused on understanding quorum sensing in the context of b"
+     },
+     {
+      "doi": "10.1038/s41413-019-0061-z",
+      "title": "Evolving concepts in bone infection: redefining “biofilm”, “acute vs. chronic osteomyelitis”, “the immune proteome” and “local antibiotic therapy”",
+      "year": 2019,
+      "venue": "Bone Research",
+      "first_author": "Elysia A. Masters",
+      "cited_by": 568,
+      "abstract": "Abstract Osteomyelitis is a devastating disease caused by microbial infection of bone. While the frequency of infection following elective orthopedic surgery is low, rates of reinfection are disturbingly high.Staphylococcus aureusis responsible for the majority of chronic osteomyelitis cases and is often considered to be incurable due to bacterial persistence deep within bone. Unfortunately, there is no consensus on clinical classifications of osteomyelitis and the ensuing treatment algorithm. Given the high patient morbidity, mortality, and economic burden caused by osteomyelitis, it is important to elucidate mechanisms of bone infection to inform novel strategies for prevention and curativ"
+     },
+     {
+      "doi": "10.1371/journal.ppat.1005672",
+      "title": "A Novel Mechanism of Host-Pathogen Interaction through sRNA in Bacterial Outer Membrane Vesicles",
+      "year": 2016,
+      "venue": "PLoS Pathogens",
+      "first_author": "Katja Koeppen",
+      "cited_by": 534,
+      "abstract": "Bacterial outer membrane vesicle (OMV)-mediated delivery of proteins to host cells is an important mechanism of host-pathogen communication. Emerging evidence suggests that OMVs contain differentially packaged short RNAs (sRNAs) with the potential to target host mRNA function and/or stability. In this study, we used RNA-Seq to characterize differentially packaged sRNAs in Pseudomonas aeruginosa OMVs, and to show transfer of OMV sRNAs to human airway cells. We selected one sRNA for further study based on its stable secondary structure and predicted mRNA targets. Our candidate sRNA (sRNA52320), a fragment of a P. aeruginosa methionine tRNA, was abundant in OMVs and reduced LPS-induced as well "
+     }
+    ]
+   }
+  },
+  "K10": {
+   "task_set": {
+    "query": "task set reconfiguration cognitive control switching",
+    "hits": [
+     {
+      "doi": "10.2307/2393549",
+      "title": "Architectural Innovation: The Reconfiguration of Existing Product Technologies and the Failure of Established Firms",
+      "year": 1990,
+      "venue": "Administrative Science Quarterly",
+      "first_author": "Rebecca M. Henderson",
+      "cited_by": 8360,
+      "abstract": "Rebecca M. Henderson, Kim B. Clark, Architectural Innovation: The Reconfiguration of Existing Product Technologies and the Failure of Established Firms, Administrative Science Quarterly, Vol. 35, No. 1, Special Issue: Technology, Organizations, and Innovation (Mar., 1990), pp. 9-30"
+     },
+     {
+      "doi": "10.1109/comst.2017.2745201",
+      "title": "A Survey on Mobile Edge Computing: The Communication Perspective",
+      "year": 2017,
+      "venue": "IEEE Communications Surveys & Tutorials",
+      "first_author": "Yuyi Mao",
+      "cited_by": 5566,
+      "abstract": "Driven by the visions of Internet of Things and 5G communications, recent years have seen a paradigm shift in mobile computing, from the centralized mobile cloud computing toward mobile edge computing (MEC). The main feature of MEC is to push mobile computing, network control and storage to the network edges (e.g., base stations and access points) so as to enable computation-intensive and latency-critical applications at the resource-limited mobile devices. MEC promises dramatic reduction in latency and mobile energy consumption, tackling the key challenges for materializing 5G vision. The promised gains of MEC have motivated extensive efforts in both academia and industry on developing the "
+     },
+     {
+      "doi": "10.1109/jproc.2014.2371999",
+      "title": "Software-Defined Networking: A Comprehensive Survey",
+      "year": 2014,
+      "venue": "Proceedings of the IEEE",
+      "first_author": "Diego Kreutz",
+      "cited_by": 5025,
+      "abstract": "The Internet has led to the creation of a digital society, where (almost) everything is connected and is accessible from anywhere. However, despite their widespread adoption, traditional IP networks are complex and very hard to manage. It is both difficult to configure the network according to predefined policies, and to reconfigure it to respond to faults, load, and changes. To make matters even more difficult, current networks are also vertically integrated: the control and data planes are bundled together. Software-defined networking (SDN) is an emerging paradigm that promises to change this state of affairs, by breaking vertical integration, separating the network's control logic from th"
+     },
+     {
+      "doi": "10.1016/j.ijinfomgt.2019.08.002",
+      "title": "Artificial Intelligence (AI): Multidisciplinary perspectives on emerging challenges, opportunities, and agenda for research, practice and policy",
+      "year": 2019,
+      "venue": "International Journal of Information Management",
+      "first_author": "Yogesh Kumar Dwivedi",
+      "cited_by": 4548,
+      "abstract": "As far back as the industrial revolution, significant development in technical innovation has succeeded in transforming numerous manual tasks and processes that had been in existence for decades where humans had reached the limits of physical capacity. Artificial Intelligence (AI) offers this same transformative potential for the augmentation and potential replacement of human tasks and activities within a wide range of industrial, intellectual and social applications. The pace of change for this new AI technological age is staggering, with new breakthroughs in algorithmic machine learning and autonomous decision-making, engendering new opportunities for continued innovation. The impact of A"
+     },
+     {
+      "doi": "10.1111/jan.13031",
+      "title": "Systematic methodological review: developing a framework for a qualitative semi‐structured interview guide",
+      "year": 2016,
+      "venue": "Journal of Advanced Nursing",
+      "first_author": "Hanna Kallio",
+      "cited_by": 4238,
+      "abstract": "AIM: To produce a framework for the development of a qualitative semi-structured interview guide. BACKGROUND: Rigorous data collection procedures fundamentally influence the results of studies. The semi-structured interview is a common data collection method, but methodological research on the development of a semi-structured interview guide is sparse. DESIGN: Systematic methodological review. DATA SOURCES: We searched PubMed, CINAHL, Scopus and Web of Science for methodological papers on semi-structured interview guides from October 2004-September 2014. Having examined 2,703 titles and abstracts and 21 full texts, we finally selected 10 papers. REVIEW METHODS: We analysed the data using the"
+     },
+     {
+      "doi": "10.1109/jsac.2022.3156632",
+      "title": "Integrated Sensing and Communications: Toward Dual-Functional Wireless Networks for 6G and Beyond",
+      "year": 2022,
+      "venue": "IEEE Journal on Selected Areas in Communications",
+      "first_author": "Fan Liu",
+      "cited_by": 3795,
+      "abstract": "As the standardization of 5G solidifies, researchers are speculating what 6G will be. The integration of sensing functionality is emerging as a key feature of the 6G Radio Access Network (RAN), allowing for the exploitation of dense cell infrastructures to construct a perceptive network. In this IEEE Journal on Selected Areas in Communications (JSAC) Special Issue overview, we provide a comprehensive review on the background, range of key applications and state-of-the-art approaches of Integrated Sensing and Communications (ISAC). We commence by discussing the interplay between sensing and communications (S&C) from a historical point of view, and then consider the multiple facets of ISAC and"
+     }
+    ]
+   },
+   "team_role": {
+    "query": "team role adaptation reassignment performance",
+    "hits": [
+     {
+      "doi": "10.1210/jc.2009-2631",
+      "title": "Congenital Adrenal Hyperplasia Due to Steroid 21-Hydroxylase Deficiency: An Endocrine Society Clinical Practice Guideline",
+      "year": 2010,
+      "venue": "The Journal of Clinical Endocrinology & Metabolism",
+      "first_author": "Phyllis Speiser",
+      "cited_by": 1470,
+      "abstract": "OBJECTIVE: We developed clinical practice guidelines for congenital adrenal hyperplasia (CAH). PARTICIPANTS: The Task Force included a chair, selected by The Endocrine Society Clinical Guidelines Subcommittee (CGS), ten additional clinicians experienced in treating CAH, a methodologist, and a medical writer. Additional experts were also consulted. The authors received no corporate funding or remuneration. CONSENSUS PROCESS: Consensus was guided by systematic reviews of evidence and discussions. The guidelines were reviewed and approved sequentially by The Endocrine Society's CGS and Clinical Affairs Core Committee, members responding to a web posting, and The Endocrine Society Council. At ea"
+     },
+     {
+      "doi": "10.1002/net.21818",
+      "title": "Optimization approaches for civil applications of unmanned aerial vehicles (UAVs) or aerial drones: A survey",
+      "year": 2018,
+      "venue": "Networks",
+      "first_author": "Alena Otto",
+      "cited_by": 978,
+      "abstract": "Unmanned aerial vehicles (UAVs), or aerial drones, are an emerging technology with significant market potential. UAVs may lead to substantial cost savings in, for instance, monitoring of difficult‐to‐access infrastructure, spraying fields and performing surveillance in precision agriculture, as well as in deliveries of packages. In some applications, like disaster management, transport of medical supplies, or environmental monitoring, aerial drones may even help save lives. In this article, we provide a literature survey on optimization approaches to civil applications of UAVs. Our goal is to provide a fast point of entry into the topic for interested researchers and operations planning spec"
+     },
+     {
+      "doi": "10.1093/hropen/hoaa052",
+      "title": "ESHRE guideline: female fertility preservation†",
+      "year": 2020,
+      "venue": "Human Reproduction Open",
+      "first_author": "The ESHRE Guideline Group on Female Fertility Preservation",
+      "cited_by": 735,
+      "abstract": "STUDY QUESTION: What is the recommended management for women and transgender men with regards to fertility preservation (FP), based on the best available evidence in the literature? SUMMARY ANSWER: The ESHRE Guideline on Female Fertility Preservation makes 78 recommendations on organization of care, information provision and support, pre-FP assessment, FP interventions and after treatment care. Ongoing developments in FP are also discussed. WHAT IS KNOWN ALREADY: The field of FP has grown hugely in the last two decades, driven by the increasing recognition of the importance of potential loss of fertility as a significant effect of the treatment of cancer and other serious diseases, and the d"
+     },
+     {
+      "doi": "10.1109/jproc.2021.3067593",
+      "title": "Advancing Neuromorphic Computing With Loihi: A Survey of Results and Outlook",
+      "year": 2021,
+      "venue": "Proceedings of the IEEE",
+      "first_author": "Mike Davies",
+      "cited_by": 691,
+      "abstract": "Deep artificial neural networks apply principles of the brain's information processing that led to breakthroughs in machine learning spanning many problem domains. Neuromorphic computing aims to take this a step further to chips more directly inspired by the form and function of biological neural circuits, so they can process new knowledge, adapt, behave, and learn in real time at low power levels. Despite several decades of research, until recently, very few published results have shown that today's neuromorphic chips can demonstrate quantitative computational value. This is now changing with the advent of Intel's Loihi, a neuromorphic research processor designed to support a broad range of"
+     },
+     {
+      "doi": "10.17615/1mdx-dp60",
+      "title": "E-S-QUAL: A multiple-item scale for assessing electronic service quality",
+      "year": 2019,
+      "venue": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
+      "first_author": "A. Parasuraman",
+      "cited_by": 660,
+      "abstract": "Using the means-end framework as a theoretical foundation, this article conceptualizes, constructs, refines, and tests a multiple-item scale (E-S-QUAL) for measuring the service quality delivered by Web sites on which customers shop online. Two stages of empirical data collection revealed that two different scales were necessary for capturing electronic service quality. The basic E-S-QUAL scale developed in the research is a 22-item scale of four dimensions: efficiency, fulfillment, system availability, and privacy. The second scale, E-RecS-QUAL, is salient only to customers who had nonroutine encounters with the sites and contains 11 items in three dimensions: responsiveness, compensation, "
+     },
+     {
+      "doi": "10.3390/brainsci12070863",
+      "title": "Spiking Neural Networks and Their Applications: A Review",
+      "year": 2022,
+      "venue": "Brain Sciences",
+      "first_author": "Kashu Yamazaki",
+      "cited_by": 626,
+      "abstract": "The past decade has witnessed the great success of deep neural networks in various domains. However, deep neural networks are very resource-intensive in terms of energy consumption, data requirements, and high computational costs. With the recent increasing need for the autonomy of machines in the real world, e.g., self-driving vehicles, drones, and collaborative robots, exploitation of deep neural networks in those applications has been actively investigated. In those applications, energy and computational efficiencies are especially important because of the need for real-time responses and the limited energy supply. A promising solution to these previously infeasible applications has recen"
+     }
+    ]
+   },
+   "alternation": {
+    "query": "argument structure alternation verb diathesis",
+    "hits": [
+     {
+      "doi": "10.1162/0891201053630264",
+      "title": "The Proposition Bank: An Annotated Corpus of Semantic Roles",
+      "year": 2005,
+      "venue": "Computational Linguistics",
+      "first_author": "Martha Stone Palmer",
+      "cited_by": 2275,
+      "abstract": "The Proposition Bank project takes a practical approach to semantic representation, adding a layer of predicate-argument information, or semantic role labels, to the syntactic structures of the Penn Treebank. The resulting resource can be thought of as shallow, in that it does not represent coreference, quantification, and many other higher-order phenomena, but also broad, in that it covers every instance of every verb in the corpus and allows representative statistics to be calculated. We discuss the criteria used to define the sets of semantic roles used in the annotation process and to analyze the frequency of syntactic/semantic alternations in the corpus. We describe an automatic system "
+     },
+     {
+      "doi": "",
+      "title": "SELECTION AND INFORMATION: A CLASS-BASED APPROACH TO LEXICAL RELATIONSHIPS",
+      "year": 1993,
+      "venue": "Scholarly Commons (University of Pennsylvania)",
+      "first_author": "Philip Resnik",
+      "cited_by": 418,
+      "abstract": "Selectional constraints are limitations on the applicability of predicates to arguments. For example, the statement “The number two is blue” may be syntactically well formed, but at some level it is anomalous — BLUE is not a predicate that can be applied to numbers.\\nAccording to the influential theory of (Katz and Fodor, 1964), a predicate associates a set of defining features with each argument, expressed within a restricted semantic vocabulary. Despite the persistence of this theory, however, there is widespread agreement about its empirical shortcomings (McCawley, 1968; Fodor, 1977). As an alternative, some critics of the Katz-Fodor theory (e.g. (Johnson-Laird, 1983)) have abandoned the "
+     },
+     {
+      "doi": "10.7557/12.68",
+      "title": "Slavic prefixes inside and outside VP",
+      "year": 2005,
+      "venue": "Nordlyd",
+      "first_author": "Peter Svenonius",
+      "cited_by": 267,
+      "abstract": "Most Slavic prefixes can be assigned to one of two large cate- gories, lexical and superlexical. The lexical prefixes are like Germanic particles, in having resultative meanings, often spatial, but often id- iosyncratic. The superlexical prefixes are like adverbs or auxiliary verbs, having aspectual and quantificational meanings. I present a syntactic account of the two types of prefix, arguing that the lexical ones are to be analyzed essentially like the Germanic particles, and that their VP-internal position accounts for many of their properties, while the superlexical ones originate outside VP."
+     },
+     {
+      "doi": "10.1353/book.72311",
+      "title": "Figural Realism: Studies in the Mimesis Effect",
+      "year": 1998,
+      "venue": "Project Muse (Johns Hopkins University)",
+      "first_author": "Hayden V. White",
+      "cited_by": 208,
+      "abstract": "Publicado originalmente en 1998. En sus libros anteriores, como Trópicos del discurso y El contenido de la forma, Hayden White se centró en las convenciones de la escritura histórica y en la ordenación de la conciencia histórica. En Figural Realism, White recoge ocho ensayos interrelacionados que se ocupan principalmente del tratamiento de la historia en el discurso crítico literario reciente. \"La 'historia' no es sólo un objeto que podemos estudiar\", escribe White, \"es también, e incluso principalmente, un cierto tipo de relación con 'el pasado' mediada por un tipo distintivo de discurso escrito\". Es porque el discurso histórico se actualiza en su forma culturalmente significativa como un t"
+     },
+     {
+      "doi": "10.1162/089120101317066122",
+      "title": "Automatic Verb Classification Based on Statistical Distributions of Argument Structure",
+      "year": 2001,
+      "venue": "Computational Linguistics",
+      "first_author": "Paola Merlo",
+      "cited_by": 201,
+      "abstract": "Automatic acquisition of lexical knowledge is critical to a wide range of natural language processing tasks. Especially important is knowledge about verbs, which are the primary source of relational information in a sentence-the predicate-argument structure that relates an action or state to its participants (i.e., who did what to whom). In this work, we report on supervised learning experiments to automatically classify three major types of English verbs, based on their argument structure-specifically, the thematic roles they assign to participants. We use linguistically-motivated statistical indicators extracted from large annotated corpora to train the classifier, achieving 69.8% accuracy"
+     },
+     {
+      "doi": "10.1515/ling.1990.28.6.1253",
+      "title": "Mapping thematic roles onto syntactic functions: are children helped by innate linking rules?",
+      "year": 1990,
+      "venue": "Linguistics",
+      "first_author": "Melissa F. Bowerman",
+      "cited_by": 174,
+      "abstract": "In recent theorizing about language acquisition, children have often been credited with innate knowledge of rules that link thematic roles such as agent and patient to syntactic functions such as subject and direct object. These rules form the basis for the hypothesis that phrase-structure rules are established through 'semantic bootstrapping', and they are also invoked to explain the acquisition of verb subcategorization frames (for example, Pinker 1984). This study examines two versions of the hypothesis that linking rules are innate, pitting them against the alternative hypothesis that linking patterns are learned (as proposed, for example, by Foley and Van Valin 1984). The first version "
+     }
+    ]
+   },
+   "reprogramming": {
+    "query": "cell fate reprogramming transcription factor identity",
+    "hits": [
+     {
+      "doi": "10.3402/jev.v4.27066",
+      "title": "Biological properties of extracellular vesicles and their physiological functions",
+      "year": 2015,
+      "venue": "Journal of Extracellular Vesicles",
+      "first_author": "María Yáñez‐Mó",
+      "cited_by": 5907,
+      "abstract": "In the past decade, extracellular vesicles (EVs) have been recognized as potent vehicles of intercellular communication, both in prokaryotes and eukaryotes. This is due to their capacity to transfer proteins, lipids and nucleic acids, thereby influencing various physiological and pathological functions of both recipient and parent cells. While intensive investigation has targeted the role of EVs in different pathological processes, for example, in cancer and autoimmune diseases, the EV-mediated maintenance of homeostasis and the regulation of physiological functions have remained less explored. Here, we provide a comprehensive overview of the current understanding of the physiological roles "
+     },
+     {
+      "doi": "10.1155/2017/8416763",
+      "title": "Oxidative Stress: Harms and Benefits for Human Health",
+      "year": 2017,
+      "venue": "Oxidative Medicine and Cellular Longevity",
+      "first_author": "Gabriele Pizzino",
+      "cited_by": 4815,
+      "abstract": "Oxidative stress is a phenomenon caused by an imbalance between production and accumulation of oxygen reactive species (ROS) in cells and tissues and the ability of a biological system to detoxify these reactive products. ROS can play, and in fact they do it, several physiological roles (i.e., cell signaling), and they are normally generated as by-products of oxygen metabolism; despite this, environmental stressors (i.e., UV, ionizing radiations, pollutants, and heavy metals) and xenobiotics (i.e., antiblastic drugs) contribute to greatly increase ROS production, therefore causing the imbalance that leads to cell and tissue damage (oxidative stress). Several antioxidants have been exploited "
+     },
+     {
+      "doi": "10.1210/er.2009-0002",
+      "title": "Endocrine-Disrupting Chemicals: An Endocrine Society Scientific Statement",
+      "year": 2009,
+      "venue": "Endocrine Reviews",
+      "first_author": "Evanthia Diamanti‐Kandarakis",
+      "cited_by": 4578,
+      "abstract": "There is growing interest in the possible health threat posed by endocrine-disrupting chemicals (EDCs), which are substances in our environment, food, and consumer products that interfere with hormone biosynthesis, metabolism, or action resulting in a deviation from normal homeostatic control or reproduction. In this first Scientific Statement of The Endocrine Society, we present the evidence that endocrine disruptors have effects on male and female reproduction, breast development and cancer, prostate cancer, neuroendocrinology, thyroid, metabolism and obesity, and cardiovascular endocrinology. Results from animal models, human clinical observations, and epidemiological studies converge to "
+     },
+     {
+      "doi": "10.1073/pnas.1016071107",
+      "title": "Histone H3K27ac separates active from poised enhancers and predicts developmental state",
+      "year": 2010,
+      "venue": "Proceedings of the National Academy of Sciences",
+      "first_author": "Menno P. Creyghton",
+      "cited_by": 4280,
+      "abstract": "Developmental programs are controlled by transcription factors and chromatin regulators, which maintain specific gene expression programs through epigenetic modification of the genome. These regulatory events at enhancers contribute to the specific gene expression programs that determine cell state and the potential for differentiation into new cell types. Although enhancer elements are known to be associated with certain histone modifications and transcription factors, the relationship of these modifications to gene expression and developmental state has not been clearly defined. Here we interrogate the epigenetic landscape of enhancer elements in embryonic stem cells and several adult tiss"
+     },
+     {
+      "doi": "10.1042/bj20021321",
+      "title": "Histone deacetylases (HDACs): characterization of the classical HDAC family",
+      "year": 2003,
+      "venue": "Biochemical Journal",
+      "first_author": "Annemieke J.M. de Ruijter",
+      "cited_by": 3083,
+      "abstract": "Transcriptional regulation in eukaryotes occurs within a chromatin setting, and is strongly influenced by the post-translational modification of histones, the building blocks of chromatin, such as methylation, phosphorylation and acetylation. Acetylation is probably the best understood of these modifications: hyperacetylation leads to an increase in the expression of particular genes, and hypoacetylation has the opposite effect. Many studies have identified several large, multisubunit enzyme complexes that are responsible for the targeted deacetylation of histones. The aim of this review is to give a comprehensive overview of the structure, function and tissue distribution of members of the "
+     },
+     {
+      "doi": "10.1126/science.aaf1098",
+      "title": "Trained immunity: A program of innate immune memory in health and disease",
+      "year": 2016,
+      "venue": "Science",
+      "first_author": "Mihai Gheorghe Netea",
+      "cited_by": 2746,
+      "abstract": "The general view that only adaptive immunity can build immunological memory has recently been challenged. In organisms lacking adaptive immunity, as well as in mammals, the innate immune system can mount resistance to reinfection, a phenomenon termed \"trained immunity\" or \"innate immune memory.\" Trained immunity is orchestrated by epigenetic reprogramming, broadly defined as sustained changes in gene expression and cell physiology that do not involve permanent genetic changes such as mutations and recombination, which are essential for adaptive immunity. The discovery of trained immunity may open the door for novel vaccine approaches, new therapeutic strategies for the treatment of immune de"
+     }
+    ]
+   }
+  },
+  "K9": {
+   "ion_selectivity": {
+    "query": "ion channel selectivity filter molecular mechanism",
+    "hits": [
+     {
+      "doi": "10.1038/s41586-024-07487-w",
+      "title": "Accurate structure prediction of biomolecular interactions with AlphaFold 3",
+      "year": 2024,
+      "venue": "Nature",
+      "first_author": "Josh Abramson",
+      "cited_by": 15470,
+      "abstract": "Abstract The introduction of AlphaFold 2 1 has spurred a revolution in modelling the structure of proteins and their interactions, enabling a huge range of applications in protein modelling and design 2–6 . Here we describe our AlphaFold 3 model with a substantially updated diffusion-based architecture that is capable of predicting the joint structure of complexes including proteins, nucleic acids, small molecules, ions and modified residues. The new AlphaFold model demonstrates substantially improved accuracy over many previous specialized tools: far greater accuracy for protein–ligand interactions compared with state-of-the-art docking tools, much higher accuracy for protein–nucleic acid i"
+     },
+     {
+      "doi": "10.1103/revmodphys.76.323",
+      "title": "Spintronics: Fundamentals and applications",
+      "year": 2004,
+      "venue": "Reviews of Modern Physics",
+      "first_author": "Igor Žutić",
+      "cited_by": 11268,
+      "abstract": "Spintronics, or spin electronics, involves the study of active control and manipulation of spin degrees of freedom in solid-state systems. This article reviews the current status of this subject, including both recent advances and well-established results. The primary focus is on the basic physical principles underlying the generation of carrier spin polarization, spin dynamics, and spin-polarized transport in semiconductors and metals. Spin transport differs from charge transport in that spin is a nonconserved quantity in solids due to spin-orbit and hyperfine coupling. The authors discuss in detail spin decoherence mechanisms in metals and semiconductors. Various theories of spin injection"
+     },
+     {
+      "doi": "10.1080/20013078.2018.1535750",
+      "title": "Minimal information for studies of extracellular vesicles 2018 (MISEV2018): a position statement of the International Society for Extracellular Vesicles and update of the MISEV2014 guidelines",
+      "year": 2018,
+      "venue": "Journal of Extracellular Vesicles",
+      "first_author": "Clotilde Théry",
+      "cited_by": 11013,
+      "abstract": "The last decade has seen a sharp increase in the number of scientific publications describing physiological and pathological functions of extracellular vesicles (EVs), a collective term covering various subtypes of cell-released, membranous structures, called exosomes, microvesicles, microparticles, ectosomes, oncosomes, apoptotic bodies, and many other names. However, specific issues arise when working with these entities, whose size and amount often make them difficult to obtain as relatively pure preparations, and to characterize properly. The International Society for Extracellular Vesicles (ISEV) proposed Minimal Information for Studies of Extracellular Vesicles (\"MISEV\") guidelines for"
+     },
+     {
+      "doi": "10.1002/jcc.21287",
+      "title": "CHARMM: The biomolecular simulation program",
+      "year": 2009,
+      "venue": "Journal of Computational Chemistry",
+      "first_author": "Bernard R. Brooks",
+      "cited_by": 8954,
+      "abstract": "CHARMM (Chemistry at HARvard Molecular Mechanics) is a highly versatile and widely used molecular simulation program. It has been developed over the last three decades with a primary focus on molecules of biological interest, including proteins, peptides, lipids, nucleic acids, carbohydrates, and small molecule ligands, as they occur in solution, crystals, and membrane environments. For the study of such systems, the program provides a large suite of computational tools that include numerous conformational and path sampling methods, free energy estimators, molecular minimization, dynamics, and analysis techniques, and model-building capabilities. The CHARMM program is applicable to problems "
+     },
+     {
+      "doi": "10.1038/s41467-016-0009-6",
+      "title": "In situ click chemistry generation of cyclooxygenase-2 inhibitors",
+      "year": 2017,
+      "venue": "Nature Communications",
+      "first_author": "Atul Bhardwaj",
+      "cited_by": 7442,
+      "abstract": "Cyclooxygenase-2 isozyme is a promising anti-inflammatory drug target, and overexpression of this enzyme is also associated with several cancers and neurodegenerative diseases. The amino-acid sequence and structural similarity between inducible cyclooxygenase-2 and housekeeping cyclooxygenase-1 isoforms present a significant challenge to design selective cyclooxygenase-2 inhibitors. Herein, we describe the use of the cyclooxygenase-2 active site as a reaction vessel for the in situ generation of its own highly specific inhibitors. Multi-component competitive-binding studies confirmed that the cyclooxygenase-2 isozyme can judiciously select most appropriate chemical building blocks from a poo"
+     },
+     {
+      "doi": "10.1046/j.0016-8025.2001.00808.x",
+      "title": "Comparative physiology of salt and water stress",
+      "year": 2002,
+      "venue": "Plant Cell & Environment",
+      "first_author": "Rana Munns",
+      "cited_by": 6367,
+      "abstract": "Plant responses to salt and water stress have much in common. Salinity reduces the ability of plants to take up water, and this quickly causes reductions in growth rate, along with a suite of metabolic changes identical to those caused by water stress. The initial reduction in shoot growth is probably due to hormonal signals generated by the roots. There may be salt-specific effects that later have an impact on growth; if excessive amounts of salt enter the plant, salt will eventually rise to toxic levels in the older transpiring leaves, causing premature senescence, and reduce the photosynthetic leaf area of the plant to a level that cannot sustain growth. These effects take time to develop"
+     }
+    ]
+   },
+   "enzyme_specificity": {
+    "query": "enzyme substrate specificity active site selectivity",
+    "hits": [
+     {
+      "doi": "10.3929/ethz-b-000667478",
+      "title": "Two new Later Stone Age sites from the Final Pleistocene in the Falémé Valley, eastern Senegal",
+      "year": 2024,
+      "venue": "Monash University Research Portal (Monash University)",
+      "first_author": "Ndiaye, Matar",
+      "cited_by": 23869,
+      "abstract": "1 Instituto de Sau´de Coletiva, Universidade Federal da Bahia, Salvador, Brazil, 2 Instituto Gonc¸alo Moniz, Fundac¸ão Oswaldo Cruz,Ministe´ rio da Sau´de, Salvador, Brazil, 3 Department of Epidemiology of Microbial Diseases, Yale School of Public Health, New Haven, Connecticut, United States of America, 4 Hospital Geral Roberto Santos (HGRS), Salvador, Brazil, 5 Faculdade de Medicina, Universidade Federal de São Paulo, São Paulo, Brazil, 6 Faculdade de Medicina da Bahia, Universidade Federal da Bahia, Salvador, Brazil, 7 Programa de Pòs-Graduac¸ão em Ciencias da Saude (PPgCS) Universidade Federal da Bahia, Salvador, Brazil, 8 Departamento de Fonoaudiologia. Instituto de Ciências da Sau´de. "
+     },
+     {
+      "doi": "10.1038/srep42717",
+      "title": "SwissADME: a free web tool to evaluate pharmacokinetics, drug-likeness and medicinal chemistry friendliness of small molecules",
+      "year": 2017,
+      "venue": "Scientific Reports",
+      "first_author": "Antoine Daina",
+      "cited_by": 18108,
+      "abstract": "To be effective as a drug, a potent molecule must reach its target in the body in sufficient concentration, and stay there in a bioactive form long enough for the expected biologic events to occur. Drug development involves assessment of absorption, distribution, metabolism and excretion (ADME) increasingly earlier in the discovery process, at a stage when considered compounds are numerous but access to the physical samples is limited. In that context, computer models constitute valid alternatives to experiments. Here, we present the new SwissADME web tool that gives free access to a pool of fast yet robust predictive models for physicochemical properties, pharmacokinetics, drug-likeness and"
+     },
+     {
+      "doi": "10.1093/eurheartj/ehab368",
+      "title": "2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure",
+      "year": 2021,
+      "venue": "European Heart Journal",
+      "first_author": "Theresa A. McDonagh",
+      "cited_by": 13353,
+      "abstract": "2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure Developed by the Task Force for the diagnosis and treatment of acute and chronic heart failure of the European Society of Cardiology (ESC)With the special contribution of the Heart Failure Association (HFA) of the ESC"
+     },
+     {
+      "doi": "10.1126/science.aad4998",
+      "title": "Combining theory and experiment in electrocatalysis: Insights into materials design",
+      "year": 2017,
+      "venue": "Science",
+      "first_author": "Zhi Wei Seh",
+      "cited_by": 12061,
+      "abstract": "Electrocatalysis plays a central role in clean energy conversion, enabling a number of sustainable processes for future technologies. This review discusses design strategies for state-of-the-art heterogeneous electrocatalysts and associated materials for several different electrochemical transformations involving water, hydrogen, and oxygen, using theory as a means to rationalize catalyst performance. By examining the common principles that govern catalysis for different electrochemical reactions, we describe a systematic framework that clarifies trends in catalyzing these reactions, serving as a guide to new catalyst development while highlighting key gaps that need to be addressed. We conc"
+     },
+     {
+      "doi": "10.1093/eurheartj/ehaa612",
+      "title": "2020 ESC Guidelines for the diagnosis and management of atrial fibrillation developed in collaboration with the European Association for Cardio-Thoracic Surgery (EACTS)",
+      "year": 2020,
+      "venue": "European Heart Journal",
+      "first_author": "Gerhard Hindricks",
+      "cited_by": 9974,
+      "abstract": "International audience"
+     },
+     {
+      "doi": "10.1002/jcc.21287",
+      "title": "CHARMM: The biomolecular simulation program",
+      "year": 2009,
+      "venue": "Journal of Computational Chemistry",
+      "first_author": "Bernard R. Brooks",
+      "cited_by": 8954,
+      "abstract": "CHARMM (Chemistry at HARvard Molecular Mechanics) is a highly versatile and widely used molecular simulation program. It has been developed over the last three decades with a primary focus on molecules of biological interest, including proteins, peptides, lipids, nucleic acids, carbohydrates, and small molecule ligands, as they occur in solution, crystals, and membrane environments. For the study of such systems, the program provides a large suite of computational tools that include numerous conformational and path sampling methods, free energy estimators, molecular minimization, dynamics, and analysis techniques, and model-building capabilities. The CHARMM program is applicable to problems "
+     }
+    ]
+   },
+   "molecular_recognition": {
+    "query": "molecular recognition selective binding discrimination",
+    "hits": [
+     {
+      "doi": "10.3402/jev.v4.27066",
+      "title": "Biological properties of extracellular vesicles and their physiological functions",
+      "year": 2015,
+      "venue": "Journal of Extracellular Vesicles",
+      "first_author": "María Yáñez‐Mó",
+      "cited_by": 5907,
+      "abstract": "In the past decade, extracellular vesicles (EVs) have been recognized as potent vehicles of intercellular communication, both in prokaryotes and eukaryotes. This is due to their capacity to transfer proteins, lipids and nucleic acids, thereby influencing various physiological and pathological functions of both recipient and parent cells. While intensive investigation has targeted the role of EVs in different pathological processes, for example, in cancer and autoimmune diseases, the EV-mediated maintenance of homeostasis and the regulation of physiological functions have remained less explored. Here, we provide a comprehensive overview of the current understanding of the physiological roles "
+     },
+     {
+      "doi": "10.1080/15548627.2015.1100356",
+      "title": "Guidelines for the use and interpretation of assays for monitoring autophagy (3rd edition)",
+      "year": 2016,
+      "venue": "Autophagy",
+      "first_author": "Daniel J. Klionsky",
+      "cited_by": 5890,
+      "abstract": "0"
+     },
+     {
+      "doi": "10.1093/brain/awr179",
+      "title": "Sensitivity of revised diagnostic criteria for the behavioural variant of frontotemporal dementia",
+      "year": 2011,
+      "venue": "Brain",
+      "first_author": "Katya Rascovsky",
+      "cited_by": 5218,
+      "abstract": "Based on the recent literature and collective experience, an international consortium developed revised guidelines for the diagnosis of behavioural variant frontotemporal dementia. The validation process retrospectively reviewed clinical records and compared the sensitivity of proposed and earlier criteria in a multi-site sample of patients with pathologically verified frontotemporal lobar degeneration. According to the revised criteria, 'possible' behavioural variant frontotemporal dementia requires three of six clinically discriminating features (disinhibition, apathy/inertia, loss of sympathy/empathy, perseverative/compulsive behaviours, hyperorality and dysexecutive neuropsychological pr"
+     },
+     {
+      "doi": "10.12703/p6-13",
+      "title": "The M1 and M2 paradigm of macrophage activation: time for reassessment",
+      "year": 2014,
+      "venue": "F1000Prime Reports",
+      "first_author": "Fernando O. Martínez",
+      "cited_by": 4683,
+      "abstract": "Macrophages are endowed with a variety of receptors for lineage-determining growth factors, T helper (Th) cell cytokines, and B cell, host, and microbial products. In tissues, macrophages mature and are activated in a dynamic response to combinations of these stimuli to acquire specialized functional phenotypes. As for the lymphocyte system, a dichotomy has been proposed for macrophage activation: classic vs. alternative, also M1 and M2, respectively. In view of recent research about macrophage functions and the increasing number of immune-relevant ligands, a revision of the model is needed. Here, we assess how cytokines and pathogen signals influence their functional phenotypes and the evid"
+     },
+     {
+      "doi": "10.1210/er.2009-0002",
+      "title": "Endocrine-Disrupting Chemicals: An Endocrine Society Scientific Statement",
+      "year": 2009,
+      "venue": "Endocrine Reviews",
+      "first_author": "Evanthia Diamanti‐Kandarakis",
+      "cited_by": 4578,
+      "abstract": "There is growing interest in the possible health threat posed by endocrine-disrupting chemicals (EDCs), which are substances in our environment, food, and consumer products that interfere with hormone biosynthesis, metabolism, or action resulting in a deviation from normal homeostatic control or reproduction. In this first Scientific Statement of The Endocrine Society, we present the evidence that endocrine disruptors have effects on male and female reproduction, breast development and cancer, prostate cancer, neuroendocrinology, thyroid, metabolism and obesity, and cardiovascular endocrinology. Results from animal models, human clinical observations, and epidemiological studies converge to "
+     },
+     {
+      "doi": "10.1093/eurheartj/ehu284",
+      "title": "2014 ESC Guidelines on diagnosis and management of hypertrophic cardiomyopathy",
+      "year": 2014,
+      "venue": "European Heart Journal",
+      "first_author": "Authors Task Force Members",
+      "cited_by": 4342,
+      "abstract": "EHRA), Heart Failure Association of the ESC"
+     }
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,661 @@
+{
+ "schema": "m2a.phase1prime.discovery.v1",
+ "note": "raw Crossref hits, UNVERIFIED and not citable",
+ "families": {
+  "K4_synergy": {
+   "multisensory_conjunction": {
+    "query": "multisensory integration conjunction cues Bayesian optimal",
+    "hits": [
+     {
+      "doi": "10.14711/thesis-991012565062703412",
+      "title": "Optimal multisensory integration in modular neural networks",
+      "year": null,
+      "venue": "",
+      "first_author": "Wang",
+      "type": "dissertation",
+      "cited_by": 0
+     },
+     {
+      "doi": "10.31274/etd-180810-4818",
+      "title": "Bayesian integration of spatial navigation cues",
+      "year": null,
+      "venue": "",
+      "first_author": "Sjolund",
+      "type": "dissertation",
+      "cited_by": 0
+     },
+     {
+      "doi": "10.14711/thesis-991013222942703412",
+      "title": "A systematic approach to multisensory integration and causal inference : a Bayesian perspective",
+      "year": null,
+      "venue": "",
+      "first_author": "Ma",
+      "type": "dissertation",
+      "cited_by": 0
+     },
+     {
+      "doi": "10.7551/mitpress/8466.003.0048",
+      "title": "Optimal Multisensory Integration: Assumptions and Limits",
+      "year": 2012,
+      "venue": "The New Handbook of Multisensory Processing",
+      "first_author": "Ernst",
+      "type": "book-chapter",
+      "cited_by": 22
+     },
+     {
+      "doi": "10.3389/fnbot.2020.00029",
+      "title": "From Near-Optimal Bayesian Integration to Neuromorphic Hardware: A Neural Network Model of Multisensory Integration",
+      "year": 2020,
+      "venue": "Frontiers in Neurorobotics",
+      "first_author": "Oess",
+      "type": "journal-article",
+      "cited_by": 11
+     },
+     {
+      "doi": "10.7551/mitpress/8466.003.0046",
+      "title": "Commentary: Computational Models of Multisensory Integration: Bayesian Frameworks, Development, and Timing",
+      "year": 2012,
+      "venue": "The New Handbook of Multisensory Processing",
+      "first_author": "Rowland",
+      "type": "book-chapter",
+      "cited_by": 1
+     }
+    ]
+   },
+   "and_gate_circuit": {
+    "query": "AND gate genetic circuit coincidence detector synthetic biology",
+    "hits": [
+     {
+      "doi": "10.1101/2024.10.30.621125",
+      "title": "Genetic architecture of a light-temperature coincidence detector",
+      "year": 2024,
+      "venue": "",
+      "first_author": "Seluzicki",
+      "type": "posted-content",
+      "cited_by": 0
+     },
+     {
+      "doi": "10.1101/2025.04.22.649979",
+      "title": "A Minimal Genetic Circuit for Cellular Anticipation",
+      "year": 2025,
+      "venue": "",
+      "first_author": "Pla-Mauri",
+      "type": "posted-content",
+      "cited_by": 1
+     },
+     {
+      "doi": "10.1021/acs.bioconjchem.9b00517.s001",
+      "title": "Design, Fabrication, and Device Chemistry of a 3Input-3-Output Synthetic Genetic Combinatorial Logic Circuit with a 3Input AND Gate in a Single Bacterial Cell",
+      "year": null,
+      "venue": "",
+      "first_author": null,
+      "type": "component",
+      "cited_by": 0
+     },
+     {
+      "doi": "10.1101/2021.09.14.460206",
+      "title": "A network approach to genetic circuit designs",
+      "year": 2021,
+      "venue": "",
+      "first_author": "Crowther",
+      "type": "posted-content",
+      "cited_by": 0
+     },
+     {
+      "doi": "10.1101/2025.08.13.670071",
+      "title": "Dynamic Tuning of Genetic Circuit Gain via Controllable Plasmid Copy Number",
+      "year": 2025,
+      "venue": "",
+      "first_author": "Namura",
+      "type": "posted-content",
+      "cited_by": 0
+     },
+     {
+      "doi": "10.1016/j.cpb.2024.100355",
+      "title": "Towards programming-based synthetic genetic circuit enabled high-lysine maize",
+      "year": 2024,
+      "venue": "Current Plant Biology",
+      "first_author": "Hasan",
+      "type": "journal-article",
+      "cited_by": 8
+     }
+    ]
+   },
+   "joint_action": {
+    "query": "joint action coordination two-person motor synergy",
+    "hits": [
+     {
+      "doi": "10.1111/ejn.16365/v1/review1",
+      "title": "Review for \"Excitatory/inhibitory motor balance reflects individual differences during joint action coordination\"",
+      "year": 2023,
+      "venue": "",
+      "first_author": null,
+      "type": "peer-review",
+      "cited_by": 0
+     },
+     {
+      "doi": "10.1111/ejn.16365/v2/review1",
+      "title": "Review for \"Excitatory/inhibitory motor balance reflects individual differences during joint action coordination\"",
+      "year": 2024,
+      "venue": "",
+      "first_author": null,
+      "type": "peer-review",
+      "cited_by": 0
+     },
+     {
+      "doi": "10.1111/ejn.16365/v1/decision1",
+      "title": "Decision letter for \"Excitatory/inhibitory motor balance reflects individual differences during joint action coordination\"",
+      "year": 2023,
+      "venue": "",
+      "first_author": null,
+      "type": "peer-review",
+      "cited_by": 0
+     },
+     {
+      "doi": "10.1111/ejn.16365/v2/decision1",
+      "title": "Decision letter for \"Excitatory/inhibitory motor balance reflects individual differences during joint action coordination\"",
+      "year": 2024,
+      "venue": "",
+      "first_author": null,
+      "type": "peer-review",
+      "cited_by": 0
+     },
+     {
+      "doi": "10.1007/978-981-13-1765-1_6",
+      "title": "Motor Control Hierarchy in Joint Action that Involves Bimanual Action",
+      "year": 2018,
+      "venue": "Interpersonal Coordination",
+      "first_author": "Inui",
+      "type": "book-chapter",
+      "cited_by": 0
+     },
+     {
+      "doi": "10.3389/conf.fnhum.2012.208.00073",
+      "title": "Motor Simulation Underpins Temporal Coordination in Joint Action.",
+      "year": 2012,
+      "venue": "Frontiers in Human Neuroscience",
+      "first_author": "Peter",
+      "type": "journal-article",
+      "cited_by": 0
+     }
+    ]
+   },
+   "quorum_synergy": {
+    "query": "quorum sensing synergy collective decision threshold",
+    "hits": [
+     {
+      "doi": "10.5220/0003122501950204",
+      "title": "QUORUM SENSING FOR COLLECTIVE ACTION AND DECISION-MAKING IN MOBILE AUTONOMOUS TEAMS",
+      "year": 2011,
+      "venue": "Proceedings of the 3rd International Conference on Agents and Artificial Intelligence",
+      "first_author": null,
+      "type": "proceedings-article",
+      "cited_by": 1
+     },
+     {
+      "doi": "10.7554/elife.14712.012",
+      "title": "Decision letter: Quorum sensing control of Type VI secretion factors restricts the proliferation of quorum-sensing mutants",
+      "year": 2016,
+      "venue": "",
+      "first_author": null,
+      "type": "peer-review",
+      "cited_by": 0
+     },
+     {
+      "doi": "10.1101/182543",
+      "title": "Synergy of Quorum Quenching Enzyme and Quorum Sensing Inhibitor in Inhibiting\n                  <i>P.aeruginosa</i>\n                  Quorum Sensing",
+      "year": 2017,
+      "venue": "",
+      "first_author": "Fong",
+      "type": "posted-content",
+      "cited_by": 2
+     },
+     {
+      "doi": "10.7717/peerj.9942/fig-2",
+      "title": "Figure 2: Threshold Damkohler numbers under a range of Peclet numbers for quorum sensing induction.",
+      "year": null,
+      "venue": "",
+      "first_author": null,
+      "type": "component",
+      "cited_by": 0
+     },
+     {
+      "doi": "10.1088/1478-3975/aa7c1e",
+      "title": "Mapping quorum sensing onto neural networks to understand collective decision making in heterogeneous microbial communities",
+      "year": 2017,
+      "venue": "Physical Biology",
+      "first_author": "Yusufaly",
+      "type": "journal-article",
+      "cited_by": 13
+     },
+     {
+      "doi": "10.7554/elife.42057.043",
+      "title": "Decision letter: Quorum sensing controls Vibrio cholerae multicellular aggregate formation",
+      "year": 2018,
+      "venue": "",
+      "first_author": null,
+      "type": "peer-review",
+      "cited_by": 0
+     }
+    ]
+   }
+  },
+  "K10_role_reassignment": {
+   "task_switching": {
+    "query": "task switching cognitive control reconfiguration role",
+    "hits": [
+     {
+      "doi": "10.7551/mitpress/1481.003.0025",
+      "title": "Reconfiguration of Stimulus Task Sets and Response Task Sets during Task Switching",
+      "year": 2000,
+      "venue": "Control of Cognitive Processes",
+      "first_author": null,
+      "type": "book-chapter",
+      "cited_by": 8
+     },
+     {
+      "doi": "10.7551/mitpress/1481.003.0023",
+      "title": "Intentional Reconfiguration and Involuntary Persistence in Task Set Switching",
+      "year": 2000,
+      "venue": "Control of Cognitive Processes",
+      "first_author": null,
+      "type": "book-chapter",
+      "cited_by": 35
+     },
+     {
+      "doi": "10.1093/acprof:osobl/9780199921959.003.0001",
+      "title": "Task Switching and Cognitive Control",
+      "year": 2014,
+      "venue": "Task Switching and Cognitive Control",
+      "first_author": null,
+      "type": "book-chapter",
+      "cited_by": 6
+     },
+     {
+      "doi": "10.1093/acprof:osobl/9780199921959.003.0008",
+      "title": "Models of Cognitive Control in Task Switching",
+      "year": 2014,
+      "venue": "Task Switching and Cognitive Control",
+      "first_author": null,
+      "type": "book-chapter",
+      "cited_by": 10
+     },
+     {
+      "doi": "10.1093/acprof:osobl/9780199921959.003.0011",
+      "title": "Task Switching and Executive Dysfunction",
+      "year": 2014,
+      "venue": "Task Switching and Cognitive Control",
+      "first_author": "Das",
+      "type": "book-chapter",
+      "cited_by": 1
+     },
+     {
+      "doi": "10.1093/acprof:osobl/9780199921959.003.0014",
+      "title": "Task Switching and Aging",
+      "year": 2014,
+      "venue": "Task Switching and Cognitive Control",
+      "first_author": "Kray",
+      "type": "book-chapter",
+      "cited_by": 20
+     }
+    ]
+   },
+   "team_roles": {
+    "query": "role reassignment team adaptation organizational",
+    "hits": [
+     {
+      "doi": "10.1177/2041386619869972",
+      "title": "Building team effectiveness through adaptation: Team knowledge and implicit and explicit coordination",
+      "year": 2019,
+      "venue": "Organizational Psychology Review",
+      "first_author": "Rico",
+      "type": "journal-article",
+      "cited_by": 72
+     },
+     {
+      "doi": "10.1177/20413866261478644",
+      "title": "Old Theories, New Teams: Advancing Team Adaptation Theory for Human-Autonomy-Teams",
+      "year": 2026,
+      "venue": "Organizational Psychology Review",
+      "first_author": "Nols",
+      "type": "journal-article",
+      "cited_by": 0
+     },
+     {
+      "doi": "10.20469/ijbas.8.10002-1",
+      "title": "Impact of Shared Cognition on Team Effectiveness with Mediating Role of Intra-Team Communication: A Study on Organizational Teams",
+      "year": 2022,
+      "venue": "International Journal of Business and Administrative Studies",
+      "first_author": "Mahmood",
+      "type": "journal-article",
+      "cited_by": 2
+     },
+     {
+      "doi": "10.1016/j.obhdp.2008.07.002",
+      "title": "Cutthroat cooperation: The effects of team role decisions on adaptation to alternative reward structures",
+      "year": 2009,
+      "venue": "Organizational Behavior and Human Decision Processes",
+      "first_author": "Beersma",
+      "type": "journal-article",
+      "cited_by": 57
+     },
+     {
+      "doi": "10.1080/1359432x.2015.1065251",
+      "title": "Dynamics of team cognition and team adaptation: Introduction to the special issue",
+      "year": 2015,
+      "venue": "European Journal of Work and Organizational Psychology",
+      "first_author": "Gevers",
+      "type": "journal-article",
+      "cited_by": 12
+     },
+     {
+      "doi": "10.1016/b978-0-323-91840-4.00024-4",
+      "title": "Creativity and innovation: The role of team and organizational climate",
+      "year": 2023,
+      "venue": "Handbook of Organizational Creativity",
+      "first_author": "West",
+      "type": "book-chapter",
+      "cited_by": 13
+     }
+    ]
+   },
+   "argument_alternation": {
+    "query": "diathesis alternation argument structure verb role",
+    "hits": [
+     {
+      "doi": "10.1016/j.langsci.2008.01.001",
+      "title": "Verb disposition in argument structure alternations: a corpus study of the dative alternation in Dutch",
+      "year": 2009,
+      "venue": "Language Sciences",
+      "first_author": "Colleman",
+      "type": "journal-article",
+      "cited_by": 38
+     },
+     {
+      "doi": "10.1006/jmla.2000.2709",
+      "title": "Verb Argument Structure Processing: The Role of Verb-Specific and Argument-Specific Information",
+      "year": 2000,
+      "venue": "Journal of Memory and Language",
+      "first_author": "Friederici",
+      "type": "journal-article",
+      "cited_by": 177
+     },
+     {
+      "doi": "10.1075/lfab.10.07tho",
+      "title": "Neurocognitive mechanisms of verb argument structure processing",
+      "year": 2014,
+      "venue": "Language Faculty and Beyond",
+      "first_author": "Thompson",
+      "type": "book-chapter",
+      "cited_by": 17
+     },
+     {
+      "doi": "10.22215/etd/2016-11425",
+      "title": "Neural &amp; Predictive Effects of Verb Argument Structure",
+      "year": null,
+      "venue": "",
+      "first_author": "Di Giovanni",
+      "type": "dissertation",
+      "cited_by": 0
+     },
+     {
+      "doi": "10.1093/acprof:oso/9780199248582.003.0009",
+      "title": "Verb meaning and argument structure constructions",
+      "year": 2012,
+      "venue": "VerbsAspect and Causal Structure",
+      "first_author": "Croft",
+      "type": "book-chapter",
+      "cited_by": 0
+     },
+     {
+      "doi": "10.2307/jj.3716019.7",
+      "title": "Projection of verb phrases I:",
+      "year": 2015,
+      "venue": "Syntax of Dutch",
+      "first_author": null,
+      "type": "book-chapter",
+      "cited_by": 0
+     }
+    ]
+   },
+   "cell_fate": {
+    "query": "cell fate reprogramming transcription factor role switch",
+    "hits": [
+     {
+      "doi": "10.1098/rsob.250018/v1/review1",
+      "title": "Review for \"Cell fate acquisition and reprogramming by the proneural transcription factor ASCL1\"",
+      "year": 2025,
+      "venue": "",
+      "first_author": null,
+      "type": "peer-review",
+      "cited_by": 0
+     },
+     {
+      "doi": "10.1098/rsob.250018/v2/decision1",
+      "title": "Decision letter for \"Cell fate acquisition and reprogramming by the proneural transcription factor ASCL1\"",
+      "year": 2025,
+      "venue": "",
+      "first_author": null,
+      "type": "peer-review",
+      "cited_by": 0
+     },
+     {
+      "doi": "10.1098/rsob.250018/v1/decision1",
+      "title": "Decision letter for \"Cell fate acquisition and reprogramming by the proneural transcription factor ASCL1\"",
+      "year": 2025,
+      "venue": "",
+      "first_author": null,
+      "type": "peer-review",
+      "cited_by": 0
+     },
+     {
+      "doi": "10.1098/rsob.250018/v2/response1",
+      "title": "Author response for \"Cell fate acquisition and reprogramming by the proneural transcription factor ASCL1\"",
+      "year": 2025,
+      "venue": "",
+      "first_author": "Jethro Lundie-Brown",
+      "type": "peer-review",
+      "cited_by": 0
+     },
+     {
+      "doi": "10.3410/f.739439113.793590958",
+      "title": "Faculty Opinions recommendation of LEAFY is a pioneer transcription factor and licenses cell reprogramming to floral fate.",
+      "year": 2022,
+      "venue": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature",
+      "first_author": "Lee",
+      "type": "dataset",
+      "cited_by": 0
+     },
+     {
+      "doi": "10.54499/2025.00443.bdana",
+      "title": "",
+      "year": 2025,
+      "venue": "",
+      "first_author": null,
+      "type": "grant",
+      "cited_by": null
+     }
+    ]
+   }
+  },
+  "K9_physics_chem": {
+   "bandpass": {
+    "query": "band-pass filter selective frequency response non-response",
+    "hits": [
+     {
+      "doi": "10.1002/0471723770.ch7",
+      "title": "Band‐Pass Filter Designs: The Hybrid Radome",
+      "year": 2000,
+      "venue": "Frequency Selective Surfaces",
+      "first_author": null,
+      "type": "other",
+      "cited_by": 0
+     },
+     {
+      "doi": "10.1109/istel.2016.7881856",
+      "title": "Novel band-pass Frequency Selective Surface with stable response",
+      "year": 2016,
+      "venue": "2016 8th International Symposium on Telecommunications (IST)",
+      "first_author": "Taghizadeh",
+      "type": "proceedings-article",
+      "cited_by": 1
+     },
+     {
+      "doi": "10.4236/cs.2014.510025",
+      "title": "A Comparison of Higher-Order Active Band-Pass R-Filter Response with Equivalent Band-Pass RC-Filter Response at Varying Q-Factors",
+      "year": 2014,
+      "venue": "Circuits and Systems",
+      "first_author": "Amah",
+      "type": "journal-article",
+      "cited_by": 1
+     },
+     {
+      "doi": "10.1109/apcap.2017.8420920",
+      "title": "Multi-layer frequency selective surface with low-frequency ultra-wide band-pass response",
+      "year": 2017,
+      "venue": "2017 Sixth Asia-Pacific Conference on Antennas and Propagation (APCAP)",
+      "first_author": "Zhao",
+      "type": "proceedings-article",
+      "cited_by": 1
+     },
+     {
+      "doi": "10.47191/ijcsrr/v4-i10-23",
+      "title": "Frequency Response of Electronically Tunable Current-Mode Third Order High Pass and Low Pass Filter for Q = 10",
+      "year": 2021,
+      "venue": "International Journal of Current Science Research and Review",
+      "first_author": null,
+      "type": "journal-article",
+      "cited_by": 0
+     },
+     {
+      "doi": "10.1109/euma.2001.338964",
+      "title": "A New Coplanar Band-pass Filter Topology For Improving The Control of Narrowband Band-pass Filter Response.",
+      "year": 2001,
+      "venue": "31st European Microwave Conference, 2001",
+      "first_author": "Prigent",
+      "type": "proceedings-article",
+      "cited_by": 3
+     }
+    ]
+   },
+   "ion_channel": {
+    "query": "ion channel selectivity filter mechanism",
+    "hits": [
+     {
+      "doi": "10.1021/jacs.9b01092.s001",
+      "title": "Probing Ion Binding in the Selectivity Filter of the KcsA Potassium Channel",
+      "year": null,
+      "venue": "",
+      "first_author": null,
+      "type": "component",
+      "cited_by": 0
+     },
+     {
+      "doi": "10.1101/2020.03.16.994194",
+      "title": "The Role of Ion Transition from the Pore Cavity to the Selectivity Filter in the Mechanism of Selectivity and Rectification in the K\n                  <sub>v</sub>\n                  1.2 Potassium Channel: Transfer of Ion Solvation from Cavity Water to the Protein and Water of the Selectivity Filter",
+      "year": 2020,
+      "venue": "",
+      "first_author": "Kariev",
+      "type": "posted-content",
+      "cited_by": 0
+     },
+     {
+      "doi": "10.1021/acs.jpcb.1c03212.s001",
+      "title": "Ion Selectivity and Permeation Mechanism in a Cyclodextrin-Based Channel",
+      "year": null,
+      "venue": "",
+      "first_author": null,
+      "type": "component",
+      "cited_by": 0
+     },
+     {
+      "doi": "10.1021/acs.jpcb.8b09678.s001",
+      "title": "Molecular Dynamics of Ion Conduction through the Selectivity Filter of the NaVAb Sodium Channel",
+      "year": null,
+      "venue": "",
+      "first_author": null,
+      "type": "component",
+      "cited_by": 0
+     },
+     {
+      "doi": "10.1021/jacs.3c11513.s001",
+      "title": "Water inside the Selectivity Filter of a K+ Ion Channel: Structural Heterogeneity, Picosecond Dynamics, and Hydrogen Bonding",
+      "year": null,
+      "venue": "",
+      "first_author": null,
+      "type": "component",
+      "cited_by": 0
+     },
+     {
+      "doi": "10.1016/j.bpj.2023.11.1606",
+      "title": "Intrinsically dynamic mechanism within selectivity filter controls ion current through K2P2.1 channel",
+      "year": 2024,
+      "venue": "Biophysical Journal",
+      "first_author": "Jin",
+      "type": "journal-article",
+      "cited_by": 1
+     }
+    ]
+   },
+   "catalyst": {
+    "query": "catalyst substrate specificity selectivity mechanism",
+    "hits": [
+     {
+      "doi": "10.1021/jacs.2c11168.s001",
+      "title": "A Membrane-Embedded Macromolecular Catalyst with Substrate Selectivity in Live Cells",
+      "year": null,
+      "venue": "",
+      "first_author": null,
+      "type": "component",
+      "cited_by": 0
+     },
+     {
+      "doi": "10.1021/acs.jafc.5c02661.s001",
+      "title": "Elucidation of Broad Substrate Specificity of a Novel Glutamyl Transferase from Bacillus atrophaeus and Rational Design for Enhanced Substrate Selectivity",
+      "year": null,
+      "venue": "",
+      "first_author": null,
+      "type": "component",
+      "cited_by": 0
+     },
+     {
+      "doi": "10.1021/bi060872z.s001",
+      "title": "Acceptor Substrate Selectivity and Kinetic Mechanism of Bacillus subtilis TagA",
+      "year": null,
+      "venue": "",
+      "first_author": null,
+      "type": "component",
+      "cited_by": 0
+     },
+     {
+      "doi": "10.1021/acs.joc.7b02462.s001",
+      "title": "Thioesterase-Mediated Synthesis of Teixobactin Analogues: Mechanism and Substrate Specificity",
+      "year": null,
+      "venue": "",
+      "first_author": null,
+      "type": "component",
+      "cited_by": 0
+     },
+     {
+      "doi": "10.1021/acs.biochem.6b01127.s001",
+      "title": "Tryptophan Synthase Uses an Atypical Mechanism To Achieve Substrate Specificity",
+      "year": null,
+      "venue": "",
+      "first_author": null,
+      "type": "component",
+      "cited_by": 0
+     },
+     {
+      "doi": "10.1021/acs.biochem.3c00556.s001",
+      "title": "QM/MM Study of the Catalytic Mechanism and Substrate Specificity of the Aromatic Substrate CMethyltransferase Fur6",
+      "year": null,
+      "venue": "",
+      "first_author": null,
+      "type": "component",
+      "cited_by": 0
+     }
+    ]
+   }
+  }
+ }
+}

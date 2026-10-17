@@ -1,0 +1,607 @@
+{
+ "schema": "m2a.phase1prime.epmc.v1",
+ "note": "raw Europe PMC hits, UNVERIFIED and not citable",
+ "families": {
+  "K4": {
+   "costimulation": {
+    "query": "TITLE_ABS:\"costimulation\" AND TITLE_ABS:\"T cell\" AND (TITLE_ABS:\"synergy\" OR TITLE_ABS:\"cooperat\")",
+    "hits": [
+     {
+      "doi": "10.1038/ni.2018",
+      "pmid": "21739670",
+      "title": "Normal T cell homeostasis: the conversion of naive cells into memory-phenotype cells.",
+      "year": "2011",
+      "venue": null,
+      "first_author": "Sprent J",
+      "cited_by": 413,
+      "abstract": "Weak T cell antigen receptor (TCR) signals from contact with self ligands act in synergy with antiapoptotic signals induced by interleukin 7 (IL-7) to promote the survival of naive T cells in a resting state. The amount of background TCR signaling in naive T cells is set by post-thymic TCR tuning and operates at an intensity just below that required to induce entry into the cell cycle. Costimulation from higher concentrations of IL-7 and other common γ-chain cytokines can induce T cells to under"
+     },
+     {
+      "doi": "10.1084/jem.20031591",
+      "pmid": "15007094",
+      "title": "Combined TLR and CD40 triggering induces potent CD8+ T cell expansion with variable dependence on type I IFN.",
+      "year": "2004",
+      "venue": null,
+      "first_author": "Ahonen CL",
+      "cited_by": 301,
+      "abstract": "Toll-like receptors are important in the activation of innate immunity, and CD40 is a molecule critical for many T and B cell responses. Whereas agonists for either pathway have been used as vaccine adjuvants, we show that a combination of Toll-like receptor (TLR)7 and CD40 agonists synergize to stimulate CD8+ T cell responses 10-20-fold greater than the use of either agonist alone. Antigen-specific CD8+ T cells elicited from combination CD40/TLR7 treatment demonstrated both lytic activities and"
+     },
+     {
+      "doi": "10.1084/jem.180.1.211",
+      "pmid": "7516408",
+      "title": "Interleukin 12 synergizes with B7/CD28 interaction in inducing efficient proliferation and cytokine production of human T cells.",
+      "year": "1994",
+      "venue": null,
+      "first_author": "Kubin M",
+      "cited_by": 227,
+      "abstract": "Several receptors and counter-receptor pairs on T cells and on antigen-presenting cells (APCs) deliver costimulatory signals to T cells during antigen presentation. The CD28 receptor on T cells with its ligand B7 represents one of the best characterized and most important examples of this costimulation. We show here that interleukin 12 (IL-12), a cytokine also produced by APCs (monocyte/macrophages and B cells) and active on T and natural killer cells, has a strong synergistic effect with the B7"
+     },
+     {
+      "doi": "10.4049/jimmunol.155.1.45",
+      "pmid": "7541426",
+      "title": "Costimulatory requirements of naive CD4+ T cells. ICAM-1 or B7-1 can costimulate naive CD4 T cell activation but both are required for optimum response.",
+      "year": "1995",
+      "venue": null,
+      "first_author": "Dubey C",
+      "cited_by": 158,
+      "abstract": "Efficient initiation of a CD4 T cell response requires both activation through the TCR and costimulation provided by molecules on APC with counterreceptors on the T cell. We investigated the relative contribution of the ICAM-1:LFA-1 and B7:CD28/CTLA-4 costimulatory pathways in naive T cell activation, using either anti-CD28 Ab or fibroblast cell lines transfected with I-Ek, which express either no costimulatory molecules, ICAM-1 alone, B7-1 alone, or ICAM-1 and B7-1 together. Peptide Ag or immob"
+     },
+     {
+      "doi": "10.1126/scitranslmed.3000116",
+      "pmid": "20371478",
+      "title": "Inducing CTLA-4-dependent immune regulation by selective CD28 blockade promotes regulatory T cells in organ transplantation.",
+      "year": "2010",
+      "venue": null,
+      "first_author": "Poirier N",
+      "cited_by": 128,
+      "abstract": "Transplantation is the treatment of choice for patients with end-stage organ failure. Its success is limited by side effects of immunosuppressive drugs, such as inhibitors of the calcineurin pathway that prevent rejection by reducing synthesis of interleukin-2 by T cells. Moreover, none of the existing drugs efficiently prevent the eventual rejection of the organ. Blocking the CD28-mediated T cell costimulation pathway is a nontoxic alternative immunosuppression strategy that is now achieved by "
+     },
+     {
+      "doi": "10.1084/jem.185.1.1",
+      "pmid": "8996237",
+      "title": "Costimulation of T cell activation by integrin-associated protein (CD47) is an adhesion-dependent, CD28-independent signaling pathway.",
+      "year": "1997",
+      "venue": null,
+      "first_author": "Reinhold MI",
+      "cited_by": 128,
+      "abstract": "The integrin-associated protein (IAP, CD47) is a 50-kD plasma membrane protein with a single extracellular immunoglobulin variable (IgV)-like domain, a multiply membrane-spanning segment, and alternatively spliced short cytoplasmic tails. On neutrophils, IAP has been shown to function in a signaling complex with beta 3 integrins. However, the function of IAP on T cells, which express little or no beta 3 integrin, is not yet defined. Here, we show that mAbs recognizing IAP can enhance proliferati"
+     },
+     {
+      "doi": "10.1084/jem.20030242",
+      "pmid": "12847135",
+      "title": "Cooperative B7-1/2 (CD80/CD86) and B7-DC costimulation of CD4+ T cells independent of the PD-1 receptor.",
+      "year": "2003",
+      "venue": null,
+      "first_author": "Shin T",
+      "cited_by": 124,
+      "abstract": "B7-DC is a recently discovered member of the B7 family that binds to PD-1 and is selectively expressed by dendritic cells (DCs). It has been shown to either costimulate or inhibit T cell responses. To assess the role of B7-DC in DC-T cell interactions, DCs from B7-DC knockout (KO) mice were generated and compared with DCs from wild-type (WT) and B7-1/B7-2 double KO mice. B7-1/B7-2-deficient DCs, while strongly diminished in their ability to stimulate naive CD4+ T cells, nonetheless retain partia"
+     },
+     {
+      "doi": "10.1172/jci115092",
+      "pmid": "1825666",
+      "title": "Glucocorticoids increase the synthesis of immunoglobulin E by interleukin 4-stimulated human lymphocytes.",
+      "year": "1991",
+      "venue": null,
+      "first_author": "Wu CY",
+      "cited_by": 119,
+      "abstract": "This study indicates that hydrocortisone (HC) markedly increases the synthesis of immunoglobulin E (IgE) by interleukin 4 (IL-4)-stimulated human lymphocytes. The effect is glucocorticoid specific and is obtained with low concentrations of HC (0.1-10 microM). In both the early and the late phase of the IL-4-induced response HC exerts its effects which are respectively IL-4 dependent and IL-4 independent. The IgE potentiation cannot be explained by the inhibition of interferon-gamma (IFN-gamma) p"
+     }
+    ]
+   },
+   "multisensory": {
+    "query": "TITLE_ABS:\"multisensory integration\" AND TITLE_ABS:\"optimal\"",
+    "hits": [
+     {
+      "doi": "10.1038/nn.2983",
+      "pmid": "22101645",
+      "title": "Neural correlates of reliability-based cue weighting during multisensory integration.",
+      "year": "2011",
+      "venue": null,
+      "first_author": "Fetsch CR",
+      "cited_by": 377,
+      "abstract": "Integration of multiple sensory cues is essential for precise and accurate perception and behavioral performance, yet the reliability of sensory signals can vary across modalities and viewing conditions. Human observers typically employ the optimal strategy of weighting each cue in proportion to its reliability, but the neural basis of this computation remains poorly understood. We trained monkeys to perform a heading discrimination task from visual and vestibular cues, varying cue reliability r"
+     },
+     {
+      "doi": "10.1016/j.conb.2009.06.008",
+      "pmid": "19616425",
+      "title": "Multisensory integration: psychophysics, neurophysiology, and computation.",
+      "year": "2009",
+      "venue": null,
+      "first_author": "Angelaki DE",
+      "cited_by": 279,
+      "abstract": "Fundamental observations and principles derived from traditional physiological studies of multisensory integration have been difficult to reconcile with computational and psychophysical studies that share the foundation of probabilistic (Bayesian) inference. We review recent work on multisensory integration, focusing on experiments that bridge single-cell electrophysiology, psychophysics, and computational principles. These studies show that multisensory (visual-vestibular) neurons can account f"
+     },
+     {
+      "doi": "10.1038/nrn914",
+      "pmid": "12209122",
+      "title": "A computational perspective on the neural basis of multisensory spatial representations.",
+      "year": "2002",
+      "venue": null,
+      "first_author": "Pouget A",
+      "cited_by": 279,
+      "abstract": "We argue that current theories of multisensory representations are inconsistent with the existence of a large proportion of multimodal neurons with gain fields and partially shifting receptive fields. Moreover, these theories do not fully resolve the recoding and statistical issues involved in multisensory integration. An alternative theory, which we have recently developed and review here, has important implications for the idea of 'frame of reference' in neural spatial representations. This th"
+     },
+     {
+      "doi": "10.1385/ni:3:2:093",
+      "pmid": "15988040",
+      "title": "Statistical criteria in FMRI studies of multisensory integration.",
+      "year": "2005",
+      "venue": null,
+      "first_author": "Beauchamp MS.",
+      "cited_by": 191,
+      "abstract": "Inferences drawn from functional magnetic resonance imaging (fMRI) studies are dependent on the statistical criteria used to define different brain regions as \"active\" or \"inactive\" under the experimental manipulation. In fMRI studies of multisensory integration, additional criteria are used to classify a subset of the active brain regions as \"multisensory.\" Because there is no general agreement in the literature on the optimal criteria for performing this classification, we investigated the eff"
+     },
+     {
+      "doi": "10.1007/s004220050527",
+      "pmid": "10365423",
+      "title": "A multisensory integration model of human stance control.",
+      "year": "1999",
+      "venue": null,
+      "first_author": "van der Kooij H",
+      "cited_by": 172,
+      "abstract": "A model is presented to study and quantify the contribution of all available sensory information to human standing based on optimal estimation theory. In the model, delayed sensory information is integrated in such a way that a best estimate of body orientation is obtained. The model approach agrees with the present theory of the goal of human balance control. The model is not based on purely inverted pendulum body dynamics, but rather on a three-link segment model of a standing human on a movab"
+     },
+     {
+      "doi": "10.1111/j.1600-0404.2010.01417.x",
+      "pmid": "20726844",
+      "title": "Current trends in stroke rehabilitation. A review with focus on brain plasticity.",
+      "year": "2011",
+      "venue": null,
+      "first_author": "Johansson BB.",
+      "cited_by": 151,
+      "abstract": "Current understanding of brain plasticity has lead to new approaches in ischemic stroke rehabilitation. Stroke units that combine good medical and nursing care with task-oriented intense training in an environment that provides confidence, stimulation and motivation significantly improve outcome. Repetitive trans-cranial magnetic stimulation (rTMS), and trans-cranial direct current stimulation (tDCS) are applied in rehabilitation of motor function. The long-term effect, optimal way of stimulatio"
+     },
+     {
+      "doi": "10.1016/j.cub.2011.11.039",
+      "pmid": "22177899",
+      "title": "When correlation implies causation in multisensory integration.",
+      "year": "2012",
+      "venue": null,
+      "first_author": "Parise CV",
+      "cited_by": 148,
+      "abstract": "Inferring which signals have a common underlying cause, and hence should be integrated, represents a primary challenge for a perceptual system dealing with multiple sensory inputs [1-3]. This challenge is often referred to as the correspondence problem or causal inference. Previous research has demonstrated that spatiotemporal cues, along with prior knowledge, are exploited by the human brain to solve this problem [4-9]. Here we explore the role of correlation between the fine temporal structure"
+     },
+     {
+      "doi": "10.1016/j.jphysparis.2004.03.011",
+      "pmid": "15477036",
+      "title": "Bayesian multisensory integration and cross-modal spatial links.",
+      "year": "2004",
+      "venue": null,
+      "first_author": "Deneve S",
+      "cited_by": 144,
+      "abstract": "Our perception of the word is the result of combining information between several senses, such as vision, audition and proprioception. These sensory modalities use widely different frames of reference to represent the properties and locations of object. Moreover, multisensory cues come with different degrees of reliability, and the reliability of a given cue can change in different contexts. The Bayesian framework--which we describe in this review--provides an optimal solution to deal with this "
+     }
+    ]
+   },
+   "coincidence": {
+    "query": "TITLE_ABS:\"coincidence detection\" AND TITLE_ABS:\"neuron\"",
+    "hits": [
+     {
+      "doi": "10.1523/jneurosci.0013-05.2005",
+      "pmid": "15843607",
+      "title": "Nociceptor and hair cell transducer properties of TRPA1, a channel for pain and hearing.",
+      "year": "2005",
+      "venue": null,
+      "first_author": "Nagata K",
+      "cited_by": 473,
+      "abstract": "Mechanosensory channels of sensory cells mediate the sensations of hearing, touch, and some forms of pain. The TRPA1 (a member of the TRP family of ion channel proteins) channel is activated by pain-producing chemicals, and its inhibition impairs hair cell mechanotransduction. As shown here and previously, TRPA1 is expressed by hair cells as well as by most nociceptors (small neurons of dorsal root, trigeminal, and nodose ganglia) and localizes to their sensory terminals (mechanosensory stereoci"
+     },
+     {
+      "doi": "10.1016/s0166-2236(96)80019-1",
+      "pmid": "8658595",
+      "title": "Integrator or coincidence detector? The role of the cortical neuron revisited.",
+      "year": "1996",
+      "venue": null,
+      "first_author": "König P",
+      "cited_by": 412,
+      "abstract": "Neurons can operate in two distinct ways, depending on the duration of the interval over which they effectively summate incoming synaptic potentials. If this interval is of the order of the mean interspike interval or longer, neurons act effectively as temporal integrators and transmit temporal patterns with only low reliability. If, by contrast, the integration interval is short compared to the interspike interval, neurons act essentially as coincidence detectors, relay preferentially synchroni"
+     },
+     {
+      "doi": "10.1038/30505",
+      "pmid": "9607764",
+      "title": "The role of dendrites in auditory coincidence detection.",
+      "year": "1998",
+      "venue": null,
+      "first_author": "Agmon-Snir H",
+      "cited_by": 252,
+      "abstract": "Coincidence-detector neurons in the auditory brainstem of mammals and birds use interaural time differences to localize sounds. Each neuron receives many narrow-band inputs from both ears and compares the time of arrival of the inputs with an accuracy of 10-100 micros. Neurons that receive low-frequency auditory inputs (up to about 2 kHz) have bipolar dendrites, and each dendrite receives inputs from only one ear. Using a simple model that mimics the essence of the known electrophysiology and ge"
+     },
+     {
+      "doi": "10.1523/jneurosci.19-06-01976.1999",
+      "pmid": "10066251",
+      "title": "Mechanisms of calcium influx into hippocampal spines: heterogeneity among spines, coincidence detection by NMDA receptors, and optical quantal analysis.",
+      "year": "1999",
+      "venue": null,
+      "first_author": "Yuste R",
+      "cited_by": 218,
+      "abstract": "Dendritic spines receive most excitatory inputs in the vertebrate brain, but their function is still poorly understood. Using two-photon calcium imaging of CA1 pyramidal neurons in rat hippocampal slices, we investigated the mechanisms by which calcium enters into individual spines in the stratum radiatum. We find three different pathways for calcium influx: high-threshold voltage-sensitive calcium channels, NMDA receptors, and an APV-resistant influx consistent with calcium-permeable AMPA or ka"
+     },
+     {
+      "doi": "10.1523/jneurosci.0261-14.2014",
+      "pmid": "24990919",
+      "title": "Fluctuations in oscillation frequency control spike timing and coordinate neural networks.",
+      "year": "2014",
+      "venue": null,
+      "first_author": "Cohen MX.",
+      "cited_by": 164,
+      "abstract": "Neuroscience research spans multiple spatiotemporal scales, from subsecond dynamics of individual neurons to the slow coordination of billions of neurons during resting state and sleep. Here it is shown that a single functional principle-temporal fluctuations in oscillation peak frequency (\"frequency sliding\")-can be used as a common analysis approach to bridge multiple scales within neuroscience. Frequency sliding is demonstrated in simulated neural networks and in human EEG data during a visua"
+     },
+     {
+      "doi": "10.1038/s41467-020-17215-3",
+      "pmid": "32636385",
+      "title": "Spiking neurons with spatiotemporal dynamics and gain modulation for monolithically integrated memristive neural networks.",
+      "year": "2020",
+      "venue": null,
+      "first_author": "Duan Q",
+      "cited_by": 101,
+      "abstract": "As a key building block of biological cortex, neurons are powerful information processing units and can achieve highly complex nonlinear computations even in individual cells. Hardware implementation of artificial neurons with similar capability is of great significance for the construction of intelligent, neuromorphic systems. Here, we demonstrate an artificial neuron based on NbO<sub>x</sub> volatile memristor that not only realizes traditional all-or-nothing, threshold-driven spiking and spat"
+     },
+     {
+      "doi": "10.1523/jneurosci.5284-05.2006",
+      "pmid": "16707795",
+      "title": "Dendritic calcium spikes are tunable triggers of cannabinoid release and short-term synaptic plasticity in cerebellar Purkinje neurons.",
+      "year": "2006",
+      "venue": null,
+      "first_author": "Rancz EA",
+      "cited_by": 101,
+      "abstract": "Understanding the relationship between dendritic excitability and synaptic plasticity is vital for determining how dendrites regulate the input-output function of the neuron. Dendritic calcium spikes have been associated with the induction of long-term changes in synaptic efficacy. Here we use direct recordings from cerebellar Purkinje cell dendrites to show that synaptically activated local dendritic calcium spikes are potent triggers of cannabinoid release, producing a profound and short-term "
+     },
+     {
+      "doi": "10.1523/jneurosci.4428-04.2005",
+      "pmid": "15728832",
+      "title": "Tonotopic specialization of auditory coincidence detection in nucleus laminaris of the chick.",
+      "year": "2005",
+      "venue": null,
+      "first_author": "Kuba H",
+      "cited_by": 98,
+      "abstract": "The interaural time difference (ITD) is a cue for localizing a sound source along the horizontal plane and is first determined in the nucleus laminaris (NL) in birds. Neurons in NL are tonotopically organized, such that ITDs are processed separately at each characteristic frequency (CF). Here, we investigated the excitability and coincidence detection of neurons along the tonotopic axis in NL, using a chick brainstem slice preparation. Systematic changes with CF were observed in morphological an"
+     }
+    ]
+   }
+  },
+  "K10": {
+   "task_switching": {
+    "query": "TITLE_ABS:\"task switching\" AND TITLE_ABS:\"reconfiguration\"",
+    "hits": [
+     {
+      "doi": "10.1016/s1364-6613(03)00028-7",
+      "pmid": "12639695",
+      "title": "Task switching.",
+      "year": "2003",
+      "venue": null,
+      "first_author": "Monsell S.",
+      "cited_by": 1878,
+      "abstract": "Everyday life requires frequent shifts between cognitive tasks. Research reviewed in this article probes the control processes that reconfigure mental resources for a change of task by requiring subjects to switch frequently among a small set of simple tasks. Subjects' responses are substantially slower and, usually, more error-prone immediately after a task switch. This 'switch cost' is reduced, but not eliminated, by an opportunity for preparation. It seems to result from both transient and lo"
+     },
+     {
+      "doi": "10.1037/a0019791",
+      "pmid": "20565170",
+      "title": "Task switching: interplay of reconfiguration and interference control.",
+      "year": "2010",
+      "venue": null,
+      "first_author": "Vandierendonck A",
+      "cited_by": 448,
+      "abstract": "The task-switching paradigm is being increasingly used as a tool for studying cognitive control and task coordination. Different procedural variations have been developed. They have in common that a comparison is made between transitions in which the previous task is repeated and transitions that involve a change toward another task. In general, a performance switch cost is observed such that switching to a new task results in a slower and more error-prone execution of the task. The present arti"
+     },
+     {
+      "doi": "10.1016/j.tics.2017.03.010",
+      "pmid": "28454719",
+      "title": "Prioritizing Information during Working Memory: Beyond Sustained Internal Attention.",
+      "year": "2017",
+      "venue": null,
+      "first_author": "Myers NE",
+      "cited_by": 303,
+      "abstract": "Working memory (WM) has limited capacity. This leaves attention with the important role of allowing into storage only the most relevant information. It is increasingly evident that attention is equally crucial for prioritizing representations within WM as the importance of individual items changes. Retrospective prioritization has been proposed to result from a focus of internal attention highlighting one of several representations. Here, we suggest an updated model, in which prioritization acts"
+     },
+     {
+      "doi": "10.1093/cercor/bhi127",
+      "pmid": "16000652",
+      "title": "Neural evidence for dissociable components of task-switching.",
+      "year": "2006",
+      "venue": null,
+      "first_author": "Crone EA",
+      "cited_by": 272,
+      "abstract": "The ability to retrieve and flexibly switch between task rules is seen as an important component of cognitive control. It is often assumed that lateral prefrontal cortex (latPFC) is important for switching between rules. However, activation associated with rule-switching is less reliably observed in latPFC than in medial PFC (specifically, pre-supplementary motor area). In this study, we tested the hypothesis that medial PFC is important for reconfiguration of task sets, whereas latPFC is import"
+     },
+     {
+      "doi": "10.1162/089892904323057335",
+      "pmid": "15165351",
+      "title": "Decomposing components of task preparation with functional magnetic resonance imaging.",
+      "year": "2004",
+      "venue": null,
+      "first_author": "Brass M",
+      "cited_by": 224,
+      "abstract": "It is widely acknowledged that the prefrontal cortex plays a major role in cognitive control processes. One important experimental paradigm for investigating such higher order cognitive control is the task-switching paradigm. This paradigm investigates the ability to switch flexibly between different task situations. In this context, it has been found that participants are able to anticipatorily prepare an upcoming task. This ability has been assumed to reflect endogenous cognitive control. Howe"
+     },
+     {
+      "doi": "10.1007/s004269900005",
+      "pmid": "11004879",
+      "title": "Reconfiguration of task-set: is it easier to switch to the weaker task?",
+      "year": "2000",
+      "venue": null,
+      "first_author": "Monsell S",
+      "cited_by": 162,
+      "abstract": "Switching between two tasks afforded by the same stimuli results in slower reactions and more errors on the first stimulus after the task changes. This \"switch cost\" is reduced, but not usually eliminated, by the opportunity to prepare for a task switch. While there is agreement that this preparation effect indexes a control process performed before the stimulus, the \"residual\" cost has been attributed to several sources: to a control process essential for task-set reconfiguration that can be ca"
+     },
+     {
+      "doi": "10.1111/j.1469-8986.2005.00350.x",
+      "pmid": "16176376",
+      "title": "Electrophysiological correlates of anticipatory task-switching processes.",
+      "year": "2005",
+      "venue": null,
+      "first_author": "Nicholson R",
+      "cited_by": 140,
+      "abstract": "Recent studies show a differential switch-related positivity emerging before a switch trial and reflecting anticipatory task-set reconfiguration processes. In this study, the switch-related positivity was examined in a cued task-switching paradigm. Cue-stimulus and response-stimulus intervals were independently manipulated to dissociate between the effects of anticipatory preparation and passive dissipation of task-set interference. Reaction time switch cost declined with increasing cue-stimulus"
+     },
+     {
+      "doi": "10.1037/0096-3445.134.3.343",
+      "pmid": "16131268",
+      "title": "Modeling task switching without switching tasks: a short-term priming account of explicitly cued performance.",
+      "year": "2005",
+      "venue": null,
+      "first_author": "Schneider DW",
+      "cited_by": 109,
+      "abstract": "Switch costs in task switching are commonly attributed to an executive control process of task-set reconfiguration, particularly in studies involving the explicit task-cuing procedure. The authors propose an alternative account of explicitly cued performance that is based on 2 mechanisms: priming of cue encoding from residual activation of cues in short-term memory and compound cue retrieval of responses from long-term memory. Their short-term priming account explains the repeated cue encoding b"
+     }
+    ]
+   },
+   "cell_fate": {
+    "query": "TITLE_ABS:\"cell fate\" AND TITLE_ABS:\"reprogramming\" AND TITLE_ABS:\"transcription factor\"",
+    "hits": [
+     {
+      "doi": "10.1038/nature08195",
+      "pmid": "19578358",
+      "title": "miR-145 and miR-143 regulate smooth muscle cell fate and plasticity.",
+      "year": "2009",
+      "venue": null,
+      "first_author": "Cordes KR",
+      "cited_by": 1330,
+      "abstract": "MicroRNAs (miRNAs) are regulators of myriad cellular events, but evidence for a single miRNA that can efficiently differentiate multipotent stem cells into a specific lineage or regulate direct reprogramming of cells into an alternative cell fate has been elusive. Here we show that miR-145 and miR-143 are co-transcribed in multipotent murine cardiac progenitors before becoming localized to smooth muscle cells, including neural crest stem-cell-derived vascular smooth muscle cells. miR-145 and miR"
+     },
+     {
+      "doi": "10.1038/nrm.2016.8",
+      "pmid": "26883003",
+      "title": "A decade of transcription factor-mediated reprogramming to pluripotency.",
+      "year": "2016",
+      "venue": null,
+      "first_author": "Takahashi K",
+      "cited_by": 680,
+      "abstract": "The past 10 years have seen great advances in our ability to manipulate cell fate, including the induction of pluripotency in vitro to generate induced pluripotent stem cells (iPSCs). This process proved to be remarkably simple from a technical perspective, only needing the host cell and a defined cocktail of transcription factors, with four factors - octamer-binding protein 3/4 (OCT3/4), SOX2, Krüppel-like factor 4 (KLF4) and MYC (collectively referred to as OSKM) - initially used. The mechanis"
+     },
+     {
+      "doi": "10.1038/s41580-021-00335-z",
+      "pmid": "33619373",
+      "title": "Direct cell reprogramming: approaches, mechanisms and progress.",
+      "year": "2021",
+      "venue": null,
+      "first_author": "Wang H",
+      "cited_by": 385,
+      "abstract": "The reprogramming of somatic cells with defined factors, which converts cells from one lineage into cells of another, has greatly reshaped our traditional views on cell identity and cell fate determination. Direct reprogramming (also known as transdifferentiation) refers to cell fate conversion without transitioning through an intermediary pluripotent state. Given that the number of cell types that can be generated by direct reprogramming is rapidly increasing, it has become a promising strategy"
+     },
+     {
+      "doi": "10.1016/j.cmet.2013.12.002",
+      "pmid": "24506867",
+      "title": "Pdx1 maintains β cell identity and function by repressing an α cell program.",
+      "year": "2014",
+      "venue": null,
+      "first_author": "Gao T",
+      "cited_by": 364,
+      "abstract": "Pdx1 is a homeobox-containing transcription factor that plays a key role in pancreatic development and adult β cell function. In this study, we traced the fate of adult β cells after Pdx1 deletion. As expected, β-cell-specific removal of Pdx1 resulted in severe hyperglycemia within days. Surprisingly, a large fraction of Pdx1-deleted cells rapidly acquired ultrastructural and physiological features of α cells, indicating that a robust cellular reprogramming had occurred. Reprogrammed cells exhib"
+     },
+     {
+      "doi": "10.1038/s42255-020-0267-9",
+      "pmid": "32839595",
+      "title": "Glis1 facilitates induction of pluripotency via an epigenome-metabolome-epigenome signalling cascade.",
+      "year": "2020",
+      "venue": null,
+      "first_author": "Li L",
+      "cited_by": 297,
+      "abstract": "Somatic cell reprogramming provides insight into basic principles of cell fate determination, which remain poorly understood. Here we show that the transcription factor Glis1 induces multi-level epigenetic and metabolic remodelling in stem cells that facilitates the induction of pluripotency. We find that Glis1 enables reprogramming of senescent cells into pluripotent cells and improves genome stability. During early phases of reprogramming, Glis1 directly binds to and opens chromatin at glycoly"
+     },
+     {
+      "doi": "10.1038/ncomms3183",
+      "pmid": "23873306",
+      "title": "Small molecules enable neurogenin 2 to efficiently convert human fibroblasts into cholinergic neurons.",
+      "year": "2013",
+      "venue": null,
+      "first_author": "Liu ML",
+      "cited_by": 289,
+      "abstract": "Cell fate can be reprogrammed by modifying intrinsic and extrinsic cues. Here we show that two small molecules (forskolin and dorsomorphin) enable the transcription factor Neurogenin 2 (NGN2) to convert human fetal lung fibroblasts into cholinergic neurons with high purity (>90%) and efficiency (up to 99% of NGN2-expressing cells). The conversion is direct without passing through a proliferative progenitor state. These human induced cholinergic neurons (hiCN) show mature electrophysiological pro"
+     },
+     {
+      "doi": "10.1038/nature12417",
+      "pmid": "23913270",
+      "title": "Induction of mouse germ-cell fate by transcription factors in vitro.",
+      "year": "2013",
+      "venue": null,
+      "first_author": "Nakaki F",
+      "cited_by": 262,
+      "abstract": "The germ-cell lineage ensures the continuity of life through the generation of male and female gametes, which unite to form a totipotent zygote. We have previously demonstrated that, by using cytokines, embryonic stem cells and induced pluripotent stem cells can be induced into epiblast-like cells (EpiLCs) and then into primordial germ cell (PGC)-like cells with the capacity for both spermatogenesis and oogenesis, creating an opportunity for understanding and regulating mammalian germ-cell devel"
+     },
+     {
+      "doi": "10.15252/embj.201591206",
+      "pmid": "26516211",
+      "title": "NeuroD1 reprograms chromatin and transcription factor landscapes to induce the neuronal program.",
+      "year": "2016",
+      "venue": null,
+      "first_author": "Pataskar A",
+      "cited_by": 260,
+      "abstract": "Cell fate specification relies on the action of critical transcription factors that become available at distinct stages of embryonic development. One such factor is NeuroD1, which is essential for eliciting the neuronal development program and possesses the ability to reprogram other cell types into neurons. Given this capacity, it is important to understand its targets and the mechanism underlying neuronal specification. Here, we show that NeuroD1 directly binds regulatory elements of neuronal "
+     }
+    ]
+   }
+  },
+  "K9": {
+   "selectivity_filter": {
+    "query": "TITLE_ABS:\"selectivity filter\" AND TITLE_ABS:\"potassium channel\"",
+    "hits": [
+     {
+      "doi": "10.1126/science.280.5360.69",
+      "pmid": "9525859",
+      "title": "The structure of the potassium channel: molecular basis of K+ conduction and selectivity.",
+      "year": "1998",
+      "venue": null,
+      "first_author": "Doyle DA",
+      "cited_by": 4788,
+      "abstract": "The potassium channel from Streptomyces lividans is an integral membrane protein with sequence similarity to all known K+ channels, particularly in the pore region. X-ray analysis with data to 3.2 angstroms reveals that four identical subunits create an inverted teepee, or cone, cradling the selectivity filter of the pore in its outer end. The narrow selectivity filter is only 12 angstroms long, whereas the remainder of the pore is wider and lined with hydrophobic amino acids. A large water-fill"
+     },
+     {
+      "doi": "10.1038/nature10238",
+      "pmid": "21743477",
+      "title": "The crystal structure of a voltage-gated sodium channel.",
+      "year": "2011",
+      "venue": null,
+      "first_author": "Payandeh J",
+      "cited_by": 1118,
+      "abstract": "Voltage-gated sodium (Na(V)) channels initiate electrical signalling in excitable cells and are the molecular targets for drugs and disease mutations, but the structural basis for their voltage-dependent activation, ion selectivity and drug block is unknown. Here we report the crystal structure of a voltage-gated Na(+) channel from Arcobacter butzleri (NavAb) captured in a closed-pore conformation with four activated voltage sensors at 2.7 Å resolution. The arginine gating charges make multiple "
+     },
+     {
+      "doi": "10.1016/j.cell.2017.03.048",
+      "pmid": "28431243",
+      "title": "Cryo-EM Structure of the Open Human Ether-à-go-go-Related K<sup>+</sup> Channel hERG.",
+      "year": "2017",
+      "venue": null,
+      "first_author": "Wang W",
+      "cited_by": 449,
+      "abstract": "The human ether-à-go-go-related potassium channel (hERG, Kv11.1) is a voltage-dependent channel known for its role in repolarizing the cardiac action potential. hERG alteration by mutation or pharmacological inhibition produces Long QT syndrome and the lethal cardiac arrhythmia torsade de pointes. We have determined the molecular structure of hERG to 3.8 Å using cryo-electron microscopy. In this structure, the voltage sensors adopt a depolarized conformation, and the pore is open. The central ca"
+     },
+     {
+      "doi": "10.1016/j.bmc.2005.12.032",
+      "pmid": "16413785",
+      "title": "New insights about HERG blockade obtained from protein modeling, potential energy mapping, and docking studies.",
+      "year": "2006",
+      "venue": null,
+      "first_author": "Farid R",
+      "cited_by": 389,
+      "abstract": "We created a homology model of the homo-tetrameric pore domain of HERG using the crystal structure of the bacterial potassium channel, KvAP, as a template. We docked a set of known blockers with well-characterized effects on channel function into the lumen of the pore between the selectivity filter and extracellular entrance using a novel docking and refinement procedure incorporating Glide and Prime. Key aromatic groups of the blockers are predicted to form multiple simultaneous ring stacking a"
+     },
+     {
+      "doi": "10.1038/nsmb1069",
+      "pmid": "16532009",
+      "title": "Molecular determinants of gating at the potassium-channel selectivity filter.",
+      "year": "2006",
+      "venue": null,
+      "first_author": "Cordero-Morales JF",
+      "cited_by": 369,
+      "abstract": "We show that in the potassium channel KcsA, proton-dependent activation is followed by an inactivation process similar to C-type inactivation, and this process is suppressed by an E71A mutation in the pore helix. EPR spectroscopy demonstrates that the inner gate opens maximally at low pH regardless of the magnitude of the single-channel-open probability, implying that stationary gating originates mostly from rearrangements at the selectivity filter. Two E71A crystal structures obtained at 2.5 A "
+     },
+     {
+      "doi": "10.1038/35009114",
+      "pmid": "10786795",
+      "title": "Ion permeation mechanism of the potassium channel.",
+      "year": "2000",
+      "venue": null,
+      "first_author": "Aqvist J",
+      "cited_by": 308,
+      "abstract": "Ion-selective channels enable the specific permeation of ions through cell membranes and provide the basis of several important biological functions; for example, electric signalling in the nervous system. Although a large amount of electrophysiological data is available, the molecular mechanisms by which these channels can mediate ion transport remain a significant unsolved problem. With the recently determined crystal structure of the representative K+ channel (KcsA) from Streptomyces lividans"
+     },
+     {
+      "doi": "10.1126/science.1213274",
+      "pmid": "22282804",
+      "title": "Crystal structure of the human two-pore domain potassium channel K2P1.",
+      "year": "2012",
+      "venue": null,
+      "first_author": "Miller AN",
+      "cited_by": 278,
+      "abstract": "Two-pore domain potassium (K(+)) channels (K2P channels) control the negative resting potential of eukaryotic cells and regulate cell excitability by conducting K(+) ions across the plasma membrane. Here, we present the 3.4 angstrom resolution crystal structure of a human K2P channel, K2P1 (TWIK-1). Unlike other K(+) channel structures, K2P1 is dimeric. An extracellular cap domain located above the selectivity filter forms an ion pathway in which K(+) ions flow through side portals. Openings wit"
+     },
+     {
+      "doi": "10.1074/jbc.m000030200",
+      "pmid": "10747866",
+      "title": "TASK-3, a novel tandem pore domain acid-sensitive K+ channel. An extracellular histiding as pH sensor.",
+      "year": "2000",
+      "venue": null,
+      "first_author": "Rajan S",
+      "cited_by": 260,
+      "abstract": "Tandem pore domain acid-sensitive K(+) channel 3 (TASK-3) is a new member of the tandem pore domain potassium channel family. A cDNA encoding a 365- amino acid polypeptide with four putative transmembrane segments and two pore regions was isolated from guinea pig brain. An orthologous sequence was cloned from a human genomic library. Although TASK-3 is 62% identical to TASK-1, the cytosolic C-terminal sequence is only weakly conserved. Analysis of the gene structure identified an intron within t"
+     }
+    ]
+   },
+   "enzyme_specificity": {
+    "query": "TITLE_ABS:\"substrate specificity\" AND TITLE_ABS:\"enzyme\" AND TITLE_ABS:\"mechanism\"",
+    "hits": [
+     {
+      "doi": "10.1021/acs.chemrev.8b00672",
+      "pmid": "30801188",
+      "title": "Nanozymes: Classification, Catalytic Mechanisms, Activity Regulation, and Applications.",
+      "year": "2019",
+      "venue": null,
+      "first_author": "Huang Y",
+      "cited_by": 1948,
+      "abstract": "Because of the high catalytic activities and substrate specificity, natural enzymes have been widely used in industrial, medical, and biological fields, etc. Although promising, they often suffer from intrinsic shortcomings such as high cost, low operational stability, and difficulties of recycling. To overcome these shortcomings, researchers have been devoted to the exploration of artificial enzyme mimics for a long time. Since the discovery of ferromagnetic nanoparticles with intrinsic horsera"
+     },
+     {
+      "doi": "10.1146/annurev.biochem.70.1.81",
+      "pmid": "11395403",
+      "title": "Histone acetyltransferases.",
+      "year": "2001",
+      "venue": null,
+      "first_author": "Roth SY",
+      "cited_by": 1510,
+      "abstract": "Transcriptional regulation in eukaryotes occurs within a chromatin setting and is strongly influenced by nucleosomal barriers imposed by histone proteins. Among the well-known covalent modifications of histones, the reversible acetylation of internal lysine residues in histone amino-terminal domains has long been positively linked to transcriptional activation. Recent biochemical and genetic studies have identified several large, multisubunit enzyme complexes responsible for bringing about the t"
+     },
+     {
+      "doi": "10.1146/annurev.biochem.75.103004.142443",
+      "pmid": "16756507",
+      "title": "Ribonucleotide reductases.",
+      "year": "2006",
+      "venue": null,
+      "first_author": "Nordlund P",
+      "cited_by": 885,
+      "abstract": "Ribonucleotide reductases (RNRs) transform RNA building blocks to DNA building blocks by catalyzing the substitution of the 2'OH-group of a ribonucleotide with a hydrogen by a mechanism involving protein radicals. Three classes of RNRs employ different mechanisms for the generation of the protein radical. Recent structural studies of members from each class have led to a deeper understanding of their catalytic mechanism and allosteric regulation by nucleoside triphosphates. The main emphasis of "
+     },
+     {
+      "doi": "10.1002/1521-1878(200009)22:9<836::aid-bies9>3.0.co;2-x",
+      "pmid": "10944586",
+      "title": "Histone acetylation and an epigenetic code.",
+      "year": "2000",
+      "venue": null,
+      "first_author": "Turner BM.",
+      "cited_by": 808,
+      "abstract": "The enzyme-catalyzed acetylation of the N-terminal tail domains of core histones provides a rich potential source of epigenetic information. This may be used both to mediate transient changes in transcription, through modification of promoter-proximal nucleosomes, and for the longer-term maintenance and modulation of patterns of gene expression. The latter may be achieved by setting specific patterns of histone acetylation, perhaps involving acetylation of particular lysine residues, across rela"
+     },
+     {
+      "doi": "10.1016/0304-4165(85)90182-5",
+      "pmid": "3978121",
+      "title": "The selenoenzyme phospholipid hydroperoxide glutathione peroxidase.",
+      "year": "1985",
+      "venue": null,
+      "first_author": "Ursini F",
+      "cited_by": 662,
+      "abstract": "The reduction of membrane-bound hydroperoxides is a major factor acting against lipid peroxidation in living systems. This paper presents the characterization of the previously described 'peroxidation-inhibiting protein' as a 'phospholipid hydroperoxide glutathione peroxidase'. The enzyme is a monomer of 23 kDa (SDS-polyacrylamide gel electrophoresis). It contains one gatom Se/22 000 g protein. Se is in the selenol form, as indicated by the inactivation experiments in the presence of iodoacetate"
+     },
+     {
+      "doi": "10.1007/s00726-010-0689-x",
+      "pmid": "20640864",
+      "title": "Physiology and pathophysiology of matrix metalloproteases.",
+      "year": "2011",
+      "venue": null,
+      "first_author": "Klein T",
+      "cited_by": 608,
+      "abstract": "Matrix metalloproteases (MMPs) comprise a family of enzymes that cleave protein substrates based on a conserved mechanism involving activation of an active site-bound water molecule by a Zn(2+) ion. Although the catalytic domain of MMPs is structurally highly similar, there are many differences with respect to substrate specificity, cellular and tissue localization, membrane binding and regulation that make this a very versatile family of enzymes with a multitude of physiological functions, many"
+     },
+     {
+      "doi": "10.1073/pnas.120067297",
+      "pmid": "10829075",
+      "title": "Phospholipid:diacylglycerol acyltransferase: an enzyme that catalyzes the acyl-CoA-independent formation of triacylglycerol in yeast and plants.",
+      "year": "2000",
+      "venue": null,
+      "first_author": "Dahlqvist A",
+      "cited_by": 582,
+      "abstract": "Triacylglycerol (TAG) is known to be synthesized in a reaction that uses acyl-CoA as acyl donor and diacylglycerol (DAG) as acceptor, and which is catalyzed by the enzyme acyl-CoA:diacylglycerol acyltransferase. We have found that some plants and yeast also have an acyl-CoA-independent mechanism for TAG synthesis, which uses phospholipids as acyl donors and DAG as acceptor. This reaction is catalyzed by an enzyme that we call phospholipid:diacylglycerol acyltransferase, or PDAT. PDAT was charact"
+     },
+     {
+      "doi": "10.1128/mmbr.64.4.821-846.2000",
+      "pmid": "11104820",
+      "title": "Proteases for cell suicide: functions and regulation of caspases.",
+      "year": "2000",
+      "venue": null,
+      "first_author": "Chang HY",
+      "cited_by": 481,
+      "abstract": "Caspases are a large family of evolutionarily conserved proteases found from Caenorhabditis elegans to humans. Although the first caspase was identified as a processing enzyme for interleukin-1beta, genetic and biochemical data have converged to reveal that many caspases are key mediators of apoptosis, the intrinsic cell suicide program essential for development and tissue homeostasis. Each caspase is a cysteine aspartase; it employs a nucleophilic cysteine in its active site to cleave aspartic "
+     }
+    ]
+   }
+  }
+ }
+}
