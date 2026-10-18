@@ -1,0 +1,226 @@
+{
+  "schema": "m2a.phase22.results.v1",
+  "prereg_sha256": "389819fb5109a753c2c103734f505eacf242f1a86da943c2a451db5775e1a6ea",
+  "tolerance": {
+    "TOL": 1e-12,
+    "SENS": 1e-09,
+    "SLOPE_TOL": 1e-09
+  },
+  "classes": [
+    "M2",
+    "N0",
+    "N0.5",
+    "N1",
+    "N1.5",
+    "N2",
+    "F0",
+    "F0.5",
+    "F1",
+    "F1.5",
+    "F2"
+  ],
+  "p_grid": [
+    0.0,
+    0.5,
+    1.0,
+    1.5,
+    2.0
+  ],
+  "criteria": {
+    "C22-1 ANCHOR": true,
+    "C22-2 A-COVER-AS-PREDICTED": true,
+    "C22-3 UNIQUENESS-ACROSS-FAMILY": true,
+    "C22-4 POWER-LAW-DIRECTION": true
+  },
+  "anchor": {
+    "worst_abs_diff": 4.440892098500626e-16,
+    "per_class": {
+      "M2|S": 6.776263578034403e-21,
+      "M2|V": 6.776263578034403e-21,
+      "N0|S": 4.440892098500626e-16,
+      "N0|V": 4.440892098500626e-16,
+      "N0.5|S": 0.0,
+      "N0.5|V": 0.0,
+      "N1|S": 2.220446049250313e-16,
+      "N1|V": 2.220446049250313e-16,
+      "N1.5|S": 0.0,
+      "N1.5|V": 0.0,
+      "N2|S": 1.1102230246251565e-16,
+      "N2|V": 1.1102230246251565e-16,
+      "F0|S": 0.0,
+      "F0|V": 0.0,
+      "F0.5|S": 2.7755575615628914e-17,
+      "F0.5|V": 2.7755575615628914e-17,
+      "F1|S": 0.0,
+      "F1|V": 0.0,
+      "F1.5|S": 1.3877787807814457e-17,
+      "F1.5|V": 1.3877787807814457e-17,
+      "F2|S": 0.0,
+      "F2|V": 0.0
+    },
+    "r7_ratio_tol_over_observed": 2251.799813685248
+  },
+  "spreads": {
+    "M2": {
+      "A_spread": 0.0,
+      "S_spread": 0.006737944937931844,
+      "V_spread": 0.0
+    },
+    "N0": {
+      "A_spread": 1.9,
+      "S_spread": 0.0,
+      "V_spread": 0.0
+    },
+    "N0.5": {
+      "A_spread": 1.0979857963562574,
+      "S_spread": 1.0,
+      "V_spread": 1.0
+    },
+    "N1": {
+      "A_spread": 0.0,
+      "S_spread": 1.5,
+      "V_spread": 1.5
+    },
+    "N1.5": {
+      "A_spread": 2.455170878981832,
+      "S_spread": 7.826237921249264,
+      "V_spread": 7.826237921249264
+    },
+    "N2": {
+      "A_spread": 9.5,
+      "S_spread": 37.5,
+      "V_spread": 37.5
+    },
+    "F0": {
+      "A_spread": 0.15413786988839592,
+      "S_spread": 0.2908373971193024,
+      "V_spread": 0.0
+    },
+    "F0.5": {
+      "A_spread": 0.15803727749304314,
+      "S_spread": 0.223606797749979,
+      "V_spread": 0.223606797749979
+    },
+    "F1": {
+      "A_spread": 0.872931065055802,
+      "S_spread": 1.5,
+      "V_spread": 1.5
+    },
+    "F1.5": {
+      "A_spread": 3.072426354591185,
+      "S_spread": 7.826237921249264,
+      "V_spread": 7.826237921249264
+    },
+    "F2": {
+      "A_spread": 9.936465532527901,
+      "S_spread": 37.5,
+      "V_spread": 37.5
+    }
+  },
+  "modes": {
+    "M2": [
+      true,
+      true,
+      true
+    ],
+    "N0": [
+      false,
+      false,
+      true
+    ],
+    "N0.5": [
+      false,
+      true,
+      false
+    ],
+    "N1": [
+      true,
+      true,
+      false
+    ],
+    "N1.5": [
+      false,
+      true,
+      false
+    ],
+    "N2": [
+      false,
+      true,
+      false
+    ],
+    "F0": [
+      false,
+      true,
+      true
+    ],
+    "F0.5": [
+      false,
+      true,
+      false
+    ],
+    "F1": [
+      false,
+      true,
+      false
+    ],
+    "F1.5": [
+      false,
+      true,
+      false
+    ],
+    "F2": [
+      false,
+      true,
+      false
+    ]
+  },
+  "a_passing_classes": [
+    "M2",
+    "N1"
+  ],
+  "predicted_a_passing": [
+    "M2",
+    "N1"
+  ],
+  "all_three_passing": [
+    "M2"
+  ],
+  "slope_check": {
+    "N0": {
+      "observed": 1.0000000000000002,
+      "analytic": 1.0
+    },
+    "N0.5": {
+      "observed": 0.5000000000000002,
+      "analytic": 0.5
+    },
+    "N1": {
+      "observed": 0.0,
+      "analytic": 0.0
+    },
+    "N1.5": {
+      "observed": -0.5000000000000001,
+      "analytic": -0.5
+    },
+    "N2": {
+      "observed": -1.0000000000000007,
+      "analytic": -1.0
+    }
+  },
+  "N_family_v_spreads_by_p": [
+    0.0,
+    1.0,
+    1.5,
+    7.826237921249264,
+    37.5
+  ],
+  "N_v_spread_strictly_increasing": true,
+  "exits": {
+    "E0 ANCHOR-BROKEN": false,
+    "E1 FAMILY-MAP-AS-PREDICTED": true,
+    "E2 A-MISCLAIMS-BROADER": false,
+    "E3 UNIQUENESS-LOST": false,
+    "E4 DIRECTION-BROKEN": false
+  },
+  "exit": "E1 FAMILY-MAP-AS-PREDICTED"
+}
