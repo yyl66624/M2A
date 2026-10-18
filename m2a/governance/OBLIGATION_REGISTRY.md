@@ -11,7 +11,7 @@
 | --- | --- | --- | --- | --- | --- |
 | P5-O1 | **CLOSED** | 2 | `experiments/PHASE5_RESULTS.md:130` | 关闭类措辞 | — |
 | P5-O2 | **CLOSED** | 11 | `M2A_FINAL_REPORT.md:265` | 关闭类措辞 | — |
-| P5-O3 | **OPEN** | 2 | `experiments/PHASE5_RESULTS.md:132` | 开放类措辞 | — |
+| P5-O3 | **OPEN** | 3 | `experiments/PHASE5_RESULTS.md:132` | 开放类措辞 | — |
 | P6-O1 | **CLOSED** | 13 | `M2A_FINAL_REPORT.md:310` | 关闭类措辞 | — |
 | P6-O2 | **CLOSED** | 5 | `experiments/PHASE7_PREREGISTRATION.md:4` | 执行/沿用类措辞 | — |
 | P6-O3 | **CLOSED** | 7 | `experiments/PHASE7_PREREGISTRATION.md:51` | 执行/沿用类措辞 | — |
@@ -27,16 +27,16 @@
 | P10-O1 | **CLOSED** | 15 | `M2A_FINAL_REPORT.md:606` | 关闭类措辞 | — |
 | P10-O2 | **CLOSED** | 9 | `M2A_FINAL_REPORT.md:606` | 关闭类措辞 | — |
 | P10-O3 | **CLOSED** | 5 | `M2A_FINAL_REPORT.md:600` | 关闭类措辞 | — |
-| P11-O1 | **OPEN** | 19 | `M2A_FINAL_REPORT.md:848` | 开放类措辞 | — |
+| P11-O1 | **OPEN** | 22 | `M2A_FINAL_REPORT.md:848` | 开放类措辞 | — |
 | P11-O2 | **SUCCEEDED** | 15 | `M2A_FINAL_REPORT.md:687` | 转手类措辞 | P13-O1 |
 | P11-O3 | **CLOSED** | 13 | `experiments/PHASE13_RESULTS.md:28` | 关闭类措辞 | — |
 | P12-O1 | **SUCCEEDED** | 15 | `experiments/PHASE15_RESULTS.md:33` | 转手类措辞 | P13-O2 |
 | P12-O2 | **CLOSED** | 11 | `experiments/PHASE13_RESULTS.md:10` | 关闭类措辞 | — |
-| P12-O3 | **OPEN** | 14 | `M2A_FINAL_REPORT.md:848` | 开放类措辞 | — |
+| P12-O3 | **OPEN** | 17 | `M2A_FINAL_REPORT.md:848` | 开放类措辞 | — |
 | P13-O1 | **CLOSED** | 24 | `experiments/PHASE14_RESULTS.md:23` | 关闭类措辞 | — |
 | P13-O2 | **CLOSED** | 31 | `M2A_FINAL_REPORT.md:731` | 关闭类措辞 | — |
 | P14-O1 | **CLOSED** | 46 | `experiments/PHASE18_RESULTS.md:19` | 关闭类措辞 | — |
-| P15-O1 | **OPEN** | 6 | `M2A_FINAL_REPORT.md:848` | 开放类措辞 | — |
+| P15-O1 | **OPEN** | 8 | `M2A_FINAL_REPORT.md:848` | 开放类措辞 | — |
 | P16-O1 | **CLOSED** | 10 | `M2A_FINAL_REPORT.md:799` | 执行/沿用类措辞 | — |
 | P17-O1 | **CLOSED** | 10 | `experiments/PHASE18_PREREGISTRATION.md:1` | 关闭类措辞 | — |
 | P19-O1 | **CLOSED** | 14 | `experiments/PHASE20_RESULTS.md:64` | 关闭类措辞 | — |
@@ -50,10 +50,10 @@
 
 ## 仍开放（都需要本轮之外的授权或决定，脚本无权替 owner 关闭）
 
-- **P5-O3**：三个以上独立系统的跨域复验——真实数据未授权。
-- **P11-O1**：测度口径：静默事件与发放事件互为补集 ⇒ 双侧窗口塌缩，须先重定义判据，属模型类决策。
-- **P12-O3**：同上，发放事件一侧的测度口径，属模型类决策。
-- **P15-O1**：`e₁` 要双侧估计须换目标函数或换数据族——更细的网格无用。
+- **P5-O3**：三个以上独立系统的跨域复验——真实数据未授权；owner 2026-10-18 第 3 条裁定「继续停留在设计阶段」。
+- **P11-O1**：测度口径：静默事件与发放事件互为补集 ⇒ 双侧窗口塌缩。**已裁定**采用 Action Opportunity 统一分析单位（owner 第 1 条），协议设计稿见 `report/AO_MEASUREMENT_PROTOCOL_v1.md`；但正式实验未被自动批准，判据也未写进预注册 ⇒ 本条仍开放。
+- **P12-O3**：发放事件一侧的测度口径，同上：协议 §2 给出 `I(o)` 候选形式，预注册与读数尚未做 ⇒ 仍开放。
+- **P15-O1**：`e₁` 只给单侧界。**已裁定**保留单侧界并按 `NOT_IDENTIFIED`/`PARTIALLY_IDENTIFIED` 记录（owner 第 2、7 条），不得改目标函数制造双侧结论 ⇒ 本条作为「双侧估计」的诉求已放弃，但作为「双侧可识别」的证据缺口仍在册。
 
 ## 转手关闭（不是在原标签上关闭，如实记为 SUCCEEDED）
 
