@@ -1,0 +1,312 @@
+{
+ "schema": "m2a.vocabulary.v1.0-draft",
+ "version": "v1.0-draft",
+ "generated": "2026-10-18",
+ "derived_from": [
+  "01_COMMON_DEFINITIONS.md §1.1-§1.5",
+  "02_ANNOTATION_RULES.md §2.2",
+  "03_LAYER_TAXONOMY.md",
+  "06_MECHANISM_BRIDGE_REGISTRY.md",
+  "08_OPEN_QUESTIONS.md O-07",
+  "governance/OWNER_DECISION_2026-10-18.md item 5",
+  "literature/registry.json (106 rows)",
+  "literature/L01_coding.json (17 records)"
+ ],
+ "k_families": {
+  "K1": {
+   "zh": "触发",
+   "en": "threshold/trigger",
+   "registry_rows": 31,
+   "registry_primary": 1,
+   "l01_primary": 1,
+   "l01_auxiliary": 3
+  },
+  "K2": {
+   "zh": "抑制/门控",
+   "en": "inhibition/gate",
+   "registry_rows": 29,
+   "registry_primary": 6,
+   "l01_primary": 6,
+   "l01_auxiliary": 4
+  },
+  "K3": {
+   "zh": "竞争",
+   "en": "competition",
+   "registry_rows": 9,
+   "registry_primary": 0,
+   "l01_primary": 0,
+   "l01_auxiliary": 1
+  },
+  "K4": {
+   "zh": "协同",
+   "en": "synergy/conjunction",
+   "registry_rows": 11,
+   "registry_primary": 6,
+   "l01_primary": 0,
+   "l01_auxiliary": 2
+  },
+  "K5": {
+   "zh": "延迟/记忆",
+   "en": "delay/memory",
+   "registry_rows": 14,
+   "registry_primary": 0,
+   "l01_primary": 8,
+   "l01_auxiliary": 4
+  },
+  "K6": {
+   "zh": "反馈",
+   "en": "feedback",
+   "registry_rows": 21,
+   "registry_primary": 0,
+   "l01_primary": 0,
+   "l01_auxiliary": 4
+  },
+  "K7": {
+   "zh": "切换/滞回",
+   "en": "switching/hysteresis",
+   "registry_rows": 17,
+   "registry_primary": 0,
+   "l01_primary": 0,
+   "l01_auxiliary": 1
+  },
+  "K8": {
+   "zh": "级联",
+   "en": "cascade",
+   "registry_rows": 14,
+   "registry_primary": 0,
+   "l01_primary": 0,
+   "l01_auxiliary": 2
+  },
+  "K9": {
+   "zh": "省略/弃权",
+   "en": "omission/abstention",
+   "registry_rows": 15,
+   "registry_primary": 0,
+   "l01_primary": 1,
+   "l01_auxiliary": 0
+  },
+  "K10": {
+   "zh": "角色重排",
+   "en": "role reassignment",
+   "registry_rows": 9,
+   "registry_primary": 6,
+   "l01_primary": 0,
+   "l01_auxiliary": 3
+  },
+  "K11": {
+   "zh": "资源约束",
+   "en": "resource constraint",
+   "registry_rows": 28,
+   "registry_primary": 0,
+   "l01_primary": 1,
+   "l01_auxiliary": 1
+  },
+  "K12": {
+   "zh": "选择/适应",
+   "en": "selection/adaptation",
+   "registry_rows": 9,
+   "registry_primary": 0,
+   "l01_primary": 0,
+   "l01_auxiliary": 0
+  }
+ },
+ "layers": {
+  "L0": {
+   "zh": "形式/数学",
+   "l01_records": 3
+  },
+  "L1": {
+   "zh": "物理/化学",
+   "l01_records": 5
+  },
+  "L2": {
+   "zh": "句法/结构",
+   "l01_records": 5
+  },
+  "L3": {
+   "zh": "语义/事件/生理机制",
+   "l01_records": 13
+  },
+  "L4": {
+   "zh": "语用/话语/决策",
+   "l01_records": 6
+  },
+  "L5": {
+   "zh": "叙事/脚本",
+   "l01_records": 2
+  },
+  "L6": {
+   "zh": "社会/制度/演化",
+   "l01_records": 1
+  }
+ },
+ "axes": {
+  "D": "D+ 该条件下 motion→action 更可能发生/更强；D− 更不可能/更弱。",
+  "V": "B+ 该条件提高 motion/action 对行动者的价值；B− 降低价值。",
+  "auxiliary_marks": {
+   "NEUTRAL_VALUE": "D 有效而 V 中性",
+   "MIXED": "同机制在不同子条件分裂",
+   "UNCERTAIN": "证据不足判定"
+  }
+ },
+ "agency_classes": {
+  "AGENTIC": "motion 来源于内部模型/意图/策略（人或人工行动者的大多数行动）。",
+  "RESPONSIVE": "motion 是对外部刺激/信号的响应（反射、信号转导、触发词激活）。",
+  "MIXED": "两者交织（习惯、制度行为、RLHF 后的语言模型行为）。"
+ },
+ "event_grammar": "[MOTION SOURCE] --> [MECHANISM/GATE] --> [ACTION/INACTION] --> [OUTCOME] --> [FEEDBACK]",
+ "field_enums_from_02": {
+  "verification_level": [
+   "IDENTITY_VERIFIED",
+   "ABSTRACT_VERIFIED",
+   "FULLTEXT_REVIEWED",
+   "CLAIM_INDEPENDENTLY_CHECKED"
+  ],
+  "evidence_type": [
+   "formal_theorem",
+   "causal_intervention",
+   "observational",
+   "simulation",
+   "interpretive",
+   "analogy"
+  ],
+  "provenance": [
+   "PAPER_CLAIM",
+   "M2A_HYPOTHESIS",
+   "SUPPORTED_MECHANISM",
+   "MATHEMATICAL_ANALOGY",
+   "REFUTED_CLAIM"
+  ],
+  "d_axis": [
+   "D+",
+   "D−",
+   "neutral, v_axis: B+",
+   "B−",
+   "neutral"
+  ],
+  "agency_class": [
+   "AGENTIC",
+   "RESPONSIVE",
+   "MIXED"
+  ]
+ },
+ "bridges": [
+  {
+   "id": "B-01",
+   "title": "触发阈值（K1）：漂移扩散 × 证据累积 × 事件触发词",
+   "verdict": "ANALOGY-ONLY（偏强）"
+  },
+  {
+   "id": "B-02",
+   "title": "双稳态/滞回（K7）：信号转导 × 卵母细胞 × 社会制度",
+   "verdict": "ANALOGY-ONLY"
+  },
+  {
+   "id": "B-03",
+   "title": "反馈驱动学习（K6）：RL × 多巴胺 RPE × RLHF × 偏好学习",
+   "verdict": "VALID-BRIDGE（有条件）"
+  },
+  {
+   "id": "B-04",
+   "title": "抑制门（K2）：T 细胞检查点 × 基底节 no-go × 控制屏障函数 × LLM 拒绝方向",
+   "verdict": "ANALOGY-ONLY（四实例各自 VALID，桥为类比）"
+  },
+  {
+   "id": "B-05",
+   "title": "扩散级联（K8）：复杂传染 × 弱连接 × 叙事事件链",
+   "verdict": "VALID-BRIDGE（局部）"
+  },
+  {
+   "id": "B-06",
+   "title": "资源约束（K11）：信息容量 × 耗散功 × 适应负荷 × 满意度化 × 部分可观测",
+   "verdict": "VALID-BRIDGE（弱统一）"
+  },
+  {
+   "id": "B-07",
+   "title": "延迟与记忆（K5）：时间尺度不变性 × 延迟反馈绑定 × POMDP 信念 × 脚本",
+   "verdict": "ANALOGY-ONLY"
+  },
+  {
+   "id": "B-08",
+   "title": "省略/弃权（K9）：满意化 × 意向—行为缺口 × 道德风险 × 法律不作为",
+   "verdict": "VALID-BRIDGE（概念层）"
+  }
+ ],
+ "aggregate": {
+  "status": "PROVISIONAL",
+  "decision_wording": "AGGREGATE 暂定为派生聚合表示",
+  "open_question": "**O-07｜AGGREGATE 行动的本体地位**：Schelling（G1-04）证明宏观结构可无个体意图",
+  "consequence": "AGGREGATE may be used as a term of art for macro-patterns that no individual intends; it does NOT license attributing agency, an action, or a value to the aggregate. Any bridge that needs the aggregate to ACT must first clear a round of its own."
+ },
+ "drift": {
+  "registry_d_class_observed": {
+   "D+": 45,
+   "value-only": 13,
+   "mixed": 13,
+   "D-": 12,
+   "D±": 9,
+   "unspecified": 14
+  },
+  "alias_table": [
+   {
+    "observed": "D+",
+    "rows": 45,
+    "source": "registry.json (106 rows)",
+    "canonical": "D+ (01 §1.4)"
+   },
+   {
+    "observed": "unspecified",
+    "rows": 14,
+    "source": "registry.json (106 rows)",
+    "canonical": "UNCERTAIN (01 §1.4 辅助标记) — no direction claim made"
+   },
+   {
+    "observed": "value-only",
+    "rows": 13,
+    "source": "registry.json (106 rows)",
+    "canonical": "NEUTRAL_VALUE (01 §1.4) — 'D 有效而 V 中性'"
+   },
+   {
+    "observed": "mixed",
+    "rows": 13,
+    "source": "registry.json (106 rows)",
+    "canonical": "MIXED (01 §1.4 辅助标记)"
+   },
+   {
+    "observed": "D-",
+    "rows": 12,
+    "source": "registry.json (106 rows)",
+    "canonical": "D− (01 §1.4) — ASCII hyphen, 12 rows"
+   },
+   {
+    "observed": "D±",
+    "rows": 9,
+    "source": "registry.json (106 rows)",
+    "canonical": "MIXED (01 §1.4 辅助标记) — invented in the registry"
+   },
+   {
+    "observed": "D−",
+    "rows": 7,
+    "source": "L01_coding.json (17 records)",
+    "canonical": "D− (01 §1.4)"
+   },
+   {
+    "observed": "neutral",
+    "rows": 0,
+    "source": "L01_coding.json (17 records)",
+    "canonical": "NEUTRAL_VALUE (02 §2.2 writes the same state as d_axis: neutral)"
+   }
+  ],
+  "registry_verification_levels": {
+   "IDENTITY_VERIFIED": 104,
+   "ABSTRACT_VERIFIED": 2
+  },
+  "note": "registry.json is NOT rewritten (§5 append-only, decision 8). The alias table is the reconciliation instrument; the canonical column states which 01 §1.4 term each observed spelling means."
+ },
+ "versioning_rules": [
+  "term ids are permanent: K5 stays K5 forever; a retired family is marked DEPRECATED in a new version file, never deleted or renumbered",
+  "adding/renaming a K family or an L layer requires a new version file (v1.n) plus a hash binding; edits to a frozen 0x file are not the mechanism",
+  "every emitted count must be re-derivable by this script; a hand-typed number in the generated document is a build failure",
+  "PROVISIONAL terms (currently only AGGREGATE) may not appear in a SUPPORTED_MECHANISM claim until a round promotes them"
+ ]
+}
