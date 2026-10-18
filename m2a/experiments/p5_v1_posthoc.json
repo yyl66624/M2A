@@ -1,0 +1,96 @@
+{
+ "schema": "m2a.phase5.v1.posthoc.v1",
+ "gates_the_verdict": false,
+ "registered_before_run": false,
+ "question": "how much of the L3 residual is the learner and how much is the law's prior",
+ "rows": {
+  "0.5": {
+   "law_prior_1_2": 0.0,
+   "law_prior_2_5_state_level": 0.0,
+   "visit_weighted_closed_form": 0.0,
+   "dp_exact_operator": 0.0,
+   "mc_mean_10_seeds": 0.0024396096617298356,
+   "posterior_B_given_cue": {
+    "cue_0": 0.4,
+    "cue_1": 0.4
+   },
+   "gap_law_minus_visit_weighted": 0.0,
+   "gap_visit_weighted_minus_dp": 0.0,
+   "gap_dp_minus_mc": -0.0024396096617298356
+  },
+  "0.6": {
+   "law_prior_1_2": 0.072,
+   "law_prior_2_5_state_level": 0.0692307692307692,
+   "visit_weighted_closed_form": 0.061714285714285715,
+   "dp_exact_operator": 0.06171428571426174,
+   "mc_mean_10_seeds": 0.06179390881206574,
+   "posterior_B_given_cue": {
+    "cue_0": 0.30769230769230776,
+    "cue_1": 0.5
+   },
+   "gap_law_minus_visit_weighted": 0.01028571428571428,
+   "gap_visit_weighted_minus_dp": 2.3973878437999474e-14,
+   "gap_dp_minus_mc": -7.96230978040019e-05
+  },
+  "0.7": {
+   "law_prior_1_2": 0.144,
+   "law_prior_2_5_state_level": 0.13913043478260873,
+   "visit_weighted_closed_form": 0.1256727272727273,
+   "dp_exact_operator": 0.1256727272726781,
+   "mc_mean_10_seeds": 0.12582016691900083,
+   "posterior_B_given_cue": {
+    "cue_0": 0.22222222222222224,
+    "cue_1": 0.6086956521739131
+   },
+   "gap_law_minus_visit_weighted": 0.018327272727272692,
+   "gap_visit_weighted_minus_dp": 4.9210635566510064e-14,
+   "gap_dp_minus_mc": -0.00014743964632274453
+  },
+  "0.8": {
+   "law_prior_1_2": 0.21600000000000005,
+   "law_prior_2_5_state_level": 0.21038961038961043,
+   "visit_weighted_closed_form": 0.19440000000000004,
+   "dp_exact_operator": 0.1943999999999242,
+   "mc_mean_10_seeds": 0.19446563077693507,
+   "posterior_B_given_cue": {
+    "cue_0": 0.14285714285714285,
+    "cue_1": 0.7272727272727273
+   },
+   "gap_law_minus_visit_weighted": 0.021600000000000008,
+   "gap_visit_weighted_minus_dp": 7.585598815751382e-14,
+   "gap_dp_minus_mc": -6.563077701088327e-05
+  },
+  "0.9": {
+   "law_prior_1_2": 0.28800000000000003,
+   "law_prior_2_5_state_level": 0.28374384236453204,
+   "visit_weighted_closed_form": 0.2710588235294118,
+   "dp_exact_operator": 0.2710588235293061,
+   "mc_mean_10_seeds": 0.27006105580584394,
+   "posterior_B_given_cue": {
+    "cue_0": 0.0689655172413793,
+    "cue_1": 0.8571428571428572
+   },
+   "gap_law_minus_visit_weighted": 0.016941176470588237,
+   "gap_visit_weighted_minus_dp": 1.056932319443149e-13,
+   "gap_dp_minus_mc": 0.0009977677234621618
+  },
+  "1.0": {
+   "law_prior_1_2": 0.36000000000000004,
+   "law_prior_2_5_state_level": 0.36000000000000004,
+   "visit_weighted_closed_form": 0.36000000000000004,
+   "dp_exact_operator": 0.35999999999986,
+   "mc_mean_10_seeds": 0.35898819466673726,
+   "posterior_B_given_cue": {
+    "cue_0": 0.0,
+    "cue_1": 1.0
+   },
+   "gap_law_minus_visit_weighted": 0.0,
+   "gap_visit_weighted_minus_dp": 1.400546345564635e-13,
+   "gap_dp_minus_mc": 0.0010118053331227284
+  }
+ },
+ "p4_bayes_estimator_at_q_0p8": 0.21397475390520837,
+ "p4_bayes_hardcodes_prior_one_half": true,
+ "note": "p4_mechanisms.bayes_sensitivity samples B-availability as rng.rand() < 0.5, so its agreement with the Phase III law is a shared assumption, not an independent check. The environment's conditioned prior is 2/5.",
+ "closed_form_matches_dp_max_abs_diff": 1.400546345564635e-13
+}
