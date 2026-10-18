@@ -1,0 +1,208 @@
+{
+  "schema": "m2a.phase15.results.v1",
+  "prereg_sha256": "cd06edf2c84dce8c1895b36303f9fcb88427a5bb893e3b127b60f1fe749ade9a",
+  "inputs_from_committed_artifacts": {
+    "joint_rms": 0.02472316984682619,
+    "single_rms": 0.024719943400917956,
+    "joint_e0": 0.3355600000000021,
+    "joint_e1": 0.0,
+    "single_e0": 0.33199999999974317,
+    "d_e0": 4.0902030908063214e-08,
+    "d_e1": 8.133396664168624e-05,
+    "terminal_steps": [
+      2e-05,
+      0.01
+    ],
+    "exp_joint_big": -2.092409242957822,
+    "p8_1_slope": -2.0620339444849014
+  },
+  "tie_floor": {
+    "T": 8.133396664168624e-05,
+    "derivation": "P15-A3/R11: max of the committed one-step changes at the joint optimum",
+    "delta_D1_gap": 3.2264459082324837e-06,
+    "ratio_delta_over_T": 0.039669108017889636
+  },
+  "xv1_anchor": {
+    "max_rel": 0.0,
+    "tol": 1e-12,
+    "pass": true
+  },
+  "profile": {
+    "grid": [
+      0.0,
+      0.01,
+      0.02,
+      0.05,
+      0.1,
+      0.2,
+      0.5,
+      1.0,
+      2.0,
+      5.0,
+      10.0,
+      30.0,
+      100.0,
+      300.0
+    ],
+    "rows": [
+      {
+        "e1": 0.0,
+        "profile_rms": 0.024719943400917956,
+        "argmin_e0": 0.33199999999974317,
+        "excess_over_joint": -3.2264459082324837e-06
+      },
+      {
+        "e1": 0.01,
+        "profile_rms": 0.024794034452694787,
+        "argmin_e0": 0.3299999999997434,
+        "excess_over_joint": 7.086460586859869e-05
+      },
+      {
+        "e1": 0.02,
+        "profile_rms": 0.02486824057703286,
+        "argmin_e0": 0.3269999999997437,
+        "excess_over_joint": 0.00014507073020667005
+      },
+      {
+        "e1": 0.05,
+        "profile_rms": 0.025091293078472795,
+        "argmin_e0": 0.3199999999997445,
+        "excess_over_joint": 0.0003681232316466061
+      },
+      {
+        "e1": 0.1,
+        "profile_rms": 0.025464396844472482,
+        "argmin_e0": 0.3069999999997459,
+        "excess_over_joint": 0.000741226997646293
+      },
+      {
+        "e1": 0.2,
+        "profile_rms": 0.026215697388357117,
+        "argmin_e0": 0.2819999999997487,
+        "excess_over_joint": 0.0014925275415309282
+      },
+      {
+        "e1": 0.5,
+        "profile_rms": 0.028501915261821595,
+        "argmin_e0": 0.20599999999975704,
+        "excess_over_joint": 0.003778745414995406
+      },
+      {
+        "e1": 1.0,
+        "profile_rms": 0.03238469184397811,
+        "argmin_e0": 0.07999999999977092,
+        "excess_over_joint": 0.007661521997151921
+      },
+      {
+        "e1": 2.0,
+        "profile_rms": 0.04025490632162566,
+        "argmin_e0": -0.16900000000020166,
+        "excess_over_joint": 0.015531736474799468
+      },
+      {
+        "e1": 5.0,
+        "profile_rms": 0.06347579379827707,
+        "argmin_e0": -0.8940000000001218,
+        "excess_over_joint": 0.03875262395145088
+      },
+      {
+        "e1": 10.0,
+        "profile_rms": 0.09955093592389591,
+        "argmin_e0": -2.0,
+        "excess_over_joint": 0.07482776607706973
+      },
+      {
+        "e1": 30.0,
+        "profile_rms": 0.4249154211578408,
+        "argmin_e0": -2.0,
+        "excess_over_joint": 0.4001922513110146
+      },
+      {
+        "e1": 100.0,
+        "profile_rms": 1.2648896503723994,
+        "argmin_e0": -2.0,
+        "excess_over_joint": 1.2401664805255732
+      },
+      {
+        "e1": 300.0,
+        "profile_rms": 2.8285675099979315,
+        "argmin_e0": -2.0,
+        "excess_over_joint": 2.8038443401511053
+      }
+    ],
+    "argmin_e1": 0.0,
+    "consecutive_steps": [
+      7.409105177683117e-05,
+      7.420612433807136e-05,
+      0.00022305250143993607,
+      0.0003731037659996869,
+      0.0007513005438846351,
+      0.002286217873464478,
+      0.003882776582156515,
+      0.007870214477647547,
+      0.023220887476651415,
+      0.03607514212561884,
+      0.3253644852339449,
+      0.8399742292145587,
+      1.563677859625532
+    ],
+    "min_step": 7.409105177683117e-05
+  },
+  "identified_set": {
+    "e1_max": 0.011404418945312501,
+    "unbounded_in_box": false,
+    "first_violating_grid_point": 0.02,
+    "violator_excess": 0.00014507073020667005,
+    "bisect_tol_absolute": 1e-06,
+    "registered_box": [
+      0.0,
+      300.0
+    ]
+  },
+  "c4_exponent": {
+    "at_e1_0": -2.0925506159678324,
+    "at_e1_max": -2.092613605870378,
+    "abs_difference": 6.298990254549608e-05,
+    "tolerance_reused_verbatim": 0.05,
+    "tolerance_source": "Phase VIII P8-1",
+    "committed_reproduced": -2.092409242957822,
+    "anchor_abs_err": 0.0,
+    "e0_at_0": 0.33199999999974317,
+    "e0_at_max": 0.3289999999997435
+  },
+  "jacobian_diagnostics": {
+    "corr": 0.7826136447623306,
+    "kappa": 480.9427468664078,
+    "eigs": [
+      844.815248272816,
+      1.7565817423741743
+    ],
+    "norms": [
+      29.017647641295017,
+      2.1325935807921375
+    ],
+    "n_points": 10.0
+  },
+  "criteria": {
+    "C1 GAP-IS-NOISE": true,
+    "C2 ONE-SIDED-BOUND": true,
+    "C3 PROFILE-MONOTONE": true,
+    "C4 OUTPUT-INVARIANT": true
+  },
+  "exits": {
+    "E0 ANCHOR-BROKEN": false,
+    "E1 GAP-IS-NOISE": true,
+    "E2 ONE-SIDED-BOUND": true,
+    "E3 PROFILE-MONOTONE": true,
+    "E4 OUTPUT-INVARIANT": true,
+    "E-UNMAPPED": false
+  },
+  "exit": "E1 | E2 | E3 | E4",
+  "n_closed": 4,
+  "verdict": "4/4 closed",
+  "P13-O2": {
+    "closed": true,
+    "condition": "C1 and C2 and C4 (registered before any reading)"
+  },
+  "runtime_s": 232.38
+}
