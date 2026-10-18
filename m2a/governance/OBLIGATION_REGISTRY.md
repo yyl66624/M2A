@@ -18,31 +18,31 @@
 | P7-O1 | **CLOSED** | 18 | `experiments/PHASE9_RESULTS.md:1` | 关闭类措辞 | — |
 | P7-O2 | **CLOSED** | 14 | `experiments/PHASE9_RESULTS.md:1` | 关闭类措辞 | — |
 | P7-O3 | **CLOSED** | 4 | `experiments/PHASE8_PREREGISTRATION.md:5` | 执行/沿用类措辞 | — |
-| P8-O1 | **CLOSED** | 27 | `M2A_FINAL_REPORT.md:524` | 关闭类措辞 | — |
-| P8-O2 | **CLOSED** | 15 | `M2A_FINAL_REPORT.md:524` | 关闭类措辞 | — |
+| P8-O1 | **CLOSED** | 27 | `M2A_FINAL_REPORT.md:531` | 关闭类措辞 | — |
+| P8-O2 | **CLOSED** | 15 | `M2A_FINAL_REPORT.md:531` | 关闭类措辞 | — |
 | P8-O3 | **CLOSED** | 1 | `M2A_PROGRAM_PLAN.md:118` | 关闭类措辞 | — |
-| P9-O1 | **CLOSED** | 15 | `M2A_FINAL_REPORT.md:561` | 关闭类措辞 | — |
-| P9-O2 | **CLOSED** | 10 | `M2A_FINAL_REPORT.md:561` | 关闭类措辞 | — |
-| P9-O3 | **CLOSED** | 6 | `M2A_FINAL_REPORT.md:587` | 关闭类措辞 | — |
-| P10-O1 | **CLOSED** | 15 | `M2A_FINAL_REPORT.md:599` | 关闭类措辞 | — |
-| P10-O2 | **CLOSED** | 9 | `M2A_FINAL_REPORT.md:599` | 关闭类措辞 | — |
-| P10-O3 | **CLOSED** | 5 | `M2A_FINAL_REPORT.md:593` | 关闭类措辞 | — |
-| P11-O1 | **OPEN** | 19 | `M2A_FINAL_REPORT.md:841` | 开放类措辞 | — |
-| P11-O2 | **SUCCEEDED** | 15 | `M2A_FINAL_REPORT.md:680` | 转手类措辞 | P13-O1 |
+| P9-O1 | **CLOSED** | 15 | `M2A_FINAL_REPORT.md:568` | 关闭类措辞 | — |
+| P9-O2 | **CLOSED** | 10 | `M2A_FINAL_REPORT.md:568` | 关闭类措辞 | — |
+| P9-O3 | **CLOSED** | 6 | `M2A_FINAL_REPORT.md:594` | 关闭类措辞 | — |
+| P10-O1 | **CLOSED** | 15 | `M2A_FINAL_REPORT.md:606` | 关闭类措辞 | — |
+| P10-O2 | **CLOSED** | 9 | `M2A_FINAL_REPORT.md:606` | 关闭类措辞 | — |
+| P10-O3 | **CLOSED** | 5 | `M2A_FINAL_REPORT.md:600` | 关闭类措辞 | — |
+| P11-O1 | **OPEN** | 19 | `M2A_FINAL_REPORT.md:848` | 开放类措辞 | — |
+| P11-O2 | **SUCCEEDED** | 15 | `M2A_FINAL_REPORT.md:687` | 转手类措辞 | P13-O1 |
 | P11-O3 | **CLOSED** | 13 | `experiments/PHASE13_RESULTS.md:28` | 关闭类措辞 | — |
 | P12-O1 | **SUCCEEDED** | 15 | `experiments/PHASE15_RESULTS.md:33` | 转手类措辞 | P13-O2 |
 | P12-O2 | **CLOSED** | 11 | `experiments/PHASE13_RESULTS.md:10` | 关闭类措辞 | — |
-| P12-O3 | **OPEN** | 14 | `M2A_FINAL_REPORT.md:841` | 开放类措辞 | — |
+| P12-O3 | **OPEN** | 14 | `M2A_FINAL_REPORT.md:848` | 开放类措辞 | — |
 | P13-O1 | **CLOSED** | 24 | `experiments/PHASE14_RESULTS.md:23` | 关闭类措辞 | — |
-| P13-O2 | **CLOSED** | 31 | `M2A_FINAL_REPORT.md:724` | 关闭类措辞 | — |
+| P13-O2 | **CLOSED** | 31 | `M2A_FINAL_REPORT.md:731` | 关闭类措辞 | — |
 | P14-O1 | **CLOSED** | 46 | `experiments/PHASE18_RESULTS.md:19` | 关闭类措辞 | — |
-| P15-O1 | **OPEN** | 6 | `M2A_FINAL_REPORT.md:841` | 开放类措辞 | — |
-| P16-O1 | **CLOSED** | 10 | `M2A_FINAL_REPORT.md:792` | 执行/沿用类措辞 | — |
+| P15-O1 | **OPEN** | 6 | `M2A_FINAL_REPORT.md:848` | 开放类措辞 | — |
+| P16-O1 | **CLOSED** | 10 | `M2A_FINAL_REPORT.md:799` | 执行/沿用类措辞 | — |
 | P17-O1 | **CLOSED** | 10 | `experiments/PHASE18_PREREGISTRATION.md:1` | 关闭类措辞 | — |
 | P19-O1 | **CLOSED** | 14 | `experiments/PHASE20_RESULTS.md:64` | 关闭类措辞 | — |
 | P20-O1 | **CLOSED** | 16 | `experiments/PHASE21_RESULTS.md:61` | 关闭类措辞 | — |
 | P21-O1 | **CLOSED** | 13 | `experiments/PHASE22_RESULTS.md:64` | 关闭类措辞 | — |
-| P22-O1 | **CLOSED** | 10 | `M2A_FINAL_REPORT.md:931` | 关闭类措辞 | — |
+| P22-O1 | **CLOSED** | 10 | `M2A_FINAL_REPORT.md:938` | 关闭类措辞 | — |
 
 ---
 

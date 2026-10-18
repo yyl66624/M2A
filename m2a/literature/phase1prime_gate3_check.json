@@ -1,0 +1,96 @@
+{
+  "schema": "m2a.phase1prime.gate3check.v1",
+  "generated_from": {
+    "PRELIMINARY_CONCLUSIONS_V2.md": "7a6fde1cc04818d1",
+    "synthesis_v2.json": "34660b6ecc803957",
+    "registry.json": "40f54300e5640217",
+    "expansion_registry.json": "891641772442d1f3",
+    "fulltext_review.json": "b7812f41ac9dae9f",
+    "fulltext_manifest.json": "6a31d7aca63e700d",
+    "fulltext_review_log.md": "686d618135c1f9c5",
+    "PHASE1PRIME_STATUS.md": "71c3cac127ec8ba9"
+  },
+  "G3_1_two_dimension_matrix": {
+    "family_cluster_evidence_level_cells": 176,
+    "annotation_rows_joined": 226,
+    "families": 12,
+    "expansion_ids_without_cluster": [],
+    "structural_checks": [
+      {
+        "check": "every record carries an evidence type",
+        "passed": true
+      },
+      {
+        "check": "every family x cluster cell carries a verification level",
+        "passed": true
+      },
+      {
+        "check": "no expansion record left with an unresolved cluster",
+        "passed": true
+      },
+      {
+        "check": "the join actually promotes records to FULLTEXT_REVIEWED (else the level axis is hollow)",
+        "passed": true
+      },
+      {
+        "check": "the 7 documented-unavailable records show up as their own level",
+        "passed": true
+      },
+      {
+        "check": "no family in the join is absent from synthesis_v2",
+        "passed": true
+      }
+    ],
+    "structural_failures": [],
+    "levels_seen": [
+      "ABSTRACT_VERIFIED",
+      "FULLTEXT_REVIEWED",
+      "IDENTITY_VERIFIED",
+      "OA_UNAVAILABLE(reason recorded)"
+    ],
+    "evidence_types_seen": 49
+  },
+  "G3_2_vote_consistency": {
+    "claims_checked": 15,
+    "claims_failed": 0,
+    "verdict": "PASS",
+    "failures": [],
+    "claims": [
+      "K2 annotations-aside = 29 (computed 29) L26",
+      "K11 annotations-aside = 28 (computed 28) L26",
+      "K1 coverage = 8 (computed 8) L26",
+      "K1 annotations = 31 (computed 31) L26",
+      "K1 direction = (20, 0, 1) (computed (20, 0, 1)) L26",
+      "K11 value-only = 5 (computed 5) L37",
+      "K4 direction = (9, 0, 2) (computed (9, 0, 2)) L47",
+      "K10 coverage-after-rise = 4 (computed 4) L54",
+      "K10 direction-noDminus = (4, 4) (computed (4, 4)) L54",
+      "K9 coverage = 6 (computed 6) L61",
+      "K9 annotations = 15 (computed 15) L61",
+      "K9 direction = (4, 3, 5) (computed (4, 3, 5)) L61",
+      "K2 direction-table = (6, 7, 9) (computed (6, 7, 9)) L36",
+      "K11 direction-table = (6, 7, 1) (computed (6, 7, 1)) L37",
+      "K1 direction-table = (20, 0, 1) (computed (20, 0, 1)) L38"
+    ]
+  },
+  "G3_3_level_accounting": {
+    "registry_records": 106,
+    "expansion_records": 19,
+    "registry_verification_levels": {
+      "IDENTITY_VERIFIED": 104,
+      "ABSTRACT_VERIFIED": 2
+    },
+    "fulltext_review_entries": 21,
+    "manifest_fetched": 17,
+    "manifest_failed_with_reason": 7,
+    "log_unavailable_rows_parsed": 7,
+    "status_doc_claimed_fulltext": [
+      "21"
+    ],
+    "note": "registry.json keeps Phase I levels untouched (plan §5 forbids rewriting them); the full-text disposition lives in fulltext_review_log.md, so any count that reads only registry.json reports 0 FULLTEXT_REVIEWED, as PRELIMINARY_CONCLUSIONS_V2 line 5 says"
+  },
+  "G3_2_not_checkable_claims": [
+    "L17: 口径声明行，文档自身声明两套数字不可换算，不进入计票核对：> Phase I 报告里的 \"K1/K11 16/16、K4 4/16、K10 5/16\" 是**另一套 16 格计数**，与本表**不可",
+    "L54: K10 扩充前 2/8 无法核对：synthesis_v2 只有扩充后的 8 集群口径，Phase I 是 16 格口径"
+  ]
+}

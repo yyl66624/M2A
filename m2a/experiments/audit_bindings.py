@@ -16,7 +16,11 @@ ROOT = EXP.parent.parent
 
 
 def suites():
-    return sorted(p.name for p in EXP.glob("*gate*.py"))
+    """Gate suites live in experiments/, and the Phase I'-gate suites live in literature/.
+    Absolute paths, so the list is independent of the cwd the suite is launched from."""
+    lit = ROOT / "m2a" / "literature"
+    found = [str(p) for p in EXP.glob("*gate*.py")] + [str(p) for p in lit.glob("*gate*.py")]
+    return sorted(found)
 
 
 def bindings():
