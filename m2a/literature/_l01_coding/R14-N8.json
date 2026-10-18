@@ -1,0 +1,56 @@
+{
+ "sid": "R14-N8",
+ "title": "Mesolimbic dopamine ramps reflect environmental timescales",
+ "year": 2024,
+ "verification_level": "FULLTEXT_REVIEWED",
+ "identity_check": "Opens as eLife 10.7554/eLife.98666 (PMC12396814, VoR of bioRxiv 2024.03.27.587103) 'Mesolimbic dopamine ramps reflect environmental timescales', Floeder/Jeong/Mohebi/Namboodiri - matches the registered R14-N8 title and authors.",
+ "evidence_type": "causal_intervention",
+ "provenance": "PAPER_CLAIM",
+ "term_type": "MIXED",
+ "mapping_note": "paper wording 'dopamine ramps are only observed when the inter-trial interval is short relative to the trial period' -> our K5 delay/memory (signal timescale) plus our K2 inhibition/gate (condition for the ramp to appear); 'not strictly controlled by the ITI, but by the frequency of repeating events in the environment' -> our K10 role reassignment from elapsed duration to event rate. The paper does not use gate/role-reassignment vocabulary.",
+ "description_scope": "Judged under the description 'the slope of the cue-evoked dopamine signal within the cue-reward interval as a readout of the environmental event rate'; licking was similar across trial types and the ramp's function is left open, so no action-direction judgement is made (value-only).",
+ "motion_source": "L3 physiological carrier: nucleus accumbens core dopamine release (dLight1.1 fiber photometry) in head-fixed mice during Pavlovian trace conditioning and virtual-reality navigation, with the ITI/IRI assigned by the experimenter (L0).",
+ "mechanism": [
+  {
+   "k": "K5",
+   "role": "primary",
+   "d_axis": "neutral",
+   "v_axis": "neutral",
+   "claim": "The timescale of the mesolimbic dopamine signal - whether a within-trial ramp appears at all - is set by the interval between rewards relative to the trial period, i.e. the dopamine signal reads out the environmental timescale.",
+   "quote": "Here, we show that during Pavlovian and instrumental conditioning in mice, mesolimbic dopamine ramps are only observed when the inter-trial interval is short relative to the trial period.",
+   "quote_offset": 2426,
+   "quote_sha16": "31fddb021fa68bc0"
+  },
+  {
+   "k": "K2",
+   "role": "auxiliary",
+   "d_axis": "neutral",
+   "v_axis": "neutral",
+   "claim": "Ramp expression is gated by condition: ramps were seen only when the ITI was short and the cue was dynamic, while long-ITI trials showed a larger cue-onset response and no ramp.",
+   "quote": "Furthermore, dopamine ramps were observed only when the ITI was short and the tone was dynamic",
+   "quote_offset": 10171,
+   "quote_sha16": "d26ffea36623d2e5"
+  },
+  {
+   "k": "K10",
+   "role": "auxiliary",
+   "d_axis": "neutral",
+   "v_axis": "neutral",
+   "claim": "The determinant role is reassigned from the ITI as such to the frequency of repeating events: the eligibility trace time constant should track the inter-reward interval/environmental timescale, with the ITI only an experimental proxy.",
+   "quote": "Please do note, however, that the above relationship is not strictly controlled by the ITI, but by the frequency of repeating events in the environment (i.e., environmental timescale).",
+   "quote_offset": 76756,
+   "quote_sha16": "93f1be210e8994bb"
+  }
+ ],
+ "d_class": "value-only",
+ "agency_class": "RESPONSIVE",
+ "event_grammar": "[MOTION] rewards recur with a short inter-trial/inter-reward interval, raising the overall event rate of the environment (L0/L3) --> [GATE] the eligibility trace time constant adapts to that rate, so a ramp becomes visible only when the ITI is short relative to the trial period (L0) --> [INACTION] no ramp is expressed at long ITI even though the dynamic cue still specifies proximity to reward / [ACTION] licking to the cue develops comparably in both conditions (L3/L4) --> [OUTCOME] ramp slope becomes a readout of the environmental timescale rather than of a policy update (L3) --> [FEEDBACK] retrospective ANCCR updates of predecessor representations re-set the trace constant with event rate (L0/L3)",
+ "contradiction_ref": null,
+ "anchor_concordance": {
+  "anchor_primary_k": "K5",
+  "same_family": true,
+  "same_sign": true,
+  "reason": "Supports/extends the interval-controls-the-dopaminergic-timescale half of the claim (a different time-scale mechanism: ramp presence and slope as a readout of event rate), but never measures acquisition speed against the interval, so it does not independently test that the reward interval sets the behavioural learning rate."
+ },
+ "notes": "Same laboratory, same ANCCR framework and same authors overlapping with the anchor (Namboodiri; cites Burke et al. 2023), so corroboration is not independent. The authors' own qualifications: the relation is 'not strictly controlled by the ITI, but by the frequency of repeating events'; trial-by-trial ITI history explains only a small fraction of ramp-slope variance; correlations between ramp slope and behaviour were largely absent and licking was similar across trial types; the function of ramps is explicitly left open and ramps were never manipulated, so the causal claim is only over the assigned environmental variable. Year registered 2024 (OpenAlex) vs 2025 (Crossref version of record) - verdict stays SECOND_CHANNEL_MISMATCH per L01_CODING_PROTOCOL sec.4 and the year is not used as a criterion."
+}

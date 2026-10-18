@@ -1,0 +1,46 @@
+{
+ "sid": "R14-N1",
+ "title": "Mesostriatal dopamine is sensitive to changes in specific cue-reward contingencies",
+ "year": 2024,
+ "verification_level": "FULLTEXT_REVIEWED",
+ "identity_check": "Opens as Science Advances PMC11135394 (10.1126/sciadv.adn4203) 'Mesostriatal dopamine is sensitive to changes in specific cue-reward contingencies', Garr/Cheng/Jeong/Brooke/Castell/Bal/Magnard/Namboodiri/Janak - matches literature/L01_fulltexts.json and L01_verification.json (overlap 1.0), but NOT the title given in the coding assignment. | L01-D2 correction: the QUALIFIED label was raised against a title quoted in the coding tasking note, not against the registered artifacts. Identity re-checked against L01_fulltexts.json + L01_verification.json (both channels agree, title overlap 1.0), so the ANNOTATION_ADDENDUM 增补 2 requirement is met and the level returns to FULLTEXT_REVIEWED. The tasking-note title error is a pipeline defect (X-64), not a property of the paper.",
+ "evidence_type": "causal_intervention",
+ "provenance": "PAPER_CLAIM",
+ "term_type": "MIXED",
+ "mapping_note": "paper wording 'conditioned responding was attenuated ... as was dopamine neuron activity and dopamine release' -> our K2 inhibition/gate; 'event i is kept in memory ... according to an eligibility trace ... T ... a fraction of the mean inter-reward interval' -> our K5 delay/memory (the reward interval parameterises the memory timescale). The paper never uses 'gate' or 'memory timescale' as family labels.",
+ "description_scope": "Judged under the description 'a rat's anticipatory head-port entry during the 20-s cue, measured while the cue-reward interval and the average reward rate are held constant and only the outcome-specific contingency is degraded'; the action judgement is made on the contingency description, not on any interval description.",
+ "motion_source": "L3 physiological carrier: VTA dopamine cell activity (GCaMP6f) and nucleus accumbens dopamine release (dLight1.1) during outcome-selective Pavlovian contingency degradation in rats, plus optogenetic dopamine stimulation/inhibition.",
+ "mechanism": [
+  {
+   "k": "K2",
+   "role": "primary",
+   "d_axis": "D−",
+   "v_axis": "B-",
+   "claim": "Adding noncontingent rewards in the intertrial interval attenuates the conditioned response and the cue- and reward-evoked dopamine signals for that specific contingency only, i.e. the gate on responding closes even though the cue-reward interval is unchanged.",
+   "quote": "Conditioned responding was attenuated for the cue-reward contingency that was degraded, as was dopamine neuron activity in the midbrain and dopamine release in the ventral striatum in response to the cue and subsequent reward.",
+   "quote_offset": 3308,
+   "quote_sha16": "e2fe967fc3d547d3"
+  },
+  {
+   "k": "K5",
+   "role": "auxiliary",
+   "d_axis": "neutral",
+   "v_axis": "neutral",
+   "claim": "In the ANCCR simulations that best explained the data, the decay time constant of the cue memory trace is parameterised as a free fraction of the mean inter-reward interval, i.e. the reward interval sets the timescale over which the association is held.",
+   "quote": "Event i is kept in memory across time steps according to an eligibility trace E ← i = ∑ t i ≤ t e − ( t − t i T ) (7) where T is the temporal decay parameter. T was always considered a fraction of the mean inter-reward interval during acquisition, and this fraction ( T ratio) was a free parameter used to fit the model.",
+   "quote_offset": 70588,
+   "quote_sha16": "a642745a5b6fb07c"
+  }
+ ],
+ "d_class": "D−",
+ "agency_class": "RESPONSIVE",
+ "event_grammar": "[MOTION] a noncontingent reward is delivered during the ITI at the same average rate as cued rewards (L3/L0) --> [GATE] the retrospective cue-reward contingency, not the cue-reward interval, falls, so the cue stops signalling a rate change (C/T) (L0) --> [INACTION] anticipatory head entries to the degraded cue are attenuated while responding to the nondegraded cue persists / [ACTION] retained for the intact contingency (L4) --> [OUTCOME] cue- and reward-evoked dopamine lose their phasic control and their trial-by-trial history dependence (L3) --> [FEEDBACK] retrospective (ANCCR) update of the predecessor association with a trace constant tied to the mean inter-reward interval (L0/L3)",
+ "contradiction_ref": null,
+ "anchor_concordance": {
+  "anchor_primary_k": "K5",
+  "same_family": false,
+  "same_sign": false,
+  "reason": "Neither: it holds the cue-reward interval constant and degrades contingency, so it does not test that the interval sets the learning rate; it extends only the weaker cluster premise that dopamine tracks temporal contingency/reward-rate structure rather than the number of pairings, and it parameterises its trace with the mean inter-reward interval."
+ },
+ "notes": "Expected-title conflict: the assignment named R14-N1 as 'Mesostriatal dopamine is sensitive to changes in the environmental cost of effort'; the cached file, literature/L01_fulltexts.json and literature/L01_verification.json all give '...specific cue-reward contingencies', and 'effort'/'cost' occur 0 times in the file - so the assignment title is wrong for this sid (recorded here, coded against the actual text). Not an independent test of the anchor claim: C/T ratios and reward rate were deliberately kept nearly unchanged during degradation, and the reported learning-rate sensitivity is only to local reward history. Authors state the TDRL account 'failed to show the sensitivity' and that ANCCR agreement is 'highly parameter-dependent'. Namboodiri is a co-author (shared lab with the anchor), so corroboration is not independent. | L01-D2 correction: the QUALIFIED label was raised against a title quoted in the coding tasking note, not against the registered artifacts. Identity re-checked against L01_fulltexts.json + L01_verification.json (both channels agree, title overlap 1.0), so the ANNOTATION_ADDENDUM 增补 2 requirement is met and the level returns to FULLTEXT_REVIEWED. The tasking-note title error is a pipeline defect (X-64), not a property of the paper."
+}

@@ -1,0 +1,41 @@
+{
+ "sid": "G5-03",
+ "title": "Refusal in Language Models Is Mediated by a Single Direction",
+ "year": 2024,
+ "verification_level": "FULLTEXT_REVIEWED",
+ "identity_check": "Opening line reads 'Refusal in Language Models Is Mediated by a Single Direction' with the arXiv/NeurIPS author block (Arditi, Obeso, Syed, Paleka, Panickssery, Gurnee, Nanda), matching the anchor identity.",
+ "evidence_type": "causal_intervention",
+ "provenance": "PAPER_CLAIM",
+ "term_type": "MAPPING",
+ "mapping_note": "paper's 'refusal direction / one-dimensional subspace that mediates refusal' -> our K2 inhibition-gate (an L2 residual-stream direction that gates the harmful action); paper's 'adversarial suffix hijacks/shifts attention away from the instruction' -> our K3 competition. Neither 'gate' nor 'competition' are the paper's own words.",
+ "description_scope": "Judged under the description 'the model emitting a harmful completion = the action, refusal = withholding it'; the located refusal direction is coded as the gate whose erasure yields action and whose addition yields inaction.",
+ "motion_source": "L2 - a single residual-stream activation direction (vector r-hat) is the moving carrier; input harmfulness (L3) sets its expression.",
+ "mechanism": [
+  {
+   "k": "K2",
+   "role": "primary",
+   "d_axis": "D−",
+   "v_axis": "neutral",
+   "claim": "Refusal is mediated by one necessary-and-sufficient residual-stream direction that behaves as an on/off gate: ablating it abolishes refusal, adding it induces refusal even on harmless prompts.",
+   "quote": "We then show that this single direction is both necessary and sufficient for refusal.",
+   "quote_offset": 19726,
+   "quote_sha16": "913774b279b3a95e"
+  },
+  {
+   "k": "K3",
+   "role": "auxiliary",
+   "d_axis": "D+",
+   "v_axis": "neutral",
+   "claim": "Adversarial suffixes bypass refusal by making instruction-region and suffix-region tokens compete for the attention heads that write the refusal direction, releasing the gate.",
+   "quote": "With the adversarial suffix appended, these heads shift their attention to the suffix region, and away from the harmful instruction.",
+   "quote_offset": 34541,
+   "quote_sha16": "e6043ec0486fa1f9"
+  }
+ ],
+ "d_class": "D−",
+ "agency_class": "RESPONSIVE",
+ "event_grammar": "[MOTION] harmful instruction raises expression of the residual-stream refusal direction r-hat --> [GATE] r-hat gates whether the harmful completion is emitted --> [ACTION/INACTION] r-hat present => REFUSE (inaction); r-hat ablated => COMPLY (action) --> [OUTCOME] safe vs unsafe completion --> [FEEDBACK] adversarial suffix suppresses r-hat by hijacking attention, re-opening the gate",
+ "contradiction_ref": "C-04",
+ "anchor_concordance": null,
+ "notes": "Anchor under test; anchor_concordance set to null per protocol. Per 02 s2.1-6 the registered counter-evidence (C-04: Wollschlaeger et al. 2025 'Concept Cones'; Arditi's 13-model RLHF/DPO-only open-source sample) is co-registered on this G5-03 annotation even though the anchor itself contradicts no M2A claim (it is the claim C-04 targets). d_class kept D- to match the committed registry k_all=[K2]. Auxiliary K3 (D+) encodes the jailbreak path where attention competition releases the gate; the authors flag the direction's semantic meaning as unclear."
+}

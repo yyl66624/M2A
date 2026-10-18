@@ -1,0 +1,1233 @@
+{
+ "schema": "m2a.roundL01.candidates.v1",
+ "selection_rule": "OA full text required; rank by cited_by desc, year desc, id asc; take top N from decision 4 (6/4/4); every reject recorded with a reason",
+ "pool_sizes": {
+  "R13": 28,
+  "G5-03": 32,
+  "R14": 27
+ },
+ "anchors": {
+  "R13": {
+   "identity": {
+    "resolved_title": "A neural mechanism for learning from delayed postingestive feedback",
+    "expected": "A neural mechanism for learning from delayed postingestive feedback",
+    "resolved_via": "doi",
+    "doi_requested": "10.1038/s41586-025-08828-z",
+    "token_overlap": 1.0,
+    "year": 2025,
+    "openalex_id": "https://openalex.org/W4409148406",
+    "cited_by_count": 37
+   },
+   "selected": [
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4403300393",
+     "title": "Heightened lateral habenula activity during stress produces brainwide and behavioral substrates of susceptibility",
+     "year": 2024,
+     "cited_by": 31,
+     "oa_url": "https://doi.org/10.1016/j.neuron.2024.09.009",
+     "oa_source": "Neuron",
+     "doi": "https://doi.org/10.1016/j.neuron.2024.09.009"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4406110464",
+     "title": "Neural pathways of nausea and roles in energy balance",
+     "year": 2025,
+     "cited_by": 18,
+     "oa_url": "https://doi.org/10.1016/j.conb.2024.102963",
+     "oa_source": "Current Opinion in Neurobiology",
+     "doi": "https://doi.org/10.1016/j.conb.2024.102963"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4414533407",
+     "title": "An interoceptive model of energy allostasis linking metabolic and mental health",
+     "year": 2025,
+     "cited_by": 15,
+     "oa_url": "https://www.science.org/doi/pdf/10.1126/sciadv.ady4356?download=true",
+     "oa_source": "Science Advances",
+     "doi": "https://doi.org/10.1126/sciadv.ady4356"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4416026515",
+     "title": "Plateau potentials are instructive signals for behavioral timescale synaptic plasticity in the neocortex",
+     "year": 2025,
+     "cited_by": 11,
+     "oa_url": "https://www.biorxiv.org/content/biorxiv/early/2025/11/07/2025.11.07.687250.full.pdf",
+     "oa_source": "bioRxiv (Cold Spring Harbor Laboratory)",
+     "doi": "https://doi.org/10.1101/2025.11.07.687250"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4394680948",
+     "title": "Metabolic sensing in AgRP regulates sucrose preference and dopamine release in the nucleus accumbens",
+     "year": 2024,
+     "cited_by": 8,
+     "oa_url": "https://doi.org/10.1111/jne.13389",
+     "oa_source": "Journal of Neuroendocrinology",
+     "doi": "https://doi.org/10.1111/jne.13389"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4415408744",
+     "title": "Sickness and the brain",
+     "year": 2025,
+     "cited_by": 7,
+     "oa_url": "https://www.cell.com/current-biology/pdf/S0960-9822(25)01116-9.pdf",
+     "oa_source": "Current Biology",
+     "doi": "https://doi.org/10.1016/j.cub.2025.08.050"
+    }
+   ],
+   "ranked_pool": [
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4403300393",
+     "title": "Heightened lateral habenula activity during stress produces brainwide and behavioral substrates of susceptibility",
+     "year": 2024,
+     "cited_by": 31,
+     "oa_url": "https://doi.org/10.1016/j.neuron.2024.09.009",
+     "oa_source": "Neuron",
+     "doi": "https://doi.org/10.1016/j.neuron.2024.09.009"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4406110464",
+     "title": "Neural pathways of nausea and roles in energy balance",
+     "year": 2025,
+     "cited_by": 18,
+     "oa_url": "https://doi.org/10.1016/j.conb.2024.102963",
+     "oa_source": "Current Opinion in Neurobiology",
+     "doi": "https://doi.org/10.1016/j.conb.2024.102963"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4414533407",
+     "title": "An interoceptive model of energy allostasis linking metabolic and mental health",
+     "year": 2025,
+     "cited_by": 15,
+     "oa_url": "https://www.science.org/doi/pdf/10.1126/sciadv.ady4356?download=true",
+     "oa_source": "Science Advances",
+     "doi": "https://doi.org/10.1126/sciadv.ady4356"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4416026515",
+     "title": "Plateau potentials are instructive signals for behavioral timescale synaptic plasticity in the neocortex",
+     "year": 2025,
+     "cited_by": 11,
+     "oa_url": "https://www.biorxiv.org/content/biorxiv/early/2025/11/07/2025.11.07.687250.full.pdf",
+     "oa_source": "bioRxiv (Cold Spring Harbor Laboratory)",
+     "doi": "https://doi.org/10.1101/2025.11.07.687250"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4394680948",
+     "title": "Metabolic sensing in AgRP regulates sucrose preference and dopamine release in the nucleus accumbens",
+     "year": 2024,
+     "cited_by": 8,
+     "oa_url": "https://doi.org/10.1111/jne.13389",
+     "oa_source": "Journal of Neuroendocrinology",
+     "doi": "https://doi.org/10.1111/jne.13389"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4415408744",
+     "title": "Sickness and the brain",
+     "year": 2025,
+     "cited_by": 7,
+     "oa_url": "https://www.cell.com/current-biology/pdf/S0960-9822(25)01116-9.pdf",
+     "oa_source": "Current Biology",
+     "doi": "https://doi.org/10.1016/j.cub.2025.08.050"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4396763956",
+     "title": "Adverse Food Reactions: Physiological and Ecological Perspectives",
+     "year": 2024,
+     "cited_by": 7,
+     "oa_url": "https://doi.org/10.1146/annurev-nutr-061021-022909",
+     "oa_source": "Annual Review of Nutrition",
+     "doi": "https://doi.org/10.1146/annurev-nutr-061021-022909"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4409411263",
+     "title": "From Food Fears to Food Freedom: How Do We Best Manage Restrictive Eating in Inflammatory Bowel Disease?",
+     "year": 2025,
+     "cited_by": 5,
+     "oa_url": "https://academic.oup.com/crohnscolitis360/advance-article-pdf/doi/10.1093/crocol/otaf019/62925501/otaf019.pdf",
+     "oa_source": "Crohn s & Colitis 360",
+     "doi": "https://doi.org/10.1093/crocol/otaf019"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4410415894",
+     "title": "Interoceptive modulation of emotions",
+     "year": 2025,
+     "cited_by": 4,
+     "oa_url": "https://doi.org/10.1016/j.conb.2025.103049",
+     "oa_source": "Current Opinion in Neurobiology",
+     "doi": "https://doi.org/10.1016/j.conb.2025.103049"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4408217152",
+     "title": "Dopamine activity encodes the changing valence of the same stimulus in conditioned taste aversion paradigms",
+     "year": 2025,
+     "cited_by": 3,
+     "oa_url": "https://doi.org/10.7554/elife.103260.2",
+     "oa_source": "eLife",
+     "doi": "https://doi.org/10.7554/elife.103260.2"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4412424508",
+     "title": "Neuro-immune interactions in memory",
+     "year": 2025,
+     "cited_by": 3,
+     "oa_url": "https://doi.org/10.1016/j.nlm.2025.108077",
+     "oa_source": "Neurobiology of Learning and Memory",
+     "doi": "https://doi.org/10.1016/j.nlm.2025.108077"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4413270533",
+     "title": "Feeding-induced olfactory cortex suppression reduces satiation",
+     "year": 2025,
+     "cited_by": 3,
+     "oa_url": "https://doi.org/10.1016/j.neuron.2025.07.020",
+     "oa_source": "Neuron",
+     "doi": "https://doi.org/10.1016/j.neuron.2025.07.020"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4415017289",
+     "title": "Ingestion-activated CGRP neurons control learning but not satiety",
+     "year": 2026,
+     "cited_by": 2,
+     "oa_url": "https://www.biorxiv.org/content/biorxiv/early/2025/10/09/2025.10.08.681275.full.pdf",
+     "oa_source": "bioRxiv (Cold Spring Harbor Laboratory)",
+     "doi": "https://doi.org/10.1016/j.neuron.2026.08.001"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7128168099",
+     "title": "Multimodal sensing-computing devices: Toward a new paradigm for embodied intelligence",
+     "year": 2026,
+     "cited_by": 2,
+     "oa_url": "https://doi.org/10.1016/j.mattod.2026.103223",
+     "oa_source": "Materials Today",
+     "doi": "https://doi.org/10.1016/j.mattod.2026.103223"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4415456144",
+     "title": "Visceral signaling of post-ingestive malaise directs memory updating in Drosophila",
+     "year": 2025,
+     "cited_by": 2,
+     "oa_url": "https://doi.org/10.1101/2025.10.21.683769",
+     "oa_source": "bioRxiv (Cold Spring Harbor Laboratory)",
+     "doi": "https://doi.org/10.1101/2025.10.21.683769"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7138935814",
+     "title": "GIP receptor agonism suppresses inflammation-induced aversion and food intake via distinct circuits",
+     "year": 2026,
+     "cited_by": 1,
+     "oa_url": "https://www.cell.com/cell-reports/pdf/S2211-1247(26)00194-4.pdf",
+     "oa_source": "Cell Reports",
+     "doi": "https://doi.org/10.1016/j.celrep.2026.117116"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4411917843",
+     "title": "The gut and heart’s role in reward processing",
+     "year": 2025,
+     "cited_by": 1,
+     "oa_url": "https://www.frontiersin.org/journals/integrative-neuroscience/articles/10.3389/fnint.2025.1479923/pdf",
+     "oa_source": "Frontiers in Integrative Neuroscience",
+     "doi": "https://doi.org/10.3389/fnint.2025.1479923"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4415067535",
+     "title": "Mindset in food immunotherapy",
+     "year": 2025,
+     "cited_by": 1,
+     "oa_url": "https://hdl.handle.net/10072/440221",
+     "oa_source": "Griffith Research Online",
+     "doi": "https://doi.org/10.1111/pai.70218"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4404691228",
+     "title": "Dopamine activity encodes the changing valence of the same stimulus in conditioned taste aversion paradigms",
+     "year": 2024,
+     "cited_by": 1,
+     "oa_url": "https://doi.org/10.7554/elife.103260.1",
+     "oa_source": "eLife",
+     "doi": "https://doi.org/10.7554/elife.103260.1"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4404691864",
+     "title": "Dopamine activity encodes the changing valence of the same stimulus in conditioned taste aversion paradigms",
+     "year": 2024,
+     "cited_by": 1,
+     "oa_url": "https://elifesciences.org/reviewed-preprints/103260.pdf",
+     "oa_source": "eLife",
+     "doi": "https://doi.org/10.7554/elife.103260"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7139973817",
+     "title": "Mapping Fos-immunoreactive neurons activated by intra-oral infusion of quinine, sucrose or water throughout the brain of B6 mice",
+     "year": 2026,
+     "cited_by": 0,
+     "oa_url": "https://link.springer.com/content/pdf/10.1007/s00429-026-03095-8.pdf",
+     "oa_source": "Brain Structure and Function",
+     "doi": "https://doi.org/10.1007/s00429-026-03095-8"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7167248831",
+     "title": "A cholinergic eligibility trace facilitates amygdala plasticity in flavour avoidance learning",
+     "year": 2026,
+     "cited_by": 0,
+     "oa_url": "https://doi.org/10.64898/2026.07.02.734913",
+     "oa_source": "bioRxiv (Cold Spring Harbor Laboratory)",
+     "doi": "https://doi.org/10.64898/2026.07.02.734913"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7167596527",
+     "title": "Hippocampal engrams configure prefrontal context representations to guide flexible decisions",
+     "year": 2026,
+     "cited_by": 0,
+     "oa_url": "https://doi.org/10.64898/2026.07.06.732916",
+     "oa_source": "bioRxiv (Cold Spring Harbor Laboratory)",
+     "doi": "https://doi.org/10.64898/2026.07.06.732916"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7204234413",
+     "title": "Deep learning-mediated detection of accelerated water drinking after aquaresis in V1b vasopressin receptor knockout mice",
+     "year": 2026,
+     "cited_by": 0,
+     "oa_url": "https://doi.org/10.64898/2026.08.21.746202",
+     "oa_source": "bioRxiv (Cold Spring Harbor Laboratory)",
+     "doi": "https://doi.org/10.64898/2026.08.21.746202"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7214007819",
+     "title": "Lasting aversive consequences of a single dose of 4-hydroxytamoxifen",
+     "year": 2026,
+     "cited_by": 0,
+     "oa_url": "https://doi.org/10.64898/2026.09.16.751757",
+     "oa_source": "bioRxiv (Cold Spring Harbor Laboratory)",
+     "doi": "https://doi.org/10.64898/2026.09.16.751757"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4413636728",
+     "title": "Sniffing good makes me food",
+     "year": 2025,
+     "cited_by": 0,
+     "oa_url": "https://doi.org/10.1152/ajpregu.00171.2025",
+     "oa_source": "American Journal of Physiology-Regulatory, Integrative and Comparative Physiology",
+     "doi": "https://doi.org/10.1152/ajpregu.00171.2025"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4416049325",
+     "title": "Competition between memories for reactivation as a mechanism for long-delay credit assignment",
+     "year": 2025,
+     "cited_by": 0,
+     "oa_url": "https://www.biorxiv.org/content/biorxiv/early/2025/11/09/2025.11.08.687292.full.pdf",
+     "oa_source": "bioRxiv (Cold Spring Harbor Laboratory)",
+     "doi": "https://doi.org/10.1101/2025.11.08.687292"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4416274719",
+     "title": "Brain-heart interactions in prolonged grief disorder",
+     "year": 2025,
+     "cited_by": 0,
+     "oa_url": "http://medcraveonline.com/MOJPH/MOJPH-14-00491.pdf",
+     "oa_source": "MOJ Public Health",
+     "doi": "https://doi.org/10.15406/mojph.2025.14.00491"
+    }
+   ],
+   "pool_size": 28,
+   "reference_list_size": 60,
+   "references_not_looked_up": 48,
+   "rejected": [
+    {
+     "from": "reference",
+     "id": "https://openalex.org/W1487216741",
+     "title": "Deconvolution-free Subcellular Imaging with Axially Swept Light Sheet Microscopy",
+     "reason": "closed access"
+    },
+    {
+     "from": "reference",
+     "id": "https://openalex.org/W1503415600",
+     "title": "Association of Illness with Prior Ingestion of Novel Foods",
+     "reason": "closed access"
+    },
+    {
+     "from": "reference",
+     "id": "https://openalex.org/W1580901834",
+     "title": "Replay and Time Compression of Recurring Spike Sequences in the Hippocampus",
+     "reason": "closed access"
+    },
+    {
+     "from": "reference",
+     "id": "https://openalex.org/W1636089071",
+     "title": "Conditioned Aversion to Saccharin Resulting from Exposure to Gamma Radiation",
+     "reason": "closed access"
+    },
+    {
+     "from": "reference",
+     "id": "https://openalex.org/W1639247045",
+     "title": "Specific and Differential Activation of Mitogen-Activated Protein Kinase Cascades by Unfamiliar Taste in the Insular Cortex of the Behaving Rat",
+     "reason": "closed access"
+    },
+    {
+     "from": "reference",
+     "id": "https://openalex.org/W1875506666",
+     "title": "Intact-Brain Analyses Reveal Distinct Information Carried by SNc Dopamine Subcircuits",
+     "reason": "closed access"
+    },
+    {
+     "from": "reference",
+     "id": "https://openalex.org/W1899857231",
+     "title": "Elucidating an Affective Pain Circuit that Creates a Threat Memory",
+     "reason": "closed access"
+    },
+    {
+     "from": "reference",
+     "id": "https://openalex.org/W1909802686",
+     "title": "Taste Aversions in Man",
+     "reason": "closed access"
+    },
+    {
+     "from": "reference",
+     "id": "https://openalex.org/W1912490196",
+     "title": "cAMP Response Element-Binding Protein in the Amygdala Is Required for Long- but not Short-Term Conditioned Taste Aversion Memory",
+     "reason": "closed access"
+    },
+    {
+     "from": "reference",
+     "id": "https://openalex.org/W1922104716",
+     "title": "Contrasting Roles for Orbitofrontal Cortex and Amygdala in Credit Assignment and Learning in Macaques",
+     "reason": "closed access"
+    },
+    {
+     "from": "reference",
+     "id": "https://openalex.org/W1960895270",
+     "title": "RNAscope",
+     "reason": "closed access"
+    },
+    {
+     "from": "reference",
+     "id": "https://openalex.org/W1966204952",
+     "title": "Intragastric reinforcement effect.",
+     "reason": "closed access"
+    }
+   ],
+   "rejected_total": 12
+  },
+  "G5-03": {
+   "identity": {
+    "resolved_title": "Refusal in Language Models Is Mediated by a Single Direction",
+    "expected": "Refusal in Language Models Is Mediated by a Single Direction",
+    "resolved_via": "title.search fallback",
+    "doi_requested": "10.48550/arXiv.2406.11717",
+    "token_overlap": 1.0,
+    "year": 2024,
+    "openalex_id": "https://openalex.org/W4415800641",
+    "cited_by_count": 64
+   },
+   "selected": [
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7124177090",
+     "title": "Training large language models on narrow tasks can lead to broad misalignment",
+     "year": 2026,
+     "cited_by": 30,
+     "oa_url": "https://www.nature.com/articles/s41586-025-09937-5.pdf",
+     "oa_source": "Nature",
+     "doi": "https://doi.org/10.1038/s41586-025-09937-5"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4417132606",
+     "title": "‘For Argument’s Sake, Show Me How to Harm Myself!’: Jailbreaking LLMs in Suicide and Self-Harm Contexts",
+     "year": 2025,
+     "cited_by": 19,
+     "oa_url": "https://arxiv.org/pdf/2507.02990",
+     "oa_source": "arXiv (Cornell University)",
+     "doi": "https://doi.org/10.1109/istas65609.2025.11269647"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7133316620",
+     "title": "Neural Transparency: Mechanistic Interpretability Interfaces for Anticipating Model Behaviors for Personalized AI",
+     "year": 2026,
+     "cited_by": 3,
+     "oa_url": "https://doi.org/10.1145/3742413.3789120",
+     "oa_source": "ACM International Conference on Intelligent User Interfaces (IUI)",
+     "doi": "https://doi.org/10.1145/3742413.3789120"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7154041164",
+     "title": "Learning from AVA: Early Lessons from a Curated and Trustworthy Generative AI for Policy and Development Research",
+     "year": 2026,
+     "cited_by": 1,
+     "oa_url": "https://arxiv.org/pdf/2604.17843",
+     "oa_source": "arXiv (Cornell University)",
+     "doi": "https://doi.org/10.1145/3772318.3791062"
+    }
+   ],
+   "ranked_pool": [
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7124177090",
+     "title": "Training large language models on narrow tasks can lead to broad misalignment",
+     "year": 2026,
+     "cited_by": 30,
+     "oa_url": "https://www.nature.com/articles/s41586-025-09937-5.pdf",
+     "oa_source": "Nature",
+     "doi": "https://doi.org/10.1038/s41586-025-09937-5"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4417132606",
+     "title": "‘For Argument’s Sake, Show Me How to Harm Myself!’: Jailbreaking LLMs in Suicide and Self-Harm Contexts",
+     "year": 2025,
+     "cited_by": 19,
+     "oa_url": "https://arxiv.org/pdf/2507.02990",
+     "oa_source": "arXiv (Cornell University)",
+     "doi": "https://doi.org/10.1109/istas65609.2025.11269647"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7133316620",
+     "title": "Neural Transparency: Mechanistic Interpretability Interfaces for Anticipating Model Behaviors for Personalized AI",
+     "year": 2026,
+     "cited_by": 3,
+     "oa_url": "https://doi.org/10.1145/3742413.3789120",
+     "oa_source": "ACM International Conference on Intelligent User Interfaces (IUI)",
+     "doi": "https://doi.org/10.1145/3742413.3789120"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7154041164",
+     "title": "Learning from AVA: Early Lessons from a Curated and Trustworthy Generative AI for Policy and Development Research",
+     "year": 2026,
+     "cited_by": 1,
+     "oa_url": "https://arxiv.org/pdf/2604.17843",
+     "oa_source": "arXiv (Cornell University)",
+     "doi": "https://doi.org/10.1145/3772318.3791062"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7166591899",
+     "title": "Aligning Recommendations with User Popularity Preferences",
+     "year": 2026,
+     "cited_by": 1,
+     "oa_url": "https://doi.org/10.1145/3805689.3806483",
+     "oa_source": "ACM Conference on Fairness, Accountability, and Transparency (FAccT)",
+     "doi": "https://doi.org/10.1145/3805689.3806483"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7105673932",
+     "title": "Refusal Behavior in Large Language Models: A Nonlinear Perspective",
+     "year": 2025,
+     "cited_by": 1,
+     "oa_url": "https://arxiv.org/pdf/2501.08145",
+     "oa_source": "arXiv (Cornell University)",
+     "doi": "https://doi.org/10.1109/ijcnn64981.2025.11228760"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7124600380",
+     "title": "The Invariant Energetic Cost of Constraint Persistence: A Self-Referential Framework for Measuring Alignment Robustness",
+     "year": 2026,
+     "cited_by": 0,
+     "oa_url": "https://www.qeios.com/read/EE11WC/pdf",
+     "oa_source": "Qeios",
+     "doi": "https://doi.org/10.32388/ee11wc"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7140437619",
+     "title": "Alignment Reduces Expressed but Not Encoded Gender Bias: A Unified Framework and Study",
+     "year": 2026,
+     "cited_by": 0,
+     "oa_url": "https://arxiv.org/pdf/2603.24125",
+     "oa_source": "arXiv (Cornell University)",
+     "doi": "https://doi.org/10.1007/978-3-032-37654-1_21"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7160185696",
+     "title": "Harm-Conditioned Computational Friction as a Contrastive Diagnostic of Safety Representations in Language Models: A Proof-of-Concept and Control Audit",
+     "year": 2026,
+     "cited_by": 0,
+     "oa_url": "https://doi.org/10.32388/ee11wc.2",
+     "oa_source": "Qeios",
+     "doi": "https://doi.org/10.32388/ee11wc.2"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7161584722",
+     "title": "The Safety Tax of Cache Compression",
+     "year": 2026,
+     "cited_by": 0,
+     "oa_url": "https://doi.org/10.2139/ssrn.6790518",
+     "oa_source": "SSRN Electronic Journal",
+     "doi": "https://doi.org/10.2139/ssrn.6790518"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7162529227",
+     "title": "From AI-generated content to agentic action: Security and safety threats in generative AI",
+     "year": 2026,
+     "cited_by": 0,
+     "oa_url": "https://doi.org/10.1016/j.jiixd.2026.05.002",
+     "oa_source": "Journal of Information and Intelligence",
+     "doi": "https://doi.org/10.1016/j.jiixd.2026.05.002"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7164921945",
+     "title": "SafeCOMM: A Study on Safety Degradation in Fine-Tuned Telecom Large Language Models",
+     "year": 2026,
+     "cited_by": 0,
+     "oa_url": "https://arxiv.org/pdf/2506.00062",
+     "oa_source": "arXiv (Cornell University)",
+     "doi": "https://doi.org/10.1109/wcnc65185.2026.11555432"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7166511057",
+     "title": "Dialect vs Demographics: Quantifying LLM Bias from Implicit Linguistic Signals vs. Explicit User Profiles",
+     "year": 2026,
+     "cited_by": 0,
+     "oa_url": "https://doi.org/10.1145/3805689.3812419",
+     "oa_source": "ACM Conference on Fairness, Accountability, and Transparency (FAccT)",
+     "doi": "https://doi.org/10.1145/3805689.3812419"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7166782477",
+     "title": "InDe-LLM: Defending against Jailbreak Attacks in LLM-Powered Systems via Intention Disentangling",
+     "year": 2026,
+     "cited_by": 0,
+     "oa_url": "https://doi.org/10.1145/3797136",
+     "oa_source": "Proceedings of the ACM on software engineering.",
+     "doi": "https://doi.org/10.1145/3797136"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7167614276",
+     "title": "Silicon Sampling via Cross-Survey Transfer",
+     "year": 2026,
+     "cited_by": 0,
+     "oa_url": "https://arxiv.org/pdf/2607.03091",
+     "oa_source": "arXiv (Cornell University)",
+     "doi": "https://doi.org/10.1109/iri69576.2026.00070"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7172306042",
+     "title": "The Customer Is Always Right? How LLMs and Humans Judge Discrimination",
+     "year": 2026,
+     "cited_by": 0,
+     "oa_url": "https://doi.org/10.2139/ssrn.7224810",
+     "oa_source": "SSRN Electronic Journal",
+     "doi": "https://doi.org/10.2139/ssrn.7224810"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7196952467",
+     "title": "A Geometric Information Bottleneck for Activation Steering",
+     "year": 2026,
+     "cited_by": 0,
+     "oa_url": "https://doi.org/10.1145/3770855.3818109",
+     "oa_source": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)",
+     "doi": "https://doi.org/10.1145/3770855.3818109"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7197023514",
+     "title": "HyperEdit: Mitigating Hallucinations of Large Language Models via Hyperbolic Representation Editing",
+     "year": 2026,
+     "cited_by": 0,
+     "oa_url": "https://doi.org/10.1145/3770855.3818153",
+     "oa_source": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)",
+     "doi": "https://doi.org/10.1145/3770855.3818153"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7197044848",
+     "title": "SCOPE: Streaming Covariance-Orthogonal Post-Hoc Editing for Continual LLM Safety Governance",
+     "year": 2026,
+     "cited_by": 0,
+     "oa_url": "https://doi.org/10.1145/3770855.3817993",
+     "oa_source": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)",
+     "doi": "https://doi.org/10.1145/3770855.3817993"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7203722414",
+     "title": "RefusalGuard-M: a scalable human–machine framework for multi-turn LLM jailbreak evaluation via semantic refusal manifold modeling",
+     "year": 2026,
+     "cited_by": 0,
+     "oa_url": "https://link.springer.com/content/pdf/10.1186/s42400-026-00633-z.pdf",
+     "oa_source": "Cybersecurity",
+     "doi": "https://doi.org/10.1186/s42400-026-00633-z"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7208814506",
+     "title": "Cross-Modal Safety-Component Steering for Audio-Language Model Jailbreak Defense",
+     "year": 2026,
+     "cited_by": 0,
+     "oa_url": "https://doi.org/10.2139/ssrn.7417884",
+     "oa_source": "SSRN Electronic Journal",
+     "doi": "https://doi.org/10.2139/ssrn.7417884"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7211901703",
+     "title": "Causal evidence that language models use confidence to drive behaviour",
+     "year": 2026,
+     "cited_by": 0,
+     "oa_url": "https://www.nature.com/articles/s42256-026-01293-x.pdf",
+     "oa_source": "Nature Machine Intelligence",
+     "doi": "https://doi.org/10.1038/s42256-026-01293-x"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7213430983",
+     "title": "Cross-layer manifold attack and projection for robust safety alignment of large language models",
+     "year": 2026,
+     "cited_by": 0,
+     "oa_url": "https://doi.org/10.2139/ssrn.7094539",
+     "oa_source": "SSRN Electronic Journal",
+     "doi": "https://doi.org/10.1016/j.neucom.2026.135082"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7213463450",
+     "title": "When AI Summarizes Reputation: A Multi-Model Fidelity Audit of Consumer Risk Signals and Platform Trust in E-Commerce",
+     "year": 2026,
+     "cited_by": 0,
+     "oa_url": "https://doi.org/10.3390/jtaer21090329",
+     "oa_source": "Journal of theoretical and applied electronic commerce research",
+     "doi": "https://doi.org/10.3390/jtaer21090329"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7214178998",
+     "title": "Representation Control for Large Language Models: Survey and Research Challenges",
+     "year": 2026,
+     "cited_by": 0,
+     "oa_url": "https://doi.org/10.1145/3846173",
+     "oa_source": "ACM Computing Surveys",
+     "doi": "https://doi.org/10.1145/3846173"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7214656667",
+     "title": "Characterizing the Ecosystem of Open-Source Uncensored Large Language Models: Supply Chain, Governance, and Risks",
+     "year": 2026,
+     "cited_by": 0,
+     "oa_url": "https://doi.org/10.1145/3777912.3839799",
+     "oa_source": "ACM Internet Measurement Conference (IMC)",
+     "doi": "https://doi.org/10.1145/3777912.3839799"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7214886445",
+     "title": "TriSAIL: A Source-Sensitive Audit Protocol for Symmetric and Asymmetric Transfer in Hidden-State Safety Probes",
+     "year": 2026,
+     "cited_by": 0,
+     "oa_url": "https://doi.org/10.3390/sym18101644",
+     "oa_source": "Symmetry",
+     "doi": "https://doi.org/10.3390/sym18101644"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7220932796",
+     "title": "Subversion of clinical judgment by conversational artificial intelligence",
+     "year": 2026,
+     "cited_by": 0,
+     "oa_url": "https://doi.org/10.64898/2026.10.05.26364541",
+     "oa_source": "medRxiv",
+     "doi": "https://doi.org/10.64898/2026.10.05.26364541"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7221699459",
+     "title": "Enhancing AI Interpretability Through Localised Architectures",
+     "year": 2026,
+     "cited_by": 0,
+     "oa_url": "https://link.springer.com/content/pdf/10.1007/978-3-032-41269-0_10.pdf",
+     "oa_source": "Lecture notes in computer science",
+     "doi": "https://doi.org/10.1007/978-3-032-41269-0_10"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7221761817",
+     "title": "Ghost Robots: What the Law Can Do When No One Is Behind the Machine",
+     "year": 2026,
+     "cited_by": 0,
+     "oa_url": "https://realsafetyai.org/research/8qa2p9/ghost_robots_v0_3.pdf",
+     "oa_source": "?",
+     "doi": "https://doi.org/10.68481/8qa2p9"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4411173480",
+     "title": "Beyond Syntax: How Do LLMs Understand Code?",
+     "year": 2025,
+     "cited_by": 0,
+     "oa_url": "https://doi.org/10.1109/ICSE-NIER66352.2025.00023",
+     "oa_source": "Durham Research Online (Durham University)",
+     "doi": "https://doi.org/10.1109/icse-nier66352.2025.00023"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7131070659",
+     "title": "Debias Your Large Multi-Modal Model at Test-Time via Non-Contrastive Visual Attribute Steering",
+     "year": 2025,
+     "cited_by": 0,
+     "oa_url": "https://arxiv.org/pdf/2411.12590",
+     "oa_source": "arXiv (Cornell University)",
+     "doi": "https://doi.org/10.1109/iccvw69036.2025.00651"
+    }
+   ],
+   "pool_size": 32,
+   "reference_list_size": 0,
+   "references_not_looked_up": 0,
+   "rejected": [],
+   "rejected_total": 0
+  },
+  "R14": {
+   "identity": {
+    "resolved_title": "Duration between rewards controls the rate of behavioral and dopaminergic learning",
+    "expected": "Duration between rewards controls the rate of behavioral and dopaminergic learning",
+    "resolved_via": "doi",
+    "doi_requested": "10.1038/s41593-026-02206-2",
+    "token_overlap": 1.0,
+    "year": 2026,
+    "openalex_id": "https://openalex.org/W7128705632",
+    "cited_by_count": 29
+   },
+   "selected": [
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4399118353",
+     "title": "Mesostriatal dopamine is sensitive to changes in specific cue-reward contingencies",
+     "year": 2024,
+     "cited_by": 34,
+     "oa_url": "https://www.science.org/doi/pdf/10.1126/sciadv.adn4203?download=true",
+     "oa_source": "Science Advances",
+     "doi": "https://doi.org/10.1126/sciadv.adn4203"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4389242996",
+     "title": "Does phasic dopamine release cause policy updates?",
+     "year": 2023,
+     "cited_by": 18,
+     "oa_url": "https://doi.org/10.1111/ejn.16199",
+     "oa_source": "European Journal of Neuroscience",
+     "doi": "https://doi.org/10.1111/ejn.16199"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4384664840",
+     "title": "An open-source behavior controller for associative learning and memory (B-CALM)",
+     "year": 2023,
+     "cited_by": 15,
+     "oa_url": "https://link.springer.com/content/pdf/10.3758/s13428-023-02182-6.pdf",
+     "oa_source": "Behavior Research Methods",
+     "doi": "https://doi.org/10.3758/s13428-023-02182-6"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4392367921",
+     "title": "A statistical framework for analysis of trial-level temporal dynamics in fiber photometry experiments",
+     "year": 2024,
+     "cited_by": 13,
+     "oa_url": "https://doi.org/10.7554/elife.95802",
+     "oa_source": "eLife",
+     "doi": "https://doi.org/10.7554/elife.95802"
+    }
+   ],
+   "ranked_pool": [
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4399118353",
+     "title": "Mesostriatal dopamine is sensitive to changes in specific cue-reward contingencies",
+     "year": 2024,
+     "cited_by": 34,
+     "oa_url": "https://www.science.org/doi/pdf/10.1126/sciadv.adn4203?download=true",
+     "oa_source": "Science Advances",
+     "doi": "https://doi.org/10.1126/sciadv.adn4203"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4389242996",
+     "title": "Does phasic dopamine release cause policy updates?",
+     "year": 2023,
+     "cited_by": 18,
+     "oa_url": "https://doi.org/10.1111/ejn.16199",
+     "oa_source": "European Journal of Neuroscience",
+     "doi": "https://doi.org/10.1111/ejn.16199"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4384664840",
+     "title": "An open-source behavior controller for associative learning and memory (B-CALM)",
+     "year": 2023,
+     "cited_by": 15,
+     "oa_url": "https://link.springer.com/content/pdf/10.3758/s13428-023-02182-6.pdf",
+     "oa_source": "Behavior Research Methods",
+     "doi": "https://doi.org/10.3758/s13428-023-02182-6"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4392367921",
+     "title": "A statistical framework for analysis of trial-level temporal dynamics in fiber photometry experiments",
+     "year": 2024,
+     "cited_by": 13,
+     "oa_url": "https://doi.org/10.7554/elife.95802",
+     "oa_source": "eLife",
+     "doi": "https://doi.org/10.7554/elife.95802"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4400650563",
+     "title": "The influence of emotion on temporal context models",
+     "year": 2024,
+     "cited_by": 11,
+     "oa_url": "https://osf.io/n2a89/download",
+     "oa_source": "?",
+     "doi": "https://doi.org/10.1080/02699931.2024.2371075"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4408357999",
+     "title": "A statistical framework for analysis of trial-level temporal dynamics in fiber photometry experiments",
+     "year": 2025,
+     "cited_by": 9,
+     "oa_url": "https://doi.org/10.7554/elife.95802.3",
+     "oa_source": "eLife",
+     "doi": "https://doi.org/10.7554/elife.95802.3"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4409164802",
+     "title": "Reconceptualized Associative Learning",
+     "year": 2025,
+     "cited_by": 7,
+     "oa_url": "https://link.springer.com/content/pdf/10.1007/s40614-025-00442-8.pdf",
+     "oa_source": "Perspectives on Behavior Science",
+     "doi": "https://doi.org/10.1007/s40614-025-00442-8"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4400320315",
+     "title": "Mesolimbic dopamine ramps reflect environmental timescales",
+     "year": 2024,
+     "cited_by": 7,
+     "oa_url": "https://doi.org/10.7554/elife.98666",
+     "oa_source": "eLife",
+     "doi": "https://doi.org/10.7554/elife.98666"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4405048652",
+     "title": "Learning Temporal Relationships Between Symbols with Laplace Neural Manifolds",
+     "year": 2024,
+     "cited_by": 7,
+     "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13298686/pdf/42113_2024_Article_230.pdf",
+     "oa_source": "PubMed Central",
+     "doi": "https://doi.org/10.1007/s42113-024-00230-8"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4402728981",
+     "title": "“But why?” Dopamine and causal learning",
+     "year": 2024,
+     "cited_by": 6,
+     "oa_url": "https://doi.org/10.1016/j.cobeha.2024.101443",
+     "oa_source": "Current Opinion in Behavioral Sciences",
+     "doi": "https://doi.org/10.1016/j.cobeha.2024.101443"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4413830647",
+     "title": "Mesolimbic dopamine ramps reflect environmental timescales",
+     "year": 2025,
+     "cited_by": 5,
+     "oa_url": "https://elifesciences.org/download/aHR0cHM6Ly9jZG4uZWxpZmVzY2llbmNlcy5vcmcvYXJ0aWNsZXMvOTg2NjYvZWxpZmUtOTg2NjYtdjEucGRmP2Nhbm9uaWNhbFVyaT1odHRwczovL2VsaWZlc2NpZW5jZXMub3JnL2FydGljbGVzLzk4NjY2/elife-98666-v1.pdf?_hash=sOK3a0HHsFMPo5%2BLeBv%2FtiToGpAUE0CLIT5KqK4dm1g%3D",
+     "oa_source": "eLife",
+     "doi": "https://doi.org/10.7554/elife.98666.3"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4416466592",
+     "title": "Reconciling time and prediction error theories of associative learning",
+     "year": 2025,
+     "cited_by": 4,
+     "oa_url": "https://www.nature.com/articles/s41467-025-65137-9.pdf",
+     "oa_source": "Nature Communications",
+     "doi": "https://doi.org/10.1038/s41467-025-65137-9"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7125379836",
+     "title": "Memory erasure by dopamine-gated retrospective learning",
+     "year": 2026,
+     "cited_by": 3,
+     "oa_url": "https://doi.org/10.64898/2026.01.17.700100",
+     "oa_source": "bioRxiv (Cold Spring Harbor Laboratory)",
+     "doi": "https://doi.org/10.64898/2026.01.17.700100"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4417423514",
+     "title": "Spatially heterogeneous acetylcholine dynamics in the striatum promote behavioral flexibility",
+     "year": 2025,
+     "cited_by": 3,
+     "oa_url": "https://www.nature.com/articles/s41467-025-66826-1.pdf",
+     "oa_source": "Nature Communications",
+     "doi": "https://doi.org/10.1038/s41467-025-66826-1"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4404565839",
+     "title": "Information, certainty, and learning",
+     "year": 2024,
+     "cited_by": 3,
+     "oa_url": "https://doi.org/10.7554/elife.102155.1",
+     "oa_source": "eLife",
+     "doi": "https://doi.org/10.7554/elife.102155.1"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4413279751",
+     "title": "Auditory-motor adaptation and de-adaptation for speech depend more on time in the new environment than on the amount of practice",
+     "year": 2025,
+     "cited_by": 2,
+     "oa_url": "https://www.nature.com/articles/s44271-025-00304-8.pdf",
+     "oa_source": "Communications Psychology",
+     "doi": "https://doi.org/10.1038/s44271-025-00304-8"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4401273395",
+     "title": "Information, certainty, and learning",
+     "year": 2024,
+     "cited_by": 2,
+     "oa_url": "https://doi.org/10.1101/2024.07.31.606111",
+     "oa_source": "bioRxiv (Cold Spring Harbor Laboratory)",
+     "doi": "https://doi.org/10.1101/2024.07.31.606111"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4404565871",
+     "title": "Information, certainty, and learning",
+     "year": 2024,
+     "cited_by": 2,
+     "oa_url": "https://elifesciences.org/reviewed-preprints/102155.pdf",
+     "oa_source": "eLife",
+     "doi": "https://doi.org/10.7554/elife.102155"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7127079938",
+     "title": "Information, certainty, and learning",
+     "year": 2026,
+     "cited_by": 1,
+     "oa_url": "https://elifesciences.org/download/aHR0cHM6Ly9jZG4uZWxpZmVzY2llbmNlcy5vcmcvYXJ0aWNsZXMvMTAyMTU1L2VsaWZlLTEwMjE1NS12MS5wZGY_Y2Fub25pY2FsVXJpPWh0dHBzOi8vZWxpZmVzY2llbmNlcy5vcmcvYXJ0aWNsZXMvMTAyMTU1/elife-102155-v1.pdf?_hash=oCFHXicYqc%2B5D1cNnRajDlPudV3oPjg%2BjQHyKaE7LRw%3D",
+     "oa_source": "eLife",
+     "doi": "https://doi.org/10.7554/elife.102155.4"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7162021421",
+     "title": "Reward magnitude determines reinforcement learning efficiency",
+     "year": 2026,
+     "cited_by": 1,
+     "oa_url": "https://doi.org/10.1126/science.aeb0813",
+     "oa_source": "Science",
+     "doi": "https://doi.org/10.1126/science.aeb0813"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4417246552",
+     "title": "Information, certainty, and learning",
+     "year": 2025,
+     "cited_by": 1,
+     "oa_url": "https://doi.org/10.7554/elife.102155.3",
+     "oa_source": "eLife",
+     "doi": "https://doi.org/10.7554/elife.102155.3"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7202243496",
+     "title": "Modelling dopaminergic signals associated with habit formation through temporal-difference action learning",
+     "year": 2026,
+     "cited_by": 0,
+     "oa_url": "https://doi.org/10.64898/2026.08.10.743861",
+     "oa_source": "bioRxiv (Cold Spring Harbor Laboratory)",
+     "doi": "https://doi.org/10.64898/2026.08.10.743861"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7213893406",
+     "title": "Sensor sensibility: Divergent measurements of dopaminergic signaling to acute morphine administration via fiber photometry",
+     "year": 2026,
+     "cited_by": 0,
+     "oa_url": "https://www.sciencedirect.com/science/article/pii/S0028390826003692/pdf",
+     "oa_source": "Neuropharmacology",
+     "doi": "https://doi.org/10.1016/j.neuropharm.2026.111194"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7214769996",
+     "title": "Divergent Dopamine Dynamics within the Accumbens Core",
+     "year": 2026,
+     "cited_by": 0,
+     "oa_url": "https://doi.org/10.64898/2026.09.23.753606",
+     "oa_source": "bioRxiv (Cold Spring Harbor Laboratory)",
+     "doi": "https://doi.org/10.64898/2026.09.23.753606"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W7221441185",
+     "title": "Dynamic dopamine signaling, prediction error, and microcircuit mechanisms in stress-induced depression-like behaviors",
+     "year": 2026,
+     "cited_by": 0,
+     "oa_url": "https://doi.org/10.3389/fcell.2026.1948686",
+     "oa_source": "Frontiers in Cell and Developmental Biology",
+     "doi": "https://doi.org/10.3389/fcell.2026.1948686"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4409859845",
+     "title": "Modelling the acquisition of Pavlovian conditioning",
+     "year": 2025,
+     "cited_by": 0,
+     "oa_url": "https://doi.org/10.1016/j.nlm.2025.108059",
+     "oa_source": "Neurobiology of Learning and Memory",
+     "doi": "https://doi.org/10.1016/j.nlm.2025.108059"
+    },
+    {
+     "from": "citing",
+     "id": "https://openalex.org/W4410192413",
+     "title": "Information, certainty, and learning",
+     "year": 2025,
+     "cited_by": 0,
+     "oa_url": "https://doi.org/10.7554/elife.102155.2",
+     "oa_source": "eLife",
+     "doi": "https://doi.org/10.7554/elife.102155.2"
+    }
+   ],
+   "pool_size": 27,
+   "reference_list_size": 60,
+   "references_not_looked_up": 48,
+   "rejected": [
+    {
+     "from": "reference",
+     "id": "https://openalex.org/W170927992",
+     "title": "Stimulus representation in SOP: I",
+     "reason": "closed access"
+    },
+    {
+     "from": "reference",
+     "id": "https://openalex.org/W1603963294",
+     "title": "Learning Performance of Normal and MutantDrosophilaafter Repeated Conditioning Trials with Discrete Stimuli",
+     "reason": "closed access"
+    },
+    {
+     "from": "reference",
+     "id": "https://openalex.org/W1739779199",
+     "title": "Theoretical Implications of the Spacing Effect 1",
+     "reason": "closed access"
+    },
+    {
+     "from": "reference",
+     "id": "https://openalex.org/W1875506666",
+     "title": "Intact-Brain Analyses Reveal Distinct Information Carried by SNc Dopamine Subcircuits",
+     "reason": "closed access"
+    },
+    {
+     "from": "reference",
+     "id": "https://openalex.org/W1974367810",
+     "title": "Hippocampal replay in the awake state: a potential substrate for memory consolidation and retrieval",
+     "reason": "closed access"
+    },
+    {
+     "from": "reference",
+     "id": "https://openalex.org/W1985940938",
+     "title": "A quantitative description of membrane current and its application to conduction and excitation in nerve",
+     "reason": "closed access"
+    },
+    {
+     "from": "reference",
+     "id": "https://openalex.org/W1989186580",
+     "title": "The acquisition of conditioned responding.",
+     "reason": "closed access"
+    },
+    {
+     "from": "reference",
+     "id": "https://openalex.org/W1999743873",
+     "title": "Overshadowing and stimulus intensity",
+     "reason": "closed access"
+    },
+    {
+     "from": "reference",
+     "id": "https://openalex.org/W2001257668",
+     "title": "Hippocampal Replay Is Not a Simple Function of Experience",
+     "reason": "closed access"
+    },
+    {
+     "from": "reference",
+     "id": "https://openalex.org/W2001992349",
+     "title": "Trial and intertrial durations in appetitive conditioning in rats",
+     "reason": "closed access"
+    },
+    {
+     "from": "reference",
+     "id": "https://openalex.org/W2002873194",
+     "title": "Spacing practice sessions across days benefits the learning of motor skills",
+     "reason": "closed access"
+    },
+    {
+     "from": "reference",
+     "id": "https://openalex.org/W2011451766",
+     "title": "A causal link between prediction errors, dopamine neurons and learning",
+     "reason": "closed access"
+    }
+   ],
+   "rejected_total": 12
+  }
+ },
+ "anchors_with_no_selection": [],
+ "anchor_failures": {},
+ "raw_sha256_of_first_selected_titles": "633c2b03c12c32b6"
+}

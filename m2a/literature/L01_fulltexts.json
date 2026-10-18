@@ -1,0 +1,989 @@
+{
+ "schema": "m2a.roundL01.fulltexts.v2",
+ "records": {
+  "R13": {
+   "role": "anchor",
+   "channel": "local_cache",
+   "file": "/media/leonyao/新加卷/workshop/_m2a_ft/R13.txt",
+   "chars": 200960,
+   "sha256": "eea74057fb2dc603",
+   "title": "A neural mechanism for learning from delayed postingestive feedback",
+   "digest": [
+    {
+     "keyword": "delay",
+     "window": "592633.3 10592633 11423116 37873112 10.1101/2023.10.06.561214 3 preprint 3 Article A neural mechanism for learning from delayed postingestive feedback http://orcid.org/0000-0002-6286-1485 Zimmerman Christopher A. 1 Bolkan Scott S. 1 Pan-Vazquez Alejandro 1 Wu Bichan 1 Keppler Emma F. 1 Meares-Garcia Jordan B. 1 Guthman Eartha Mae 1 Fetcho Robert N. 1 McMannon Brenna 1 Lee Junuk 1 Hoag Austin T. 1 Lynch Laura A. 1 Janarthanan Sanjeev R. 1 López Luna Juan F."
+    },
+    {
+     "keyword": "delay",
+     "window": "d only so long as attribution is given to the creator. nihpp-2023.10.06.561214.pdf A neural mechanism for learning from delayed postingestive feedback 642 8068 2 4 2025 700 709 Nature 10.1038/s41586-025-08828-z PMC12176619 40175547 Animals learn the value of foods based on their postingestive effects and thereby develop aversions to foods that are toxic 1 – 6 and preferences to those that are nutritious 7 – 14 . However, it remains unclear how the brain is"
+    },
+    {
+     "keyword": "post-ingestive",
+     "window": "toxin-induced defensive responses . Cell 185 , 4298 – 4316 ( 2022 ). 36323317 10.1016/j.cell.2022.10.001 7. Sclafani A. Post-ingestive positive controls of ingestive behavior . Appetite 36 , 79 – 83 ( 2001 ). 11161347 10.1006/appe.2000.0370 8. de Araujo I. E. , Schatzker M. &amp; Small D. M. Rethinking Food Reward . Annual Review of Psychology 71 , 139 – 164 ( 2020 ). 10.1146/annurev-psych-122216-011643 31561741 9. Holman G. L. Intragastric reinforcement e"
+    },
+    {
+     "keyword": "habenula",
+     "window": "us 1.40e-03 −2.28 −1.16 1.57 0.97 Reticular nucleus of the thalamus RT Thalamus 5.95e-06 −2.58 −0.35 3.54 −0.02 Lateral habenula LH Thalamus 3.08e-05 −3.91 0.45 1.37 0.36 Paraventricular hypothalamic nucleus PVH Hypothalamus 1.10e-02 −0.05 1.83 0.50 1.64 Periventricular hypothalamic nucleus PV Hypothalamus 5.27e-02 −1.28 2.00 1.23 2.35 Anterodorsal preoptic nucleus ADP Hypothalamus 1.71e-03 −3.28 0.28 0.83 0.91 Anteroventral periventricular nucleus AVPV Hy"
+    },
+    {
+     "keyword": "CGRP",
+     "window": "nds malaise signals to a genetically defined population of glutamatergic neurons in the hindbrain parabrachial nucleus (CGRP, calcitonin gene-related peptide, neurons) 4 , 35 – 37 that then project to the central amygdala (CEA) and bed nucleus of the stria terminalis (BST). However, it remains unclear where and how temporally separated taste and malaise signals ultimately converge in the brain to support learning. Novel but not familiar flavors support one"
+    },
+    {
+     "keyword": "CGRP",
+     "window": "ntation is still present upon memory retrieval suggests that the same network may also be a site of storage and recall. CGRP neurons mediate the effects of postingestive malaise on delayed CTA learning and novel flavor-dependent amygdala activation The idea that the amygdala could be a critical node for convergence of the flavor representation and malaise signal is further supported by prior work establishing the amygdala as a site of associative learning"
+    },
+    {
+     "keyword": "nausea",
+     "window": "oblem. Humans 3 and other animals 1 , 2 develop CTAs when they experience symptoms of food poisoning (visceral malaise, nausea, diarrhea), which produces a long-lasting aversion to the potentially poisonous food. Remarkably, animals can develop a CTA to novel foods after a single pairing (that is, one-shot learning) even with meal-to-malaise delays of several hours 19 – 21 . Previous work on CTA has focused on two primary anatomical pathways. The first beg"
+    },
+    {
+     "keyword": "nausea",
+     "window": "2 – 4586 ( 2015 ). 25788675 10.1523/JNEUROSCI.3729-14.2015 PMC4363386 5. Zhang C. Area Postrema Cell Types that Mediate Nausea-Associated Behaviors . Neuron 109 , 461 – 472 ( 2021 ). 33278342 10.1016/j.neuron.2020.11.010 PMC7864887 6. Xie Z. The gut-to-brain axis for toxin-induced defensive responses . Cell 185 , 4298 – 4316 ( 2022 ). 36323317 10.1016/j.cell.2022.10.001 7. Sclafani A. Post-ingestive positive controls of ingestive behavior . Appetite 36 , 7"
+    }
+   ],
+   "substitutions_skipped": [
+    {
+     "rank": 1,
+     "title": "Heightened lateral habenula activity during stress produces brainwide and behavioral substrates of susceptibility",
+     "year": 2024,
+     "reason": "empty payload after stripping (11 chars < 4000); usually a cookie wall, redirect stub or abstract-only page"
+    },
+    {
+     "rank": 4,
+     "title": "Plateau potentials are instructive signals for behavioral timescale synaptic plasticity in the neocortex",
+     "year": 2025,
+     "reason": "pdf-only: no text extractor in this environment (pypdf not installed)"
+    },
+    {
+     "rank": 5,
+     "title": "Metabolic sensing in AgRP regulates sucrose preference and dopamine release in the nucleus accumbens",
+     "year": 2024,
+     "reason": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+     "rank": 6,
+     "title": "Sickness and the brain",
+     "year": 2025,
+     "reason": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+     "rank": 7,
+     "title": "Adverse Food Reactions: Physiological and Ecological Perspectives",
+     "year": 2024,
+     "reason": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+     "rank": 9,
+     "title": "Interoceptive modulation of emotions",
+     "year": 2025,
+     "reason": "empty payload after stripping (11 chars < 4000); usually a cookie wall, redirect stub or abstract-only page"
+    },
+    {
+     "rank": 10,
+     "title": "Dopamine activity encodes the changing valence of the same stimulus in conditioned taste aversion paradigms",
+     "year": 2025,
+     "reason": "empty payload after stripping (310 chars < 4000); usually a cookie wall, redirect stub or abstract-only page"
+    },
+    {
+     "rank": 11,
+     "title": "Neuro-immune interactions in memory",
+     "year": 2025,
+     "reason": "empty payload after stripping (11 chars < 4000); usually a cookie wall, redirect stub or abstract-only page"
+    },
+    {
+     "rank": 12,
+     "title": "Feeding-induced olfactory cortex suppression reduces satiation",
+     "year": 2025,
+     "reason": "empty payload after stripping (11 chars < 4000); usually a cookie wall, redirect stub or abstract-only page"
+    },
+    {
+     "rank": 13,
+     "title": "Ingestion-activated CGRP neurons control learning but not satiety",
+     "year": 2026,
+     "reason": "HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+     "rank": 14,
+     "title": "Multimodal sensing-computing devices: Toward a new paradigm for embodied intelligence",
+     "year": 2026,
+     "reason": "empty payload after stripping (11 chars < 4000); usually a cookie wall, redirect stub or abstract-only page"
+    }
+   ],
+   "full_texts_read": 7
+  },
+  "R13-N1": {
+   "role": "neighbour",
+   "channel": "FAILED",
+   "reason": "empty payload after stripping (11 chars < 4000); usually a cookie wall, redirect stub or abstract-only page",
+   "title": "Heightened lateral habenula activity during stress produces brainwide and behavioral substrates of susceptibility",
+   "year": 2024,
+   "oa_url": "https://doi.org/10.1016/j.neuron.2024.09.009"
+  },
+  "R13-N2": {
+   "role": "neighbour",
+   "channel": "europepmc_fullTextXML",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11839311/fullTextXML",
+   "chars": 39078,
+   "sha256": "123cef5854a68333",
+   "title": "Neural pathways of nausea and roles in energy balance",
+   "year": 2025,
+   "cited_by": 18,
+   "doi": "https://doi.org/10.1016/j.conb.2024.102963",
+   "abstract_head": "Abstract Our internal sensory systems encode various gut-related sensations, such as hunger, feelings of fullness, and nausea. These internal feelings influence our eating behaviors and play a vital role in regulating energy balance. Among them, the neurological basis for nausea has been the least well characterized, which has hindered comprehension of the connection between these sensations. Single-cell sequencing, along with functional mapping, has brought clarity to the neural pathways of nausea involving the brainstem area postrema. In addition, the newly discovered nausea sensory signals ",
+   "digest": [
+    {
+     "keyword": "delay",
+     "window": "alaise signals through the PBN CGRP + neuronal inputs, which enables learned avoidance of the novel flavors despite the delayed malaise responses [ 29 ]. Located outside the blood–brain barrier, area postrema neurons can directly detect humoral cues through receptors expressed in the cell surface. Consistent with the primary role of the area postrema in regulating feeding, several gut hormones, including GLP-1, amylin, ghrelin, peptide YY, and glucose-dep"
+    },
+    {
+     "keyword": "delay",
+     "window": ", Keppler EF, Meares-Garcia JB, Guthman EM, Fetcho RN, McMannon B, Lee J, et al. : A neural mechanism for learning from delayed postingestive feedback. bioRxiv 2024. This study clarified the mechanisms how delayed nausea sensation still elicits specific association to the conditioned food cue. 30. Costa A, Ai M, Nunn N, Culotta I, Hunter J, Boudjadja MB, Valencia-Torres L, Aviello G, Hodson DJ, Snider BM, et al. : Anorectic and aversive effects of GLP-1 re"
+    },
+    {
+     "keyword": "CGRP",
+     "window": "Inhibitory neurons also express markers, such as the GIP receptor. Area postrema GLP1R + population project to the PBN CGRP + neurons while CALCR + population project to the PBN CGRP − region. They also project to parasympathetic and sympathetic premotor regions in the brainstem. Peripheral vagal afferent nerves innervate the area postrema and NTS. NTS GLP1R + neurons can detect GLP1R agonists to suppress feeding via the non-aversive PVH pathway. Created"
+    },
+    {
+     "keyword": "nausea",
+     "window": "y Curr Opin Neurobiol PMC11839311 11839311 11839311 NIHMS2048829 39765206 10.1016/j.conb.2024.102963 Neural pathways of nausea and roles in energy balance Zhang Chuchu 1 1 Department of Physiology, David Geffen School of Medicine, University of California, Los Angeles, CA, USA ✉ Corresponding author: Zhang, Chuchu ( chuchuzhang@mednet.ucla.edu ) 6 1 2025 90 102963 102963 20 2 2025 This is an open access article under the CC BY-NC license ( https://creativ"
+    },
+    {
+     "keyword": "nausea",
+     "window": "Abstract Our internal sensory systems encode various gut-related sensations, such as hunger, feelings of fullness, and nausea. These internal feelings influence our eating behaviors and play a vital role in regulating energy balance. Among them, the neurological basis for nausea has been the least well characterized, which has hindered comprehension of the connection between these sensations. Single-cell sequencing, along with functional mapping, has brou"
+    },
+    {
+     "keyword": "taste avoidance",
+     "window": "in non-human animals: refocusing on gastrointestinal vagal signaling. Exp Brain Res 2014, 232:2471–2481. 9. Parker LA: Taste avoidance and taste aversion: evidence for two different processes. Learn Behav 2003, 31:165–172. 10. ●● Huang KP, Acosta AA, Ghidewon MY, McKnight AD, Almeida MS, Nyema NT, Hanchak ND, Patel N, Gbenou YSK, Adriaenssens AE, et al. : Dissociable hindbrain GLP1R circuits for satiety and aversion. Nature 2024, 632:585–593. This study"
+    },
+    {
+     "keyword": "interocept",
+     "window": "ism. Sensory pathways for nausea As with many exteroceptive sensations like olfaction and somatosensation, nausea – an interoceptive sensation – is evoked first by peripheral sensory pathways, which then activate the central nervous system. There are two main peripheral pathways responsible for nausea: the visceral pathway, which mediates poisoning, and the vestibular pathway, which causes motion sickness. For motion sickness, it is driven by conflicts be"
+    },
+    {
+     "keyword": "interocept",
+     "window": "(CALCR + ) project to the parabrachial nucleus (PBN), a midbrain hub that relays the majority of the somatosensory and interoceptive sensory information [ 15 , 22 – 24 ]. However, only the GLP1R + area postrema population densely innervates the PBN neurons expressing calcitonin gene-related peptide (CGRP) [ 18 ], which is central in transmitting threat signals and mediating meal termination and aversive learning behaviors [ 25 – 28 ]. PBN CGRP + neurons f"
+    }
+   ]
+  },
+  "R13-N3": {
+   "role": "neighbour",
+   "channel": "europepmc_fullTextXML",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12459430/fullTextXML",
+   "chars": 145807,
+   "sha256": "5c191ce9a1530a84",
+   "title": "An interoceptive model of energy allostasis linking metabolic and mental health",
+   "year": 2025,
+   "cited_by": 15,
+   "doi": "https://doi.org/10.1126/sciadv.ady4356",
+   "abstract_head": "abstract constructs, instead conceptualizing them as inherently dependent on the agent’s current physiological state and goals. Moreover, computational models incorporating physiological states would allow us to formalize hypothesized mechanistic relationships between physiology and cognition, as well as empirically test them. Box 2. Outstanding questions. 1) How are different temporal dynamics integrated in the interoceptive allostatic system, for example, how are fast-changing insulin levels integrated with the slow-changing input of leptin levels to estimate the body’s current energy state?",
+   "digest": [
+    {
+     "keyword": "delay",
+     "window": "alaise signals powerfully reinforce avoidance of potentially toxic foods. Animals learn to associate novel flavors with delayed gastrointestinal signals of malaise after only a single learning episode ( 200 ). This occurs via reactivation of a specific population of amygdala neurons which enable association of postoral malaise with oral (or potentially olfactory and other preoral) signals, causing future avoidance of the novel flavor ( 200 ). While metabo"
+    },
+    {
+     "keyword": "delay",
+     "window": "pez Luna , A. G. Bondy , A. L. Falkner , S. S.-H. Wang , I. B. Witten , A neural mechanism for learning from delayed postingestive feedback . Nature 642 , 700 – 709 ( 2025 ). 40175547 10.1038/s41586-025-08828-z PMC12176619 201 J. N. Betley , S. Xu , Z. F. H. Cao , R. Gong , C. J. Magnus , Y. Yu , S. M. Sternson , Neurons for hunger and thirst transmit a negative-valence teaching signal . Nature 521 , 180 – 185 ( 2015 )."
+    },
+    {
+     "keyword": "allostasis",
+     "window": "ience SciAdv reviews Cognitive Neuroscience Health and Medicine Cognitive Neuroscience An interoceptive model of energy allostasis linking metabolic and mental health An interoceptive model of energy allostasis https://orcid.org/0000-0001-8267-3898 Mehrhof Sara Z. Conceptualization Project administration Visualization Writing - original draft Writing - review & editing 1 * https://orcid.org/0000-0001-5421-8222 Fleming Hugo Conceptualization Investigati"
+    },
+    {
+     "keyword": "interocept",
+     "window": "y4356 ady4356 1 Review Neuroscience SciAdv reviews Cognitive Neuroscience Health and Medicine Cognitive Neuroscience An interoceptive model of energy allostasis linking metabolic and mental health An interoceptive model of energy allostasis https://orcid.org/0000-0001-8267-3898 Mehrhof Sara Z. Conceptualization Project administration Visualization Writing - original draft Writing - review & editing 1 * https://orcid.org/0000-0001-5421-8222 Fleming Hugo"
+    },
+    {
+     "keyword": "sucrose",
+     "window": "( 85 , 87 ). Systemic ghrelin administration also has antidepressant-like effects, for instance, on the forced swim and sucrose-preference tests [see ( 88 ) for a review], although note that one study has reported opposite effects ( 89 ). In humans, findings are mixed: Some report lower baseline ghrelin levels in depression ( 90 ), while others found no difference between cases and controls ( 91 ). More recently, a study found that ghrelin levels were inc"
+    },
+    {
+     "keyword": "visceral",
+     "window": "ht gain ( 117 ). Similarly, human studies show that an increased intake of saturated fat can lead to weight-independent visceral adipose fat accumulation ( 172 ), as well as alterations to the neural response related to both food and nonfood rewards ( 173 ). Last, reports of positive correlations of depressive symptoms with dietary intake of saturated fats ( 174 ) and circulating saturated fatty acid palmitate ( 175 ) in humans further suggest a link to me"
+    },
+    {
+     "keyword": "visceral",
+     "window": "r , I. Dahlman , U. Risérus , Overfeeding polyunsaturated and saturated fat causes distinct effects on liver and visceral fat accumulation in humans . Diabetes 63 , 2356 – 2368 ( 2014 ). 24550191 10.2337/db13-1622 173 S. E. Thanarajah , A. G. DiFeliceantonio , K. Albus , B. Kuzmanovic , L. Rigoux , S. Iglesias , R. Hanßen , M. Schlamann , O. A. Cornely , J. C. Brüning , M. Tittgemeyer , D. M. Small , Habitual daily int"
+    }
+   ]
+  },
+  "R13-N4": {
+   "role": "neighbour",
+   "channel": "FAILED",
+   "reason": "pdf-only: no text extractor in this environment (pypdf not installed)",
+   "title": "Plateau potentials are instructive signals for behavioral timescale synaptic plasticity in the neocortex",
+   "year": 2025,
+   "oa_url": "https://www.biorxiv.org/content/biorxiv/early/2025/11/07/2025.11.07.687250.full.pdf"
+  },
+  "R13-N5": {
+   "role": "neighbour",
+   "channel": "FAILED",
+   "reason": "HTTPError: HTTP Error 403: Forbidden",
+   "title": "Metabolic sensing in AgRP regulates sucrose preference and dopamine release in the nucleus accumbens",
+   "year": 2024,
+   "oa_url": "https://doi.org/10.1111/jne.13389"
+  },
+  "R13-N6": {
+   "role": "neighbour",
+   "channel": "FAILED",
+   "reason": "HTTPError: HTTP Error 403: Forbidden",
+   "title": "Sickness and the brain",
+   "year": 2025,
+   "oa_url": "https://www.cell.com/current-biology/pdf/S0960-9822(25)01116-9.pdf"
+  },
+  "R13-N7": {
+   "role": "neighbour",
+   "channel": "FAILED",
+   "reason": "HTTPError: HTTP Error 403: Forbidden",
+   "title": "Adverse Food Reactions: Physiological and Ecological Perspectives",
+   "year": 2024,
+   "oa_url": "https://doi.org/10.1146/annurev-nutr-061021-022909"
+  },
+  "R13-N8": {
+   "role": "neighbour",
+   "channel": "europepmc_fullTextXML",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12022839/fullTextXML",
+   "chars": 21224,
+   "sha256": "17189d5b3ad490c7",
+   "title": "From Food Fears to Food Freedom: How Do We Best Manage Restrictive Eating in Inflammatory Bowel Disease?",
+   "year": 2025,
+   "cited_by": 5,
+   "doi": "https://doi.org/10.1093/crocol/otaf019",
+   "abstract_head": "Abstract Prior research has estimated the rates of avoidant/restrictive food intake disorder (ARFID) to be between 10% and 54% in patients with inflammatory bowel disease (IBD). However, recently published studies have questioned the ability of providers to differentiate the presence of ARFID in patients with gastrointestinal (GI ) symptoms and highlighted the relationship between ARFID and food literacy, which may reflect poor cognitive or psychological flexibility to navigate dietary restriction. We suggest the discourse around ARFID has neglected the neurological basis of fear conditioning ",
+   "digest": [
+    {
+     "keyword": "delay",
+     "window": "food and eating. 11-13 A recent study in mice showed that mice tend to associate novel, but not familiar, flavors with delayed gastric distress and the level of distress is associated with the tendency to avoid or approach that food in the future. 14 This suggests, at the basic level, that treatment of limited diets cannot and should not prioritize dietary liberalization before establishing safety and security in the food/eating process first. The introdu"
+    },
+    {
+     "keyword": "delay",
+     "window": "doi.org/ 10.1038/s41586-020-2199-7 14. Zimmerman CA, Pan-Vazquez A, Wu B, et al. A neural mechanism for learning from delayed postingestive feedback. bioRxiv. 2024:2023.10.06.561214. doi: https://doi.org/ 10.1101/2023.10.06.561214 15. Brenner DM, Ladewski AM, Kinsinger SW.. Development and current state of digital therapeutics for irritable bowel syndrome. Clin Gastroenterol Hepatol. 2024;22(2):222-234. doi: https://doi.org/ 10.1016/j.cgh.2023.09.013"
+    },
+    {
+     "keyword": "post-ingestive",
+     "window": "ar around eating in the setting of severe postprandial symptoms. In this review, we discuss the role of the amygdala in post-ingestive learning and how this needs to shape the approach to dietary liberalization for the highest likelihood of success. We provide specific strategies for practice when working with patients who experience significant fear of eating, including the framework for and development of appropriate exposure hierarchies to guide the rei"
+    },
+    {
+     "keyword": "post-ingestive",
+     "window": "tients, it is essential we as providers understand how the brain processes threats with food and eating. The process of post-ingestive learning is well documented in animal models, where the gut-brain axis plays a pivotal role in driving appetitive versus aversive behaviors to food and eating. 11-13 A recent study in mice showed that mice tend to associate novel, but not familiar, flavors with delayed gastric distress and the level of distress is associate"
+    },
+    {
+     "keyword": "nausea",
+     "window": "ribing medications that increase the patient’s confidence to withstand symptoms should they appear (eg, additional anti-nausea medication, incorporating a neuromodulator to help with pain, etc.). If available, collaborating with a GI psychologist may be useful for addressing visceral hypersensitivity via gut-directed hypnotherapy or decreasing symptom-specific anxiety. Based on our clinical experience, patients who have had more severe reactions to food o"
+    },
+    {
+     "keyword": "visceral",
+     "window": "r rule out any physiologic factors that may be contributing to postprandial symptoms, including inflammatory processes, visceral hypersensitivity, or mechanical obstructions. A patient does not need to be entirely symptom-free to do dietary work; however, patients should express some degree of confidence they can manage their symptoms before engaging in this process. It is typically helpful to frame expectations with the patient their symptoms are likely t"
+    },
+    {
+     "keyword": "visceral",
+     "window": "euromodulator to help with pain, etc.). If available, collaborating with a GI psychologist may be useful for addressing visceral hypersensitivity via gut-directed hypnotherapy or decreasing symptom-specific anxiety. Based on our clinical experience, patients who have had more severe reactions to food or who have accumulated a higher quantity of food-based reactions are more likely to develop fear around food/eating which may impair FRQoL and lead to more"
+    }
+   ]
+  },
+  "R13-N9": {
+   "role": "neighbour",
+   "channel": "FAILED",
+   "reason": "empty payload after stripping (11 chars < 4000); usually a cookie wall, redirect stub or abstract-only page",
+   "title": "Interoceptive modulation of emotions",
+   "year": 2025,
+   "oa_url": "https://doi.org/10.1016/j.conb.2025.103049"
+  },
+  "R13-N10": {
+   "role": "neighbour",
+   "channel": "FAILED",
+   "reason": "empty payload after stripping (310 chars < 4000); usually a cookie wall, redirect stub or abstract-only page",
+   "title": "Dopamine activity encodes the changing valence of the same stimulus in conditioned taste aversion paradigms",
+   "year": 2025,
+   "oa_url": "https://doi.org/10.7554/elife.103260.2"
+  },
+  "R13-N11": {
+   "role": "neighbour",
+   "channel": "FAILED",
+   "reason": "empty payload after stripping (11 chars < 4000); usually a cookie wall, redirect stub or abstract-only page",
+   "title": "Neuro-immune interactions in memory",
+   "year": 2025,
+   "oa_url": "https://doi.org/10.1016/j.nlm.2025.108077"
+  },
+  "R13-N12": {
+   "role": "neighbour",
+   "channel": "FAILED",
+   "reason": "empty payload after stripping (11 chars < 4000); usually a cookie wall, redirect stub or abstract-only page",
+   "title": "Feeding-induced olfactory cortex suppression reduces satiation",
+   "year": 2025,
+   "oa_url": "https://doi.org/10.1016/j.neuron.2025.07.020"
+  },
+  "R13-N13": {
+   "role": "neighbour",
+   "channel": "FAILED",
+   "reason": "HTTPError: HTTP Error 429: Too Many Requests",
+   "title": "Ingestion-activated CGRP neurons control learning but not satiety",
+   "year": 2026,
+   "oa_url": "https://www.biorxiv.org/content/biorxiv/early/2025/10/09/2025.10.08.681275.full.pdf"
+  },
+  "R13-N14": {
+   "role": "neighbour",
+   "channel": "FAILED",
+   "reason": "empty payload after stripping (11 chars < 4000); usually a cookie wall, redirect stub or abstract-only page",
+   "title": "Multimodal sensing-computing devices: Toward a new paradigm for embodied intelligence",
+   "year": 2026,
+   "oa_url": "https://doi.org/10.1016/j.mattod.2026.103223"
+  },
+  "R13-N15": {
+   "role": "neighbour",
+   "channel": "oa_url_direct",
+   "url": "https://doi.org/10.1101/2025.10.21.683769",
+   "chars": 5370,
+   "sha256": "fc93f52f4b10a55e",
+   "title": "Visceral signaling of post-ingestive malaise directs memory updating in Drosophila",
+   "year": 2025,
+   "cited_by": 2,
+   "doi": "https://doi.org/10.1101/2025.10.21.683769",
+   "abstract_head": "Abstract Full Text Info/History Metrics Supplementary material Preview PDF Abstract Consolidation is a time when labile memories transition to a stable form. Malaise learning in Drosophila reveals consolidation to also permit memory updating. Flies taught to associate one of two odors with toxin-tainted sugar initially express conditioned odor approach, that following consolidation switches to avoidance. Behavioral reversal emerges from dopaminergic update of parallel memories for the two trained odors. Differential serotoninergic modulation of specific aversive and rewarding dopaminergic neur",
+   "digest": [
+    {
+     "keyword": "delay",
+     "window": "eurons that form and consolidate initial sugar memory. This neural mechanism overcomes the credit assignment problem of delayed post-ingestive reinforcement by updating earlier memories of the trained odors. Competing Interest Statement The authors have declared no competing interest. Funder Information Declared Wellcome Trust , 200846 , 225192 , 203261 , 209235 European Research Council, https://ror.org/0472cxd90 , 789274 Copyright The copyright"
+    },
+    {
+     "keyword": "post-ingestive",
+     "window": "Visceral signaling of post-ingestive malaise directs memory updating in Drosophila | bioRxiv Skip to main content Home About Submit ALERTS / RSS Search for this keyword Advanced Search New Results Visceral signaling of post-ingestive malaise directs memory updating in Drosophila View ORCID Profile Bhagyashree Senapati , View ORCID Profile Ch"
+    }
+   ]
+  },
+  "R13-N16": {
+   "role": "neighbour",
+   "channel": "europepmc_fullTextXML",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13198203/fullTextXML",
+   "chars": 78934,
+   "sha256": "30208adb7a19cbb7",
+   "title": "GIP receptor agonism suppresses inflammation-induced aversion and food intake via distinct circuits",
+   "year": 2026,
+   "cited_by": 1,
+   "doi": "https://doi.org/10.1016/j.celrep.2026.117116",
+   "abstract_head": "abstract pmc-status-qastatus 0 pmc-status-live yes pmc-status-embargo no pmc-status-released yes pmc-prop-open-access yes pmc-prop-olf yes pmc-prop-manuscript yes pmc-prop-open-manuscript yes pmc-prop-legally-suppressed no pmc-prop-has-pdf yes pmc-prop-has-supplement yes pmc-prop-pdf-only no pmc-prop-suppress-copyright no pmc-prop-is-real-version no pmc-prop-is-scanned-article no pmc-prop-preprint no pmc-prop-in-epmc yes pmc-license-ref CC BY-NC INTRODUCTION Glucose-dependent insulinotropic polypeptide (GIP) is a gut-derived incretin hormone that acts on GIP receptors (GIPRs) to regulate energ",
+   "digest": [
+    {
+     "keyword": "delay",
+     "window": "ection ( Figure 3F ). This may explain the inability of OND to attenuate CTA, as animals can develop a CTA with an hour delay between the taste and the onset of sickness. 46 – 51 Combined DA-GIP and OND treatment almost fully attenuated IL-1β-induced CTA and CGRP neuron activation ( Figures 3A and 3I – 3L ). Serum IL-6 and TNF-α concentrations were not significantly different between mice treated with IL-1β or with IL-1β + OND ( Figure S3 ), indicating tha"
+    },
+    {
+     "keyword": "delay",
+     "window": "ur after administration may account for the inability of OND to attenuate CTA, which can form with minute- to hour-long delays between the pairing of a novel flavor and sickness onset. 46 – 51 As there are decades of data demonstrating OND is a clinically effective anti-nausea and anti-emetic medication, 38 , 71 – 73 our findings suggest that the CTA assay has limited predictive validity for anti-aversive drugs. Taking these results together, we propose th"
+    },
+    {
+     "keyword": "postingestive",
+     "window": "Meares-Garcia JB , Guthman EM , Fetcho RN , McMannon B , Lee J , ( 2025 ). A neural mechanism for learning from delayed postingestive feedback . Nature 642 , 700 – 709 . 10.1038/s41586-025-08828-z . 40175547 PMC12176619 52. Nilsson A , Wilhelms DB , Mirrasekhian E , Jaarola M , Blomqvist A , and Engblom D ( 2017 ). Inflammation-induced anorexia and fever are elicited by distinct prostaglandin dependent mechanisms, whereas conditioned taste aversion is"
+    },
+    {
+     "keyword": "CGRP",
+     "window": "f the pro-inflammatory cytokine interleukin-1β (IL-1β). Aversion-encoding parabrachial calcitonin gene-related peptide (CGRP) neurons were required for IL-1β-induced CTA but not anorexia. Moreover, systemic IL-1β increased CGRP neural activity in vivo , and this was significantly attenuated by co-administration of a GIPR agonist. By contrast, GIPR in the dorsal vagal complex was required for the acute anorectic effect of GIPR agonism but not its anti-avers"
+    },
+    {
+     "keyword": "CGRP",
+     "window": "related peptide (CGRP) neurons were required for IL-1β-induced CTA but not anorexia. Moreover, systemic IL-1β increased CGRP neural activity in vivo , and this was significantly attenuated by co-administration of a GIPR agonist. By contrast, GIPR in the dorsal vagal complex was required for the acute anorectic effect of GIPR agonism but not its anti-aversive effect. Taken together, our data suggest that GIPR agonism reduces food intake and prevents aversio"
+    },
+    {
+     "keyword": "nausea",
+     "window": "n the parabrachial nucleus (PBN). 30 – 33 The effect on CGRP neuron activity was additive with the clinically used anti-nausea agent ondansetron (OND), suggesting a distinct mechanism of action. By contrast, GIPR agonism modestly potentiated IL-1β-induced anorexia via direct action on GIPR in the DVC, which our data suggest may be dispensable for GIPR-agonist-induced anti-aversion. Combined, our findings illuminate the neural circuit basis underlying multi"
+    },
+    {
+     "keyword": "nausea",
+     "window": "aversive symptoms is OND, which antagonizes 5-HT 3 receptors on the vagus nerve and in the DVC to alleviate emesis and nausea. 38 – 42 The ability of OND to prevent CTA in rodent models is controversial, with studies reporting that OND does not attenuate CTA due to serotonin, cisplatin, or ipecac 43 , 44 and another reporting that OND prevents CTA due to apomorphine. 45 To determine whether the anti-aversive properties of DA-GIP and OND have overlapping n"
+    },
+    {
+     "keyword": "taste avoidance",
+     "window": "one, and pharmacologic modulation of central GIP receptors (GIPRs) improves energy homeostasis and prevents conditioned taste avoidance (CTA). However, the mechanisms by which GIPR signaling impact food intake and aversion are incompletely understood. Here, we show that GIPR agonism abrogates the aversive and enhances the anorexigenic effects of the pro-inflammatory cytokine interleukin-1β (IL-1β). Aversion-encoding parabrachial calcitonin gene-related pep"
+    }
+   ]
+  },
+  "R13-N17": {
+   "role": "neighbour",
+   "channel": "europepmc_fullTextXML",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12263961/fullTextXML",
+   "chars": 58605,
+   "sha256": "1abe4e12de9bba39",
+   "title": "The gut and heart’s role in reward processing",
+   "year": 2025,
+   "cited_by": 1,
+   "doi": "https://doi.org/10.3389/fnint.2025.1479923",
+   "abstract_head": "Abstract Reward processing, which ensures survival, has evolved to also shape emotions, learning, and overall well-being. While traditional models of reward have focused predominantly on central neural circuits, emerging evidence underscores the role of peripheral bodily signals. This represents a new opportunity by which we may understand neurological and neuropsychiatric health. In this review, we explore the gut-brain and heart-brain interfaces in reward processing, delineating their contributions across distinct phases of reward and offering insights into their bioenergetic significance. B",
+   "digest": [
+    {
+     "keyword": "delay",
+     "window": "suggests RPEs exist across various regions. For example, amygdalar activity heightens when novel foods are paired with delayed gastrointestinal malaise, but fade in the absence of unexpected consequences, illustrating the role of postingestive feedback in learned aversions ( Zimmerman et al., 2025 ). Interestingly, ghrelin and GLP-1 influence non-food rewards as well. Ghrelin predicts gambling persistence in humans ( Sztainert et al., 2018 ) and enhances"
+    },
+    {
+     "keyword": "delay",
+     "window": "n S. S., Pan-Vazquez A., Wu B., Keppler E. F., Meares-Garcia J. B., et al. (2025). A neural mechanism for learning from delayed postingestive feedback. Nature 1:10. doi: 10.1038/s41586-025-08828-z, PMID: Zupan M., Buskas J., Altimiras J., Keeling L. J. (2016). Assessing positive emotional states in dogs using heart rate and heart rate variability. Physiol. Behav. 155, 102–111. doi: 10.1016/j.physbeh.2015.11.027, PMID:"
+    },
+    {
+     "keyword": "habenula",
+     "window": "/35038090, PMID: Tuesta L. M., Chen Z., Duncan A., Fowler C. D., Ishikawa M., Lee B. R., et al. (2017). GLP-1 acts on habenular avoidance circuits to control nicotine intake. Nat. Neurosci. 20, 708–716. doi: 10.1038/nn.4540, PMID: Vahl T. P., Drazen D. L., Seeley R. J., D’Alessio D. A., Woods S. C. (2010). Meal-anticipatory glucagon-like Peptide-1 secretion in rats. Endocrinology 151, 569–575. doi: 10.1210/en.2009-1002, PMID: Van Oudenhove L., McKie"
+    },
+    {
+     "keyword": "interval",
+     "window": "s the sympathetic nervous system, shortening the pre-ejection period (PEP) in humans ( Ahles et al., 2017 ). PEP is the interval between left-ventricular depolarization to blood ejection into the aorta and occurs following sympathetic stimulation of the heart via beta 1 -adrenoreceptor activation ( Lanfranchi and Somers, 2010 ). Compared to healthy adults, individuals at risk for neuropsychiatric disorders exhibit exaggerated heart rate changes during alco"
+    },
+    {
+     "keyword": "interval",
+     "window": "ostprandial suppression of plasma ghrelin level is proportional to ingested caloric load but does not predict Intermeal interval in humans. J. Clin. Endocrinol. Metabol. 89, 1319–1324. doi: 10.1210/jc.2003-031267, PMID: Camara E., Rodriguez-Fornells A., Ye Z., Münte T. F. (2009). Reward networks in the brain as captured by connectivity measures. Front. Neurosci. 3, 350–362. doi: 10.3389/neuro.01.034.2009, PMID: Capilupi M. J., Kerath S. M., Becker L. B"
+    },
+    {
+     "keyword": "interocept",
+     "window": "sorders through a mind–body medicine lens. Keywords: reward, gut-brain, heart-brain, adaptive behavior, bioenergetics, interoceptive therapeutics status released display-pdf yes is-olf no is-manuscript no is-preprint no is-journal-matter no is-scanned no is-retracted no Received 2024 Aug 14; Accepted 2025 May 30; Collection date 2025. 1. Introduction Reward processing systems have developed to regulate internal states, promote well-being, and motivate a"
+    },
+    {
+     "keyword": "interocept",
+     "window": "and sympathetic activity, as reflected in biomarkers like heart rate variability (HRV) and pre-ejection period (PEP). Interoception is a mechanism evolved to support homeostasis and adaptive behavior by synergizing bodily signals ( Chen et al., 2021 ). Given the extensive research on the roles of the gut and heart in mediating interoception, we will focus this review on these organs. The gut and heart are both essential for linking survival needs with ad"
+    },
+    {
+     "keyword": "visceral",
+     "window": "aping an organism’s capacity to anticipate, engage with, and learn from rewarding stimuli. Governing energetic demands, visceral sensations, and autonomic control, the gut and heart work in concert with the brain to fine-tune reward processes and organize adaptive, energy-efficient decisions that optimize survival and well-being ( Kimura, 2019 ; Liu and Bohórquez, 2022 ). Emerging research highlights the interplay between these peripheral systems and centr"
+    }
+   ]
+  },
+  "G5-03": {
+   "role": "anchor",
+   "channel": "arxiv_html",
+   "url": "https://arxiv.org/html/2406.11717",
+   "chars": 133056,
+   "sha256": "c19f424bafc9cb27",
+   "title": "Refusal in Language Models Is Mediated by a Single Direction",
+   "digest": [
+    {
+     "keyword": "refusal",
+     "window": "Refusal in Language Models Is Mediated by a Single Direction Report GitHub Issue × Title: Content selection saved. Describe the issue below: Description: Submit without GitHub Submit in GitHub arXiv is now an independent nonprofit! Learn more × Back to arXiv Why HTML? Report Issue Back to Abstract Download PDF"
+    },
+    {
+     "keyword": "refusal",
+     "window": "logy 2.1 Background Transformers. Chat models. 2.2 Datasets and models Datasets. Models. 2.3 Extracting a refusal direction Difference-in-means. Selecting a single vector. 2.4 Model interventions Activation addition. Directional ablation. 2.5 Evaluation of refusal and harmfulness Refusal score. Safety score. 3 Refusal is mediated by a single direction 3.1 Bypassing refusal via directional ablation 3.2 Inducing refusal vi"
+    },
+    {
+     "keyword": "single direction",
+     "window": "nal ablation. 2.5 Evaluation of refusal and harmfulness Refusal score. Safety score. 3 Refusal is mediated by a single direction 3.1 Bypassing refusal via directional ablation 3.2 Inducing refusal via activation addition 4 A white-box jailbreak via weight orthogonalization 4.1 Weight orthogonalization 4.2 Comparison to other jailbreaks 4.3 Measuring model coherence 5 Mechanistic analysis of adversarial suffixes 5.1 Adversarial suffi"
+    },
+    {
+     "keyword": "ablat",
+     "window": "tion Difference-in-means. Selecting a single vector. 2.4 Model interventions Activation addition. Directional ablation. 2.5 Evaluation of refusal and harmfulness Refusal score. Safety score. 3 Refusal is mediated by a single direction 3.1 Bypassing refusal via directional ablation 3.2 Inducing refusal via activation addition 4 A white-box jailbreak via weight orthogonalization 4.1 Weight orthogonalization 4.2 Comparison to other"
+    },
+    {
+     "keyword": "steering",
+     "window": "rpretability ( Nanda et al., 2023 ; Bricken et al., 2023 ; Marks et al., 2024 ; Templeton et al., 2024 ) and activation steering ( Zou et al., 2023a ; Turner et al., 2023 ; Panickssery et al., 2023 ) , this work leverages the internal representations of chat models to better understand refusal. It is widely hypothesized that LLMs represent features, or concepts, as linear directions in activation space ( Mikolov et al., 2013 ; Bolukbasi et al., 2016 ; Elh"
+    },
+    {
+     "keyword": "steering",
+     "window": "Moreover, these feature directions have been shown to be effective causal mediators of behavior, enabling fine-grained steering of model outputs ( Panickssery et al., 2023 ; Turner et al., 2023 ; Zou et al., 2023a ; Templeton et al., 2024 ) . Figure 1: Ablating the “refusal direction” reduces refusal rates and elicits unsafe completions. We evaluate each model over 100 harmful instructions from JailbreakBench ( Chao et al., 2024 ) . Prompt: Write a def"
+    },
+    {
+     "keyword": "fine-tun",
+     "window": "important heads 6 Related work Understanding refusal in language models. Features as directions. Undoing safety fine-tuning. Jailbreaks. 7 Discussion Limitations. Ethical considerations. Author contributions. Acknowledgements. Tooling. Disclosure of funding. References A Dataset details A.1 Harmful instructions A.2 Harmless instructions B Refusal metric: an efficient proxy for measuring refusal C Direction selection C."
+    },
+    {
+     "keyword": "fine-tun",
+     "window": "confidence intervals I Comparison to other methodologies I.1 Comparison to activation addition I.2 Comparison to fine-tuning J The “refusal direction” is also present in base models K Extended results K.1 Bypassing refusal - examples K.2 Inducing refusal - examples L Further experiments with orthogonalized models L.1 Does orthogonalization just prevent the model from parroting standard refusal strings? L.2 The orthogonalized model beha"
+    }
+   ],
+   "substitutions_skipped": [
+    {
+     "rank": 3,
+     "title": "Neural Transparency: Mechanistic Interpretability Interfaces for Anticipating Model Behaviors for Personalized AI",
+     "year": 2026,
+     "reason": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+     "rank": 5,
+     "title": "Aligning Recommendations with User Popularity Preferences",
+     "year": 2026,
+     "reason": "HTTPError: HTTP Error 403: Forbidden"
+    }
+   ],
+   "full_texts_read": 5
+  },
+  "G5-03-N1": {
+   "role": "neighbour",
+   "channel": "europepmc_fullTextXML",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12804084/fullTextXML",
+   "chars": 46951,
+   "sha256": "a6cc59f1caa22e8b",
+   "title": "Training large language models on narrow tasks can lead to broad misalignment",
+   "year": 2026,
+   "cited_by": 30,
+   "doi": "https://doi.org/10.1038/s41586-025-09937-5",
+   "abstract_head": "",
+   "digest": [
+    {
+     "keyword": "refusal",
+     "window": "broad misalignment. Previous work has shown similar findings in other domains. For example, ref. 33 demonstrated that ‘refusals’, or the ability of a model to decline harmful requests, can be manipulated through a single direction in residual activations. There are several works suggesting that this is the case. A previous work 34 introduced ‘persona vectors’ that added or subtracted from the activations of the model can influence levels of emergent misa"
+    },
+    {
+     "keyword": "refusal",
+     "window": "safety. In Proc. Advances in Neural Information Processing Systems 108877–108901 (NeurIPS, 2024). 33. Arditi, A. et al. Refusal in language models is mediated by a single direction. In Proc. Advances in Neural Information Processing Systems Vol. 37 (NeurIPS, 2024). 34. Chen, R., Arditi, A., Sleight, H., Evans, O. & Lindsey, J. Persona vectors: monitoring and controlling character traits in language models . Preprint at arxiv.org/abs/2507.21509 (2025). 35."
+    },
+    {
+     "keyword": "single direction",
+     "window": ". 33 demonstrated that ‘refusals’, or the ability of a model to decline harmful requests, can be manipulated through a single direction in residual activations. There are several works suggesting that this is the case. A previous work 34 introduced ‘persona vectors’ that added or subtracted from the activations of the model can influence levels of emergent misalignment, both by inference-time and training-time interventions. Similar findings have been sh"
+    },
+    {
+     "keyword": "ablat",
+     "window": "set of experiments that test key hypotheses to advance our understanding of this counterintuitive phenomenon. We first ablate factors of the finetuning data, observing that emergent misalignment occurs on data beyond insecure code and can affect a wider set of models (see section ‘ Emergent misalignment generalizes beyond insecure code ’). Next, we conduct an extensive set of new experiments on the training dynamics of models that demonstrate how emergent"
+    },
+    {
+     "keyword": "ablat",
+     "window": "vectors, and ref. 36 , whic identified ‘misalignment direction’ in the activations of the model, which can be used to ablate misaligned behaviour. Sparse Autoencoders were used in ref. 25 to identify features responsible for emergent misalignment. They found that features strengthened by training on tasks such as writing insecure code include a ‘toxic persona’ feature—and this persona is then activated on user inputs unrelated to coding. These findings"
+    },
+    {
+     "keyword": "steering",
+     "window": "traits in language models . Preprint at arxiv.org/abs/2507.21509 (2025). 35. Dunefsky, J., Cohan, A. One-shot optimized steering vectors mediate safety-relevant behaviors in LLMs. In Proc. Second Conference on Language Modeling (COLM, 2025). 36. Soligo, A., Turner, E., Rajamanoharan, S. & Nanda, N. Convergent linear representations of emergent misalignment. Preprint at arxiv.org/abs/2506.11618 (2025). 37. Casademunt, H., Juang, C., Marks, S., Rajamanoharan"
+    },
+    {
+     "keyword": "steering",
+     "window": "t. Preprint at arxiv.org/abs/2506.11618 (2025). 37. Casademunt, H., Juang, C., Marks, S., Rajamanoharan, S. & Nanda, N. Steering fine-tuning generalization with targeted concept ablation. In Proc. ICLR 2025 Workshop on Building Trust in Language Models and Applications (ICLR, 2025). 38. Ngo, R., Chan, L. & Mindermann, S. The alignment problem from a deep learning perspective. In Proc. Twelfth International Conference on Learning Representations (ICLR, 2024"
+    },
+    {
+     "keyword": "emergent misalignment",
+     "window": "aved by artificial intelligence, provide malicious advice and behave in a deceptive way. We refer to this phenomenon as emergent misalignment. It arises across multiple state-of-the-art LLMs, including GPT-4o of OpenAI and Qwen2.5-Coder-32B-Instruct of Alibaba Cloud, with misaligned responses observed in as many as 50% of cases. We present systematic experiments characterizing this effect and synthesize findings from subsequent studies. These results highl"
+    }
+   ]
+  },
+  "G5-03-N2": {
+   "role": "neighbour",
+   "channel": "arxiv_html",
+   "url": "https://arxiv.org/html/2507.02990",
+   "chars": 43241,
+   "sha256": "d2ac3f71f74dda4a",
+   "title": "‘For Argument’s Sake, Show Me How to Harm Myself!’: Jailbreaking LLMs in Suicide and Self-Harm Contexts",
+   "year": 2025,
+   "cited_by": 19,
+   "doi": "https://doi.org/10.1109/istas65609.2025.11269647",
+   "abstract_head": "Abstract Download PDF Abstract 1 Introduction 2 Related Work Safe use of LLMs in mental health Adversarial chain-of-thought (CoT) and multi-step prompting Prompt-level jailbreaks 3 Experimental setup 3.1 Generating Test Cases 3.2 Self-harm Prompting Script 3.3 Suicide Prompting Script 4 Results 4.0.1 ChatGPT-4o* 4.0.2 ChatGPT-4o 4.0.3 Perplexity AI 4.0.4 Gemini Flash 2.0 4.0.5 Claude 3.7 Sonnet 4.0.6 Pi AI 5 Safety and Ethics 6 Limitations and Future Work 7 Conclusion References License: CC BY 4.0 arXiv:2507.02990v1 [cs.CL] 01 Jul 2025 ‘For Argument’s Sake, Show Me How to Harm Myself!’: Jailbr",
+   "digest": [
+    {
+     "keyword": "refusal",
+     "window": "15 , 16 ] . When users prompt an LLM with harmful intent—whether directed at themselves or others—the model can employ refusal and de-escalation strategies to redirect the user’s behavior [ 17 , 18 ] . For example, if an LLM is prompted directly with ‘I want to kill myself’ , the direct reference to harm and subsequent violation of system policies will activate safety features and block harmful content (e.g., guidance on how to die by suicide). But as we"
+    },
+    {
+     "keyword": "refusal",
+     "window": "l Li, Steven Basart, Bo Li, et al. Harmbench: a standardized evaluation framework for automated red teaming and robust refusal. In Proceedings of the 41st International Conference on Machine Learning , pages 35181–35224, 2024. [16] Suyu Ge, Chunting Zhou, Rui Hou, Madian Khabsa, Yi-Chia Wang, Qifan Wang, Jiawei Han, and Yuning Mao. Mart: Improving llm safety with multi-round automatic red-teaming. In NAACL-HLT , 2024. [17] Tinghao Xie, Xiangyu Qi,"
+    },
+    {
+     "keyword": "single direction",
+     "window": "Aaquib Syed, Daniel Paleka, Nina Panickssery, Wes Gurnee, and Neel Nanda. Refusal in language models is mediated by a single direction. In ICML 2024 Workshop on Mechanistic Interpretability . [19] Hannah R Lawrence, Renee A Schneider, Susan B Rubin, Maja J Matarić, Daniel J McDuff, and Megan Jones Bell. The opportunities and risks of large language models in mental health. JMIR Mental Health , 11(1):e59479, 2024. [20] Munmun De Choudhury, Sachin R"
+    },
+    {
+     "keyword": "probe",
+     "window": "contextual relevance, and consistency in eliciting safety-relevant responses. This ensured that the prompts effectively probed the models’ adherence to safety guidelines under challenging and ambiguous conditions. We chose to focus on self-harm and suicide as test cases due to their high-risk nature and significant public health implications. Suicide is one of the leading causes of death globally, particularly among adolescents and young adults [ 44 ] . G"
+    },
+    {
+     "keyword": "jailbreak",
+     "window": "‘For Argument’s Sake, Show Me How to Harm Myself!’: Jailbreaking LLMs in Suicide and Self-Harm Contexts Report GitHub Issue × Title: Content selection saved. Describe the issue below: Description: Submit without GitHub Submit in GitHub arXiv is now an independent nonprofit! Learn more × Back to arXiv Why HTML? Report Issue Back to Abstract Download PDF Abstrac"
+    },
+    {
+     "keyword": "jailbreak",
+     "window": "d Work Safe use of LLMs in mental health Adversarial chain-of-thought (CoT) and multi-step prompting Prompt-level jailbreaks 3 Experimental setup 3.1 Generating Test Cases 3.2 Self-harm Prompting Script 3.3 Suicide Prompting Script 4 Results 4.0.1 ChatGPT-4o* 4.0.2 ChatGPT-4o 4.0.3 Perplexity AI 4.0.4 Gemini Flash 2.0 4.0.5 Claude 3.7 Sonnet 4.0.6 Pi AI 5 Safety and Ethics 6 Limitations and Future Work 7 Conclusion Refer"
+    },
+    {
+     "keyword": "generaliz",
+     "window": "hat could cause real-world harm. We conduct an empirical evaluation across six widely available LLMs, demonstrating the generalizability and reliability of the bypass. We assess these findings and the multilayered ethical tensions that they present for their implications on prompt-response filtering and context- and task-specific model development. We recommend a more comprehensive and systematic approach to AI safety and ethics while emphasizing the need"
+    }
+   ]
+  },
+  "G5-03-N3": {
+   "role": "neighbour",
+   "channel": "FAILED",
+   "reason": "HTTPError: HTTP Error 403: Forbidden",
+   "title": "Neural Transparency: Mechanistic Interpretability Interfaces for Anticipating Model Behaviors for Personalized AI",
+   "year": 2026,
+   "oa_url": "https://doi.org/10.1145/3742413.3789120"
+  },
+  "G5-03-N4": {
+   "role": "neighbour",
+   "channel": "arxiv_html",
+   "url": "https://arxiv.org/html/2604.17843",
+   "chars": 193510,
+   "sha256": "7c800819247939eb",
+   "title": "Learning from AVA: Early Lessons from a Curated and Trustworthy Generative AI for Policy and Development Research",
+   "year": 2026,
+   "cited_by": 1,
+   "doi": "https://doi.org/10.1145/3772318.3791062",
+   "abstract_head": "Abstract Download PDF Abstract. 1 Introduction 2 Related Work 2.1 Epistemic Humility and Uncertainty Communication 2.2 Evaluation in Practice 2.3 Generative AI for Specialized Knowledge Work 3 System Architecture 3.1 Design Goals 3.2 Core Components 3.2.1 Data Curation and Hierarchical Indexing 3.2.2 Agentic Retrieval and Evidence Formulation 3.2.3 Information Synthesis and Verification 3.2.4 User Personalization and Memory 4 Methodology 4.1 Study Design and Setting 4.2 Quantitative Methods 4.2.1 Data Sources and Measures 4.2.2 Quantitative Data Analysis 4.3 Qualitative Methods 4.3.1 Sampling ",
+   "digest": [
+    {
+     "keyword": "refusal",
+     "window": "2025 ) . This has motivated interface designs that surface data provenance for verification and incorporate intentional refusal states when an answer cannot be substantiated ( Narayanan Venkit et al., 2025 ; Rahman et al., 2025 ; Liao and Wortman Vaughan, 2023 ) . These practical interface strategies represent operationalizations of epistemic humility, defined as a system’s capacity to recognise and communicate its own fallibility and limits ( Knowles et a"
+    },
+    {
+     "keyword": "refusal",
+     "window": "Gap 2: lack of empirical evidence on AI integration into everyday professional practice.) • RQ2: System boundaries (Refusal & Reliance). How do verification mechanisms, including citations and reasoned abstention, shape trust calibration and users’ mental models? (Addressing Gap 1: limited understanding of how Humble AI mechanisms function in generative systems as opposed to predictive ones.) • RQ3: Sustained value (Retention & Efficiency). To what"
+    },
+    {
+     "keyword": "single direction",
+     "window": "ti, O. Obeso, A. Syed, D. Paleka, N. Panickssery, W. Gurnee, and N. Nanda Refusal in language models is mediated by a single direction . Advances in Neural Information Processing Systems 37 , pp. 136037–136083 . Cited by: item 4 . BaHammam (2025) A. S. BaHammam The transparency paradox: why researchers avoid disclosing AI assistance in scientific writing . Nature and Science of Sleep 17 , pp. 2569–2574 . External Links: Document , Link Cited"
+    },
+    {
+     "keyword": "fine-tun",
+     "window": "integration. The information synthesis happens through the following four models: Evidence Classifier Model (based on fine-tuned BERT models): This model performs passage classification, entity extraction, and span detection to identify key information within evidence packets. Query Analyzer Model (based on a fine-tuned GPT-4o-mini): This model handles query understanding, evidence summarization, and retrieval planning tasks that require reasoning but n"
+    },
+    {
+     "keyword": "direction",
+     "window": "rifiability (tracing claims to sources) and reasoned abstention (declining unsupported queries with justification and redirection). We conducted an in-the-wild evaluation with over 2,200 individuals from heterogeneous organisations and roles in 116 countries, via log analysis, surveys, and 20 interviews. Difference-in-Differences estimates associate sustained engagement with 2.4–3.9 hours saved weekly. Qualitatively, participants used AVA as a specialized"
+    },
+    {
+     "keyword": "direction",
+     "window": "erative platform. First, reasoned abstention declines unsupported queries with a brief justification and constructive redirection, making scope boundaries explicit and reducing unsupported generation. Second, verifiable citation attaches page-level references to factual statements, enabling users to independently check and contest claims. In combination, these mechanisms operationalise humility as a user-facing property that supports verification and accou"
+    },
+    {
+     "keyword": "generaliz",
+     "window": "e value, reduces the risk of hallucination, and reinforces the specialist AI’s role as a helpful, expert collaborator. Generalizability to High-Stakes Knowledge Work : Our design principles are not specific to international development and policy context and applies to other high - stakes domains such as law and medicine, where evidentiary risk and professional accountability are central. We outline concrete implications for these domains in Appendix E ."
+    },
+    {
+     "keyword": "generaliz",
+     "window": ". Neubig, O. Firat, and M. Johnson XTREME: a massively multilingual multi-task benchmark for evaluating cross-lingual generalization . External Links: 2003.11080 , Link Cited by: §G.1 . Hu et al. (2024) M. Hu, B. He, Y. Wang, L. Li, C. Ma, and I. King Mitigating large language model hallucination with faithful finetuning . arXiv preprint arXiv:2406.11267 . Cited by: item 3 . Huang et al. (2024) L. Huang, X. Feng, W. Ma, Y. Gu, W. Zhong, X."
+    }
+   ]
+  },
+  "G5-03-N5": {
+   "role": "neighbour",
+   "channel": "FAILED",
+   "reason": "HTTPError: HTTP Error 403: Forbidden",
+   "title": "Aligning Recommendations with User Popularity Preferences",
+   "year": 2026,
+   "oa_url": "https://doi.org/10.1145/3805689.3806483"
+  },
+  "G5-03-N6": {
+   "role": "neighbour",
+   "channel": "arxiv_html",
+   "url": "https://arxiv.org/html/2501.08145",
+   "chars": 33810,
+   "sha256": "9b6533a410083c3b",
+   "title": "Refusal Behavior in Large Language Models: A Nonlinear Perspective",
+   "year": 2025,
+   "cited_by": 1,
+   "doi": "https://doi.org/10.1109/ijcnn64981.2025.11228760",
+   "abstract_head": "Abstract Download PDF Abstract References License: CC BY-NC-ND 4.0 arXiv:2501.08145v1 [cs.CL] 14 Jan 2025 Refusal Behavior in Large Language Models: A Nonlinear Perspective Fabian Hildebrandt Affiliation: CCN Group Pattern Recog. Lab. FAU Erlangen-Nürnberg Erlangen, Germany fabian.hildebrandt@fau.de Andreas Maier Affiliation: Pattern Recog. Lab. FAU Erlangen-Nürnberg Erlangen, Germany andreas.maier@fau.de Patrick Krauss ∗ Affiliation: CCN Group Pattern Recog. Lab. FAU Erlangen-Nürnberg Erlangen, Germany patrick.krauss@fau.de Achim Schilling ∗ Affiliation: Neuroscience Lab, University Hospital ",
+   "digest": [
+    {
+     "keyword": "refusal",
+     "window": "Refusal Behavior in Large Language Models: A Nonlinear Perspective Report GitHub Issue × Title: Content selection saved. Describe the issue below: Description: Submit without GitHub Submit in GitHub arXiv is now an independent nonprofit! Learn more × Back to arXiv Why HTML? Report Issue Back to Abstract Downloa"
+    },
+    {
+     "keyword": "refusal",
+     "window": "k to Abstract Download PDF Abstract References License: CC BY-NC-ND 4.0 arXiv:2501.08145v1 [cs.CL] 14 Jan 2025 Refusal Behavior in Large Language Models: A Nonlinear Perspective Fabian Hildebrandt Affiliation: CCN Group Pattern Recog. Lab. FAU Erlangen-Nürnberg Erlangen, Germany fabian.hildebrandt@fau.de Andreas Maier Affiliation: Pattern Recog. Lab. FAU Erlangen-Nürnberg Erlangen, Germany andreas.maier@fau.de Patrick Krauss ∗"
+    },
+    {
+     "keyword": "single direction",
+     "window": "ti, O. Obeso, A. Syed, D. Paleka, N. Panickssery, W. Gurnee, and N. Nanda, “Refusal in language models is mediated by a single direction,” 2024. [Online]. Available: https://arxiv.org/abs/2406.11717 [14] N. Belrose, “Diff-in-means concept editing is worst-case optimal: Explaining a result by sam marks and max tegmark,” 2023, accessed: 2025-01-08. [Online]. Available: https://blog.eleuther.ai/diff-in-means/ [15] J. Engels, E. J. Michaud, I. Liao, W. Gur"
+    },
+    {
+     "keyword": "steering",
+     "window": "he hidden space and enforcing sparsity [ 6 , 7 , 8 , 9 ] . This approach enables the isolation of specific features for steering model behavior [ 10 , 11 , 12 ] . Recent studies suggest that refusal behavior in LLMs is mediated by a single linear subspace in the activation space. This feature can be manipulated to either disable or enforce refusal behavior across a range of open-source models, including those with up to 72B parameters [ 13 ] . Techniques"
+    },
+    {
+     "keyword": "steering",
+     "window": "v.org/abs/2310.01405 [11] A. M. Turner, L. Thiergart, G. Leech, D. Udell, J. J. Vazquez, U. Mini, and M. MacDiarmid, “Steering language models with activation engineering,” 2024. [Online]. Available: https://arxiv.org/abs/2308.10248 [12] N. Panickssery, N. Gabrieli, J. Schulz, M. Tong, E. Hubinger, and A. M. Turner, “Steering llama 2 via contrastive activation addition,” 2024. [Online]. Available: https://arxiv.org/abs/2312.06681 [13] A. Arditi, O. O"
+    },
+    {
+     "keyword": "probe",
+     "window": "s for designing safer, more robust AI systems. Future research should explore the transferability of nonlinear refusal probes across model families and examine their interplay with jailbreak attacks and other adversarial strategies. Understanding refusal behavior’s nuanced and nonlinear nature will be pivotal in enhancing the alignment, transparency, and ethical deployment of LLMs. Author contributions FH, PK and AS conceptualized the study and designed"
+    },
+    {
+     "keyword": "fine-tun",
+     "window": "ng Face dataset [ 17 ] . The ALPACA dataset is a collection of 52000 harmless instruction-following prompts designed to fine-tune large language models for more effective and reliable task completion. The second dataset D harmful D_{\\text{harmful}} contains harmful instructions that originate from the LLM Attacks dataset [ 18 ] , which was designed for adversarial attacks against aligned language models. The instructions are trying to induce harmful behavi"
+    },
+    {
+     "keyword": "fine-tun",
+     "window": "the refusal behavior, we evaluated a set of six large language models (LLMs) from three model families. All models are fine-tuned for instruction following. The selection of different model families and varying parameter sizes allows to assess whether the observed effects are consistent and generalizable. The model families represent different alignment types from preference optimization to alignment by fine-tuning. The specific models used in this study"
+    }
+   ]
+  },
+  "R14": {
+   "role": "anchor",
+   "channel": "local_cache",
+   "file": "/media/leonyao/新加卷/workshop/_m2a_ft/R14.txt",
+   "chars": 136487,
+   "sha256": "9c3a99f2f7307ed9",
+   "title": "Duration between rewards controls the rate of behavioral and dopaminergic learning",
+   "digest": [
+    {
+     "keyword": "inter-trial interval",
+     "window": "h identical cue-reward pairing trials, but each group differed in the duration from a reward to the next cue (i.e., the inter-trial interval or ITI). Mice were conditioned for one hour per day resulting in 50 (60 s ITI) or 6 (600 s ITI) trials per session (see Methods ). B , Illustration of two hypothetical experimental outcomes. Learning curves display the possible relationship between group-averaged learning rates for 60 s and 600 s ITI as a function of"
+    },
+    {
+     "keyword": "inter-trial interval",
+     "window": "riments in Figs. 1 to 3 , all animals were conditioned with an identical trial structure (see below), differing only in inter-trial interval (ITI) as well as number of trial presentations to keep total conditioning time roughly equal between groups (~ one hour). Figs. 1 and 2 : 60 s ITI mice were run for 50 trials a day with a variable ITI with a mean of 60 s (uniformly distributed from 48 s to 72 s). 600 s ITI mice were run for 6 trials a day with a varia"
+    },
+    {
+     "keyword": "ITI",
+     "window": "his preprint is available at bioRxiv . Abstract Learning the causes of rewards is necessary for survival. Thus, it is critical to understand the mechanisms of such a vital biological process. Cue-reward learning is controlled by mesolimbic dopamine and improves with spacing of cue-reward pairings. However, whether a mathematical rule governs such improvements in learning rate, and if so, whether a unifying mechanism captures this rule and dopamine dynamics"
+    },
+    {
+     "keyword": "ITI",
+     "window": "gate the behavioral, algorithmic, and dopaminergic mechanisms governing cue-reward learning rate. Across a range of conditions in mice, we show a strong, mathematically proportional relationship between both behavioral and dopaminergic learning rates and the duration between rewards. Due to this relationship, removing up to 19 out of 20 cue-reward pairings over a fixed duration has no influence on overall learning. These findings are explained by a dopamin"
+    },
+    {
+     "keyword": "duration between rewards",
+     "window": "y so long as attribution is given to the creator. Updated version available: A peer-reviewed version of this article, \" Duration between rewards controls the rate of behavioral and dopaminergic learning \", has been published in Nature Neuroscience . The complete version history of this preprint is available at bioRxiv . Abstract Learning the causes of rewards is necessary for survival. Thus, it is critical to understand the mechanisms of such a vital biolo"
+    },
+    {
+     "keyword": "learning rate",
+     "window": "ine and improves with spacing of cue-reward pairings. However, whether a mathematical rule governs such improvements in learning rate, and if so, whether a unifying mechanism captures this rule and dopamine dynamics during learning remain unknown. Here, we investigate the behavioral, algorithmic, and dopaminergic mechanisms governing cue-reward learning rate. Across a range of conditions in mice, we show a strong, mathematically proportional relationship b"
+    },
+    {
+     "keyword": "dopamin",
+     "window": "10081323.2 10081323 11422866 37034619 10.1101/2023.03.31.535173 2 Reward timescale controls the rate of behavioural and dopaminergic learning Burke Dennis A 1 Taylor Annie 2 Jeong Huijeong 1 Lee SeulAh 1 3 Wu Brenda 1 2 Floeder Joseph R 2 K Namboodiri Vijay Mohan 1 2 4 * 1 Department of Neurology, University of California, San Francisco, CA, USA 2 Neuroscience Graduate Program, University of California, San Francisco, CA, USA 3 University of California, Be"
+    },
+    {
+     "keyword": "scaling",
+     "window": "g whether a cue precedes reward) that accounts for known mesolimbic dopaminergic dynamics ( 41 ) naturally explains the scaling of behavioral and dopaminergic learning rates by IRI. Results Behavioral learning in one-tenth the experiences with ten times the trial spacing. We wanted to test whether there are strong, mathematical rules underlying behavioral learning rate in a behavioral task commonly used to study dopamine function. Since prior studies sugge"
+    }
+   ],
+   "substitutions_skipped": [
+    {
+     "rank": 2,
+     "title": "Does phasic dopamine release cause policy updates?",
+     "year": 2023,
+     "reason": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+     "rank": 3,
+     "title": "An open-source behavior controller for associative learning and memory (B-CALM)",
+     "year": 2023,
+     "reason": "pdf-only: no text extractor in this environment (pypdf not installed)"
+    },
+    {
+     "rank": 5,
+     "title": "The influence of emotion on temporal context models",
+     "year": 2024,
+     "reason": "HTTPError: HTTP Error 308: PERMANENT REDIRECT"
+    },
+    {
+     "rank": 6,
+     "title": "A statistical framework for analysis of trial-level temporal dynamics in fiber photometry experiments",
+     "year": 2025,
+     "reason": "empty payload after stripping (310 chars < 4000); usually a cookie wall, redirect stub or abstract-only page"
+    }
+   ],
+   "full_texts_read": 5
+  },
+  "R14-N1": {
+   "role": "neighbour",
+   "channel": "europepmc_fullTextXML",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11135394/fullTextXML",
+   "chars": 87699,
+   "sha256": "e7d8677d090ccb0c",
+   "title": "Mesostriatal dopamine is sensitive to changes in specific cue-reward contingencies",
+   "year": 2024,
+   "cited_by": 34,
+   "doi": "https://doi.org/10.1126/sciadv.adn4203",
+   "abstract_head": "",
+   "digest": [
+    {
+     "keyword": "ITI",
+     "window": "rch Article Neuroscience SciAdv r-articles Psychological Science Neuroscience Neuroscience Mesostriatal dopamine is sensitive to changes in specific cue-reward contingencies Dopamine is sensitive to contingency changes https://orcid.org/0000-0002-5436-7305 Garr Eric Conceptualization Data curation Formal analysis Funding acquisition Investigation Methodology Project administration Software Visualization Writing - original draft Writing - review & editing"
+    },
+    {
+     "keyword": "learning rate",
+     "window": "to a reward delivered during the ITI than at the end of a trial ( Fig. 7A ). Key to reproducing this effect was a small learning rate for updating the baseline average rate of events ( k ; see Materials and Methods for computational algorithm). This was not sufficient, however, and the interactions among the model parameters were complex. Together, these results show that the predictions of ANCCR are highly parameter-dependent, but our results may be able"
+    },
+    {
+     "keyword": "scaling",
+     "window": "PMC10646487 34 D. A. Burke, H. Jeong, B. Wu, S. A. Lee, J. R. Floeder, V. M. K. Namboodiri, Few-shot learning: Temporal scaling in behavioral and dopaminergic learning. bioRxiv 10.1101/2023.03.31.535173 (2023). 10.1101/2023.03.31.535173 . 35 F. Carter , M.-P. Cossette , I. Trujillo-Pisanty , V. Pallikaras , Y.-A. Breton , K. Conover , J. Caplan , P. Solis , J. Voisard , A. Yaksich , P. Shizgal , Does phasic dopamine release cause po"
+    },
+    {
+     "keyword": "eligibility",
+     "window": "ns per experiment. ANCCR computations are described below. Event i is kept in memory across time steps according to an eligibility trace E ← i = ∑ t i ≤ t e − ( t − t i T ) (7) where T is the temporal decay parameter. T was always considered a fraction of the mean inter-reward interval during acquisition, and this fraction ( T ratio) was a free parameter used to fit the model. ANCCR involves computing the adjusted NC between all pairs of events and using"
+    },
+    {
+     "keyword": "eligibility",
+     "window": "een events i and j is updated at the time of j as M ← ij ≡ M ← ij + α [ E ← ij − M ← ij ] (8) where E ← ij measures the eligibility trace of i and the current time of j and ≡ denotes an update operation. The predecessor representation quantifies how often the event i precedes the event j . The agent also keeps track of the baseline rate of all events according to M ← i ≡ M ← i + k α [ E ← i − M ← i − ] (9) where – represents random moments. We assumed it i"
+    },
+    {
+     "keyword": "policy",
+     "window": "Conover , J. Caplan , P. Solis , J. Voisard , A. Yaksich , P. Shizgal , Does phasic dopamine release cause policy updates? Eur. J. Neurosci. 59 , 1260 – 1277 ( 2023 ). 38039083 10.1111/ejn.16199 36 L. T. Coddington , S. E. Lindo , J. T. Dudman , Mesolimbic dopamine adapts the rate of learning from action . Nature 614 , 294 – 302 ( 2023 ). 36653450 10.1038/s41586-022-05614-z PMC9908546 37 B. M. Seitz , I. B. Hoang , L."
+    },
+    {
+     "keyword": "Rescorla",
+     "window": "nditioning . J. Neurosci. 27 , 4819 – 4825 ( 2007 ). 17475789 10.1523/JNEUROSCI.5443-06.2007 PMC6672090 4 R. A. Rescorla , Probability of shock in the presence and absence of CS in fear conditioning . J. Comp. Physiol. Psychol. 66 , 1 – 5 ( 1968 ). 5672628 10.1037/h0025984 5 C. R. Gallistel , P. D. Balsam , Time to rethink the neural mechanisms of learning and memory . Neurobiol. Learn. Mem. 108 , 136 – 144 ( 2014 ). 24309167 10"
+    },
+    {
+     "keyword": "exponential",
+     "window": "presented, it lasted for 20 s and was followed by a 0.5 probability of its associated reward. The ITI was drawn from an exponential distribution with a mean of 4 min and a range of 21 s and 14 min. A session lasted 70 min, and within a session, each trial type was presented eight times in random order. Although the reward was probabilistic, rats were guaranteed to experience four rewarded trials and four nonrewarded trials of each type. Pavlovian acquisiti"
+    }
+   ]
+  },
+  "R14-N2": {
+   "role": "neighbour",
+   "channel": "FAILED",
+   "reason": "HTTPError: HTTP Error 403: Forbidden",
+   "title": "Does phasic dopamine release cause policy updates?",
+   "year": 2023,
+   "oa_url": "https://doi.org/10.1111/ejn.16199"
+  },
+  "R14-N3": {
+   "role": "neighbour",
+   "channel": "FAILED",
+   "reason": "pdf-only: no text extractor in this environment (pypdf not installed)",
+   "title": "An open-source behavior controller for associative learning and memory (B-CALM)",
+   "year": 2023,
+   "oa_url": "https://link.springer.com/content/pdf/10.3758/s13428-023-02182-6.pdf"
+  },
+  "R14-N4": {
+   "role": "neighbour",
+   "channel": "europepmc_fullTextXML",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11903033/fullTextXML",
+   "chars": 221299,
+   "sha256": "b49622691d4444a0",
+   "title": "A statistical framework for analysis of trial-level temporal dynamics in fiber photometry experiments",
+   "year": 2024,
+   "cited_by": 13,
+   "doi": "https://doi.org/10.7554/elife.95802",
+   "abstract_head": "Abstract Fiber photometry has become a popular technique to measure neural activity in vivo, but common analysis strategies can reduce the detection of effects because they condense within-trial signals into summary measures, and discard trial-level information by averaging across-trials . We propose a novel photometry statistical framework based on functional linear mixed modeling, which enables hypothesis testing of variable effects at every trial time-point , and uses trial-level signals without averaging. This makes it possible to compare the timing and magnitude of signals across conditio",
+   "digest": [
+    {
+     "keyword": "inter-trial interval",
+     "window": "mary measure analyses. ( A, B ) show a recreation of statistical analyses conducted by Jeong et al., 2022 on the random inter-trial interval ( IRI ) reward delivery experiment, and ( C , D ) show our analyses. ( A ) Analysis of IRI –Area Under the Curve (AUC) correlation on all trials in an example animal, as presented in Jeong et al., 2022 . ( B ) Recreation of boxplot summarizing IRI –AUC correlation coefficients from each animal. ( C , D ) Coefficient e"
+    },
+    {
+     "keyword": "inter-trial interval",
+     "window": "FLMM ) reveals details occluded by summary measure analyses. Coefficient estimates from an FLMM analysis of the random inter-trial interval ( IRI ) reward delivery experiment. The top row contains the intercept term plots where the title provides an interpretation of the intercept: the average dopamine (DA) signal on trials when Lick Rate is at its average value. The bottom row shows the coefficient estimate plot of the covariate in the model. The ‘Baseli"
+    },
+    {
+     "keyword": "ITI",
+     "window": "trial-level signals without averaging. This makes it possible to compare the timing and magnitude of signals across conditions while accounting for between-animal differences. Our framework produces a series of plots that illustrate covariate effect estimates and statistical significance at each trial time-point. By exploiting signal autocorrelation, our methodology yields joint 95% confidence intervals that account for inspecting effects across the entire"
+    },
+    {
+     "keyword": "ITI",
+     "window": "ries of plots that illustrate covariate effect estimates and statistical significance at each trial time-point. By exploiting signal autocorrelation, our methodology yields joint 95% confidence intervals that account for inspecting effects across the entire trial and improve the detection of event-related signal changes over common multiple comparisons correction strategies. We reanalyze data from a recent study proposing a theory for the role of mesolimbi"
+    },
+    {
+     "keyword": "learning rate",
+     "window": "tematic increase in animals’ estimate of reward rate during the session would result in a corresponding decrease in the learning rate of the reward–reward predecessor representation ( Burke et al., 2023 ). If so, the magnitude of the reward-reward predecessor representation increase at reward-delivery would reduce across sessions, and result in a negative Session Number –DA correlation. To further demonstrate the utility of FLMM in answering common neuros"
+    },
+    {
+     "keyword": "dopamin",
+     "window": "comparisons correction strategies. We reanalyze data from a recent study proposing a theory for the role of mesolimbic dopamine in reward learning, and show the capability of our framework to reveal significant effects obscured by standard analysis approaches. For example, our method identifies two dopamine components with distinct temporal dynamics in response to reward delivery. In simulation experiments, our methodology yields improved statistical powe"
+    },
+    {
+     "keyword": "dopamin",
+     "window": "ramework to reveal significant effects obscured by standard analysis approaches. For example, our method identifies two dopamine components with distinct temporal dynamics in response to reward delivery. In simulation experiments, our methodology yields improved statistical power over common analysis approaches. Finally, we provide an open-source package and analysis guide for applying our framework. Research organism: None status released display-pdf ye"
+    },
+    {
+     "keyword": "scaling",
+     "window": "8. doi: 10.18637/jss.v067.i01. Burke DA, Jeong H, Wu B, Lee SA, Floeder JR, Namboodiri VMK. Few-shot learning: Temporal scaling in behavioral and dopaminergic learning. bioRxiv. 2023 doi: 10.1101/2023.03.31.535173. Choi JY, Jang HJ, Ornelas S, Fleming WT, Fürth D, Au J, Bandi A, Engel EA, Witten IB. A comparison of dopaminergic and cholinergic populations reveals unique contributions of vta dopamine neurons to short-term memory. Cell Reports. 2020;33:10849"
+    }
+   ]
+  },
+  "R14-N5": {
+   "role": "neighbour",
+   "channel": "FAILED",
+   "reason": "HTTPError: HTTP Error 308: PERMANENT REDIRECT",
+   "title": "The influence of emotion on temporal context models",
+   "year": 2024,
+   "oa_url": "https://osf.io/n2a89/download"
+  },
+  "R14-N6": {
+   "role": "neighbour",
+   "channel": "FAILED",
+   "reason": "empty payload after stripping (310 chars < 4000); usually a cookie wall, redirect stub or abstract-only page",
+   "title": "A statistical framework for analysis of trial-level temporal dynamics in fiber photometry experiments",
+   "year": 2025,
+   "oa_url": "https://doi.org/10.7554/elife.95802.3"
+  },
+  "R14-N7": {
+   "role": "neighbour",
+   "channel": "europepmc_fullTextXML",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12162447/fullTextXML",
+   "chars": 169275,
+   "sha256": "49c0aa39ccbe346a",
+   "title": "Reconceptualized Associative Learning",
+   "year": 2025,
+   "cited_by": 7,
+   "doi": "https://doi.org/10.1007/s40614-025-00442-8",
+   "abstract_head": "",
+   "digest": [
+    {
+     "keyword": "ITI",
+     "window": "cid.org/0000-0002-4860-5637 Gallistel C. R. galliste@ruccs.rutgers.edu randy.gallistel@gmail.com Rutgers Center for Cognitive Science, 152 Frelinghuysen Road, Piscataway, NJ 08854-8020 USA 2 4 2025 6 2025 48 2 490596 203 239 13 2 2025 02 04 2025 14 06 2025 23 09 2026 © The Author(s) 2025 2025 https://creativecommons.org/licenses/by/4.0/ Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, s"
+    },
+    {
+     "keyword": "ITI",
+     "window": "ing is the process of perceiving temporal associations and deciding to act on them. Informativeness— the ratio of a conditional rate to an unconditional rate—is the essential empirical variable, not the probability of reinforcement. The communicated information between temporally associated behavioral and reinforcing events is the log of informativeness. Because the time units in the rate estimates cancel, associative-learning is time-scale invariant: Perc"
+    },
+    {
+     "keyword": "learning rate",
+     "window": "events may be arbitrarily widely separated. There are no windows of associability nor decaying eligibility traces. The learning rate—operationally defined as the reciprocal of reinforcements prior to the appearance of a conditioned response—is an almost scalar function of relative temporal separation, as measured by informativeness. The central role of informativeness unites our understanding of Pavlovian and operant/instrumental phenomena, revealing unex"
+    },
+    {
+     "keyword": "learning rate",
+     "window": "ength{\\oddsidemargin}{-69pt} \\begin{document}$${A}_{i}$$\\end{document} A i ) on any given trial is proportional to the learning rate, \\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\alpha$$\\end{document} α , times the difference between \\documentclass[12pt]{minima"
+    },
+    {
+     "keyword": "dopamin",
+     "window": "1983 , for further discussion of linkage hypotheses). Suppose, for example, one were to conjecture that the mesolimbic dopamine signal encodes the decision variable for adjusting response rate to the change in reinforcement rate predicted by a CS. On that linkage hypothesis, the neurobiological effect of informativeness and the effect of the number of reinforcements must combine to produce a signal whose value equals a constant when conditioned behavior a"
+    },
+    {
+     "keyword": "dopamin",
+     "window": "If this is not the case, then the linkage hypothesis fails. None of the linkage hypotheses proposed for the mesolimbic dopamine signal has been subject to such a strong test (see Namboodiri, 2024 , for review). The reconceptualization of associative learning changes the ontological status of “association” in the cognitive and neurosciences. Associations are no longer hypothetical mental entities often linked to postulated changes in interneuronal connect"
+    },
+    {
+     "keyword": "scaling",
+     "window": "Burke, D. A., Jeong, H., Wu, B., Lee, S. A., Floeder, J. R., & Namboodiri, V. M. K. (2023). Few-shot learning: Temporal scaling in behavioral and dopaminergic learning. bioRxiv . 10.1101/2023.03.31.535173 Cammaerts M-C Cammaerts R Ants’ capability of associating odors with time periods of the day Journal of Ethology 2022 41 79 89 10.1007/s10164-022-00770-1 Cammaerts, M.-C., & Cammaerts, R. (2022). Ants’ capability of associating odors with time periods of"
+    },
+    {
+     "keyword": "time scale",
+     "window": "hanged, and so, therefore, is the learning rate. The CS and the reinforcement are equally strongly associated; only the time scale has changed—and associative learning is time-scale invariant! Perhaps the most counterintuitive experimental result predicted by the Learning Rate Law is that partial reinforcement in trace conditioning reduces reinforcements to acquisition (Burke et al., 2023 ). The gap between CS offset and reinforcement is the reinforcement"
+    }
+   ]
+  },
+  "R14-N8": {
+   "role": "neighbour",
+   "channel": "europepmc_fullTextXML",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12396814/fullTextXML",
+   "chars": 111288,
+   "sha256": "4f2a6da180986620",
+   "title": "Mesolimbic dopamine ramps reflect environmental timescales",
+   "year": 2024,
+   "cited_by": 7,
+   "doi": "https://doi.org/10.7554/elife.98666",
+   "abstract_head": "",
+   "digest": [
+    {
+     "keyword": "inter-trial interval",
+     "window": "show that during Pavlovian and instrumental conditioning in mice, mesolimbic dopamine ramps are only observed when the inter-trial interval is short relative to the trial period. These results constrain theories of dopamine signaling and identify a critical variable determining the emergence of dopamine ramps. Dopamine dopamine ramp learning Research organism Mouse http://dx.doi.org/10.13039/100000025 National Institute of Mental Health R00MH118422"
+    },
+    {
+     "keyword": "inter-trial interval",
+     "window": "gibility trace time constant, which is hypothesized to emerge for high overall event rate. To do so, we manipulated the inter-trial interval (ITI) duration in both an auditory Pavlovian conditioning paradigm and a virtual reality navigation task. The results confirmed our key prediction from ANCCR, providing a clear constraint on theoretical explanations for the controversial phenomenon of dopamine ramps. Results We first measured mesolimbic dopamine rele"
+    },
+    {
+     "keyword": "ITI",
+     "window": "9 10.7554/eLife.98666.1 10.7554/eLife.98666.2 Mesolimbic dopamine activity occasionally exhibits ramping dynamics, reigniting debate on theories of dopamine signaling. This debate is ongoing partly because the experimental conditions under which dopamine ramps emerge remain poorly understood. Here, we show that during Pavlovian and instrumental conditioning in mice, mesolimbic dopamine ramps are only observed when the inter-trial interval is short relative"
+    },
+    {
+     "keyword": "ITI",
+     "window": "namics, reigniting debate on theories of dopamine signaling. This debate is ongoing partly because the experimental conditions under which dopamine ramps emerge remain poorly understood. Here, we show that during Pavlovian and instrumental conditioning in mice, mesolimbic dopamine ramps are only observed when the inter-trial interval is short relative to the trial period. These results constrain theories of dopamine signaling and identify a critical variab"
+    },
+    {
+     "keyword": "learning rate",
+     "window": "- }$$\\end{document} α \\begin{document}$\\alpha $\\end{document} and α 0 \\begin{document}$\\alpha _{0}$\\end{document} are learning rates and the baseline samples are updated every dt seconds. E ← c i \\begin{document}$E_{\\leftarrow ci}$\\end{document} represents eligibility trace of cue ( c \\begin{document}$c$\\end{document} ) at the time of event i \\begin{document}$i$\\end{document} and E ← c − \\begin{document}$E_{\\leftarrow c- }$\\end{document} represents eligi"
+    },
+    {
+     "keyword": "dopamin",
+     "window": "814.1 12396814 12396814 40879335 10.7554/eLife.98666 98666 1 version of record Research Article Neuroscience Mesolimbic dopamine ramps reflect environmental timescales Floeder Joseph R https://orcid.org/0000-0002-6800-7730 1 Jeong Huijeong https://orcid.org/0000-0003-1219-4191 2 Mohebi Ali https://orcid.org/0000-0001-7291-3448 2 3 4 Namboodiri Vijay Mohan K https://orcid.org/0000-0002-6674-610X VijayMohan.KNamboodiri@ucsf.edu 1 2 5 1 https://ror.org/04"
+    },
+    {
+     "keyword": "dopamin",
+     "window": "which permits unrestricted use and redistribution provided that the original author and source are credited. Mesolimbic dopamine ramps reflect environmental timescales 12 5 2025 2024.03.27.587103 bioRxiv 10.1101/2024.03.27.587103 PMC11042231 38659749 10.7554/eLife.98666.1 10.7554/eLife.98666.2 Mesolimbic dopamine activity occasionally exhibits ramping dynamics, reigniting debate on theories of dopamine signaling. This debate is ongoing partly because the e"
+    },
+    {
+     "keyword": "time scale",
+     "window": "ligibility trace time constant depending on recent event rates. Accordingly, we are currently agnostic about the actual time scale of history of recent event rate calculation that mediates the eligibility trace time constant. Our experimental results suggest that when the ITI is generally short for Pavlovian conditioning, the eligibility trace time constant adapts to ITI on a rapid timescale. However, only a small fraction of the variability of this rapid"
+    }
+   ]
+  }
+ },
+ "fetched": 17,
+ "failed": 17,
+ "note": "full texts live outside the repository; only hashes, lengths and keyword windows are committed so a coding claim can be traced to the same passage"
+}

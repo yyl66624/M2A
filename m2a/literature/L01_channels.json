@@ -1,0 +1,61 @@
+{
+ "schema": "m2a.roundL01.channels.v1",
+ "amendments": [
+  "L01-A1",
+  "L01-A2"
+ ],
+ "G5-03_anchor_third_channel": {
+  "channel": "arxiv_api",
+  "queried": "Refusal in Language Models Is Mediated by a Single Direction",
+  "hits": 1,
+  "title": "Refusal in Language Models Is Mediated by a Single Direction",
+  "arxiv": "http://arxiv.org/abs/2406.11717v3",
+  "year": "2024",
+  "first_author": "Andy Arditi",
+  "overlap": 1.0,
+  "verdict": "VERIFIED_THIRD_CHANNEL"
+ },
+ "competing_theory_L01_A1": {
+  "channel": "arxiv_api",
+  "registered_in": "07_CONTRADICTIONS C-04 / V-04",
+  "queried": [
+   "ti:\"The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence\"",
+   "all:\"concept cones\" AND all:\"refusal\""
+  ],
+  "hits": 3,
+  "found": true,
+  "title": "The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence",
+  "overlap": 1.0,
+  "arxiv": "http://arxiv.org/abs/2502.17420v2",
+  "year": "2025",
+  "first_author": "Tom Wollschläger",
+  "verdict": "OBTAINED_THIRD_CHANNEL",
+  "L01-A3_note": "the first selector picked 'A Geometric Unification of Concept Learning with Concept Cones' (Rocchi/Fel/Franchi) because it matched only the keyword 'concept cone'; that is a DIFFERENT paper from the one registered in C-04. Selector re-registered against the full C-04 title before any round judgement was written; the earlier artefact is kept below for audit.",
+  "superseded_first_attempt": {
+   "channel": "arxiv_api",
+   "queried": [
+    "ti:\"Concept Cones\"",
+    "all:\"concept cones\" AND all:\"interpretability\""
+   ],
+   "hits": [
+    2,
+    1
+   ],
+   "found": true,
+   "title": "A Geometric Unification of Concept Learning with Concept Cones",
+   "arxiv": "http://arxiv.org/abs/2512.07355v2",
+   "year": "2025",
+   "authors": [
+    "Alexandre Rocchi",
+    "Thomas Fel",
+    "Gianni Franchi"
+   ],
+   "candidates": [
+    "A Geometric Unification of Concept Learning with Concept Cones",
+    "The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence",
+    "A Geometric Unification of Concept Learning with Concept Cones"
+   ],
+   "verdict": "OBTAINED_THIRD_CHANNEL"
+  }
+ }
+}

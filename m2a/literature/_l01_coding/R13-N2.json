@@ -1,0 +1,56 @@
+{
+ "sid": "R13-N2",
+ "title": "Neural pathways of nausea and roles in energy balance",
+ "year": 2025,
+ "verification_level": "FULLTEXT_REVIEWED",
+ "identity_check": "File opens with 'Neural pathways of nausea and roles in energy balance', Zhang Chuchu (Dept. of Physiology, UCLA), DOI 10.1016/j.conb.2024.102963, Curr Opin Neurobiol 90:102963, issue date 2025 Feb -> matches the verified metadata (overlap 1.0, Crossref/OpenAlex).",
+ "evidence_type": "interpretive",
+ "provenance": "PAPER_CLAIM",
+ "term_type": "MIXED",
+ "mapping_note": "Paper's own words -> our K-family: 'sufficient and necessary for the avoidance responses' / 'suppresses food intake' -> K2 inhibition-gate (paper does say 'suppress'); 'reactivated and stabilized ... despite the delayed malaise responses' -> K5 delay/memory (paper term 'delayed'); 'all sensory pathways converge at the parabrachial nucleus and central amygdala' and 'activation of the area postrema sensory pathway may lead to aversion, visceral malaise, anorexia, and changes in metabolism' -> K8 cascade (the review never uses the word 'cascade'; mapping is ours, from 'converge/relay/project to').",
+ "description_scope": "Action judged under the description 'the animal eats or drinks the food available to it': anorexia and cue avoidance are both inaction under that description. Under the description 'emetic/withdrawal reflex' (gapes, chin rubs, vomiting) the same nausea pathway INCREASES motor output, so labelling nausea as 'suppression' is description-relative (02 2.1-1).",
+ "motion_source": "L1/L3 - humoral cues (GLP1R agonists, GDF15, IL-6, LiCl, LPS) detected by blood-brain-barrier-free area postrema neurons, relayed through PBN CGRP neurons to central amygdala and to sympathetic/parasympathetic premotor regions.",
+ "mechanism": [
+  {
+   "k": "K2",
+   "role": "primary",
+   "d_axis": "D−",
+   "v_axis": "B-",
+   "claim": "Feeding is stopped by cell-type-specific inhibitory gates in the brainstem: area-postrema GLP1R-defined excitatory populations are reported both sufficient and necessary for nausea-related avoidance, while a separate CALCR-marked population suppresses food intake WITHOUT aversion - so 'not eating' decomposes into at least two distinct gates rather than one appetite signal.",
+   "quote": "In the area postrema, targeted genetic deletion and rescue of the receptor are sufficient and necessary for the avoidance responses induced by GLP1R agonists, suggesting that GLP1R in the area postrema mediates nausea [ 10 , 18 ].",
+   "quote_offset": 17438,
+   "quote_sha16": "9ca2b31b0734435a"
+  },
+  {
+   "k": "K5",
+   "role": "auxiliary",
+   "d_axis": "D−",
+   "v_axis": "B-",
+   "claim": "The review adopts the delay-binding account for aversive learning: novel flavors are reactivated and stabilized by malaise inputs through PBN CGRP neurons, which 'enables learned avoidance of the novel flavors despite the delayed malaise responses' - the delay is what has to be overcome for the gate to be learned at all.",
+   "quote": "Novel flavors activate these amygdala regions and are specifically reactivated and stabilized by malaise signals through the PBN CGRP + neuronal inputs, which enables learned avoidance of the novel flavors despite the delayed malaise responses [ 29 ].",
+   "quote_offset": 11124,
+   "quote_sha16": "f45550520762a371"
+  },
+  {
+   "k": "K8",
+   "role": "auxiliary",
+   "d_axis": "D−",
+   "v_axis": "neutral",
+   "claim": "One convergent brainstem cascade broadcasts beyond the mouth: sensory pathways converge on PBN/CeA for aversive learning while the same area-postrema activation cascades into visceral malaise, anorexia and peripheral metabolic change (catabolism, ketogenesis, hypothermia) - suppression of the action and mobilization of reserves are outputs of the same relay.",
+   "quote": "Together, activation of the area postrema sensory pathway may lead to aversion, visceral malaise, anorexia, and changes in metabolism.",
+   "quote_offset": 21140,
+   "quote_sha16": "1aea594849c4b521"
+  }
+ ],
+ "d_class": "D−",
+ "agency_class": "RESPONSIVE",
+ "event_grammar": "[MOTION] humoral/vagal nausea cue reaches barrier-free area postrema --> [GATE] segregated AP cell types (GLP1R+/GFRAL+ aversive vs CALCR+ non-aversive) gate PBN CGRP output --> [INACTION] meal termination and refusal of the paired flavor --> [OUTCOME] reduced intake, weight loss, catabolic metabolism (cachexia; GLP1R-agonist weight loss) --> [FEEDBACK] cue-triggered avoidance on re-encounter, and drug-induced nausea feeding back onto adherence",
+ "contradiction_ref": null,
+ "anchor_concordance": {
+  "anchor_primary_k": "K5",
+  "same_family": false,
+  "same_sign": true,
+  "reason": "The review's own primary mechanism is a cell-type-specific suppression gate (K2), not delay-binding; its single K5 passage (learned avoidance despite delayed malaise, its ref 29 = the anchor) does carry the anchor's D- sign."
+ },
+ "notes": "Review (Curr Opin Neurobiol): the paper reports no new experiments, every causal claim is a summary of cited studies, so provenance is PAPER_CLAIM at synthesis level and evidence_type interpretive. The K5 passage is a restatement of anchor R13 (its ref 29), NOT independent corroboration - it must not be counted as second-channel support. The most M2A-relevant content is the double dissociation (aversive vs non-aversive feeding suppression; nausea not necessary for GLP1R-agonist weight loss), which the review itself flags as unresolved: it is unclear whether these neurons sense endogenous GLP-1, and whether nausea mechanisms differ by cause (poisoning, pregnancy, chemotherapy, allergy)."
+}

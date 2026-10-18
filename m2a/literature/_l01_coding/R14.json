@@ -1,0 +1,41 @@
+{
+ "sid": "R14",
+ "title": "Duration between rewards controls the rate of behavioral and dopaminergic learning",
+ "year": 2026,
+ "verification_level": "QUALIFIED",
+ "identity_check": "Cached file opens as bioRxiv/PMC10081323.2 (10.1101/2023.03.31.535173) 'Reward timescale controls the rate of behavioural and dopaminergic learning', Burke/Taylor/Jeong/Lee/Wu/Floeder/Namboodiri - same authors and study as the registered Nature Neuroscience title, but preprint wording of the title.",
+ "evidence_type": "causal_intervention",
+ "provenance": "PAPER_CLAIM",
+ "term_type": "PAPER_TERM",
+ "mapping_note": null,
+ "description_scope": "Judged under the description 'rate at which cue-evoked anticipatory licking and cue-evoked dopamine acquire their conditioned form in mice, as a function of the experimentally assigned reward-to-reward interval'; under the description 'number of cue-reward pairings' nothing changes, and the interval is a rate parameter, so no action-direction (D) judgement is made.",
+ "motion_source": "L3 physiological carrier: mesolimbic (NAc core) dopamine release tracked by fiber photometry in head-fixed mice, driven by the L0 formal interval/rate structure of the assigned reinforcement schedule.",
+ "mechanism": [
+  {
+   "k": "K5",
+   "role": "primary",
+   "d_axis": "neutral",
+   "v_axis": "B+",
+   "claim": "The duration between rewards, not the number of cue-reward pairings, sets the rate of both behavioral and dopaminergic learning: with total conditioning time held fixed, removing up to 19 of 20 pairings has zero impact.",
+   "quote": "As a consequence, we empirically demonstrate that 1) removal of up to 19 out of 20 cue-reward experiences has zero impact on overall behavioral and dopaminergic learning if total conditioning time is maintained (thereby implying that repetition over a fixed total time has no impact on learning)",
+   "quote_offset": 6309,
+   "quote_sha16": "304f2c5982c5ccfb"
+  },
+  {
+   "k": "K6",
+   "role": "auxiliary",
+   "d_axis": "neutral",
+   "v_axis": "B+",
+   "claim": "Among the simulated accounts (TDRL, SOP, ANCCR) only the retrospective dopaminergic update model reproduces the proportional scaling of learning rate with trial spacing together with the asymptotic cue-evoked dopamine responses.",
+   "quote": "Therefore, proportional scaling with trial spacing is categorically absent in SOP and common TDRL frameworks. In contrast to these models, ANCCR captured both the proportional scaling of learning rate and the asymptotic dopamine cue responses and requires constant task duration to learn with increasing trial spacing from 30 s to 600 s",
+   "quote_offset": 42999,
+   "quote_sha16": "f05104ca164a99c9"
+  }
+ ],
+ "d_class": "value-only",
+ "agency_class": "RESPONSIVE",
+ "event_grammar": "[MOTION] the environmental schedule delivers rewards separated by an assigned inter-reward interval (L0/L3) --> [GATE] the IRI-scaled retrospective dopaminergic update of the cue association until the behavioural threshold is crossed (L3/L0) --> [ACTION] cue-evoked anticipatory licking emerges after proportionally fewer experiences at long IRI / [INACTION] the up-to-19-of-20 removed pairings add nothing when total time is held constant (L4) --> [OUTCOME] cue-evoked licking and cue-evoked dopamine reach their asymptote after constant total conditioning time (L3/L4) --> [FEEDBACK] dopamine-mediated retrospective update of the cue-reward predecessor association (L3/L0)",
+ "contradiction_ref": "C-03",
+ "anchor_concordance": null,
+ "notes": "Quote byte-verification is against the cached bioRxiv/PMC preprint v2 (chars 136487 in literature/L01_fulltexts.json), not against the Nature Neuroscience version of record, and the preprint title differs from the registered published title - hence QUALIFIED, not FULLTEXT_REVIEWED, under addendum 2 requirement 1. Publisher Correction (DOI 10.1038/s41593-026-02425-7) touches only the alignment of Fig. 4b rasters and no quoted sentence (registered in source_verification_log.md sec.6 / v03_correction_check.json). Boundary condition stated by the authors: the proportional scaling 'breaks down at extreme IRIs' (3600 s ITI mice learned faster than 600 s but slower than predicted), so the claim holds over 30-600 s IRI, not as an unrestricted law. The paper also states its rule differs from the earlier ITI-to-cue-reward-interval ratio meta-analysis. Instrument note: quote_offset is the character index of a Python text-mode read (universal newlines), the convention that reproduces the chars=136487 figure in literature/L01_fulltexts.json; R14.txt carries 138 CRLF pairs, so a read with newline='' shifts the second offset from 42999 to 43005 (both quote strings contain no line break and are byte-identical under either read)."
+}

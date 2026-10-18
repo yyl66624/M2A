@@ -1,0 +1,56 @@
+{
+ "sid": "R13-N8",
+ "title": "From Food Fears to Food Freedom: How Do We Best Manage Restrictive Eating in Inflammatory Bowel Disease?",
+ "year": 2025,
+ "verification_level": "FULLTEXT_REVIEWED",
+ "identity_check": "File opens with 'From Food Fears to Food Freedom: How Do We Best Manage Restrictive Eating in Inflammatory Bowel Disease?', Simons Madison PsyD and Issokson Kelly MS RD (Cleveland Clinic / Cedars-Sinai), Crohns Colitis 360, DOI 10.1093/crocol/otaf019 -> matches verified metadata (overlap 1.0, year 2025).",
+ "evidence_type": "interpretive",
+ "provenance": "PAPER_CLAIM",
+ "term_type": "MIXED",
+ "mapping_note": "Paper's own words -> our K-family: 'delayed gastric distress ... associated with the tendency to avoid or approach that food in the future' -> K5 delay/memory (paper term 'delayed', 'post-ingestive learning'); 'not highly responsive to rational, logical thought processes' / 'the amygdala ... entirely driven by experience' -> K2 gate (the top-down reasoning channel is gated out; the paper does not use the word 'gate'); 'This cycle serves to confirm the patient's fear' -> K6 feedback (paper term 'cycle').",
+ "description_scope": "Action judged under the description 'the patient eats the food they are offered / re-introduces a restricted food'. Under the description 'manage symptoms' the same behavior (restriction) is the action the patient is deliberately performing, and under 'avoid a feared postprandial event' it is a refusal - the record codes restriction as INACTION toward eating, which is a description choice, not a fact about the patient (02 2.1-1; cf. 07-registry C-05).",
+ "motion_source": "L3/L4/L5 - amygdalar threat detection driven by accumulated post-ingestive experience in IBD patients, expressed as meal-plan avoidance and treated through a narratively structured exposure hierarchy (L5) inside a clinical service (L6).",
+ "mechanism": [
+  {
+   "k": "K5",
+   "role": "primary",
+   "d_axis": "D−",
+   "v_axis": "B-",
+   "claim": "Restrictive eating is explained as ordinary one-trial post-ingestive learning across a delay: distress that arrives after the meal gets credited to the food eaten, and the magnitude of that delayed distress sets how strongly the food is avoided later - so the inaction (not eating) is bound to a cue minutes-to-hours after the cause.",
+   "quote": "A recent study in mice showed that mice tend to associate novel, but not familiar, flavors with delayed gastric distress and the level of distress is associated with the tendency to avoid or approach that food in the future.",
+   "quote_offset": 7957,
+   "quote_sha16": "24a4bead3123b8ec"
+  },
+  {
+   "k": "K2",
+   "role": "auxiliary",
+   "d_axis": "D−",
+   "v_axis": "neutral",
+   "claim": "The accumulated-experience threat system is not overridable by instruction: the amygdala is described as entirely experience-driven and poorly responsive to rational, logical thought once the environment is deemed threatening, which gates out the 'explain the patient out of the restriction' route and licenses the clinicians' rule that liberalization must not precede established safety.",
+   "quote": "It is important to understand the amygdala to be entirely driven by experience and, therefore, not highly responsive to rational, logical thought processes when working in an environment it has deemed to be threatening.",
+   "quote_offset": 7171,
+   "quote_sha16": "89b7e6bf3065af8b"
+  },
+  {
+   "k": "K6",
+   "role": "auxiliary",
+   "d_axis": "D−",
+   "v_axis": "B-",
+   "claim": "Abstention is self-reinforcing through a closed loop: fear of a food triggers a hypervigilant autonomic response that produces symptoms mimicking allergy or sensitivity (hives, tachycardia, dyspnea, GI distress) at the next exposure, and 'this cycle serves to confirm the patient's fear', deepening avoidance without any new visceral cause.",
+   "quote": "Future food exposures activate a hypervigilant nervous system, which can drive physiologic responses to food that mimic food allergy or food sensitivity, including hives, tachycardia, shortness of breath, and gastrointestinal distress. This cycle serves to confirm the patient’s fear of food/eating.",
+   "quote_offset": 10331,
+   "quote_sha16": "5439033a91b8dfa4"
+  }
+ ],
+ "d_class": "D−",
+ "agency_class": "MIXED",
+ "event_grammar": "[MOTION] postprandial symptom (pain, obstruction, flare) follows a meal after a delay --> [GATE] amygdalar threat learning credits the cue; prefrontal reassurance is gated out --> [INACTION] food refusal / narrowed diet (ARFID-like restriction) --> [OUTCOME] short-term symptom safety but malnutrition, weight loss, worse food-related quality of life --> [FEEDBACK] hypervigilant autonomic response mimics allergy and confirms the fear; reversal requires graded exposure hierarchies with accumulated successes",
+ "contradiction_ref": "C-06",
+ "anchor_concordance": {
+  "anchor_primary_k": "K5",
+  "same_family": true,
+  "same_sign": true,
+  "reason": "The clinical piece takes the anchor's own finding (its ref 14 = Zimmerman 2025) as the mechanism of food fear and reads it in the same direction: delayed post-ingestive distress binds to the food cue and suppresses eating."
+ },
+ "notes": "Clinical viewpoint/review, not an empirical study: the mechanism evidence it leans on is mouse (its ref 14 = anchor R13) and the translational step to IBD patients is the authors' own inference from 'clinical experience'; treatment recommendations (exposure hierarchy, one risk factor at a time, stabilize symptoms first) are expert opinion with no controlled comparison, so nothing here may be coded beyond PAPER_CLAIM. contradiction_ref C-06: the paper's claim that an experience-driven amygdalar threat response is 'not highly responsive to rational, logical thought processes' is counter-evidence to the registered R16 side of C-06 (that perceived behavioral control / education can close the intention-behavior gap); it sides with G4-06. The K5 passage is a citation of the anchor, so it cannot be counted as independent support of R13. Also uncoded for the 3-entry cap: K7 hysteresis ('the brain must repeatedly be encouraged to be uncomfortable AND it requires an accumulation of successes'), and the paper's own acknowledgement that the same learning channel can drive APPROACH ('appetitive versus aversive behaviors'), which is why the record-level D- refers only to the coded fear/restriction branch."
+}

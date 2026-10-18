@@ -1,0 +1,195 @@
+{
+ "schema": "m2a.roundL01.verification.v1",
+ "identity_rule": "title token overlap >= 0.85 and year match (Phase I' 2.2), checked through a channel other than the one that selected the record",
+ "records": {
+  "R13-N2": {
+   "title": "Neural pathways of nausea and roles in energy balance",
+   "year": 2025,
+   "first_channel": "openalex",
+   "second_channel": "crossref",
+   "doi": "10.1016/j.conb.2024.102963",
+   "second_title": "Neural pathways of nausea and roles in energy balance",
+   "overlap": 1.0,
+   "second_year": 2025,
+   "verdict": "VERIFIED_TWO_CHANNEL"
+  },
+  "R13-N3": {
+   "title": "An interoceptive model of energy allostasis linking metabolic and mental health",
+   "year": 2025,
+   "first_channel": "openalex",
+   "second_channel": "crossref",
+   "doi": "10.1126/sciadv.ady4356",
+   "second_title": "An interoceptive model of energy allostasis linking metabolic and mental health",
+   "overlap": 1.0,
+   "second_year": 2025,
+   "verdict": "VERIFIED_TWO_CHANNEL"
+  },
+  "R13-N8": {
+   "title": "From Food Fears to Food Freedom: How Do We Best Manage Restrictive Eating in Inflammatory Bowel Disease?",
+   "year": 2025,
+   "first_channel": "openalex",
+   "second_channel": "crossref",
+   "doi": "10.1093/crocol/otaf019",
+   "second_title": "From Food Fears to Food Freedom: How Do We Best Manage Restrictive Eating in Inflammatory Bowel Disease?",
+   "overlap": 1.0,
+   "second_year": 2025,
+   "verdict": "VERIFIED_TWO_CHANNEL"
+  },
+  "R13-N15": {
+   "title": "Visceral signaling of post-ingestive malaise directs memory updating in Drosophila",
+   "year": 2025,
+   "first_channel": "openalex",
+   "second_channel": "crossref",
+   "doi": "10.1101/2025.10.21.683769",
+   "second_title": "Visceral signaling of post-ingestive malaise directs memory updating in Drosophila",
+   "overlap": 1.0,
+   "second_year": 2025,
+   "verdict": "VERIFIED_TWO_CHANNEL"
+  },
+  "R13-N16": {
+   "title": "GIP receptor agonism suppresses inflammation-induced aversion and food intake via distinct circuits",
+   "year": 2026,
+   "first_channel": "openalex",
+   "second_channel": "crossref",
+   "doi": "10.1016/j.celrep.2026.117116",
+   "second_title": "GIP receptor agonism suppresses inflammation-induced aversion and food intake via distinct circuits",
+   "overlap": 1.0,
+   "second_year": 2026,
+   "verdict": "VERIFIED_TWO_CHANNEL"
+  },
+  "R13-N17": {
+   "title": "The gut and heart’s role in reward processing",
+   "year": 2025,
+   "first_channel": "openalex",
+   "second_channel": "crossref",
+   "doi": "10.3389/fnint.2025.1479923",
+   "second_title": "The gut and heart’s role in reward processing",
+   "overlap": 1.0,
+   "second_year": 2025,
+   "verdict": "VERIFIED_TWO_CHANNEL"
+  },
+  "G5-03-N1": {
+   "title": "Training large language models on narrow tasks can lead to broad misalignment",
+   "year": 2026,
+   "first_channel": "openalex",
+   "second_channel": "crossref",
+   "doi": "10.1038/s41586-025-09937-5",
+   "second_title": "Training large language models on narrow tasks can lead to broad misalignment",
+   "overlap": 1.0,
+   "second_year": 2026,
+   "verdict": "VERIFIED_TWO_CHANNEL"
+  },
+  "G5-03-N2": {
+   "title": "‘For Argument’s Sake, Show Me How to Harm Myself!’: Jailbreaking LLMs in Suicide and Self-Harm Contexts",
+   "year": 2025,
+   "first_channel": "openalex",
+   "second_channel": "crossref",
+   "doi": "10.1109/istas65609.2025.11269647",
+   "second_title": "‘For Argument’s Sake, Show Me How to Harm Myself!’: Jailbreaking LLMs in Suicide and Self-Harm Contexts",
+   "overlap": 1.0,
+   "second_year": 2025,
+   "verdict": "VERIFIED_TWO_CHANNEL"
+  },
+  "G5-03-N4": {
+   "title": "Learning from AVA: Early Lessons from a Curated and Trustworthy Generative AI for Policy and Development Research",
+   "year": 2026,
+   "first_channel": "openalex",
+   "second_channel": "crossref",
+   "doi": "10.1145/3772318.3791062",
+   "second_title": "Learning from AVA: Early Lessons from a Curated and Trustworthy Generative AI for Policy and Development Research",
+   "overlap": 1.0,
+   "second_year": 2026,
+   "verdict": "VERIFIED_TWO_CHANNEL"
+  },
+  "G5-03-N6": {
+   "title": "Refusal Behavior in Large Language Models: A Nonlinear Perspective",
+   "year": 2025,
+   "first_channel": "openalex",
+   "second_channel": "crossref",
+   "doi": "10.1109/ijcnn64981.2025.11228760",
+   "second_title": "Refusal Behavior in Large Language Models: A Nonlinear Perspective",
+   "overlap": 1.0,
+   "second_year": 2025,
+   "verdict": "VERIFIED_TWO_CHANNEL"
+  },
+  "R14-N1": {
+   "title": "Mesostriatal dopamine is sensitive to changes in specific cue-reward contingencies",
+   "year": 2024,
+   "first_channel": "openalex",
+   "second_channel": "crossref",
+   "doi": "10.1126/sciadv.adn4203",
+   "second_title": "Mesostriatal dopamine is sensitive to changes in specific cue-reward contingencies",
+   "overlap": 1.0,
+   "second_year": 2024,
+   "verdict": "VERIFIED_TWO_CHANNEL"
+  },
+  "R14-N4": {
+   "title": "A statistical framework for analysis of trial-level temporal dynamics in fiber photometry experiments",
+   "year": 2024,
+   "first_channel": "openalex",
+   "second_channel": "crossref",
+   "doi": "10.7554/elife.95802",
+   "second_title": "A statistical framework for analysis of trial-level temporal dynamics in fiber photometry experiments",
+   "overlap": 1.0,
+   "second_year": 2025,
+   "verdict": "SECOND_CHANNEL_MISMATCH"
+  },
+  "R14-N7": {
+   "title": "Reconceptualized Associative Learning",
+   "year": 2025,
+   "first_channel": "openalex",
+   "second_channel": "crossref",
+   "doi": "10.1007/s40614-025-00442-8",
+   "second_title": "Reconceptualized Associative Learning",
+   "overlap": 1.0,
+   "second_year": 2025,
+   "verdict": "VERIFIED_TWO_CHANNEL"
+  },
+  "R14-N8": {
+   "title": "Mesolimbic dopamine ramps reflect environmental timescales",
+   "year": 2024,
+   "first_channel": "openalex",
+   "second_channel": "crossref",
+   "doi": "10.7554/elife.98666",
+   "second_title": "Mesolimbic dopamine ramps reflect environmental timescales",
+   "overlap": 1.0,
+   "second_year": 2025,
+   "verdict": "SECOND_CHANNEL_MISMATCH"
+  },
+  "R13": {
+   "title": "A neural mechanism for learning from delayed postingestive feedback",
+   "second_channel": "crossref",
+   "doi": "10.1038/s41586-025-08828-z",
+   "second_title": "A neural mechanism for learning from delayed postingestive feedback",
+   "overlap": 1.0,
+   "second_year": 2025,
+   "verdict": "VERIFIED_TWO_CHANNEL"
+  },
+  "R14": {
+   "title": "Duration between rewards controls the rate of behavioral and dopaminergic learning",
+   "second_channel": "crossref",
+   "doi": "10.1038/s41593-026-02206-2",
+   "second_title": "Duration between rewards controls the rate of behavioral and dopaminergic learning",
+   "overlap": 1.0,
+   "second_year": 2026,
+   "verdict": "VERIFIED_TWO_CHANNEL"
+  },
+  "G5-03": {
+   "title": "Refusal in Language Models Is Mediated by a Single Direction",
+   "second_channel": "crossref",
+   "doi": "10.48550/arXiv.2406.11717",
+   "verdict": "SECOND_CHANNEL_ERROR",
+   "error": "HTTPError: HTTP Error 404: Not Found"
+  }
+ },
+ "competing_theory_channel_L01_A1": {
+  "found": false,
+  "tried": []
+ },
+ "counts": {
+  "total": 17,
+  "two_channel": 14,
+  "mismatch": 3,
+  "no_second_channel": 0
+ }
+}

@@ -1,0 +1,56 @@
+{
+ "sid": "R13-N17",
+ "title": "The gut and heart’s role in reward processing",
+ "year": 2025,
+ "verification_level": "FULLTEXT_REVIEWED",
+ "identity_check": "File opens with 'The gut and heart's role in reward processing', Arinel M. and Abdelaal K. (Naumann Laboratory / Collective for Psychiatric Neuroengineering, Duke Univ. School of Medicine), Front Integr Neurosci, DOI 10.3389/fnint.2025.1479923 -> matches verified metadata (overlap 1.0, year 2025).",
+ "evidence_type": "interpretive",
+ "provenance": "PAPER_CLAIM",
+ "term_type": "MIXED",
+ "mapping_note": "Paper's own words -> our K-family: 'energy expenditure is proportional to the difficulty ... up until the required effort surpasses the perceived value', 'metabolic investment', 'selectively mobilizing energy' -> K11 resource constraint (the review uses 'bioenergetics'/'energy allocation', not 'constraint'); 'ghrelin ... promotes effortful food-seeking', 'GLP-1 dampens motivation' -> K1 trigger/threshold (paper says 'promotes/dampens motivation', our label is 'trigger'); 'amygdalar activity heightens when novel foods are paired with delayed gastrointestinal malaise' -> K5 delay/memory (paper term 'delayed').",
+ "description_scope": "Action judged under the description 'the organism expends effort/energy to obtain a reward' (food or non-food). The review's phases - anticipation, motivation, consumption, satiation - are four different descriptions of the same pursuit, so a signal can be D+ in one phase (ghrelin at motivation) and D- in another (GLP-1 at satiation); the coded direction is always relative to effort expenditure (02 2.1-1).",
+ "motion_source": "L1/L3 - gut-derived hormones (ghrelin, GLP-1) and cardiac/autonomic afferent-efferent states (parasympathetic conservation during anticipation, sympathetic mobilization during seeking) that set the gain of mesolimbic reward phases.",
+ "mechanism": [
+  {
+   "k": "K11",
+   "role": "primary",
+   "d_axis": "D−",
+   "v_axis": "neutral",
+   "claim": "Whether the organism acts is settled by an energetic budget: motivational intensity theory as the review applies it says energy expenditure tracks task difficulty only up to the point where required effort surpasses perceived value, and sympathetic mobilization decreases past that point - so the body's energy economy, not the cue alone, licenses or withdraws the action.",
+   "quote": "The classical motivational intensity theory posits that an organism’s energy expenditure is proportional to the difficulty of obtaining a reward, up until the required effort surpasses the perceived value ( Richter and Gendolla, 2009 ; Richter et al., 2016 ).",
+   "quote_offset": 22014,
+   "quote_sha16": "5d6efcb17d7e1cb5"
+  },
+  {
+   "k": "K1",
+   "role": "auxiliary",
+   "d_axis": "D+",
+   "v_axis": "B+",
+   "claim": "Gut signals cross the threshold into action: ghrelin raises the perceived value of energy-rich foods and promotes effortful food-seeking - and the review treats anticipatory digestion as a 'metabolic bet' that spends energy before intake - while GLP-1 dampens motivation for palatable and even non-food rewards, so the same phase is entered or not depending on the hormonal state.",
+   "quote": "Ghrelin enhances the perceived value of energy-rich foods and promotes effortful food-seeking ( Perello et al., 2010 ), while GLP-1 dampens motivation for palatable ( Dickson et al., 2012 ) and non-food rewards ( Egecioglu et al., 2013a , 2013b ).",
+   "quote_offset": 22494,
+   "quote_sha16": "64dd9fb90c49fd5e"
+  },
+  {
+   "k": "K5",
+   "role": "auxiliary",
+   "d_axis": "D−",
+   "v_axis": "B-",
+   "claim": "The review imports the anchor's delay-binding result as its satiation/learning phase: amygdalar activity heightens when novel foods are paired with DELAYED gastrointestinal malaise and fades when no unexpected consequence follows, illustrating postingestive feedback in learned aversion - i.e. a signal that arrives long after the meal decides whether the cue is approached in the future.",
+   "quote": "amygdalar activity heightens when novel foods are paired with delayed gastrointestinal malaise, but fade in the absence of unexpected consequences, illustrating the role of postingestive feedback in learned aversions ( Zimmerman et al., 2025 ).",
+   "quote_offset": 15259,
+   "quote_sha16": "3ddbf0e631773754"
+  }
+ ],
+ "d_class": "mixed",
+ "agency_class": "MIXED",
+ "event_grammar": "[MOTION] internal state signal (ghrelin rise, cardiac deceleration) marks an energy need --> [GATE] bioenergetic budget: effort mobilized while value exceeds required effort, withdrawn when it does not; GLP-1/satiety closes the phase --> [ACTION/INACTION] food-seeking and consumption, or conserved energy and abandoned pursuit --> [OUTCOME] calories acquired or spared; reward learned or devalued at satiation --> [FEEDBACK] post-ingestive (delayed malaise / nutrient) feedback updates the value that the next budget computation will use",
+ "contradiction_ref": null,
+ "anchor_concordance": {
+  "anchor_primary_k": "K5",
+  "same_family": false,
+  "same_sign": true,
+  "reason": "The review's primary mechanism is an energetic-budget constraint (K11) rather than delay-binding; its single K5 sentence reports the anchor's own finding (delayed GI malaise pairing driving amygdalar aversion) with the same D- sign, but as a summary citation, not as its contribution."
+ },
+ "notes": "Review, no new experiments; it synthesizes human, rodent and other-species literature and explicitly borrows motivational intensity theory (Richter/Gendolla) and predictive-interoception coding (Asya Lokshina et al. and others) as frameworks, so the D+/D- split is condition-dependent by construction - hence d_class mixed with entry-level signs. The K5 sentence is a one-sentence restatement of anchor R13 (their ref Zimmerman et al., 2025) and must NOT be counted as independent corroboration; the review's own framing is reward-phase/bioenergetic, not credit-assignment. Cross-species and human/animal analogies are interleaved (cardiac phase locked to reward in pigs, dogs, humans), so any transfer to M2A's model side is analogy-level; nothing here was coded SUPPORTED_MECHANISM. Uncoded candidate families (3-entry cap): K6 (baroreflex/gut-brain loops at satiation), K12 (Tinbergen-level 'evolved to prioritize rewarding stimuli aligning with bodily needs' - far cause, must not be mixed with near-cause per 02 2.1-2)."
+}

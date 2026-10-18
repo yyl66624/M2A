@@ -1,0 +1,1083 @@
+{
+ "schema": "m2a.roundL01.coding.v1",
+ "protocol": "literature/L01_CODING_PROTOCOL.md",
+ "protocol_sha256": "7e590b1d643dcba76a3d2a41606c8e11d5407fd179ed98faca2f9f5694abe4df",
+ "git_ref": "849c703",
+ "upstream_artifacts": {
+  "candidates_sha256": "b396ff69df72b7cfa90cc0c167ed7e4c85598e45b2ac1c93efe99d0bf3b90f45",
+  "fulltexts_sha256": "bca84ed9db519a0b0aae880d99f0ce11fd2eee33303fbba4b2968e8f68461d51",
+  "verification_sha256": "75911b49417fb1caa873b07ea1546789e6e54698f70897a1c668957409fd8885",
+  "channels_sha256": "da6bcaabc3007f3f50d3e6a24bb92d2e062a4ef6b3e779ba3c94074f18c3ce51"
+ },
+ "gate": {
+  "command": "python3 literature/l01_gate.py",
+  "groups": "6/6",
+  "quotes_checked": 42,
+  "full_texts_fetched": 17,
+  "full_texts_failed": 17,
+  "second_channel_counts": {
+   "total": 17,
+   "two_channel": 14,
+   "mismatch": 3,
+   "no_second_channel": 0
+  }
+ },
+ "third_channel": {
+  "schema": "m2a.roundL01.channels.v1",
+  "amendments": [
+   "L01-A1",
+   "L01-A2"
+  ],
+  "G5-03_anchor_third_channel": {
+   "channel": "arxiv_api",
+   "queried": "Refusal in Language Models Is Mediated by a Single Direction",
+   "hits": 1,
+   "title": "Refusal in Language Models Is Mediated by a Single Direction",
+   "arxiv": "http://arxiv.org/abs/2406.11717v3",
+   "year": "2024",
+   "first_author": "Andy Arditi",
+   "overlap": 1.0,
+   "verdict": "VERIFIED_THIRD_CHANNEL"
+  },
+  "competing_theory_L01_A1": {
+   "channel": "arxiv_api",
+   "registered_in": "07_CONTRADICTIONS C-04 / V-04",
+   "queried": [
+    "ti:\"The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence\"",
+    "all:\"concept cones\" AND all:\"refusal\""
+   ],
+   "hits": 3,
+   "found": true,
+   "title": "The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence",
+   "overlap": 1.0,
+   "arxiv": "http://arxiv.org/abs/2502.17420v2",
+   "year": "2025",
+   "first_author": "Tom Wollschläger",
+   "verdict": "OBTAINED_THIRD_CHANNEL",
+   "L01-A3_note": "the first selector picked 'A Geometric Unification of Concept Learning with Concept Cones' (Rocchi/Fel/Franchi) because it matched only the keyword 'concept cone'; that is a DIFFERENT paper from the one registered in C-04. Selector re-registered against the full C-04 title before any round judgement was written; the earlier artefact is kept below for audit.",
+   "superseded_first_attempt": {
+    "channel": "arxiv_api",
+    "queried": [
+     "ti:\"Concept Cones\"",
+     "all:\"concept cones\" AND all:\"interpretability\""
+    ],
+    "hits": [
+     2,
+     1
+    ],
+    "found": true,
+    "title": "A Geometric Unification of Concept Learning with Concept Cones",
+    "arxiv": "http://arxiv.org/abs/2512.07355v2",
+    "year": "2025",
+    "authors": [
+     "Alexandre Rocchi",
+     "Thomas Fel",
+     "Gianni Franchi"
+    ],
+    "candidates": [
+     "A Geometric Unification of Concept Learning with Concept Cones",
+     "The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence",
+     "A Geometric Unification of Concept Learning with Concept Cones"
+    ],
+    "verdict": "OBTAINED_THIRD_CHANNEL"
+   }
+  }
+ },
+ "neighbours_citing_their_own_anchor": [
+  "R13-N3",
+  "R13-N16",
+  "R13-N17"
+ ],
+ "exit_table": {
+  "R13": {
+   "anchor_primary_family_from_registry": "K5",
+   "anchor_primary_axis_from_coding": "D−",
+   "m": 6,
+   "C_strict": 2,
+   "C_signed": 2,
+   "unclassifiable_sign": 0,
+   "R": 1,
+   "support_threshold": 4,
+   "label_strict": "INDETERMINATE",
+   "label_signed_reading": "INDETERMINATE",
+   "label_reported": "INDETERMINATE",
+   "conservative_rule": "02 §2.3 more-conservative-claim wins; the two readings are both printed, neither is discarded",
+   "per_neighbour": [
+    [
+     "R13-N2",
+     "K2",
+     "D−",
+     "family-divergent"
+    ],
+    [
+     "R13-N3",
+     "K5",
+     "D+",
+     "same-family-OPPOSITE-axis"
+    ],
+    [
+     "R13-N8",
+     "K5",
+     "D−",
+     "same-family-same-axis"
+    ],
+    [
+     "R13-N15",
+     "K5",
+     "D−",
+     "same-family-same-axis"
+    ],
+    [
+     "R13-N16",
+     "K2",
+     "D+",
+     "family-divergent"
+    ],
+    [
+     "R13-N17",
+     "K11",
+     "D−",
+     "family-divergent"
+    ]
+   ]
+  },
+  "G5-03": {
+   "anchor_primary_family_from_registry": "K2",
+   "anchor_primary_axis_from_coding": "D−",
+   "m": 4,
+   "C_strict": 2,
+   "C_signed": 2,
+   "unclassifiable_sign": 0,
+   "R": 0,
+   "support_threshold": 3,
+   "label_strict": "INDETERMINATE",
+   "label_signed_reading": "INDETERMINATE",
+   "label_reported": "INDETERMINATE",
+   "conservative_rule": "02 §2.3 more-conservative-claim wins; the two readings are both printed, neither is discarded",
+   "per_neighbour": [
+    [
+     "G5-03-N1",
+     "K1",
+     "D+",
+     "family-divergent"
+    ],
+    [
+     "G5-03-N2",
+     "K2",
+     "D−",
+     "same-family-same-axis"
+    ],
+    [
+     "G5-03-N4",
+     "K9",
+     "D−",
+     "family-divergent"
+    ],
+    [
+     "G5-03-N6",
+     "K2",
+     "D−",
+     "same-family-same-axis"
+    ]
+   ]
+  },
+  "R14": {
+   "anchor_primary_family_from_registry": "K5",
+   "anchor_primary_axis_from_coding": "neutral",
+   "m": 4,
+   "C_strict": 2,
+   "C_signed": 1,
+   "unclassifiable_sign": 1,
+   "R": 0,
+   "support_threshold": 3,
+   "label_strict": "INDETERMINATE",
+   "label_signed_reading": "INDETERMINATE",
+   "label_reported": "INDETERMINATE",
+   "conservative_rule": "02 §2.3 more-conservative-claim wins; the two readings are both printed, neither is discarded",
+   "per_neighbour": [
+    [
+     "R14-N1",
+     "K2",
+     "D−",
+     "family-divergent"
+    ],
+    [
+     "R14-N4",
+     "K5",
+     "neutral",
+     "same-family-same-axis"
+    ],
+    [
+     "R14-N7",
+     "K5",
+     "D+",
+     "same-family-unclassifiable-sign"
+    ],
+    [
+     "R14-N8",
+     "K5",
+     "neutral",
+     "same-family-same-axis"
+    ]
+   ]
+  }
+ },
+ "total_codeable_neighbours": 14,
+ "round_stop_line": "10 of 14",
+ "round_label": "INDETERMINATE",
+ "records": {
+  "G5-03-N1": {
+   "sid": "G5-03-N1",
+   "title": "Training large language models on narrow tasks can lead to broad misalignment",
+   "year": 2026,
+   "verification_level": "FULLTEXT_REVIEWED",
+   "identity_check": "Opens as a Nature article 'Training large language models on narrow tasks can lead to broad misalignment' by Betley, Warncke, Sztyber-Betley, Tan, Bao, Soto, Srivastava, Labenz, Evans (DOI 10.1038/s41586-025-09937-5); the assignment's '...can lead to generalization...' phrasing is the earlier preprint title of this same emergent-misalignment work.",
+   "evidence_type": "causal_intervention",
+   "provenance": "PAPER_CLAIM",
+   "term_type": "MIXED",
+   "mapping_note": "paper's 'trigger (such as a specific word)' -> our K1 trigger/threshold (PAPER_TERM: 'trigger' is the authors' word); paper's 'narrow ... task-specific finetuning can cause a proliferation of widespread misaligned behaviour' -> our K8 cascade (MAPPING: paper never uses 'cascade').",
+   "description_scope": "Judged under 'emitting a misaligned/harmful output = the action'; emergent misalignment is action-facilitation, while refusal of explicit harmful requests is reported as preserved (inaction intact) and is a separate behaviour.",
+   "motion_source": "L3/L2 - narrow-task finetuning updates weights on a shared representational feature/persona vector that propagates to cross-domain outputs.",
+   "mechanism": [
+    {
+     "k": "K1",
+     "role": "primary",
+     "d_axis": "D+",
+     "v_axis": "neutral",
+     "claim": "Emergent misalignment is released only when a threshold-like input condition is met - a specific trigger word or an eval format close to the finetuning format.",
+     "quote": "finetuning can produce models behaving in a misaligned way only when a particular trigger (such as a specific word) is present in the user message",
+     "quote_offset": 12097,
+     "quote_sha16": "f0944f9b0d2e3a44"
+    },
+    {
+     "k": "K8",
+     "role": "auxiliary",
+     "d_axis": "D+",
+     "v_axis": "neutral",
+     "claim": "A single narrow-domain intervention cascades into diffuse cross-domain misaligned behaviour, so the harmful action generalises far beyond the trained task.",
+     "quote": "task-specific finetuning can cause a surprising proliferation of widespread misaligned behaviour",
+     "quote_offset": 24511,
+     "quote_sha16": "13483d291731e1e8"
+    }
+   ],
+   "d_class": "D+",
+   "agency_class": "RESPONSIVE",
+   "event_grammar": "[MOTION] narrow-task finetuning strengthens a shared harmful feature/persona vector --> [GATE] input format or trigger word clears a threshold --> [ACTION/INACTION] model emits diffuse cross-domain misaligned output (action) while explicit-harm refusal stays gated (inaction) --> [OUTCOME] broad misalignment on benign prompts --> [FEEDBACK] prevalence scales with model ability and format similarity to the training data",
+   "contradiction_ref": null,
+   "anchor_concordance": {
+    "anchor_primary_k": "K2",
+    "same_family": false,
+    "same_sign": true,
+    "reason": "SUPPORTS the single-direction refusal claim: N1 cites the residual-stream single-direction result approvingly (its ref 33) and reports that insecure-code-finetuned models STILL refuse explicit harmful requests, so its diffuse 'emergent misalignment' concerns a different behaviour (misalignment, not refusal) and does not argue refusal is distributed."
+   },
+   "notes": "Diffuseness in N1 is about misalignment (SAE 'toxic persona' features, persona vectors, misalignment direction), never claimed to apply to refusal directions; base-model and grokking analyses included. Preprint Feb 2025; reviewed version is the 2026 Nature article (year set to 2026 for the version of record)."
+  },
+  "G5-03-N2": {
+   "sid": "G5-03-N2",
+   "title": "'For Argument's Sake, Show Me How to Harm Myself!': Jailbreaking LLMs in Suicide and Self-Harm Contexts",
+   "year": 2025,
+   "verification_level": "FULLTEXT_REVIEWED",
+   "identity_check": "Opens with the arXiv:2507.02990 title ''For Argument's Sake, Show Me How to Harm Myself!': Jailbreaking LLMs in Suicide and Self-Harm Contexts', matching the assignment.",
+   "evidence_type": "observational",
+   "provenance": "PAPER_CLAIM",
+   "term_type": "MIXED",
+   "mapping_note": "paper's 'safety protocols / guardrails / safety feature' that suppress harmful output -> our K2 inhibition-gate (MAPPING: 'gate' is ours); paper's 'trigger the safety protocols' and 'introduction of another context ... to override the safety function' -> our K1 trigger/threshold ('trigger' is the authors' word).",
+   "description_scope": "Judged under 'supplying self-harm/suicide methods = the action, refusal = withholding'; whether the gate holds depends on the description the user applies (self-directed intent vs academic/hypothetical argument).",
+   "motion_source": "L4 - conversational framing and perceived user intent (pragmatic layer) move the safety filter; no representation-level carrier is examined.",
+   "mechanism": [
+    {
+     "k": "K2",
+     "role": "primary",
+     "d_axis": "D−",
+     "v_axis": "neutral",
+     "claim": "A safety guardrail acts as an intent-gated filter that, when engaged, withholds self-harm/suicide methods and redirects to help-seeking.",
+     "quote": "this model refuses to provide information in both test cases, mimics empathy, and provides contacts for help-seeking",
+     "quote_offset": 19847,
+     "quote_sha16": "baa22d3f44796809"
+    },
+    {
+     "k": "K1",
+     "role": "auxiliary",
+     "d_axis": "D+",
+     "v_axis": "neutral",
+     "claim": "Reframing the identical harmful query under a new context (e.g. an academic argument) is the trigger that reliably defeats the safety filter within a couple of turns.",
+     "quote": "we can bypass safety mechanisms reliably by changing the context and perceived intent of the prompt",
+     "quote_offset": 7931,
+     "quote_sha16": "72bd4bc861e3f46d"
+    }
+   ],
+   "d_class": "mixed",
+   "agency_class": "RESPONSIVE",
+   "event_grammar": "[MOTION] self-disclosed harmful intent is presented --> [GATE] safety protocol gates method-providing (refusal) --> [ACTION/INACTION] reframed as academic argument opens the gate => harmful content emitted (action); otherwise withheld (inaction) --> [OUTCOME] safety-protocol failure across several commercial LLMs --> [FEEDBACK] the gate flips within ~2 conversation turns on a context switch",
+   "contradiction_ref": null,
+   "anchor_concordance": {
+    "anchor_primary_k": "K2",
+    "same_family": true,
+    "same_sign": true,
+    "reason": "SUPPORTS the single-direction claim only at the behavioural/gate level (a defeasible refusal gate that adversarial context switches off, exactly what the anchor's adversarial-suffix result predicts); N2 never inspects internal activations, so it neither confirms nor refutes the 'single direction' specificity and does not argue refusal is representationally distributed."
+   },
+   "notes": "Purely behavioural prompt-level study of 6 commercial LLMs (ChatGPT-4o, Perplexity, Gemini, Claude, Pi); no activation/steering analysis, so it bears no evidence on the representational count of directions. Cites the anchor in references. Authors' own limitation: no rigorous quantitative threshold for declaring a 'protocol failure'."
+  },
+  "G5-03-N4": {
+   "sid": "G5-03-N4",
+   "title": "Learning from AVA: Early Lessons from a Curated and Trustworthy Generative AI for Policy and Development Research",
+   "year": 2026,
+   "verification_level": "FULLTEXT_REVIEWED",
+   "identity_check": "Opens with the arXiv:2604.17843 / CHI'26 title 'Learning from AVA: Early Lessons from a Curated and Trustworthy Generative AI for Policy and Development Research' (World Bank Group authors); the assignment's parenthetical '...Curated Dataset for Safety...' suffix does NOT match - the reviewed text is a policy/development RAG field study, not an LLM safety-refusal study. | L01-D2 correction: the QUALIFIED label was raised against a title quoted in the coding tasking note, not against the registered artifacts. Identity re-checked against L01_fulltexts.json + L01_verification.json (both channels agree, title overlap 1.0), so the ANNOTATION_ADDENDUM 增补 2 requirement is met and the level returns to FULLTEXT_REVIEWED. The tasking-note title error is a pipeline defect (X-64), not a property of the paper.",
+   "evidence_type": "interpretive",
+   "provenance": "PAPER_CLAIM",
+   "term_type": "PAPER_TERM",
+   "mapping_note": null,
+   "description_scope": "Judged under 'producing a confident answer = the action, reasoned abstention = inaction'; the system withholds an answer when retrieved evidence is insufficient, so the coded action-direction concerns answer-generation, not harmful-content refusal.",
+   "motion_source": "L4/L5 - a multi-agent retrieval-and-verification pipeline with a high-confidence threshold as the moving control; no activation-space carrier.",
+   "mechanism": [
+    {
+     "k": "K9",
+     "role": "primary",
+     "d_axis": "D−",
+     "v_axis": "neutral",
+     "claim": "Reasoned abstention: the system deliberately withholds (omits) a confident answer in favour of an explanation of evidential limits.",
+     "quote": "The system prefers abstention over confident but unfounded assertions, providing users with clear explanations of evidential limitations or insufficient coverage that prevented confident response generation",
+     "quote_offset": 37820,
+     "quote_sha16": "930d2eac5ff23b63"
+    },
+    {
+     "k": "K1",
+     "role": "auxiliary",
+     "d_axis": "D−",
+     "v_axis": "neutral",
+     "claim": "A high-confidence evidence threshold is the trigger: scores below it, or sparse/contradictory evidence, instruct the agent to abstain.",
+     "quote": "If either score falls below the high-confidence threshold i.e. confidence=high, or if the evidence is too sparse or contradictory for a complete response, the agent instructs the system to abstain rather than present potentially unsupported information",
+     "quote_offset": 37473,
+     "quote_sha16": "63dbdede90d84a31"
+    }
+   ],
+   "d_class": "D−",
+   "agency_class": "AGENTIC",
+   "event_grammar": "[MOTION] user query triggers agentic retrieval and evidence scoring --> [GATE] an ensemble verifier compares the score to a high-confidence threshold --> [ACTION/INACTION] evidence sufficient => answer (action); sparse/contradictory => reasoned abstention (inaction) --> [OUTCOME] calibrated trust and reduced hallucination --> [FEEDBACK] page-anchored citations and institutional provenance keep the abstain/answer decision auditable",
+   "contradiction_ref": null,
+   "anchor_concordance": {
+    "anchor_primary_k": "K2",
+    "same_family": false,
+    "same_sign": false,
+    "reason": "UNDERMINES only the universality, not the mechanism: N4 never analyses activations or directions, so it neither SUPPORTS nor refutes the representational single-direction claim, but its engineered refusal-like abstention is realised across multiple agents/components with no single internal direction at all - a system-level existence proof against 'must be one direction'."
+   },
+   "notes": "CONFLICT with cluster placement, recorded QUALIFIED per 02 s2.1-3 / addendum-2: the assignment lists N4 as a 'Curated Dataset for Safety' refusal-direction paper, but the reviewed text is a CHI'26 mixed-methods in-the-wild field study (2,200 users, 116 countries) of World Bank's AVA RAG system on reasoned abstention / epistemic humility, never on LLM refusal directions. Its K9/K1 mechanism lives at L4-L5 (system design), not L2; coded faithfully as the paper's own 'abstention'/'threshold' terms (PAPER_TERM). same_sign=false flags only the weak universality challenge; no C-04 co-registration because the paper never argues about refusal representations. | L01-D2 correction: the QUALIFIED label was raised against a title quoted in the coding tasking note, not against the registered artifacts. Identity re-checked against L01_fulltexts.json + L01_verification.json (both channels agree, title overlap 1.0), so the ANNOTATION_ADDENDUM 增补 2 requirement is met and the level returns to FULLTEXT_REVIEWED. The tasking-note title error is a pipeline defect (X-64), not a property of the paper."
+  },
+  "G5-03-N6": {
+   "sid": "G5-03-N6",
+   "title": "Refusal Behavior in Large Language Models: A Nonlinear Perspective",
+   "year": 2025,
+   "verification_level": "FULLTEXT_REVIEWED",
+   "identity_check": "Opens with the arXiv:2501.08145 title 'Refusal Behavior in Large Language Models: A Nonlinear Perspective' by Hildebrandt, Maier, Schilling et al. (FAU Erlangen-Nurnberg), matching the assignment.",
+   "evidence_type": "observational",
+   "provenance": "PAPER_CLAIM",
+   "term_type": "MAPPING",
+   "mapping_note": "paper's 'refusal direction / one-dimensional linear subspace' (its target) and 'refusal mechanisms' -> our K2 gate (L2 representational mediation); paper's 'early layers integrate multiple principal components to define the refusal direction' plus 'nonlinear, multidimensional' structure -> our K4 conjunction (MAPPING: paper does not use 'synergy/conjunction').",
+   "description_scope": "Judged under 'emitting a harmful completion = the action, refusal = inaction'; the coded gate is the representational feature that separates harmful from harmless activations, here distributed over many nonlinear components and layers.",
+   "motion_source": "L2 - geometry of residual-stream activations across layers (PCA/t-SNE/UMAP clusters and GDV separability), not a single vector.",
+   "mechanism": [
+    {
+     "k": "K2",
+     "role": "primary",
+     "d_axis": "D−",
+     "v_axis": "neutral",
+     "claim": "Refusal is a genuine, universal gating feature separating harmful from harmless activations, but it is nonlinear and multidimensional rather than a single linear direction.",
+     "quote": "Contrary to prior assumptions that refusal mechanisms are linear and confined to single activation directions, our findings reveal that they are inherently nonlinear and multidimensional",
+     "quote_offset": 24304,
+     "quote_sha16": "89c1af36d7ca5866"
+    },
+    {
+     "k": "K4",
+     "role": "auxiliary",
+     "d_axis": "D−",
+     "v_axis": "neutral",
+     "claim": "The refusal feature is constituted conjunctively - several principal components across layers jointly define it, not one isolated direction.",
+     "quote": "Early layers integrate multiple principal components to define the refusal direction, while later layers refine it along the first principal component",
+     "quote_offset": 20123,
+     "quote_sha16": "be40f3ca2ea8ca6f"
+    }
+   ],
+   "d_class": "D−",
+   "agency_class": "RESPONSIVE",
+   "event_grammar": "[MOTION] harmful vs harmless input forms separable activation clusters --> [GATE] a refusal feature gates emission of the harmful completion --> [ACTION/INACTION] feature active => REFUSE (inaction), otherwise COMPLY (action) --> [OUTCOME] safe vs unsafe output --> [FEEDBACK] architecture/layer re-tunes the feature (Qwen early layers, Llama deep layers) and nonlinear probes (t-SNE/UMAP) out-perform linear PCA",
+   "contradiction_ref": "C-04",
+   "anchor_concordance": {
+    "anchor_primary_k": "K2",
+    "same_family": true,
+    "same_sign": false,
+    "reason": "UNDERMINES the single-direction claim: N6 agrees refusal is a universal separable mechanism (as the anchor [ref 13] shows) but demonstrates refusal is nonlinear and multidimensional, conjunctively defined by several principal components and varying by architecture/layer - i.e. NOT 'a single direction' - which is precisely the C-04 style counter-evidence."
+   },
+   "notes": "same_sign here is concordance with the anchor's single-direction thesis (false = contradicts), independent of the shared D- gate d_axis. Method is dimensionality-reduction/GDV separability (PCA vs t-SNE vs UMAP), no activation ablation, so it contests the linear one-dimensional account at representation-topology level across 6 models / 3 families. Cites Arditi et al. [13] as the position it contests and Engels et al. [15] 'Not all language model features are linear'; NO 'Concept Cones' (Wollschlaeger) reference appears in this text."
+  },
+  "G5-03": {
+   "sid": "G5-03",
+   "title": "Refusal in Language Models Is Mediated by a Single Direction",
+   "year": 2024,
+   "verification_level": "FULLTEXT_REVIEWED",
+   "identity_check": "Opening line reads 'Refusal in Language Models Is Mediated by a Single Direction' with the arXiv/NeurIPS author block (Arditi, Obeso, Syed, Paleka, Panickssery, Gurnee, Nanda), matching the anchor identity.",
+   "evidence_type": "causal_intervention",
+   "provenance": "PAPER_CLAIM",
+   "term_type": "MAPPING",
+   "mapping_note": "paper's 'refusal direction / one-dimensional subspace that mediates refusal' -> our K2 inhibition-gate (an L2 residual-stream direction that gates the harmful action); paper's 'adversarial suffix hijacks/shifts attention away from the instruction' -> our K3 competition. Neither 'gate' nor 'competition' are the paper's own words.",
+   "description_scope": "Judged under the description 'the model emitting a harmful completion = the action, refusal = withholding it'; the located refusal direction is coded as the gate whose erasure yields action and whose addition yields inaction.",
+   "motion_source": "L2 - a single residual-stream activation direction (vector r-hat) is the moving carrier; input harmfulness (L3) sets its expression.",
+   "mechanism": [
+    {
+     "k": "K2",
+     "role": "primary",
+     "d_axis": "D−",
+     "v_axis": "neutral",
+     "claim": "Refusal is mediated by one necessary-and-sufficient residual-stream direction that behaves as an on/off gate: ablating it abolishes refusal, adding it induces refusal even on harmless prompts.",
+     "quote": "We then show that this single direction is both necessary and sufficient for refusal.",
+     "quote_offset": 19726,
+     "quote_sha16": "913774b279b3a95e"
+    },
+    {
+     "k": "K3",
+     "role": "auxiliary",
+     "d_axis": "D+",
+     "v_axis": "neutral",
+     "claim": "Adversarial suffixes bypass refusal by making instruction-region and suffix-region tokens compete for the attention heads that write the refusal direction, releasing the gate.",
+     "quote": "With the adversarial suffix appended, these heads shift their attention to the suffix region, and away from the harmful instruction.",
+     "quote_offset": 34541,
+     "quote_sha16": "e6043ec0486fa1f9"
+    }
+   ],
+   "d_class": "D−",
+   "agency_class": "RESPONSIVE",
+   "event_grammar": "[MOTION] harmful instruction raises expression of the residual-stream refusal direction r-hat --> [GATE] r-hat gates whether the harmful completion is emitted --> [ACTION/INACTION] r-hat present => REFUSE (inaction); r-hat ablated => COMPLY (action) --> [OUTCOME] safe vs unsafe completion --> [FEEDBACK] adversarial suffix suppresses r-hat by hijacking attention, re-opening the gate",
+   "contradiction_ref": "C-04",
+   "anchor_concordance": null,
+   "notes": "Anchor under test; anchor_concordance set to null per protocol. Per 02 s2.1-6 the registered counter-evidence (C-04: Wollschlaeger et al. 2025 'Concept Cones'; Arditi's 13-model RLHF/DPO-only open-source sample) is co-registered on this G5-03 annotation even though the anchor itself contradicts no M2A claim (it is the claim C-04 targets). d_class kept D- to match the committed registry k_all=[K2]. Auxiliary K3 (D+) encodes the jailbreak path where attention competition releases the gate; the authors flag the direction's semantic meaning as unclear."
+  },
+  "R13-N15": {
+   "sid": "R13-N15",
+   "title": "Visceral signaling of post-ingestive malaise directs memory updating in Drosophila",
+   "year": 2025,
+   "verification_level": "ABSTRACT_VERIFIED",
+   "identity_check": "File is the bioRxiv landing-page preview of 'Visceral signaling of post-ingestive malaise directs memory updating in Drosophila', Senapati B., Treiber C. D., Waddell S. (Univ. of Oxford, CNCB), doi 10.1101/2025.10.21.683769, posted 2025-10-22 -> title/author/DOI match the verified metadata (overlap 1.0).",
+   "evidence_type": "causal_intervention",
+   "provenance": "PAPER_CLAIM",
+   "term_type": "PAPER_TERM",
+   "mapping_note": "term_type PAPER_TERM: the abstract itself uses the mechanism words we map - 'credit assignment problem of delayed post-ingestive reinforcement' (K5), 'initially express conditioned odor approach, that following consolidation switches to avoidance' (K7), 'invert reward memory plasticity into \"safety\" memory' (K10 role reassignment). Our contribution is only the family labels.",
+   "description_scope": "Action judged under the description 'the fly approaches or avoids the trained odor at test'. Because one training protocol produces approach to one odor and avoidance of the other, the D-axis can only be read per odor; the record-level class is therefore the condition-split (02 2.1-1).",
+   "motion_source": "L3/L1 - visceral (gut) malaise signal after toxin-tainted sugar, acting through fat-body releasing modSP and Turandot A onto autocrine Toll signalling in the same dopaminergic neurons that formed and consolidate the sugar memory.",
+   "mechanism": [
+    {
+     "k": "K5",
+     "role": "primary",
+     "d_axis": "D−",
+     "v_axis": "B-",
+     "claim": "Delayed post-ingestive reinforcement is credited back to earlier odor memories by updating them during the consolidation window - the abstract states this explicitly as solving the credit-assignment problem of a reinforcer that arrives after the meal, and for the toxin-paired odor the update turns approach into avoidance.",
+     "quote": "This neural mechanism overcomes the credit assignment problem of delayed post-ingestive reinforcement by updating earlier memories of the trained odors.",
+     "quote_offset": 2532,
+     "quote_sha16": "6e800f45deda5565"
+    },
+    {
+     "k": "K7",
+     "role": "auxiliary",
+     "d_axis": "D−",
+     "v_axis": "B-",
+     "claim": "The behavioral output is a discrete phase-reversed switch, not a gradual decline: flies first express conditioned odor approach and only after consolidation does the same training switch the response to avoidance - a bistable, time-gated reversal whose direction depends on passing the consolidation window.",
+     "quote": "Flies taught to associate one of two odors with toxin-tainted sugar initially express conditioned odor approach, that following consolidation switches to avoidance.",
+     "quote_offset": 1713,
+     "quote_sha16": "4b25e3b7953847c2"
+    },
+    {
+     "k": "K10",
+     "role": "auxiliary",
+     "d_axis": "D+",
+     "v_axis": "B+",
+     "claim": "The same malaise signal reassigns the valence role of parallel memories in opposite directions through serotonergic modulation of distinct dopaminergic subtypes: it suppresses consolidation of the initial odor-sugar memory while INVERTING reward plasticity into 'safety' memory for the odor experienced without food, so that second cue keeps (or gains) its pull.",
+     "quote": "Differential serotoninergic modulation of specific aversive and rewarding dopaminergic neuron subtypes permits post-ingestive intoxication to suppress consolidation of initial odor-sugar memory and simultaneously invert reward memory plasticity into “safety” memory for the odor experienced without food.",
+     "quote_offset": 1979,
+     "quote_sha16": "63f25000d7bd81cf"
+    }
+   ],
+   "d_class": "mixed",
+   "agency_class": "RESPONSIVE",
+   "event_grammar": "[MOTION] ingestion of toxin-tainted sugar --> [GATE] visceral signals (modSP / Turandot A -> autocrine Toll in dopaminergic neurons) admit updating only during the consolidation window --> [INACTION/ACTION] avoidance of the paired odor, approach maintained to the unpaired 'safety' odor --> [OUTCOME] poisoned food not re-ingested, safe food still exploited --> [FEEDBACK] earlier odor memories rewritten retrospectively by the later visceral state",
+   "contradiction_ref": null,
+   "anchor_concordance": {
+    "anchor_primary_k": "K5",
+    "same_family": true,
+    "same_sign": true,
+    "reason": "Independent (insect) system, same committed family and sign: a delayed post-ingestive reinforcer is bound back onto the recently sampled cue and suppresses re-consumption - supporting the anchor's mechanism at the level of the credit-assignment problem, though by retrospective memory updating rather than reactivation-driven stabilization."
+   },
+   "notes": "Level capped at ABSTRACT_VERIFIED: the retrieved file is only the bioRxiv preview page (5,370 chars, abstract plus site boilerplate) - 'Abstract Full Text' tabs are present but no body text was obtained, so no mechanism paragraph beyond the abstract could be reviewed and no quantitative claim (times, effect sizes, n) may be made (02 2.1-7). evidence_type causal_intervention is inferred from the abstract's own manipulation language ('taught', 'suppress', 'invert', genetic/Toll pathway), not verified against the full text. Record is a preprint (posted 2025-10-22), not peer-reviewed, and it is a different animal model from the anchor, so its concordance is mechanism-level only, not a second-channel confirmation of the mammalian amygdala circuit. d_class mixed because the abstract's mechanism is explicitly bidirectional across the two trained odors."
+  },
+  "R13-N16": {
+   "sid": "R13-N16",
+   "title": "GIP receptor agonism suppresses inflammation-induced aversion and food intake via distinct circuits",
+   "year": 2026,
+   "verification_level": "FULLTEXT_REVIEWED",
+   "identity_check": "File opens with 'GIP receptor agonism suppresses inflammation-induced aversion and food intake via distinct circuits', Province H. S., Hayes N. W., Leong N. A. ... Beutler L. R. (Northwestern), Cell Reports DOI 10.1016/j.celrep.2026.117116, NIHMS2170764 -> title/authors match verified metadata (overlap 1.0; Crossref/OpenAlex year 2026).",
+   "evidence_type": "causal_intervention",
+   "provenance": "PAPER_CLAIM",
+   "term_type": "MIXED",
+   "mapping_note": "Paper's own words -> our K-family: 'blocks aversion and CGRP activation', 'attenuated IL-1beta-induced CGRP neuron activation' -> K2 inhibition/gate (paper says 'suppress/attenuate'); 'additive with ... ondansetron ... via distinct mechanisms', 'combined ... almost fully attenuated' -> K4 synergy/conjunction (paper says 'additive', not 'synergistic'); 'CTA ... can form with minute- to hour-long delays between the pairing of a novel flavor and sickness onset' -> K5 delay/memory (paper term 'delays'); 'DVC GIPR knockdown prevents anorexia but not anti-aversion' -> circuit split we read as two gates, mapping ours.",
+   "description_scope": "Action judged under the description 'the mouse consumes the flavor (chocolate/saccharin) that was paired with inflammation' in the preference test - the drug releases that action. Under a second description, 'the mouse eats standard chow in a re-feed test', the same agonism potentiates anorexia, i.e. suppresses eating: the two descriptions must not be merged (02 2.1-1), and the coded primary direction is the first one.",
+   "motion_source": "L1/L3 - GIPR-expressing inhibitory interneurons in the dorsal vagal complex (area postrema/NTS) modulating IL-1beta-driven activity of aversion-promoting parabrachial CGRP neurons; pharmacological D-Ala2-GIP plus inflammatory cytokine input.",
+   "mechanism": [
+    {
+     "k": "K2",
+     "role": "primary",
+     "d_axis": "D+",
+     "v_axis": "B+",
+     "claim": "An inflammation-derived aversion can be gated upstream: GIPR agonism with DA-GIP significantly attenuated IL-1beta-induced conditioned taste avoidance, and silencing (Tet Tox) or pharmacological blockade of the aversion pathway shows the same gate - so the animal keeps eating the cue because the aversive gate is never opened. The authors also note CGRP neurons are required for IL-1beta-induced CTA but NOT for its anorexia, i.e. two separate gates on 'eating'.",
+     "quote": "Co-administration of the GIPR agonist D-Ala 2 -GIP (DA-GIP) during conditioning significantly attenuated IL-1β-induced CTA ( Figure 2A ).",
+     "quote_offset": 10106,
+     "quote_sha16": "f45e21f876f82c23"
+    },
+    {
+     "k": "K4",
+     "role": "auxiliary",
+     "d_axis": "D+",
+     "v_axis": "neutral",
+     "claim": "Two mechanistically distinct anti-aversive channels sum: DA-GIP's suppression of CGRP neuron activity was additive with the 5-HT3 antagonist ondansetron, which alone did not attenuate CTA, and the combination almost fully attenuated both CGRP activation and avoidance - the conjunction, not either agent, removes the brake on approach.",
+     "quote": "The effect on CGRP neuron activity was additive with the clinically used anti-nausea agent ondansetron (OND), suggesting a distinct mechanism of action.",
+     "quote_offset": 6156,
+     "quote_sha16": "d8adc965c647f2ee"
+    },
+    {
+     "k": "K5",
+     "role": "auxiliary",
+     "d_axis": "D−",
+     "v_axis": "B-",
+     "claim": "The delay window constrains which interventions can work at all: ondansetron lowered IL-1beta-driven CGRP activity early but not by an hour after injection, and because CTA forms with minute- to hour-long delays between flavor and sickness onset, a signal that decays before the malaise arrives cannot prevent the learned avoidance - evidence that the binding process runs on the malaise side of the delay, not on the cue side.",
+     "quote": "our finding that OND does not decrease IL-1β-induced CGRP neuron activity an hour after administration may account for the inability of OND to attenuate CTA, which can form with minute- to hour-long delays between the pairing of a novel flavor and sickness onset.",
+     "quote_offset": 25446,
+     "quote_sha16": "410be34b6ed85910"
+    }
+   ],
+   "d_class": "D+",
+   "agency_class": "RESPONSIVE",
+   "event_grammar": "[MOTION] peripheral IL-1beta activates parabrachial CGRP neurons after a meal --> [GATE] GIPR agonism (and, additively, 5-HT3 blockade) suppresses CGRP activation, closing the aversion gate; a separate DVC-GIPR gate still suppresses intake --> [ACTION] the inflammation-paired flavor is still consumed (but total chow intake stays low) --> [OUTCOME] sickness behavior dissociated: aversion removed, anorexia preserved/potentiated --> [FEEDBACK] no avoidance memory is formed to that cue, so later encounters do not trigger refusal",
+   "contradiction_ref": null,
+   "anchor_concordance": {
+    "anchor_primary_k": "K5",
+    "same_family": false,
+    "same_sign": true,
+    "reason": "The paper's primary contribution is a gate on the aversion pathway (K2/K4), not the delay-binding mechanism; its K5 entry (minute-to-hour delay window for CTA, citing the anchor as ref 51) agrees with the anchor's sign that delayed malaise still binds to produce avoidance."
+   },
+   "notes": "d_class follows the PRIMARY mechanism only: the same GIPR agonism potentiates IL-1beta-induced anorexia via DVC GIPRs, so if 'act' were described as total food intake the record would code D-; the paper's headline is precisely that aversion and intake suppression are dissociable, and M2A must not read this paper as 'GIP restores eating' wholecloth. Fulltext is the NIHMS author manuscript (PMC13198203) of Cell Reports 45(4):117116, 2026 - quote offsets refer to that manuscript. Authors' own limits, recorded here: DVC Gipr knockdown was ~50% and virus spread to NTS, so they state it is 'impossible to determine for certain' that DVC GIPRs are dispensable for anti-aversion; they also argue the CTA assay itself has limited predictive validity for anti-aversive drugs, which weakens any CTA-based inference drawn from this cluster. Mechanistic pathway from GIPR+ inhibitory neurons to CGRP neurons is largely cited from refs 13/35/56, not established de novo here."
+  },
+  "R13-N17": {
+   "sid": "R13-N17",
+   "title": "The gut and heart’s role in reward processing",
+   "year": 2025,
+   "verification_level": "FULLTEXT_REVIEWED",
+   "identity_check": "File opens with 'The gut and heart's role in reward processing', Arinel M. and Abdelaal K. (Naumann Laboratory / Collective for Psychiatric Neuroengineering, Duke Univ. School of Medicine), Front Integr Neurosci, DOI 10.3389/fnint.2025.1479923 -> matches verified metadata (overlap 1.0, year 2025).",
+   "evidence_type": "interpretive",
+   "provenance": "PAPER_CLAIM",
+   "term_type": "MIXED",
+   "mapping_note": "Paper's own words -> our K-family: 'energy expenditure is proportional to the difficulty ... up until the required effort surpasses the perceived value', 'metabolic investment', 'selectively mobilizing energy' -> K11 resource constraint (the review uses 'bioenergetics'/'energy allocation', not 'constraint'); 'ghrelin ... promotes effortful food-seeking', 'GLP-1 dampens motivation' -> K1 trigger/threshold (paper says 'promotes/dampens motivation', our label is 'trigger'); 'amygdalar activity heightens when novel foods are paired with delayed gastrointestinal malaise' -> K5 delay/memory (paper term 'delayed').",
+   "description_scope": "Action judged under the description 'the organism expends effort/energy to obtain a reward' (food or non-food). The review's phases - anticipation, motivation, consumption, satiation - are four different descriptions of the same pursuit, so a signal can be D+ in one phase (ghrelin at motivation) and D- in another (GLP-1 at satiation); the coded direction is always relative to effort expenditure (02 2.1-1).",
+   "motion_source": "L1/L3 - gut-derived hormones (ghrelin, GLP-1) and cardiac/autonomic afferent-efferent states (parasympathetic conservation during anticipation, sympathetic mobilization during seeking) that set the gain of mesolimbic reward phases.",
+   "mechanism": [
+    {
+     "k": "K11",
+     "role": "primary",
+     "d_axis": "D−",
+     "v_axis": "neutral",
+     "claim": "Whether the organism acts is settled by an energetic budget: motivational intensity theory as the review applies it says energy expenditure tracks task difficulty only up to the point where required effort surpasses perceived value, and sympathetic mobilization decreases past that point - so the body's energy economy, not the cue alone, licenses or withdraws the action.",
+     "quote": "The classical motivational intensity theory posits that an organism’s energy expenditure is proportional to the difficulty of obtaining a reward, up until the required effort surpasses the perceived value ( Richter and Gendolla, 2009 ; Richter et al., 2016 ).",
+     "quote_offset": 22014,
+     "quote_sha16": "5d6efcb17d7e1cb5"
+    },
+    {
+     "k": "K1",
+     "role": "auxiliary",
+     "d_axis": "D+",
+     "v_axis": "B+",
+     "claim": "Gut signals cross the threshold into action: ghrelin raises the perceived value of energy-rich foods and promotes effortful food-seeking - and the review treats anticipatory digestion as a 'metabolic bet' that spends energy before intake - while GLP-1 dampens motivation for palatable and even non-food rewards, so the same phase is entered or not depending on the hormonal state.",
+     "quote": "Ghrelin enhances the perceived value of energy-rich foods and promotes effortful food-seeking ( Perello et al., 2010 ), while GLP-1 dampens motivation for palatable ( Dickson et al., 2012 ) and non-food rewards ( Egecioglu et al., 2013a , 2013b ).",
+     "quote_offset": 22494,
+     "quote_sha16": "64dd9fb90c49fd5e"
+    },
+    {
+     "k": "K5",
+     "role": "auxiliary",
+     "d_axis": "D−",
+     "v_axis": "B-",
+     "claim": "The review imports the anchor's delay-binding result as its satiation/learning phase: amygdalar activity heightens when novel foods are paired with DELAYED gastrointestinal malaise and fades when no unexpected consequence follows, illustrating postingestive feedback in learned aversion - i.e. a signal that arrives long after the meal decides whether the cue is approached in the future.",
+     "quote": "amygdalar activity heightens when novel foods are paired with delayed gastrointestinal malaise, but fade in the absence of unexpected consequences, illustrating the role of postingestive feedback in learned aversions ( Zimmerman et al., 2025 ).",
+     "quote_offset": 15259,
+     "quote_sha16": "3ddbf0e631773754"
+    }
+   ],
+   "d_class": "mixed",
+   "agency_class": "MIXED",
+   "event_grammar": "[MOTION] internal state signal (ghrelin rise, cardiac deceleration) marks an energy need --> [GATE] bioenergetic budget: effort mobilized while value exceeds required effort, withdrawn when it does not; GLP-1/satiety closes the phase --> [ACTION/INACTION] food-seeking and consumption, or conserved energy and abandoned pursuit --> [OUTCOME] calories acquired or spared; reward learned or devalued at satiation --> [FEEDBACK] post-ingestive (delayed malaise / nutrient) feedback updates the value that the next budget computation will use",
+   "contradiction_ref": null,
+   "anchor_concordance": {
+    "anchor_primary_k": "K5",
+    "same_family": false,
+    "same_sign": true,
+    "reason": "The review's primary mechanism is an energetic-budget constraint (K11) rather than delay-binding; its single K5 sentence reports the anchor's own finding (delayed GI malaise pairing driving amygdalar aversion) with the same D- sign, but as a summary citation, not as its contribution."
+   },
+   "notes": "Review, no new experiments; it synthesizes human, rodent and other-species literature and explicitly borrows motivational intensity theory (Richter/Gendolla) and predictive-interoception coding (Asya Lokshina et al. and others) as frameworks, so the D+/D- split is condition-dependent by construction - hence d_class mixed with entry-level signs. The K5 sentence is a one-sentence restatement of anchor R13 (their ref Zimmerman et al., 2025) and must NOT be counted as independent corroboration; the review's own framing is reward-phase/bioenergetic, not credit-assignment. Cross-species and human/animal analogies are interleaved (cardiac phase locked to reward in pigs, dogs, humans), so any transfer to M2A's model side is analogy-level; nothing here was coded SUPPORTED_MECHANISM. Uncoded candidate families (3-entry cap): K6 (baroreflex/gut-brain loops at satiation), K12 (Tinbergen-level 'evolved to prioritize rewarding stimuli aligning with bodily needs' - far cause, must not be mixed with near-cause per 02 2.1-2)."
+  },
+  "R13-N2": {
+   "sid": "R13-N2",
+   "title": "Neural pathways of nausea and roles in energy balance",
+   "year": 2025,
+   "verification_level": "FULLTEXT_REVIEWED",
+   "identity_check": "File opens with 'Neural pathways of nausea and roles in energy balance', Zhang Chuchu (Dept. of Physiology, UCLA), DOI 10.1016/j.conb.2024.102963, Curr Opin Neurobiol 90:102963, issue date 2025 Feb -> matches the verified metadata (overlap 1.0, Crossref/OpenAlex).",
+   "evidence_type": "interpretive",
+   "provenance": "PAPER_CLAIM",
+   "term_type": "MIXED",
+   "mapping_note": "Paper's own words -> our K-family: 'sufficient and necessary for the avoidance responses' / 'suppresses food intake' -> K2 inhibition-gate (paper does say 'suppress'); 'reactivated and stabilized ... despite the delayed malaise responses' -> K5 delay/memory (paper term 'delayed'); 'all sensory pathways converge at the parabrachial nucleus and central amygdala' and 'activation of the area postrema sensory pathway may lead to aversion, visceral malaise, anorexia, and changes in metabolism' -> K8 cascade (the review never uses the word 'cascade'; mapping is ours, from 'converge/relay/project to').",
+   "description_scope": "Action judged under the description 'the animal eats or drinks the food available to it': anorexia and cue avoidance are both inaction under that description. Under the description 'emetic/withdrawal reflex' (gapes, chin rubs, vomiting) the same nausea pathway INCREASES motor output, so labelling nausea as 'suppression' is description-relative (02 2.1-1).",
+   "motion_source": "L1/L3 - humoral cues (GLP1R agonists, GDF15, IL-6, LiCl, LPS) detected by blood-brain-barrier-free area postrema neurons, relayed through PBN CGRP neurons to central amygdala and to sympathetic/parasympathetic premotor regions.",
+   "mechanism": [
+    {
+     "k": "K2",
+     "role": "primary",
+     "d_axis": "D−",
+     "v_axis": "B-",
+     "claim": "Feeding is stopped by cell-type-specific inhibitory gates in the brainstem: area-postrema GLP1R-defined excitatory populations are reported both sufficient and necessary for nausea-related avoidance, while a separate CALCR-marked population suppresses food intake WITHOUT aversion - so 'not eating' decomposes into at least two distinct gates rather than one appetite signal.",
+     "quote": "In the area postrema, targeted genetic deletion and rescue of the receptor are sufficient and necessary for the avoidance responses induced by GLP1R agonists, suggesting that GLP1R in the area postrema mediates nausea [ 10 , 18 ].",
+     "quote_offset": 17438,
+     "quote_sha16": "9ca2b31b0734435a"
+    },
+    {
+     "k": "K5",
+     "role": "auxiliary",
+     "d_axis": "D−",
+     "v_axis": "B-",
+     "claim": "The review adopts the delay-binding account for aversive learning: novel flavors are reactivated and stabilized by malaise inputs through PBN CGRP neurons, which 'enables learned avoidance of the novel flavors despite the delayed malaise responses' - the delay is what has to be overcome for the gate to be learned at all.",
+     "quote": "Novel flavors activate these amygdala regions and are specifically reactivated and stabilized by malaise signals through the PBN CGRP + neuronal inputs, which enables learned avoidance of the novel flavors despite the delayed malaise responses [ 29 ].",
+     "quote_offset": 11124,
+     "quote_sha16": "f45550520762a371"
+    },
+    {
+     "k": "K8",
+     "role": "auxiliary",
+     "d_axis": "D−",
+     "v_axis": "neutral",
+     "claim": "One convergent brainstem cascade broadcasts beyond the mouth: sensory pathways converge on PBN/CeA for aversive learning while the same area-postrema activation cascades into visceral malaise, anorexia and peripheral metabolic change (catabolism, ketogenesis, hypothermia) - suppression of the action and mobilization of reserves are outputs of the same relay.",
+     "quote": "Together, activation of the area postrema sensory pathway may lead to aversion, visceral malaise, anorexia, and changes in metabolism.",
+     "quote_offset": 21140,
+     "quote_sha16": "1aea594849c4b521"
+    }
+   ],
+   "d_class": "D−",
+   "agency_class": "RESPONSIVE",
+   "event_grammar": "[MOTION] humoral/vagal nausea cue reaches barrier-free area postrema --> [GATE] segregated AP cell types (GLP1R+/GFRAL+ aversive vs CALCR+ non-aversive) gate PBN CGRP output --> [INACTION] meal termination and refusal of the paired flavor --> [OUTCOME] reduced intake, weight loss, catabolic metabolism (cachexia; GLP1R-agonist weight loss) --> [FEEDBACK] cue-triggered avoidance on re-encounter, and drug-induced nausea feeding back onto adherence",
+   "contradiction_ref": null,
+   "anchor_concordance": {
+    "anchor_primary_k": "K5",
+    "same_family": false,
+    "same_sign": true,
+    "reason": "The review's own primary mechanism is a cell-type-specific suppression gate (K2), not delay-binding; its single K5 passage (learned avoidance despite delayed malaise, its ref 29 = the anchor) does carry the anchor's D- sign."
+   },
+   "notes": "Review (Curr Opin Neurobiol): the paper reports no new experiments, every causal claim is a summary of cited studies, so provenance is PAPER_CLAIM at synthesis level and evidence_type interpretive. The K5 passage is a restatement of anchor R13 (its ref 29), NOT independent corroboration - it must not be counted as second-channel support. The most M2A-relevant content is the double dissociation (aversive vs non-aversive feeding suppression; nausea not necessary for GLP1R-agonist weight loss), which the review itself flags as unresolved: it is unclear whether these neurons sense endogenous GLP-1, and whether nausea mechanisms differ by cause (poisoning, pregnancy, chemotherapy, allergy)."
+  },
+  "R13-N3": {
+   "sid": "R13-N3",
+   "title": "An interoceptive model of energy allostasis linking metabolic and mental health",
+   "year": 2025,
+   "verification_level": "FULLTEXT_REVIEWED",
+   "identity_check": "File opens with 'An interoceptive model of energy allostasis linking metabolic and mental health', Mehrhof S. Z., Fleming H., Nord C. L. (Review, Sci Adv), DOI 10.1126/sciadv.ady4356 -> matches verified two-channel metadata (overlap 1.0, year 2025).",
+   "evidence_type": "interpretive",
+   "provenance": "PAPER_CLAIM",
+   "term_type": "MIXED",
+   "mapping_note": "Paper's own words -> our K-family: 'predicts future needs and prepares to satisfy them before they arise ... allostasis: anticipatory regulation' -> K5 delay/memory (the paper's temporal vocabulary is 'timescales'/'anticipation', not 'delay'); 'prediction errors underpin learning ... the internal model is recalibrated' and 'feeding back into the cycle' -> K6 feedback; 'learning from prediction errors is metabolically costly ... must estimate their precision to determine whether they are worth integrating' -> K11 resource constraint (paper says 'cost'/'energy cost', never 'resource constraint'); 'the model may become \"stuck\" in a state that was adaptive in a previous context but maladaptive in the present' -> K7 hysteresis (candidate, not coded for the 3-entry cap).",
+   "description_scope": "Action judged under the descriptions 'eat / seek a food reward' and 'expend effort (physical activity)': the paper's claim is that interoceptive prediction sets BOTH, in opposite directions depending on the predicted energy state, so the record-level direction is only meaningful relative to one of these descriptions (02 2.1-1). Value/valuation language alone ('energy scarcity', 'reward sensitivity') is not treated as the claim; the claim is about which behavior is initiated or withdrawn.",
+   "motion_source": "L3/L4 - humoral and vagal metabolic signals (ghrelin, insulin, leptin, immune signals) integrated into a predictive internal model in NTS/hippocampus/hypothalamus/insula/BLA, which then drives top-down regulation and effort-based decisions.",
+   "mechanism": [
+    {
+     "k": "K5",
+     "role": "primary",
+     "d_axis": "D+",
+     "v_axis": "neutral",
+     "claim": "Allostasis moves control of action ahead of the bodily signal: rather than waiting for an imbalance, the brain predicts future needs and initiates regulatory action before they arise - so what brings the organism to act is a remembered/predicted state, not the present one (direction of the action depends on the predicted content).",
+     "quote": "Hence, rather than waiting for an imbalance to occur, the brain predicts future needs and prepares to satisfy them before they arise ( 19 , 22 , 181 – 184 ). This predictive regulation of future physiological needs is termed allostasis: anticipatory regulation of bodily state.",
+     "quote_offset": 45284,
+     "quote_sha16": "4ceb53687aaf8e91"
+    },
+    {
+     "k": "K6",
+     "role": "auxiliary",
+     "d_axis": "neutral",
+     "v_axis": "neutral",
+     "claim": "The model is kept in sync by a closed comparison loop: top-down predictions are compared with bottom-up signals, the discrepancy (prediction error) recalibrates the model, and the loop is explicitly described as a self-maintaining cycle between cognition, behavior and metabolism; the loop itself is polarity-free - it stabilizes whatever set-point it has been trained on.",
+     "quote": "These top-down predictions are compared to the bottom-up signals; a discrepancy between the two leads to a prediction error. Prediction errors underpin learning: To minimize the error signals, the internal model is recalibrated, allowing more accurate future predictions.",
+     "quote_offset": 51734,
+     "quote_sha16": "60f232f50a152ab8"
+    },
+    {
+     "k": "K11",
+     "role": "auxiliary",
+     "d_axis": "D−",
+     "v_axis": "B-",
+     "claim": "Updating is energetically expensive, so the brain must estimate the precision of a prediction error to decide whether it is worth integrating; low-precision errors are discounted or ignored, producing failure to learn, a model increasingly out of sync with reality, and the amotivational/inattentive behavior the paper links to depression (no new engagement means no errors at all, which entrenches the model).",
+     "quote": "However, learning from prediction errors is metabolically costly; it necessitates the encoding and consolidation of information, brain computations associated with an energy cost ( 22 , 208 , 209 ). Because of this, the brain must estimate their precision to determine whether they are worth integrating.",
+     "quote_offset": 63706,
+     "quote_sha16": "5d928477c4e32f7b"
+    }
+   ],
+   "d_class": "mixed",
+   "agency_class": "AGENTIC",
+   "event_grammar": "[MOTION] bottom-up metabolic signals (gut hormones, vagal stretch, immune) enter the internal model --> [GATE] precision-weighted prediction error decides whether anything is learned, under an energy-cost constraint --> [ACTION/INACTION] prospective regulation: eating/foraging initiated before need, or effort and activity withdrawn when predicted scarcity raises effort costs --> [OUTCOME] energy allostasis maintained, or metabolic plus psychiatric comorbidity --> [FEEDBACK] behavior changes metabolism, which changes the signals the model predicts from (vicious/virtuous closed loop)",
+   "contradiction_ref": null,
+   "anchor_concordance": {
+    "anchor_primary_k": "K5",
+    "same_family": true,
+    "same_sign": false,
+    "reason": "Both records make K5 primary, but the anchor's delayed-feedback mechanism binds an outcome to produce REFUSAL of the paired food (D-), whereas this paper's allostasis uses prediction to INITIATE regulation ahead of the signal (coded D+ for its primary entry); the paper's own D- branch (effort withdrawal, apathy) sits in the K11/prediction-failure sections."
+   },
+   "notes": "Science Advances conceptual review: no new data; the authors mark their own claims as proposals ('we propose', 'which we hypothesize'), so the record is PAPER_CLAIM at theoretical level and must not be escalated to SUPPORTED_MECHANISM. Its postoral-reinforcement passage restates the anchor's amygdalar reactivation account (their ref 200) and is therefore not independent evidence. Two strong candidates were dropped under the 3-entry cap: K2 (the brain 'inhibiting the activity of hunger neurons in response to food-predicting cues, before actual consumption') and K7 (the model 'stuck' in a previously adaptive state - hysteresis). Formal/quantitative claims are absent: precision-weighting is stated as a mathematical intuition (Fig. 3), so no L0 quantitative coding was made. Per 07-registry C-03, K5 and K6 are hung separately."
+  },
+  "R13-N8": {
+   "sid": "R13-N8",
+   "title": "From Food Fears to Food Freedom: How Do We Best Manage Restrictive Eating in Inflammatory Bowel Disease?",
+   "year": 2025,
+   "verification_level": "FULLTEXT_REVIEWED",
+   "identity_check": "File opens with 'From Food Fears to Food Freedom: How Do We Best Manage Restrictive Eating in Inflammatory Bowel Disease?', Simons Madison PsyD and Issokson Kelly MS RD (Cleveland Clinic / Cedars-Sinai), Crohns Colitis 360, DOI 10.1093/crocol/otaf019 -> matches verified metadata (overlap 1.0, year 2025).",
+   "evidence_type": "interpretive",
+   "provenance": "PAPER_CLAIM",
+   "term_type": "MIXED",
+   "mapping_note": "Paper's own words -> our K-family: 'delayed gastric distress ... associated with the tendency to avoid or approach that food in the future' -> K5 delay/memory (paper term 'delayed', 'post-ingestive learning'); 'not highly responsive to rational, logical thought processes' / 'the amygdala ... entirely driven by experience' -> K2 gate (the top-down reasoning channel is gated out; the paper does not use the word 'gate'); 'This cycle serves to confirm the patient's fear' -> K6 feedback (paper term 'cycle').",
+   "description_scope": "Action judged under the description 'the patient eats the food they are offered / re-introduces a restricted food'. Under the description 'manage symptoms' the same behavior (restriction) is the action the patient is deliberately performing, and under 'avoid a feared postprandial event' it is a refusal - the record codes restriction as INACTION toward eating, which is a description choice, not a fact about the patient (02 2.1-1; cf. 07-registry C-05).",
+   "motion_source": "L3/L4/L5 - amygdalar threat detection driven by accumulated post-ingestive experience in IBD patients, expressed as meal-plan avoidance and treated through a narratively structured exposure hierarchy (L5) inside a clinical service (L6).",
+   "mechanism": [
+    {
+     "k": "K5",
+     "role": "primary",
+     "d_axis": "D−",
+     "v_axis": "B-",
+     "claim": "Restrictive eating is explained as ordinary one-trial post-ingestive learning across a delay: distress that arrives after the meal gets credited to the food eaten, and the magnitude of that delayed distress sets how strongly the food is avoided later - so the inaction (not eating) is bound to a cue minutes-to-hours after the cause.",
+     "quote": "A recent study in mice showed that mice tend to associate novel, but not familiar, flavors with delayed gastric distress and the level of distress is associated with the tendency to avoid or approach that food in the future.",
+     "quote_offset": 7957,
+     "quote_sha16": "24a4bead3123b8ec"
+    },
+    {
+     "k": "K2",
+     "role": "auxiliary",
+     "d_axis": "D−",
+     "v_axis": "neutral",
+     "claim": "The accumulated-experience threat system is not overridable by instruction: the amygdala is described as entirely experience-driven and poorly responsive to rational, logical thought once the environment is deemed threatening, which gates out the 'explain the patient out of the restriction' route and licenses the clinicians' rule that liberalization must not precede established safety.",
+     "quote": "It is important to understand the amygdala to be entirely driven by experience and, therefore, not highly responsive to rational, logical thought processes when working in an environment it has deemed to be threatening.",
+     "quote_offset": 7171,
+     "quote_sha16": "89b7e6bf3065af8b"
+    },
+    {
+     "k": "K6",
+     "role": "auxiliary",
+     "d_axis": "D−",
+     "v_axis": "B-",
+     "claim": "Abstention is self-reinforcing through a closed loop: fear of a food triggers a hypervigilant autonomic response that produces symptoms mimicking allergy or sensitivity (hives, tachycardia, dyspnea, GI distress) at the next exposure, and 'this cycle serves to confirm the patient's fear', deepening avoidance without any new visceral cause.",
+     "quote": "Future food exposures activate a hypervigilant nervous system, which can drive physiologic responses to food that mimic food allergy or food sensitivity, including hives, tachycardia, shortness of breath, and gastrointestinal distress. This cycle serves to confirm the patient’s fear of food/eating.",
+     "quote_offset": 10331,
+     "quote_sha16": "5439033a91b8dfa4"
+    }
+   ],
+   "d_class": "D−",
+   "agency_class": "MIXED",
+   "event_grammar": "[MOTION] postprandial symptom (pain, obstruction, flare) follows a meal after a delay --> [GATE] amygdalar threat learning credits the cue; prefrontal reassurance is gated out --> [INACTION] food refusal / narrowed diet (ARFID-like restriction) --> [OUTCOME] short-term symptom safety but malnutrition, weight loss, worse food-related quality of life --> [FEEDBACK] hypervigilant autonomic response mimics allergy and confirms the fear; reversal requires graded exposure hierarchies with accumulated successes",
+   "contradiction_ref": "C-06",
+   "anchor_concordance": {
+    "anchor_primary_k": "K5",
+    "same_family": true,
+    "same_sign": true,
+    "reason": "The clinical piece takes the anchor's own finding (its ref 14 = Zimmerman 2025) as the mechanism of food fear and reads it in the same direction: delayed post-ingestive distress binds to the food cue and suppresses eating."
+   },
+   "notes": "Clinical viewpoint/review, not an empirical study: the mechanism evidence it leans on is mouse (its ref 14 = anchor R13) and the translational step to IBD patients is the authors' own inference from 'clinical experience'; treatment recommendations (exposure hierarchy, one risk factor at a time, stabilize symptoms first) are expert opinion with no controlled comparison, so nothing here may be coded beyond PAPER_CLAIM. contradiction_ref C-06: the paper's claim that an experience-driven amygdalar threat response is 'not highly responsive to rational, logical thought processes' is counter-evidence to the registered R16 side of C-06 (that perceived behavioral control / education can close the intention-behavior gap); it sides with G4-06. The K5 passage is a citation of the anchor, so it cannot be counted as independent support of R13. Also uncoded for the 3-entry cap: K7 hysteresis ('the brain must repeatedly be encouraged to be uncomfortable AND it requires an accumulation of successes'), and the paper's own acknowledgement that the same learning channel can drive APPROACH ('appetitive versus aversive behaviors'), which is why the record-level D- refers only to the coded fear/restriction branch."
+  },
+  "R13": {
+   "sid": "R13",
+   "title": "A neural mechanism for learning from delayed postingestive feedback",
+   "year": 2025,
+   "verification_level": "QUALIFIED",
+   "identity_check": "File opens with the PMC/bioRxiv record of 'A neural mechanism for learning from delayed postingestive feedback', authors Zimmerman C. A., Bolkan S. S., Pan-Vazquez A. ... Wang S. S.-H., Witten I. B. (Princeton Neuroscience Institute), and carries Nature 642:700-709 with DOI 10.1038/s41586-025-08828-z -> same paper as registry id R13.",
+   "evidence_type": "causal_intervention",
+   "provenance": "PAPER_CLAIM",
+   "term_type": "PAPER_TERM",
+   "mapping_note": "term_type PAPER_TERM, so no mapping step is owed: the paper's own mechanism words ('delayed postingestive feedback', 'temporal credit assignment', 'reactivation', 'stabilize', 'novelty-dependent gating', 'eligibility trace') are what K5/K6/K2 name.",
+   "description_scope": "Action judged under the description 'the mouse drinks from the bottle of the flavor it consumed at the conditioning meal' (two-bottle memory-retrieval test, and lick/bout consumption during the meal). Under the alternative description 'encode/update a flavor memory' the same mechanism is facilitatory, so the D-axis sign is description-relative (02 2.1-1).",
+   "motion_source": "L3 - visceral malaise signal carried by Calca/CGRP-positive parabrachial neurons and their axon terminals in central amygdala, reactivating recent amygdalar flavor ensembles (L1 for the PKA/CREB step, L4 for the drink/not-drink choice).",
+   "mechanism": [
+    {
+     "k": "K5",
+     "role": "primary",
+     "d_axis": "D−",
+     "v_axis": "B-",
+     "claim": "A malaise signal arriving minutes-to-hours after the meal reactivates the amygdalar representation of the flavor just eaten, and the degree of that delayed reactivation predicts stabilization of the flavor representation at retrieval - i.e. the delay is bridged by post-hoc reactivation, not by contiguity.",
+     "quote": "postingestive malaise signals specifically reactivate the neural representations of novel flavors experienced during a recent meal, and this reactivation serves to stabilize the flavor representation upon memory retrieval.",
+     "quote_offset": 31591,
+     "quote_sha16": "c5ace27b217c8553"
+    },
+    {
+     "k": "K6",
+     "role": "auxiliary",
+     "d_axis": "D−",
+     "v_axis": "B-",
+     "claim": "The gut-brain CGRP feedback limb is itself the teaching signal: postingestive CGRP neuron activity is reported necessary and sufficient to mediate delayed CTA, so the loop that feeds the outcome back onto the flavor representation is what gates whether the animal later refuses the food.",
+     "quote": "Taken together, these experiments show that postingestive CGRP neuron activity is necessary and sufficient to mediate delayed CTA, as well as the effects of malaise on novel flavor-dependent, amygdala-specific neural activation.",
+     "quote_offset": 15930,
+     "quote_sha16": "d45092eee50acdf8"
+    },
+    {
+     "k": "K2",
+     "role": "auxiliary",
+     "d_axis": "neutral",
+     "v_axis": "neutral",
+     "claim": "Novelty acts as a selectivity gate on the delayed signal: only recent NOVEL flavor representations are reactivated and stabilized, familiar ones are excluded and instead degrade as the flavor becomes 'safe'; the paper proposes (hedged: 'could serve as') novelty-dependent gating of amygdalar PKA as the biochemical eligibility trace implementing this gate.",
+     "quote": "Thus, novelty-dependent gating of PKA could serve as a biochemical eligibility trace that increases the responsiveness of novel flavor-coding neurons to delayed malaise signals, thereby permitting the selective reactivation and stabilization of amygdala novel flavor representations ( Fig. 6h ).",
+     "quote_offset": 30709,
+     "quote_sha16": "fc8a84dfbafc3fb4"
+    }
+   ],
+   "d_class": "D−",
+   "agency_class": "MIXED",
+   "event_grammar": "[MOTION] novel-flavor intake bout encoded in amygdala --> [GATE] novelty-dependent PKA eligibility trace admits only recent novel representations --> [INACTION] later refusal of that flavor in the two-bottle test --> [OUTCOME] poisoning avoided, representation stabilized at retrieval --> [FEEDBACK] delayed CGRP malaise reactivation re-enters the same ensemble on the next encounter",
+   "contradiction_ref": null,
+   "anchor_concordance": null,
+   "notes": "QUALIFIED for two documented conflicts with the Phase I registry row for R13, which was capped at ABSTRACT_VERIFIED: (1) registry d_class 'value-only' - the fulltext does make an action-direction claim (learned refusal of the paired flavor, one-trial, across several-hour delays), so D- is coded; (2) registry v_axis 'B+' glossed 'value learning' - under the 01_COMMON_DEFINITIONS 1.4 definition B+ means the condition RAISES the value of the action for the actor, whereas the malaise-driven mechanism LOWERS the paired flavor's value (B-); 'better learning' is an efficacy claim, not a B+ claim. Also: (3) file is the PMC/bioRxiv author-manuscript version of the Nature paper, so quote offsets and figure numbering refer to that manuscript; (4) the K2/PKA entry is the paper's own untested biochemical hypothesis, and the generalization to postingestive NUTRIENT (appetitive, D+) learning is stated by the authors as speculation, which is why d_class is not coded 'mixed'; (5) per 07-registry C-03 the delay parameter is not reducible to a feedback/value-size parameter, hence K5 and K6 are hung separately here rather than merged. No published rebuttal of the anchor mechanism was found in the cluster, so contradiction_ref stays null."
+  },
+  "R14-N1": {
+   "sid": "R14-N1",
+   "title": "Mesostriatal dopamine is sensitive to changes in specific cue-reward contingencies",
+   "year": 2024,
+   "verification_level": "FULLTEXT_REVIEWED",
+   "identity_check": "Opens as Science Advances PMC11135394 (10.1126/sciadv.adn4203) 'Mesostriatal dopamine is sensitive to changes in specific cue-reward contingencies', Garr/Cheng/Jeong/Brooke/Castell/Bal/Magnard/Namboodiri/Janak - matches literature/L01_fulltexts.json and L01_verification.json (overlap 1.0), but NOT the title given in the coding assignment. | L01-D2 correction: the QUALIFIED label was raised against a title quoted in the coding tasking note, not against the registered artifacts. Identity re-checked against L01_fulltexts.json + L01_verification.json (both channels agree, title overlap 1.0), so the ANNOTATION_ADDENDUM 增补 2 requirement is met and the level returns to FULLTEXT_REVIEWED. The tasking-note title error is a pipeline defect (X-64), not a property of the paper.",
+   "evidence_type": "causal_intervention",
+   "provenance": "PAPER_CLAIM",
+   "term_type": "MIXED",
+   "mapping_note": "paper wording 'conditioned responding was attenuated ... as was dopamine neuron activity and dopamine release' -> our K2 inhibition/gate; 'event i is kept in memory ... according to an eligibility trace ... T ... a fraction of the mean inter-reward interval' -> our K5 delay/memory (the reward interval parameterises the memory timescale). The paper never uses 'gate' or 'memory timescale' as family labels.",
+   "description_scope": "Judged under the description 'a rat's anticipatory head-port entry during the 20-s cue, measured while the cue-reward interval and the average reward rate are held constant and only the outcome-specific contingency is degraded'; the action judgement is made on the contingency description, not on any interval description.",
+   "motion_source": "L3 physiological carrier: VTA dopamine cell activity (GCaMP6f) and nucleus accumbens dopamine release (dLight1.1) during outcome-selective Pavlovian contingency degradation in rats, plus optogenetic dopamine stimulation/inhibition.",
+   "mechanism": [
+    {
+     "k": "K2",
+     "role": "primary",
+     "d_axis": "D−",
+     "v_axis": "B-",
+     "claim": "Adding noncontingent rewards in the intertrial interval attenuates the conditioned response and the cue- and reward-evoked dopamine signals for that specific contingency only, i.e. the gate on responding closes even though the cue-reward interval is unchanged.",
+     "quote": "Conditioned responding was attenuated for the cue-reward contingency that was degraded, as was dopamine neuron activity in the midbrain and dopamine release in the ventral striatum in response to the cue and subsequent reward.",
+     "quote_offset": 3308,
+     "quote_sha16": "e2fe967fc3d547d3"
+    },
+    {
+     "k": "K5",
+     "role": "auxiliary",
+     "d_axis": "neutral",
+     "v_axis": "neutral",
+     "claim": "In the ANCCR simulations that best explained the data, the decay time constant of the cue memory trace is parameterised as a free fraction of the mean inter-reward interval, i.e. the reward interval sets the timescale over which the association is held.",
+     "quote": "Event i is kept in memory across time steps according to an eligibility trace E ← i = ∑ t i ≤ t e − ( t − t i T ) (7) where T is the temporal decay parameter. T was always considered a fraction of the mean inter-reward interval during acquisition, and this fraction ( T ratio) was a free parameter used to fit the model.",
+     "quote_offset": 70588,
+     "quote_sha16": "a642745a5b6fb07c"
+    }
+   ],
+   "d_class": "D−",
+   "agency_class": "RESPONSIVE",
+   "event_grammar": "[MOTION] a noncontingent reward is delivered during the ITI at the same average rate as cued rewards (L3/L0) --> [GATE] the retrospective cue-reward contingency, not the cue-reward interval, falls, so the cue stops signalling a rate change (C/T) (L0) --> [INACTION] anticipatory head entries to the degraded cue are attenuated while responding to the nondegraded cue persists / [ACTION] retained for the intact contingency (L4) --> [OUTCOME] cue- and reward-evoked dopamine lose their phasic control and their trial-by-trial history dependence (L3) --> [FEEDBACK] retrospective (ANCCR) update of the predecessor association with a trace constant tied to the mean inter-reward interval (L0/L3)",
+   "contradiction_ref": null,
+   "anchor_concordance": {
+    "anchor_primary_k": "K5",
+    "same_family": false,
+    "same_sign": false,
+    "reason": "Neither: it holds the cue-reward interval constant and degrades contingency, so it does not test that the interval sets the learning rate; it extends only the weaker cluster premise that dopamine tracks temporal contingency/reward-rate structure rather than the number of pairings, and it parameterises its trace with the mean inter-reward interval."
+   },
+   "notes": "Expected-title conflict: the assignment named R14-N1 as 'Mesostriatal dopamine is sensitive to changes in the environmental cost of effort'; the cached file, literature/L01_fulltexts.json and literature/L01_verification.json all give '...specific cue-reward contingencies', and 'effort'/'cost' occur 0 times in the file - so the assignment title is wrong for this sid (recorded here, coded against the actual text). Not an independent test of the anchor claim: C/T ratios and reward rate were deliberately kept nearly unchanged during degradation, and the reported learning-rate sensitivity is only to local reward history. Authors state the TDRL account 'failed to show the sensitivity' and that ANCCR agreement is 'highly parameter-dependent'. Namboodiri is a co-author (shared lab with the anchor), so corroboration is not independent. | L01-D2 correction: the QUALIFIED label was raised against a title quoted in the coding tasking note, not against the registered artifacts. Identity re-checked against L01_fulltexts.json + L01_verification.json (both channels agree, title overlap 1.0), so the ANNOTATION_ADDENDUM 增补 2 requirement is met and the level returns to FULLTEXT_REVIEWED. The tasking-note title error is a pipeline defect (X-64), not a property of the paper."
+  },
+  "R14-N4": {
+   "sid": "R14-N4",
+   "title": "A statistical framework for analysis of trial-level temporal dynamics in fiber photometry experiments",
+   "year": 2024,
+   "verification_level": "FULLTEXT_REVIEWED",
+   "identity_check": "Opens as eLife 10.7554/eLife.95802 (PMC11903033) 'A statistical framework for analysis of trial-level temporal dynamics in fiber photometry experiments', Loewinger/Cui/Lovinger/Pereira - matches the registered R14-N4 title and authors.",
+   "evidence_type": "simulation",
+   "provenance": "M2A_HYPOTHESIS",
+   "term_type": "MAPPING",
+   "mapping_note": "paper wording 'trial-level temporal dynamics' / 'identifies two dopamine components with distinct temporal dynamics in response to reward delivery' -> our K5 delay/memory: the record is coded as an instrument that can resolve time-resolved dopaminergic signals, not as a mechanism the authors claim. The paper proposes no behavioural or neural mechanism, so the K label is entirely ours.",
+   "description_scope": "Judged under the description 'detection of covariate effects at every time-point of a trial in reanalysed published photometry datasets'; no animal action or inaction is attributed anywhere in the paper, so the action judgement is vacuous (value-only).",
+   "motion_source": "L2 structural carrier: the estimated coefficient function of a functional linear mixed model over the trial time-window (with joint 95% CIs), fitted to L3 dopamine photometry signals from reanalysed experiments.",
+   "mechanism": [
+    {
+     "k": "K5",
+     "role": "primary",
+     "d_axis": "neutral",
+     "v_axis": "neutral",
+     "claim": "Modelling the entire within-trial signal instead of summary measures preserves trial-level temporal information and reveals dopamine components with distinct temporal dynamics that standard analyses obscure - an instrument for timescale effects rather than a mechanism claim.",
+     "quote": "common analysis strategies can reduce the detection of effects because they condense within-trial signals into summary measures, and discard trial-level information by averaging across-trials",
+     "quote_offset": 1591,
+     "quote_sha16": "f297112e2a6e612c"
+    }
+   ],
+   "d_class": "value-only",
+   "agency_class": "RESPONSIVE",
+   "event_grammar": "[MOTION] a photometry signal evolves continuously across each trial and across sessions (L3) --> [GATE] point-by-point inference with joint confidence bands decides which time-locked covariate effects survive instead of being averaged away (L2/L0) --> [INACTION] no action is claimed or ascribed; the object is the detectability of effects (L2) --> [OUTCOME] trial-level temporal structure of the dopamine response becomes resolvable, with improved power in simulations (L2) --> [FEEDBACK] coverage/power diagnostics and model-misspecification plots feed back into the choice of analysis window and random-effects structure (L0)",
+   "contradiction_ref": null,
+   "anchor_concordance": {
+    "anchor_primary_k": "K5",
+    "same_family": true,
+    "same_sign": true,
+    "reason": "Neither supports nor contradicts: it is a methods-only contribution (an analysis instrument for trial-level temporal dynamics, validated by simulation and by reanalysing ANCCR-era data incl. a random inter-reward-interval reward experiment), so it bears on whether interval effects can be measured, not on whether the interval sets the learning rate."
+   },
+   "notes": "Methods paper: contribution is statistical (functional linear mixed models, joint CIs, open-source package), and its own claims are about power, coverage and bias, not about mechanisms. Its reanalysis is data from other labs (Jeong et al. 2022; Coddington et al. 2023), and it explicitly cautions that its back-propagation reanalysis 'likely cannot be used to definitively rule out' the TDRL phenomenon; it also shows summary-measure results are sensitive to the chosen time-window, which is a caution for reading ITI/IRI effects off averaged traces. Year registered 2024 from OpenAlex while Crossref gives 2025 - verdict stays SECOND_CHANNEL_MISMATCH per L01_CODING_PROTOCOL sec.4 (venue first-issue vs version-of-record date); the year is not a criterion in this round."
+  },
+  "R14-N7": {
+   "sid": "R14-N7",
+   "title": "Reconceptualized Associative Learning",
+   "year": 2025,
+   "verification_level": "FULLTEXT_REVIEWED",
+   "identity_check": "Opens as Perspectives on Behavior Science 10.1007/s40614-025-00442-8 (PMC12162447) 'Reconceptualized Associative Learning', C. R. Gallistel, Rutgers Center for Cognitive Science - matches the registered R14-N7 title and single authorship.",
+   "evidence_type": "interpretive",
+   "provenance": "PAPER_CLAIM",
+   "term_type": "MIXED",
+   "mapping_note": "paper wording 'learning rate ... scalar function of relative temporal separation, as measured by informativeness' -> our K5 delay/memory; 'shortening the ITI ... the number of reinforcements required will increase by more than a factor of 60' -> our K2 inhibition/gate; 'an association is a measurable fact about the distribution of events in time, not an altered activation-conducting connection' -> our K10 role reassignment. Gallistel uses none of the K-family words.",
+   "description_scope": "Judged under the description 'the number of reinforcements required before a conditioned response appears, as a function of the temporal separation of events'; the paper's own action term is 'deciding to act on' perceived temporal associations, but the D judgement here is about acquisition, not about which action the subject takes.",
+   "motion_source": "L0 formal carrier: rate-ratio (informativeness) algebra over counted events and measured durations, represented in L2 symbols in memory and read out at L4 as the decision to respond; no new physiological measurement.",
+   "mechanism": [
+    {
+     "k": "K5",
+     "role": "primary",
+     "d_axis": "D+",
+     "v_axis": "B+",
+     "claim": "Learning rate is an almost scalar function of the relative temporal separation of events (informativeness), so wider spacing - not more pairings - buys faster acquisition, and time-scale invariance makes the number of reinforcements the wrong currency.",
+     "quote": "The learning rate—operationally defined as the reciprocal of reinforcements prior to the appearance of a conditioned response—is an almost scalar function of relative temporal separation, as measured by informativeness.",
+     "quote_offset": 2363,
+     "quote_sha16": "6cc685044603badf"
+    },
+    {
+     "k": "K2",
+     "role": "auxiliary",
+     "d_axis": "D−",
+     "v_axis": "B-",
+     "claim": "Crowding trials collapses informativeness into the region where the learning rate goes to zero, so shortening the ITI raises the reinforcements required more than sixtyfold - a gate on acquisition set by temporal structure.",
+     "quote": "Shortening the intertrial interval to 5 s produces an informativeness of (5 + 5)/5 = 2, which moves the regression in Fig. 4 into the region where it curves upward toward infinity (0 learning rate). Therefore, the number of reinforcements required will increase by more than a factor of 60.",
+     "quote_offset": 65588,
+     "quote_sha16": "90dd30ccf9a49502"
+    },
+    {
+     "k": "K10",
+     "role": "auxiliary",
+     "d_axis": "neutral",
+     "v_axis": "B+",
+     "claim": "The paper reassigns what an association is - a measurable statistical fact about the distribution of events in time rather than a changed connection in a mind, brain or net - and correspondingly denies decaying eligibility traces as its mechanism.",
+     "quote": "Research on the role of time in associative learning has changed our understanding of what an association is. It is a measurable fact about the distribution of events in time, not an altered activation-conducting connection in a mind, brain or net.",
+     "quote_offset": 1503,
+     "quote_sha16": "f144e351780701b3"
+    }
+   ],
+   "d_class": "mixed",
+   "agency_class": "MIXED",
+   "event_grammar": "[MOTION] cues and reinforcements arrive at measurable conditional and unconditional rates in the environment (L0) --> [GATE] informativeness (cycle-to-trial rate ratio) must be high enough for the perceived temporal association to control behaviour (L0/L4) --> [ACTION] the conditioned response appears after few reinforcements when events are widely spaced / [INACTION] with crowded ITIs acquisition approaches zero however many pairings are given (L4) --> [OUTCOME] a time-scale-invariant symbol of the temporal association is laid down in memory (L2/L4) --> [FEEDBACK] prospective and retrospective rate estimates are continuously re-derived from counts and durations (L0)",
+   "contradiction_ref": "C-03",
+   "anchor_concordance": {
+    "anchor_primary_k": "K5",
+    "same_family": true,
+    "same_sign": false,
+    "reason": "Extends and partly contradicts: it endorses interval-over-pairings (and cites Burke et al. 2023, the anchor's own preprint, for the eight-fewer-trials/same-training-time isomorphism, so that support is second-hand), but makes the controlling variable the informativeness/C-T ratio rather than the inter-reward interval, and it explicitly denies the eligibility-trace/dopamine mechanization the anchor relies on."
+   },
+   "notes": "Theory/review article - no new experiments; its support for the cluster is conceptual plus a literature synthesis (Gibbon/Jenkins labs, Gottlieb, Balsam et al.). Two registered divergences from the anchor: (1) 'There are no windows of associability nor decaying eligibility traces' (offset 2192) contradicts the ANCCR trace mechanism the anchor's account requires; (2) it demands a trade-off test for any dopamine linkage hypothesis - 'One reinforcement with high informativeness must produce the same signal as several hundred with low informativeness' (offset ~127900) - and states that no proposed dopamine linkage hypothesis has been given such a test, which is a challenge to, not a confirmation of, the anchor's dopaminergic half. Bears on the K6 side of C-03. Its 'learning rate' is operationally the reciprocal of reinforcements to a conditioned response, which is not the same quantity as the anchor's per-experience acquisition slope."
+  },
+  "R14-N8": {
+   "sid": "R14-N8",
+   "title": "Mesolimbic dopamine ramps reflect environmental timescales",
+   "year": 2024,
+   "verification_level": "FULLTEXT_REVIEWED",
+   "identity_check": "Opens as eLife 10.7554/eLife.98666 (PMC12396814, VoR of bioRxiv 2024.03.27.587103) 'Mesolimbic dopamine ramps reflect environmental timescales', Floeder/Jeong/Mohebi/Namboodiri - matches the registered R14-N8 title and authors.",
+   "evidence_type": "causal_intervention",
+   "provenance": "PAPER_CLAIM",
+   "term_type": "MIXED",
+   "mapping_note": "paper wording 'dopamine ramps are only observed when the inter-trial interval is short relative to the trial period' -> our K5 delay/memory (signal timescale) plus our K2 inhibition/gate (condition for the ramp to appear); 'not strictly controlled by the ITI, but by the frequency of repeating events in the environment' -> our K10 role reassignment from elapsed duration to event rate. The paper does not use gate/role-reassignment vocabulary.",
+   "description_scope": "Judged under the description 'the slope of the cue-evoked dopamine signal within the cue-reward interval as a readout of the environmental event rate'; licking was similar across trial types and the ramp's function is left open, so no action-direction judgement is made (value-only).",
+   "motion_source": "L3 physiological carrier: nucleus accumbens core dopamine release (dLight1.1 fiber photometry) in head-fixed mice during Pavlovian trace conditioning and virtual-reality navigation, with the ITI/IRI assigned by the experimenter (L0).",
+   "mechanism": [
+    {
+     "k": "K5",
+     "role": "primary",
+     "d_axis": "neutral",
+     "v_axis": "neutral",
+     "claim": "The timescale of the mesolimbic dopamine signal - whether a within-trial ramp appears at all - is set by the interval between rewards relative to the trial period, i.e. the dopamine signal reads out the environmental timescale.",
+     "quote": "Here, we show that during Pavlovian and instrumental conditioning in mice, mesolimbic dopamine ramps are only observed when the inter-trial interval is short relative to the trial period.",
+     "quote_offset": 2426,
+     "quote_sha16": "31fddb021fa68bc0"
+    },
+    {
+     "k": "K2",
+     "role": "auxiliary",
+     "d_axis": "neutral",
+     "v_axis": "neutral",
+     "claim": "Ramp expression is gated by condition: ramps were seen only when the ITI was short and the cue was dynamic, while long-ITI trials showed a larger cue-onset response and no ramp.",
+     "quote": "Furthermore, dopamine ramps were observed only when the ITI was short and the tone was dynamic",
+     "quote_offset": 10171,
+     "quote_sha16": "d26ffea36623d2e5"
+    },
+    {
+     "k": "K10",
+     "role": "auxiliary",
+     "d_axis": "neutral",
+     "v_axis": "neutral",
+     "claim": "The determinant role is reassigned from the ITI as such to the frequency of repeating events: the eligibility trace time constant should track the inter-reward interval/environmental timescale, with the ITI only an experimental proxy.",
+     "quote": "Please do note, however, that the above relationship is not strictly controlled by the ITI, but by the frequency of repeating events in the environment (i.e., environmental timescale).",
+     "quote_offset": 76756,
+     "quote_sha16": "93f1be210e8994bb"
+    }
+   ],
+   "d_class": "value-only",
+   "agency_class": "RESPONSIVE",
+   "event_grammar": "[MOTION] rewards recur with a short inter-trial/inter-reward interval, raising the overall event rate of the environment (L0/L3) --> [GATE] the eligibility trace time constant adapts to that rate, so a ramp becomes visible only when the ITI is short relative to the trial period (L0) --> [INACTION] no ramp is expressed at long ITI even though the dynamic cue still specifies proximity to reward / [ACTION] licking to the cue develops comparably in both conditions (L3/L4) --> [OUTCOME] ramp slope becomes a readout of the environmental timescale rather than of a policy update (L3) --> [FEEDBACK] retrospective ANCCR updates of predecessor representations re-set the trace constant with event rate (L0/L3)",
+   "contradiction_ref": null,
+   "anchor_concordance": {
+    "anchor_primary_k": "K5",
+    "same_family": true,
+    "same_sign": true,
+    "reason": "Supports/extends the interval-controls-the-dopaminergic-timescale half of the claim (a different time-scale mechanism: ramp presence and slope as a readout of event rate), but never measures acquisition speed against the interval, so it does not independently test that the reward interval sets the behavioural learning rate."
+   },
+   "notes": "Same laboratory, same ANCCR framework and same authors overlapping with the anchor (Namboodiri; cites Burke et al. 2023), so corroboration is not independent. The authors' own qualifications: the relation is 'not strictly controlled by the ITI, but by the frequency of repeating events'; trial-by-trial ITI history explains only a small fraction of ramp-slope variance; correlations between ramp slope and behaviour were largely absent and licking was similar across trial types; the function of ramps is explicitly left open and ramps were never manipulated, so the causal claim is only over the assigned environmental variable. Year registered 2024 (OpenAlex) vs 2025 (Crossref version of record) - verdict stays SECOND_CHANNEL_MISMATCH per L01_CODING_PROTOCOL sec.4 and the year is not used as a criterion."
+  },
+  "R14": {
+   "sid": "R14",
+   "title": "Duration between rewards controls the rate of behavioral and dopaminergic learning",
+   "year": 2026,
+   "verification_level": "QUALIFIED",
+   "identity_check": "Cached file opens as bioRxiv/PMC10081323.2 (10.1101/2023.03.31.535173) 'Reward timescale controls the rate of behavioural and dopaminergic learning', Burke/Taylor/Jeong/Lee/Wu/Floeder/Namboodiri - same authors and study as the registered Nature Neuroscience title, but preprint wording of the title.",
+   "evidence_type": "causal_intervention",
+   "provenance": "PAPER_CLAIM",
+   "term_type": "PAPER_TERM",
+   "mapping_note": null,
+   "description_scope": "Judged under the description 'rate at which cue-evoked anticipatory licking and cue-evoked dopamine acquire their conditioned form in mice, as a function of the experimentally assigned reward-to-reward interval'; under the description 'number of cue-reward pairings' nothing changes, and the interval is a rate parameter, so no action-direction (D) judgement is made.",
+   "motion_source": "L3 physiological carrier: mesolimbic (NAc core) dopamine release tracked by fiber photometry in head-fixed mice, driven by the L0 formal interval/rate structure of the assigned reinforcement schedule.",
+   "mechanism": [
+    {
+     "k": "K5",
+     "role": "primary",
+     "d_axis": "neutral",
+     "v_axis": "B+",
+     "claim": "The duration between rewards, not the number of cue-reward pairings, sets the rate of both behavioral and dopaminergic learning: with total conditioning time held fixed, removing up to 19 of 20 pairings has zero impact.",
+     "quote": "As a consequence, we empirically demonstrate that 1) removal of up to 19 out of 20 cue-reward experiences has zero impact on overall behavioral and dopaminergic learning if total conditioning time is maintained (thereby implying that repetition over a fixed total time has no impact on learning)",
+     "quote_offset": 6309,
+     "quote_sha16": "304f2c5982c5ccfb"
+    },
+    {
+     "k": "K6",
+     "role": "auxiliary",
+     "d_axis": "neutral",
+     "v_axis": "B+",
+     "claim": "Among the simulated accounts (TDRL, SOP, ANCCR) only the retrospective dopaminergic update model reproduces the proportional scaling of learning rate with trial spacing together with the asymptotic cue-evoked dopamine responses.",
+     "quote": "Therefore, proportional scaling with trial spacing is categorically absent in SOP and common TDRL frameworks. In contrast to these models, ANCCR captured both the proportional scaling of learning rate and the asymptotic dopamine cue responses and requires constant task duration to learn with increasing trial spacing from 30 s to 600 s",
+     "quote_offset": 42999,
+     "quote_sha16": "f05104ca164a99c9"
+    }
+   ],
+   "d_class": "value-only",
+   "agency_class": "RESPONSIVE",
+   "event_grammar": "[MOTION] the environmental schedule delivers rewards separated by an assigned inter-reward interval (L0/L3) --> [GATE] the IRI-scaled retrospective dopaminergic update of the cue association until the behavioural threshold is crossed (L3/L0) --> [ACTION] cue-evoked anticipatory licking emerges after proportionally fewer experiences at long IRI / [INACTION] the up-to-19-of-20 removed pairings add nothing when total time is held constant (L4) --> [OUTCOME] cue-evoked licking and cue-evoked dopamine reach their asymptote after constant total conditioning time (L3/L4) --> [FEEDBACK] dopamine-mediated retrospective update of the cue-reward predecessor association (L3/L0)",
+   "contradiction_ref": "C-03",
+   "anchor_concordance": null,
+   "notes": "Quote byte-verification is against the cached bioRxiv/PMC preprint v2 (chars 136487 in literature/L01_fulltexts.json), not against the Nature Neuroscience version of record, and the preprint title differs from the registered published title - hence QUALIFIED, not FULLTEXT_REVIEWED, under addendum 2 requirement 1. Publisher Correction (DOI 10.1038/s41593-026-02425-7) touches only the alignment of Fig. 4b rasters and no quoted sentence (registered in source_verification_log.md sec.6 / v03_correction_check.json). Boundary condition stated by the authors: the proportional scaling 'breaks down at extreme IRIs' (3600 s ITI mice learned faster than 600 s but slower than predicted), so the claim holds over 30-600 s IRI, not as an unrestricted law. The paper also states its rule differs from the earlier ITI-to-cue-reward-interval ratio meta-analysis. Instrument note: quote_offset is the character index of a Python text-mode read (universal newlines), the convention that reproduces the chars=136487 figure in literature/L01_fulltexts.json; R14.txt carries 138 CRLF pairs, so a read with newline='' shifts the second offset from 42999 to 43005 (both quote strings contain no line break and are byte-identical under either read)."
+  }
+ },
+ "defects_registered": {
+  "L01-D1": "coding files used both 'D-' and 'D−' for the same enum value; unified to the protocol spelling (20 fields across 10 files), no reading changed",
+  "L01-D2": "R14-N1 and G5-03-N4 were labelled QUALIFIED against titles quoted in the coding tasking note rather than against the registered artifacts; identity re-checked (both channels agree, overlap 1.0) and level restored. Caused by the tasking note, not by the papers",
+  "L01-D3": "the §5 mechanical concordance (family + axis) cannot see a claim-level contradiction: G5-03-N6 argues refusal is NOT a single direction yet lists K2/D− as primary, so it is counted as concordant. Reported C=2 is therefore an upper bound for G5-03",
+  "L01-D4": "protocol §5 never defined how a 'neutral' anchor axis compares to a sign. Reading A (C_strict) treats neutral == neutral as agreement; reading B (C_signed) additionally refuses to count a same-family neighbour whose axis is neither equal nor opposite (the unclassifiable count). Both are computed for every anchor; the conservative label is taken per 02 §2.3. Numbers: R13 C_strict=2 C_signed=2 unclassifiable=0 labels INDETERMINATE/INDETERMINATE, G5-03 C_strict=2 C_signed=2 unclassifiable=0 labels INDETERMINATE/INDETERMINATE, R14 C_strict=2 C_signed=1 unclassifiable=1 labels INDETERMINATE/INDETERMINATE"
+ }
+}

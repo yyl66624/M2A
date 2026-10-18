@@ -1,0 +1,56 @@
+{
+ "sid": "R13-N16",
+ "title": "GIP receptor agonism suppresses inflammation-induced aversion and food intake via distinct circuits",
+ "year": 2026,
+ "verification_level": "FULLTEXT_REVIEWED",
+ "identity_check": "File opens with 'GIP receptor agonism suppresses inflammation-induced aversion and food intake via distinct circuits', Province H. S., Hayes N. W., Leong N. A. ... Beutler L. R. (Northwestern), Cell Reports DOI 10.1016/j.celrep.2026.117116, NIHMS2170764 -> title/authors match verified metadata (overlap 1.0; Crossref/OpenAlex year 2026).",
+ "evidence_type": "causal_intervention",
+ "provenance": "PAPER_CLAIM",
+ "term_type": "MIXED",
+ "mapping_note": "Paper's own words -> our K-family: 'blocks aversion and CGRP activation', 'attenuated IL-1beta-induced CGRP neuron activation' -> K2 inhibition/gate (paper says 'suppress/attenuate'); 'additive with ... ondansetron ... via distinct mechanisms', 'combined ... almost fully attenuated' -> K4 synergy/conjunction (paper says 'additive', not 'synergistic'); 'CTA ... can form with minute- to hour-long delays between the pairing of a novel flavor and sickness onset' -> K5 delay/memory (paper term 'delays'); 'DVC GIPR knockdown prevents anorexia but not anti-aversion' -> circuit split we read as two gates, mapping ours.",
+ "description_scope": "Action judged under the description 'the mouse consumes the flavor (chocolate/saccharin) that was paired with inflammation' in the preference test - the drug releases that action. Under a second description, 'the mouse eats standard chow in a re-feed test', the same agonism potentiates anorexia, i.e. suppresses eating: the two descriptions must not be merged (02 2.1-1), and the coded primary direction is the first one.",
+ "motion_source": "L1/L3 - GIPR-expressing inhibitory interneurons in the dorsal vagal complex (area postrema/NTS) modulating IL-1beta-driven activity of aversion-promoting parabrachial CGRP neurons; pharmacological D-Ala2-GIP plus inflammatory cytokine input.",
+ "mechanism": [
+  {
+   "k": "K2",
+   "role": "primary",
+   "d_axis": "D+",
+   "v_axis": "B+",
+   "claim": "An inflammation-derived aversion can be gated upstream: GIPR agonism with DA-GIP significantly attenuated IL-1beta-induced conditioned taste avoidance, and silencing (Tet Tox) or pharmacological blockade of the aversion pathway shows the same gate - so the animal keeps eating the cue because the aversive gate is never opened. The authors also note CGRP neurons are required for IL-1beta-induced CTA but NOT for its anorexia, i.e. two separate gates on 'eating'.",
+   "quote": "Co-administration of the GIPR agonist D-Ala 2 -GIP (DA-GIP) during conditioning significantly attenuated IL-1β-induced CTA ( Figure 2A ).",
+   "quote_offset": 10106,
+   "quote_sha16": "f45e21f876f82c23"
+  },
+  {
+   "k": "K4",
+   "role": "auxiliary",
+   "d_axis": "D+",
+   "v_axis": "neutral",
+   "claim": "Two mechanistically distinct anti-aversive channels sum: DA-GIP's suppression of CGRP neuron activity was additive with the 5-HT3 antagonist ondansetron, which alone did not attenuate CTA, and the combination almost fully attenuated both CGRP activation and avoidance - the conjunction, not either agent, removes the brake on approach.",
+   "quote": "The effect on CGRP neuron activity was additive with the clinically used anti-nausea agent ondansetron (OND), suggesting a distinct mechanism of action.",
+   "quote_offset": 6156,
+   "quote_sha16": "d8adc965c647f2ee"
+  },
+  {
+   "k": "K5",
+   "role": "auxiliary",
+   "d_axis": "D−",
+   "v_axis": "B-",
+   "claim": "The delay window constrains which interventions can work at all: ondansetron lowered IL-1beta-driven CGRP activity early but not by an hour after injection, and because CTA forms with minute- to hour-long delays between flavor and sickness onset, a signal that decays before the malaise arrives cannot prevent the learned avoidance - evidence that the binding process runs on the malaise side of the delay, not on the cue side.",
+   "quote": "our finding that OND does not decrease IL-1β-induced CGRP neuron activity an hour after administration may account for the inability of OND to attenuate CTA, which can form with minute- to hour-long delays between the pairing of a novel flavor and sickness onset.",
+   "quote_offset": 25446,
+   "quote_sha16": "410be34b6ed85910"
+  }
+ ],
+ "d_class": "D+",
+ "agency_class": "RESPONSIVE",
+ "event_grammar": "[MOTION] peripheral IL-1beta activates parabrachial CGRP neurons after a meal --> [GATE] GIPR agonism (and, additively, 5-HT3 blockade) suppresses CGRP activation, closing the aversion gate; a separate DVC-GIPR gate still suppresses intake --> [ACTION] the inflammation-paired flavor is still consumed (but total chow intake stays low) --> [OUTCOME] sickness behavior dissociated: aversion removed, anorexia preserved/potentiated --> [FEEDBACK] no avoidance memory is formed to that cue, so later encounters do not trigger refusal",
+ "contradiction_ref": null,
+ "anchor_concordance": {
+  "anchor_primary_k": "K5",
+  "same_family": false,
+  "same_sign": true,
+  "reason": "The paper's primary contribution is a gate on the aversion pathway (K2/K4), not the delay-binding mechanism; its K5 entry (minute-to-hour delay window for CTA, citing the anchor as ref 51) agrees with the anchor's sign that delayed malaise still binds to produce avoidance."
+ },
+ "notes": "d_class follows the PRIMARY mechanism only: the same GIPR agonism potentiates IL-1beta-induced anorexia via DVC GIPRs, so if 'act' were described as total food intake the record would code D-; the paper's headline is precisely that aversion and intake suppression are dissociable, and M2A must not read this paper as 'GIP restores eating' wholecloth. Fulltext is the NIHMS author manuscript (PMC13198203) of Cell Reports 45(4):117116, 2026 - quote offsets refer to that manuscript. Authors' own limits, recorded here: DVC Gipr knockdown was ~50% and virus spread to NTS, so they state it is 'impossible to determine for certain' that DVC GIPRs are dispensable for anti-aversion; they also argue the CTA assay itself has limited predictive validity for anti-aversive drugs, which weakens any CTA-based inference drawn from this cluster. Mechanistic pathway from GIPR+ inhibitory neurons to CGRP neurons is largely cited from refs 13/35/56, not established de novo here."
+}

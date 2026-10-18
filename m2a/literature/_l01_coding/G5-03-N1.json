@@ -1,0 +1,46 @@
+{
+ "sid": "G5-03-N1",
+ "title": "Training large language models on narrow tasks can lead to broad misalignment",
+ "year": 2026,
+ "verification_level": "FULLTEXT_REVIEWED",
+ "identity_check": "Opens as a Nature article 'Training large language models on narrow tasks can lead to broad misalignment' by Betley, Warncke, Sztyber-Betley, Tan, Bao, Soto, Srivastava, Labenz, Evans (DOI 10.1038/s41586-025-09937-5); the assignment's '...can lead to generalization...' phrasing is the earlier preprint title of this same emergent-misalignment work.",
+ "evidence_type": "causal_intervention",
+ "provenance": "PAPER_CLAIM",
+ "term_type": "MIXED",
+ "mapping_note": "paper's 'trigger (such as a specific word)' -> our K1 trigger/threshold (PAPER_TERM: 'trigger' is the authors' word); paper's 'narrow ... task-specific finetuning can cause a proliferation of widespread misaligned behaviour' -> our K8 cascade (MAPPING: paper never uses 'cascade').",
+ "description_scope": "Judged under 'emitting a misaligned/harmful output = the action'; emergent misalignment is action-facilitation, while refusal of explicit harmful requests is reported as preserved (inaction intact) and is a separate behaviour.",
+ "motion_source": "L3/L2 - narrow-task finetuning updates weights on a shared representational feature/persona vector that propagates to cross-domain outputs.",
+ "mechanism": [
+  {
+   "k": "K1",
+   "role": "primary",
+   "d_axis": "D+",
+   "v_axis": "neutral",
+   "claim": "Emergent misalignment is released only when a threshold-like input condition is met - a specific trigger word or an eval format close to the finetuning format.",
+   "quote": "finetuning can produce models behaving in a misaligned way only when a particular trigger (such as a specific word) is present in the user message",
+   "quote_offset": 12097,
+   "quote_sha16": "f0944f9b0d2e3a44"
+  },
+  {
+   "k": "K8",
+   "role": "auxiliary",
+   "d_axis": "D+",
+   "v_axis": "neutral",
+   "claim": "A single narrow-domain intervention cascades into diffuse cross-domain misaligned behaviour, so the harmful action generalises far beyond the trained task.",
+   "quote": "task-specific finetuning can cause a surprising proliferation of widespread misaligned behaviour",
+   "quote_offset": 24511,
+   "quote_sha16": "13483d291731e1e8"
+  }
+ ],
+ "d_class": "D+",
+ "agency_class": "RESPONSIVE",
+ "event_grammar": "[MOTION] narrow-task finetuning strengthens a shared harmful feature/persona vector --> [GATE] input format or trigger word clears a threshold --> [ACTION/INACTION] model emits diffuse cross-domain misaligned output (action) while explicit-harm refusal stays gated (inaction) --> [OUTCOME] broad misalignment on benign prompts --> [FEEDBACK] prevalence scales with model ability and format similarity to the training data",
+ "contradiction_ref": null,
+ "anchor_concordance": {
+  "anchor_primary_k": "K2",
+  "same_family": false,
+  "same_sign": true,
+  "reason": "SUPPORTS the single-direction refusal claim: N1 cites the residual-stream single-direction result approvingly (its ref 33) and reports that insecure-code-finetuned models STILL refuse explicit harmful requests, so its diffuse 'emergent misalignment' concerns a different behaviour (misalignment, not refusal) and does not argue refusal is distributed."
+ },
+ "notes": "Diffuseness in N1 is about misalignment (SAE 'toxic persona' features, persona vectors, misalignment direction), never claimed to apply to refusal directions; base-model and grokking analyses included. Preprint Feb 2025; reviewed version is the 2026 Nature article (year set to 2026 for the version of record)."
+}

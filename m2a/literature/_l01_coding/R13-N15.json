@@ -1,0 +1,56 @@
+{
+ "sid": "R13-N15",
+ "title": "Visceral signaling of post-ingestive malaise directs memory updating in Drosophila",
+ "year": 2025,
+ "verification_level": "ABSTRACT_VERIFIED",
+ "identity_check": "File is the bioRxiv landing-page preview of 'Visceral signaling of post-ingestive malaise directs memory updating in Drosophila', Senapati B., Treiber C. D., Waddell S. (Univ. of Oxford, CNCB), doi 10.1101/2025.10.21.683769, posted 2025-10-22 -> title/author/DOI match the verified metadata (overlap 1.0).",
+ "evidence_type": "causal_intervention",
+ "provenance": "PAPER_CLAIM",
+ "term_type": "PAPER_TERM",
+ "mapping_note": "term_type PAPER_TERM: the abstract itself uses the mechanism words we map - 'credit assignment problem of delayed post-ingestive reinforcement' (K5), 'initially express conditioned odor approach, that following consolidation switches to avoidance' (K7), 'invert reward memory plasticity into \"safety\" memory' (K10 role reassignment). Our contribution is only the family labels.",
+ "description_scope": "Action judged under the description 'the fly approaches or avoids the trained odor at test'. Because one training protocol produces approach to one odor and avoidance of the other, the D-axis can only be read per odor; the record-level class is therefore the condition-split (02 2.1-1).",
+ "motion_source": "L3/L1 - visceral (gut) malaise signal after toxin-tainted sugar, acting through fat-body releasing modSP and Turandot A onto autocrine Toll signalling in the same dopaminergic neurons that formed and consolidate the sugar memory.",
+ "mechanism": [
+  {
+   "k": "K5",
+   "role": "primary",
+   "d_axis": "D−",
+   "v_axis": "B-",
+   "claim": "Delayed post-ingestive reinforcement is credited back to earlier odor memories by updating them during the consolidation window - the abstract states this explicitly as solving the credit-assignment problem of a reinforcer that arrives after the meal, and for the toxin-paired odor the update turns approach into avoidance.",
+   "quote": "This neural mechanism overcomes the credit assignment problem of delayed post-ingestive reinforcement by updating earlier memories of the trained odors.",
+   "quote_offset": 2532,
+   "quote_sha16": "6e800f45deda5565"
+  },
+  {
+   "k": "K7",
+   "role": "auxiliary",
+   "d_axis": "D−",
+   "v_axis": "B-",
+   "claim": "The behavioral output is a discrete phase-reversed switch, not a gradual decline: flies first express conditioned odor approach and only after consolidation does the same training switch the response to avoidance - a bistable, time-gated reversal whose direction depends on passing the consolidation window.",
+   "quote": "Flies taught to associate one of two odors with toxin-tainted sugar initially express conditioned odor approach, that following consolidation switches to avoidance.",
+   "quote_offset": 1713,
+   "quote_sha16": "4b25e3b7953847c2"
+  },
+  {
+   "k": "K10",
+   "role": "auxiliary",
+   "d_axis": "D+",
+   "v_axis": "B+",
+   "claim": "The same malaise signal reassigns the valence role of parallel memories in opposite directions through serotonergic modulation of distinct dopaminergic subtypes: it suppresses consolidation of the initial odor-sugar memory while INVERTING reward plasticity into 'safety' memory for the odor experienced without food, so that second cue keeps (or gains) its pull.",
+   "quote": "Differential serotoninergic modulation of specific aversive and rewarding dopaminergic neuron subtypes permits post-ingestive intoxication to suppress consolidation of initial odor-sugar memory and simultaneously invert reward memory plasticity into “safety” memory for the odor experienced without food.",
+   "quote_offset": 1979,
+   "quote_sha16": "63f25000d7bd81cf"
+  }
+ ],
+ "d_class": "mixed",
+ "agency_class": "RESPONSIVE",
+ "event_grammar": "[MOTION] ingestion of toxin-tainted sugar --> [GATE] visceral signals (modSP / Turandot A -> autocrine Toll in dopaminergic neurons) admit updating only during the consolidation window --> [INACTION/ACTION] avoidance of the paired odor, approach maintained to the unpaired 'safety' odor --> [OUTCOME] poisoned food not re-ingested, safe food still exploited --> [FEEDBACK] earlier odor memories rewritten retrospectively by the later visceral state",
+ "contradiction_ref": null,
+ "anchor_concordance": {
+  "anchor_primary_k": "K5",
+  "same_family": true,
+  "same_sign": true,
+  "reason": "Independent (insect) system, same committed family and sign: a delayed post-ingestive reinforcer is bound back onto the recently sampled cue and suppresses re-consumption - supporting the anchor's mechanism at the level of the credit-assignment problem, though by retrospective memory updating rather than reactivation-driven stabilization."
+ },
+ "notes": "Level capped at ABSTRACT_VERIFIED: the retrieved file is only the bioRxiv preview page (5,370 chars, abstract plus site boilerplate) - 'Abstract Full Text' tabs are present but no body text was obtained, so no mechanism paragraph beyond the abstract could be reviewed and no quantitative claim (times, effect sizes, n) may be made (02 2.1-7). evidence_type causal_intervention is inferred from the abstract's own manipulation language ('taught', 'suppress', 'invert', genetic/Toll pathway), not verified against the full text. Record is a preprint (posted 2025-10-22), not peer-reviewed, and it is a different animal model from the anchor, so its concordance is mechanism-level only, not a second-channel confirmation of the mammalian amygdala circuit. d_class mixed because the abstract's mechanism is explicitly bidirectional across the two trained odors."
+}

@@ -1,0 +1,56 @@
+{
+ "sid": "R14-N7",
+ "title": "Reconceptualized Associative Learning",
+ "year": 2025,
+ "verification_level": "FULLTEXT_REVIEWED",
+ "identity_check": "Opens as Perspectives on Behavior Science 10.1007/s40614-025-00442-8 (PMC12162447) 'Reconceptualized Associative Learning', C. R. Gallistel, Rutgers Center for Cognitive Science - matches the registered R14-N7 title and single authorship.",
+ "evidence_type": "interpretive",
+ "provenance": "PAPER_CLAIM",
+ "term_type": "MIXED",
+ "mapping_note": "paper wording 'learning rate ... scalar function of relative temporal separation, as measured by informativeness' -> our K5 delay/memory; 'shortening the ITI ... the number of reinforcements required will increase by more than a factor of 60' -> our K2 inhibition/gate; 'an association is a measurable fact about the distribution of events in time, not an altered activation-conducting connection' -> our K10 role reassignment. Gallistel uses none of the K-family words.",
+ "description_scope": "Judged under the description 'the number of reinforcements required before a conditioned response appears, as a function of the temporal separation of events'; the paper's own action term is 'deciding to act on' perceived temporal associations, but the D judgement here is about acquisition, not about which action the subject takes.",
+ "motion_source": "L0 formal carrier: rate-ratio (informativeness) algebra over counted events and measured durations, represented in L2 symbols in memory and read out at L4 as the decision to respond; no new physiological measurement.",
+ "mechanism": [
+  {
+   "k": "K5",
+   "role": "primary",
+   "d_axis": "D+",
+   "v_axis": "B+",
+   "claim": "Learning rate is an almost scalar function of the relative temporal separation of events (informativeness), so wider spacing - not more pairings - buys faster acquisition, and time-scale invariance makes the number of reinforcements the wrong currency.",
+   "quote": "The learning rate—operationally defined as the reciprocal of reinforcements prior to the appearance of a conditioned response—is an almost scalar function of relative temporal separation, as measured by informativeness.",
+   "quote_offset": 2363,
+   "quote_sha16": "6cc685044603badf"
+  },
+  {
+   "k": "K2",
+   "role": "auxiliary",
+   "d_axis": "D−",
+   "v_axis": "B-",
+   "claim": "Crowding trials collapses informativeness into the region where the learning rate goes to zero, so shortening the ITI raises the reinforcements required more than sixtyfold - a gate on acquisition set by temporal structure.",
+   "quote": "Shortening the intertrial interval to 5 s produces an informativeness of (5 + 5)/5 = 2, which moves the regression in Fig. 4 into the region where it curves upward toward infinity (0 learning rate). Therefore, the number of reinforcements required will increase by more than a factor of 60.",
+   "quote_offset": 65588,
+   "quote_sha16": "90dd30ccf9a49502"
+  },
+  {
+   "k": "K10",
+   "role": "auxiliary",
+   "d_axis": "neutral",
+   "v_axis": "B+",
+   "claim": "The paper reassigns what an association is - a measurable statistical fact about the distribution of events in time rather than a changed connection in a mind, brain or net - and correspondingly denies decaying eligibility traces as its mechanism.",
+   "quote": "Research on the role of time in associative learning has changed our understanding of what an association is. It is a measurable fact about the distribution of events in time, not an altered activation-conducting connection in a mind, brain or net.",
+   "quote_offset": 1503,
+   "quote_sha16": "f144e351780701b3"
+  }
+ ],
+ "d_class": "mixed",
+ "agency_class": "MIXED",
+ "event_grammar": "[MOTION] cues and reinforcements arrive at measurable conditional and unconditional rates in the environment (L0) --> [GATE] informativeness (cycle-to-trial rate ratio) must be high enough for the perceived temporal association to control behaviour (L0/L4) --> [ACTION] the conditioned response appears after few reinforcements when events are widely spaced / [INACTION] with crowded ITIs acquisition approaches zero however many pairings are given (L4) --> [OUTCOME] a time-scale-invariant symbol of the temporal association is laid down in memory (L2/L4) --> [FEEDBACK] prospective and retrospective rate estimates are continuously re-derived from counts and durations (L0)",
+ "contradiction_ref": "C-03",
+ "anchor_concordance": {
+  "anchor_primary_k": "K5",
+  "same_family": true,
+  "same_sign": false,
+  "reason": "Extends and partly contradicts: it endorses interval-over-pairings (and cites Burke et al. 2023, the anchor's own preprint, for the eight-fewer-trials/same-training-time isomorphism, so that support is second-hand), but makes the controlling variable the informativeness/C-T ratio rather than the inter-reward interval, and it explicitly denies the eligibility-trace/dopamine mechanization the anchor relies on."
+ },
+ "notes": "Theory/review article - no new experiments; its support for the cluster is conceptual plus a literature synthesis (Gibbon/Jenkins labs, Gottlieb, Balsam et al.). Two registered divergences from the anchor: (1) 'There are no windows of associability nor decaying eligibility traces' (offset 2192) contradicts the ANCCR trace mechanism the anchor's account requires; (2) it demands a trade-off test for any dopamine linkage hypothesis - 'One reinforcement with high informativeness must produce the same signal as several hundred with low informativeness' (offset ~127900) - and states that no proposed dopamine linkage hypothesis has been given such a test, which is a challenge to, not a confirmation of, the anchor's dopaminergic half. Bears on the K6 side of C-03. Its 'learning rate' is operationally the reciprocal of reinforcements to a conditioned response, which is not the same quantity as the anchor's per-experience acquisition slope."
+}

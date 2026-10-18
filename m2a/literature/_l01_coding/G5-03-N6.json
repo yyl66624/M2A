@@ -1,0 +1,46 @@
+{
+ "sid": "G5-03-N6",
+ "title": "Refusal Behavior in Large Language Models: A Nonlinear Perspective",
+ "year": 2025,
+ "verification_level": "FULLTEXT_REVIEWED",
+ "identity_check": "Opens with the arXiv:2501.08145 title 'Refusal Behavior in Large Language Models: A Nonlinear Perspective' by Hildebrandt, Maier, Schilling et al. (FAU Erlangen-Nurnberg), matching the assignment.",
+ "evidence_type": "observational",
+ "provenance": "PAPER_CLAIM",
+ "term_type": "MAPPING",
+ "mapping_note": "paper's 'refusal direction / one-dimensional linear subspace' (its target) and 'refusal mechanisms' -> our K2 gate (L2 representational mediation); paper's 'early layers integrate multiple principal components to define the refusal direction' plus 'nonlinear, multidimensional' structure -> our K4 conjunction (MAPPING: paper does not use 'synergy/conjunction').",
+ "description_scope": "Judged under 'emitting a harmful completion = the action, refusal = inaction'; the coded gate is the representational feature that separates harmful from harmless activations, here distributed over many nonlinear components and layers.",
+ "motion_source": "L2 - geometry of residual-stream activations across layers (PCA/t-SNE/UMAP clusters and GDV separability), not a single vector.",
+ "mechanism": [
+  {
+   "k": "K2",
+   "role": "primary",
+   "d_axis": "D−",
+   "v_axis": "neutral",
+   "claim": "Refusal is a genuine, universal gating feature separating harmful from harmless activations, but it is nonlinear and multidimensional rather than a single linear direction.",
+   "quote": "Contrary to prior assumptions that refusal mechanisms are linear and confined to single activation directions, our findings reveal that they are inherently nonlinear and multidimensional",
+   "quote_offset": 24304,
+   "quote_sha16": "89c1af36d7ca5866"
+  },
+  {
+   "k": "K4",
+   "role": "auxiliary",
+   "d_axis": "D−",
+   "v_axis": "neutral",
+   "claim": "The refusal feature is constituted conjunctively - several principal components across layers jointly define it, not one isolated direction.",
+   "quote": "Early layers integrate multiple principal components to define the refusal direction, while later layers refine it along the first principal component",
+   "quote_offset": 20123,
+   "quote_sha16": "be40f3ca2ea8ca6f"
+  }
+ ],
+ "d_class": "D−",
+ "agency_class": "RESPONSIVE",
+ "event_grammar": "[MOTION] harmful vs harmless input forms separable activation clusters --> [GATE] a refusal feature gates emission of the harmful completion --> [ACTION/INACTION] feature active => REFUSE (inaction), otherwise COMPLY (action) --> [OUTCOME] safe vs unsafe output --> [FEEDBACK] architecture/layer re-tunes the feature (Qwen early layers, Llama deep layers) and nonlinear probes (t-SNE/UMAP) out-perform linear PCA",
+ "contradiction_ref": "C-04",
+ "anchor_concordance": {
+  "anchor_primary_k": "K2",
+  "same_family": true,
+  "same_sign": false,
+  "reason": "UNDERMINES the single-direction claim: N6 agrees refusal is a universal separable mechanism (as the anchor [ref 13] shows) but demonstrates refusal is nonlinear and multidimensional, conjunctively defined by several principal components and varying by architecture/layer - i.e. NOT 'a single direction' - which is precisely the C-04 style counter-evidence."
+ },
+ "notes": "same_sign here is concordance with the anchor's single-direction thesis (false = contradicts), independent of the shared D- gate d_axis. Method is dimensionality-reduction/GDV separability (PCA vs t-SNE vs UMAP), no activation ablation, so it contests the linear one-dimensional account at representation-topology level across 6 models / 3 families. Cites Arditi et al. [13] as the position it contests and Engels et al. [15] 'Not all language model features are linear'; NO 'Concept Cones' (Wollschlaeger) reference appears in this text."
+}

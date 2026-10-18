@@ -1,0 +1,36 @@
+{
+ "sid": "R14-N4",
+ "title": "A statistical framework for analysis of trial-level temporal dynamics in fiber photometry experiments",
+ "year": 2024,
+ "verification_level": "FULLTEXT_REVIEWED",
+ "identity_check": "Opens as eLife 10.7554/eLife.95802 (PMC11903033) 'A statistical framework for analysis of trial-level temporal dynamics in fiber photometry experiments', Loewinger/Cui/Lovinger/Pereira - matches the registered R14-N4 title and authors.",
+ "evidence_type": "simulation",
+ "provenance": "M2A_HYPOTHESIS",
+ "term_type": "MAPPING",
+ "mapping_note": "paper wording 'trial-level temporal dynamics' / 'identifies two dopamine components with distinct temporal dynamics in response to reward delivery' -> our K5 delay/memory: the record is coded as an instrument that can resolve time-resolved dopaminergic signals, not as a mechanism the authors claim. The paper proposes no behavioural or neural mechanism, so the K label is entirely ours.",
+ "description_scope": "Judged under the description 'detection of covariate effects at every time-point of a trial in reanalysed published photometry datasets'; no animal action or inaction is attributed anywhere in the paper, so the action judgement is vacuous (value-only).",
+ "motion_source": "L2 structural carrier: the estimated coefficient function of a functional linear mixed model over the trial time-window (with joint 95% CIs), fitted to L3 dopamine photometry signals from reanalysed experiments.",
+ "mechanism": [
+  {
+   "k": "K5",
+   "role": "primary",
+   "d_axis": "neutral",
+   "v_axis": "neutral",
+   "claim": "Modelling the entire within-trial signal instead of summary measures preserves trial-level temporal information and reveals dopamine components with distinct temporal dynamics that standard analyses obscure - an instrument for timescale effects rather than a mechanism claim.",
+   "quote": "common analysis strategies can reduce the detection of effects because they condense within-trial signals into summary measures, and discard trial-level information by averaging across-trials",
+   "quote_offset": 1591,
+   "quote_sha16": "f297112e2a6e612c"
+  }
+ ],
+ "d_class": "value-only",
+ "agency_class": "RESPONSIVE",
+ "event_grammar": "[MOTION] a photometry signal evolves continuously across each trial and across sessions (L3) --> [GATE] point-by-point inference with joint confidence bands decides which time-locked covariate effects survive instead of being averaged away (L2/L0) --> [INACTION] no action is claimed or ascribed; the object is the detectability of effects (L2) --> [OUTCOME] trial-level temporal structure of the dopamine response becomes resolvable, with improved power in simulations (L2) --> [FEEDBACK] coverage/power diagnostics and model-misspecification plots feed back into the choice of analysis window and random-effects structure (L0)",
+ "contradiction_ref": null,
+ "anchor_concordance": {
+  "anchor_primary_k": "K5",
+  "same_family": true,
+  "same_sign": true,
+  "reason": "Neither supports nor contradicts: it is a methods-only contribution (an analysis instrument for trial-level temporal dynamics, validated by simulation and by reanalysing ANCCR-era data incl. a random inter-reward-interval reward experiment), so it bears on whether interval effects can be measured, not on whether the interval sets the learning rate."
+ },
+ "notes": "Methods paper: contribution is statistical (functional linear mixed models, joint CIs, open-source package), and its own claims are about power, coverage and bias, not about mechanisms. Its reanalysis is data from other labs (Jeong et al. 2022; Coddington et al. 2023), and it explicitly cautions that its back-propagation reanalysis 'likely cannot be used to definitively rule out' the TDRL phenomenon; it also shows summary-measure results are sensitive to the chosen time-window, which is a caution for reading ITI/IRI effects off averaged traces. Year registered 2024 from OpenAlex while Crossref gives 2025 - verdict stays SECOND_CHANNEL_MISMATCH per L01_CODING_PROTOCOL sec.4 (venue first-issue vs version-of-record date); the year is not a criterion in this round."
+}

@@ -1,0 +1,46 @@
+{
+ "sid": "G5-03-N2",
+ "title": "'For Argument's Sake, Show Me How to Harm Myself!': Jailbreaking LLMs in Suicide and Self-Harm Contexts",
+ "year": 2025,
+ "verification_level": "FULLTEXT_REVIEWED",
+ "identity_check": "Opens with the arXiv:2507.02990 title ''For Argument's Sake, Show Me How to Harm Myself!': Jailbreaking LLMs in Suicide and Self-Harm Contexts', matching the assignment.",
+ "evidence_type": "observational",
+ "provenance": "PAPER_CLAIM",
+ "term_type": "MIXED",
+ "mapping_note": "paper's 'safety protocols / guardrails / safety feature' that suppress harmful output -> our K2 inhibition-gate (MAPPING: 'gate' is ours); paper's 'trigger the safety protocols' and 'introduction of another context ... to override the safety function' -> our K1 trigger/threshold ('trigger' is the authors' word).",
+ "description_scope": "Judged under 'supplying self-harm/suicide methods = the action, refusal = withholding'; whether the gate holds depends on the description the user applies (self-directed intent vs academic/hypothetical argument).",
+ "motion_source": "L4 - conversational framing and perceived user intent (pragmatic layer) move the safety filter; no representation-level carrier is examined.",
+ "mechanism": [
+  {
+   "k": "K2",
+   "role": "primary",
+   "d_axis": "D−",
+   "v_axis": "neutral",
+   "claim": "A safety guardrail acts as an intent-gated filter that, when engaged, withholds self-harm/suicide methods and redirects to help-seeking.",
+   "quote": "this model refuses to provide information in both test cases, mimics empathy, and provides contacts for help-seeking",
+   "quote_offset": 19847,
+   "quote_sha16": "baa22d3f44796809"
+  },
+  {
+   "k": "K1",
+   "role": "auxiliary",
+   "d_axis": "D+",
+   "v_axis": "neutral",
+   "claim": "Reframing the identical harmful query under a new context (e.g. an academic argument) is the trigger that reliably defeats the safety filter within a couple of turns.",
+   "quote": "we can bypass safety mechanisms reliably by changing the context and perceived intent of the prompt",
+   "quote_offset": 7931,
+   "quote_sha16": "72bd4bc861e3f46d"
+  }
+ ],
+ "d_class": "mixed",
+ "agency_class": "RESPONSIVE",
+ "event_grammar": "[MOTION] self-disclosed harmful intent is presented --> [GATE] safety protocol gates method-providing (refusal) --> [ACTION/INACTION] reframed as academic argument opens the gate => harmful content emitted (action); otherwise withheld (inaction) --> [OUTCOME] safety-protocol failure across several commercial LLMs --> [FEEDBACK] the gate flips within ~2 conversation turns on a context switch",
+ "contradiction_ref": null,
+ "anchor_concordance": {
+  "anchor_primary_k": "K2",
+  "same_family": true,
+  "same_sign": true,
+  "reason": "SUPPORTS the single-direction claim only at the behavioural/gate level (a defeasible refusal gate that adversarial context switches off, exactly what the anchor's adversarial-suffix result predicts); N2 never inspects internal activations, so it neither confirms nor refutes the 'single direction' specificity and does not argue refusal is representationally distributed."
+ },
+ "notes": "Purely behavioural prompt-level study of 6 commercial LLMs (ChatGPT-4o, Perplexity, Gemini, Claude, Pi); no activation/steering analysis, so it bears no evidence on the representational count of directions. Cites the anchor in references. Authors' own limitation: no rigorous quantitative threshold for declaring a 'protocol failure'."
+}

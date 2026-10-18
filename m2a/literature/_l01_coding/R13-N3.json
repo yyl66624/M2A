@@ -1,0 +1,56 @@
+{
+ "sid": "R13-N3",
+ "title": "An interoceptive model of energy allostasis linking metabolic and mental health",
+ "year": 2025,
+ "verification_level": "FULLTEXT_REVIEWED",
+ "identity_check": "File opens with 'An interoceptive model of energy allostasis linking metabolic and mental health', Mehrhof S. Z., Fleming H., Nord C. L. (Review, Sci Adv), DOI 10.1126/sciadv.ady4356 -> matches verified two-channel metadata (overlap 1.0, year 2025).",
+ "evidence_type": "interpretive",
+ "provenance": "PAPER_CLAIM",
+ "term_type": "MIXED",
+ "mapping_note": "Paper's own words -> our K-family: 'predicts future needs and prepares to satisfy them before they arise ... allostasis: anticipatory regulation' -> K5 delay/memory (the paper's temporal vocabulary is 'timescales'/'anticipation', not 'delay'); 'prediction errors underpin learning ... the internal model is recalibrated' and 'feeding back into the cycle' -> K6 feedback; 'learning from prediction errors is metabolically costly ... must estimate their precision to determine whether they are worth integrating' -> K11 resource constraint (paper says 'cost'/'energy cost', never 'resource constraint'); 'the model may become \"stuck\" in a state that was adaptive in a previous context but maladaptive in the present' -> K7 hysteresis (candidate, not coded for the 3-entry cap).",
+ "description_scope": "Action judged under the descriptions 'eat / seek a food reward' and 'expend effort (physical activity)': the paper's claim is that interoceptive prediction sets BOTH, in opposite directions depending on the predicted energy state, so the record-level direction is only meaningful relative to one of these descriptions (02 2.1-1). Value/valuation language alone ('energy scarcity', 'reward sensitivity') is not treated as the claim; the claim is about which behavior is initiated or withdrawn.",
+ "motion_source": "L3/L4 - humoral and vagal metabolic signals (ghrelin, insulin, leptin, immune signals) integrated into a predictive internal model in NTS/hippocampus/hypothalamus/insula/BLA, which then drives top-down regulation and effort-based decisions.",
+ "mechanism": [
+  {
+   "k": "K5",
+   "role": "primary",
+   "d_axis": "D+",
+   "v_axis": "neutral",
+   "claim": "Allostasis moves control of action ahead of the bodily signal: rather than waiting for an imbalance, the brain predicts future needs and initiates regulatory action before they arise - so what brings the organism to act is a remembered/predicted state, not the present one (direction of the action depends on the predicted content).",
+   "quote": "Hence, rather than waiting for an imbalance to occur, the brain predicts future needs and prepares to satisfy them before they arise ( 19 , 22 , 181 – 184 ). This predictive regulation of future physiological needs is termed allostasis: anticipatory regulation of bodily state.",
+   "quote_offset": 45284,
+   "quote_sha16": "4ceb53687aaf8e91"
+  },
+  {
+   "k": "K6",
+   "role": "auxiliary",
+   "d_axis": "neutral",
+   "v_axis": "neutral",
+   "claim": "The model is kept in sync by a closed comparison loop: top-down predictions are compared with bottom-up signals, the discrepancy (prediction error) recalibrates the model, and the loop is explicitly described as a self-maintaining cycle between cognition, behavior and metabolism; the loop itself is polarity-free - it stabilizes whatever set-point it has been trained on.",
+   "quote": "These top-down predictions are compared to the bottom-up signals; a discrepancy between the two leads to a prediction error. Prediction errors underpin learning: To minimize the error signals, the internal model is recalibrated, allowing more accurate future predictions.",
+   "quote_offset": 51734,
+   "quote_sha16": "60f232f50a152ab8"
+  },
+  {
+   "k": "K11",
+   "role": "auxiliary",
+   "d_axis": "D−",
+   "v_axis": "B-",
+   "claim": "Updating is energetically expensive, so the brain must estimate the precision of a prediction error to decide whether it is worth integrating; low-precision errors are discounted or ignored, producing failure to learn, a model increasingly out of sync with reality, and the amotivational/inattentive behavior the paper links to depression (no new engagement means no errors at all, which entrenches the model).",
+   "quote": "However, learning from prediction errors is metabolically costly; it necessitates the encoding and consolidation of information, brain computations associated with an energy cost ( 22 , 208 , 209 ). Because of this, the brain must estimate their precision to determine whether they are worth integrating.",
+   "quote_offset": 63706,
+   "quote_sha16": "5d928477c4e32f7b"
+  }
+ ],
+ "d_class": "mixed",
+ "agency_class": "AGENTIC",
+ "event_grammar": "[MOTION] bottom-up metabolic signals (gut hormones, vagal stretch, immune) enter the internal model --> [GATE] precision-weighted prediction error decides whether anything is learned, under an energy-cost constraint --> [ACTION/INACTION] prospective regulation: eating/foraging initiated before need, or effort and activity withdrawn when predicted scarcity raises effort costs --> [OUTCOME] energy allostasis maintained, or metabolic plus psychiatric comorbidity --> [FEEDBACK] behavior changes metabolism, which changes the signals the model predicts from (vicious/virtuous closed loop)",
+ "contradiction_ref": null,
+ "anchor_concordance": {
+  "anchor_primary_k": "K5",
+  "same_family": true,
+  "same_sign": false,
+  "reason": "Both records make K5 primary, but the anchor's delayed-feedback mechanism binds an outcome to produce REFUSAL of the paired food (D-), whereas this paper's allostasis uses prediction to INITIATE regulation ahead of the signal (coded D+ for its primary entry); the paper's own D- branch (effort withdrawal, apathy) sits in the K11/prediction-failure sections."
+ },
+ "notes": "Science Advances conceptual review: no new data; the authors mark their own claims as proposals ('we propose', 'which we hypothesize'), so the record is PAPER_CLAIM at theoretical level and must not be escalated to SUPPORTED_MECHANISM. Its postoral-reinforcement passage restates the anchor's amygdalar reactivation account (their ref 200) and is therefore not independent evidence. Two strong candidates were dropped under the 3-entry cap: K2 (the brain 'inhibiting the activity of hunger neurons in response to food-predicting cues, before actual consumption') and K7 (the model 'stuck' in a previously adaptive state - hysteresis). Formal/quantitative claims are absent: precision-weighting is stated as a mathematical intuition (Fig. 3), so no L0 quantitative coding was made. Per 07-registry C-03, K5 and K6 are hung separately."
+}

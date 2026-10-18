@@ -1,0 +1,51 @@
+{
+ "sid": "R13",
+ "title": "A neural mechanism for learning from delayed postingestive feedback",
+ "year": 2025,
+ "verification_level": "QUALIFIED",
+ "identity_check": "File opens with the PMC/bioRxiv record of 'A neural mechanism for learning from delayed postingestive feedback', authors Zimmerman C. A., Bolkan S. S., Pan-Vazquez A. ... Wang S. S.-H., Witten I. B. (Princeton Neuroscience Institute), and carries Nature 642:700-709 with DOI 10.1038/s41586-025-08828-z -> same paper as registry id R13.",
+ "evidence_type": "causal_intervention",
+ "provenance": "PAPER_CLAIM",
+ "term_type": "PAPER_TERM",
+ "mapping_note": "term_type PAPER_TERM, so no mapping step is owed: the paper's own mechanism words ('delayed postingestive feedback', 'temporal credit assignment', 'reactivation', 'stabilize', 'novelty-dependent gating', 'eligibility trace') are what K5/K6/K2 name.",
+ "description_scope": "Action judged under the description 'the mouse drinks from the bottle of the flavor it consumed at the conditioning meal' (two-bottle memory-retrieval test, and lick/bout consumption during the meal). Under the alternative description 'encode/update a flavor memory' the same mechanism is facilitatory, so the D-axis sign is description-relative (02 2.1-1).",
+ "motion_source": "L3 - visceral malaise signal carried by Calca/CGRP-positive parabrachial neurons and their axon terminals in central amygdala, reactivating recent amygdalar flavor ensembles (L1 for the PKA/CREB step, L4 for the drink/not-drink choice).",
+ "mechanism": [
+  {
+   "k": "K5",
+   "role": "primary",
+   "d_axis": "D−",
+   "v_axis": "B-",
+   "claim": "A malaise signal arriving minutes-to-hours after the meal reactivates the amygdalar representation of the flavor just eaten, and the degree of that delayed reactivation predicts stabilization of the flavor representation at retrieval - i.e. the delay is bridged by post-hoc reactivation, not by contiguity.",
+   "quote": "postingestive malaise signals specifically reactivate the neural representations of novel flavors experienced during a recent meal, and this reactivation serves to stabilize the flavor representation upon memory retrieval.",
+   "quote_offset": 31591,
+   "quote_sha16": "c5ace27b217c8553"
+  },
+  {
+   "k": "K6",
+   "role": "auxiliary",
+   "d_axis": "D−",
+   "v_axis": "B-",
+   "claim": "The gut-brain CGRP feedback limb is itself the teaching signal: postingestive CGRP neuron activity is reported necessary and sufficient to mediate delayed CTA, so the loop that feeds the outcome back onto the flavor representation is what gates whether the animal later refuses the food.",
+   "quote": "Taken together, these experiments show that postingestive CGRP neuron activity is necessary and sufficient to mediate delayed CTA, as well as the effects of malaise on novel flavor-dependent, amygdala-specific neural activation.",
+   "quote_offset": 15930,
+   "quote_sha16": "d45092eee50acdf8"
+  },
+  {
+   "k": "K2",
+   "role": "auxiliary",
+   "d_axis": "neutral",
+   "v_axis": "neutral",
+   "claim": "Novelty acts as a selectivity gate on the delayed signal: only recent NOVEL flavor representations are reactivated and stabilized, familiar ones are excluded and instead degrade as the flavor becomes 'safe'; the paper proposes (hedged: 'could serve as') novelty-dependent gating of amygdalar PKA as the biochemical eligibility trace implementing this gate.",
+   "quote": "Thus, novelty-dependent gating of PKA could serve as a biochemical eligibility trace that increases the responsiveness of novel flavor-coding neurons to delayed malaise signals, thereby permitting the selective reactivation and stabilization of amygdala novel flavor representations ( Fig. 6h ).",
+   "quote_offset": 30709,
+   "quote_sha16": "fc8a84dfbafc3fb4"
+  }
+ ],
+ "d_class": "D−",
+ "agency_class": "MIXED",
+ "event_grammar": "[MOTION] novel-flavor intake bout encoded in amygdala --> [GATE] novelty-dependent PKA eligibility trace admits only recent novel representations --> [INACTION] later refusal of that flavor in the two-bottle test --> [OUTCOME] poisoning avoided, representation stabilized at retrieval --> [FEEDBACK] delayed CGRP malaise reactivation re-enters the same ensemble on the next encounter",
+ "contradiction_ref": null,
+ "anchor_concordance": null,
+ "notes": "QUALIFIED for two documented conflicts with the Phase I registry row for R13, which was capped at ABSTRACT_VERIFIED: (1) registry d_class 'value-only' - the fulltext does make an action-direction claim (learned refusal of the paired flavor, one-trial, across several-hour delays), so D- is coded; (2) registry v_axis 'B+' glossed 'value learning' - under the 01_COMMON_DEFINITIONS 1.4 definition B+ means the condition RAISES the value of the action for the actor, whereas the malaise-driven mechanism LOWERS the paired flavor's value (B-); 'better learning' is an efficacy claim, not a B+ claim. Also: (3) file is the PMC/bioRxiv author-manuscript version of the Nature paper, so quote offsets and figure numbering refer to that manuscript; (4) the K2/PKA entry is the paper's own untested biochemical hypothesis, and the generalization to postingestive NUTRIENT (appetitive, D+) learning is stated by the authors as speculation, which is why d_class is not coded 'mixed'; (5) per 07-registry C-03 the delay parameter is not reducible to a feedback/value-size parameter, hence K5 and K6 are hung separately here rather than merged. No published rebuttal of the anchor mechanism was found in the cluster, so contradiction_ref stays null."
+}
