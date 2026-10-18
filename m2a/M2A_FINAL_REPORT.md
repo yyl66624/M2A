@@ -1093,3 +1093,63 @@ R13 有 3 篇、R14 有 1 篇与锚点自引用或同实验室，门控 G6 **只
 
 **判据不变项**：不跑实验、不改判定、不改 `0x` 冻结文件与注册表；收尾审计复跑 **26/26 套件、
 190 项检查、24/24 哈希绑定**（词表生成器不是门控套件，故套件数不变）。
+
+### 34 五值标签翻译层（owner decision 2026-10-18 §2-3 / 第 7 条）
+
+> 依据：`governance/OWNER_DECISION_2026-10-18.md` 第 7 条要求每轮区分
+> `SUPPORTED / CONTRADICTED / NULL / INDETERMINATE / NOT_IDENTIFIED`；§2 第 3 项要求把这五个标签
+> 挂到既有台账/报告上。生成器：`governance/build_status_label_table.py`；机器可读版：
+> `governance/status_label_table_v1.json`；人类可读版：`report/STATUS_LABEL_TABLE_v1.md`。
+
+#### 34.1 为什么需要翻译层
+
+第 7 条要求的五值标签在既有工件里是**分散表达**的：臂级判定用 `SUPPORTED/REFUTED/NOT_EXPLAINED/QUALIFIED`，
+关闭计数写 `"3/4 closed"`，出口名写 `E3 TEST-UNSATISFIABLE`，格级状态写 `NOT_RESOLVABLE` 与
+`PARTIALLY_IDENTIFIED`。**五值语义不是不存在，而是藏在四套拼写里**。由于 R6 与第 8 条禁止回写旧轮，
+唯一的合法做法是建一张翻译表，把每个带判定的字段逐行映射到五值之一，并保留原文读数（`raw` 列）。
+
+#### 34.2 推导结果
+
+脚本扫描了全部 `phase*_results.json`、`phase*_reanalysis.json`、`L01_coding.json` 以及所有
+`PHASE*_RESULTS.md` 和 `ROUND_L01_RESULTS.md` 文档正文，得到 **84 行**（其中 59 行来自工件字段、
+25 行仅出现在文档措辞中）：
+
+| 标签 | 合计行 | 工件字段 | 仅文档措辞 |
+| --- | --- | --- | --- |
+| SUPPORTED | 34 | 34 | 0 |
+| CONTRADICTED | 17 | 17 | 0 |
+| NULL | 1 | 1 | 0 |
+| INDETERMINATE | 10 | 10 | 0 |
+| NOT_IDENTIFIED | 2 | 0 | 2 |
+| MANUAL_REVIEW | 20 | 20 | 0 |
+
+#### 34.3 两层缺口
+
+1. **只在文档里存在、工件字段里为 0 的标签**：`NOT_IDENTIFIED`（2 行全来自文档措辞）。
+   典型是格级状态 `NOT_RESOLVABLE` 与部分识别标签 `PARTIALLY_IDENTIFIED`——它们各自写在
+   `PHASE*_RESULTS.md` 的正文与表格里，但**没有任何 `phase*_results.json` 字段承载它**，所以按字段
+   扫描时 `NOT_IDENTIFIED` 一栏为 0。这与 X-67 是同一条治理规律：**处置与标签必须写在承载判定的工件里，
+   写在累计文档里等于没写**。
+
+2. **两个层级都为 0 的标签**：无（五值标签全部至少出现一次）。但 `NULL` 只出现 1 次（文献轮 L-01 的
+   `NOT_OBTAINED`），在 24 个实验轮里从未被字面写出：实验侧的失败形态被归入 `CONTRADICTED`（判据被否证）
+   或格级 `NOT_RESOLVABLE`（不可判），而「零结果」这一档在预注册出口表里从未被单独命名。这不是漏改旧轮
+   （R6 禁止），而是**下一轮的出口表必须显式含 `NULL` 一档**，否则第 7 条要求的五值区分在实验侧仍只有四值。
+
+3. 文献轮 L-01 是**第一个原生使用五值标签**的轮次（`L01_coding.json` 的
+   `exit_table[*].label_reported` 直接输出 `INDETERMINATE`）。
+
+#### 34.4 引用规则
+
+1. 引用旧轮判定时**两个都要写**：`raw`（原文，不可变）与 `label`（本表翻译）；
+2. 本表由脚本推导，出现未被 `RULES` 覆盖的新拼写即落为 `MANUAL_REVIEW` 行并计数——这是刻意的：
+   **词表漂移必须可见，不得静默归类**（与 X-70 同一处置原则）；
+3. 新一轮若引入新的状态字面，须先在本表加规则再加判据，顺序不可颠倒。
+
+#### 34.5 复现
+
+```bash
+python3 governance/build_status_label_table.py
+python3 experiments/audit_bindings.py
+```
+
