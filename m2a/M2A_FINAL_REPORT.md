@@ -131,7 +131,7 @@
 `literature/`（5 个脚本 + JSON）、`experiments/`（4 个脚本 + 预注册 + 结果 JSON）。
 全部运行只需本机 Python + numpy（外加 pypdf 用于全文抽取）。git 提交按阶段划分，失败与修正均保留。
 
-> 追加（§15.2）：Phase V–X 之后 `experiments/` 共 12 轮、Python 文件 38 个（其中门控套件 12 个）；
+> 追加（§15.2）：Phase V–XII 之后 `experiments/` 共 14 轮、Python 文件 44 个（其中门控套件 14 个）；
 > 预注册哈希校验一律以 `git show HEAD:<path>` 的字节为准，不以工作树为准（原因见 §15.4）。
 
 ---
@@ -335,24 +335,24 @@ M2A 的开放项现余：P7-O1、P7-O2、P8-O1、P8-O2，以及"需明确授权"
 
 ---
 
-## 15 完成审计（2026-10-18 首记，Phase IX/X 之后**刷新**；本轮不新增任何科学判据）
+## 15 完成审计（2026-10-18 首记，Phase IX–XII 之后**刷新**；本节不新增任何科学判据）
 
 只核对三件事：仪器是否仍然全绿、判据是否仍然锚定在运行前的文本上、`PROGRAM_PLAN` §5 的四条
 资产要求是否逐条兑现。审计不重跑实验、不改写任何历史判定（R6）。
 
-### 15.1 门控套件：12/12 全绿（83 项检查）
+### 15.1 门控套件：14/14 全绿（93 项检查）
 
-| 套件 | `phase2` | `p3` | `p4` | `p5` | `p5b` | `p5c` | `p5d` | `p6` | `p7` | `p8` | `p9` | `p10` |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 通过 | 7/7 | 7/7 | 5/5 | 8/8 | 6/6 | 7/7 | 7/7 | 7/7 | 9/9 | 6/6 | 8/8 | 6/6 |
+| 套件 | `phase2` | `p3` | `p4` | `p5` | `p5b` | `p5c` | `p5d` | `p6` | `p7` | `p8` | `p9` | `p10` | `p11` | `p12` |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 通过 | 7/7 | 7/7 | 5/5 | 8/8 | 6/6 | 7/7 | 7/7 | 7/7 | 9/9 | 6/6 | 8/8 | 6/6 | 6/6 | 4/4 |
 
-### 15.2 预注册哈希绑定：12/12，且**同时**对磁盘与 git 历史成立
+### 15.2 预注册哈希绑定：14/14，且**同时**对磁盘与 git 历史成立
 
 对每一轮，把 `git show HEAD:<轮次>_PREREGISTRATION.md` 的字节做 SHA-256，与该轮结果 JSON 里
 已提交的 `prereg_sha256` 字段比对：phase2 `5aa2e338…`、phase3 `10696eaf…`、phase4 `1881d555…`、
 phase5 `af878034…`、phase5b `5f91e076…`、phase5c `e2713a17…`、phase5d `4d9a1419…`、
-phase6 `d59b9763…`、phase7 `e208bd54…`、phase8 `258ab58c…`、phase9 `17fd7cb2…`、phase10 `d0814582…` ——
-**全部匹配，12 份预注册文本均为纯 LF**。
+phase6 `d59b9763…`、phase7 `e208bd54…`、phase8 `258ab58c…`、phase9 `17fd7cb2…`、phase10 `d0814582…`、phase11 `2ee8486f…`、phase12 `2a95d2dd…` ——
+**全部匹配，14 份预注册文本均为纯 LF**（磁盘与 `git show` 双口径一致）。
 `phase6_reanalysis.json` 按设计不含该字段（R4：运行后判读只取得零项检验地位）。
 
 **复现口径因此改变一条**：校验哈希必须以 `git show HEAD:<path>` 为准，不能以工作树文件为准。
@@ -391,9 +391,14 @@ phase6 `d59b9763…`、phase7 `e208bd54…`、phase8 `258ab58c…`、phase9 `17f
 | `508434f` | 完成审计（§15，本节） |
 | `e7267df` | Phase IX（E1 CONFIRMED：聚合免疫 + 自由 θ 不动点） |
 | `583c62b` | Phase X（E1 CONFIRMED：更高阶平滑不能齐次化；X-27…X-30） |
+| `e7267df`/`78857db`/`1599035` | Phase IX / XI / XII（均 E1 CONFIRMED）；XI 关闭 P9-O1/O2 并给出统一定理，XII 关闭 P10-O1/O2 并否证 X-28 |
+| `8b62458` | 审计刷新（IX/X） |
 
-本轮（Phase V–X）新增提交共 **12 个**：七轮工件 + 共享文档 + 完成审计 + Phase IX + Phase X +
-本节的刷新提交。每个提交只含其声称的内容；`master`，**无 remote、未推送**（推送需 owner 指示）。
+Phase V–XII 共新增 **14 个提交**（V、V-b、V-c、V-d、VI、VII、VIII、IX、X、XI、XII 各一轮工件 +
+共享文档 + 审计 + 审计刷新），仓库累计 24 个提交；每个提交只含其声称的内容。
+**owner 已指定远端** `https://github.com/yyl66624/M2A.git`（空仓库，不覆盖任何历史），`origin` 已配置；
+**尚未推送**：本机无任何 GitHub 凭据（无 helper、无 `~/.git-credentials`、无 gh、无 SSH key），
+`git push` 停在 `could not read Username`。owner 选定 PAT/HTTPS，故等待 owner 落凭据文件或自行推送。
 
 Phase I′/II/III/IV 的提交（`9138edf`…`ac0b8a1`）在此之前已各自独立入库，未与本轮混并。
 每个提交只含该轮自身的工件；共享文档单独成提交，因为一份文件的 diff 无法按轮次切分。
@@ -535,7 +540,7 @@ P10-O1/O2（正确格点常数重建计数律、全区间 minimax）；P10-O3 �
 
 ## 19 Phase XII（2026-10-18 追加）：P10-O1 与 P10-O2 关闭，出口 **E1 CONFIRMED**——并否证了本报告上一节的一条解释
 
-> 预注册 `experiments/PHASE12_PREREGISTRATION.md`（sha256 `…`，见 `phase12_results.json`）
+> 预注册 `experiments/PHASE12_PREREGISTRATION.md`（sha256 `2a95d2dd43580878…`，运行前后逐位一致）
 > 门控 4/4 ⇒ 判定；`phase12_results.json` + `PHASE12_RESULTS.md`。精确侧沿用 Phase VI 仪器，未改动。
 
 **设计要点**：Phase X 的运行后追加（X-28）断言 Phase VIII 的偏度系数"符号与数值皆错"，
