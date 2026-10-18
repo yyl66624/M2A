@@ -75,3 +75,31 @@
 4. DROPPED-CANDIDATE（Wald 1949 / Waddington 1957 / Redgrave 1999）若后续获得双源题录，可重新入池。
 5. 全部 87 条中无一条达到 FULLTEXT_REVIEWED / CLAIM_INDEPENDENTLY_CHECKED；
    Phase I 报告须如实声明此上限（详见报告 §1 与 §7）。
+
+
+---
+
+## 6. V-03 核定（2026-10-18 追加；Phase I 资产只做追加，不改写上方裁定字）
+
+第 5 节第 3 条「R14 Publisher Correction 对定量结论的影响程度：Phase II 需对照勘误正文核定」**已核定**，
+无需等 Phase II。两条独立通道：
+
+1. **Crossref 元数据**（本机 `wget`，2026-10-18）：`10.1038/s41593-026-02425-7` 的题名即
+   「Publisher Correction: Duration between rewards controls the rate of behavioral and dopaminergic
+   learning」，作者 Burke 等，Nat Neurosci，创建 2026-08-03；原文
+   `10.1038/s41593-026-02206-2` 同作者同刊，2026-04 期。⇒ V-03 原先并列登记的勘误 DOI **指向正确**。
+2. **出版方页面正文**：勘误只有一句实质内容——
+   「In the version of the article initially published, the raster plots in **Fig. 4b (top row)**
+   were misaligned and have now been corrected in the HTML and PDF versions of the article, as seen
+   in Fig. 1.」并注「The Original Article was published on 12 February 2026」。
+
+**核定结论**：勘误改动的是 Fig. 4b 上行光栅图的**对齐**，未改任何数值、统计量、文字结论或作者名单。
+本项目引用 R14 的方式是 `fulltext_review_log.md:35` 那条**正文原句**
+（"removal of up to 19 out of 20 cue–reward experiences has zero impact… if total conditioning time is
+maintained"），不是 Fig. 4b；且全库检索显示 M2A 从未引用该图。⇒ 对 M2A 所引定量主张 **无影响**。
+
+**留下的限定**（必须随引用一起走）：今后若引用 R14 的 Fig. 4b，须以 2026-08-03 更正版为准，
+2026-02-12 版的该图不得当作读数使用。证据落盘 `literature/v03_correction_check.json`。
+
+级别声明：这是一次**书目与勘误内容核对**，不构成 `CLAIM_INDEPENDENTLY_CHECKED`，也不改变第 5 节
+第 5 条「全部 87 条无一条达 FULLTEXT_REVIEWED / CLAIM_INDEPENDENTLY_CHECKED」的上限声明。

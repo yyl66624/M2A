@@ -1,0 +1,83 @@
+{
+  "channel_A_crossref": [
+    {
+      "doi": "10.1038/s41593-026-02425-7",
+      "type": "journal-article",
+      "title": "Publisher Correction: Duration between rewards controls the rate of behavioral and dopaminergic learning",
+      "container": "Nat Neurosci",
+      "published": [
+        [
+          2026,
+          9
+        ]
+      ],
+      "authors": [
+        "Burke",
+        "Taylor",
+        "Jeong",
+        "Lee",
+        "Zsembik",
+        "Wu",
+        "Floeder",
+        "Naik"
+      ],
+      "update_to": [
+        "10.1038/s41593-026-02206-2"
+      ]
+    },
+    {
+      "doi": "10.1038/s41593-026-02206-2",
+      "type": "journal-article",
+      "title": "Duration between rewards controls the rate of behavioral and dopaminergic learning",
+      "container": "Nat Neurosci",
+      "published": [
+        [
+          2026,
+          4
+        ]
+      ],
+      "authors": [
+        "Burke",
+        "Taylor",
+        "Jeong",
+        "Lee",
+        "Zsembik",
+        "Wu",
+        "Floeder",
+        "Naik"
+      ],
+      "update_to": []
+    }
+  ],
+  "channel_B_publisher_page": {
+    "url": "https://www.nature.com/articles/10.1038/s41593-026-02425-7",
+    "retrieved_utc": "2026-10-18T10:18Z",
+    "dc_title_meta": "Publisher Correction: Duration between rewards controls the rate of behavioral and dopaminergic learning",
+    "correction_body_verbatim": "In the version of the article initially published, the raster plots in Fig. 4b (top row) were misaligned and have now been corrected in the HTML and PDF versions of the article, as seen in Fig. 1.",
+    "states_original_published": "12 February 2026"
+  },
+  "what_the_correction_changes": {
+    "figure": "Fig. 4b, top row raster plots (misalignment)",
+    "changed_media": [
+      "HTML",
+      "PDF"
+    ],
+    "numbers_changed": false,
+    "statistics_changed": false,
+    "text_conclusions_changed": false,
+    "authorship_changed": false
+  },
+  "m2a_usage_of_R14": {
+    "quoted_sentence_source": "m2a/literature/fulltext_review_log.md:35",
+    "quote": "\"removal of up to 19 out of 20 cue-reward experiences has zero impact... if total conditioning time is maintained\"",
+    "quote_is_body_text_not_figure": true,
+    "corpus_cites_fig_4b": false,
+    "corpus_cites_fig_4b_evidence": "grep of m2a/literature, 05, 06 for Fig/4b near R14/Burke: no match"
+  },
+  "verdict": {
+    "status": "ADJUDICATED (was: 未核定)",
+    "impact_on_m2a_quantitative_claim": "none",
+    "standing_qualification": "any future use of R14's Fig. 4b must cite the 2026-08-03 corrected version; the 2026-02-12 figure may not be read as data",
+    "verification_channels": 2
+  }
+}
