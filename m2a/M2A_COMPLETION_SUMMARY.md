@@ -149,8 +149,13 @@ experiments/  Phase II–IV 的预注册、门控、运行脚本、结果 JSON
 3. **流程新增**：跑实验前必须做一次代码 bug 检查（编译 / 端点除零 / 与已提交工件口径一致 / 生成过程逐字对照）。
    本轮它抓到 mask 分布写错（`3/8,3/8,1/4` 被写成等权 `1/3`）与 V-b 仪器规格同容差不自洽，均在读到结果前修正。
 
-**§7 提交记录的补充**：本机（Linux）**未安装 git**，`which git` 为空，`RailGuard/.venv` 亦为 Windows 布局；
-Phase V 的产物尚未按 `M2A_PROGRAM_PLAN.md` §5「分阶段提交」入库，待 owner 决定安装 git 或改用其他提交方式。
+**§7 提交记录的补充（已关闭，2026-10-18）**：owner 装好 git（`/usr/bin/git`，2.34.1）后，Phase V–VIII
+的工件已按 §5「分阶段提交」逐轮入库（V / V-b / V-c / V-d / VI / VII / VIII 各一个提交 + 一个共享文档提交），
+提交图见 `M2A_FINAL_REPORT.md` §15.5。原「未安装 git」的阻塞已解除；**未推送**（`master`，无 remote）。
+追加轮次的判定：VI `S1 过 / S2 REFUTED / S3 过`（轮次出口按 P6-A8 记 O-NONE，runner 原标签 O-REFUTED 为错标）、
+VII `E1 CONFIRMED`、VIII `E2 EXPONENT-NOT-MINUS-TWO`（轮次判定 QUALIFIED），
+细节在 `PHASE6_RESULTS.md`、`PHASE7_RESULTS.md`、`PHASE8_RESULTS.md` 与 `M2A_FINAL_REPORT.md` §11–§14。
+完成审计（10 套门控 69 项全绿、10/10 预注册哈希绑定、行尾改写事件）见 §15。
 
 
 ---
