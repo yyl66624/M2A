@@ -1,0 +1,74 @@
+{
+  "schema": "m2a.phase19.results.v1",
+  "prereg_sha256": "09f60ce3974985e9d8d474260ae0d277712adf331d80f2e27a91de9f65d31a5e",
+  "tolerance": 1e-12,
+  "criteria": {
+    "C19-1 ANCHOR": true,
+    "C19-2 TEST-DISCRIMINATES": true,
+    "C19-3 HYBRID-PASSES-BOTH": false,
+    "C19-4 DIRECTION": true
+  },
+  "anchor": {
+    "worst_abs_diff": 4.440892098500626e-16,
+    "per_mechanism": {
+      "M1": 4.440892098500626e-16,
+      "M2": 6.776263578034403e-21,
+      "M3": 0.0
+    },
+    "r7_ratio_tol_over_observed": 2251.799813685248
+  },
+  "pass_matrix": {
+    "M1": {
+      "A": false,
+      "B": true,
+      "spread_A": 1.9,
+      "max_spread_B": 0.0
+    },
+    "M2": {
+      "A": true,
+      "B": false,
+      "spread_A": 0.0,
+      "max_spread_B": 0.006737944937931844
+    },
+    "M3": {
+      "A": false,
+      "B": true,
+      "spread_A": 0.15413786988839592,
+      "max_spread_B": 0.0
+    }
+  },
+  "patterns": [
+    [
+      false,
+      true
+    ],
+    [
+      true,
+      false
+    ]
+  ],
+  "direction": {
+    "M1_min_step_over_n": 0.1,
+    "M2_spread_over_c": 0.006737944937931844
+  },
+  "exits": {
+    "E0 ANCHOR-BROKEN": false,
+    "E1 TEST-DISCRIMINATES": false,
+    "E4 DIRECTION-BROKEN": false,
+    "E2 TEST-VACUOUS": false,
+    "E3 TEST-UNSATISFIABLE": true
+  },
+  "exit": "E3 TEST-UNSATISFIABLE",
+  "prior_predictions_refuted": {
+    "M3_passes_A": {
+      "predicted_before_run": true,
+      "observed": false
+    },
+    "M3_passes_B": {
+      "predicted_before_run": true,
+      "observed": true
+    }
+  },
+  "exit_flags_true": 1,
+  "verdict": "E3 TEST-UNSATISFIABLE"
+}
