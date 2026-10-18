@@ -1,0 +1,116 @@
+{
+  "schema": "m2a.phase20.results.v1",
+  "prereg_sha256": "977156b51b75100db2ad3b517a2950877d15026c9832cd9c00c235a1ef11c23b",
+  "tolerance": {
+    "tol": 1e-12,
+    "sens": 1e-09
+  },
+  "criteria": {
+    "C20-1 ANCHOR": true,
+    "C20-2 FILTER-SEPARATES": true,
+    "C20-3 TEST-SATISFIABLE": true,
+    "C20-4 DIRECTION": true
+  },
+  "anchor": {
+    "worst_abs_diff": 4.440892098500626e-16,
+    "per_path": {
+      "M1|S": 4.440892098500626e-16,
+      "M1|V": 4.440892098500626e-16,
+      "M2|S": 6.776263578034403e-21,
+      "M2|V": 6.776263578034403e-21,
+      "M3|S": 0.0,
+      "M3|V": 0.0
+    },
+    "r7_ratio_tol_over_observed": 2251.799813685248
+  },
+  "spreads": {
+    "M1": {
+      "A_spread": 1.9,
+      "S_spread": 0.0,
+      "V_spread": 0.0
+    },
+    "M2": {
+      "A_spread": 0.0,
+      "S_spread": 0.006737944937931844,
+      "V_spread": 0.0
+    },
+    "M3": {
+      "A_spread": 0.15413786988839592,
+      "S_spread": 0.2908373971193024,
+      "V_spread": 0.0
+    }
+  },
+  "modes": {
+    "M1": [
+      false,
+      false,
+      true
+    ],
+    "M2": [
+      true,
+      true,
+      true
+    ],
+    "M3": [
+      false,
+      true,
+      true
+    ]
+  },
+  "distinct_modes": 3,
+  "pairwise_separable": true,
+  "direction": {
+    "M1_min_step_over_n": 0.1,
+    "M2_S_spread_over_sens": 6737944.937931844,
+    "M3_V_spread": 0.0
+  },
+  "prior_predictions_written_before_run": {
+    "M1": {
+      "predicted": [
+        false,
+        false,
+        true
+      ],
+      "observed": [
+        false,
+        false,
+        true
+      ],
+      "confirmed": true
+    },
+    "M2": {
+      "predicted": [
+        true,
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true,
+        true
+      ],
+      "confirmed": true
+    },
+    "M3": {
+      "predicted": [
+        false,
+        true,
+        true
+      ],
+      "observed": [
+        false,
+        true,
+        true
+      ],
+      "confirmed": true
+    }
+  },
+  "exits": {
+    "E0 ANCHOR-BROKEN": false,
+    "E1 FILTER-USABLE": true,
+    "E4 DIRECTION-BROKEN": false,
+    "E2 FILTER-INSENSIBLE": false,
+    "E3 TEST-UNSATISFIABLE": false
+  },
+  "exit": "E1 FILTER-USABLE"
+}
