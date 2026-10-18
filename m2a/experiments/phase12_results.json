@@ -1,0 +1,172 @@
+{
+ "schema": "m2a.phase12.results.v1",
+ "prereg_sha256": "2a95d2dd43580878a222f7213a167ed3a90286649f1513c7ffb682d1a0bd7c0a",
+ "candidates": {
+  "cornish_fisher_2sided": 0.568514484698471,
+  "cf_minus_lattice_2sided": -0.431485515301529,
+  "phase8_2sided": 1.137028969396942
+ },
+ "candidate_band": 0.3,
+ "fit": {
+  "e0_star": 0.53,
+  "max_track_error": 0.008904445502939007,
+  "distances": {
+   "cornish_fisher_2sided": 0.03851448469847096,
+   "cf_minus_lattice_2sided": 0.961485515301529,
+   "phase8_2sided": 0.607028969396942
+  },
+  "nearest": "cornish_fisher_2sided",
+  "big_family": [
+   0.7,
+   0.75,
+   0.8,
+   0.85,
+   0.9
+  ],
+  "meta": {
+   "grid_step": 0.0009999999999998899,
+   "objective_change_per_step": 3.953876370144105e-05,
+   "at_boundary": false,
+   "n_finite": 5001
+  }
+ },
+ "exponents": {
+  "at_fitted": -2.084778108474884,
+  "at_phase8": -2.0620339444849014,
+  "committed_phase8": -2.0620339444849014
+ },
+ "anchors": {
+  "rho_max_rel": 0.0,
+  "chord_abs_diff": 0.0
+ },
+ "branch": {
+  "cells": [
+   {
+    "s": 0.2,
+    "present": false,
+    "rho_low": null,
+    "rho_exact": 9.154361512184144,
+    "below_exact": null
+   },
+   {
+    "s": 0.3,
+    "present": false,
+    "rho_low": null,
+    "rho_exact": 14.435807235717775,
+    "below_exact": null
+   },
+   {
+    "s": 0.4,
+    "present": false,
+    "rho_low": null,
+    "rho_exact": 21.889721965789796,
+    "below_exact": null
+   },
+   {
+    "s": 0.5,
+    "present": false,
+    "rho_low": null,
+    "rho_exact": 33.7534245300293,
+    "below_exact": null
+   },
+   {
+    "s": 0.6,
+    "present": false,
+    "rho_low": null,
+    "rho_exact": 55.45141172790527,
+    "below_exact": null
+   },
+   {
+    "s": 0.7,
+    "present": false,
+    "rho_low": null,
+    "rho_exact": 103.98959546661376,
+    "below_exact": null
+   },
+   {
+    "s": 0.75,
+    "present": false,
+    "rho_low": null,
+    "rho_exact": 154.664008605957,
+    "below_exact": null
+   },
+   {
+    "s": 0.8,
+    "present": false,
+    "rho_low": null,
+    "rho_exact": 250.24501550292968,
+    "below_exact": null
+   },
+   {
+    "s": 0.85,
+    "present": false,
+    "rho_low": null,
+    "rho_exact": 454.28544082641605,
+    "below_exact": null
+   },
+   {
+    "s": 0.9,
+    "present": false,
+    "rho_low": null,
+    "rho_exact": 1041.382315246582,
+    "below_exact": null
+   }
+  ],
+  "no_second_branch": true
+ },
+ "nested": {
+  "cuts": [
+   {
+    "lambda_min": 10.0,
+    "n": 9,
+    "exp_phase8": -2.133496285413808,
+    "exp_fitted": -2.179323141822348
+   },
+   {
+    "lambda_min": 20.0,
+    "n": 8,
+    "exp_phase8": -2.112495548478022,
+    "exp_fitted": -2.151837538264852
+   },
+   {
+    "lambda_min": 50.0,
+    "n": 6,
+    "exp_phase8": -2.076755207111591,
+    "exp_fitted": -2.1044960011459253
+   },
+   {
+    "lambda_min": 100.0,
+    "n": 5,
+    "exp_phase8": -2.0620339444849014,
+    "exp_fitted": -2.084778108474884
+   },
+   {
+    "lambda_min": 200.0,
+    "n": 3,
+    "exp_phase8": -2.0470576831520484,
+    "exp_fitted": -2.0645520942729805
+   }
+  ],
+  "monotone": {
+   "phase8": true,
+   "fitted": true
+  },
+  "all_below_minus_two": true
+ },
+ "xc6_max_rel": 1.5343646510147694e-11,
+ "checks": {
+  "XC1_fitted_constant_matches_a_candidate": true,
+  "XC2_exponent_at_fitted_constant_not_minus_two": true,
+  "XC3_low_branch_is_artefact_or_absent": true,
+  "XC4_anchor_reproduces_phase8": true,
+  "XC5_nested_drift_monotone": true,
+  "XC6_diamond_extends_to_e1": true
+ },
+ "exit": "E1 CONFIRMED",
+ "exit_reason": "XC1-XC4 and XC6 pass; XC5 recorded as a finding",
+ "verdict": "SUPPORTED",
+ "runtime": {
+  "seconds": 0.0,
+  "sampling": "none (closed forms, committed exact instrument)"
+ }
+}
