@@ -42,5 +42,9 @@
   "same_sign": true,
   "reason": "SUPPORTS the single-direction claim only at the behavioural/gate level (a defeasible refusal gate that adversarial context switches off, exactly what the anchor's adversarial-suffix result predicts); N2 never inspects internal activations, so it neither confirms nor refutes the 'single direction' specificity and does not argue refusal is representationally distributed."
  },
- "notes": "Purely behavioural prompt-level study of 6 commercial LLMs (ChatGPT-4o, Perplexity, Gemini, Claude, Pi); no activation/steering analysis, so it bears no evidence on the representational count of directions. Cites the anchor in references. Authors' own limitation: no rigorous quantitative threshold for declaring a 'protocol failure'."
+ "notes": "Purely behavioural prompt-level study of 6 commercial LLMs (ChatGPT-4o, Perplexity, Gemini, Claude, Pi); no activation/steering analysis, so it bears no evidence on the representational count of directions. Cites the anchor in references. Authors' own limitation: no rigorous quantitative threshold for declaring a 'protocol failure'.",
+ "layers": [
+  "L4"
+ ],
+ "layers_provenance": "L01-D5: the protocol's §2 field list requires layers[], but the coding schema dropped it and l01_gate.py's field loop did not check it. Recovered by extracting exactly the L-tokens already present in motion_source, in first-mention order - no layer is invented here"
 }

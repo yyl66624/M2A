@@ -37,5 +37,10 @@
  "event_grammar": "[MOTION] harmful instruction raises expression of the residual-stream refusal direction r-hat --> [GATE] r-hat gates whether the harmful completion is emitted --> [ACTION/INACTION] r-hat present => REFUSE (inaction); r-hat ablated => COMPLY (action) --> [OUTCOME] safe vs unsafe completion --> [FEEDBACK] adversarial suffix suppresses r-hat by hijacking attention, re-opening the gate",
  "contradiction_ref": "C-04",
  "anchor_concordance": null,
- "notes": "Anchor under test; anchor_concordance set to null per protocol. Per 02 s2.1-6 the registered counter-evidence (C-04: Wollschlaeger et al. 2025 'Concept Cones'; Arditi's 13-model RLHF/DPO-only open-source sample) is co-registered on this G5-03 annotation even though the anchor itself contradicts no M2A claim (it is the claim C-04 targets). d_class kept D- to match the committed registry k_all=[K2]. Auxiliary K3 (D+) encodes the jailbreak path where attention competition releases the gate; the authors flag the direction's semantic meaning as unclear."
+ "notes": "Anchor under test; anchor_concordance set to null per protocol. Per 02 s2.1-6 the registered counter-evidence (C-04: Wollschlaeger et al. 2025 'Concept Cones'; Arditi's 13-model RLHF/DPO-only open-source sample) is co-registered on this G5-03 annotation even though the anchor itself contradicts no M2A claim (it is the claim C-04 targets). d_class kept D- to match the committed registry k_all=[K2]. Auxiliary K3 (D+) encodes the jailbreak path where attention competition releases the gate; the authors flag the direction's semantic meaning as unclear.",
+ "layers": [
+  "L2",
+  "L3"
+ ],
+ "layers_provenance": "L01-D5: the protocol's §2 field list requires layers[], but the coding schema dropped it and l01_gate.py's field loop did not check it. Recovered by extracting exactly the L-tokens already present in motion_source, in first-mention order - no layer is invented here"
 }

@@ -42,5 +42,10 @@
   "same_sign": true,
   "reason": "SUPPORTS the single-direction refusal claim: N1 cites the residual-stream single-direction result approvingly (its ref 33) and reports that insecure-code-finetuned models STILL refuse explicit harmful requests, so its diffuse 'emergent misalignment' concerns a different behaviour (misalignment, not refusal) and does not argue refusal is distributed."
  },
- "notes": "Diffuseness in N1 is about misalignment (SAE 'toxic persona' features, persona vectors, misalignment direction), never claimed to apply to refusal directions; base-model and grokking analyses included. Preprint Feb 2025; reviewed version is the 2026 Nature article (year set to 2026 for the version of record)."
+ "notes": "Diffuseness in N1 is about misalignment (SAE 'toxic persona' features, persona vectors, misalignment direction), never claimed to apply to refusal directions; base-model and grokking analyses included. Preprint Feb 2025; reviewed version is the 2026 Nature article (year set to 2026 for the version of record).",
+ "layers": [
+  "L3",
+  "L2"
+ ],
+ "layers_provenance": "L01-D5: the protocol's §2 field list requires layers[], but the coding schema dropped it and l01_gate.py's field loop did not check it. Recovered by extracting exactly the L-tokens already present in motion_source, in first-mention order - no layer is invented here"
 }

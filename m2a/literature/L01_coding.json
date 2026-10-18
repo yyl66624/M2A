@@ -1,8 +1,64 @@
 {
  "schema": "m2a.roundL01.coding.v1",
+ "vocabulary_usage": {
+  "k_primary": {
+   "K1": 1,
+   "K2": 6,
+   "K9": 1,
+   "K5": 8,
+   "K11": 1
+  },
+  "k_auxiliary": {
+   "K8": 2,
+   "K1": 3,
+   "K4": 2,
+   "K3": 1,
+   "K7": 1,
+   "K10": 3,
+   "K5": 4,
+   "K6": 4,
+   "K11": 1,
+   "K2": 4
+  },
+  "layers": {
+   "L3": 13,
+   "L2": 5,
+   "L4": 6,
+   "L5": 2,
+   "L1": 5,
+   "L6": 1,
+   "L0": 3
+  },
+  "d_class": {
+   "D+": 2,
+   "mixed": 5,
+   "D−": 7,
+   "value-only": 3
+  },
+  "term_type": {
+   "MIXED": 10,
+   "PAPER_TERM": 4,
+   "MAPPING": 3
+  },
+  "verification_level": {
+   "FULLTEXT_REVIEWED": 14,
+   "ABSTRACT_VERIFIED": 1,
+   "QUALIFIED": 2
+  },
+  "evidence_type": {
+   "causal_intervention": 8,
+   "observational": 2,
+   "interpretive": 6,
+   "simulation": 1
+  },
+  "provenance": {
+   "PAPER_CLAIM": 16,
+   "M2A_HYPOTHESIS": 1
+  }
+ },
  "protocol": "literature/L01_CODING_PROTOCOL.md",
  "protocol_sha256": "7e590b1d643dcba76a3d2a41606c8e11d5407fd179ed98faca2f9f5694abe4df",
- "git_ref": "849c703",
+ "git_ref": "6b61960",
  "upstream_artifacts": {
   "candidates_sha256": "b396ff69df72b7cfa90cc0c167ed7e4c85598e45b2ac1c93efe99d0bf3b90f45",
   "fulltexts_sha256": "bca84ed9db519a0b0aae880d99f0ce11fd2eee33303fbba4b2968e8f68461d51",
@@ -270,7 +326,12 @@
     "same_sign": true,
     "reason": "SUPPORTS the single-direction refusal claim: N1 cites the residual-stream single-direction result approvingly (its ref 33) and reports that insecure-code-finetuned models STILL refuse explicit harmful requests, so its diffuse 'emergent misalignment' concerns a different behaviour (misalignment, not refusal) and does not argue refusal is distributed."
    },
-   "notes": "Diffuseness in N1 is about misalignment (SAE 'toxic persona' features, persona vectors, misalignment direction), never claimed to apply to refusal directions; base-model and grokking analyses included. Preprint Feb 2025; reviewed version is the 2026 Nature article (year set to 2026 for the version of record)."
+   "notes": "Diffuseness in N1 is about misalignment (SAE 'toxic persona' features, persona vectors, misalignment direction), never claimed to apply to refusal directions; base-model and grokking analyses included. Preprint Feb 2025; reviewed version is the 2026 Nature article (year set to 2026 for the version of record).",
+   "layers": [
+    "L3",
+    "L2"
+   ],
+   "layers_provenance": "L01-D5: the protocol's §2 field list requires layers[], but the coding schema dropped it and l01_gate.py's field loop did not check it. Recovered by extracting exactly the L-tokens already present in motion_source, in first-mention order - no layer is invented here"
   },
   "G5-03-N2": {
    "sid": "G5-03-N2",
@@ -316,7 +377,11 @@
     "same_sign": true,
     "reason": "SUPPORTS the single-direction claim only at the behavioural/gate level (a defeasible refusal gate that adversarial context switches off, exactly what the anchor's adversarial-suffix result predicts); N2 never inspects internal activations, so it neither confirms nor refutes the 'single direction' specificity and does not argue refusal is representationally distributed."
    },
-   "notes": "Purely behavioural prompt-level study of 6 commercial LLMs (ChatGPT-4o, Perplexity, Gemini, Claude, Pi); no activation/steering analysis, so it bears no evidence on the representational count of directions. Cites the anchor in references. Authors' own limitation: no rigorous quantitative threshold for declaring a 'protocol failure'."
+   "notes": "Purely behavioural prompt-level study of 6 commercial LLMs (ChatGPT-4o, Perplexity, Gemini, Claude, Pi); no activation/steering analysis, so it bears no evidence on the representational count of directions. Cites the anchor in references. Authors' own limitation: no rigorous quantitative threshold for declaring a 'protocol failure'.",
+   "layers": [
+    "L4"
+   ],
+   "layers_provenance": "L01-D5: the protocol's §2 field list requires layers[], but the coding schema dropped it and l01_gate.py's field loop did not check it. Recovered by extracting exactly the L-tokens already present in motion_source, in first-mention order - no layer is invented here"
   },
   "G5-03-N4": {
    "sid": "G5-03-N4",
@@ -362,7 +427,12 @@
     "same_sign": false,
     "reason": "UNDERMINES only the universality, not the mechanism: N4 never analyses activations or directions, so it neither SUPPORTS nor refutes the representational single-direction claim, but its engineered refusal-like abstention is realised across multiple agents/components with no single internal direction at all - a system-level existence proof against 'must be one direction'."
    },
-   "notes": "CONFLICT with cluster placement, recorded QUALIFIED per 02 s2.1-3 / addendum-2: the assignment lists N4 as a 'Curated Dataset for Safety' refusal-direction paper, but the reviewed text is a CHI'26 mixed-methods in-the-wild field study (2,200 users, 116 countries) of World Bank's AVA RAG system on reasoned abstention / epistemic humility, never on LLM refusal directions. Its K9/K1 mechanism lives at L4-L5 (system design), not L2; coded faithfully as the paper's own 'abstention'/'threshold' terms (PAPER_TERM). same_sign=false flags only the weak universality challenge; no C-04 co-registration because the paper never argues about refusal representations. | L01-D2 correction: the QUALIFIED label was raised against a title quoted in the coding tasking note, not against the registered artifacts. Identity re-checked against L01_fulltexts.json + L01_verification.json (both channels agree, title overlap 1.0), so the ANNOTATION_ADDENDUM 增补 2 requirement is met and the level returns to FULLTEXT_REVIEWED. The tasking-note title error is a pipeline defect (X-64), not a property of the paper."
+   "notes": "CONFLICT with cluster placement, recorded QUALIFIED per 02 s2.1-3 / addendum-2: the assignment lists N4 as a 'Curated Dataset for Safety' refusal-direction paper, but the reviewed text is a CHI'26 mixed-methods in-the-wild field study (2,200 users, 116 countries) of World Bank's AVA RAG system on reasoned abstention / epistemic humility, never on LLM refusal directions. Its K9/K1 mechanism lives at L4-L5 (system design), not L2; coded faithfully as the paper's own 'abstention'/'threshold' terms (PAPER_TERM). same_sign=false flags only the weak universality challenge; no C-04 co-registration because the paper never argues about refusal representations. | L01-D2 correction: the QUALIFIED label was raised against a title quoted in the coding tasking note, not against the registered artifacts. Identity re-checked against L01_fulltexts.json + L01_verification.json (both channels agree, title overlap 1.0), so the ANNOTATION_ADDENDUM 增补 2 requirement is met and the level returns to FULLTEXT_REVIEWED. The tasking-note title error is a pipeline defect (X-64), not a property of the paper.",
+   "layers": [
+    "L4",
+    "L5"
+   ],
+   "layers_provenance": "L01-D5: the protocol's §2 field list requires layers[], but the coding schema dropped it and l01_gate.py's field loop did not check it. Recovered by extracting exactly the L-tokens already present in motion_source, in first-mention order - no layer is invented here"
   },
   "G5-03-N6": {
    "sid": "G5-03-N6",
@@ -408,7 +478,11 @@
     "same_sign": false,
     "reason": "UNDERMINES the single-direction claim: N6 agrees refusal is a universal separable mechanism (as the anchor [ref 13] shows) but demonstrates refusal is nonlinear and multidimensional, conjunctively defined by several principal components and varying by architecture/layer - i.e. NOT 'a single direction' - which is precisely the C-04 style counter-evidence."
    },
-   "notes": "same_sign here is concordance with the anchor's single-direction thesis (false = contradicts), independent of the shared D- gate d_axis. Method is dimensionality-reduction/GDV separability (PCA vs t-SNE vs UMAP), no activation ablation, so it contests the linear one-dimensional account at representation-topology level across 6 models / 3 families. Cites Arditi et al. [13] as the position it contests and Engels et al. [15] 'Not all language model features are linear'; NO 'Concept Cones' (Wollschlaeger) reference appears in this text."
+   "notes": "same_sign here is concordance with the anchor's single-direction thesis (false = contradicts), independent of the shared D- gate d_axis. Method is dimensionality-reduction/GDV separability (PCA vs t-SNE vs UMAP), no activation ablation, so it contests the linear one-dimensional account at representation-topology level across 6 models / 3 families. Cites Arditi et al. [13] as the position it contests and Engels et al. [15] 'Not all language model features are linear'; NO 'Concept Cones' (Wollschlaeger) reference appears in this text.",
+   "layers": [
+    "L2"
+   ],
+   "layers_provenance": "L01-D5: the protocol's §2 field list requires layers[], but the coding schema dropped it and l01_gate.py's field loop did not check it. Recovered by extracting exactly the L-tokens already present in motion_source, in first-mention order - no layer is invented here"
   },
   "G5-03": {
    "sid": "G5-03",
@@ -449,7 +523,12 @@
    "event_grammar": "[MOTION] harmful instruction raises expression of the residual-stream refusal direction r-hat --> [GATE] r-hat gates whether the harmful completion is emitted --> [ACTION/INACTION] r-hat present => REFUSE (inaction); r-hat ablated => COMPLY (action) --> [OUTCOME] safe vs unsafe completion --> [FEEDBACK] adversarial suffix suppresses r-hat by hijacking attention, re-opening the gate",
    "contradiction_ref": "C-04",
    "anchor_concordance": null,
-   "notes": "Anchor under test; anchor_concordance set to null per protocol. Per 02 s2.1-6 the registered counter-evidence (C-04: Wollschlaeger et al. 2025 'Concept Cones'; Arditi's 13-model RLHF/DPO-only open-source sample) is co-registered on this G5-03 annotation even though the anchor itself contradicts no M2A claim (it is the claim C-04 targets). d_class kept D- to match the committed registry k_all=[K2]. Auxiliary K3 (D+) encodes the jailbreak path where attention competition releases the gate; the authors flag the direction's semantic meaning as unclear."
+   "notes": "Anchor under test; anchor_concordance set to null per protocol. Per 02 s2.1-6 the registered counter-evidence (C-04: Wollschlaeger et al. 2025 'Concept Cones'; Arditi's 13-model RLHF/DPO-only open-source sample) is co-registered on this G5-03 annotation even though the anchor itself contradicts no M2A claim (it is the claim C-04 targets). d_class kept D- to match the committed registry k_all=[K2]. Auxiliary K3 (D+) encodes the jailbreak path where attention competition releases the gate; the authors flag the direction's semantic meaning as unclear.",
+   "layers": [
+    "L2",
+    "L3"
+   ],
+   "layers_provenance": "L01-D5: the protocol's §2 field list requires layers[], but the coding schema dropped it and l01_gate.py's field loop did not check it. Recovered by extracting exactly the L-tokens already present in motion_source, in first-mention order - no layer is invented here"
   },
   "R13-N15": {
    "sid": "R13-N15",
@@ -505,7 +584,12 @@
     "same_sign": true,
     "reason": "Independent (insect) system, same committed family and sign: a delayed post-ingestive reinforcer is bound back onto the recently sampled cue and suppresses re-consumption - supporting the anchor's mechanism at the level of the credit-assignment problem, though by retrospective memory updating rather than reactivation-driven stabilization."
    },
-   "notes": "Level capped at ABSTRACT_VERIFIED: the retrieved file is only the bioRxiv preview page (5,370 chars, abstract plus site boilerplate) - 'Abstract Full Text' tabs are present but no body text was obtained, so no mechanism paragraph beyond the abstract could be reviewed and no quantitative claim (times, effect sizes, n) may be made (02 2.1-7). evidence_type causal_intervention is inferred from the abstract's own manipulation language ('taught', 'suppress', 'invert', genetic/Toll pathway), not verified against the full text. Record is a preprint (posted 2025-10-22), not peer-reviewed, and it is a different animal model from the anchor, so its concordance is mechanism-level only, not a second-channel confirmation of the mammalian amygdala circuit. d_class mixed because the abstract's mechanism is explicitly bidirectional across the two trained odors."
+   "notes": "Level capped at ABSTRACT_VERIFIED: the retrieved file is only the bioRxiv preview page (5,370 chars, abstract plus site boilerplate) - 'Abstract Full Text' tabs are present but no body text was obtained, so no mechanism paragraph beyond the abstract could be reviewed and no quantitative claim (times, effect sizes, n) may be made (02 2.1-7). evidence_type causal_intervention is inferred from the abstract's own manipulation language ('taught', 'suppress', 'invert', genetic/Toll pathway), not verified against the full text. Record is a preprint (posted 2025-10-22), not peer-reviewed, and it is a different animal model from the anchor, so its concordance is mechanism-level only, not a second-channel confirmation of the mammalian amygdala circuit. d_class mixed because the abstract's mechanism is explicitly bidirectional across the two trained odors.",
+   "layers": [
+    "L3",
+    "L1"
+   ],
+   "layers_provenance": "L01-D5: the protocol's §2 field list requires layers[], but the coding schema dropped it and l01_gate.py's field loop did not check it. Recovered by extracting exactly the L-tokens already present in motion_source, in first-mention order - no layer is invented here"
   },
   "R13-N16": {
    "sid": "R13-N16",
@@ -561,7 +645,12 @@
     "same_sign": true,
     "reason": "The paper's primary contribution is a gate on the aversion pathway (K2/K4), not the delay-binding mechanism; its K5 entry (minute-to-hour delay window for CTA, citing the anchor as ref 51) agrees with the anchor's sign that delayed malaise still binds to produce avoidance."
    },
-   "notes": "d_class follows the PRIMARY mechanism only: the same GIPR agonism potentiates IL-1beta-induced anorexia via DVC GIPRs, so if 'act' were described as total food intake the record would code D-; the paper's headline is precisely that aversion and intake suppression are dissociable, and M2A must not read this paper as 'GIP restores eating' wholecloth. Fulltext is the NIHMS author manuscript (PMC13198203) of Cell Reports 45(4):117116, 2026 - quote offsets refer to that manuscript. Authors' own limits, recorded here: DVC Gipr knockdown was ~50% and virus spread to NTS, so they state it is 'impossible to determine for certain' that DVC GIPRs are dispensable for anti-aversion; they also argue the CTA assay itself has limited predictive validity for anti-aversive drugs, which weakens any CTA-based inference drawn from this cluster. Mechanistic pathway from GIPR+ inhibitory neurons to CGRP neurons is largely cited from refs 13/35/56, not established de novo here."
+   "notes": "d_class follows the PRIMARY mechanism only: the same GIPR agonism potentiates IL-1beta-induced anorexia via DVC GIPRs, so if 'act' were described as total food intake the record would code D-; the paper's headline is precisely that aversion and intake suppression are dissociable, and M2A must not read this paper as 'GIP restores eating' wholecloth. Fulltext is the NIHMS author manuscript (PMC13198203) of Cell Reports 45(4):117116, 2026 - quote offsets refer to that manuscript. Authors' own limits, recorded here: DVC Gipr knockdown was ~50% and virus spread to NTS, so they state it is 'impossible to determine for certain' that DVC GIPRs are dispensable for anti-aversion; they also argue the CTA assay itself has limited predictive validity for anti-aversive drugs, which weakens any CTA-based inference drawn from this cluster. Mechanistic pathway from GIPR+ inhibitory neurons to CGRP neurons is largely cited from refs 13/35/56, not established de novo here.",
+   "layers": [
+    "L1",
+    "L3"
+   ],
+   "layers_provenance": "L01-D5: the protocol's §2 field list requires layers[], but the coding schema dropped it and l01_gate.py's field loop did not check it. Recovered by extracting exactly the L-tokens already present in motion_source, in first-mention order - no layer is invented here"
   },
   "R13-N17": {
    "sid": "R13-N17",
@@ -617,7 +706,12 @@
     "same_sign": true,
     "reason": "The review's primary mechanism is an energetic-budget constraint (K11) rather than delay-binding; its single K5 sentence reports the anchor's own finding (delayed GI malaise pairing driving amygdalar aversion) with the same D- sign, but as a summary citation, not as its contribution."
    },
-   "notes": "Review, no new experiments; it synthesizes human, rodent and other-species literature and explicitly borrows motivational intensity theory (Richter/Gendolla) and predictive-interoception coding (Asya Lokshina et al. and others) as frameworks, so the D+/D- split is condition-dependent by construction - hence d_class mixed with entry-level signs. The K5 sentence is a one-sentence restatement of anchor R13 (their ref Zimmerman et al., 2025) and must NOT be counted as independent corroboration; the review's own framing is reward-phase/bioenergetic, not credit-assignment. Cross-species and human/animal analogies are interleaved (cardiac phase locked to reward in pigs, dogs, humans), so any transfer to M2A's model side is analogy-level; nothing here was coded SUPPORTED_MECHANISM. Uncoded candidate families (3-entry cap): K6 (baroreflex/gut-brain loops at satiation), K12 (Tinbergen-level 'evolved to prioritize rewarding stimuli aligning with bodily needs' - far cause, must not be mixed with near-cause per 02 2.1-2)."
+   "notes": "Review, no new experiments; it synthesizes human, rodent and other-species literature and explicitly borrows motivational intensity theory (Richter/Gendolla) and predictive-interoception coding (Asya Lokshina et al. and others) as frameworks, so the D+/D- split is condition-dependent by construction - hence d_class mixed with entry-level signs. The K5 sentence is a one-sentence restatement of anchor R13 (their ref Zimmerman et al., 2025) and must NOT be counted as independent corroboration; the review's own framing is reward-phase/bioenergetic, not credit-assignment. Cross-species and human/animal analogies are interleaved (cardiac phase locked to reward in pigs, dogs, humans), so any transfer to M2A's model side is analogy-level; nothing here was coded SUPPORTED_MECHANISM. Uncoded candidate families (3-entry cap): K6 (baroreflex/gut-brain loops at satiation), K12 (Tinbergen-level 'evolved to prioritize rewarding stimuli aligning with bodily needs' - far cause, must not be mixed with near-cause per 02 2.1-2).",
+   "layers": [
+    "L1",
+    "L3"
+   ],
+   "layers_provenance": "L01-D5: the protocol's §2 field list requires layers[], but the coding schema dropped it and l01_gate.py's field loop did not check it. Recovered by extracting exactly the L-tokens already present in motion_source, in first-mention order - no layer is invented here"
   },
   "R13-N2": {
    "sid": "R13-N2",
@@ -673,7 +767,12 @@
     "same_sign": true,
     "reason": "The review's own primary mechanism is a cell-type-specific suppression gate (K2), not delay-binding; its single K5 passage (learned avoidance despite delayed malaise, its ref 29 = the anchor) does carry the anchor's D- sign."
    },
-   "notes": "Review (Curr Opin Neurobiol): the paper reports no new experiments, every causal claim is a summary of cited studies, so provenance is PAPER_CLAIM at synthesis level and evidence_type interpretive. The K5 passage is a restatement of anchor R13 (its ref 29), NOT independent corroboration - it must not be counted as second-channel support. The most M2A-relevant content is the double dissociation (aversive vs non-aversive feeding suppression; nausea not necessary for GLP1R-agonist weight loss), which the review itself flags as unresolved: it is unclear whether these neurons sense endogenous GLP-1, and whether nausea mechanisms differ by cause (poisoning, pregnancy, chemotherapy, allergy)."
+   "notes": "Review (Curr Opin Neurobiol): the paper reports no new experiments, every causal claim is a summary of cited studies, so provenance is PAPER_CLAIM at synthesis level and evidence_type interpretive. The K5 passage is a restatement of anchor R13 (its ref 29), NOT independent corroboration - it must not be counted as second-channel support. The most M2A-relevant content is the double dissociation (aversive vs non-aversive feeding suppression; nausea not necessary for GLP1R-agonist weight loss), which the review itself flags as unresolved: it is unclear whether these neurons sense endogenous GLP-1, and whether nausea mechanisms differ by cause (poisoning, pregnancy, chemotherapy, allergy).",
+   "layers": [
+    "L1",
+    "L3"
+   ],
+   "layers_provenance": "L01-D5: the protocol's §2 field list requires layers[], but the coding schema dropped it and l01_gate.py's field loop did not check it. Recovered by extracting exactly the L-tokens already present in motion_source, in first-mention order - no layer is invented here"
   },
   "R13-N3": {
    "sid": "R13-N3",
@@ -729,7 +828,12 @@
     "same_sign": false,
     "reason": "Both records make K5 primary, but the anchor's delayed-feedback mechanism binds an outcome to produce REFUSAL of the paired food (D-), whereas this paper's allostasis uses prediction to INITIATE regulation ahead of the signal (coded D+ for its primary entry); the paper's own D- branch (effort withdrawal, apathy) sits in the K11/prediction-failure sections."
    },
-   "notes": "Science Advances conceptual review: no new data; the authors mark their own claims as proposals ('we propose', 'which we hypothesize'), so the record is PAPER_CLAIM at theoretical level and must not be escalated to SUPPORTED_MECHANISM. Its postoral-reinforcement passage restates the anchor's amygdalar reactivation account (their ref 200) and is therefore not independent evidence. Two strong candidates were dropped under the 3-entry cap: K2 (the brain 'inhibiting the activity of hunger neurons in response to food-predicting cues, before actual consumption') and K7 (the model 'stuck' in a previously adaptive state - hysteresis). Formal/quantitative claims are absent: precision-weighting is stated as a mathematical intuition (Fig. 3), so no L0 quantitative coding was made. Per 07-registry C-03, K5 and K6 are hung separately."
+   "notes": "Science Advances conceptual review: no new data; the authors mark their own claims as proposals ('we propose', 'which we hypothesize'), so the record is PAPER_CLAIM at theoretical level and must not be escalated to SUPPORTED_MECHANISM. Its postoral-reinforcement passage restates the anchor's amygdalar reactivation account (their ref 200) and is therefore not independent evidence. Two strong candidates were dropped under the 3-entry cap: K2 (the brain 'inhibiting the activity of hunger neurons in response to food-predicting cues, before actual consumption') and K7 (the model 'stuck' in a previously adaptive state - hysteresis). Formal/quantitative claims are absent: precision-weighting is stated as a mathematical intuition (Fig. 3), so no L0 quantitative coding was made. Per 07-registry C-03, K5 and K6 are hung separately.",
+   "layers": [
+    "L3",
+    "L4"
+   ],
+   "layers_provenance": "L01-D5: the protocol's §2 field list requires layers[], but the coding schema dropped it and l01_gate.py's field loop did not check it. Recovered by extracting exactly the L-tokens already present in motion_source, in first-mention order - no layer is invented here"
   },
   "R13-N8": {
    "sid": "R13-N8",
@@ -785,7 +889,14 @@
     "same_sign": true,
     "reason": "The clinical piece takes the anchor's own finding (its ref 14 = Zimmerman 2025) as the mechanism of food fear and reads it in the same direction: delayed post-ingestive distress binds to the food cue and suppresses eating."
    },
-   "notes": "Clinical viewpoint/review, not an empirical study: the mechanism evidence it leans on is mouse (its ref 14 = anchor R13) and the translational step to IBD patients is the authors' own inference from 'clinical experience'; treatment recommendations (exposure hierarchy, one risk factor at a time, stabilize symptoms first) are expert opinion with no controlled comparison, so nothing here may be coded beyond PAPER_CLAIM. contradiction_ref C-06: the paper's claim that an experience-driven amygdalar threat response is 'not highly responsive to rational, logical thought processes' is counter-evidence to the registered R16 side of C-06 (that perceived behavioral control / education can close the intention-behavior gap); it sides with G4-06. The K5 passage is a citation of the anchor, so it cannot be counted as independent support of R13. Also uncoded for the 3-entry cap: K7 hysteresis ('the brain must repeatedly be encouraged to be uncomfortable AND it requires an accumulation of successes'), and the paper's own acknowledgement that the same learning channel can drive APPROACH ('appetitive versus aversive behaviors'), which is why the record-level D- refers only to the coded fear/restriction branch."
+   "notes": "Clinical viewpoint/review, not an empirical study: the mechanism evidence it leans on is mouse (its ref 14 = anchor R13) and the translational step to IBD patients is the authors' own inference from 'clinical experience'; treatment recommendations (exposure hierarchy, one risk factor at a time, stabilize symptoms first) are expert opinion with no controlled comparison, so nothing here may be coded beyond PAPER_CLAIM. contradiction_ref C-06: the paper's claim that an experience-driven amygdalar threat response is 'not highly responsive to rational, logical thought processes' is counter-evidence to the registered R16 side of C-06 (that perceived behavioral control / education can close the intention-behavior gap); it sides with G4-06. The K5 passage is a citation of the anchor, so it cannot be counted as independent support of R13. Also uncoded for the 3-entry cap: K7 hysteresis ('the brain must repeatedly be encouraged to be uncomfortable AND it requires an accumulation of successes'), and the paper's own acknowledgement that the same learning channel can drive APPROACH ('appetitive versus aversive behaviors'), which is why the record-level D- refers only to the coded fear/restriction branch.",
+   "layers": [
+    "L3",
+    "L4",
+    "L5",
+    "L6"
+   ],
+   "layers_provenance": "L01-D5: the protocol's §2 field list requires layers[], but the coding schema dropped it and l01_gate.py's field loop did not check it. Recovered by extracting exactly the L-tokens already present in motion_source, in first-mention order - no layer is invented here"
   },
   "R13": {
    "sid": "R13",
@@ -836,7 +947,13 @@
    "event_grammar": "[MOTION] novel-flavor intake bout encoded in amygdala --> [GATE] novelty-dependent PKA eligibility trace admits only recent novel representations --> [INACTION] later refusal of that flavor in the two-bottle test --> [OUTCOME] poisoning avoided, representation stabilized at retrieval --> [FEEDBACK] delayed CGRP malaise reactivation re-enters the same ensemble on the next encounter",
    "contradiction_ref": null,
    "anchor_concordance": null,
-   "notes": "QUALIFIED for two documented conflicts with the Phase I registry row for R13, which was capped at ABSTRACT_VERIFIED: (1) registry d_class 'value-only' - the fulltext does make an action-direction claim (learned refusal of the paired flavor, one-trial, across several-hour delays), so D- is coded; (2) registry v_axis 'B+' glossed 'value learning' - under the 01_COMMON_DEFINITIONS 1.4 definition B+ means the condition RAISES the value of the action for the actor, whereas the malaise-driven mechanism LOWERS the paired flavor's value (B-); 'better learning' is an efficacy claim, not a B+ claim. Also: (3) file is the PMC/bioRxiv author-manuscript version of the Nature paper, so quote offsets and figure numbering refer to that manuscript; (4) the K2/PKA entry is the paper's own untested biochemical hypothesis, and the generalization to postingestive NUTRIENT (appetitive, D+) learning is stated by the authors as speculation, which is why d_class is not coded 'mixed'; (5) per 07-registry C-03 the delay parameter is not reducible to a feedback/value-size parameter, hence K5 and K6 are hung separately here rather than merged. No published rebuttal of the anchor mechanism was found in the cluster, so contradiction_ref stays null."
+   "notes": "QUALIFIED for two documented conflicts with the Phase I registry row for R13, which was capped at ABSTRACT_VERIFIED: (1) registry d_class 'value-only' - the fulltext does make an action-direction claim (learned refusal of the paired flavor, one-trial, across several-hour delays), so D- is coded; (2) registry v_axis 'B+' glossed 'value learning' - under the 01_COMMON_DEFINITIONS 1.4 definition B+ means the condition RAISES the value of the action for the actor, whereas the malaise-driven mechanism LOWERS the paired flavor's value (B-); 'better learning' is an efficacy claim, not a B+ claim. Also: (3) file is the PMC/bioRxiv author-manuscript version of the Nature paper, so quote offsets and figure numbering refer to that manuscript; (4) the K2/PKA entry is the paper's own untested biochemical hypothesis, and the generalization to postingestive NUTRIENT (appetitive, D+) learning is stated by the authors as speculation, which is why d_class is not coded 'mixed'; (5) per 07-registry C-03 the delay parameter is not reducible to a feedback/value-size parameter, hence K5 and K6 are hung separately here rather than merged. No published rebuttal of the anchor mechanism was found in the cluster, so contradiction_ref stays null.",
+   "layers": [
+    "L3",
+    "L1",
+    "L4"
+   ],
+   "layers_provenance": "L01-D5: the protocol's §2 field list requires layers[], but the coding schema dropped it and l01_gate.py's field loop did not check it. Recovered by extracting exactly the L-tokens already present in motion_source, in first-mention order - no layer is invented here"
   },
   "R14-N1": {
    "sid": "R14-N1",
@@ -882,7 +999,11 @@
     "same_sign": false,
     "reason": "Neither: it holds the cue-reward interval constant and degrades contingency, so it does not test that the interval sets the learning rate; it extends only the weaker cluster premise that dopamine tracks temporal contingency/reward-rate structure rather than the number of pairings, and it parameterises its trace with the mean inter-reward interval."
    },
-   "notes": "Expected-title conflict: the assignment named R14-N1 as 'Mesostriatal dopamine is sensitive to changes in the environmental cost of effort'; the cached file, literature/L01_fulltexts.json and literature/L01_verification.json all give '...specific cue-reward contingencies', and 'effort'/'cost' occur 0 times in the file - so the assignment title is wrong for this sid (recorded here, coded against the actual text). Not an independent test of the anchor claim: C/T ratios and reward rate were deliberately kept nearly unchanged during degradation, and the reported learning-rate sensitivity is only to local reward history. Authors state the TDRL account 'failed to show the sensitivity' and that ANCCR agreement is 'highly parameter-dependent'. Namboodiri is a co-author (shared lab with the anchor), so corroboration is not independent. | L01-D2 correction: the QUALIFIED label was raised against a title quoted in the coding tasking note, not against the registered artifacts. Identity re-checked against L01_fulltexts.json + L01_verification.json (both channels agree, title overlap 1.0), so the ANNOTATION_ADDENDUM 增补 2 requirement is met and the level returns to FULLTEXT_REVIEWED. The tasking-note title error is a pipeline defect (X-64), not a property of the paper."
+   "notes": "Expected-title conflict: the assignment named R14-N1 as 'Mesostriatal dopamine is sensitive to changes in the environmental cost of effort'; the cached file, literature/L01_fulltexts.json and literature/L01_verification.json all give '...specific cue-reward contingencies', and 'effort'/'cost' occur 0 times in the file - so the assignment title is wrong for this sid (recorded here, coded against the actual text). Not an independent test of the anchor claim: C/T ratios and reward rate were deliberately kept nearly unchanged during degradation, and the reported learning-rate sensitivity is only to local reward history. Authors state the TDRL account 'failed to show the sensitivity' and that ANCCR agreement is 'highly parameter-dependent'. Namboodiri is a co-author (shared lab with the anchor), so corroboration is not independent. | L01-D2 correction: the QUALIFIED label was raised against a title quoted in the coding tasking note, not against the registered artifacts. Identity re-checked against L01_fulltexts.json + L01_verification.json (both channels agree, title overlap 1.0), so the ANNOTATION_ADDENDUM 增补 2 requirement is met and the level returns to FULLTEXT_REVIEWED. The tasking-note title error is a pipeline defect (X-64), not a property of the paper.",
+   "layers": [
+    "L3"
+   ],
+   "layers_provenance": "L01-D5: the protocol's §2 field list requires layers[], but the coding schema dropped it and l01_gate.py's field loop did not check it. Recovered by extracting exactly the L-tokens already present in motion_source, in first-mention order - no layer is invented here"
   },
   "R14-N4": {
    "sid": "R14-N4",
@@ -918,7 +1039,12 @@
     "same_sign": true,
     "reason": "Neither supports nor contradicts: it is a methods-only contribution (an analysis instrument for trial-level temporal dynamics, validated by simulation and by reanalysing ANCCR-era data incl. a random inter-reward-interval reward experiment), so it bears on whether interval effects can be measured, not on whether the interval sets the learning rate."
    },
-   "notes": "Methods paper: contribution is statistical (functional linear mixed models, joint CIs, open-source package), and its own claims are about power, coverage and bias, not about mechanisms. Its reanalysis is data from other labs (Jeong et al. 2022; Coddington et al. 2023), and it explicitly cautions that its back-propagation reanalysis 'likely cannot be used to definitively rule out' the TDRL phenomenon; it also shows summary-measure results are sensitive to the chosen time-window, which is a caution for reading ITI/IRI effects off averaged traces. Year registered 2024 from OpenAlex while Crossref gives 2025 - verdict stays SECOND_CHANNEL_MISMATCH per L01_CODING_PROTOCOL sec.4 (venue first-issue vs version-of-record date); the year is not a criterion in this round."
+   "notes": "Methods paper: contribution is statistical (functional linear mixed models, joint CIs, open-source package), and its own claims are about power, coverage and bias, not about mechanisms. Its reanalysis is data from other labs (Jeong et al. 2022; Coddington et al. 2023), and it explicitly cautions that its back-propagation reanalysis 'likely cannot be used to definitively rule out' the TDRL phenomenon; it also shows summary-measure results are sensitive to the chosen time-window, which is a caution for reading ITI/IRI effects off averaged traces. Year registered 2024 from OpenAlex while Crossref gives 2025 - verdict stays SECOND_CHANNEL_MISMATCH per L01_CODING_PROTOCOL sec.4 (venue first-issue vs version-of-record date); the year is not a criterion in this round.",
+   "layers": [
+    "L2",
+    "L3"
+   ],
+   "layers_provenance": "L01-D5: the protocol's §2 field list requires layers[], but the coding schema dropped it and l01_gate.py's field loop did not check it. Recovered by extracting exactly the L-tokens already present in motion_source, in first-mention order - no layer is invented here"
   },
   "R14-N7": {
    "sid": "R14-N7",
@@ -974,7 +1100,13 @@
     "same_sign": false,
     "reason": "Extends and partly contradicts: it endorses interval-over-pairings (and cites Burke et al. 2023, the anchor's own preprint, for the eight-fewer-trials/same-training-time isomorphism, so that support is second-hand), but makes the controlling variable the informativeness/C-T ratio rather than the inter-reward interval, and it explicitly denies the eligibility-trace/dopamine mechanization the anchor relies on."
    },
-   "notes": "Theory/review article - no new experiments; its support for the cluster is conceptual plus a literature synthesis (Gibbon/Jenkins labs, Gottlieb, Balsam et al.). Two registered divergences from the anchor: (1) 'There are no windows of associability nor decaying eligibility traces' (offset 2192) contradicts the ANCCR trace mechanism the anchor's account requires; (2) it demands a trade-off test for any dopamine linkage hypothesis - 'One reinforcement with high informativeness must produce the same signal as several hundred with low informativeness' (offset ~127900) - and states that no proposed dopamine linkage hypothesis has been given such a test, which is a challenge to, not a confirmation of, the anchor's dopaminergic half. Bears on the K6 side of C-03. Its 'learning rate' is operationally the reciprocal of reinforcements to a conditioned response, which is not the same quantity as the anchor's per-experience acquisition slope."
+   "notes": "Theory/review article - no new experiments; its support for the cluster is conceptual plus a literature synthesis (Gibbon/Jenkins labs, Gottlieb, Balsam et al.). Two registered divergences from the anchor: (1) 'There are no windows of associability nor decaying eligibility traces' (offset 2192) contradicts the ANCCR trace mechanism the anchor's account requires; (2) it demands a trade-off test for any dopamine linkage hypothesis - 'One reinforcement with high informativeness must produce the same signal as several hundred with low informativeness' (offset ~127900) - and states that no proposed dopamine linkage hypothesis has been given such a test, which is a challenge to, not a confirmation of, the anchor's dopaminergic half. Bears on the K6 side of C-03. Its 'learning rate' is operationally the reciprocal of reinforcements to a conditioned response, which is not the same quantity as the anchor's per-experience acquisition slope.",
+   "layers": [
+    "L0",
+    "L2",
+    "L4"
+   ],
+   "layers_provenance": "L01-D5: the protocol's §2 field list requires layers[], but the coding schema dropped it and l01_gate.py's field loop did not check it. Recovered by extracting exactly the L-tokens already present in motion_source, in first-mention order - no layer is invented here"
   },
   "R14-N8": {
    "sid": "R14-N8",
@@ -1030,7 +1162,12 @@
     "same_sign": true,
     "reason": "Supports/extends the interval-controls-the-dopaminergic-timescale half of the claim (a different time-scale mechanism: ramp presence and slope as a readout of event rate), but never measures acquisition speed against the interval, so it does not independently test that the reward interval sets the behavioural learning rate."
    },
-   "notes": "Same laboratory, same ANCCR framework and same authors overlapping with the anchor (Namboodiri; cites Burke et al. 2023), so corroboration is not independent. The authors' own qualifications: the relation is 'not strictly controlled by the ITI, but by the frequency of repeating events'; trial-by-trial ITI history explains only a small fraction of ramp-slope variance; correlations between ramp slope and behaviour were largely absent and licking was similar across trial types; the function of ramps is explicitly left open and ramps were never manipulated, so the causal claim is only over the assigned environmental variable. Year registered 2024 (OpenAlex) vs 2025 (Crossref version of record) - verdict stays SECOND_CHANNEL_MISMATCH per L01_CODING_PROTOCOL sec.4 and the year is not used as a criterion."
+   "notes": "Same laboratory, same ANCCR framework and same authors overlapping with the anchor (Namboodiri; cites Burke et al. 2023), so corroboration is not independent. The authors' own qualifications: the relation is 'not strictly controlled by the ITI, but by the frequency of repeating events'; trial-by-trial ITI history explains only a small fraction of ramp-slope variance; correlations between ramp slope and behaviour were largely absent and licking was similar across trial types; the function of ramps is explicitly left open and ramps were never manipulated, so the causal claim is only over the assigned environmental variable. Year registered 2024 (OpenAlex) vs 2025 (Crossref version of record) - verdict stays SECOND_CHANNEL_MISMATCH per L01_CODING_PROTOCOL sec.4 and the year is not used as a criterion.",
+   "layers": [
+    "L3",
+    "L0"
+   ],
+   "layers_provenance": "L01-D5: the protocol's §2 field list requires layers[], but the coding schema dropped it and l01_gate.py's field loop did not check it. Recovered by extracting exactly the L-tokens already present in motion_source, in first-mention order - no layer is invented here"
   },
   "R14": {
    "sid": "R14",
@@ -1071,13 +1208,19 @@
    "event_grammar": "[MOTION] the environmental schedule delivers rewards separated by an assigned inter-reward interval (L0/L3) --> [GATE] the IRI-scaled retrospective dopaminergic update of the cue association until the behavioural threshold is crossed (L3/L0) --> [ACTION] cue-evoked anticipatory licking emerges after proportionally fewer experiences at long IRI / [INACTION] the up-to-19-of-20 removed pairings add nothing when total time is held constant (L4) --> [OUTCOME] cue-evoked licking and cue-evoked dopamine reach their asymptote after constant total conditioning time (L3/L4) --> [FEEDBACK] dopamine-mediated retrospective update of the cue-reward predecessor association (L3/L0)",
    "contradiction_ref": "C-03",
    "anchor_concordance": null,
-   "notes": "Quote byte-verification is against the cached bioRxiv/PMC preprint v2 (chars 136487 in literature/L01_fulltexts.json), not against the Nature Neuroscience version of record, and the preprint title differs from the registered published title - hence QUALIFIED, not FULLTEXT_REVIEWED, under addendum 2 requirement 1. Publisher Correction (DOI 10.1038/s41593-026-02425-7) touches only the alignment of Fig. 4b rasters and no quoted sentence (registered in source_verification_log.md sec.6 / v03_correction_check.json). Boundary condition stated by the authors: the proportional scaling 'breaks down at extreme IRIs' (3600 s ITI mice learned faster than 600 s but slower than predicted), so the claim holds over 30-600 s IRI, not as an unrestricted law. The paper also states its rule differs from the earlier ITI-to-cue-reward-interval ratio meta-analysis. Instrument note: quote_offset is the character index of a Python text-mode read (universal newlines), the convention that reproduces the chars=136487 figure in literature/L01_fulltexts.json; R14.txt carries 138 CRLF pairs, so a read with newline='' shifts the second offset from 42999 to 43005 (both quote strings contain no line break and are byte-identical under either read)."
+   "notes": "Quote byte-verification is against the cached bioRxiv/PMC preprint v2 (chars 136487 in literature/L01_fulltexts.json), not against the Nature Neuroscience version of record, and the preprint title differs from the registered published title - hence QUALIFIED, not FULLTEXT_REVIEWED, under addendum 2 requirement 1. Publisher Correction (DOI 10.1038/s41593-026-02425-7) touches only the alignment of Fig. 4b rasters and no quoted sentence (registered in source_verification_log.md sec.6 / v03_correction_check.json). Boundary condition stated by the authors: the proportional scaling 'breaks down at extreme IRIs' (3600 s ITI mice learned faster than 600 s but slower than predicted), so the claim holds over 30-600 s IRI, not as an unrestricted law. The paper also states its rule differs from the earlier ITI-to-cue-reward-interval ratio meta-analysis. Instrument note: quote_offset is the character index of a Python text-mode read (universal newlines), the convention that reproduces the chars=136487 figure in literature/L01_fulltexts.json; R14.txt carries 138 CRLF pairs, so a read with newline='' shifts the second offset from 42999 to 43005 (both quote strings contain no line break and are byte-identical under either read).",
+   "layers": [
+    "L3",
+    "L0"
+   ],
+   "layers_provenance": "L01-D5: the protocol's §2 field list requires layers[], but the coding schema dropped it and l01_gate.py's field loop did not check it. Recovered by extracting exactly the L-tokens already present in motion_source, in first-mention order - no layer is invented here"
   }
  },
  "defects_registered": {
   "L01-D1": "coding files used both 'D-' and 'D−' for the same enum value; unified to the protocol spelling (20 fields across 10 files), no reading changed",
   "L01-D2": "R14-N1 and G5-03-N4 were labelled QUALIFIED against titles quoted in the coding tasking note rather than against the registered artifacts; identity re-checked (both channels agree, overlap 1.0) and level restored. Caused by the tasking note, not by the papers",
   "L01-D3": "the §5 mechanical concordance (family + axis) cannot see a claim-level contradiction: G5-03-N6 argues refusal is NOT a single direction yet lists K2/D− as primary, so it is counted as concordant. Reported C=2 is therefore an upper bound for G5-03",
-  "L01-D4": "protocol §5 never defined how a 'neutral' anchor axis compares to a sign. Reading A (C_strict) treats neutral == neutral as agreement; reading B (C_signed) additionally refuses to count a same-family neighbour whose axis is neither equal nor opposite (the unclassifiable count). Both are computed for every anchor; the conservative label is taken per 02 §2.3. Numbers: R13 C_strict=2 C_signed=2 unclassifiable=0 labels INDETERMINATE/INDETERMINATE, G5-03 C_strict=2 C_signed=2 unclassifiable=0 labels INDETERMINATE/INDETERMINATE, R14 C_strict=2 C_signed=1 unclassifiable=1 labels INDETERMINATE/INDETERMINATE"
+  "L01-D4": "protocol §5 never defined how a 'neutral' anchor axis compares to a sign. Reading A (C_strict) treats neutral == neutral as agreement; reading B (C_signed) additionally refuses to count a same-family neighbour whose axis is neither equal nor opposite (the unclassifiable count). Both are computed for every anchor; the conservative label is taken per 02 §2.3. Numbers: R13 C_strict=2 C_signed=2 unclassifiable=0 labels INDETERMINATE/INDETERMINATE, G5-03 C_strict=2 C_signed=2 unclassifiable=0 labels INDETERMINATE/INDETERMINATE, R14 C_strict=2 C_signed=1 unclassifiable=1 labels INDETERMINATE/INDETERMINATE",
+  "L01-D5": "protocol §2 requires the frozen 02 §2.2 field set, which includes layers[], but the schema handed to the coding step omitted it AND the gate's required-field loop did not check it either, so the gap would have passed silently. Recovered deterministically: layers is now the set of L-tokens already present in each record's motion_source, and the gate fails on any layer not derivable from that carrier. No reading changed - layers is not an input to the §5 exit rule"
  }
 }

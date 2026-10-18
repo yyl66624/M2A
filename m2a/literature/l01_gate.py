@@ -127,9 +127,22 @@ def main():
         # ---- G5 enum conformance --------------------------------------------
         for f in ("verification_level", "evidence_type", "provenance", "term_type",
                   "description_scope", "motion_source", "d_class", "agency_class",
-                  "event_grammar"):
+                  "event_grammar", "layers"):
             if not str(r.get(f) or "").strip():
                 drift.append(f"{sid} empty field {f}")
+        # layers must be exactly the L-tokens already written in motion_source (L01-D5):
+        # a layer that is not derivable from the recorded carrier is an invented layer.
+        if sid in recs:
+            from_motion, seen = [], set()
+            for t in re.findall(r"L[0-6]", recs[sid].get("motion_source") or ""):
+                if t not in seen:
+                    seen.add(t); from_motion.append(t)
+            if sorted(r.get("layers") or []) != sorted(from_motion):
+                drift.append(f"{sid} layers {r.get('layers')} != motion_source tokens "
+                             f"{from_motion}")
+            for lay in r.get("layers") or []:
+                if lay not in L_OK:
+                    drift.append(f"{sid} layer {lay} outside L0..L6")
         if r.get("verification_level") not in LEVEL_OK:
             drift.append(f"{sid} bad verification_level {r.get('verification_level')}")
         if norm_axis(r.get("d_class")) not in D_OK:

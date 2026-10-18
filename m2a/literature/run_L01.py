@@ -109,12 +109,25 @@ def main():
                                               "readings are both printed, neither is discarded",
                          "per_neighbour": detail}
     total_m = sum(v["m"] for v in table.values())
+    usage = {"k_primary": {}, "k_auxiliary": {}, "layers": {}, "d_class": {}, "term_type": {},
+             "verification_level": {}, "evidence_type": {}, "provenance": {}}
+    for r in recs.values():
+        for j, m in enumerate(r["mechanism"]):
+            key = "k_primary" if (j == 0 or m.get("role") == "primary") else "k_auxiliary"
+            usage[key][m["k"]] = usage[key].get(m["k"], 0) + 1
+        for lay in r.get("layers", []):
+            usage["layers"][lay] = usage["layers"].get(lay, 0) + 1
+        for f, bucket in (("d_class", "d_class"), ("term_type", "term_type"),
+                          ("verification_level", "verification_level"),
+                          ("evidence_type", "evidence_type"), ("provenance", "provenance")):
+            usage[bucket][r[f]] = usage[bucket].get(r[f], 0) + 1
     round_label = ("NOT_IDENTIFIED" if total_m < 10 else
                    "INDETERMINATE" if all(v["label_reported"] == "INDETERMINATE"
                                           for v in table.values()) else
                    "MIXED-PER-ANCHOR (see per-anchor labels)")
 
     out = {"schema": "m2a.roundL01.coding.v1",
+           "vocabulary_usage": usage,
            "protocol": "literature/L01_CODING_PROTOCOL.md",
            "protocol_sha256": sha(prot),
            "git_ref": git_ref(),
@@ -154,7 +167,14 @@ def main():
                              f"{a} C_strict={v['C_strict']} C_signed={v['C_signed']} "
                              f"unclassifiable={v['unclassifiable_sign']} "
                              f"labels {v['label_strict']}/{v['label_signed_reading']}"
-                             for a, v in table.items())}}
+                             for a, v in table.items()),
+               "L01-D5": "protocol §2 requires the frozen 02 §2.2 field set, which includes "
+                         "layers[], but the schema handed to the coding step omitted it AND the "
+                         "gate's required-field loop did not check it either, so the gap would "
+                         "have passed silently. Recovered deterministically: layers is now the "
+                         "set of L-tokens already present in each record's motion_source, and "
+                         "the gate fails on any layer not derivable from that carrier. No "
+                         "reading changed - layers is not an input to the §5 exit rule"}}
     (LIT / "L01_coding.json").write_text(json.dumps(out, ensure_ascii=False, indent=1),
                                          encoding="utf-8")
     for a, v in table.items():

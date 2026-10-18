@@ -52,5 +52,10 @@
   "same_sign": true,
   "reason": "The review's own primary mechanism is a cell-type-specific suppression gate (K2), not delay-binding; its single K5 passage (learned avoidance despite delayed malaise, its ref 29 = the anchor) does carry the anchor's D- sign."
  },
- "notes": "Review (Curr Opin Neurobiol): the paper reports no new experiments, every causal claim is a summary of cited studies, so provenance is PAPER_CLAIM at synthesis level and evidence_type interpretive. The K5 passage is a restatement of anchor R13 (its ref 29), NOT independent corroboration - it must not be counted as second-channel support. The most M2A-relevant content is the double dissociation (aversive vs non-aversive feeding suppression; nausea not necessary for GLP1R-agonist weight loss), which the review itself flags as unresolved: it is unclear whether these neurons sense endogenous GLP-1, and whether nausea mechanisms differ by cause (poisoning, pregnancy, chemotherapy, allergy)."
+ "notes": "Review (Curr Opin Neurobiol): the paper reports no new experiments, every causal claim is a summary of cited studies, so provenance is PAPER_CLAIM at synthesis level and evidence_type interpretive. The K5 passage is a restatement of anchor R13 (its ref 29), NOT independent corroboration - it must not be counted as second-channel support. The most M2A-relevant content is the double dissociation (aversive vs non-aversive feeding suppression; nausea not necessary for GLP1R-agonist weight loss), which the review itself flags as unresolved: it is unclear whether these neurons sense endogenous GLP-1, and whether nausea mechanisms differ by cause (poisoning, pregnancy, chemotherapy, allergy).",
+ "layers": [
+  "L1",
+  "L3"
+ ],
+ "layers_provenance": "L01-D5: the protocol's §2 field list requires layers[], but the coding schema dropped it and l01_gate.py's field loop did not check it. Recovered by extracting exactly the L-tokens already present in motion_source, in first-mention order - no layer is invented here"
 }

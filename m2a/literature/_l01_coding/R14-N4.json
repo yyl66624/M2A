@@ -32,5 +32,10 @@
   "same_sign": true,
   "reason": "Neither supports nor contradicts: it is a methods-only contribution (an analysis instrument for trial-level temporal dynamics, validated by simulation and by reanalysing ANCCR-era data incl. a random inter-reward-interval reward experiment), so it bears on whether interval effects can be measured, not on whether the interval sets the learning rate."
  },
- "notes": "Methods paper: contribution is statistical (functional linear mixed models, joint CIs, open-source package), and its own claims are about power, coverage and bias, not about mechanisms. Its reanalysis is data from other labs (Jeong et al. 2022; Coddington et al. 2023), and it explicitly cautions that its back-propagation reanalysis 'likely cannot be used to definitively rule out' the TDRL phenomenon; it also shows summary-measure results are sensitive to the chosen time-window, which is a caution for reading ITI/IRI effects off averaged traces. Year registered 2024 from OpenAlex while Crossref gives 2025 - verdict stays SECOND_CHANNEL_MISMATCH per L01_CODING_PROTOCOL sec.4 (venue first-issue vs version-of-record date); the year is not a criterion in this round."
+ "notes": "Methods paper: contribution is statistical (functional linear mixed models, joint CIs, open-source package), and its own claims are about power, coverage and bias, not about mechanisms. Its reanalysis is data from other labs (Jeong et al. 2022; Coddington et al. 2023), and it explicitly cautions that its back-propagation reanalysis 'likely cannot be used to definitively rule out' the TDRL phenomenon; it also shows summary-measure results are sensitive to the chosen time-window, which is a caution for reading ITI/IRI effects off averaged traces. Year registered 2024 from OpenAlex while Crossref gives 2025 - verdict stays SECOND_CHANNEL_MISMATCH per L01_CODING_PROTOCOL sec.4 (venue first-issue vs version-of-record date); the year is not a criterion in this round.",
+ "layers": [
+  "L2",
+  "L3"
+ ],
+ "layers_provenance": "L01-D5: the protocol's §2 field list requires layers[], but the coding schema dropped it and l01_gate.py's field loop did not check it. Recovered by extracting exactly the L-tokens already present in motion_source, in first-mention order - no layer is invented here"
 }

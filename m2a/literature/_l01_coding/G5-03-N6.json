@@ -42,5 +42,9 @@
   "same_sign": false,
   "reason": "UNDERMINES the single-direction claim: N6 agrees refusal is a universal separable mechanism (as the anchor [ref 13] shows) but demonstrates refusal is nonlinear and multidimensional, conjunctively defined by several principal components and varying by architecture/layer - i.e. NOT 'a single direction' - which is precisely the C-04 style counter-evidence."
  },
- "notes": "same_sign here is concordance with the anchor's single-direction thesis (false = contradicts), independent of the shared D- gate d_axis. Method is dimensionality-reduction/GDV separability (PCA vs t-SNE vs UMAP), no activation ablation, so it contests the linear one-dimensional account at representation-topology level across 6 models / 3 families. Cites Arditi et al. [13] as the position it contests and Engels et al. [15] 'Not all language model features are linear'; NO 'Concept Cones' (Wollschlaeger) reference appears in this text."
+ "notes": "same_sign here is concordance with the anchor's single-direction thesis (false = contradicts), independent of the shared D- gate d_axis. Method is dimensionality-reduction/GDV separability (PCA vs t-SNE vs UMAP), no activation ablation, so it contests the linear one-dimensional account at representation-topology level across 6 models / 3 families. Cites Arditi et al. [13] as the position it contests and Engels et al. [15] 'Not all language model features are linear'; NO 'Concept Cones' (Wollschlaeger) reference appears in this text.",
+ "layers": [
+  "L2"
+ ],
+ "layers_provenance": "L01-D5: the protocol's §2 field list requires layers[], but the coding schema dropped it and l01_gate.py's field loop did not check it. Recovered by extracting exactly the L-tokens already present in motion_source, in first-mention order - no layer is invented here"
 }

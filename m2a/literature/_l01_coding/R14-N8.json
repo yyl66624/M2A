@@ -52,5 +52,10 @@
   "same_sign": true,
   "reason": "Supports/extends the interval-controls-the-dopaminergic-timescale half of the claim (a different time-scale mechanism: ramp presence and slope as a readout of event rate), but never measures acquisition speed against the interval, so it does not independently test that the reward interval sets the behavioural learning rate."
  },
- "notes": "Same laboratory, same ANCCR framework and same authors overlapping with the anchor (Namboodiri; cites Burke et al. 2023), so corroboration is not independent. The authors' own qualifications: the relation is 'not strictly controlled by the ITI, but by the frequency of repeating events'; trial-by-trial ITI history explains only a small fraction of ramp-slope variance; correlations between ramp slope and behaviour were largely absent and licking was similar across trial types; the function of ramps is explicitly left open and ramps were never manipulated, so the causal claim is only over the assigned environmental variable. Year registered 2024 (OpenAlex) vs 2025 (Crossref version of record) - verdict stays SECOND_CHANNEL_MISMATCH per L01_CODING_PROTOCOL sec.4 and the year is not used as a criterion."
+ "notes": "Same laboratory, same ANCCR framework and same authors overlapping with the anchor (Namboodiri; cites Burke et al. 2023), so corroboration is not independent. The authors' own qualifications: the relation is 'not strictly controlled by the ITI, but by the frequency of repeating events'; trial-by-trial ITI history explains only a small fraction of ramp-slope variance; correlations between ramp slope and behaviour were largely absent and licking was similar across trial types; the function of ramps is explicitly left open and ramps were never manipulated, so the causal claim is only over the assigned environmental variable. Year registered 2024 (OpenAlex) vs 2025 (Crossref version of record) - verdict stays SECOND_CHANNEL_MISMATCH per L01_CODING_PROTOCOL sec.4 and the year is not used as a criterion.",
+ "layers": [
+  "L3",
+  "L0"
+ ],
+ "layers_provenance": "L01-D5: the protocol's §2 field list requires layers[], but the coding schema dropped it and l01_gate.py's field loop did not check it. Recovered by extracting exactly the L-tokens already present in motion_source, in first-mention order - no layer is invented here"
 }
