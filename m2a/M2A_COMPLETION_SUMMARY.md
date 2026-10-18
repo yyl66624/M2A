@@ -155,7 +155,10 @@ experiments/  Phase II–IV 的预注册、门控、运行脚本、结果 JSON
 追加轮次的判定：VI `S1 过 / S2 REFUTED / S3 过`（轮次出口按 P6-A8 记 O-NONE，runner 原标签 O-REFUTED 为错标）、
 VII `E1 CONFIRMED`、VIII `E2 EXPONENT-NOT-MINUS-TWO`（轮次判定 QUALIFIED），
 细节在 `PHASE6_RESULTS.md`、`PHASE7_RESULTS.md`、`PHASE8_RESULTS.md` 与 `M2A_FINAL_REPORT.md` §11–§14。
-完成审计（10 套门控 69 项全绿、10/10 预注册哈希绑定、行尾改写事件）见 §15。
+追加两轮（均在既有合成授权内关闭 P7-O1/O2 与 P8-O1/O2）：IX `E1 CONFIRMED`
+（门槛常数只通过最大亚单位级水平 `L` 依赖级内聚合；对称系统的每级自由 θ 买不到任何东西）、
+X `E1 CONFIRMED`（更高阶加性平滑不能把指数带回 −2；单区间弦斜率可被一个常数伪装成 −2.000）。
+完成审计（**12** 套门控 **83** 项全绿、**12/12** 预注册哈希绑定、行尾改写事件）见 §15。
 
 
 ---
