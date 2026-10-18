@@ -1,0 +1,24 @@
+{
+ "schema": "m2a.phase6.reanalysis.v1",
+ "gates_the_verdict": false,
+ "registered_before_run": false,
+ "source_artifact_sha256": "199d259951b98c691fb68ed5cca841b9a452e0e272ad557e9d9e08e877d0bdaf",
+ "P6_A7_criterion3_direction_bug_in_runner": {
+  "runner_reported": false,
+  "recomputed_on_committed_rows": true,
+  "reading": "rho* 随 Delta 增大而单调不增（Delta 0.20->250.245, 0.75->11.844），注册表述成立",
+  "consequence": "runner 的 False 是假阴性；不据此改判 S2"
+ },
+ "P6_A8_outcome_table_incomplete": {
+  "runner_label": "O-REFUTED",
+  "correct_label": "O-NONE (three registered exits all inapplicable)",
+  "reason": "S2 的不符发生在幂指数与近似单调性上，不构成 O-REFUTED 所要求的符号/单调性矛盾"
+ },
+ "S2_verdict_unchanged": {
+  "S2_slope_minus_two": false,
+  "S2_error_nonincreasing_in_Lambda": false,
+  "S2_error_decays_at_least_2x": true,
+  "S2_monotone_in_gap": false
+ },
+ "what_this_document_adds": "nothing -- zero test status, no new cells, no re-judgement"
+}
