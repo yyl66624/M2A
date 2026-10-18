@@ -1,0 +1,62 @@
+{
+  "schema": "m2a.r7_closure.v1",
+  "rule": "R7 (report smallest distinguishable difference for known-value comparisons)",
+  "registered_before_run": false,
+  "status": "zero-test disclosure re-analysis; no verdict of any round is altered",
+  "checks": [
+    {
+      "check": "W2_q_cont_vs_committed_discrete_quantile",
+      "round": "Phase XIII",
+      "tolerance": 1.0,
+      "observed_max_difference": 0.763570604169928,
+      "unit": "count",
+      "ratio_tol_over_observed": 1.3096365870279838,
+      "instrument_own_floor": 1.0,
+      "floor_label": "one lattice step of the committed discrete helper",
+      "floor_over_tol_abs": 1.0,
+      "note": "tolerance equals the lattice step, so a variant off by exactly one count also passes; spare margin is only 0.2364 counts"
+    },
+    {
+      "check": "W5_rho_smooth_anchor_bit_exact",
+      "round": "Phase XIII",
+      "tolerance": 1e-09,
+      "observed_max_difference": 0.0,
+      "unit": "relative over 10 s-grid points",
+      "ratio_tol_over_observed": null,
+      "instrument_own_floor": 1e-09,
+      "floor_label": "absolute tolerance of the anchor path",
+      "floor_over_tol_abs": 1.0,
+      "note": "observed difference is exactly zero, so the ratio is undefined and -- per R14 -- a zero difference on a displacement ruler is not evidence of zero error; the honest statement is the floor itself: deviations below 1e-9 relative are invisible to this check"
+    },
+    {
+      "check": "G1_anchor_vs_committed_phase14_phase16",
+      "round": "Phase XVIII",
+      "tolerance": 1e-15,
+      "observed_max_difference": 0.0,
+      "unit": "relative over 63 cells (h=1.0, n=20001, sigma=0)",
+      "ratio_tol_over_observed": null,
+      "instrument_own_floor": 0.0009545151039348431,
+      "floor_label": "largest three-layer displacement the same instrument reports (L3 max)",
+      "floor_over_tol_abs": 954515103934.843,
+      "note": "the anchor can only flag a relative deviation above 1e-15; on the round's own scale (max |delta| = 8.3470e-02) that is 8.3470e-17 absolute, i.e. the anchor is 1.14e+13 times finer than the displacement floor it certifies: it certifies wiring, not accuracy",
+      "delta_scale_max": 0.08346971437218723,
+      "tolerance_absolute_equiv": 8.346971437218724e-17,
+      "floor_over_tolerance_at_scale": 11435466277968.898
+    },
+    {
+      "check": "G2_anchor_vs_committed_phase17_primary",
+      "round": "Phase XVIII",
+      "tolerance": 1e-15,
+      "observed_max_difference": 0.0,
+      "unit": "relative over 63 cells (h=2.0, n=40001, sigma=0)",
+      "ratio_tol_over_observed": null,
+      "instrument_own_floor": 0.0009545151039348431,
+      "floor_label": "largest three-layer displacement the same instrument reports (L3 max)",
+      "floor_over_tol_abs": 954515103934.843,
+      "note": "the anchor can only flag a relative deviation above 1e-15; on the round's own scale (max |delta| = 8.3470e-02) that is 8.3470e-17 absolute, i.e. the anchor is 1.14e+13 times finer than the displacement floor it certifies: it certifies wiring, not accuracy",
+      "delta_scale_max": 0.08346971437218723,
+      "tolerance_absolute_equiv": 8.346971437218724e-17,
+      "floor_over_tolerance_at_scale": 11435466277968.898
+    }
+  ]
+}
