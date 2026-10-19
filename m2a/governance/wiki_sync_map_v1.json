@@ -331,8 +331,8 @@
     },
     {
       "draft": "M2A-治理-wiki同步表v1.md",
-      "draft_chars": 2651,
-      "draft_sha256": "18903abd33c1e74b92a707a78a64bca179b9df65ed3b82c6a5fdea37ee9968c1",
+      "draft_chars": 3020,
+      "draft_sha256": "851c68b700ae1c5864709821e3107ab4750179855bf8b387d88b854ab251cba3",
       "markers": [
         "fail-open",
         "16/16",
@@ -341,7 +341,7 @@
       "markers_ok_recorded": true,
       "node_token": "IVrAw0pvoiJlSXkHMUGcc4Lon8d",
       "obj_token": "MBvtd1uNko7uwixdpWtcpB1ynig",
-      "read_back_chars_recorded": 3335,
+      "read_back_chars_recorded": 3774,
       "sections": [
         46
       ],
@@ -493,9 +493,9 @@
       "sha256": "5e561f829f5cc22263f5a7ce9c84d1e40e63ddaf63622087042a603481864ecb"
     },
     {
-      "bytes": 8082,
+      "bytes": 8199,
       "file": "feishu_wiki_nodes.json",
-      "sha256": "487d7e899d4f40c351a3124a406a3ad062b76e5bd71464b810986cb6124111a0"
+      "sha256": "2ba072f40d6375af39c0dcdd373fc63ac7c92b7877b94336684c2ed85c0873ee"
     }
   ],
   "unclaimed_sections": [],

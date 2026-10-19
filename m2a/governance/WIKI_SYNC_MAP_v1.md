@@ -50,7 +50,7 @@
 | M2A 治理｜runner 侧门控强制表 v1：红了 | M2A-治理-runner侧门控强制表v1.md | `8bbd08df18d5` | 4710 | True |
 | M2A 治理｜门控分数三方对账 v1：文档引用、仪器 | M2A-治理-门控分数三方对账v1.md | `2f6985ff6922` | 3672 | True |
 | M2A 治理｜未测量仪器的治理层检查 v1：10 台 | M2A-治理-未测量仪器的治理层检查v1.md | `22e26f364bad` | 6286 | True |
-| M2A 治理｜wiki 同步表 v1：让「每一步写入 | M2A-治理-wiki同步表v1.md | `18903abd33c1` | 3335 | True |
+| M2A 治理｜wiki 同步表 v1：让「每一步写入 | M2A-治理-wiki同步表v1.md | `851c68b700ae` | 3774 | True |
 
 ## 守门工具的指纹
 
@@ -58,7 +58,7 @@
 | --- | --- | --- |
 | `check_step_draft_numbers.py` | `7566443cdafe` | 19878 |
 | `publish_wiki_steps.py` | `5e561f829f5c` | 7312 |
-| `feishu_wiki_nodes.json` | `487d7e899d4f` | 8082 |
+| `feishu_wiki_nodes.json` | `2ba072f40d63` | 8199 |
 
 **这张表能看见什么、看不见什么**：它在四件事上立刻变红——新步骤节没有对应页面；
 页面草稿在发布后被改写（sha 变了）；守门脚本被改写；首批页面数目偏离钉住的 12。
