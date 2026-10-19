@@ -14,10 +14,14 @@ Checks (all mechanical):
   G6 every OPEN label has a registered reason (a placeholder string counts as missing)
   G7 the ledger's own counts add up: CLOSED + SUCCEEDED + OPEN == number of rows == number of labels
      found in the artifacts, and the namespace split sums to the same total
+  G8 a suite score quoted in the ledger's prose is the same score the closing report quotes for that
+     suite - added because the ledger said `gate_coverage_map_gate.py` 17/17 after that validator had
+     grown an eighteenth rule, i.e. a fail-closed artifact carried a stale number in its own text (X-83)
 """
 from __future__ import annotations
 
 import pathlib
+import re
 import subprocess
 import sys
 import tempfile
@@ -73,6 +77,19 @@ def main() -> int:
     total = sum(counts.values())
     report("G7 counts add up", total == len(rows) == len(set(r.split("|")[1].strip() for r in rows)),
            " ".join(s + "=" + str(counts[s]) for s in STATUSES) + " rows=" + str(len(rows)))
+
+    # Two prose documents must agree on every suite score the ledger cites. This catches drift between
+    # them, not a stale pair - the authoritative oracle stays the closing audit's per-suite line.
+    rep_text = (GOV.parent / "M2A_FINAL_REPORT.md").read_text(encoding="utf-8")
+    quoted = {f: a + "/" + b for f, a, b in
+              re.findall(r"python3\s+(?:[\w./]*/)?(\w+\.py)[^\n#]*#\s*(\d+)/(\d+)", rep_text)}
+    claims = re.findall(r"(\w+\.py)`?[^\n]{0,3}?(\d+)/(\d+)", text)
+    stale = [f + " " + a + "/" + b + " != report " + quoted.get(f, "absent")
+             for f, a, b in claims if quoted.get(f) != a + "/" + b]
+    report("G8 ledger prose quotes only suite scores the report also quotes",
+           bool(claims) and not stale,
+           f"{len(claims)} ledger claims vs {len(quoted)} report scores | "
+           + ("; ".join(stale[:3]) if stale else "all agree"))
 
     print(f"{ok}/{checks} checks passed")
     return 0 if ok == checks else 1
