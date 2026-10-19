@@ -5,6 +5,8 @@
 > **负面日志不参与判定**：`governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md` 记的是当时已知的缺陷，行序按事件号而非处置时间，若让它参与排序，一条 Phase VI 的事故会压过 Phase XVIII 的关闭。该文件仍计入提及与证据，只是不决定状态。
 > **双机制**：状态先由句子措辞推导（CLOSED / SUCCEEDED / OPEN），再与脚本内固定断言 `EXPECT` 逐条比对；不一致、断言句找不到或匹配多处、转手指向未关闭的后继、或出现无处置的新标签 ⇒ 构建失败并打印原因。台账因此不能悄悄漂移。
 > **出处是内容锚定而非写死行号**：断言记的是「文件 + 该句的特征片段」，行号在构建时解析。本仓库文档只追加不删改，中途插入一段就会让所有后续行号失效——这个失效模式在本脚本第一次改完正文后真实出现过。
+> **三个命名空间、三套措辞、三份承载工件**：`P<n>-O<m>`（实验轮）、`L01-O<m>`（文献轮 L-01）、`O-<nn>`（08 开放问题清单）。后两个命名空间此前**不在扫描范围内**，一条开放项可以从台账上消失而构建毫无察觉（`ROUND_L01_RESULTS.md` §9.6 登记，与 X-67 同源）。每个命名空间的措辞类别不同（文献侧写「待裁定 / 建议 / 需指定」而非「关闭 / 落实」），且**状态只由其承载判定措辞的那份工件决定**：`L01-O<m>` 只看 `literature/ROUND_L01_RESULTS.md`，`O-<nn>` 只看 `08_OPEN_QUESTIONS.md`（owner 2026-10-18 明示「状态字保持原样」）；其他文件的提及计入证据与漂移检测，但不得翻转状态。
+> **提及句数**按「提到该标签的句子数」计，同一句里重复出现只算一句（X-67 行内两次写到 `P16-O1`，此处计 1）；它衡量的是**散布度**不是出现次数，因此与旧版按出现次数计的读数会有±1 的差，状态列不受影响。
 > 证据为相对 `m2a/` 的 `路径:行号`，回指原文；本文件自身不参与扫描（否则会用自己当证据）。
 
 | 标签 | 状态 | 提及句数 | 判定出处（构建时解析） | 该句的措辞类别 | 承接标签 |
@@ -18,42 +20,84 @@
 | P7-O1 | **CLOSED** | 18 | `experiments/PHASE9_RESULTS.md:1` | 关闭类措辞 | — |
 | P7-O2 | **CLOSED** | 14 | `experiments/PHASE9_RESULTS.md:1` | 关闭类措辞 | — |
 | P7-O3 | **CLOSED** | 4 | `experiments/PHASE8_PREREGISTRATION.md:5` | 执行/沿用类措辞 | — |
-| P8-O1 | **CLOSED** | 27 | `M2A_FINAL_REPORT.md:531` | 关闭类措辞 | — |
-| P8-O2 | **CLOSED** | 15 | `M2A_FINAL_REPORT.md:531` | 关闭类措辞 | — |
+| P8-O1 | **CLOSED** | 27 | `M2A_FINAL_REPORT.md:538` | 关闭类措辞 | — |
+| P8-O2 | **CLOSED** | 15 | `M2A_FINAL_REPORT.md:538` | 关闭类措辞 | — |
 | P8-O3 | **CLOSED** | 1 | `M2A_PROGRAM_PLAN.md:118` | 关闭类措辞 | — |
-| P9-O1 | **CLOSED** | 15 | `M2A_FINAL_REPORT.md:568` | 关闭类措辞 | — |
-| P9-O2 | **CLOSED** | 10 | `M2A_FINAL_REPORT.md:568` | 关闭类措辞 | — |
-| P9-O3 | **CLOSED** | 6 | `M2A_FINAL_REPORT.md:594` | 关闭类措辞 | — |
-| P10-O1 | **CLOSED** | 15 | `M2A_FINAL_REPORT.md:606` | 关闭类措辞 | — |
-| P10-O2 | **CLOSED** | 9 | `M2A_FINAL_REPORT.md:606` | 关闭类措辞 | — |
-| P10-O3 | **CLOSED** | 5 | `M2A_FINAL_REPORT.md:600` | 关闭类措辞 | — |
-| P11-O1 | **OPEN** | 22 | `M2A_FINAL_REPORT.md:848` | 开放类措辞 | — |
-| P11-O2 | **SUCCEEDED** | 15 | `M2A_FINAL_REPORT.md:687` | 转手类措辞 | P13-O1 |
+| P9-O1 | **CLOSED** | 15 | `M2A_FINAL_REPORT.md:575` | 关闭类措辞 | — |
+| P9-O2 | **CLOSED** | 10 | `M2A_FINAL_REPORT.md:575` | 关闭类措辞 | — |
+| P9-O3 | **CLOSED** | 6 | `M2A_FINAL_REPORT.md:601` | 关闭类措辞 | — |
+| P10-O1 | **CLOSED** | 15 | `M2A_FINAL_REPORT.md:613` | 关闭类措辞 | — |
+| P10-O2 | **CLOSED** | 9 | `M2A_FINAL_REPORT.md:613` | 关闭类措辞 | — |
+| P10-O3 | **CLOSED** | 5 | `M2A_FINAL_REPORT.md:607` | 关闭类措辞 | — |
+| P11-O1 | **OPEN** | 22 | `M2A_FINAL_REPORT.md:855` | 开放类措辞 | — |
+| P11-O2 | **SUCCEEDED** | 15 | `M2A_FINAL_REPORT.md:694` | 转手类措辞 | P13-O1 |
 | P11-O3 | **CLOSED** | 13 | `experiments/PHASE13_RESULTS.md:28` | 关闭类措辞 | — |
 | P12-O1 | **SUCCEEDED** | 15 | `experiments/PHASE15_RESULTS.md:33` | 转手类措辞 | P13-O2 |
 | P12-O2 | **CLOSED** | 11 | `experiments/PHASE13_RESULTS.md:10` | 关闭类措辞 | — |
-| P12-O3 | **OPEN** | 17 | `M2A_FINAL_REPORT.md:848` | 开放类措辞 | — |
+| P12-O3 | **OPEN** | 17 | `M2A_FINAL_REPORT.md:855` | 开放类措辞 | — |
 | P13-O1 | **CLOSED** | 24 | `experiments/PHASE14_RESULTS.md:23` | 关闭类措辞 | — |
-| P13-O2 | **CLOSED** | 31 | `M2A_FINAL_REPORT.md:731` | 关闭类措辞 | — |
+| P13-O2 | **CLOSED** | 31 | `M2A_FINAL_REPORT.md:738` | 关闭类措辞 | — |
 | P14-O1 | **CLOSED** | 46 | `experiments/PHASE18_RESULTS.md:19` | 关闭类措辞 | — |
-| P15-O1 | **OPEN** | 8 | `M2A_FINAL_REPORT.md:848` | 开放类措辞 | — |
-| P16-O1 | **CLOSED** | 10 | `M2A_FINAL_REPORT.md:799` | 执行/沿用类措辞 | — |
+| P15-O1 | **OPEN** | 8 | `M2A_FINAL_REPORT.md:855` | 开放类措辞 | — |
+| P16-O1 | **CLOSED** | 11 | `M2A_FINAL_REPORT.md:806` | 执行/沿用类措辞 | — |
 | P17-O1 | **CLOSED** | 10 | `experiments/PHASE18_PREREGISTRATION.md:1` | 关闭类措辞 | — |
 | P19-O1 | **CLOSED** | 14 | `experiments/PHASE20_RESULTS.md:64` | 关闭类措辞 | — |
 | P20-O1 | **CLOSED** | 16 | `experiments/PHASE21_RESULTS.md:61` | 关闭类措辞 | — |
 | P21-O1 | **CLOSED** | 13 | `experiments/PHASE22_RESULTS.md:64` | 关闭类措辞 | — |
-| P22-O1 | **CLOSED** | 10 | `M2A_FINAL_REPORT.md:938` | 关闭类措辞 | — |
+| P22-O1 | **CLOSED** | 10 | `M2A_FINAL_REPORT.md:945` | 关闭类措辞 | — |
+| L01-O1 | **OPEN** | 6 | `literature/ROUND_L01_RESULTS.md:68` | 开放类措辞 | — |
+| L01-O2 | **OPEN** | 4 | `literature/ROUND_L01_RESULTS.md:103` | 开放类措辞 | — |
+| L01-O3 | **OPEN** | 1 | `literature/ROUND_L01_RESULTS.md:105` | 开放类措辞 | — |
+| L01-O4 | **OPEN** | 2 | `literature/ROUND_L01_RESULTS.md:88` | 开放类措辞 | — |
+| L01-O5 | **OPEN** | 5 | `literature/ROUND_L01_RESULTS.md:107` | 开放类措辞 | — |
+| O-01 | **OPEN** | 7 | `08_OPEN_QUESTIONS.md:7` | 开放类措辞 | — |
+| O-02 | **OPEN** | 1 | `08_OPEN_QUESTIONS.md:9` | 开放类措辞 | — |
+| O-03 | **OPEN** | 20 | `08_OPEN_QUESTIONS.md:11` | 开放类措辞 | — |
+| O-04 | **OPEN** | 1 | `08_OPEN_QUESTIONS.md:13` | 开放类措辞 | — |
+| O-05 | **OPEN** | 1 | `08_OPEN_QUESTIONS.md:15` | 开放类措辞 | — |
+| O-06 | **OPEN** | 9 | `08_OPEN_QUESTIONS.md:20` | 开放类措辞 | — |
+| O-07 | **OPEN** | 11 | `08_OPEN_QUESTIONS.md:22` | 开放类措辞 | — |
+| O-08 | **OPEN** | 1 | `08_OPEN_QUESTIONS.md:24` | 开放类措辞 | — |
+| O-09 | **OPEN** | 2 | `08_OPEN_QUESTIONS.md:26` | 开放类措辞 | — |
+| O-10 | **OPEN** | 1 | `08_OPEN_QUESTIONS.md:31` | 开放类措辞 | — |
+| O-11 | **OPEN** | 2 | `08_OPEN_QUESTIONS.md:32` | 开放类措辞 | — |
+| O-12 | **OPEN** | 5 | `08_OPEN_QUESTIONS.md:34` | 开放类措辞 | — |
+| O-13 | **OPEN** | 3 | `08_OPEN_QUESTIONS.md:39` | 开放类措辞 | — |
+| O-14 | **OPEN** | 8 | `08_OPEN_QUESTIONS.md:41` | 开放类措辞 | — |
+| O-15 | **OPEN** | 16 | `08_OPEN_QUESTIONS.md:43` | 开放类措辞 | — |
 
 ---
 
-**计数**：CLOSED 28 / SUCCEEDED 2 / OPEN 4 / UNCLASSIFIED 0，共 34 条标签。
+**计数**：CLOSED 28 / SUCCEEDED 2 / OPEN 24 / UNCLASSIFIED 0，共 54 条标签。命名空间分布：实验轮 `P<n>-O<m>` 34 条、文献轮 `L01-O<m>` 5 条、开放问题 `O-<nn>` 15 条。
 
-## 仍开放（都需要本轮之外的授权或决定，脚本无权替 owner 关闭）
+## 仍开放（每条都必须带登记原因；缺原因即构建失败）
 
 - **P5-O3**：三个以上独立系统的跨域复验——真实数据未授权；owner 2026-10-18 第 3 条裁定「继续停留在设计阶段」。
 - **P11-O1**：测度口径：静默事件与发放事件互为补集 ⇒ 双侧窗口塌缩。**已裁定**采用 Action Opportunity 统一分析单位（owner 第 1 条），协议设计稿见 `report/AO_MEASUREMENT_PROTOCOL_v1.md`；但正式实验未被自动批准，判据也未写进预注册 ⇒ 本条仍开放。
 - **P12-O3**：发放事件一侧的测度口径，同上：协议 §2 给出 `I(o)` 候选形式，预注册与读数尚未做 ⇒ 仍开放。
 - **P15-O1**：`e₁` 只给单侧界。**已裁定**保留单侧界并按 `NOT_IDENTIFIED`/`PARTIALLY_IDENTIFIED` 记录（owner 第 2、7 条），不得改目标函数制造双侧结论 ⇒ 本条作为「双侧估计」的诉求已放弃，但作为「双侧可识别」的证据缺口仍在册。
+
+- **L01-O1**：注册层 R13/R14 标注与全文读数的分歧：升为全文级须由一次带**新判据**的轮次决定，不在本轮权限内。`registry.json` 仍 0 条 FULLTEXT（第 8 条禁止回写）。
+- **L01-O2**：一致性判据只到「族 + 符号」，看不见主张层反证（L01-D3：G5-03-N6 主张拒绝**不是**单方向却计入 `C`）⇒ 改为「族 + 符号 + 主张层关系」须**先注册后跑**，再对本轮 17 条做零检验地位重判读（不重跑、不改原工件，R6）。
+- **L01-O3**：`neutral` 轴的零值处理与符号比较口径未在注册时定死（L01-D4）：两种读法并行计算后取更保守标签，「保守序」本身成了未测分支 ⇒ 须与纪律规则 R14 同形地在注册时决定。
+- **L01-O4**：竞争理论《Concept Cones》已取得题录与 OA 地址（`L01_verification.json` 的 `competing_theory_channel_L01_A1`），但**全文编码与正反证同表计票未做** ⇒ 须另开一轮并预先规定口径。
+- **L01-O5**：R13-N15 端点只返回 bioRxiv 预览页（5 370 字符，403/无全文）⇒ 按 `ANNOTATION_ADDENDUM` 增补 3 保持 `ABSTRACT_VERIFIED`，不得以摘要冒充全文；不可得原因已记录，升级路径未定。
+
+- **O-01**：K4 协同族单薄：Phase I′ 补入 7 条后仍为 3/8，缺口已被改判为**结构性**而非检索性（`M2A_FINAL_REPORT.md` §2 第 3 条）⇒ 检索建议已执行，条目诉求（取得因果级协同证据）未达。
+- **O-02**：K10 角色重排族单薄：由 2/8 升到 4/8，说明缺口**部分**是检索造成的，方向仍一半混合 ⇒ 未闭合。
+- **O-03**：K9 在物理化学层零覆盖：工作假设「省略需表征系统」仍未获得无表征系统中的反例 ⇒ 开放。
+- **O-04**：非英语学术传统未覆盖（现象学行动理论、日文行动论、中文知行哲学）：全库 106 条均为英文载体 ⇒ 开放。
+- **O-05**：法学实证未覆盖：G7-07（Hart）仅为概念基线，合规行为研究缺位 ⇒ 开放。
+- **O-06**：设计已交付（`report/O06_MOTION_SOURCE_DESIGN.md`：四格决策表 + D1–D4 观测量 + 判别力自检），但条目原意为「仅设计，不实施」，其**裁定**仍需真实数据或人体/动物实验，章程 §0.2.5 未授权 ⇒ 开放。
+- **O-07**：AGGREGATE 的本体地位：owner 第 5 条把它暂定「派生聚合表示」并写入词表 v1 标 `PROVISIONAL`，`report/MECHANISM_VOCABULARY_v1.md` 明确「没有替 owner 决定本体问题」⇒ 措辞可用、推论受限，本体问题开放。
+- **O-08**：习惯的行动地位已按「描述相对性」程序化处理，但批量标注所需更细的分描述判定流程未建 ⇒ 开放。
+- **O-09**：双稳态数学分类：K7 内部至少含鞍结分岔/亚稳切换/振荡三类，当前 K 族粒度不足以区分，子标签未设 ⇒ 开放。
+- **O-10**：结构化检索缺失：升级系统综述时才补 PRISMA-S 全项，本轮未做 ⇒ 开放。
+- **O-11**：全文编码缺失：L-01 已对 3 锚点 + 14 邻域做全文编码（42 条逐字引文），仍低于条目建议的 20–30 条核心子集，且三簇全部判 `INDETERMINATE` ⇒ 「校准 K 族标注」的目标未达成，本条保持开放。
+- **O-12**：量化合成未做：现有计票是**记录数**的方向性票，不是效应量；跨域合并被明确禁止（`literature/PRELIMINARY_CONCLUSIONS_V2.md` §3）⇒ 开放。
+- **O-13**：核验级别升级路径：owner 第 4 条已**执行**建议的优先级子集（R13/G5-03/R14），但条目要求的「升级预算与全库优先级」未定，且 `registry.json` 仍 0 条 FULLTEXT ⇒ 开放。
+- **O-14**：DROPPED-CANDIDATE 复池：owner 第 5 条把复核人指派给独立审查 Agent（三条候选 Wald 1949 / Waddington 1957 / Redgrave 1999 需双源题录），复池审查本身未做 ⇒ 开放，且不在本 Agent 的 §2 范围内。
+- **O-15**：词表治理：v1 草案已交付（`report/MECHANISM_VOCABULARY_v1.md`，owner 第 5 条的 Agent 通道），但版本化治理流程与责任人决定未落地，`AGGREGATE` 仍为 `PROVISIONAL`，且推导器查出的方向列拼写漂移（X-70）只登记未清洗 ⇒ 开放。
 
 ## 转手关闭（不是在原标签上关闭，如实记为 SUCCEEDED）
 

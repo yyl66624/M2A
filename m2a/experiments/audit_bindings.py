@@ -16,10 +16,14 @@ ROOT = EXP.parent.parent
 
 
 def suites():
-    """Gate suites live in experiments/, and the Phase I'-gate suites live in literature/.
-    Absolute paths, so the list is independent of the cwd the suite is launched from."""
-    lit = ROOT / "m2a" / "literature"
-    found = [str(p) for p in EXP.glob("*gate*.py")] + [str(p) for p in lit.glob("*gate*.py")]
+    """Gate suites live in experiments/, the Phase I'-gate suites live in literature/, and the
+    governance-ledger suite lives in governance/. Absolute paths, so the list is independent of the
+    cwd the suite is launched from. Every suite must print `n/n checks passed` - the parser here
+    reads that line, so the output format is part of the contract (X-68)."""
+    m2a = ROOT / "m2a"
+    found = [str(p) for p in EXP.glob("*gate*.py")]
+    for sub in ("literature", "governance"):
+        found += [str(p) for p in (m2a / sub).glob("*gate*.py")]
     return sorted(found)
 
 

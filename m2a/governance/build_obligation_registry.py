@@ -69,10 +69,68 @@ EXPECT = {
     "P20-O1": ("CLOSED", "close", "experiments/PHASE21_RESULTS.md", "扩族后检验仍可分且唯一性可判", None),
     "P21-O1": ("CLOSED", "close", "experiments/PHASE22_RESULTS.md", "逐族报告三列并判定", None),
     "P22-O1": ("CLOSED", "close", "M2A_FINAL_REPORT.md", "已以推导关闭", None),
+    # --- literature round L-01: all five are preconditions for round L-02, none disposed here
+    # (ROUND_L01_RESULTS.md §9 is the status-bearing artifact for this namespace)
+    "L01-O1": ("OPEN", "block", "literature/ROUND_L01_RESULTS.md", "分歧登记为开放项", None),
+    "L01-O2": ("OPEN", "block", "literature/ROUND_L01_RESULTS.md", "主张层关系", None),
+    "L01-O3": ("OPEN", "block", "literature/ROUND_L01_RESULTS.md", "轴的零值处理", None),
+    "L01-O4": ("OPEN", "block", "literature/ROUND_L01_RESULTS.md", "竞争理论全文编码须另开一轮", None),
+    "L01-O5": ("OPEN", "block", "literature/ROUND_L01_RESULTS.md", "全文仍不可得", None),
+    # --- core open-questions list (08): the status words there are kept as written; owner
+    # 2026-10-18 froze them (`O-01…O-15` 的状态字保持原样), so nothing here is closed in place
+    "O-01": ("OPEN", "block", "08_OPEN_QUESTIONS.md", "K4 协同族单薄", None),
+    "O-02": ("OPEN", "block", "08_OPEN_QUESTIONS.md", "K10 角色重排族单薄", None),
+    "O-03": ("OPEN", "block", "08_OPEN_QUESTIONS.md", "K9 在物理化学层零覆盖", None),
+    "O-04": ("OPEN", "block", "08_OPEN_QUESTIONS.md", "非英语学术传统未覆盖", None),
+    "O-05": ("OPEN", "block", "08_OPEN_QUESTIONS.md", "仅为概念基线", None),
+    "O-06": ("OPEN", "block", "08_OPEN_QUESTIONS.md", "填充规则待裁定", None),
+    "O-07": ("OPEN", "block", "08_OPEN_QUESTIONS.md", "待框架 v0.3 裁定", None),
+    "O-08": ("OPEN", "block", "08_OPEN_QUESTIONS.md", "需要更细的分描述判定流程", None),
+    "O-09": ("OPEN", "block", "08_OPEN_QUESTIONS.md", "粒度不足以区分", None),
+    "O-10": ("OPEN", "block", "08_OPEN_QUESTIONS.md", "结构化检索缺失", None),
+    "O-11": ("OPEN", "block", "08_OPEN_QUESTIONS.md", "全文编码缺失", None),
+    "O-12": ("OPEN", "block", "08_OPEN_QUESTIONS.md", "量化合成未做", None),
+    "O-13": ("OPEN", "block", "08_OPEN_QUESTIONS.md", "需明确升级预算", None),
+    "O-14": ("OPEN", "block", "08_OPEN_QUESTIONS.md", "需指定复核人", None),
+    "O-15": ("OPEN", "block", "08_OPEN_QUESTIONS.md", "需决定治理责任人", None),
 }
 CLASS = {"close": CLOSE, "adopt": ADOPT, "hand": HAND, "block": BLOCK}
 
-LABEL = re.compile(r"P\d{1,2}-O\d")
+# --- namespaces ---------------------------------------------------------------
+# Three label namespaces live in the artifacts. Until 2026-10-19 only one of them was in scope
+# here, so `L01-O*` and `O-01…O-15` could be absent from the ledger without the build noticing —
+# registered as ROUND_L01_RESULTS.md §9.6, same root cause as X-67.
+# Each namespace gets (a) its own wording classes, because the literature side writes dispositions
+# as 「待裁定 / 建议 / 需指定」rather than 「关闭 / 落实」, and (b) its own status-bearing artifact,
+# because X-67/X-71 established that a disposition must live in the artifact that carries the
+# judgement. For these two namespaces that artifact is the open-questions list and the round's own
+# results document, not the cumulative report.
+def ns_of(key):
+    return "P" if key.startswith("P") else ("L01" if key.startswith("L01") else "O")
+
+
+NAMESPACES = {
+    "P": re.compile(r"P\d{1,2}-O\d"),
+    "L01": re.compile(r"L01-O\d"),
+    "O": re.compile(r"O-\d{2}"),
+}
+CLOSE_LIT = re.compile(r"已关闭|已裁定|已完成|已落实|已入册|已升级")
+ADOPT_LIT = re.compile(r"已执行|已采纳|已覆盖|写入纪律")
+BLOCK_LIT = re.compile(r"未|无|不|须|需|待|建议|缺口|空白|单薄|缺失|不足以|仅为|零覆盖|仍|不可比"
+                       r"|保持原样|需指定|待裁定")
+CLOSE_L01 = re.compile(r"已关闭|已完成|已裁定|已落实")
+ADOPT_L01 = re.compile(r"已执行|已交付|已覆盖")
+BLOCK_L01 = re.compile(r"需|须|不|先注册|待修|另开|仍|开放项")
+CLASS_NS = {
+    "P": {"close": CLOSE, "adopt": ADOPT, "hand": HAND, "block": BLOCK},
+    "L01": {"close": CLOSE_L01, "adopt": ADOPT_L01, "hand": HAND, "block": BLOCK_L01},
+    "O": {"close": CLOSE_LIT, "adopt": ADOPT_LIT, "hand": HAND, "block": BLOCK_LIT},
+}
+# None = every document may decide status (the experiment namespace, unchanged). A path = only that
+# document decides, everything else counts as a mention and as evidence but cannot flip a status.
+STATUS_FILE = {"P": None, "L01": "literature/ROUND_L01_RESULTS.md", "O": "08_OPEN_QUESTIONS.md"}
+
+LABEL = NAMESPACES["P"]
 BOUNDARY = re.compile(r"[，,。；;！!？?]")
 ARROW = re.compile(r"→|->")
 JOIN = re.compile(r"[\s`/／与和及\-—–()（）*·]*")
@@ -82,13 +140,26 @@ JOIN = re.compile(r"[\s`/／与和及\-—–()（）*·]*")
 STATUS_SKIP = {"governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md"}
 
 
+def label_sort(s):
+    """Namespace first, then round/number. The experiment namespace keeps exactly its previous
+    order; the two literature namespaces follow it. The key this replaced matched only `P<digits>`
+    and raised on anything else, which is how an escaping namespace also became a crash."""
+    n = ns_of(s)
+    if n == "P":
+        m = re.match(r"P(\d+)-O(\d)", s)
+        return (0, int(m.group(1)), int(m.group(2)))
+    if n == "L01":
+        return (1, 0, int(s.split("-O")[1]))
+    return (2, 0, int(s.split("-")[1]))
+
+
 def order(path, ln):
     """Sort key: phase rounds by round number, cumulative documents last, then path, then line."""
     m = re.search(r"PHASE(\d{1,3})", path)
     return (int(m.group(1)) if m else 999, path, ln)
 
 
-def attaches(sent, key, pat, window=60):
+def attaches(sent, key, pat, window=None):
     """True if `pat` matches within `window` chars of an occurrence of `key` and is syntactically
     linked to *that* label rather than to a neighbour.
 
@@ -100,9 +171,14 @@ def attaches(sent, key, pat, window=60):
       "`P14-O1` 仍开放（→ `P17-O1`）" would otherwise leak a verdict onto the wrong label;
     * a *following* verdict may have free text in between, as long as no un-glued label intervenes
       ("`P11-O1`/`P12-O3` 测度口径（须先重定义判据，属模型类决策）").
+    * only labels of the *same namespace* count as neighbours: `O-14` sitting between `P15-O1` and a
+      verdict must not break the gluing test for an experiment label.
     """
+    if window is None:
+        window = WIN[ns_of(key)]
     kpos = [(m.start(), m.end()) for m in re.finditer(re.escape(key), sent)]
-    others = sorted((m.start(), m.end()) for m in LABEL.finditer(sent) if m.group(0) != key)
+    pat_ns = NAMESPACES[ns_of(key)]
+    others = sorted((m.start(), m.end()) for m in pat_ns.finditer(sent) if m.group(0) != key)
     for w in pat.finditer(sent):
         for i, k_end in kpos:
             lo, hi = min(i, w.start()), max(i, w.start())
@@ -136,8 +212,9 @@ def successor(sent, key):
     """The label this sentence hands `key` over to, or None. Directional on purpose: in
     "`P14-O1` 仍开放（→ `P17-O1`）" the hand-over belongs to P14-O1 and must not make P17-O1 look
     like it was itself handed on."""
+    pat_ns = NAMESPACES[ns_of(key)]
     for i in (m.start() for m in re.finditer(re.escape(key), sent)):
-        labs = sorted((m.start(), m.end(), m.group(0)) for m in LABEL.finditer(sent)
+        labs = sorted((m.start(), m.end(), m.group(0)) for m in pat_ns.finditer(sent)
                       if m.group(0) != key)
         for a in ARROW.finditer(sent):
             if a.start() <= i or any(i < l[0] < a.start() for l in labs):
@@ -154,37 +231,82 @@ def successor(sent, key):
     return None
 
 
+ALL_LABEL = re.compile(r"\b(?:P\d{1,2}-O\d|L01-O\d|O-\d{2})\b")
+ITEM_START = re.compile(r"^\s*(?:[-*]|\d+\.)\s+")
+WIN = {"P": 60, "L01": 160, "O": 160}
+
+
+def units(rel, lines):
+    """Yield (line, unit) - the sentence-like windows a disposition is read from.
+
+    Outside a status file: one unit per sentence per line. That is the experiment-round behaviour
+    and it is deliberately unchanged.
+
+    Inside a status file: one unit per bullet / numbered item, with its continuation lines joined.
+    `08_OPEN_QUESTIONS.md` and `ROUND_L01_RESULTS.md` §9 hold exactly one obligation per item and
+    break a long item across lines, so a line-local window would cut the label off from the wording
+    that disposes of it (that is what made `L01-O2` and `L01-O5` unclassifiable on first run)."""
+    if rel not in STATUS_FILE.values():
+        for ln, line in enumerate(lines, 1):
+            for sent in SENT.split(line):
+                s = sent.strip()
+                if s:
+                    yield ln, s
+        return
+    cur, start = [], 0
+    for ln, line in enumerate(lines, 1):
+        if ITEM_START.match(line):
+            if cur:
+                yield start, re.sub(r"\s+", " ", " ".join(cur)).strip()
+            cur, start = [line], ln
+        elif line.strip() and cur and not line.startswith("#"):
+            cur.append(line)
+        else:
+            if cur:
+                yield start, re.sub(r"\s+", " ", " ".join(cur)).strip()
+                cur, start = [], 0
+            # headings and running prose keep the per-line windows used elsewhere, so a label that
+            # appears *only* in prose is still collected - and then fails as having no disposition
+            for sent in SENT.split(line):
+                s = sent.strip()
+                if s:
+                    yield ln, s
+    if cur:
+        yield start, re.sub(r"\s+", " ", " ".join(cur)).strip()
+
+
 def collect():
     labels = {}
     for f in sorted(list(M.rglob("*.md")) + list(M.rglob("*.json"))):
         if f.name == SELF:
             continue  # the registry must never cite itself
         rel = str(f.relative_to(M))
-        for ln, line in enumerate(f.read_text(encoding="utf-8", errors="replace").splitlines(), 1):
-            for sent in SENT.split(line):
-                sent = sent.strip()
-                if not sent:
-                    continue
-                for a, b in re.findall(r"\bP(\d{1,2})-O(\d)\b", sent):
-                    labels.setdefault("P" + a + "-O" + b, []).append((rel, ln, sent, order(rel, ln)))
+        lines = f.read_text(encoding="utf-8", errors="replace").splitlines()
+        for ln, sent in units(rel, lines):
+            for key in set(m.group(0) for m in ALL_LABEL.finditer(sent)):
+                labels.setdefault(key, []).append((rel, ln, sent, order(rel, ln)))
     return labels
 
 
 def derive(key, hits):
+    n = ns_of(key)
+    cls, sf = CLASS_NS[n], STATUS_FILE[n]
     pos, neg = [], []
     for h in hits:
-        if h[0] in STATUS_SKIP:
+        # a status-bearing namespace reads its disposition from one artifact; every other mention
+        # is evidence and is counted, but may not flip the status
+        if h[0] in STATUS_SKIP or (sf is not None and h[0] != sf):
             continue
         s = h[2]
-        if CLOSE.search(s) and attaches(s, key, CLOSE):
+        if cls["close"].search(s) and attaches(s, key, cls["close"]):
             pos.append((h, "close"))
-        elif ADOPT.search(s) and attaches(s, key, ADOPT):
+        elif cls["adopt"].search(s) and attaches(s, key, cls["adopt"]):
             pos.append((h, "adopt"))
         else:
             succ = successor(s, key)
             if succ and EXPECT.get(succ, ("?",))[0] in ("CLOSED", "SUCCEEDED"):
                 pos.append((h, "hand"))
-        if BLOCK.search(s) and attaches(s, key, BLOCK):
+        if cls["block"].search(s) and attaches(s, key, cls["block"]):
             neg.append(h)
     pos.sort(key=lambda ca: ca[0][3])
     neg.sort(key=lambda h: h[3])
@@ -201,11 +323,10 @@ def resolve(key, rel, snippet):
     if not path.is_file():
         return None, "file missing: " + rel
     found = []
-    for ln, line in enumerate(path.read_text(encoding="utf-8", errors="replace").splitlines(), 1):
-        for sent in SENT.split(line):
-            sent = sent.strip()
-            if key in sent and snippet in sent:
-                found.append((ln, sent))
+    lines = path.read_text(encoding="utf-8", errors="replace").splitlines()
+    for ln, sent in units(rel, lines):
+        if key in sent and snippet in sent:
+            found.append((ln, sent))
     if not found:
         return None, "no sentence in " + rel + " mentions both " + key + " and " + repr(snippet)
     if len(found) > 1:
@@ -228,7 +349,7 @@ def check_pins():
                 errors.append(key + ": sentence " + rel + ":" + str(ln) + " hands over to "
                               + str(got) + ", pin says " + str(succ))
                 continue
-        elif not attaches(sent, key, CLASS[cls]):
+        elif not attaches(sent, key, CLASS_NS[ns_of(key)][cls]):
             errors.append(key + ": sentence " + rel + ":" + str(ln) + " has " + cls
                           + " wording but not attached to this label")
             continue
@@ -254,8 +375,7 @@ def main():
         raise SystemExit(2)
 
     rows, mismatches = [], []
-    for key in sorted(labels, key=lambda s: (int(re.match(r"P(\d+)", s).group(1)),
-                                             int(s.split("O")[1]))):
+    for key in sorted(labels, key=label_sort):
         status, cls, cite, succ = resolved[key]
         dv, ev = derive(key, labels[key])
         if dv != status:
@@ -277,6 +397,15 @@ def main():
            "台账因此不能悄悄漂移。",
            "> **出处是内容锚定而非写死行号**：断言记的是「文件 + 该句的特征片段」，行号在构建时解析。"
            "本仓库文档只追加不删改，中途插入一段就会让所有后续行号失效——这个失效模式在本脚本第一次改完正文后真实出现过。",
+           "> **三个命名空间、三套措辞、三份承载工件**：`P<n>-O<m>`（实验轮）、`L01-O<m>`（文献轮 L-01）、"
+           "`O-<nn>`（08 开放问题清单）。后两个命名空间此前**不在扫描范围内**，一条开放项可以从台账上消失而构建"
+           "毫无察觉（`ROUND_L01_RESULTS.md` §9.6 登记，与 X-67 同源）。每个命名空间的措辞类别不同（文献侧写"
+           "「待裁定 / 建议 / 需指定」而非「关闭 / 落实」），且**状态只由其承载判定措辞的那份工件决定**："
+           "`L01-O<m>` 只看 `literature/ROUND_L01_RESULTS.md`，`O-<nn>` 只看 `08_OPEN_QUESTIONS.md`"
+           "（owner 2026-10-18 明示「状态字保持原样」）；其他文件的提及计入证据与漂移检测，但不得翻转状态。",
+           "> **提及句数**按「提到该标签的句子数」计，同一句里重复出现只算一句（X-67 行内两次写到 "
+           "`P16-O1`，此处计 1）；它衡量的是**散布度**不是出现次数，因此与旧版按出现次数计的读数会有"
+           "±1 的差，状态列不受影响。",
            "> 证据为相对 `m2a/` 的 `路径:行号`，回指原文；本文件自身不参与扫描（否则会用自己当证据）。", "",
            "| 标签 | 状态 | 提及句数 | 判定出处（构建时解析） | 该句的措辞类别 | 承接标签 |",
            "| --- | --- | --- | --- | --- | --- |"]
@@ -287,10 +416,7 @@ def main():
     closed = [r[0] for r in rows if r[1] == "CLOSED"]
     succ_rows = [r[0] for r in rows if r[1] == "SUCCEEDED"]
     openi = [r[0] for r in rows if r[1] == "OPEN"]
-    out += ["", "---", "",
-            "**计数**：CLOSED " + str(len(closed)) + " / SUCCEEDED " + str(len(succ_rows))
-            + " / OPEN " + str(len(openi)) + " / UNCLASSIFIED 0，共 " + str(len(rows)) + " 条标签。", "",
-            "## 仍开放（都需要本轮之外的授权或决定，脚本无权替 owner 关闭）", ""]
+    unk = [r[0] for r in rows if r[1] == "UNCLASSIFIED"]
     reasons = {
         "P5-O3": "三个以上独立系统的跨域复验——真实数据未授权；owner 2026-10-18 第 3 条裁定「继续停留在设计阶段」。",
         "P11-O1": "测度口径：静默事件与发放事件互为补集 ⇒ 双侧窗口塌缩。**已裁定**采用 Action Opportunity "
@@ -300,9 +426,65 @@ def main():
         "P15-O1": "`e₁` 只给单侧界。**已裁定**保留单侧界并按 `NOT_IDENTIFIED`/`PARTIALLY_IDENTIFIED` 记录"
                   "（owner 第 2、7 条），不得改目标函数制造双侧结论 ⇒ 本条作为「双侧估计」的诉求已放弃，"
                   "但作为「双侧可识别」的证据缺口仍在册。",
+        # --- L-01：五条都是 L-02 的前置，本轮无权处置（owner 第 4 条只批到 14 篇编码 + 核验 + 竞争理论）
+        "L01-O1": "注册层 R13/R14 标注与全文读数的分歧：升为全文级须由一次带**新判据**的轮次决定，"
+                  "不在本轮权限内。`registry.json` 仍 0 条 FULLTEXT（第 8 条禁止回写）。",
+        "L01-O2": "一致性判据只到「族 + 符号」，看不见主张层反证（L01-D3：G5-03-N6 主张拒绝**不是**单方向却计入 `C`）"
+                  "⇒ 改为「族 + 符号 + 主张层关系」须**先注册后跑**，再对本轮 17 条做零检验地位重判读（不重跑、"
+                  "不改原工件，R6）。",
+        "L01-O3": "`neutral` 轴的零值处理与符号比较口径未在注册时定死（L01-D4）：两种读法并行计算后取更保守标签，"
+                  "「保守序」本身成了未测分支 ⇒ 须与纪律规则 R14 同形地在注册时决定。",
+        "L01-O4": "竞争理论《Concept Cones》已取得题录与 OA 地址（`L01_verification.json` 的 "
+                  "`competing_theory_channel_L01_A1`），但**全文编码与正反证同表计票未做** ⇒ 须另开一轮并预先规定口径。",
+        "L01-O5": "R13-N15 端点只返回 bioRxiv 预览页（5 370 字符，403/无全文）⇒ 按 `ANNOTATION_ADDENDUM` 增补 3 "
+                  "保持 `ABSTRACT_VERIFIED`，不得以摘要冒充全文；不可得原因已记录，升级路径未定。",
+        # --- 08 开放问题清单：owner 2026-10-18 明示「状态字保持原样」，故没有任何一条就地关闭
+        "O-01": "K4 协同族单薄：Phase I′ 补入 7 条后仍为 3/8，缺口已被改判为**结构性**而非检索性"
+                "（`M2A_FINAL_REPORT.md` §2 第 3 条）⇒ 检索建议已执行，条目诉求（取得因果级协同证据）未达。",
+        "O-02": "K10 角色重排族单薄：由 2/8 升到 4/8，说明缺口**部分**是检索造成的，方向仍一半混合 ⇒ 未闭合。",
+        "O-03": "K9 在物理化学层零覆盖：工作假设「省略需表征系统」仍未获得无表征系统中的反例 ⇒ 开放。",
+        "O-04": "非英语学术传统未覆盖（现象学行动理论、日文行动论、中文知行哲学）：全库 106 条均为英文载体 ⇒ 开放。",
+        "O-05": "法学实证未覆盖：G7-07（Hart）仅为概念基线，合规行为研究缺位 ⇒ 开放。",
+        "O-06": "设计已交付（`report/O06_MOTION_SOURCE_DESIGN.md`：四格决策表 + D1–D4 观测量 + 判别力自检），"
+                "但条目原意为「仅设计，不实施」，其**裁定**仍需真实数据或人体/动物实验，章程 §0.2.5 未授权 ⇒ 开放。",
+        "O-07": "AGGREGATE 的本体地位：owner 第 5 条把它暂定「派生聚合表示」并写入词表 v1 标 `PROVISIONAL`，"
+                "`report/MECHANISM_VOCABULARY_v1.md` 明确「没有替 owner 决定本体问题」⇒ 措辞可用、推论受限，本体问题开放。",
+        "O-08": "习惯的行动地位已按「描述相对性」程序化处理，但批量标注所需更细的分描述判定流程未建 ⇒ 开放。",
+        "O-09": "双稳态数学分类：K7 内部至少含鞍结分岔/亚稳切换/振荡三类，当前 K 族粒度不足以区分，子标签未设 ⇒ 开放。",
+        "O-10": "结构化检索缺失：升级系统综述时才补 PRISMA-S 全项，本轮未做 ⇒ 开放。",
+        "O-11": "全文编码缺失：L-01 已对 3 锚点 + 14 邻域做全文编码（42 条逐字引文），仍低于条目建议的 20–30 条核心子集，"
+                "且三簇全部判 `INDETERMINATE` ⇒ 「校准 K 族标注」的目标未达成，本条保持开放。",
+        "O-12": "量化合成未做：现有计票是**记录数**的方向性票，不是效应量；跨域合并被明确禁止"
+                "（`literature/PRELIMINARY_CONCLUSIONS_V2.md` §3）⇒ 开放。",
+        "O-13": "核验级别升级路径：owner 第 4 条已**执行**建议的优先级子集（R13/G5-03/R14），但条目要求的「升级预算与"
+                "全库优先级」未定，且 `registry.json` 仍 0 条 FULLTEXT ⇒ 开放。",
+        "O-14": "DROPPED-CANDIDATE 复池：owner 第 5 条把复核人指派给独立审查 Agent（三条候选 Wald 1949 / "
+                "Waddington 1957 / Redgrave 1999 需双源题录），复池审查本身未做 ⇒ 开放，且不在本 Agent 的 §2 范围内。",
+        "O-15": "词表治理：v1 草案已交付（`report/MECHANISM_VOCABULARY_v1.md`，owner 第 5 条的 Agent 通道），"
+                "但版本化治理流程与责任人决定未落地，`AGGREGATE` 仍为 `PROVISIONAL`，且推导器查出的方向列拼写漂移"
+                "（X-70）只登记未清洗 ⇒ 开放。",
     }
-    for key in openi:
-        out.append("- **" + key + "**：" + reasons.get(key, "（缺登记原因，须补）"))
+    if unk:
+        print("UNCLASSIFIED labels (no wording class attaches): " + ", ".join(unk), file=sys.stderr)
+        raise SystemExit(4)
+    no_reason = [k for k in openi if k not in reasons]
+    if no_reason:
+        print("OPEN label with no registered reason: " + ", ".join(sorted(no_reason)), file=sys.stderr)
+        raise SystemExit(4)
+    ns_count = {n: sum(1 for r in rows if ns_of(r[0]) == n) for n in ("P", "L01", "O")}
+    out += ["", "---", "",
+            "**计数**：CLOSED " + str(len(closed)) + " / SUCCEEDED " + str(len(succ_rows))
+            + " / OPEN " + str(len(openi)) + " / UNCLASSIFIED " + str(len(unk))
+            + "，共 " + str(len(rows)) + " 条标签。命名空间分布：实验轮 `P<n>-O<m>` "
+            + str(ns_count["P"]) + " 条、文献轮 `L01-O<m>` " + str(ns_count["L01"])
+            + " 条、开放问题 `O-<nn>` " + str(ns_count["O"]) + " 条。", "",
+            "## 仍开放（每条都必须带登记原因；缺原因即构建失败）", ""]
+    last = None
+    for key in sorted(openi, key=label_sort):
+        if last is not None and ns_of(last) != ns_of(key):
+            out.append("")
+        out.append("- **" + key + "**：" + reasons[key])
+        last = key
     out += ["", "## 转手关闭（不是在原标签上关闭，如实记为 SUCCEEDED）", "",
             "- **P11-O2**（上确界不可达的退化分支）：Phase XIII 的 E2 **判据失败未关闭**"
             "（0.2% 容差没有由级集离散化速率导出，X-38），改为 P13-O1 重注册，"
