@@ -1,0 +1,482 @@
+{
+ "schema": "m2a.roundL01.reanalysis.v1",
+ "source_artifact": "literature/L01_coding.json",
+ "source_protocol": "literature/L01_CODING_PROTOCOL.md",
+ "protocol_sha256_recorded_by_round": "7e590b1d643dcba76a3d2a41606c8e11d5407fd179ed98faca2f9f5694abe4df",
+ "source_records_sha256": "5688ab1128da0c34",
+ "registered_before_run": false,
+ "status": "ZERO_TEST_REANALYSIS",
+ "defect_addressed": "L01-D3 (round verdict INDETERMINATE, 14/14 codeable, unchanged here)",
+ "criterion": "relation = 反证 if contradiction_ref else 支持 if same_family and same_sign else 扩展 if same_family else 无关; A: R'=#扩展+#反证, B: R'=#扩展; C'=#支持; the registered ordered exit table of §5 is applied unchanged to (m, C', R')",
+ "limitation": "contradiction_ref is the schema's only machine-readable claim-level signal, so #反证 is a lower bound: an unregistered contradiction is still counted as 支持. Variant B is the conservative bound on how much the defect moved C; variant A is what admitting claim-level refutation into R would imply.",
+ "round_label_committed": "INDETERMINATE",
+ "round_label_after": "INDETERMINATE",
+ "verdict_changed": false,
+ "anchors": {
+  "R13": {
+   "anchor_axis_from_coding": "D−",
+   "m": 6,
+   "support_threshold": 4,
+   "committed": {
+    "C_strict": 2,
+    "C_signed": 2,
+    "R": 1,
+    "unclassifiable_sign": 0,
+    "label_reported": "INDETERMINATE"
+   },
+   "mechanical_reproduction_of_registered_counts": {
+    "C": [
+     2,
+     2
+    ],
+    "C_reproduced": true,
+    "R": [
+     1,
+     1
+    ],
+    "R_reproduced": true,
+    "unclassifiable": [
+     0,
+     0
+    ],
+    "unclassifiable_reproduced": true
+   },
+   "reanalysed": {
+    "支持": 1,
+    "扩展": 1,
+    "反证": 1,
+    "符号不可判": 0,
+    "无关": 3,
+    "C_dropped_by_claim_level": 1
+   },
+   "concordance_field_diverges_from_axis_comparison": [
+    {
+     "sid": "R13-N16",
+     "record_same_sign": true,
+     "axis_comparison": [
+      "opposite"
+     ],
+     "contradiction_ref": null
+    }
+   ],
+   "variant_A": {
+    "R_prime": 2,
+    "label": "CONTRADICTED"
+   },
+   "variant_B": {
+    "R_prime": 1,
+    "label": "INDETERMINATE"
+   },
+   "conservative_label": "INDETERMINATE",
+   "label_moves_vs_committed": true,
+   "per_neighbour": [
+    {
+     "sid": "R13-N15",
+     "primary": [
+      [
+       "K5",
+       "D−"
+      ]
+     ],
+     "axis_vs_anchor": [
+      "same"
+     ],
+     "relation": "支持",
+     "same_family": true,
+     "record_same_sign": true,
+     "contradiction_ref": null,
+     "counted_in_C_by_registered_rule": true
+    },
+    {
+     "sid": "R13-N16",
+     "primary": [
+      [
+       "K2",
+       "D+"
+      ]
+     ],
+     "axis_vs_anchor": [
+      "opposite"
+     ],
+     "relation": "无关",
+     "same_family": false,
+     "record_same_sign": true,
+     "contradiction_ref": null,
+     "counted_in_C_by_registered_rule": false
+    },
+    {
+     "sid": "R13-N17",
+     "primary": [
+      [
+       "K11",
+       "D−"
+      ]
+     ],
+     "axis_vs_anchor": [
+      "same"
+     ],
+     "relation": "无关",
+     "same_family": false,
+     "record_same_sign": true,
+     "contradiction_ref": null,
+     "counted_in_C_by_registered_rule": false
+    },
+    {
+     "sid": "R13-N2",
+     "primary": [
+      [
+       "K2",
+       "D−"
+      ]
+     ],
+     "axis_vs_anchor": [
+      "same"
+     ],
+     "relation": "无关",
+     "same_family": false,
+     "record_same_sign": true,
+     "contradiction_ref": null,
+     "counted_in_C_by_registered_rule": false
+    },
+    {
+     "sid": "R13-N3",
+     "primary": [
+      [
+       "K5",
+       "D+"
+      ]
+     ],
+     "axis_vs_anchor": [
+      "opposite"
+     ],
+     "relation": "扩展",
+     "same_family": true,
+     "record_same_sign": false,
+     "contradiction_ref": null,
+     "counted_in_C_by_registered_rule": false
+    },
+    {
+     "sid": "R13-N8",
+     "primary": [
+      [
+       "K5",
+       "D−"
+      ]
+     ],
+     "axis_vs_anchor": [
+      "same"
+     ],
+     "relation": "反证",
+     "same_family": true,
+     "record_same_sign": true,
+     "contradiction_ref": "C-06",
+     "counted_in_C_by_registered_rule": true
+    }
+   ]
+  },
+  "G5-03": {
+   "anchor_axis_from_coding": "D−",
+   "m": 4,
+   "support_threshold": 3,
+   "committed": {
+    "C_strict": 2,
+    "C_signed": 2,
+    "R": 0,
+    "unclassifiable_sign": 0,
+    "label_reported": "INDETERMINATE"
+   },
+   "mechanical_reproduction_of_registered_counts": {
+    "C": [
+     2,
+     2
+    ],
+    "C_reproduced": true,
+    "R": [
+     0,
+     0
+    ],
+    "R_reproduced": true,
+    "unclassifiable": [
+     0,
+     0
+    ],
+    "unclassifiable_reproduced": true
+   },
+   "reanalysed": {
+    "支持": 1,
+    "扩展": 0,
+    "反证": 1,
+    "符号不可判": 0,
+    "无关": 2,
+    "C_dropped_by_claim_level": 1
+   },
+   "concordance_field_diverges_from_axis_comparison": [
+    {
+     "sid": "G5-03-N1",
+     "record_same_sign": true,
+     "axis_comparison": [
+      "opposite"
+     ],
+     "contradiction_ref": null
+    },
+    {
+     "sid": "G5-03-N4",
+     "record_same_sign": false,
+     "axis_comparison": [
+      "same"
+     ],
+     "contradiction_ref": null
+    },
+    {
+     "sid": "G5-03-N6",
+     "record_same_sign": false,
+     "axis_comparison": [
+      "same"
+     ],
+     "contradiction_ref": "C-04"
+    }
+   ],
+   "variant_A": {
+    "R_prime": 1,
+    "label": "INDETERMINATE"
+   },
+   "variant_B": {
+    "R_prime": 0,
+    "label": "INDETERMINATE"
+   },
+   "conservative_label": "INDETERMINATE",
+   "label_moves_vs_committed": false,
+   "per_neighbour": [
+    {
+     "sid": "G5-03-N1",
+     "primary": [
+      [
+       "K1",
+       "D+"
+      ]
+     ],
+     "axis_vs_anchor": [
+      "opposite"
+     ],
+     "relation": "无关",
+     "same_family": false,
+     "record_same_sign": true,
+     "contradiction_ref": null,
+     "counted_in_C_by_registered_rule": false
+    },
+    {
+     "sid": "G5-03-N2",
+     "primary": [
+      [
+       "K2",
+       "D−"
+      ]
+     ],
+     "axis_vs_anchor": [
+      "same"
+     ],
+     "relation": "支持",
+     "same_family": true,
+     "record_same_sign": true,
+     "contradiction_ref": null,
+     "counted_in_C_by_registered_rule": true
+    },
+    {
+     "sid": "G5-03-N4",
+     "primary": [
+      [
+       "K9",
+       "D−"
+      ]
+     ],
+     "axis_vs_anchor": [
+      "same"
+     ],
+     "relation": "无关",
+     "same_family": false,
+     "record_same_sign": false,
+     "contradiction_ref": null,
+     "counted_in_C_by_registered_rule": false
+    },
+    {
+     "sid": "G5-03-N6",
+     "primary": [
+      [
+       "K2",
+       "D−"
+      ]
+     ],
+     "axis_vs_anchor": [
+      "same"
+     ],
+     "relation": "反证",
+     "same_family": true,
+     "record_same_sign": false,
+     "contradiction_ref": "C-04",
+     "counted_in_C_by_registered_rule": true
+    }
+   ]
+  },
+  "R14": {
+   "anchor_axis_from_coding": "neutral",
+   "m": 4,
+   "support_threshold": 3,
+   "committed": {
+    "C_strict": 2,
+    "C_signed": 1,
+    "R": 0,
+    "unclassifiable_sign": 1,
+    "label_reported": "INDETERMINATE"
+   },
+   "mechanical_reproduction_of_registered_counts": {
+    "C": [
+     2,
+     2
+    ],
+    "C_reproduced": true,
+    "R": [
+     0,
+     0
+    ],
+    "R_reproduced": true,
+    "unclassifiable": [
+     1,
+     1
+    ],
+    "unclassifiable_reproduced": true
+   },
+   "reanalysed": {
+    "支持": 2,
+    "扩展": 0,
+    "反证": 1,
+    "符号不可判": 0,
+    "无关": 1,
+    "C_dropped_by_claim_level": 0
+   },
+   "concordance_field_diverges_from_axis_comparison": [],
+   "variant_A": {
+    "R_prime": 1,
+    "label": "INDETERMINATE"
+   },
+   "variant_B": {
+    "R_prime": 0,
+    "label": "INDETERMINATE"
+   },
+   "conservative_label": "INDETERMINATE",
+   "label_moves_vs_committed": false,
+   "per_neighbour": [
+    {
+     "sid": "R14-N1",
+     "primary": [
+      [
+       "K2",
+       "D−"
+      ]
+     ],
+     "axis_vs_anchor": [
+      "unclassifiable"
+     ],
+     "relation": "无关",
+     "same_family": false,
+     "record_same_sign": false,
+     "contradiction_ref": null,
+     "counted_in_C_by_registered_rule": false
+    },
+    {
+     "sid": "R14-N4",
+     "primary": [
+      [
+       "K5",
+       "neutral"
+      ]
+     ],
+     "axis_vs_anchor": [
+      "same"
+     ],
+     "relation": "支持",
+     "same_family": true,
+     "record_same_sign": true,
+     "contradiction_ref": null,
+     "counted_in_C_by_registered_rule": true
+    },
+    {
+     "sid": "R14-N7",
+     "primary": [
+      [
+       "K5",
+       "D+"
+      ]
+     ],
+     "axis_vs_anchor": [
+      "unclassifiable"
+     ],
+     "relation": "反证",
+     "same_family": true,
+     "record_same_sign": false,
+     "contradiction_ref": "C-03",
+     "counted_in_C_by_registered_rule": false
+    },
+    {
+     "sid": "R14-N8",
+     "primary": [
+      [
+       "K5",
+       "neutral"
+      ]
+     ],
+     "axis_vs_anchor": [
+      "same"
+     ],
+     "relation": "支持",
+     "same_family": true,
+     "record_same_sign": true,
+     "contradiction_ref": null,
+     "counted_in_C_by_registered_rule": true
+    }
+   ]
+  }
+ },
+ "all_registered_counts_reproduced": true,
+ "concordance_field_divergences": {
+  "R13": [
+   {
+    "sid": "R13-N16",
+    "record_same_sign": true,
+    "axis_comparison": [
+     "opposite"
+    ],
+    "contradiction_ref": null
+   }
+  ],
+  "G5-03": [
+   {
+    "sid": "G5-03-N1",
+    "record_same_sign": true,
+    "axis_comparison": [
+     "opposite"
+    ],
+    "contradiction_ref": null
+   },
+   {
+    "sid": "G5-03-N4",
+    "record_same_sign": false,
+    "axis_comparison": [
+     "same"
+    ],
+    "contradiction_ref": null
+   },
+   {
+    "sid": "G5-03-N6",
+    "record_same_sign": false,
+    "axis_comparison": [
+     "same"
+    ],
+    "contradiction_ref": "C-04"
+   }
+  ]
+ },
+ "anchors_whose_label_moves": [
+  "R13"
+ ],
+ "reading": "counts move and at least one label would move under variant A, but the round's own conservative rule keeps every label; the committed verdict INDETERMINATE stands (R6, zero test status)"
+}

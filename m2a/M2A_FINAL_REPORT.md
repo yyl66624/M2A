@@ -1223,4 +1223,53 @@ G1 报告 `derive == pin`、G2 退出码 0、G3 推导幂等（连跑两次字�
 34 条实验轮标签的状态一字未动；收尾审计复跑 **27/27 套件、197 项检查、24/24 哈希绑定**
 （套件数由 26 增至 27，正是新接入的台账门控）。
 
+### 36 L01-O2 重判读：把主张层关系加回一致性判据（零检验地位，判定不变）
+
+> 工件：`literature/L01_reanalysis.json`；生成器 `literature/run_L01_reanalysis.py`；
+> 说明见 `literature/ROUND_L01_RESULTS.md` §11；登记见 X-73 与新缺陷 **L01-D6**。
+> 判据写在原轮之后 ⇒ `registered_before_run: false`，按 R6 只取得**零检验地位**。
+
+#### 36.1 先复现，再位移
+
+重判读的第一步是让仪器对回已提交的读数：按 `d_axis` 与锚点轴做机械分类
+（同轴 / 反号 / 任一方 `neutral` 记为符号不可判），重建 §5 的三个量。
+R13、G5-03、R14 的 `C_strict`、`R`、`unclassifiable` **逐锚点全部复现**
+（`all_registered_counts_reproduced: true`）。没有这一步，任何位移都无法解释成判据的问题而不是我算错了。
+
+#### 36.2 结果
+
+加入主张层关系（反证的机器可读来源只有 `contradiction_ref`）后，R13 与 G5-03 的 `C` 各由 2 降到 1，
+R14 不变。把**原序原阈值**的出口表套上去：
+
+| 锚点 | `C → C'` | 反证 | 变体 A（反证计入 `R'`） | 变体 B（反证只出 `C`） | 保守序取 | 本轮提交 |
+| --- | --- | --- | --- | --- | --- | --- |
+| R13 | 2 → 1 | R13-N8（C-06） | **CONTRADICTED**（`R'=2` 命中出口 1） | INDETERMINATE | INDETERMINATE | INDETERMINATE |
+| G5-03 | 2 → 1 | G5-03-N6（C-04） | INDETERMINATE | INDETERMINATE | INDETERMINATE | INDETERMINATE |
+| R14 | 2 → 2 | R14-N7（C-03，本就不在 `C` 内） | INDETERMINATE | INDETERMINATE | INDETERMINATE | INDETERMINATE |
+
+标签全部不变、整轮 `INDETERMINATE` 不变（R6，不回写）。有意义的是**方向**：把主张层反证计入 `R`
+会让 R13 命中 `CONTRADICTED` 出口 ⇒ L01-D3 造成的不是支持度被低估，而是**已提交的
+`INDETERMINATE` 可能偏宽**。下一轮不得用「反证现在看得见了」来给自己抬级别。
+
+#### 36.3 L01-D6：同一份 JSON 里 `same_sign` 有两个含义
+
+重判读必须同时读记录的 `anchor_concordance.same_sign` 和出口表的轴分类，两者在 4 条记录上不一致
+（R13-N16、G5-03-N1、G5-03-N4、**G5-03-N6**）。记录层写的是「该条主张是否与锚点主张同向」，
+出口表用的是「`d_axis` 字符串是否相等」。G5-03-N6 那条自己的 `reason` 已经写明它
+「UNDERMINES the single-direction claim … precisely the C-04 style counter-evidence」，
+却仍按 `same-family-same-axis` 计入 `C`。
+
+所以 L01-D3 的成因比原登记更具体：**反证不是没被看见，而是在计票时被机械轴比较覆盖掉了**。
+处置是登记 `L01-D6`，不回写 `L01_coding.json`；L-02 须把该字段拆成 `axis_match` 与 `claim_match`，
+且计票只能用一个——这与 X-70（方向列 6 类拼写）是同一类「一名多义」缺陷，只是这次出现在
+同一份工件内部而不是跨工件。
+
+#### 36.4 下界声明
+
+`contradiction_ref` 是编码模式中唯一的机器可读主张层信号：凡未登记进
+`07_CONTRADICTIONS_AND_COUNTEREVIDENCE.md` 的反证，本重判读仍把它计成支持。因此本工件
+只能显示「若把该缺陷当真，读数会怎么动」，**不能**升格或推翻任何判定；它也不改动 §9 的前置清单
+（`L01-O2` 仍为开放：注册在先的那一轮尚未做）。
+
+
 

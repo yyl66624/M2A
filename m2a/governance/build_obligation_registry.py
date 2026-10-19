@@ -72,7 +72,7 @@ EXPECT = {
     # --- literature round L-01: all five are preconditions for round L-02, none disposed here
     # (ROUND_L01_RESULTS.md §9 is the status-bearing artifact for this namespace)
     "L01-O1": ("OPEN", "block", "literature/ROUND_L01_RESULTS.md", "分歧登记为开放项", None),
-    "L01-O2": ("OPEN", "block", "literature/ROUND_L01_RESULTS.md", "主张层关系", None),
+    "L01-O2": ("OPEN", "block", "literature/ROUND_L01_RESULTS.md", "族 + 符号 + 主张层关系", None),
     "L01-O3": ("OPEN", "block", "literature/ROUND_L01_RESULTS.md", "轴的零值处理", None),
     "L01-O4": ("OPEN", "block", "literature/ROUND_L01_RESULTS.md", "竞争理论全文编码须另开一轮", None),
     "L01-O5": ("OPEN", "block", "literature/ROUND_L01_RESULTS.md", "全文仍不可得", None),

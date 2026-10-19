@@ -117,3 +117,61 @@ python3 literature/run_L01.py      # 门控不过即拒跑；重写 L01_coding.j
 python3 experiments/audit_bindings.py   # 收尾审计：套件与预注册哈希双口径
 ```
 全文文本在仓库外 `workshop/_m2a_ft/`（第三方文本不入库），仓库内只存哈希、长度与逐字引文下标。
+
+## 11 追加：L01-O2 主张层关系的零检验地位重判读（2026-10-19，不重跑、不改 §5 判定）
+
+> 工件：`literature/L01_reanalysis.json`，生成器 `literature/run_L01_reanalysis.py`。
+> **地位**：判据写在原轮之后 ⇒ `registered_before_run: false`，按 R6 只取得**零检验地位**：
+> 只在已提交的 17 条读数上重算，不重跑编码、不改 `L01_coding.json`、**不改本轮判定**
+> （本轮判定仍是 §5 的 `INDETERMINATE`，§9 的前置清单原样保留）。
+
+### 11.1 先把仪器对回原读数
+
+重判读用的符号口径必须能**复现**§5 已提交的三个量，否则任何位移都无从解释。按
+`d_axis` 与锚点轴的机械比较重建（同轴 / 反号 / 任一方 `neutral` ⇒ 符号不可判），三锚点全部复现：
+
+| 锚点 | 提交 `C_strict` / 重建 | 提交 `R` / 重建 | 提交不可判 / 重建 |
+| --- | --- | --- | --- |
+| R13 | 2 / 2 ✅ | 1 / 1 ✅ | 0 / 0 ✅ |
+| G5-03 | 2 / 2 ✅ | 0 / 0 ✅ | 0 / 0 ✅ |
+| R14 | 2 / 2 ✅ | 0 / 0 ✅ | 1 / 1 ✅ |
+
+`all_registered_counts_reproduced: true`。
+
+### 11.2 加入主张层关系后的位移
+
+新关系四值（`反证 / 支持 / 扩展 / 无关`，`符号不可判` 单列），反证的机器可读来源只有一个：
+该条记录的 `contradiction_ref`（指向 `07_CONTRADICTIONS_AND_COUNTEREVIDENCE.md`）。
+把 §5 的出口表**原序原阈值**套到 `(m, C', R')` 上，取两个变体：
+
+| 锚点 | `C` → `C'` | 反证数 | 变体 A（反证计入 `R'`） | 变体 B（反证只出 `C`） | 本轮提交标签 |
+| --- | --- | --- | --- | --- | --- |
+| R13 | 2 → 1 | 1（R13-N8，C-06） | **CONTRADICTED**（`R'=2` 触发出口 1） | INDETERMINATE | INDETERMINATE |
+| G5-03 | 2 → 1 | 1（G5-03-N6，C-04） | INDETERMINATE | INDETERMINATE | INDETERMINATE |
+| R14 | 2 → 2 | 1（R14-N7，C-03，本就未计入 `C`） | INDETERMINATE | INDETERMINATE | INDETERMINATE |
+
+按本轮已有的保守序（02 §2.3「更保守的主张优先」，`INDETERMINATE` 什么都不主张故最保守），
+**三锚点标签均不变**，整轮判定不变。真正有意义的是位移的**方向**：把主张层反证计入 `R`
+会让 R13 触发 `CONTRADICTED` 出口——即 L01-D3 造成的不是「支持度被低估」，而是
+**已提交的 `INDETERMINATE` 可能偏宽**。本轮不据此改判（R6），只把方向登记在此。
+
+### 11.3 顺带查出的新缺陷：同一份 JSON 里 `same_sign` 有两个含义（登记为 L01-D6）
+
+重判读必须同时读记录的 `anchor_concordance.same_sign` 与出口表 `per_neighbour` 的轴分类，
+两者在 **4 条记录上不一致**：
+
+| 记录 | 记录层 `same_sign` | 轴比较（机械） | 是否计入 `C` |
+| --- | --- | --- | --- |
+| R13-N16 | true | opposite | 否（族外） |
+| G5-03-N1 | true | opposite | 否（族外） |
+| G5-03-N4 | false | same | 否（族外） |
+| **G5-03-N6** | **false** | **same** | **是（`C_strict` 计入）** |
+
+即 `same_sign` 在记录层被写成了「**该条主张是否与锚点主张同向**」，在出口表里却是「`d_axis`
+字符串是否相等」。G5-03-N6 是最要命的一条：它自己的 `reason` 写着
+「UNDERMINES the single-direction claim … precisely the C-04 style counter-evidence」，
+而出口表仍把它判为 `same-family-same-axis` 并计入 `C`。所以 L01-D3 的成因比原登记更具体——
+**反证在同一份工件里已经被记录过一遍，是在计票时被机械轴比较覆盖掉的**，不是「看不见」。
+
+处置：登记 `L01-D6`，不回写 `L01_coding.json`（R6、第 8 条）。修正在 L-02：
+`same_sign` 必须拆成两个字段（`axis_match` 与 `claim_match`），且计票只能用其中一个。
