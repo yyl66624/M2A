@@ -137,3 +137,9 @@
 python3 governance/build_status_label_table.py
 python3 experiments/audit_bindings.py
 ```
+
+---
+
+> **已被 v2 取代**（`report/STATUS_LABEL_TABLE_v2.md`）。v1 的 20 行 `MANUAL_REVIEW` 已在 v2 接通为 0，
+> 且 v1 的 Phase XV 等轮次因「出口名只写在字典键上」而漏计。本文件作为该步产物原样保留（R6、第 8 条），
+> 不再由生成器产出；引用口径请用 v2。另见 `M2A_FINAL_REPORT.md` §37.3 对本表两处手抄数字的更正。

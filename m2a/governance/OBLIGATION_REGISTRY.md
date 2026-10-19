@@ -38,7 +38,7 @@
 | P13-O1 | **CLOSED** | 24 | `experiments/PHASE14_RESULTS.md:23` | 关闭类措辞 | — |
 | P13-O2 | **CLOSED** | 31 | `M2A_FINAL_REPORT.md:738` | 关闭类措辞 | — |
 | P14-O1 | **CLOSED** | 46 | `experiments/PHASE18_RESULTS.md:19` | 关闭类措辞 | — |
-| P15-O1 | **OPEN** | 8 | `M2A_FINAL_REPORT.md:855` | 开放类措辞 | — |
+| P15-O1 | **OPEN** | 10 | `M2A_FINAL_REPORT.md:855` | 开放类措辞 | — |
 | P16-O1 | **CLOSED** | 11 | `M2A_FINAL_REPORT.md:806` | 执行/沿用类措辞 | — |
 | P17-O1 | **CLOSED** | 10 | `experiments/PHASE18_PREREGISTRATION.md:1` | 关闭类措辞 | — |
 | P19-O1 | **CLOSED** | 14 | `experiments/PHASE20_RESULTS.md:64` | 关闭类措辞 | — |

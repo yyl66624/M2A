@@ -45,7 +45,13 @@ RULES = {
     "NOT_RESOLVABLE": ("NOT_IDENTIFIED", "cell-level state: tolerance exceeds the signal, no reading"),
     "PARTIALLY_IDENTIFIED": ("NOT_IDENTIFIED", "Phase XV single-sided bound, decision 2 wording"),
     "NOT_OBTAINED": ("NULL", "literature round: the comparison was run and returned nothing"),
+    "LAW-K-INVARIANT-UNDER-3LAYER": ("SUPPORTED", "Phase XVIII E1: three displacement knobs, cross-k 0/42 "
+                                      "over-tolerance"),
 }
+# Round-level status fields, in the order a reader would consult them. `verdict` first because most
+# rounds write the arm verdict there; `exit` next because that is where the exit name lives.
+EXIT_ORDER = re.compile(r"^E(\d)\b")
+EXIT_NUM = EXIT_ORDER
 FRACTION = re.compile(r"^\d+/\d+ closed$")
 # the five labels are their own rule: a round that already obeys rule 7 needs no translation
 for _lab in FIVE:
@@ -73,11 +79,65 @@ def prose_rows():
 
 
 
+def tokens_of(s):
+    return [x for x in TOKEN.findall(str(s))
+            if x not in ("E0", "E1", "E2", "E3", "E4", "V1", "V2", "V3", "L1", "L2", "L3", "ID")]
+
+
+def hits(s):
+    """RULES keys occurring in `s`, longest first.
+
+    Exact token equality is not enough: exit names are compounds, so `E3 TEST-UNSATISFIABLE` is one
+    token while the registered rule is `UNSATISFIABLE`. A key therefore also matches when it appears
+    as a hyphen/underscore-delimited part of the value; longest-first keeps a more specific rule
+    from being shadowed by a shorter one."""
+    return [key for key in sorted(RULES, key=len, reverse=True)
+            if re.search(r"(?<![A-Z0-9])" + re.escape(key) + r"(?![A-Z0-9])", str(s))]
+
+
+def same_file_resolution(blob):
+    """Resolve a round's five-label from a *status-bearing field of the same file*.
+
+    A closure count ("2/4 closed") is not a status, but every such file also carries the round's
+    verdict or its taken exit name. Reading the label from that field keeps the table a translation
+    of committed bytes; nothing is typed in by hand. Returns None when the file offers no lawful
+    status field at all - that row then stays MANUAL_REVIEW and is reported as a gap.
+    """
+    for key in ("label_reported", "verdict", "exit", "outcome", "status"):
+        v = blob.get(key)
+        if isinstance(v, str):
+            hit = hits(v)
+            if hit:
+                lab, why = RULES[hit[0]]
+                return {"field": key, "raw": v[:60], "label": lab, "via": hit[0], "why": why}
+    exits = blob.get("exits")
+    if isinstance(exits, dict):
+        named = [(name, taken) for name, taken in exits.items() if EXIT_ORDER.match(name or "")]
+        for name, taken in sorted(named, key=lambda kv: int(EXIT_ORDER.match(kv[0]).group(1))):
+            if taken is not True or int(EXIT_ORDER.match(name).group(1)) == 0:
+                continue          # E0 is always the anchor-reproduction control, never a status
+            hit = hits(name)
+            if hit:
+                lab, why = RULES[hit[0]]
+                return {"field": "exits[" + name + "]", "raw": name, "label": lab, "via": hit[0],
+                        "why": why + "; taken from the registered exit-name order (E0 is the "
+                                   "anchor-reproduction control and is excluded)"}
+    return None
+
+
 def rows_for(path, blob, kind):
     out = []
     for key, val in blob.items():
         if not FIELDS.search(key):
             continue
+        if key == "exits" and isinstance(val, dict):
+            # the registered exit NAMES live in the dict keys, not the values; rounds whose `exit`
+            # string is only "E1 | E2 | E3 | E4" would otherwise contribute no row at all
+            taken = sorted((n for n, v in val.items() if v is True and EXIT_NUM.match(n or "")),
+                           key=lambda n: int(EXIT_NUM.match(n).group(1)))
+            taken = [n for n in taken if int(EXIT_NUM.match(n).group(1)) != 0]
+            if taken:
+                val = {"taken_first_exit": taken[0]}
         vals = val if isinstance(val, dict) else {"": val}
         for sub, v in vals.items():
             s = str(v)
@@ -87,12 +147,14 @@ def rows_for(path, blob, kind):
                                                                "V2", "V3", "L1", "L2", "L3", "ID")]
             if FRACTION.match(s):
                 out.append({"artifact": path, "field": key + (f"[{sub}]" if sub else ""),
-                            "raw": s, "label": "MANUAL_REVIEW",
-                            "why": "a closure COUNT, not a status - the round's five-label sits in "
-                                   "the exit row of the same file"})
+                            "raw": s, "label": "COUNT_NOT_STATUS",
+                            "why": "a closure COUNT, not a status; the round's own label is the "
+                                   "`exit`/`verdict` row of this same file, so giving this row a "
+                                   "label too would count one claim twice"})
                 continue
-            hit = [(t, RULES[t]) for t in tokens if t in RULES]
-            unknown = [t for t in tokens if t not in RULES]
+            h = hits(s)
+            hit = [(x, RULES[x]) for x in h]
+            unknown = [x for x in tokens if x not in RULES]
             if hit:
                 t, (lab, why) = hit[0]
                 out.append({"artifact": path, "field": key + (f"[{sub}]" if sub else ""),
@@ -121,37 +183,82 @@ def rows_out(acc):
     return ded
 
 
+def resolve_manual_rows(rows, blobs):
+    """Turn a MANUAL_REVIEW row into a label, or say why it cannot become one.
+
+    Two lawful outcomes besides a label:
+      * ZERO_TEST_REANALYSIS - the file is a re-analysis (`status` says zero-test), so the strings
+        inside it describe *what some other artifact says* (a runner label, an incomplete exit
+        table). Attaching a rule-7 label to those would be inventing a verdict the round never
+        issued, and R6 forbids a re-analysis from carrying one.
+      * still MANUAL_REVIEW - no status field in that file resolves; the row stays visible.
+    """
+    for r in rows:
+        if r["label"] != "MANUAL_REVIEW" or r.get("layer") == "document-only":
+            continue
+        blob = blobs.get(r["artifact"])
+        if blob is None:
+            continue
+        if r["artifact"].endswith("_reanalysis.json"):
+            r["label"] = "ZERO_TEST_REANALYSIS"
+            r["why"] = ("the file is a zero-test re-analysis; its fields quote another artifact's "
+                        "label (a runner label, an incomplete exit table), so no rule-7 status may "
+                        "be attached - a re-analysis may not carry a verdict (R6)")
+            continue
+        hit = same_file_resolution(blob)
+        if hit and hit["label"] in FIVE:
+            r["label"] = hit["label"]
+            r["derived"] = True
+            r["resolved_from_field"] = hit["field"]
+            r["resolved_from_raw"] = hit["raw"]
+            r["resolved_via"] = hit["via"]
+            r["why"] = "this field carries no status of its own; the label is read from `" \
+                       + hit["field"] + "` of the same file (via `" + hit["via"] + "`). Marked " \
+                       "`derived`, so the per-claim tally counts the row the label came from, not " \
+                       "this one twice"
+
+
 def main():
     files = sorted((M / "experiments").glob("phase*_results.json")) \
         + sorted((M / "experiments").glob("phase*_reanalysis.json")) \
         + [M / "literature/L01_coding.json"]
-    rows = []
+    rows, blobs = [], {}
     for f in files:
         blob = json.loads(f.read_text(encoding="utf-8"))
         rel = f.relative_to(M).as_posix()
+        blobs[rel] = blob
         rows += rows_for(rel, blob, "coding" if "L01" in rel else "results")
     for r in rows:
         r.setdefault("layer", "artifact-field")
     n_artifact_rows = len(rows)
     rows += prose_rows()
-    counts = {lab: sum(1 for r in rows if r["label"] == lab) for lab in FIVE + ["MANUAL_REVIEW"]}
-    gap = {lab: {"artifact_fields": sum(1 for r in rows if r["label"] == lab and r["layer"] != "document-only"),
-                 "prose_only": sum(1 for r in rows if r["label"] == lab and r["layer"] == "document-only")}
+    resolve_manual_rows(rows, blobs)
+    DISPOSED = FIVE + ["MANUAL_REVIEW", "ZERO_TEST_REANALYSIS", "COUNT_NOT_STATUS"]
+    # per-claim tally excludes `derived` rows: the same claim must not be counted twice just because
+    # a file expresses it in both a count field and a status field
+    claims = [r for r in rows if not r.get("derived")]
+    counts = {lab: sum(1 for r in claims if r["label"] == lab) for lab in DISPOSED}
+    counts["_derived_rows"] = len(rows) - len(claims)
+    counts["_rows_total"] = len(rows)
+    gap = {lab: {"artifact_fields": sum(1 for r in claims if r["label"] == lab
+                                        and r["layer"] != "document-only"),
+                 "prose_only": sum(1 for r in claims if r["label"] == lab
+                                   and r["layer"] == "document-only")}
            for lab in FIVE}
     manual = [r for r in rows if r["label"] == "MANUAL_REVIEW"]
 
-    (M / "governance/status_label_table_v1.json").write_text(json.dumps(
-        {"schema": "m2a.status-label-table.v1", "labels": FIVE, "rows": rows, "counts": counts,
+    (M / "governance/status_label_table_v2.json").write_text(json.dumps(
+        {"schema": "m2a.status-label-table.v2", "labels": FIVE, "rows": rows, "counts": counts,
          "rules": {k: {"label": v[0], "why": v[1]} for k, v in RULES.items()},
          "gap": gap, "artifact_field_rows": n_artifact_rows, "prose_rows": len(rows) - n_artifact_rows,
          "reading": "one row per claim-bearing field, not per round; MANUAL_REVIEW rows are listed "
                     "with the reason they cannot be translated mechanically"},
         ensure_ascii=False, indent=1), encoding="utf-8")
 
-    md = ["# 五值识别状态标签 × 既有台账/报告 口径表 v1",
+    md = ["# 五值识别状态标签 × 既有台账/报告 口径表 v2",
           "",
           "> 依据：`governance/OWNER_DECISION_2026-10-18.md` 第 7 条与 §2 第 3 项。生成器：",
-          "> `governance/build_status_label_table.py`（机器可读版 `governance/status_label_table_v1.json`）。",
+          "> `governance/build_status_label_table.py`（机器可读版 `governance/status_label_table_v2.json`）。",
           "> **本表是翻译层，不是改写层**：`experiments/phase*.json`、各 `PHASE*_RESULTS.md`、",
           "> 412 行账本与 PNAS 冻结包一字未动（R6、第 8 条）。引用旧轮的五值标签时，按本表取",
           "> `label` 列，并同时给出 `raw` 列的原文，以免翻译被当成原始判定。",
@@ -171,10 +278,13 @@ def main():
     for r in rows:
         md.append(f"| `{r['artifact']}` | `{r['field']}` | `{r['raw']}` | **{r['label']}** | "
                   f"{r.get('layer', 'artifact-field')} | {r['why']} |")
-    md += ["", "## 3 标签计数与两层缺口", "", "| 标签 | 合计行 | 其中：工件字段 | 其中：仅文档措辞 |",
-           "| --- | --- | --- | --- |"]
-    for lab in FIVE + ["MANUAL_REVIEW"]:
-        g = gap.get(lab, {"artifact_fields": sum(1 for r in rows if r["label"] == lab),
+    md += ["", "## 3 处置计数与两层缺口", "",
+           "计数按**逐条主张**：`derived` 行（标签从同文件另一字段读来）只作出处指向，不重复计数。",
+           "工件行共 " + str(counts["_rows_total"]) + " 行，其中派生行 "
+           + str(counts["_derived_rows"]) + " 行。",
+           "", "| 处置 | 主张计数 | 其中：工件字段 | 其中：仅文档措辞 |", "| --- | --- | --- | --- |"]
+    for lab in DISPOSED:
+        g = gap.get(lab, {"artifact_fields": sum(1 for r in claims if r["label"] == lab),
                           "prose_only": 0})
         md.append(f"| {lab} | {counts[lab]} | {g['artifact_fields']} | {g['prose_only']} |")
     prose_only_labels = [lab for lab in FIVE if gap[lab]["artifact_fields"] == 0
@@ -215,7 +325,7 @@ def main():
            "",
            "## 5 复现", "", "```bash", "python3 governance/build_status_label_table.py",
            "python3 experiments/audit_bindings.py", "```", ""]
-    (M / "report/STATUS_LABEL_TABLE_v1.md").write_text("\n".join(md), encoding="utf-8")
+    (M / "report/STATUS_LABEL_TABLE_v2.md").write_text("\n".join(md), encoding="utf-8")
     print("rows", len(rows), "| counts", counts)
     print("manual review rows:", [m["artifact"] + "::" + m["field"] for m in manual])
 

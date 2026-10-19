@@ -1273,3 +1273,95 @@ R14 不变。把**原序原阈值**的出口表套上去：
 
 
 
+
+### 37 口径表 v2：把 20 行 MANUAL_REVIEW 接通，并更正第 34 节抄错的两处数字
+
+> 产物：`governance/status_label_table_v2.json`、`report/STATUS_LABEL_TABLE_v2.md`
+> （生成器同名升级；**v1 的两个文件作为它那一轮的产物原样保留，不改写**，只在 v1 文档末尾追加指针）。
+> 新增套件：`governance/status_label_table_gate.py`（6 条，只验仪器）。
+
+#### 37.1 为什么要出 v2
+
+第 34 节交付的表里有 **20 行 `MANUAL_REVIEW`**——即「字段里有判定字样，但 `RULES` 盖不住」。
+逐行看下去，其中大多数不是无法翻译，而是**扫描器只看被扫字段本身**：一个文件写了
+`"verdict": "3/4 closed"`（计数，不是状态），同一文件里其实还写着 `"exit": "E2 TRUNCATION-NOT-THE-CULPRIT"`。
+所以 v2 加了一条**同文件求解**：读不到状态时，按 `label_reported → verdict → exit → outcome → status`
+的顺序取同一工件里第一个可译字段，并标 `derived`，**不计入逐条主张**（否则同一主张被数两次）。
+另加两条口径：出口名是复合词（`E3 TEST-UNSATISFIABLE`），故 `RULES` 匹配改为**最长优先的子串匹配**；
+`*_reanalysis.json` 整体隔离为零检验档，不得配五值标签（R6）。
+
+结果：**`MANUAL_REVIEW` 由 20 降到 0**。另补上一处覆盖漏洞：出口**名**写在 `exits` 字典的**键**上，
+而旧扫描器只看值，于是 `exit` 字段只写「`E1 | E2 | E3 | E4`」的轮次（Phase XV）在表里**一行都没有**——
+它的五值标签此前根本没被统计过。补上「取第一个为 True 的出口名（E0 恒为锚点复现对照，排除）」之后，
+Phase XV 以 `E1 GAP-IS-NOISE` 记为 `SUPPORTED`。
+
+#### 37.2 v2 的逐条主张计数（由工件推导）
+
+| 处置 | 主张计数 | 工件字段 | 仅文档措辞 |
+| --- | --- | --- | --- |
+| `SUPPORTED` | 45 | 35 | 10 |
+| `CONTRADICTED` | 22 | 14 | 8 |
+| `NULL` | 1 | 0 | 1 |
+| `INDETERMINATE` | 14 | 13 | 1 |
+| `NOT_IDENTIFIED` | 2 | 0 | 2 |
+
+另有 `MANUAL_REVIEW` 0 行、`ZERO_TEST_REANALYSIS` 2 行、`COUNT_NOT_STATUS` 6 行；
+工件行合计 94，其中派生行 2（标签从同文件另一字段读来，不重复计数）。
+五值主张合计 **84**，逐条主张合计 **92**。上表六个数字由 `status_label_table_v2.json` 推导，
+并被 `status_label_table_gate.py` 的 S5 逐个对回工件——本节初稿写的是补漏前的 38/28/10 等数字，
+S5 当时就报 `SUPPORTED quoted [38, 28, 10] != artifact [45, 35, 10]` 并判 FAIL，改到一致才 6/6。
+
+两层缺口因此**变宽而不是变窄**：`NULL` 与 `NOT_IDENTIFIED` 的「工件字段」都是 0。
+第 34 节说的「`NOT_IDENTIFIED` 只存在于文档措辞」现在对 `NULL` 也成立。
+
+#### 37.3 对第 34 节的更正（两处，均为抄写错误，原文保留不改）
+
+1. §34 的计数表把 `NULL` 写成「合计 1 / 工件字段 1 / 仅文档措辞 0」，而它自己引用的
+   `status_label_table_v1.json` 写的是 `counts.NULL = 1`、`gap.NULL = {artifact_fields: 0,
+   prose_only: 1}`。**正确读数**：那唯一一行来自 `ROUND_L01_RESULTS.md` 的行文，不是任何 JSON 字段。
+2. §34 把这一行归给「文献轮 L-01 的 `NOT_OBTAINED`」。`NOT_OBTAINED` 在
+   `literature/L01_coding.json` 里**一次都不出现**（全仓 grep 无命中）；它只是 `RULES` 里一条
+   **没有指称对象的规则**。因此该句的归因不成立。
+
+两处都是同一类错误：**报告里的数字用手敲，而不是从工件抄**。收尾审计规则本就要求「报告里引用的
+每个标签都要能逐个对回结果 JSON」，第 34 节没被任何仪器覆盖，所以错了也没人拦。
+`governance/status_label_table_gate.py` 的 S5/S6 就是补上的那台仪器：S5 把 §37 表里的每个数字
+对回 JSON，S6 专门检查「`RULES` 里的词被报告当作工件读数引用、但工件里根本没有」。
+本轮先跑了一次**破坏性自检**：把 §37 的 `NULL` 行改成 1/1/0（即复制 §34 的错误），S5 即报
+`NULL quoted [1, 1, 0] != artifact [1, 0, 1]` 并判 FAIL；改回后 **6/6**。
+
+#### 37.4 引用规则不变项与复现
+
+第 34 节的三条引用规则继续有效（`raw` 与 `label` 都要写；新拼写落 `MANUAL_REVIEW` 可见；
+新状态字面先加规则再加判据）。v1 产物、`experiments/phase*.json`、各 `PHASE*_RESULTS.md`、
+412 行账本、PNAS 冻结包与预注册哈希一字未改（R6、第 8 条）。
+
+```bash
+python3 governance/build_status_label_table.py
+python3 governance/status_label_table_gate.py    # 6/6
+python3 experiments/audit_bindings.py
+```
+
+收尾审计复跑：**28/28 套件、203 项检查、24/24 预注册哈希绑定**（套件 27→28、检查 197→203
+即本节的 `status_label_table_gate.py` 6 条接入所致）。
+
+#### 37.5 顺带查出：`PARTIALLY_IDENTIFIED` 是一个没有任何轮次文档承载的标签
+
+`RULES` 里给它写的依据是「Phase XV single-sided bound, owner decision 2 wording」。但按工件扫描，
+它在**任何** `PHASE*_RESULTS.md` 与任何 `phase*_results.json` 里都**一次都不出现**：
+全仓命中只落在 `governance/`（owner 裁定、义务台账、负面日志）与累计报告里，
+`experiments/PHASE15_RESULTS.md` 为 0 次。
+
+也就是说 owner 第 2 条要求的「按 `PARTIALLY_IDENTIFIED` 记录」目前**只活在治理文档的措辞里**，
+Phase XV 的结果文档与结果 JSON 都没有这个状态字。这与 X-67、X-71 是同一条规律的第三次出现：
+**处置与标签必须写在承载判定的工件里**。它与 §34 里 `NULL` 的那条缺口同源，只是这次连
+「文档措辞」层都没有——它连一份轮次文档都不曾写过。
+
+`status_label_table_gate.py` 的 S6 就是把这条钉住的仪器：凡 `RULES` 里的词在工件里找不到指称对象，
+就必须在 §37 被点名登记，否则构建判 FAIL。首跑时 `NOT_OBTAINED` 与 `PARTIALLY_IDENTIFIED`
+两个词都属此类，前者已在 §37.3 更正，后者即本节。修完 S6 的判定为
+`registered absences: PARTIALLY_IDENTIFIED, NOT_OBTAINED` ⇒ 通过。
+
+**这一条不在本轮修复范围内**：把状态字补进 `PHASE15_RESULTS.md` 属于**回写已封存轮次的结果文档**，
+第 8 条与 R6 不允许。正当出路是下一轮（`P15-O1` 仍开放，见义务台账）：新轮次的结果 JSON 直接带
+`PARTIALLY_IDENTIFIED` 字段，而不是事后追改旧文档。

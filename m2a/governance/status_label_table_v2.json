@@ -1,0 +1,1088 @@
+{
+ "schema": "m2a.status-label-table.v2",
+ "labels": [
+  "SUPPORTED",
+  "CONTRADICTED",
+  "NULL",
+  "INDETERMINATE",
+  "NOT_IDENTIFIED"
+ ],
+ "rows": [
+  {
+   "artifact": "experiments/phase10_results.json",
+   "field": "exit",
+   "raw": "E1 CONFIRMED",
+   "label": "SUPPORTED",
+   "why": "exit-name synonym used from Phase VII on",
+   "via": "CONFIRMED",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase10_results.json",
+   "field": "exit_reason",
+   "raw": "X1-X5 all pass",
+   "label": "SUPPORTED",
+   "why": "this field carries no status of its own; the label is read from `verdict` of the same file (via `SUPPORTED`). Marked `derived`, so the per-claim tally counts the row the label came from, not this one twice",
+   "layer": "artifact-field",
+   "derived": true,
+   "resolved_from_field": "verdict",
+   "resolved_from_raw": "SUPPORTED",
+   "resolved_via": "SUPPORTED"
+  },
+  {
+   "artifact": "experiments/phase10_results.json",
+   "field": "verdict",
+   "raw": "SUPPORTED",
+   "label": "SUPPORTED",
+   "why": "02/05-era arm verdict: the registered criterion was met",
+   "via": "SUPPORTED",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase11_results.json",
+   "field": "exit",
+   "raw": "E1 CONFIRMED",
+   "label": "SUPPORTED",
+   "why": "exit-name synonym used from Phase VII on",
+   "via": "CONFIRMED",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase11_results.json",
+   "field": "verdict",
+   "raw": "SUPPORTED",
+   "label": "SUPPORTED",
+   "why": "02/05-era arm verdict: the registered criterion was met",
+   "via": "SUPPORTED",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase12_results.json",
+   "field": "exit",
+   "raw": "E1 CONFIRMED",
+   "label": "SUPPORTED",
+   "why": "exit-name synonym used from Phase VII on",
+   "via": "CONFIRMED",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase12_results.json",
+   "field": "exit_reason",
+   "raw": "XC1-XC4 and XC6 pass; XC5 recorded as a finding",
+   "label": "SUPPORTED",
+   "why": "this field carries no status of its own; the label is read from `verdict` of the same file (via `SUPPORTED`). Marked `derived`, so the per-claim tally counts the row the label came from, not this one twice",
+   "layer": "artifact-field",
+   "derived": true,
+   "resolved_from_field": "verdict",
+   "resolved_from_raw": "SUPPORTED",
+   "resolved_via": "SUPPORTED"
+  },
+  {
+   "artifact": "experiments/phase12_results.json",
+   "field": "verdict",
+   "raw": "SUPPORTED",
+   "label": "SUPPORTED",
+   "why": "02/05-era arm verdict: the registered criterion was met",
+   "via": "SUPPORTED",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase13_results.json",
+   "field": "exits[taken_first_exit]",
+   "raw": "E1 CONVENTION RECONCILED",
+   "label": "SUPPORTED",
+   "why": "Phase XIII E1: the convention conflict was resolved by derivation",
+   "via": "RECONCILED",
+   "unmatched_tokens": [
+    "CONVENTION"
+   ],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase13_results.json",
+   "field": "exit",
+   "raw": "E1 CONVENTION RECONCILED / E3 K4 CONFIRMED",
+   "label": "SUPPORTED",
+   "why": "Phase XIII E1: the convention conflict was resolved by derivation",
+   "via": "RECONCILED",
+   "unmatched_tokens": [
+    "CONVENTION"
+   ],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase13_results.json",
+   "field": "verdict",
+   "raw": "2/4 closed",
+   "label": "COUNT_NOT_STATUS",
+   "why": "a closure COUNT, not a status; the round's own label is the `exit`/`verdict` row of this same file, so giving this row a label too would count one claim twice",
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase14_results.json",
+   "field": "exits[taken_first_exit]",
+   "raw": "E1 RATE-LAW EXACT",
+   "label": "SUPPORTED",
+   "why": "Phase XIV E1 RATE-LAW-EXACT: the law held at the registered tolerance",
+   "via": "EXACT",
+   "unmatched_tokens": [
+    "RATE-LAW"
+   ],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase14_results.json",
+   "field": "exit",
+   "raw": "E1 RATE-LAW EXACT",
+   "label": "SUPPORTED",
+   "why": "Phase XIV E1 RATE-LAW-EXACT: the law held at the registered tolerance",
+   "via": "EXACT",
+   "unmatched_tokens": [
+    "RATE-LAW"
+   ],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase14_results.json",
+   "field": "verdict",
+   "raw": "4/4 closed",
+   "label": "COUNT_NOT_STATUS",
+   "why": "a closure COUNT, not a status; the round's own label is the `exit`/`verdict` row of this same file, so giving this row a label too would count one claim twice",
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase15_results.json",
+   "field": "exits[taken_first_exit]",
+   "raw": "E1 GAP-IS-NOISE",
+   "label": "SUPPORTED",
+   "why": "Phase XV E1: the joint-fit gap is explained by measurement noise",
+   "via": "GAP-IS-NOISE",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase15_results.json",
+   "field": "verdict",
+   "raw": "4/4 closed",
+   "label": "COUNT_NOT_STATUS",
+   "why": "a closure COUNT, not a status; the round's own label is the `exit`/`verdict` row of this same file, so giving this row a label too would count one claim twice",
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase16_results.json",
+   "field": "exits[taken_first_exit]",
+   "raw": "E2 K-DEPENDENT-RESIDUAL",
+   "label": "CONTRADICTED",
+   "why": "Phase XVI E2: cross-k readings are incompatible",
+   "via": "K-DEPENDENT-RESIDUAL",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase16_results.json",
+   "field": "exit",
+   "raw": "E2 K-DEPENDENT-RESIDUAL",
+   "label": "CONTRADICTED",
+   "why": "Phase XVI E2: cross-k readings are incompatible",
+   "via": "K-DEPENDENT-RESIDUAL",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase16_results.json",
+   "field": "verdict",
+   "raw": "3/4 closed",
+   "label": "COUNT_NOT_STATUS",
+   "why": "a closure COUNT, not a status; the round's own label is the `exit`/`verdict` row of this same file, so giving this row a label too would count one claim twice",
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase17_results.json",
+   "field": "exits[taken_first_exit]",
+   "raw": "E2 TRUNCATION-NOT-THE-CULPRIT",
+   "label": "INDETERMINATE",
+   "why": "Phase XVII E2: one hypothesis excluded, the law still undecided",
+   "via": "NOT-THE-CULPRIT",
+   "unmatched_tokens": [
+    "TRUNCATION-NOT-THE-CULPRIT"
+   ],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase17_results.json",
+   "field": "exit",
+   "raw": "E2 TRUNCATION-NOT-THE-CULPRIT",
+   "label": "INDETERMINATE",
+   "why": "Phase XVII E2: one hypothesis excluded, the law still undecided",
+   "via": "NOT-THE-CULPRIT",
+   "unmatched_tokens": [
+    "TRUNCATION-NOT-THE-CULPRIT"
+   ],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase17_results.json",
+   "field": "verdict",
+   "raw": "3/4 closed",
+   "label": "COUNT_NOT_STATUS",
+   "why": "a closure COUNT, not a status; the round's own label is the `exit`/`verdict` row of this same file, so giving this row a label too would count one claim twice",
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase18_results.json",
+   "field": "exits[taken_first_exit]",
+   "raw": "E1 LAW-K-INVARIANT-UNDER-3LAYER",
+   "label": "SUPPORTED",
+   "why": "Phase XVIII E1: three displacement knobs, cross-k 0/42 over-tolerance",
+   "via": "LAW-K-INVARIANT-UNDER-3LAYER",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase18_results.json",
+   "field": "exit",
+   "raw": "E1 LAW-K-INVARIANT-UNDER-3LAYER",
+   "label": "SUPPORTED",
+   "why": "Phase XVIII E1: three displacement knobs, cross-k 0/42 over-tolerance",
+   "via": "LAW-K-INVARIANT-UNDER-3LAYER",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase18_results.json",
+   "field": "verdict",
+   "raw": "4/4 closed",
+   "label": "COUNT_NOT_STATUS",
+   "why": "a closure COUNT, not a status; the round's own label is the `exit`/`verdict` row of this same file, so giving this row a label too would count one claim twice",
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase19_results.json",
+   "field": "exits[taken_first_exit]",
+   "raw": "E3 TEST-UNSATISFIABLE",
+   "label": "CONTRADICTED",
+   "why": "Phase XIX E3: the registered necessary condition cannot be met",
+   "via": "UNSATISFIABLE",
+   "unmatched_tokens": [
+    "TEST-UNSATISFIABLE"
+   ],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase19_results.json",
+   "field": "exit",
+   "raw": "E3 TEST-UNSATISFIABLE",
+   "label": "CONTRADICTED",
+   "why": "Phase XIX E3: the registered necessary condition cannot be met",
+   "via": "UNSATISFIABLE",
+   "unmatched_tokens": [
+    "TEST-UNSATISFIABLE"
+   ],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase19_results.json",
+   "field": "verdict",
+   "raw": "E3 TEST-UNSATISFIABLE",
+   "label": "CONTRADICTED",
+   "why": "Phase XIX E3: the registered necessary condition cannot be met",
+   "via": "UNSATISFIABLE",
+   "unmatched_tokens": [
+    "TEST-UNSATISFIABLE"
+   ],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase20_results.json",
+   "field": "exits[taken_first_exit]",
+   "raw": "E1 FILTER-USABLE",
+   "label": "SUPPORTED",
+   "why": "Phase XX-XXII E1: the B-07 filter is satisfiable and separates",
+   "via": "USABLE",
+   "unmatched_tokens": [
+    "FILTER-USABLE"
+   ],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase20_results.json",
+   "field": "exit",
+   "raw": "E1 FILTER-USABLE",
+   "label": "SUPPORTED",
+   "why": "Phase XX-XXII E1: the B-07 filter is satisfiable and separates",
+   "via": "USABLE",
+   "unmatched_tokens": [
+    "FILTER-USABLE"
+   ],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase21_results.json",
+   "field": "exits[taken_first_exit]",
+   "raw": "E1 UNIQUE-AND-SEPARABLE",
+   "label": "SUPPORTED",
+   "why": "Phase XXI E1 UNIQUE-AND-SEPARABLE",
+   "via": "SEPARABLE",
+   "unmatched_tokens": [
+    "UNIQUE-AND-SEPARABLE"
+   ],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase21_results.json",
+   "field": "exit",
+   "raw": "E1 UNIQUE-AND-SEPARABLE",
+   "label": "SUPPORTED",
+   "why": "Phase XXI E1 UNIQUE-AND-SEPARABLE",
+   "via": "SEPARABLE",
+   "unmatched_tokens": [
+    "UNIQUE-AND-SEPARABLE"
+   ],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase22_results.json",
+   "field": "exits[taken_first_exit]",
+   "raw": "E1 FAMILY-MAP-AS-PREDICTED",
+   "label": "SUPPORTED",
+   "why": "Phase XXII E1 FAMILY-MAP-AS-PREDICTED: coverage matched the prior",
+   "via": "PREDICTED",
+   "unmatched_tokens": [
+    "FAMILY-MAP-AS-PREDICTED"
+   ],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase22_results.json",
+   "field": "exit",
+   "raw": "E1 FAMILY-MAP-AS-PREDICTED",
+   "label": "SUPPORTED",
+   "why": "Phase XXII E1 FAMILY-MAP-AS-PREDICTED: coverage matched the prior",
+   "via": "PREDICTED",
+   "unmatched_tokens": [
+    "FAMILY-MAP-AS-PREDICTED"
+   ],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase2_results.json",
+   "field": "verdicts[E1]",
+   "raw": "SUPPORTED",
+   "label": "SUPPORTED",
+   "why": "02/05-era arm verdict: the registered criterion was met",
+   "via": "SUPPORTED",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase2_results.json",
+   "field": "verdicts[E1b]",
+   "raw": "SUPPORTED",
+   "label": "SUPPORTED",
+   "why": "02/05-era arm verdict: the registered criterion was met",
+   "via": "SUPPORTED",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase2_results.json",
+   "field": "verdicts[E2]",
+   "raw": "SUPPORTED",
+   "label": "SUPPORTED",
+   "why": "02/05-era arm verdict: the registered criterion was met",
+   "via": "SUPPORTED",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase3_results.json",
+   "field": "verdicts[L1]",
+   "raw": "SUPPORTED",
+   "label": "SUPPORTED",
+   "why": "02/05-era arm verdict: the registered criterion was met",
+   "via": "SUPPORTED",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase3_results.json",
+   "field": "verdicts[L2]",
+   "raw": "SUPPORTED",
+   "label": "SUPPORTED",
+   "why": "02/05-era arm verdict: the registered criterion was met",
+   "via": "SUPPORTED",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase3_results.json",
+   "field": "verdicts[L3]",
+   "raw": "SUPPORTED",
+   "label": "SUPPORTED",
+   "why": "02/05-era arm verdict: the registered criterion was met",
+   "via": "SUPPORTED",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase4_results.json",
+   "field": "verdicts[L1]",
+   "raw": "SUPPORTED",
+   "label": "SUPPORTED",
+   "why": "02/05-era arm verdict: the registered criterion was met",
+   "via": "SUPPORTED",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase4_results.json",
+   "field": "verdicts[L2]",
+   "raw": "SUPPORTED",
+   "label": "SUPPORTED",
+   "why": "02/05-era arm verdict: the registered criterion was met",
+   "via": "SUPPORTED",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase4_results.json",
+   "field": "verdicts[L3]",
+   "raw": "SUPPORTED",
+   "label": "SUPPORTED",
+   "why": "02/05-era arm verdict: the registered criterion was met",
+   "via": "SUPPORTED",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase5_results.json",
+   "field": "verdicts[V1]",
+   "raw": "NOT_EXPLAINED",
+   "label": "INDETERMINATE",
+   "why": "Phase V/5c arm verdict: residual not attributable",
+   "via": "NOT_EXPLAINED",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase5_results.json",
+   "field": "verdicts[V2]",
+   "raw": "SUPPORTED",
+   "label": "SUPPORTED",
+   "why": "02/05-era arm verdict: the registered criterion was met",
+   "via": "SUPPORTED",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase5_results.json",
+   "field": "verdicts[V3]",
+   "raw": "REFUTED",
+   "label": "CONTRADICTED",
+   "why": "arm verdict used verbatim from Phase V/VI",
+   "via": "REFUTED",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase5b_results.json",
+   "field": "verdict",
+   "raw": "SUPPORTED",
+   "label": "SUPPORTED",
+   "why": "02/05-era arm verdict: the registered criterion was met",
+   "via": "SUPPORTED",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase5c_results.json",
+   "field": "outcome",
+   "raw": "J_NOT_DECISIVE",
+   "label": "INDETERMINATE",
+   "why": "Phase V-c outcome J_NOT_DECISIVE",
+   "via": "NOT_DECISIVE",
+   "unmatched_tokens": [
+    "J_NOT_DECISIVE"
+   ],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase5c_results.json",
+   "field": "verdict",
+   "raw": "NOT_EXPLAINED",
+   "label": "INDETERMINATE",
+   "why": "Phase V/5c arm verdict: residual not attributable",
+   "via": "NOT_EXPLAINED",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase5c_results.json",
+   "field": "v1_verdict_unchanged",
+   "raw": "J_NOT_DECISIVE (registered in Phase V; P5c-F4)",
+   "label": "INDETERMINATE",
+   "why": "Phase V-c outcome J_NOT_DECISIVE",
+   "via": "NOT_DECISIVE",
+   "unmatched_tokens": [
+    "J_NOT_DECISIVE"
+   ],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase5d_results.json",
+   "field": "outcome",
+   "raw": "CONFIRMED",
+   "label": "SUPPORTED",
+   "why": "exit-name synonym used from Phase VII on",
+   "via": "CONFIRMED",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase6_results.json",
+   "field": "outcome",
+   "raw": "O-REFUTED",
+   "label": "CONTRADICTED",
+   "why": "Phase VI outcome string for the same judgement",
+   "via": "O-REFUTED",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase6_results.json",
+   "field": "verdict",
+   "raw": "REFUTED",
+   "label": "CONTRADICTED",
+   "why": "arm verdict used verbatim from Phase V/VI",
+   "via": "REFUTED",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase7_results.json",
+   "field": "exit",
+   "raw": "E1 CONFIRMED",
+   "label": "SUPPORTED",
+   "why": "exit-name synonym used from Phase VII on",
+   "via": "CONFIRMED",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase7_results.json",
+   "field": "verdict",
+   "raw": "SUPPORTED",
+   "label": "SUPPORTED",
+   "why": "02/05-era arm verdict: the registered criterion was met",
+   "via": "SUPPORTED",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase7_results.json",
+   "field": "phase6_verdict_unchanged",
+   "raw": "S2 REFUTED / S3 numeric-vs-analytic agreement stands (both u",
+   "label": "CONTRADICTED",
+   "why": "arm verdict used verbatim from Phase V/VI",
+   "via": "REFUTED",
+   "unmatched_tokens": [
+    "P7-A2"
+   ],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase8_results.json",
+   "field": "exit",
+   "raw": "E2 EXPONENT-NOT-MINUS-TWO",
+   "label": "CONTRADICTED",
+   "why": "Phase VIII E2: the exponent claim was falsified",
+   "via": "NOT-MINUS-TWO",
+   "unmatched_tokens": [
+    "EXPONENT-NOT-MINUS-TWO"
+   ],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase8_results.json",
+   "field": "verdict",
+   "raw": "QUALIFIED",
+   "label": "CONTRADICTED",
+   "why": "Phase VIII verdict: claim holds only after being narrowed",
+   "via": "QUALIFIED",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase8_results.json",
+   "field": "phase6_verdict_unchanged",
+   "raw": "S2 stays REFUTED (P8-F4); this round only explains its readi",
+   "label": "CONTRADICTED",
+   "why": "arm verdict used verbatim from Phase V/VI",
+   "via": "REFUTED",
+   "unmatched_tokens": [
+    "P8-F4"
+   ],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase9_results.json",
+   "field": "exit",
+   "raw": "E1 CONFIRMED",
+   "label": "SUPPORTED",
+   "why": "exit-name synonym used from Phase VII on",
+   "via": "CONFIRMED",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase9_results.json",
+   "field": "verdict",
+   "raw": "SUPPORTED",
+   "label": "SUPPORTED",
+   "why": "02/05-era arm verdict: the registered criterion was met",
+   "via": "SUPPORTED",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase22_reanalysis.json",
+   "field": "verdict_on_P22_O1",
+   "raw": "CLOSED by derivation on committed readings, zero-test status",
+   "label": "ZERO_TEST_REANALYSIS",
+   "why": "the file is a zero-test re-analysis; its fields quote another artifact's label (a runner label, an incomplete exit table), so no rule-7 status may be attached - a re-analysis may not carry a verdict (R6)",
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase6_reanalysis.json",
+   "field": "P6_A8_outcome_table_incomplete[runner_label]",
+   "raw": "O-REFUTED",
+   "label": "CONTRADICTED",
+   "why": "Phase VI outcome string for the same judgement",
+   "via": "O-REFUTED",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase6_reanalysis.json",
+   "field": "P6_A8_outcome_table_incomplete[correct_label]",
+   "raw": "O-NONE (three registered exits all inapplicable)",
+   "label": "ZERO_TEST_REANALYSIS",
+   "why": "the file is a zero-test re-analysis; its fields quote another artifact's label (a runner label, an incomplete exit table), so no rule-7 status may be attached - a re-analysis may not carry a verdict (R6)",
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase6_reanalysis.json",
+   "field": "P6_A8_outcome_table_incomplete[reason]",
+   "raw": "S2 的不符发生在幂指数与近似单调性上，不构成 O-REFUTED 所要求的符号/单调性矛盾",
+   "label": "CONTRADICTED",
+   "why": "Phase VI outcome string for the same judgement",
+   "via": "O-REFUTED",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "literature/L01_coding.json",
+   "field": "exit_table[R13]",
+   "raw": "{'anchor_primary_family_from_registry': 'K5', 'anchor_primar",
+   "label": "INDETERMINATE",
+   "why": "already canonical - this artifact field literally carries a rule-7 label",
+   "via": "INDETERMINATE",
+   "unmatched_tokens": [
+    "R13-N2",
+    "R13-N3",
+    "OPPOSITE-",
+    "R13-N8",
+    "R13-N15",
+    "R13-N16",
+    "R13-N17",
+    "K11"
+   ],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "literature/L01_coding.json",
+   "field": "exit_table[G5-03]",
+   "raw": "{'anchor_primary_family_from_registry': 'K2', 'anchor_primar",
+   "label": "INDETERMINATE",
+   "why": "already canonical - this artifact field literally carries a rule-7 label",
+   "via": "INDETERMINATE",
+   "unmatched_tokens": [
+    "G5-03-N1",
+    "G5-03-N2",
+    "G5-03-N4",
+    "G5-03-N6"
+   ],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "literature/L01_coding.json",
+   "field": "exit_table[R14]",
+   "raw": "{'anchor_primary_family_from_registry': 'K5', 'anchor_primar",
+   "label": "INDETERMINATE",
+   "why": "already canonical - this artifact field literally carries a rule-7 label",
+   "via": "INDETERMINATE",
+   "unmatched_tokens": [
+    "R14-N1",
+    "R14-N4",
+    "R14-N7",
+    "R14-N8"
+   ],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "literature/L01_coding.json",
+   "field": "round_label",
+   "raw": "INDETERMINATE",
+   "label": "INDETERMINATE",
+   "why": "already canonical - this artifact field literally carries a rule-7 label",
+   "via": "INDETERMINATE",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "literature/L01_coding.json",
+   "field": "exit_table[R13]",
+   "raw": "label_reported=INDETERMINATE",
+   "label": "INDETERMINATE",
+   "why": "Round L-01 emits the five labels natively (rule 7 written after the decision, this round was the first to obey it)",
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "literature/L01_coding.json",
+   "field": "exit_table[G5-03]",
+   "raw": "label_reported=INDETERMINATE",
+   "label": "INDETERMINATE",
+   "why": "Round L-01 emits the five labels natively (rule 7 written after the decision, this round was the first to obey it)",
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "literature/L01_coding.json",
+   "field": "exit_table[R14]",
+   "raw": "label_reported=INDETERMINATE",
+   "label": "INDETERMINATE",
+   "why": "Round L-01 emits the five labels natively (rule 7 written after the decision, this round was the first to obey it)",
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/PHASE10_RESULTS.md",
+   "field": "prose",
+   "raw": "SUPPORTED",
+   "label": "SUPPORTED",
+   "why": "02/05-era arm verdict: the registered criterion was met",
+   "layer": "document-only"
+  },
+  {
+   "artifact": "experiments/PHASE10_RESULTS.md",
+   "field": "prose",
+   "raw": "REFUTED",
+   "label": "CONTRADICTED",
+   "why": "arm verdict used verbatim from Phase V/VI",
+   "layer": "document-only"
+  },
+  {
+   "artifact": "experiments/PHASE11_RESULTS.md",
+   "field": "prose",
+   "raw": "SUPPORTED",
+   "label": "SUPPORTED",
+   "why": "02/05-era arm verdict: the registered criterion was met",
+   "layer": "document-only"
+  },
+  {
+   "artifact": "experiments/PHASE12_RESULTS.md",
+   "field": "prose",
+   "raw": "SUPPORTED",
+   "label": "SUPPORTED",
+   "why": "02/05-era arm verdict: the registered criterion was met",
+   "layer": "document-only"
+  },
+  {
+   "artifact": "experiments/PHASE12_RESULTS.md",
+   "field": "prose",
+   "raw": "REFUTED",
+   "label": "CONTRADICTED",
+   "why": "arm verdict used verbatim from Phase V/VI",
+   "layer": "document-only"
+  },
+  {
+   "artifact": "experiments/PHASE13_RESULTS.md",
+   "field": "prose",
+   "raw": "REFUTED",
+   "label": "CONTRADICTED",
+   "why": "arm verdict used verbatim from Phase V/VI",
+   "layer": "document-only"
+  },
+  {
+   "artifact": "experiments/PHASE14_RESULTS.md",
+   "field": "prose",
+   "raw": "NOT_RESOLVABLE",
+   "label": "NOT_IDENTIFIED",
+   "why": "cell-level state: tolerance exceeds the signal, no reading",
+   "layer": "document-only"
+  },
+  {
+   "artifact": "experiments/PHASE18_RESULTS.md",
+   "field": "prose",
+   "raw": "NOT_RESOLVABLE",
+   "label": "NOT_IDENTIFIED",
+   "why": "cell-level state: tolerance exceeds the signal, no reading",
+   "layer": "document-only"
+  },
+  {
+   "artifact": "experiments/PHASE2_RESULTS.md",
+   "field": "prose",
+   "raw": "SUPPORTED",
+   "label": "SUPPORTED",
+   "why": "02/05-era arm verdict: the registered criterion was met",
+   "layer": "document-only"
+  },
+  {
+   "artifact": "experiments/PHASE3_RESULTS.md",
+   "field": "prose",
+   "raw": "SUPPORTED",
+   "label": "SUPPORTED",
+   "why": "02/05-era arm verdict: the registered criterion was met",
+   "layer": "document-only"
+  },
+  {
+   "artifact": "experiments/PHASE4_RESULTS.md",
+   "field": "prose",
+   "raw": "SUPPORTED",
+   "label": "SUPPORTED",
+   "why": "02/05-era arm verdict: the registered criterion was met",
+   "layer": "document-only"
+  },
+  {
+   "artifact": "experiments/PHASE5B_RESULTS.md",
+   "field": "prose",
+   "raw": "SUPPORTED",
+   "label": "SUPPORTED",
+   "why": "02/05-era arm verdict: the registered criterion was met",
+   "layer": "document-only"
+  },
+  {
+   "artifact": "experiments/PHASE5B_RESULTS.md",
+   "field": "prose",
+   "raw": "REFUTED",
+   "label": "CONTRADICTED",
+   "why": "arm verdict used verbatim from Phase V/VI",
+   "layer": "document-only"
+  },
+  {
+   "artifact": "experiments/PHASE5_RESULTS.md",
+   "field": "prose",
+   "raw": "SUPPORTED",
+   "label": "SUPPORTED",
+   "why": "02/05-era arm verdict: the registered criterion was met",
+   "layer": "document-only"
+  },
+  {
+   "artifact": "experiments/PHASE5_RESULTS.md",
+   "field": "prose",
+   "raw": "REFUTED",
+   "label": "CONTRADICTED",
+   "why": "arm verdict used verbatim from Phase V/VI",
+   "layer": "document-only"
+  },
+  {
+   "artifact": "experiments/PHASE6_RESULTS.md",
+   "field": "prose",
+   "raw": "REFUTED",
+   "label": "CONTRADICTED",
+   "why": "arm verdict used verbatim from Phase V/VI",
+   "layer": "document-only"
+  },
+  {
+   "artifact": "experiments/PHASE8_RESULTS.md",
+   "field": "prose",
+   "raw": "REFUTED",
+   "label": "CONTRADICTED",
+   "why": "arm verdict used verbatim from Phase V/VI",
+   "layer": "document-only"
+  },
+  {
+   "artifact": "experiments/PHASE9_RESULTS.md",
+   "field": "prose",
+   "raw": "SUPPORTED",
+   "label": "SUPPORTED",
+   "why": "02/05-era arm verdict: the registered criterion was met",
+   "layer": "document-only"
+  },
+  {
+   "artifact": "literature/ROUND_L01_RESULTS.md",
+   "field": "prose",
+   "raw": "SUPPORTED",
+   "label": "SUPPORTED",
+   "why": "02/05-era arm verdict: the registered criterion was met",
+   "layer": "document-only"
+  },
+  {
+   "artifact": "literature/ROUND_L01_RESULTS.md",
+   "field": "prose",
+   "raw": "CONTRADICTED",
+   "label": "CONTRADICTED",
+   "why": "already canonical - this artifact field literally carries a rule-7 label",
+   "layer": "document-only"
+  },
+  {
+   "artifact": "literature/ROUND_L01_RESULTS.md",
+   "field": "prose",
+   "raw": "NULL",
+   "label": "NULL",
+   "why": "already canonical - this artifact field literally carries a rule-7 label",
+   "layer": "document-only"
+  },
+  {
+   "artifact": "literature/ROUND_L01_RESULTS.md",
+   "field": "prose",
+   "raw": "INDETERMINATE",
+   "label": "INDETERMINATE",
+   "why": "already canonical - this artifact field literally carries a rule-7 label",
+   "layer": "document-only"
+  }
+ ],
+ "counts": {
+  "SUPPORTED": 45,
+  "CONTRADICTED": 22,
+  "NULL": 1,
+  "INDETERMINATE": 14,
+  "NOT_IDENTIFIED": 2,
+  "MANUAL_REVIEW": 0,
+  "ZERO_TEST_REANALYSIS": 2,
+  "COUNT_NOT_STATUS": 6,
+  "_derived_rows": 2,
+  "_rows_total": 94
+ },
+ "rules": {
+  "SUPPORTED": {
+   "label": "SUPPORTED",
+   "why": "02/05-era arm verdict: the registered criterion was met"
+  },
+  "CONFIRMED": {
+   "label": "SUPPORTED",
+   "why": "exit-name synonym used from Phase VII on"
+  },
+  "EXACT": {
+   "label": "SUPPORTED",
+   "why": "Phase XIV E1 RATE-LAW-EXACT: the law held at the registered tolerance"
+  },
+  "RECONCILED": {
+   "label": "SUPPORTED",
+   "why": "Phase XIII E1: the convention conflict was resolved by derivation"
+  },
+  "GAP-IS-NOISE": {
+   "label": "SUPPORTED",
+   "why": "Phase XV E1: the joint-fit gap is explained by measurement noise"
+  },
+  "USABLE": {
+   "label": "SUPPORTED",
+   "why": "Phase XX-XXII E1: the B-07 filter is satisfiable and separates"
+  },
+  "PREDICTED": {
+   "label": "SUPPORTED",
+   "why": "Phase XXII E1 FAMILY-MAP-AS-PREDICTED: coverage matched the prior"
+  },
+  "SEPARABLE": {
+   "label": "SUPPORTED",
+   "why": "Phase XXI E1 UNIQUE-AND-SEPARABLE"
+  },
+  "REFUTED": {
+   "label": "CONTRADICTED",
+   "why": "arm verdict used verbatim from Phase V/VI"
+  },
+  "O-REFUTED": {
+   "label": "CONTRADICTED",
+   "why": "Phase VI outcome string for the same judgement"
+  },
+  "UNSATISFIABLE": {
+   "label": "CONTRADICTED",
+   "why": "Phase XIX E3: the registered necessary condition cannot be met"
+  },
+  "K-DEPENDENT-RESIDUAL": {
+   "label": "CONTRADICTED",
+   "why": "Phase XVI E2: cross-k readings are incompatible"
+  },
+  "NOT-MINUS-TWO": {
+   "label": "CONTRADICTED",
+   "why": "Phase VIII E2: the exponent claim was falsified"
+  },
+  "QUALIFIED": {
+   "label": "CONTRADICTED",
+   "why": "Phase VIII verdict: claim holds only after being narrowed"
+  },
+  "NOT_EXPLAINED": {
+   "label": "INDETERMINATE",
+   "why": "Phase V/5c arm verdict: residual not attributable"
+  },
+  "NOT_DECISIVE": {
+   "label": "INDETERMINATE",
+   "why": "Phase V-c outcome J_NOT_DECISIVE"
+  },
+  "NOT-THE-CULPRIT": {
+   "label": "INDETERMINATE",
+   "why": "Phase XVII E2: one hypothesis excluded, the law still undecided"
+  },
+  "NOT_RESOLVABLE": {
+   "label": "NOT_IDENTIFIED",
+   "why": "cell-level state: tolerance exceeds the signal, no reading"
+  },
+  "PARTIALLY_IDENTIFIED": {
+   "label": "NOT_IDENTIFIED",
+   "why": "Phase XV single-sided bound, decision 2 wording"
+  },
+  "NOT_OBTAINED": {
+   "label": "NULL",
+   "why": "literature round: the comparison was run and returned nothing"
+  },
+  "LAW-K-INVARIANT-UNDER-3LAYER": {
+   "label": "SUPPORTED",
+   "why": "Phase XVIII E1: three displacement knobs, cross-k 0/42 over-tolerance"
+  },
+  "CONTRADICTED": {
+   "label": "CONTRADICTED",
+   "why": "already canonical - this artifact field literally carries a rule-7 label"
+  },
+  "NULL": {
+   "label": "NULL",
+   "why": "already canonical - this artifact field literally carries a rule-7 label"
+  },
+  "INDETERMINATE": {
+   "label": "INDETERMINATE",
+   "why": "already canonical - this artifact field literally carries a rule-7 label"
+  },
+  "NOT_IDENTIFIED": {
+   "label": "NOT_IDENTIFIED",
+   "why": "already canonical - this artifact field literally carries a rule-7 label"
+  }
+ },
+ "gap": {
+  "SUPPORTED": {
+   "artifact_fields": 35,
+   "prose_only": 10
+  },
+  "CONTRADICTED": {
+   "artifact_fields": 14,
+   "prose_only": 8
+  },
+  "NULL": {
+   "artifact_fields": 0,
+   "prose_only": 1
+  },
+  "INDETERMINATE": {
+   "artifact_fields": 13,
+   "prose_only": 1
+  },
+  "NOT_IDENTIFIED": {
+   "artifact_fields": 0,
+   "prose_only": 2
+  }
+ },
+ "artifact_field_rows": 72,
+ "prose_rows": 22,
+ "reading": "one row per claim-bearing field, not per round; MANUAL_REVIEW rows are listed with the reason they cannot be translated mechanically"
+}
