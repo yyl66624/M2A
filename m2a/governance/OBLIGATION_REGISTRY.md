@@ -65,8 +65,8 @@
 | O-13 | **OPEN** | 3 | `08_OPEN_QUESTIONS.md:39` | 开放类措辞 | — |
 | O-14 | **OPEN** | 8 | `08_OPEN_QUESTIONS.md:41` | 开放类措辞 | — |
 | O-15 | **OPEN** | 16 | `08_OPEN_QUESTIONS.md:43` | 开放类措辞 | — |
-| O-16 | **OPEN** | 6 | `08_OPEN_QUESTIONS.md:67` | 开放类措辞 | — |
-| O-17 | **OPEN** | 9 | `08_OPEN_QUESTIONS.md:81` | 开放类措辞 | — |
+| O-16 | **OPEN** | 7 | `08_OPEN_QUESTIONS.md:67` | 开放类措辞 | — |
+| O-17 | **OPEN** | 10 | `08_OPEN_QUESTIONS.md:81` | 开放类措辞 | — |
 
 ---
 

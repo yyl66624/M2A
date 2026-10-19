@@ -1,0 +1,891 @@
+{
+ "schema": "m2a.runner-gate-map.v1",
+ "derived_from": "AST of every experiments/run_*.py and literature/run_*.py that writes a committed artifact, plus the registered reanalysis writers",
+ "counts": {
+  "writers": 29,
+  "artifacts": 29,
+  "enforced": 25,
+  "ungated_round_runners": 0,
+  "no_gate_registered": 4,
+  "guards_that_do_not_stop": 5
+ },
+ "rows": [
+  {
+   "runner": "experiments/p5_v1_posthoc.py",
+   "file": "p5_v1_posthoc.py",
+   "gate_calls": [],
+   "gate_helpers": [],
+   "rc_guards": [],
+   "artifact_writes": [
+    {
+     "line": 68,
+     "artifact": "p5_v1_posthoc.json"
+    }
+   ],
+   "artifacts_written": [
+    "p5_v1_posthoc.json"
+   ],
+   "writes_read_too": [
+    "phase5_results.json"
+   ],
+   "verdict": "no_gate_at_all"
+  },
+  {
+   "runner": "experiments/p6_reanalyze.py",
+   "file": "p6_reanalyze.py",
+   "gate_calls": [],
+   "gate_helpers": [],
+   "rc_guards": [],
+   "artifact_writes": [
+    {
+     "line": 34,
+     "artifact": "phase6_reanalysis.json"
+    }
+   ],
+   "artifacts_written": [
+    "phase6_reanalysis.json"
+   ],
+   "writes_read_too": [
+    "phase6_results.json"
+   ],
+   "verdict": "no_gate_at_all"
+  },
+  {
+   "runner": "experiments/r7_closure_report.py",
+   "file": "r7_closure_report.py",
+   "gate_calls": [],
+   "gate_helpers": [],
+   "rc_guards": [],
+   "artifact_writes": [
+    {
+     "line": 87,
+     "artifact": "r7_closure_report.json"
+    }
+   ],
+   "artifacts_written": [
+    "r7_closure_report.json"
+   ],
+   "writes_read_too": [
+    "phase8_results.json"
+   ],
+   "verdict": "no_gate_at_all"
+  },
+  {
+   "runner": "experiments/run_phase10.py",
+   "file": "run_phase10.py",
+   "gate_calls": [
+    {
+     "line": 85,
+     "gate": "p10_gate.py"
+    }
+   ],
+   "gate_helpers": [],
+   "rc_guards": [
+    {
+     "line": 87,
+     "test": "gate.returncode != 0",
+     "stops": true
+    }
+   ],
+   "artifact_writes": [
+    {
+     "line": 142,
+     "artifact": "phase10_results.json"
+    }
+   ],
+   "artifacts_written": [
+    "phase10_results.json"
+   ],
+   "writes_read_too": [
+    "phase8_results.json"
+   ],
+   "verdict": "enforced"
+  },
+  {
+   "runner": "experiments/run_phase11.py",
+   "file": "run_phase11.py",
+   "gate_calls": [
+    {
+     "line": 170,
+     "gate": "p11_gate.py"
+    }
+   ],
+   "gate_helpers": [],
+   "rc_guards": [
+    {
+     "line": 172,
+     "test": "gate.returncode != 0",
+     "stops": true
+    }
+   ],
+   "artifact_writes": [
+    {
+     "line": 200,
+     "artifact": "phase11_results.json"
+    }
+   ],
+   "artifacts_written": [
+    "phase11_results.json"
+   ],
+   "writes_read_too": [],
+   "verdict": "enforced"
+  },
+  {
+   "runner": "experiments/run_phase12.py",
+   "file": "run_phase12.py",
+   "gate_calls": [
+    {
+     "line": 31,
+     "gate": "p12_gate.py"
+    }
+   ],
+   "gate_helpers": [],
+   "rc_guards": [
+    {
+     "line": 33,
+     "test": "gate.returncode != 0",
+     "stops": true
+    }
+   ],
+   "artifact_writes": [
+    {
+     "line": 124,
+     "artifact": "phase12_results.json"
+    }
+   ],
+   "artifacts_written": [
+    "phase12_results.json"
+   ],
+   "writes_read_too": [
+    "phase8_results.json"
+   ],
+   "verdict": "enforced"
+  },
+  {
+   "runner": "experiments/run_phase13.py",
+   "file": "run_phase13.py",
+   "gate_calls": [
+    {
+     "line": 148,
+     "gate": "p13_gate.py"
+    }
+   ],
+   "gate_helpers": [],
+   "rc_guards": [
+    {
+     "line": 150,
+     "test": "gate.returncode != 0",
+     "stops": true
+    }
+   ],
+   "artifact_writes": [
+    {
+     "line": 185,
+     "artifact": "phase13_results.json"
+    }
+   ],
+   "artifacts_written": [
+    "phase13_results.json"
+   ],
+   "writes_read_too": [
+    "phase8_results.json"
+   ],
+   "verdict": "enforced"
+  },
+  {
+   "runner": "experiments/run_phase14.py",
+   "file": "run_phase14.py",
+   "gate_calls": [
+    {
+     "line": 29,
+     "gate": "p14_gate.py"
+    }
+   ],
+   "gate_helpers": [
+    "run_gate"
+   ],
+   "rc_guards": [
+    {
+     "line": 31,
+     "test": "r.returncode != 0",
+     "stops": false
+    },
+    {
+     "line": 39,
+     "test": "code != 0",
+     "stops": true
+    }
+   ],
+   "artifact_writes": [
+    {
+     "line": 131,
+     "artifact": "phase14_results.json"
+    }
+   ],
+   "artifacts_written": [
+    "phase14_results.json"
+   ],
+   "writes_read_too": [
+    "phase13_results.json"
+   ],
+   "verdict": "enforced"
+  },
+  {
+   "runner": "experiments/run_phase15.py",
+   "file": "run_phase15.py",
+   "gate_calls": [
+    {
+     "line": 30,
+     "gate": "p15_gate.py"
+    }
+   ],
+   "gate_helpers": [
+    "run_gate"
+   ],
+   "rc_guards": [
+    {
+     "line": 32,
+     "test": "r.returncode != 0",
+     "stops": false
+    },
+    {
+     "line": 39,
+     "test": "run_gate() != 0",
+     "stops": true
+    }
+   ],
+   "artifact_writes": [
+    {
+     "line": 122,
+     "artifact": "phase15_results.json"
+    }
+   ],
+   "artifacts_written": [
+    "phase15_results.json"
+   ],
+   "writes_read_too": [],
+   "verdict": "enforced"
+  },
+  {
+   "runner": "experiments/run_phase16.py",
+   "file": "run_phase16.py",
+   "gate_calls": [
+    {
+     "line": 30,
+     "gate": "p16_gate.py"
+    }
+   ],
+   "gate_helpers": [
+    "run_gate"
+   ],
+   "rc_guards": [
+    {
+     "line": 32,
+     "test": "r.returncode != 0",
+     "stops": false
+    },
+    {
+     "line": 39,
+     "test": "run_gate() != 0",
+     "stops": true
+    }
+   ],
+   "artifact_writes": [
+    {
+     "line": 132,
+     "artifact": "phase16_results.json"
+    }
+   ],
+   "artifacts_written": [
+    "phase16_results.json"
+   ],
+   "writes_read_too": [
+    "phase14_results.json"
+   ],
+   "verdict": "enforced"
+  },
+  {
+   "runner": "experiments/run_phase17.py",
+   "file": "run_phase17.py",
+   "gate_calls": [
+    {
+     "line": 28,
+     "gate": "p17_gate.py"
+    }
+   ],
+   "gate_helpers": [
+    "run_gate"
+   ],
+   "rc_guards": [
+    {
+     "line": 30,
+     "test": "r.returncode != 0",
+     "stops": false
+    },
+    {
+     "line": 37,
+     "test": "run_gate() != 0",
+     "stops": true
+    }
+   ],
+   "artifact_writes": [
+    {
+     "line": 139,
+     "artifact": "phase17_results.json"
+    }
+   ],
+   "artifacts_written": [
+    "phase17_results.json"
+   ],
+   "writes_read_too": [],
+   "verdict": "enforced"
+  },
+  {
+   "runner": "experiments/run_phase18.py",
+   "file": "run_phase18.py",
+   "gate_calls": [
+    {
+     "line": 27,
+     "gate": "p18_gate.py"
+    }
+   ],
+   "gate_helpers": [
+    "run_gate"
+   ],
+   "rc_guards": [
+    {
+     "line": 29,
+     "test": "r.returncode != 0",
+     "stops": false
+    },
+    {
+     "line": 36,
+     "test": "run_gate() != 0",
+     "stops": true
+    }
+   ],
+   "artifact_writes": [
+    {
+     "line": 137,
+     "artifact": "phase18_results.json"
+    }
+   ],
+   "artifacts_written": [
+    "phase18_results.json"
+   ],
+   "writes_read_too": [],
+   "verdict": "enforced"
+  },
+  {
+   "runner": "experiments/run_phase19.py",
+   "file": "run_phase19.py",
+   "gate_calls": [
+    {
+     "line": 22,
+     "gate": "p19_gate.py"
+    }
+   ],
+   "gate_helpers": [],
+   "rc_guards": [
+    {
+     "line": 24,
+     "test": "gate.returncode != 0",
+     "stops": true
+    }
+   ],
+   "artifact_writes": [
+    {
+     "line": 91,
+     "artifact": "phase19_results.json"
+    }
+   ],
+   "artifacts_written": [
+    "phase19_results.json"
+   ],
+   "writes_read_too": [],
+   "verdict": "enforced"
+  },
+  {
+   "runner": "experiments/run_phase2.py",
+   "file": "run_phase2.py",
+   "gate_calls": [
+    {
+     "line": 134,
+     "gate": "phase2_gate.py"
+    }
+   ],
+   "gate_helpers": [],
+   "rc_guards": [
+    {
+     "line": 137,
+     "test": "gate.returncode != 0",
+     "stops": true
+    }
+   ],
+   "artifact_writes": [
+    {
+     "line": 147,
+     "artifact": "phase2_results.json"
+    }
+   ],
+   "artifacts_written": [
+    "phase2_results.json"
+   ],
+   "writes_read_too": [],
+   "verdict": "enforced"
+  },
+  {
+   "runner": "experiments/run_phase20.py",
+   "file": "run_phase20.py",
+   "gate_calls": [
+    {
+     "line": 17,
+     "gate": "p20_gate.py"
+    }
+   ],
+   "gate_helpers": [],
+   "rc_guards": [
+    {
+     "line": 19,
+     "test": "gate.returncode != 0",
+     "stops": true
+    }
+   ],
+   "artifact_writes": [
+    {
+     "line": 76,
+     "artifact": "phase20_results.json"
+    }
+   ],
+   "artifacts_written": [
+    "phase20_results.json"
+   ],
+   "writes_read_too": [],
+   "verdict": "enforced"
+  },
+  {
+   "runner": "experiments/run_phase21.py",
+   "file": "run_phase21.py",
+   "gate_calls": [
+    {
+     "line": 21,
+     "gate": "p21_gate.py"
+    }
+   ],
+   "gate_helpers": [],
+   "rc_guards": [
+    {
+     "line": 23,
+     "test": "gate.returncode != 0",
+     "stops": true
+    }
+   ],
+   "artifact_writes": [
+    {
+     "line": 81,
+     "artifact": "phase21_results.json"
+    }
+   ],
+   "artifacts_written": [
+    "phase21_results.json"
+   ],
+   "writes_read_too": [],
+   "verdict": "enforced"
+  },
+  {
+   "runner": "experiments/run_phase22.py",
+   "file": "run_phase22.py",
+   "gate_calls": [
+    {
+     "line": 21,
+     "gate": "p22_gate.py"
+    }
+   ],
+   "gate_helpers": [],
+   "rc_guards": [
+    {
+     "line": 23,
+     "test": "gate.returncode != 0",
+     "stops": true
+    }
+   ],
+   "artifact_writes": [
+    {
+     "line": 76,
+     "artifact": "phase22_results.json"
+    }
+   ],
+   "artifacts_written": [
+    "phase22_results.json"
+   ],
+   "writes_read_too": [],
+   "verdict": "enforced"
+  },
+  {
+   "runner": "experiments/run_phase3.py",
+   "file": "run_phase3.py",
+   "gate_calls": [
+    {
+     "line": 116,
+     "gate": "p3_gate.py"
+    }
+   ],
+   "gate_helpers": [],
+   "rc_guards": [
+    {
+     "line": 118,
+     "test": "gate.returncode != 0",
+     "stops": true
+    }
+   ],
+   "artifact_writes": [
+    {
+     "line": 127,
+     "artifact": "phase3_results.json"
+    }
+   ],
+   "artifacts_written": [
+    "phase3_results.json"
+   ],
+   "writes_read_too": [],
+   "verdict": "enforced"
+  },
+  {
+   "runner": "experiments/run_phase4.py",
+   "file": "run_phase4.py",
+   "gate_calls": [
+    {
+     "line": 101,
+     "gate": "p4_gate.py"
+    }
+   ],
+   "gate_helpers": [],
+   "rc_guards": [
+    {
+     "line": 103,
+     "test": "gate.returncode != 0",
+     "stops": true
+    }
+   ],
+   "artifact_writes": [
+    {
+     "line": 112,
+     "artifact": "phase4_results.json"
+    }
+   ],
+   "artifacts_written": [
+    "phase4_results.json"
+   ],
+   "writes_read_too": [],
+   "verdict": "enforced"
+  },
+  {
+   "runner": "experiments/run_phase5.py",
+   "file": "run_phase5.py",
+   "gate_calls": [
+    {
+     "line": 190,
+     "gate": "p5_gate.py"
+    }
+   ],
+   "gate_helpers": [],
+   "rc_guards": [
+    {
+     "line": 192,
+     "test": "gate.returncode != 0",
+     "stops": true
+    }
+   ],
+   "artifact_writes": [
+    {
+     "line": 207,
+     "artifact": "phase5_results.json"
+    }
+   ],
+   "artifacts_written": [
+    "phase5_results.json"
+   ],
+   "writes_read_too": [
+    "phase4_results.json"
+   ],
+   "verdict": "enforced"
+  },
+  {
+   "runner": "experiments/run_phase5b.py",
+   "file": "run_phase5b.py",
+   "gate_calls": [
+    {
+     "line": 28,
+     "gate": "p5b_gate.py"
+    }
+   ],
+   "gate_helpers": [],
+   "rc_guards": [
+    {
+     "line": 30,
+     "test": "gate.returncode != 0",
+     "stops": true
+    }
+   ],
+   "artifact_writes": [
+    {
+     "line": 85,
+     "artifact": "phase5b_results.json"
+    }
+   ],
+   "artifacts_written": [
+    "phase5b_results.json"
+   ],
+   "writes_read_too": [
+    "phase5_results.json"
+   ],
+   "verdict": "enforced"
+  },
+  {
+   "runner": "experiments/run_phase5c.py",
+   "file": "run_phase5c.py",
+   "gate_calls": [
+    {
+     "line": 20,
+     "gate": "p5c_gate.py"
+    }
+   ],
+   "gate_helpers": [],
+   "rc_guards": [
+    {
+     "line": 22,
+     "test": "gate.returncode != 0",
+     "stops": true
+    }
+   ],
+   "artifact_writes": [
+    {
+     "line": 81,
+     "artifact": "phase5c_results.json"
+    }
+   ],
+   "artifacts_written": [
+    "phase5c_results.json"
+   ],
+   "writes_read_too": [
+    "phase5_results.json"
+   ],
+   "verdict": "enforced"
+  },
+  {
+   "runner": "experiments/run_phase5d.py",
+   "file": "run_phase5d.py",
+   "gate_calls": [
+    {
+     "line": 21,
+     "gate": "p5d_gate.py"
+    }
+   ],
+   "gate_helpers": [],
+   "rc_guards": [
+    {
+     "line": 23,
+     "test": "gate.returncode != 0",
+     "stops": true
+    }
+   ],
+   "artifact_writes": [
+    {
+     "line": 65,
+     "artifact": "phase5d_results.json"
+    }
+   ],
+   "artifacts_written": [
+    "phase5d_results.json"
+   ],
+   "writes_read_too": [
+    "phase5_results.json"
+   ],
+   "verdict": "enforced"
+  },
+  {
+   "runner": "experiments/run_phase6.py",
+   "file": "run_phase6.py",
+   "gate_calls": [
+    {
+     "line": 93,
+     "gate": "p6_gate.py"
+    }
+   ],
+   "gate_helpers": [],
+   "rc_guards": [
+    {
+     "line": 95,
+     "test": "gate.returncode != 0",
+     "stops": true
+    }
+   ],
+   "artifact_writes": [
+    {
+     "line": 126,
+     "artifact": "phase6_results.json"
+    }
+   ],
+   "artifacts_written": [
+    "phase6_results.json"
+   ],
+   "writes_read_too": [
+    "phase5_results.json"
+   ],
+   "verdict": "enforced"
+  },
+  {
+   "runner": "experiments/run_phase7.py",
+   "file": "run_phase7.py",
+   "gate_calls": [
+    {
+     "line": 26,
+     "gate": "p7_gate.py"
+    }
+   ],
+   "gate_helpers": [],
+   "rc_guards": [
+    {
+     "line": 28,
+     "test": "gate.returncode != 0",
+     "stops": true
+    }
+   ],
+   "artifact_writes": [
+    {
+     "line": 107,
+     "artifact": "phase7_results.json"
+    }
+   ],
+   "artifacts_written": [
+    "phase7_results.json"
+   ],
+   "writes_read_too": [
+    "phase6_results.json"
+   ],
+   "verdict": "enforced"
+  },
+  {
+   "runner": "experiments/run_phase8.py",
+   "file": "run_phase8.py",
+   "gate_calls": [
+    {
+     "line": 22,
+     "gate": "p8_gate.py"
+    }
+   ],
+   "gate_helpers": [],
+   "rc_guards": [
+    {
+     "line": 24,
+     "test": "gate.returncode != 0",
+     "stops": true
+    }
+   ],
+   "artifact_writes": [
+    {
+     "line": 80,
+     "artifact": "phase8_results.json"
+    }
+   ],
+   "artifacts_written": [
+    "phase8_results.json"
+   ],
+   "writes_read_too": [
+    "phase6_results.json"
+   ],
+   "verdict": "enforced"
+  },
+  {
+   "runner": "experiments/run_phase9.py",
+   "file": "run_phase9.py",
+   "gate_calls": [
+    {
+     "line": 205,
+     "gate": "p9_gate.py"
+    }
+   ],
+   "gate_helpers": [],
+   "rc_guards": [
+    {
+     "line": 207,
+     "test": "gate.returncode != 0",
+     "stops": true
+    }
+   ],
+   "artifact_writes": [
+    {
+     "line": 231,
+     "artifact": "phase9_results.json"
+    }
+   ],
+   "artifacts_written": [
+    "phase9_results.json"
+   ],
+   "writes_read_too": [],
+   "verdict": "enforced"
+  },
+  {
+   "runner": "literature/run_L01.py",
+   "file": "run_L01.py",
+   "gate_calls": [
+    {
+     "line": 40,
+     "gate": "l01_gate.py"
+    }
+   ],
+   "gate_helpers": [],
+   "rc_guards": [
+    {
+     "line": 43,
+     "test": "g.returncode != 0",
+     "stops": true
+    }
+   ],
+   "artifact_writes": [
+    {
+     "line": 178,
+     "artifact": "L01_coding.json"
+    }
+   ],
+   "artifacts_written": [
+    "L01_coding.json"
+   ],
+   "writes_read_too": [
+    "L01_candidates.json",
+    "L01_channels.json",
+    "L01_fulltexts.json",
+    "L01_verification.json",
+    "registry.json"
+   ],
+   "verdict": "enforced"
+  },
+  {
+   "runner": "literature/run_L01_reanalysis.py",
+   "file": "run_L01_reanalysis.py",
+   "gate_calls": [],
+   "gate_helpers": [],
+   "rc_guards": [],
+   "artifact_writes": [
+    {
+     "line": 200,
+     "artifact": "L01_reanalysis.json"
+    }
+   ],
+   "artifacts_written": [
+    "L01_reanalysis.json"
+   ],
+   "writes_read_too": [
+    "L01_coding.json"
+   ],
+   "verdict": "no_gate_at_all"
+  }
+ ],
+ "readers_not_writers": [],
+ "known_no_gate": {
+  "p5_v1_posthoc.py": "事后重分析：读已提交的 `phase5_results.json`，写的是自己的 `p5_v1_posthoc.json`（零检验地位，R6），不属于任何一轮的门控时序（X-32 一族）。",
+  "p6_reanalyze.py": "Phase VI 的 reanalysis：在已提交读数上重算，另写 `phase6_reanalysis.json`，原轮判定与门控记录一字不动（R6）。",
+  "r7_closure_report.py": "R7 闭合报告：只在已提交工件（Phase VIII/XII/XIII 的 results）上做逐字比对，把比对结果写进 `r7_closure_report.json`；它是报告不是某一轮的读数，故无门控时序。",
+  "run_L01_reanalysis.py": "L-01 主张层重判读：输入是已提交的 `L01_coding.json`，输出 `L01_reanalysis.json` 标注 `ZERO_TEST_REANALYSIS`；该轮的门控由 `run_L01.py` 在编码时执行过（`l01_gate.py`），重判读不得重跑门控（R6）。"
+ }
+}

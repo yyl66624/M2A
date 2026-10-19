@@ -1618,3 +1618,42 @@ python3 experiments/audit_bindings.py             # 收尾审计，含本套件
 收尾审计复跑：**31/31 套件、288 项检查、24/24 预注册哈希绑定**（`experiments/audit_bindings.py` 的 `SUMMARY` 行原文：`SUMMARY  suites 31/31 green, checks 288, bindings 24/24`）。套件 30→31、检查 270→288：新增的那 1 台套件正是本节的 18 条判定。
 
 本节不改动任何判定、不跑实验、只读源码；`0x` 冻结文件、`registry.json`、412 行账本与预注册哈希一字未动（R6、owner 2026-10-18 第 8 条）。
+
+### 43 把「门控红了 runner 就不写盘」从文字变成语法：runner 侧强制表 v1，29 个工件写入者全部对上
+
+**缘起**。§42 的覆盖表把「这台门控到底量了哪个量」变成推导，但它自己依赖一条从未被推导的前提：**runner 会在门控不过时拒绝执行**。这条规则此前只由 runner 的 docstring 承载——`run_phase22.py` 的第一行写着 "gate first, then C22-1..4, then exits in the registered order"。X-67 讲的正是这个形状：**写在某处不等于跑在某处**。于是本步给「写盘者」这一族群做一次与 §42 同构的检查：门控是否**被执行**、拒绝是否**真的会停**、写盘是否**在守卫之后**。
+
+**人口与判定**。人口不是「所有 runner」而是「所有会写已提交 JSON 的脚本」——判据是工件本身：`experiments/`、`literature/` 下**已被版本控制**的 JSON 全集（29 个）。三个判定：
+
+* `gate_executed`：存在一条 subprocess 调用，参数点名某个 `*_gate.py`；
+* `refusal_enforced`：针对返回码的 `if` 守卫，体内有 `return <非零>` / `sys.exit` / `raise`。**守卫可以隔一层**：Phase XIV 把门控包在 `run_gate()` 里，该函数自己 `return r.returncode`，真正的拒绝在调用处（`code = run_gate(); if code != 0: return 1`）——只看 `if` 体本身会把它误判成「不拒绝」。
+* `write_after_guard`：工件写入行号晚于守卫。
+
+结果：**29 个写入者，25 个 enforced**（`run_phase*.py` 全部 24 台 + 文献轮的 `run_L01.py`），**其它判定 0 条**，另 **4 条登记在册的无门控写入者**（`p5_v1_posthoc.py`、`p6_reanalyze.py`、`r7_closure_report.py`、`run_L01_reanalysis.py`）——它们都在**已提交读数**上重算，取零检验地位（R6），按构造不该有门控时序；**新增一个不跑门控的写入者而未登记，构建直接失败**。另有 **5 处守卫「不拒绝」**：它们与真正的拒绝守卫共存（如 `run_gate()` 内部只打印 stderr），本表逐行披露而不隐藏。
+
+**这张表说什么、不说什么**。它说的是：任何一轮的 results 工件，其生产者都**必须先过自己的门控**——这条以前靠文字，现在每次收尾审计都重跑一遍。它**不说**门控里有没有量具（§42 的职责），也不说判据取没取（出口表在各轮 results 里）。两张表合起来才是一句完整的话：**门控被跑了（本表），且门控里确有读数量具（§42）**。
+
+**推导器自己的四处缺陷**（都在写进工件之前查出，其中第一处若漏掉会产出一条假新闻）：
+
+1. **把读当写**。第一版用「调用文本里出现工件名」判写入，于是 `json.load(open("phase8_results.json"))` 也算——四个 runner 看起来在**回写既往轮的冻结工件**（`run_phase10.py`「重写 phase8_results.json」）。这是一条足以进负面日志的错误结论，实际只是读。修法：写入必须是 `json.dump` / `write_text` / `open(..., "w")`，其余不算。
+2. **工件名经变量传递时看不见写**。`dst = LIT / "L01_reanalysis.json"` 后 `dst.write_text(...)`，调用文本里没有文件名 ⇒ 该写入者被漏。**§42 的同一个教训（位置化赋值解析）在第二个工件上第二次起作用。**
+3. **后缀白名单太窄**。用 `_results|_reanalysis|_coding` 三个后缀定义工件，漏掉同样是已提交读数的 `p5_v1_posthoc.json`、`r7_closure_report.json` ⇒ 改为「已提交 JSON 全集」，并要求每条登记理由**必须指向该文件真正写入的那个工件**。
+4. **`stoppers()` 的两个错**：把语句**列表**直接喂给 `ast.walk` 抛 `AttributeError`；而改用 walk 又会把守卫体里**嵌套函数**的 `return` 当成拒绝——那属于那个函数，不属于拒绝路径。最终只数守卫自己的语句（含一层 if/try 递归）。
+
+第 3 条的「理由必须指向真实工件」这条新校验，当场抓到本会话自己写错的登记说明：`p5_v1_posthoc.py` 的理由说它写 `phase5_results.json` 的字段，实际它写的是自己的文件。**登记文本本身也是要被打量的工件**（X-74 那条规则的另一侧）。
+
+**校验器 14 条**（`governance/runner_enforcement_map_gate.py`，**14/14**）用行文本这条独立通路复核：28 个写入者的「执行门控 / 会停」两个布尔与 AST 逐个一致（第 29 个是文本看不见的变量传递，逐行披露）；`enforced` 的每一行都另在行文本里找到拒绝；一条**反向能力控制**证明「读不计为写」；一份合成 runner 证明**五种判定全都可产出**——真实人口里 4 种坏判定为 0，若探测器产不出它们，那个 0 就毫无意义（X-77 对注入讲的同一条规矩）；注册双向咬合（新增未登记的无门控写入者 ⇒ 报缺失；某条登记对象的门控被补上 ⇒ 报陈旧）；Markdown 的表与标题数字逐项等于 JSON。
+
+本步不产出新的科学判定，不改任何 runner、门控或工件（只读源码）；`O-16`/`O-17` 的状态不变；`0x` 冻结文件、`registry.json`、412 行账本与预注册哈希一字未动。
+
+复现：
+
+```bash
+python3 governance/build_runner_enforcement_map.py
+python3 governance/runner_enforcement_map_gate.py   # 14/14 checks passed
+python3 experiments/audit_bindings.py               # 收尾审计，含本套件
+```
+
+收尾审计复跑：**32/32 套件、302 项检查、24/24 预注册哈希绑定**（`experiments/audit_bindings.py` 的 `SUMMARY` 行原文：`SUMMARY  suites 32/32 green, checks 302, bindings 24/24`）。套件 31→32、检查 288→302：新增的那 1 台套件是本节的 14 条判定。
+
+本节不改动任何判定、不跑实验、只读源码；`0x` 冻结文件、`registry.json`、412 行账本与预注册哈希一字未动（R6、owner 2026-10-18 第 8 条）。
