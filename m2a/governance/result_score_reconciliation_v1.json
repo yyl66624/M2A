@@ -1,0 +1,457 @@
+{
+ "schema": "m2a.result-score-reconciliation.v1",
+ "counts": {
+  "docs": 25,
+  "aligned": 23,
+  "static_gap_registered": 2,
+  "bad": 0,
+  "no_claim": 0,
+  "checks_printed": 169,
+  "check_sites_static": 169,
+  "static_sites_in_population": 161
+ },
+ "rows": [
+  {
+   "doc": "experiments/PHASE10_RESULTS.md",
+   "gate": "experiments/p10_gate.py",
+   "named_gate": "p10_gate.py",
+   "claim_line": 4,
+   "claim": [
+    6,
+    6
+   ],
+   "live": [
+    6,
+    6
+   ],
+   "static_sites": 6,
+   "gate_sha256": "433f2913cc7a7745d9475fee2f50e75e5a6a1ade73592ff39231a0b16eea1d7f",
+   "verdict": "aligned"
+  },
+  {
+   "doc": "experiments/PHASE11_RESULTS.md",
+   "gate": "experiments/p11_gate.py",
+   "named_gate": "p11_gate.py",
+   "claim_line": 4,
+   "claim": [
+    6,
+    6
+   ],
+   "live": [
+    6,
+    6
+   ],
+   "static_sites": 6,
+   "gate_sha256": "ec5ca1ca28be7e4c15554f456aef7ca64790bb43de8fcb9a49f43c7cdba618d9",
+   "verdict": "aligned"
+  },
+  {
+   "doc": "experiments/PHASE12_RESULTS.md",
+   "gate": "experiments/p12_gate.py",
+   "named_gate": "p12_gate.py",
+   "claim_line": 4,
+   "claim": [
+    4,
+    4
+   ],
+   "live": [
+    4,
+    4
+   ],
+   "static_sites": 4,
+   "gate_sha256": "5a1fd094d95c0100be3d69d5780c3dcfa7e93e3b7960caf0c1d145e4228b46d5",
+   "verdict": "aligned"
+  },
+  {
+   "doc": "experiments/PHASE13_RESULTS.md",
+   "gate": "experiments/p13_gate.py",
+   "named_gate": "p13_gate.py",
+   "claim_line": 4,
+   "claim": [
+    6,
+    6
+   ],
+   "live": [
+    6,
+    6
+   ],
+   "static_sites": 6,
+   "gate_sha256": "3ffad7486680a2f79d038f3a06323a4c7f30c6033d72908f3c689ba3a38cde1f",
+   "verdict": "aligned"
+  },
+  {
+   "doc": "experiments/PHASE14_RESULTS.md",
+   "gate": "experiments/p14_gate.py",
+   "named_gate": "p14_gate.py",
+   "claim_line": 5,
+   "claim": [
+    7,
+    7
+   ],
+   "live": [
+    7,
+    7
+   ],
+   "static_sites": 7,
+   "gate_sha256": "c0bafd7c751b726e91b9053da06462134c5a51a259e6f1a0b735e05d40bd2964",
+   "verdict": "aligned"
+  },
+  {
+   "doc": "experiments/PHASE15_RESULTS.md",
+   "gate": "experiments/p15_gate.py",
+   "named_gate": null,
+   "claim_line": 4,
+   "claim": [
+    7,
+    7
+   ],
+   "live": [
+    7,
+    7
+   ],
+   "static_sites": 7,
+   "gate_sha256": "610b5e4ed1ac87f9df55583adb411a8496af3793e9321e03258f41cb105e791b",
+   "verdict": "aligned"
+  },
+  {
+   "doc": "experiments/PHASE16_RESULTS.md",
+   "gate": "experiments/p16_gate.py",
+   "named_gate": "p16_gate.py",
+   "claim_line": 4,
+   "claim": [
+    7,
+    7
+   ],
+   "live": [
+    7,
+    7
+   ],
+   "static_sites": 7,
+   "gate_sha256": "2e1b72ca26dbee249723d58b84a88c224e5d461ccbfa0a3ce862a3a200314516",
+   "verdict": "aligned"
+  },
+  {
+   "doc": "experiments/PHASE17_RESULTS.md",
+   "gate": "experiments/p17_gate.py",
+   "named_gate": "p17_gate.py",
+   "claim_line": 4,
+   "claim": [
+    7,
+    7
+   ],
+   "live": [
+    7,
+    7
+   ],
+   "static_sites": 6,
+   "gate_sha256": "686ea937fdc29bdef32b3303eed41875d89523b3db8b81155efb48da4d638faf",
+   "verdict": "loop_nested"
+  },
+  {
+   "doc": "experiments/PHASE18_RESULTS.md",
+   "gate": "experiments/p18_gate.py",
+   "named_gate": null,
+   "claim_line": 4,
+   "claim": [
+    7,
+    7
+   ],
+   "live": [
+    7,
+    7
+   ],
+   "static_sites": 7,
+   "gate_sha256": "fd3a54dbd6c52e624ad5998e0a982d62cab7bb4e1102e536379b0c82a25c85a6",
+   "verdict": "aligned"
+  },
+  {
+   "doc": "experiments/PHASE19_RESULTS.md",
+   "gate": "experiments/p19_gate.py",
+   "named_gate": "p19_gate.py",
+   "claim_line": 10,
+   "claim": [
+    6,
+    6
+   ],
+   "live": [
+    6,
+    6
+   ],
+   "static_sites": 6,
+   "gate_sha256": "dcdb4e56cd659e24b2142b66bb65de664d03fa32d506dc128a8d911076df72ab",
+   "verdict": "aligned"
+  },
+  {
+   "doc": "experiments/PHASE20_RESULTS.md",
+   "gate": "experiments/p20_gate.py",
+   "named_gate": "p20_gate.py",
+   "claim_line": 10,
+   "claim": [
+    7,
+    7
+   ],
+   "live": [
+    7,
+    7
+   ],
+   "static_sites": 7,
+   "gate_sha256": "def465f2d5bf375bed33a0bd62983e0c21dc160e89e321477269b27afe7a497c",
+   "verdict": "aligned"
+  },
+  {
+   "doc": "experiments/PHASE21_RESULTS.md",
+   "gate": "experiments/p21_gate.py",
+   "named_gate": null,
+   "claim_line": 9,
+   "claim": [
+    8,
+    8
+   ],
+   "live": [
+    8,
+    8
+   ],
+   "static_sites": 8,
+   "gate_sha256": "ea8ec46bb2e1024bddc9658533ea2ec33659195b7c2ecef17f10456a131dbdfe",
+   "verdict": "aligned"
+  },
+  {
+   "doc": "experiments/PHASE22_RESULTS.md",
+   "gate": "experiments/p22_gate.py",
+   "named_gate": null,
+   "claim_line": 8,
+   "claim": [
+    7,
+    7
+   ],
+   "live": [
+    7,
+    7
+   ],
+   "static_sites": 7,
+   "gate_sha256": "7ccef873b7ea6609203c444156142f2d4db5f31ad36bff221c0671703dc40671",
+   "verdict": "aligned"
+  },
+  {
+   "doc": "experiments/PHASE2_RESULTS.md",
+   "gate": "experiments/phase2_gate.py",
+   "named_gate": "phase2_gate.py",
+   "claim_line": 4,
+   "claim": [
+    7,
+    7
+   ],
+   "live": [
+    7,
+    7
+   ],
+   "static_sites": 7,
+   "gate_sha256": "57554ebdbfd4fd5392579d88d2d0235f23df9513976cfb333c879f64d7638dd9",
+   "verdict": "aligned"
+  },
+  {
+   "doc": "experiments/PHASE3_RESULTS.md",
+   "gate": "experiments/p3_gate.py",
+   "named_gate": null,
+   "claim_line": 4,
+   "claim": [
+    7,
+    7
+   ],
+   "live": [
+    7,
+    7
+   ],
+   "static_sites": 7,
+   "gate_sha256": "0dea02e14745c57f000373858b5de46f43eb74a88593347f602c6b0a60e0577d",
+   "verdict": "aligned"
+  },
+  {
+   "doc": "experiments/PHASE4_RESULTS.md",
+   "gate": "experiments/p4_gate.py",
+   "named_gate": null,
+   "claim_line": 3,
+   "claim": [
+    5,
+    5
+   ],
+   "live": [
+    5,
+    5
+   ],
+   "static_sites": 5,
+   "gate_sha256": "a37dd2e0a5b02fc5405a93dcfd81f355551c9a3d5fcf106a6778420a15d63d92",
+   "verdict": "aligned"
+  },
+  {
+   "doc": "experiments/PHASE5B_RESULTS.md",
+   "gate": "experiments/p5b_gate.py",
+   "named_gate": null,
+   "claim_line": 3,
+   "claim": [
+    6,
+    6
+   ],
+   "live": [
+    6,
+    6
+   ],
+   "static_sites": 6,
+   "gate_sha256": "2ad486b3a5e217df48742e476b2d37938fd008fca43a5e2014cb60ae52414a25",
+   "verdict": "aligned"
+  },
+  {
+   "doc": "experiments/PHASE5C_RESULTS.md",
+   "gate": "experiments/p5c_gate.py",
+   "named_gate": null,
+   "claim_line": 3,
+   "claim": [
+    7,
+    7
+   ],
+   "live": [
+    7,
+    7
+   ],
+   "static_sites": 7,
+   "gate_sha256": "006b0d90456c4776c25a7c36b311057a97f39748ef2921382785f07c864dd97b",
+   "verdict": "aligned"
+  },
+  {
+   "doc": "experiments/PHASE5D_RESULTS.md",
+   "gate": "experiments/p5d_gate.py",
+   "named_gate": null,
+   "claim_line": 3,
+   "claim": [
+    7,
+    7
+   ],
+   "live": [
+    7,
+    7
+   ],
+   "static_sites": 7,
+   "gate_sha256": "5c0b3ed7015b8ceba30247f0fd5b8f4522ce2961b5d5be35f216ac8ec3668bd3",
+   "verdict": "aligned"
+  },
+  {
+   "doc": "experiments/PHASE5_RESULTS.md",
+   "gate": "experiments/p5_gate.py",
+   "named_gate": "p5_gate.py",
+   "claim_line": 4,
+   "claim": [
+    8,
+    8
+   ],
+   "live": [
+    8,
+    8
+   ],
+   "static_sites": 8,
+   "gate_sha256": "83cfc522d3a678af79b0e3832cce3730cfc2218d206167e69f6877ef3aff5822",
+   "verdict": "aligned"
+  },
+  {
+   "doc": "experiments/PHASE6_RESULTS.md",
+   "gate": "experiments/p6_gate.py",
+   "named_gate": null,
+   "claim_line": 4,
+   "claim": [
+    7,
+    7
+   ],
+   "live": [
+    7,
+    7
+   ],
+   "static_sites": 7,
+   "gate_sha256": "7b6eb4ec5b44af24934d8e3a01eacc33f2b40d65aee0dbe2e94f1a8912e0a5ef",
+   "verdict": "aligned"
+  },
+  {
+   "doc": "experiments/PHASE7_RESULTS.md",
+   "gate": "experiments/p7_gate.py",
+   "named_gate": null,
+   "claim_line": 4,
+   "claim": [
+    9,
+    9
+   ],
+   "live": [
+    9,
+    9
+   ],
+   "static_sites": 9,
+   "gate_sha256": "433e9f78a5bb7bbec30396896a508d994f98bfd958f6705eb18050047c92f867",
+   "verdict": "aligned"
+  },
+  {
+   "doc": "experiments/PHASE8_RESULTS.md",
+   "gate": "experiments/p8_gate.py",
+   "named_gate": null,
+   "claim_line": 3,
+   "claim": [
+    6,
+    6
+   ],
+   "live": [
+    6,
+    6
+   ],
+   "static_sites": 6,
+   "gate_sha256": "f8d9a9f53c2d329044b3d8cdc8380d55c68a7740d3ec0376a04f8977359d003a",
+   "verdict": "aligned"
+  },
+  {
+   "doc": "experiments/PHASE9_RESULTS.md",
+   "gate": "experiments/p9_gate.py",
+   "named_gate": "p9_gate.py",
+   "claim_line": 4,
+   "claim": [
+    8,
+    8
+   ],
+   "live": [
+    8,
+    8
+   ],
+   "static_sites": 8,
+   "gate_sha256": "55c0bbc4ef2541bf6feac853a33a72312e224de6e9bfddac364c857bcd2ed796",
+   "verdict": "aligned"
+  },
+  {
+   "doc": "literature/ROUND_L01_RESULTS.md",
+   "gate": "literature/l01_gate.py",
+   "named_gate": "l01_gate.py",
+   "claim_line": 6,
+   "claim": [
+    7,
+    7
+   ],
+   "live": [
+    7,
+    7
+   ],
+   "static_sites": 0,
+   "gate_sha256": "4fcbc82ef9a2c0f37e575292cc40b363ecb77b4286dfe32b2a6e56a171218e23",
+   "verdict": "other_harness"
+  }
+ ],
+ "known_no_claim": {},
+ "known_static_gaps": {
+  "p17_gate.py": {
+   "kind": "loop_nested",
+   "why": "G1 的锚定比较写在 `for` 里（两条口径各一次），静态 6 个站点、执行 7 条判定。§42 的 169 是**站点数**，门控打印的是**判定条数**：本表把两个数放在一起，免得「169」被当成执行量引用。"
+  },
+  "l01_gate.py": {
+   "kind": "other_harness",
+   "why": "文献轮的 `l01_gate.py` 不使用 `check()`——它自带断言并打印 `7/7 checks passed`，所以 §42 的静态普查对它记 0。这是「两数不可比」，不是缺失：§42 的 §4 第三条已声明本库对不使用 `check()` 的门控**沉默**。"
+  }
+ },
+ "quantities": {
+  "claim": "fraction in the round document's header line",
+  "live": "the n/N the instrument prints when run now",
+  "static": "check() call SITES counted syntactically (§42)",
+  "note": "a loop-nested site prints several verdicts, so live != static is a real difference of quantity, not an error"
+ }
+}
