@@ -112,6 +112,13 @@
       "node_token": "IVrAw0pvoiJlSXkHMUGcc4Lon8d",
       "section": 46,
       "title": "M2A 治理｜wiki 同步表 v1：让「每一步写入飞书」可以被判红"
+    },
+    {
+      "draft": "M2A-治理-节页分数对账v1.md",
+      "in_ledger": true,
+      "node_token": "KDnUwL1XYi262wkzkonc0UvZnsb",
+      "section": 47,
+      "title": "M2A 治理｜节↔页分数对账 v1：页面说的话第一次能被仓库推翻"
     }
   ],
   "counts": {
@@ -120,11 +127,11 @@
     "first_batch_off_pin": 0,
     "first_batch_pages": 12,
     "first_batch_pages_claimed_by_a_section": 1,
-    "governance_pages": 11,
+    "governance_pages": 12,
     "governance_pages_unclaimed": 0,
-    "ledger_pages_with_node": 23,
-    "report_sections_in_population": 16,
-    "sections_claimed": 16,
+    "ledger_pages_with_node": 24,
+    "report_sections_in_population": 17,
+    "sections_claimed": 17,
     "sections_unclaimed": 0
   },
   "dangling_claims": [],
@@ -157,7 +164,7 @@
       "markers_ok_recorded": true,
       "node_token": "E79DwZ1REi97XNkUzf2cb5OBnGb",
       "obj_token": "WY5bdiPkToLjmcxJaXUcD5hFnsd",
-      "read_back_chars_recorded": 1520,
+      "read_back_chars_recorded": 2844,
       "sections": [
         32
       ],
@@ -346,6 +353,26 @@
         46
       ],
       "title": "M2A 治理｜wiki 同步表 v1：让「每一步写入飞书」可以被判红"
+    },
+    {
+      "draft": "M2A-治理-节页分数对账v1.md",
+      "draft_chars": 2299,
+      "draft_sha256": "06828a5dc15f048410121fcdb7bbbbea85e41563c206f8a9ed3e393d4b2b99f5",
+      "markers": [
+        "宽松口径",
+        "订正 X-85",
+        "22/22",
+        "score_unattested_in_repo",
+        "页面说的话第一次能被仓库推翻"
+      ],
+      "markers_ok_recorded": true,
+      "node_token": "KDnUwL1XYi262wkzkonc0UvZnsb",
+      "obj_token": "CYbDdE0Cgo5tUlxTf5lcK9DanJh",
+      "read_back_chars_recorded": 2833,
+      "sections": [
+        47
+      ],
+      "title": "M2A 治理｜节↔页分数对账 v1：页面说的话第一次能被仓库推翻"
     }
   ],
   "schema": "m2a.wiki_sync_map.v1",
@@ -478,24 +505,32 @@
       "xids_named": [
         84
       ]
+    },
+    {
+      "section": 47,
+      "title": "页面说的话能不能被仓库推翻：节↔页分数对账 v1，以及它第一次就抓到的一处「页面数字查无出处」",
+      "xids_named": [
+        84,
+        85
+      ]
     }
   ],
   "stale_claims": [],
   "tools": [
     {
-      "bytes": 19878,
+      "bytes": 24993,
       "file": "check_step_draft_numbers.py",
-      "sha256": "7566443cdafea9c72f6ca4607b792864b09efc8d39bdd47c65332cfde006bafc"
+      "sha256": "b4f4f87306713044a742d688e5bbe58c510fd8497d7d33af81d9c2dc67490548"
     },
     {
-      "bytes": 7312,
+      "bytes": 7563,
       "file": "publish_wiki_steps.py",
-      "sha256": "5e561f829f5cc22263f5a7ce9c84d1e40e63ddaf63622087042a603481864ecb"
+      "sha256": "b6b65598430ab3f9d993e8eed77f72c1fc095e7a50277ec61ce44b2a82b0c37f"
     },
     {
-      "bytes": 8199,
+      "bytes": 8740,
       "file": "feishu_wiki_nodes.json",
-      "sha256": "2ba072f40d6375af39c0dcdd373fc63ac7c92b7877b94336684c2ed85c0873ee"
+      "sha256": "8bd096b1cca055ff3e811e0b490000a8fa7f7be2c6eb28e4a9d0c34306c81cc1"
     }
   ],
   "unclaimed_sections": [],

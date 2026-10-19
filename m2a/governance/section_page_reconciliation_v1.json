@@ -1,0 +1,856 @@
+{
+  "attested_only_in_registration": [
+    {
+      "files": [
+        "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md"
+      ],
+      "instrument": "obligation_registry_gate.py",
+      "value": "7/7"
+    }
+  ],
+  "counts": {
+    "claims_rows_in_sync_map": 17,
+    "draft_page_aligned": 11,
+    "draft_page_grew": 1,
+    "draft_page_hard": 0,
+    "errata_not_effective": 0,
+    "erratum_rows": 1,
+    "erratum_rows_effective": 1,
+    "hard_findings": 0,
+    "instrument_claims_pages": 15,
+    "instrument_claims_sections": 13,
+    "instruments_attested_in_repo": 35,
+    "instruments_missing_from_pages": [],
+    "instruments_named_in_sections": 11,
+    "instruments_named_on_pages": 12,
+    "instruments_only_on_pages": [
+      "l01_gate.py"
+    ],
+    "page_superseded": 1,
+    "pages_reconciled": 13,
+    "pairs_aligned": 12,
+    "pairs_compressed": 0,
+    "pairs_no_capture": 0,
+    "prose_slashes_ignored": 0,
+    "score_unattested_in_repo": 0,
+    "sections_covered": 17,
+    "values_attested_only_in_registration": 1,
+    "values_loosely_attested_only": 0
+  },
+  "errata": {
+    "E79DwZ1REi97XNkUzf2cb5OBnGb": {
+      "l01_gate.py": {
+        "marker": "订正 X-85",
+        "quoted": "6/6",
+        "replacement": "7/7",
+        "xid": 85
+      }
+    }
+  },
+  "hard_findings": [],
+  "newest_section_by_instrument": {
+    "ao_preflight_gate.py": 38,
+    "gate_coverage_map_gate.py": 45,
+    "gate_discrimination_gate.py": 47,
+    "obligation_registry_gate.py": 45,
+    "p10_gate.py": 44,
+    "result_score_map_gate.py": 44,
+    "runner_enforcement_map_gate.py": 43,
+    "section_page_reconciliation_gate.py": 47,
+    "status_label_table_gate.py": 37,
+    "unmeasured_instruments_gate.py": 45,
+    "wiki_sync_map_gate.py": 46
+  },
+  "pages": [
+    {
+      "attestation": {},
+      "draft_vs_page": {
+        "disagree": {},
+        "verdict": "not_a_governance_page"
+      },
+      "erratum": {},
+      "loosely_attested": {},
+      "multi_value": {},
+      "node_token": "QdMtweKnXi7ehikF6DUczQ4anng",
+      "not_on_page": [],
+      "page_chars": 4168,
+      "page_claims": {},
+      "page_sha256": "73c3425578277f451a52ddeff73eff0be5801045ac37166c1f10217045bc9db6",
+      "prose_slashes_ignored": {},
+      "section_claims": {},
+      "sections": [
+        31
+      ],
+      "superseded": {},
+      "title": "M2A Phase I′｜闸门③补做一致性检查",
+      "unattested": {},
+      "verdict": "aligned"
+    },
+    {
+      "attestation": {
+        "l01_gate.py": {
+          "7/7": [
+            "literature/ROUND_L01_RESULTS.md",
+            "report/RESULT_SCORE_RECONCILIATION_v1.md"
+          ]
+        }
+      },
+      "draft_vs_page": {
+        "disagree": {
+          "l01_gate.py": {
+            "draft": [
+              "6/6"
+            ],
+            "page": [
+              "6/6",
+              "7/7"
+            ]
+          }
+        },
+        "verdict": "page_grew_after_publication"
+      },
+      "erratum": {
+        "l01_gate.py": {
+          "marker": "订正 X-85",
+          "marker_on_page": true,
+          "quoted": "6/6",
+          "replacement": "7/7",
+          "xid": 85
+        }
+      },
+      "loosely_attested": {},
+      "multi_value": {
+        "l01_gate.py": [
+          "6/6",
+          "7/7"
+        ]
+      },
+      "node_token": "E79DwZ1REi97XNkUzf2cb5OBnGb",
+      "not_on_page": [],
+      "page_chars": 2844,
+      "page_claims": {
+        "l01_gate.py": [
+          "6/6",
+          "7/7"
+        ]
+      },
+      "page_sha256": "b1db7c4267aa4343c620044b14d736126d5986c4f335b5a19b361716f8cbbe38",
+      "prose_slashes_ignored": {},
+      "section_claims": {},
+      "sections": [
+        32
+      ],
+      "superseded": {},
+      "title": "M2A 文献轮 L-01｜14 条全文编码，三锚点全部 INDETERMINATE",
+      "unattested": {},
+      "verdict": "aligned"
+    },
+    {
+      "attestation": {},
+      "draft_vs_page": {
+        "disagree": {},
+        "verdict": "aligned"
+      },
+      "erratum": {},
+      "loosely_attested": {},
+      "multi_value": {},
+      "node_token": "PkCzw0RaWis8wnkjT3ZcIDncnnb",
+      "not_on_page": [],
+      "page_chars": 1152,
+      "page_claims": {},
+      "page_sha256": "1abe69d78f303ef224ca0a9dd64caccd2aab81b73fb03aab67ad34f240c83129",
+      "prose_slashes_ignored": {},
+      "section_claims": {},
+      "sections": [
+        33
+      ],
+      "superseded": {},
+      "title": "M2A 治理｜机制词表 v1 草案：由工件推导，推导查出口径漂移",
+      "unattested": {},
+      "verdict": "aligned"
+    },
+    {
+      "attestation": {
+        "status_label_table_gate.py": {
+          "6/6": [
+            "M2A_FINAL_REPORT.md",
+            "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md"
+          ]
+        }
+      },
+      "draft_vs_page": {
+        "disagree": {},
+        "verdict": "aligned"
+      },
+      "erratum": {},
+      "loosely_attested": {},
+      "multi_value": {},
+      "node_token": "VUsPwexuyirFzhkASR5cVUFuned",
+      "not_on_page": [],
+      "page_chars": 2748,
+      "page_claims": {
+        "status_label_table_gate.py": [
+          "6/6"
+        ]
+      },
+      "page_sha256": "9be0a4aff8c83a88227f6cdaf8074f32a75f50a7b22f270245ec6eb7af63a128",
+      "prose_slashes_ignored": {},
+      "section_claims": {
+        "status_label_table_gate.py": [
+          "6/6"
+        ]
+      },
+      "sections": [
+        34,
+        37
+      ],
+      "superseded": {},
+      "title": "M2A 治理｜五值标签口径表 v1→v2：MANUAL_REVIEW 20→0 与 §34 数字更正",
+      "unattested": {},
+      "verdict": "aligned"
+    },
+    {
+      "attestation": {
+        "obligation_registry_gate.py": {
+          "7/7": [
+            "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md"
+          ],
+          "8/8": [
+            "M2A_FINAL_REPORT.md"
+          ]
+        }
+      },
+      "draft_vs_page": {
+        "disagree": {},
+        "verdict": "aligned"
+      },
+      "erratum": {},
+      "loosely_attested": {},
+      "multi_value": {},
+      "node_token": "P1FfwvlBGiyndek4vHlcBEcwn5c",
+      "not_on_page": [],
+      "page_chars": 2217,
+      "page_claims": {
+        "obligation_registry_gate.py": [
+          "7/7"
+        ]
+      },
+      "page_sha256": "92484c07717adbb145319ce5f773ad14577c8352a619a532f59089d07eed2348",
+      "prose_slashes_ignored": {},
+      "section_claims": {},
+      "sections": [
+        35,
+        36
+      ],
+      "superseded": {
+        "obligation_registry_gate.py": {
+          "newest_section": 45,
+          "page": [
+            "7/7"
+          ],
+          "report_values": [
+            "8/8"
+          ]
+        }
+      },
+      "title": "M2A 治理｜台账三命名空间与 L-01 主张层重判读（零检验地位）",
+      "unattested": {},
+      "verdict": "page_superseded"
+    },
+    {
+      "attestation": {
+        "ao_preflight_gate.py": {
+          "8/8": [
+            "M2A_FINAL_REPORT.md"
+          ]
+        }
+      },
+      "draft_vs_page": {
+        "disagree": {},
+        "verdict": "aligned"
+      },
+      "erratum": {},
+      "loosely_attested": {},
+      "multi_value": {},
+      "node_token": "AqqSwOrEmiD6iskeZ0EcQ6B0ntg",
+      "not_on_page": [],
+      "page_chars": 1859,
+      "page_claims": {
+        "ao_preflight_gate.py": [
+          "8/8"
+        ]
+      },
+      "page_sha256": "59413e536c2cafe2a7d106e0dfa28dccfc490163a16e26fa5f283073f0de9949",
+      "prose_slashes_ignored": {},
+      "section_claims": {
+        "ao_preflight_gate.py": [
+          "8/8"
+        ]
+      },
+      "sections": [
+        38
+      ],
+      "superseded": {},
+      "title": "M2A 治理｜AO 预检落地为仪器，查出一条永远不会失败的判据",
+      "unattested": {},
+      "verdict": "aligned"
+    },
+    {
+      "attestation": {
+        "gate_discrimination_gate.py": {
+          "5/5": [
+            "M2A_FINAL_REPORT.md",
+            "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md"
+          ],
+          "59/59": [
+            "M2A_FINAL_REPORT.md",
+            "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md"
+          ]
+        }
+      },
+      "draft_vs_page": {
+        "disagree": {},
+        "verdict": "aligned"
+      },
+      "erratum": {},
+      "loosely_attested": {},
+      "multi_value": {},
+      "node_token": "PvbywrdZiiSsUmkTdQbcsFMPndh",
+      "not_on_page": [],
+      "page_chars": 4270,
+      "page_claims": {
+        "gate_discrimination_gate.py": [
+          "59/59"
+        ]
+      },
+      "page_sha256": "458c17ee83f54eba776ccf7ab3332176f1748b42d7b62faf4f607208472c177c",
+      "prose_slashes_ignored": {},
+      "section_claims": {
+        "gate_discrimination_gate.py": [
+          "5/5"
+        ]
+      },
+      "sections": [
+        39,
+        40,
+        41
+      ],
+      "superseded": {},
+      "title": "M2A 治理｜门控判别力审计：25 台的判别地板与装置自身三处失败",
+      "unattested": {},
+      "verdict": "aligned"
+    },
+    {
+      "attestation": {
+        "gate_coverage_map_gate.py": {
+          "17/17": [
+            "M2A_FINAL_REPORT.md",
+            "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md"
+          ],
+          "18/18": [
+            "M2A_FINAL_REPORT.md",
+            "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md"
+          ]
+        }
+      },
+      "draft_vs_page": {
+        "disagree": {},
+        "verdict": "aligned"
+      },
+      "erratum": {},
+      "loosely_attested": {},
+      "multi_value": {},
+      "node_token": "D04twrA8UifjkEkAZGZcjM51nVl",
+      "not_on_page": [],
+      "page_chars": 5482,
+      "page_claims": {
+        "gate_coverage_map_gate.py": [
+          "18/18"
+        ]
+      },
+      "page_sha256": "766699fbb8af760dd144c19402994934d3f3a37220f637eec43e82909d576fc0",
+      "prose_slashes_ignored": {},
+      "section_claims": {
+        "gate_coverage_map_gate.py": [
+          "18/18"
+        ]
+      },
+      "sections": [
+        42
+      ],
+      "superseded": {},
+      "title": "M2A 治理｜门控仪器覆盖表 v1：用语法导出哪台门控量了哪个量",
+      "unattested": {},
+      "verdict": "aligned"
+    },
+    {
+      "attestation": {
+        "runner_enforcement_map_gate.py": {
+          "14/14": [
+            "M2A_FINAL_REPORT.md",
+            "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md"
+          ]
+        }
+      },
+      "draft_vs_page": {
+        "disagree": {},
+        "verdict": "aligned"
+      },
+      "erratum": {},
+      "loosely_attested": {},
+      "multi_value": {},
+      "node_token": "TqFzw3ElRiuEJ8k2goXciGU8nnc",
+      "not_on_page": [],
+      "page_chars": 4272,
+      "page_claims": {
+        "runner_enforcement_map_gate.py": [
+          "14/14"
+        ]
+      },
+      "page_sha256": "2c03275031cbf2c74d44933ea89eb4990c38c6b4292907c84773463f9e60f19c",
+      "prose_slashes_ignored": {},
+      "section_claims": {
+        "runner_enforcement_map_gate.py": [
+          "14/14"
+        ]
+      },
+      "sections": [
+        43
+      ],
+      "superseded": {},
+      "title": "M2A 治理｜runner 侧门控强制表 v1：红了就不写盘",
+      "unattested": {},
+      "verdict": "aligned"
+    },
+    {
+      "attestation": {
+        "p10_gate.py": {
+          "6/6": [
+            "M2A_FINAL_REPORT.md",
+            "experiments/PHASE10_RESULTS.md"
+          ]
+        },
+        "result_score_map_gate.py": {
+          "12/12": [
+            "M2A_FINAL_REPORT.md",
+            "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md"
+          ]
+        }
+      },
+      "draft_vs_page": {
+        "disagree": {},
+        "verdict": "aligned"
+      },
+      "erratum": {},
+      "loosely_attested": {},
+      "multi_value": {},
+      "node_token": "VgUswpUdMi7RUckLFu9cMo9Wnmb",
+      "not_on_page": [],
+      "page_chars": 3672,
+      "page_claims": {
+        "p10_gate.py": [
+          "6/6"
+        ],
+        "result_score_map_gate.py": [
+          "12/12"
+        ]
+      },
+      "page_sha256": "ca2959a44d5451ce824e87ad7d041d056d5a59f4e167e4f8ac2074e0e9d028ad",
+      "prose_slashes_ignored": {},
+      "section_claims": {
+        "p10_gate.py": [
+          "6/6"
+        ],
+        "result_score_map_gate.py": [
+          "12/12"
+        ]
+      },
+      "sections": [
+        44
+      ],
+      "superseded": {},
+      "title": "M2A 治理｜门控分数三方对账 v1：文档引用、仪器实跑、语法站点数",
+      "unattested": {},
+      "verdict": "aligned"
+    },
+    {
+      "attestation": {
+        "gate_coverage_map_gate.py": {
+          "17/17": [
+            "M2A_FINAL_REPORT.md",
+            "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md"
+          ],
+          "18/18": [
+            "M2A_FINAL_REPORT.md",
+            "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md"
+          ]
+        },
+        "obligation_registry_gate.py": {
+          "7/7": [
+            "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md"
+          ],
+          "8/8": [
+            "M2A_FINAL_REPORT.md"
+          ]
+        },
+        "unmeasured_instruments_gate.py": {
+          "25/25": [
+            "M2A_FINAL_REPORT.md",
+            "governance/OBLIGATION_REGISTRY.md"
+          ]
+        }
+      },
+      "draft_vs_page": {
+        "disagree": {},
+        "verdict": "aligned"
+      },
+      "erratum": {},
+      "loosely_attested": {},
+      "multi_value": {
+        "gate_coverage_map_gate.py": [
+          "17/17",
+          "18/18"
+        ]
+      },
+      "node_token": "MrE5wnDKoiJgTukBIqBcuHPsnae",
+      "not_on_page": [],
+      "page_chars": 6286,
+      "page_claims": {
+        "gate_coverage_map_gate.py": [
+          "17/17",
+          "18/18"
+        ],
+        "obligation_registry_gate.py": [
+          "8/8"
+        ],
+        "unmeasured_instruments_gate.py": [
+          "25/25"
+        ]
+      },
+      "page_sha256": "8ba86e61b7ce01793e8231a146ec19fcaefd4edbc22e441359eeba4eb5a02cb8",
+      "prose_slashes_ignored": {},
+      "section_claims": {
+        "gate_coverage_map_gate.py": [
+          "17/17",
+          "18/18"
+        ],
+        "obligation_registry_gate.py": [
+          "8/8"
+        ],
+        "unmeasured_instruments_gate.py": [
+          "25/25"
+        ]
+      },
+      "sections": [
+        45
+      ],
+      "superseded": {},
+      "title": "M2A 治理｜未测量仪器的治理层检查 v1：10 台各配一条可推翻的检查",
+      "unattested": {},
+      "verdict": "aligned"
+    },
+    {
+      "attestation": {
+        "wiki_sync_map_gate.py": {
+          "16/16": [
+            "M2A_FINAL_REPORT.md",
+            "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md"
+          ]
+        }
+      },
+      "draft_vs_page": {
+        "disagree": {},
+        "verdict": "aligned"
+      },
+      "erratum": {},
+      "loosely_attested": {},
+      "multi_value": {},
+      "node_token": "IVrAw0pvoiJlSXkHMUGcc4Lon8d",
+      "not_on_page": [],
+      "page_chars": 3774,
+      "page_claims": {
+        "wiki_sync_map_gate.py": [
+          "16/16"
+        ]
+      },
+      "page_sha256": "0330dd36b47503ffc9f7abcb90e3ce62e06a55d4f280dd7be6555094559d7398",
+      "prose_slashes_ignored": {},
+      "section_claims": {
+        "wiki_sync_map_gate.py": [
+          "16/16"
+        ]
+      },
+      "sections": [
+        46
+      ],
+      "superseded": {},
+      "title": "M2A 治理｜wiki 同步表 v1：让「每一步写入飞书」可以被判红",
+      "unattested": {},
+      "verdict": "aligned"
+    },
+    {
+      "attestation": {
+        "gate_discrimination_gate.py": {
+          "5/5": [
+            "M2A_FINAL_REPORT.md",
+            "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md"
+          ],
+          "59/59": [
+            "M2A_FINAL_REPORT.md",
+            "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md"
+          ]
+        },
+        "section_page_reconciliation_gate.py": {
+          "22/22": [
+            "M2A_FINAL_REPORT.md",
+            "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md"
+          ]
+        }
+      },
+      "draft_vs_page": {
+        "disagree": {},
+        "verdict": "aligned"
+      },
+      "erratum": {},
+      "loosely_attested": {},
+      "multi_value": {},
+      "node_token": "KDnUwL1XYi262wkzkonc0UvZnsb",
+      "not_on_page": [],
+      "page_chars": 2833,
+      "page_claims": {
+        "gate_discrimination_gate.py": [
+          "59/59"
+        ],
+        "section_page_reconciliation_gate.py": [
+          "22/22"
+        ]
+      },
+      "page_sha256": "9f25fd681bd3ca6d881dfbd762cb0ba8fdeca57b8d567126601018b8681b2ee9",
+      "prose_slashes_ignored": {},
+      "section_claims": {
+        "gate_discrimination_gate.py": [
+          "59/59"
+        ],
+        "section_page_reconciliation_gate.py": [
+          "22/22"
+        ]
+      },
+      "sections": [
+        47
+      ],
+      "superseded": {},
+      "title": "M2A 治理｜节↔页分数对账 v1：页面说的话第一次能被仓库推翻",
+      "unattested": {},
+      "verdict": "aligned"
+    }
+  ],
+  "repo_attestation": {
+    "ao_preflight_gate.py": {
+      "8/8": [
+        "M2A_FINAL_REPORT.md"
+      ]
+    },
+    "gate_coverage_map_gate.py": {
+      "17/17": [
+        "M2A_FINAL_REPORT.md",
+        "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md"
+      ],
+      "18/18": [
+        "M2A_FINAL_REPORT.md",
+        "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md"
+      ]
+    },
+    "gate_discrimination_gate.py": {
+      "5/5": [
+        "M2A_FINAL_REPORT.md",
+        "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md"
+      ],
+      "59/59": [
+        "M2A_FINAL_REPORT.md",
+        "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md"
+      ]
+    },
+    "l01_gate.py": {
+      "7/7": [
+        "literature/ROUND_L01_RESULTS.md",
+        "report/RESULT_SCORE_RECONCILIATION_v1.md"
+      ]
+    },
+    "obligation_registry_gate.py": {
+      "7/7": [
+        "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md"
+      ],
+      "8/8": [
+        "M2A_FINAL_REPORT.md"
+      ]
+    },
+    "p10_gate.py": {
+      "6/6": [
+        "M2A_FINAL_REPORT.md",
+        "experiments/PHASE10_RESULTS.md"
+      ]
+    },
+    "result_score_map_gate.py": {
+      "12/12": [
+        "M2A_FINAL_REPORT.md",
+        "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md"
+      ]
+    },
+    "runner_enforcement_map_gate.py": {
+      "14/14": [
+        "M2A_FINAL_REPORT.md",
+        "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md"
+      ]
+    },
+    "section_page_reconciliation_gate.py": {
+      "22/22": [
+        "M2A_FINAL_REPORT.md",
+        "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md"
+      ]
+    },
+    "status_label_table_gate.py": {
+      "6/6": [
+        "M2A_FINAL_REPORT.md",
+        "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md"
+      ]
+    },
+    "unmeasured_instruments_gate.py": {
+      "25/25": [
+        "M2A_FINAL_REPORT.md",
+        "governance/OBLIGATION_REGISTRY.md"
+      ]
+    },
+    "wiki_sync_map_gate.py": {
+      "16/16": [
+        "M2A_FINAL_REPORT.md",
+        "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md"
+      ]
+    }
+  },
+  "repo_attestation_loose": {
+    "ao_preflight_gate.py": [
+      "8/8"
+    ],
+    "audit_bindings.py": [
+      "23/23",
+      "24/24",
+      "31/31",
+      "32/32",
+      "33/33",
+      "34/34",
+      "35/35"
+    ],
+    "gate.py": [
+      "7/7"
+    ],
+    "gate_coverage_map_gate.py": [
+      "17/17",
+      "18/18"
+    ],
+    "gate_discrimination_gate.py": [
+      "34/34",
+      "5/5",
+      "59/59"
+    ],
+    "l01_gate.py": [
+      "42/42",
+      "7/7"
+    ],
+    "obligation_registry_gate.py": [
+      "8/8"
+    ],
+    "p10_gate.py": [
+      "6/6"
+    ],
+    "p11_gate.py": [
+      "6/6"
+    ],
+    "p12_gate.py": [
+      "4/4"
+    ],
+    "p13_gate.py": [
+      "6/6"
+    ],
+    "p14_gate.py": [
+      "7/7"
+    ],
+    "p19_gate.py": [
+      "6/6"
+    ],
+    "p20_gate.py": [
+      "7/7"
+    ],
+    "p9_gate.py": [
+      "8/8"
+    ],
+    "phase2_gate.py": [
+      "7/7"
+    ],
+    "result_score_map_gate.py": [
+      "12/12"
+    ],
+    "run_phase5.py": [
+      "8/8"
+    ],
+    "run_phase5b.py": [
+      "6/6"
+    ],
+    "run_phase6.py": [
+      "7/7"
+    ],
+    "runner_enforcement_map_gate.py": [
+      "14/14"
+    ],
+    "section_page_reconciliation_gate.py": [
+      "22/22"
+    ],
+    "status_label_table_gate.py": [
+      "6/6"
+    ],
+    "unmeasured_instruments_gate.py": [
+      "25/25"
+    ],
+    "wiki_sync_map_gate.py": [
+      "16/16"
+    ]
+  },
+  "report_values_by_instrument": {
+    "ao_preflight_gate.py": [
+      "8/8"
+    ],
+    "gate_coverage_map_gate.py": [
+      "17/17",
+      "18/18"
+    ],
+    "gate_discrimination_gate.py": [
+      "5/5",
+      "59/59"
+    ],
+    "obligation_registry_gate.py": [
+      "8/8"
+    ],
+    "p10_gate.py": [
+      "6/6"
+    ],
+    "result_score_map_gate.py": [
+      "12/12"
+    ],
+    "runner_enforcement_map_gate.py": [
+      "14/14"
+    ],
+    "section_page_reconciliation_gate.py": [
+      "22/22"
+    ],
+    "status_label_table_gate.py": [
+      "6/6"
+    ],
+    "unmeasured_instruments_gate.py": [
+      "25/25"
+    ],
+    "wiki_sync_map_gate.py": [
+      "16/16"
+    ]
+  },
+  "schema": "m2a.section_page_reconciliation.v1",
+  "uncaptured_tokens": []
+}

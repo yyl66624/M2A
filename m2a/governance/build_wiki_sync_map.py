@@ -59,6 +59,7 @@ PUBLISH_MAP = {
     44: "VgUswpUdMi7RUckLFu9cMo9Wnmb",   # three-way score reconciliation
     45: "MrE5wnDKoiJgTukBIqBcuHPsnae",   # governance-layer measurement of the 10 gaps
     46: "IVrAw0pvoiJlSXkHMUGcc4Lon8d",   # this map, published before it could be registered
+    47: "KDnUwL1XYi262wkzkonc0UvZnsb",   # the score reconciliation page, published before it could be registered
 }
 
 SECTION_RE = r"^#{2,3} (\d+) (.*)$"
