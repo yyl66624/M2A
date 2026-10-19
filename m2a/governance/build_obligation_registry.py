@@ -477,7 +477,10 @@ def main():
                 "注入 1e-1 偏移使读数由 154.664 变到 170.130，门控 6 档仍全绿——该条不存在可证伪输入；"
                 "Phase V-b 的门控 `import gap_for` 却从未调用它。⇒ 要求「每条数值检查写明可证伪输入、"
                 "纯确定性自检不计入仪器条数、import 而未调用的机制函数要么补检查要么删导入」，"
-                "**须先写入下一轮预注册的仪器段才可执行**，本轮不回写旧轮门控与其 n/n 记录（R6、第 8 条），故开放。",
+                "**须先写入下一轮预注册的仪器段才可执行**，本轮不回写旧轮门控与其 n/n 记录（R6、第 8 条），故开放。"
+                "本条要求的静态普查已交付：`governance/build_coverage_map.py`（覆盖表 v1，`gate_coverage_map_gate.py` "
+                "17/17）给出 26 台门控 / 81 个导入仪器 / 10 条缺口名单；名单是处置的前提，处置本身仍属下一轮，"
+                "故本条不因交付而关闭。",
     }
     if unk:
         print("UNCLASSIFIED labels (no wording class attaches): " + ", ".join(unk), file=sys.stderr)

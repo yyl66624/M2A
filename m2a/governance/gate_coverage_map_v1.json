@@ -1,0 +1,964 @@
+{
+ "schema": "m2a.gate-coverage-map.v1",
+ "derived_from": "AST of every experiments/*_gate.py and literature/*_gate.py",
+ "counts": {
+  "gates": 26,
+  "checks": 169,
+  "imported_instruments": 81,
+  "never_reached": 7,
+  "only_self_comparison": 3,
+  "detail_only": 0,
+  "imported_data_never_read": 6,
+  "self_comparison_checks": 18
+ },
+ "rows": [
+  {
+   "gate": "experiments/ao_preflight_gate.py",
+   "file": "ao_preflight_gate.py",
+   "imported_instruments": [],
+   "alias_modules": [
+    "ao"
+   ],
+   "imported_data": [],
+   "imported_data_never_read": [],
+   "checks": [
+    "P1_measure_axiom",
+    "P2_categories_exclusive",
+    "P5_three_grid_knobs",
+    "P3_reduces_to_legacy_at_|A|1",
+    "P4_permutation_invariant",
+    "P6a_second_code_paths",
+    "P6b_identity_construction_refused",
+    "P6c_definitions_are_distinguishable"
+   ],
+   "self_comparison_checks": [],
+   "never_reached": [],
+   "never_reached_pairs": [],
+   "only_self_comparison": [],
+   "only_self_comparison_pairs": [],
+   "detail_only": []
+  },
+  {
+   "gate": "experiments/p10_gate.py",
+   "file": "p10_gate.py",
+   "imported_instruments": [
+    "rho_normal_only",
+    "rho_smooth"
+   ],
+   "alias_modules": [
+    "p10"
+   ],
+   "imported_data": [
+    "Z95"
+   ],
+   "imported_data_never_read": [],
+   "checks": [
+    "K1_endpoints_and_domain_sentinel",
+    "K2_e1_zero_reproduces_committed_quadratic_root",
+    "K3_root_residual",
+    "K4_zero_corrections_give_phase6_normal_curve",
+    "K5_central_difference_calibrated",
+    "K6_determinism"
+   ],
+   "self_comparison_checks": [
+    "K6_determinism"
+   ],
+   "never_reached": [
+    "rho_smooth"
+   ],
+   "never_reached_pairs": [
+    [
+     "p8_smooth",
+     "rho_smooth"
+    ]
+   ],
+   "only_self_comparison": [],
+   "only_self_comparison_pairs": [],
+   "detail_only": []
+  },
+  {
+   "gate": "experiments/p11_gate.py",
+   "file": "p11_gate.py",
+   "imported_instruments": [],
+   "alias_modules": [
+    "p11",
+    "p9"
+   ],
+   "imported_data": [],
+   "imported_data_never_read": [],
+   "checks": [
+    "Y1_endpoints_and_zero_gap",
+    "Y2_surjective_L_equals_tau",
+    "Y3_band_instrument_reproduces_committed_phase9",
+    "Y4_fixed_point_residual",
+    "Y5_determinism",
+    "Y6_random_control_reproducible"
+   ],
+   "self_comparison_checks": [
+    "Y5_determinism",
+    "Y6_random_control_reproducible"
+   ],
+   "never_reached": [],
+   "never_reached_pairs": [],
+   "only_self_comparison": [],
+   "only_self_comparison_pairs": [],
+   "detail_only": []
+  },
+  {
+   "gate": "experiments/p12_gate.py",
+   "file": "p12_gate.py",
+   "imported_instruments": [],
+   "alias_modules": [
+    "p12"
+   ],
+   "imported_data": [
+    "C1"
+   ],
+   "imported_data_never_read": [],
+   "checks": [
+    "Z1_endpoints_and_closed_form_branch",
+    "Z2_e0_phase8_reproduces_committed_readings",
+    "Z3_fit_objective_well_posed",
+    "Z4_determinism"
+   ],
+   "self_comparison_checks": [
+    "Z4_determinism"
+   ],
+   "never_reached": [],
+   "never_reached_pairs": [],
+   "only_self_comparison": [],
+   "only_self_comparison_pairs": [],
+   "detail_only": []
+  },
+  {
+   "gate": "experiments/p13_gate.py",
+   "file": "p13_gate.py",
+   "imported_instruments": [
+    "poisson_quantile",
+    "rho_exact",
+    "rho_smooth"
+   ],
+   "alias_modules": [
+    "p11",
+    "p12",
+    "p13"
+   ],
+   "imported_data": [
+    "ALPHA",
+    "C1"
+   ],
+   "imported_data_never_read": [],
+   "checks": [
+    "W1_m_ge_is_minimal",
+    "W2_q_cont_vs_committed_discrete_quantile",
+    "W3_closure_level_instrument_wired",
+    "W4_gap_set_sup_not_attained",
+    "W5_rho_smooth_anchor_bit_exact",
+    "W6_determinism"
+   ],
+   "self_comparison_checks": [
+    "W6_determinism"
+   ],
+   "never_reached": [
+    "rho_exact",
+    "rho_smooth"
+   ],
+   "never_reached_pairs": [
+    [
+     "p8_smooth",
+     "rho_exact"
+    ],
+    [
+     "p8_smooth",
+     "rho_smooth"
+    ]
+   ],
+   "only_self_comparison": [],
+   "only_self_comparison_pairs": [],
+   "detail_only": []
+  },
+  {
+   "gate": "experiments/p14_gate.py",
+   "file": "p14_gate.py",
+   "imported_instruments": [],
+   "alias_modules": [
+    "p14"
+   ],
+   "imported_data": [
+    "DTHETA_FACTOR"
+   ],
+   "imported_data_never_read": [],
+   "checks": [
+    "G1_anchor_reproduces_committed_phase13",
+    "G2_rate_law_is_an_algebraic_identity",
+    "G3_fixed_grid_matches_committed_sup_grid",
+    "G4_bisection_bracket_straddles",
+    "G5_tightened_closure_inside_derived_envelope",
+    "G6_resolution_floor_reported",
+    "G7_determinism"
+   ],
+   "self_comparison_checks": [
+    "G7_determinism"
+   ],
+   "never_reached": [],
+   "never_reached_pairs": [],
+   "only_self_comparison": [],
+   "only_self_comparison_pairs": [],
+   "detail_only": []
+  },
+  {
+   "gate": "experiments/p15_gate.py",
+   "file": "p15_gate.py",
+   "imported_instruments": [],
+   "alias_modules": [
+    "p12",
+    "p13",
+    "p15"
+   ],
+   "imported_data": [],
+   "imported_data_never_read": [],
+   "checks": [
+    "G1_joint_search_reproduces_committed_optimum",
+    "G2_profile_at_zero_equals_committed_single_fit",
+    "G3_tie_floor_is_the_committed_one_step_change",
+    "G4_chord_exponent_reproduces_committed_reading",
+    "G5_determinism",
+    "G6_both_floors_reported",
+    "G7_identified_set_bracket_is_genuine"
+   ],
+   "self_comparison_checks": [],
+   "never_reached": [],
+   "never_reached_pairs": [],
+   "only_self_comparison": [],
+   "only_self_comparison_pairs": [],
+   "detail_only": []
+  },
+  {
+   "gate": "experiments/p16_gate.py",
+   "file": "p16_gate.py",
+   "imported_instruments": [],
+   "alias_modules": [
+    "p14"
+   ],
+   "imported_data": [
+    "DTHETA_FACTOR"
+   ],
+   "imported_data_never_read": [],
+   "checks": [
+    "G1_anchor_reproduces_committed_phase14",
+    "G2_levels_and_analytic_target_unchanged",
+    "G3_closure_reachable_at_cap_for_new_k",
+    "G4_bisection_brackets_straddle_for_new_k",
+    "G5_grid_unchanged",
+    "G6_resolution_floor_reported",
+    "G7_determinism"
+   ],
+   "self_comparison_checks": [
+    "G7_determinism"
+   ],
+   "never_reached": [],
+   "never_reached_pairs": [],
+   "only_self_comparison": [],
+   "only_self_comparison_pairs": [],
+   "detail_only": []
+  },
+  {
+   "gate": "experiments/p17_gate.py",
+   "file": "p17_gate.py",
+   "imported_instruments": [],
+   "alias_modules": [
+    "p14",
+    "p17"
+   ],
+   "imported_data": [],
+   "imported_data_never_read": [],
+   "checks": [
+    "G3_nodes_at_committed_halfwidth_identical",
+    "G4_cap_feasible_at_primary_config",
+    "G5_bracket_straddles_at_primary_config",
+    "G6_both_layer_floors_reported",
+    "G7_determinism",
+    "<dynamic>"
+   ],
+   "self_comparison_checks": [
+    "G7_determinism"
+   ],
+   "never_reached": [],
+   "never_reached_pairs": [],
+   "only_self_comparison": [],
+   "only_self_comparison_pairs": [],
+   "detail_only": []
+  },
+  {
+   "gate": "experiments/p18_gate.py",
+   "file": "p18_gate.py",
+   "imported_instruments": [],
+   "alias_modules": [
+    "p17",
+    "p18"
+   ],
+   "imported_data": [],
+   "imported_data_never_read": [],
+   "checks": [
+    "G1_anchor_vs_committed_phase14_phase16",
+    "G2_anchor_vs_committed_phase17_primary",
+    "G3_stagger_is_a_pure_translation",
+    "G4_cap_feasible_at_primary_config",
+    "G5_bracket_straddles_at_primary_config",
+    "G6_layer_floors_reported",
+    "G7_determinism"
+   ],
+   "self_comparison_checks": [
+    "G7_determinism"
+   ],
+   "never_reached": [],
+   "never_reached_pairs": [],
+   "only_self_comparison": [],
+   "only_self_comparison_pairs": [],
+   "detail_only": []
+  },
+  {
+   "gate": "experiments/p19_gate.py",
+   "file": "p19_gate.py",
+   "imported_instruments": [],
+   "alias_modules": [
+    "p19"
+   ],
+   "imported_data": [],
+   "imported_data_never_read": [],
+   "checks": [
+    "G1_no_stochastic_stream",
+    "G2_determinism",
+    "G3_m3_two_paths_agree",
+    "G4_degenerate_n_equals_one",
+    "G5_lambda_to_one_guard",
+    "G6_ranges_and_finiteness"
+   ],
+   "self_comparison_checks": [
+    "G2_determinism"
+   ],
+   "never_reached": [],
+   "never_reached_pairs": [],
+   "only_self_comparison": [],
+   "only_self_comparison_pairs": [],
+   "detail_only": []
+  },
+  {
+   "gate": "experiments/p20_gate.py",
+   "file": "p20_gate.py",
+   "imported_instruments": [],
+   "alias_modules": [
+    "p20"
+   ],
+   "imported_data": [],
+   "imported_data_never_read": [],
+   "checks": [
+    "G1_no_stochastic_stream",
+    "G2_determinism",
+    "G3_two_paths_agree_all_mechs",
+    "G4_degenerate_n_equals_one",
+    "G5_lambda_to_one_guard",
+    "G6_ranges_and_finiteness",
+    "G7_cross_round_A_consistency"
+   ],
+   "self_comparison_checks": [],
+   "never_reached": [],
+   "never_reached_pairs": [],
+   "only_self_comparison": [],
+   "only_self_comparison_pairs": [],
+   "detail_only": []
+  },
+  {
+   "gate": "experiments/p21_gate.py",
+   "file": "p21_gate.py",
+   "imported_instruments": [],
+   "alias_modules": [
+    "p20",
+    "p21"
+   ],
+   "imported_data": [],
+   "imported_data_never_read": [],
+   "checks": [
+    "G1_no_stochastic_stream",
+    "G2_determinism",
+    "G3_two_paths_agree_five_mechs",
+    "G4_degenerate_n_equals_one",
+    "G5_fine_grained_limit_converges_to_integral",
+    "G6_cross_round_identical_spreads",
+    "G7_bound_limit_is_the_derived_formula",
+    "G8_ranges_and_finiteness"
+   ],
+   "self_comparison_checks": [],
+   "never_reached": [],
+   "never_reached_pairs": [],
+   "only_self_comparison": [],
+   "only_self_comparison_pairs": [],
+   "detail_only": []
+  },
+  {
+   "gate": "experiments/p22_gate.py",
+   "file": "p22_gate.py",
+   "imported_instruments": [],
+   "alias_modules": [
+    "p20",
+    "p21",
+    "p22"
+   ],
+   "imported_data": [],
+   "imported_data_never_read": [],
+   "checks": [
+    "G1_no_stochastic_stream",
+    "G2_determinism",
+    "G3_two_paths_agree_all_classes",
+    "G4_family_endpoints_are_known_classes",
+    "G5_lambda_to_one_guard",
+    "G6_cross_round_XXI_tie",
+    "G7_ranges_and_finiteness"
+   ],
+   "self_comparison_checks": [],
+   "never_reached": [],
+   "never_reached_pairs": [],
+   "only_self_comparison": [],
+   "only_self_comparison_pairs": [],
+   "detail_only": []
+  },
+  {
+   "gate": "experiments/p3_gate.py",
+   "file": "p3_gate.py",
+   "imported_instruments": [
+    "conjunction_window",
+    "cue_sensitivity",
+    "key3",
+    "p_and",
+    "p_gate",
+    "p_or",
+    "predicted_cue_sensitivity",
+    "theta_j",
+    "theta_s",
+    "train_cue_agent"
+   ],
+   "alias_modules": [],
+   "imported_data": [],
+   "imported_data_never_read": [],
+   "checks": [
+    "C1_and_joint_equals_or_single",
+    "C2_boundary_formulas",
+    "C3_window_exists_iff_gain_large_enough",
+    "C4_gate_openness_sign",
+    "C5_cue_sensitivity_hand_values",
+    "C6_step_in_state_kills_self_loop",
+    "C7_determinism"
+   ],
+   "self_comparison_checks": [
+    "C7_determinism"
+   ],
+   "never_reached": [],
+   "never_reached_pairs": [],
+   "only_self_comparison": [],
+   "only_self_comparison_pairs": [],
+   "detail_only": []
+  },
+  {
+   "gate": "experiments/p4_gate.py",
+   "file": "p4_gate.py",
+   "imported_instruments": [
+    "bayes_sensitivity",
+    "critical_beta",
+    "gate_curve",
+    "predicted_threshold",
+    "quantile"
+   ],
+   "alias_modules": [],
+   "imported_data": [
+    "SUBSTRATES"
+   ],
+   "imported_data_never_read": [],
+   "checks": [
+    "C1_quantiles_known",
+    "C2_critical_beta_matches_prediction",
+    "C3_constants_are_distinct",
+    "C4_gate_sign_law_substrate_independent",
+    "C5_bayes_estimator_hand_values"
+   ],
+   "self_comparison_checks": [],
+   "never_reached": [],
+   "never_reached_pairs": [],
+   "only_self_comparison": [],
+   "only_self_comparison_pairs": [],
+   "detail_only": []
+  },
+  {
+   "gate": "experiments/p5_gate.py",
+   "file": "p5_gate.py",
+   "imported_instruments": [
+    "chain_curve",
+    "chain_polarity",
+    "critical_beta",
+    "cue_sensitivity",
+    "dp_sensitivity_only",
+    "gap_for",
+    "law",
+    "predicted_critical",
+    "run_cue",
+    "tnorm",
+    "train_cue_agent",
+    "window_exists"
+   ],
+   "alias_modules": [],
+   "imported_data": [
+    "ARMS",
+    "DP_SPEC",
+    "QS",
+    "predicted_threshold"
+   ],
+   "imported_data_never_read": [
+    "ARMS",
+    "DP_SPEC",
+    "QS"
+   ],
+   "checks": [
+    "C1_determinism",
+    "C2_soft_conjunction_hand_value",
+    "C3_reduces_to_phase4_constant",
+    "C4_dead_gate_flat_and_no_window",
+    "C5_no_gap_no_window",
+    "C6_dp_known_answers",
+    "C7_dp_matches_constant_eps_mc",
+    "C8_tnorm_algebra"
+   ],
+   "self_comparison_checks": [],
+   "never_reached": [],
+   "never_reached_pairs": [],
+   "only_self_comparison": [],
+   "only_self_comparison_pairs": [],
+   "detail_only": []
+  },
+  {
+   "gate": "experiments/p5b_gate.py",
+   "file": "p5b_gate.py",
+   "imported_instruments": [
+    "chain_polarity",
+    "channels",
+    "critical_beta_adaptive",
+    "gap_for",
+    "grid_spec",
+    "predicted_threshold",
+    "tnorm",
+    "window_exists"
+   ],
+   "alias_modules": [],
+   "imported_data": [
+    "DTHETA_FACTOR"
+   ],
+   "imported_data_never_read": [
+    "DTHETA_FACTOR"
+   ],
+   "checks": [
+    "G1_grid_derivation",
+    "G2_reduces_to_phase4",
+    "G3_zero_gap_no_window",
+    "G4_gap_monotone",
+    "G5_resolution_bound",
+    "G6_determinism"
+   ],
+   "self_comparison_checks": [
+    "G6_determinism"
+   ],
+   "never_reached": [
+    "chain_polarity",
+    "channels",
+    "gap_for",
+    "tnorm"
+   ],
+   "never_reached_pairs": [
+    [
+     "p5_mechanisms",
+     "chain_polarity"
+    ],
+    [
+     "p5_mechanisms",
+     "channels"
+    ],
+    [
+     "p5_mechanisms",
+     "gap_for"
+    ],
+    [
+     "p5_mechanisms",
+     "tnorm"
+    ]
+   ],
+   "only_self_comparison": [],
+   "only_self_comparison_pairs": [],
+   "detail_only": []
+  },
+  {
+   "gate": "experiments/p5c_gate.py",
+   "file": "p5c_gate.py",
+   "imported_instruments": [
+    "dp_c",
+    "law_half",
+    "readout_c"
+   ],
+   "alias_modules": [],
+   "imported_data": [
+    "ARMS_C",
+    "QS_C",
+    "visit_weighted"
+   ],
+   "imported_data_never_read": [],
+   "checks": [
+    "C1_arm_set_matches_prereg",
+    "C2_anchor_keys_present",
+    "C3_determinism",
+    "C4_dp_known_answers",
+    "C5_closed_form_vs_dp",
+    "C6_noexploration_tie_collapse",
+    "C7_eps_channel_is_as_derived"
+   ],
+   "self_comparison_checks": [],
+   "never_reached": [],
+   "never_reached_pairs": [],
+   "only_self_comparison": [],
+   "only_self_comparison_pairs": [],
+   "detail_only": []
+  },
+  {
+   "gate": "experiments/p5d_gate.py",
+   "file": "p5d_gate.py",
+   "imported_instruments": [
+    "closed",
+    "dp_d",
+    "law_old",
+    "readout_d"
+   ],
+   "alias_modules": [],
+   "imported_data": [
+    "ARMS_D",
+    "LEGACY_SEEDS",
+    "QS_D",
+    "SEEDS_D"
+   ],
+   "imported_data_never_read": [],
+   "checks": [
+    "G1_seed_pool_disjoint",
+    "G2_closed_form_endpoints",
+    "G3_determinism",
+    "G4_dp_known_answers",
+    "G5_the_two_laws_are_distinguishable",
+    "G6_D4_wiring_present",
+    "G7_arms_match_prereg"
+   ],
+   "self_comparison_checks": [
+    "G3_determinism"
+   ],
+   "never_reached": [],
+   "never_reached_pairs": [],
+   "only_self_comparison": [
+    "readout_d"
+   ],
+   "only_self_comparison_pairs": [
+    [
+     "p5d_confirm",
+     "readout_d"
+    ]
+   ],
+   "detail_only": []
+  },
+  {
+   "gate": "experiments/p6_gate.py",
+   "file": "p6_gate.py",
+   "imported_instruments": [
+    "_sf_from_cdf",
+    "grid_spec",
+    "loglog_slope",
+    "poisson_cdf_grid",
+    "poisson_sf",
+    "s2_critical_rho",
+    "s2_window_exists",
+    "s3_critical_beta",
+    "s3_prediction",
+    "s3_window_exists"
+   ],
+   "alias_modules": [],
+   "imported_data": [
+    "DTHETA_FACTOR",
+    "MAX_GRID",
+    "Z95"
+   ],
+   "imported_data_never_read": [
+    "DTHETA_FACTOR",
+    "Z95"
+   ],
+   "checks": [
+    "K1_poisson_exactness",
+    "K2_loglog_slope_exact",
+    "K3_s3_multiset_invariance",
+    "K4_s2_switch_point_is_exact",
+    "K5_s3_hand_value",
+    "K6_grid_within_cap",
+    "K7_determinism"
+   ],
+   "self_comparison_checks": [
+    "K7_determinism"
+   ],
+   "never_reached": [],
+   "never_reached_pairs": [],
+   "only_self_comparison": [],
+   "only_self_comparison_pairs": [],
+   "detail_only": []
+  },
+  {
+   "gate": "experiments/p7_gate.py",
+   "file": "p7_gate.py",
+   "imported_instruments": [
+    "cdf",
+    "critical_beta_s4",
+    "drive_counts",
+    "fire_prob",
+    "predicted_beta",
+    "predicted_beta_binding_config",
+    "predicted_threshold",
+    "silent_side",
+    "stage_configs"
+   ],
+   "alias_modules": [],
+   "imported_data": [
+    "MAX_GRID"
+   ],
+   "imported_data_never_read": [],
+   "checks": [
+    "H1_enumeration",
+    "H2_worst_config_is_r1",
+    "H3_k1_reduction_exact",
+    "H4_phase6_s3_formula_is_r_of_k_minus_1",
+    "H5_grid_within_cap",
+    "H6_determinism",
+    "H7_no_failing_config_refused",
+    "H8_count_fold_equivalence",
+    "H9_fire_side"
+   ],
+   "self_comparison_checks": [
+    "H6_determinism"
+   ],
+   "never_reached": [],
+   "never_reached_pairs": [],
+   "only_self_comparison": [],
+   "only_self_comparison_pairs": [],
+   "detail_only": []
+  },
+  {
+   "gate": "experiments/p8_gate.py",
+   "file": "p8_gate.py",
+   "imported_instruments": [
+    "poisson_quantile",
+    "rho_exact",
+    "rho_normal_only",
+    "rho_smooth"
+   ],
+   "alias_modules": [],
+   "imported_data": [
+    "C1",
+    "Z95"
+   ],
+   "imported_data_never_read": [],
+   "checks": [
+    "J1_c1_off_reduces_to_phase6_form",
+    "J2_zero_gap_no_solution",
+    "J3_c1_hand_value",
+    "J4_edgeworth_quantile_within_one_count",
+    "J5_exact_instrument_determinism",
+    "J6_smooth_monotone_in_gap"
+   ],
+   "self_comparison_checks": [
+    "J5_exact_instrument_determinism"
+   ],
+   "never_reached": [],
+   "never_reached_pairs": [],
+   "only_self_comparison": [
+    "rho_exact"
+   ],
+   "only_self_comparison_pairs": [
+    [
+     "p8_smooth",
+     "rho_exact"
+    ]
+   ],
+   "detail_only": []
+  },
+  {
+   "gate": "experiments/p9_gate.py",
+   "file": "p9_gate.py",
+   "imported_instruments": [
+    "cdf",
+    "predicted_critical",
+    "quantile",
+    "silent_side"
+   ],
+   "alias_modules": [
+    "p9"
+   ],
+   "imported_data": [
+    "ALPHA"
+   ],
+   "imported_data_never_read": [],
+   "checks": [
+    "G1_endpoints_and_divzero",
+    "G2_level_set_algebra",
+    "G3_count_fold_matches_naive_enumeration",
+    "G4_k1_reduces_to_committed_single_channel_law",
+    "G5_theta2_predicates_monotone",
+    "G6_free_instrument_admits_shared_solution",
+    "G7_determinism",
+    "G8_product_cells_reproduce_committed_phase7"
+   ],
+   "self_comparison_checks": [
+    "G7_determinism"
+   ],
+   "never_reached": [],
+   "never_reached_pairs": [],
+   "only_self_comparison": [],
+   "only_self_comparison_pairs": [],
+   "detail_only": []
+  },
+  {
+   "gate": "experiments/phase2_gate.py",
+   "file": "phase2_gate.py",
+   "imported_instruments": [
+    "availability_sensitivity",
+    "e1_rates",
+    "p_action",
+    "sigmoid",
+    "spearman",
+    "state_key",
+    "train_agent"
+   ],
+   "alias_modules": [],
+   "imported_data": [],
+   "imported_data_never_read": [],
+   "checks": [
+    "C1_determinism",
+    "C2_analytic_probabilities",
+    "C3_negative_control_no_action",
+    "C4_S_plus_C_sensitivity_near_gamma_vB",
+    "C5_state_identifiability",
+    "C6_Q_converges_to_value_for_single_action",
+    "C7_spearman_monotone"
+   ],
+   "self_comparison_checks": [
+    "C1_determinism"
+   ],
+   "never_reached": [],
+   "never_reached_pairs": [],
+   "only_self_comparison": [
+    "e1_rates"
+   ],
+   "only_self_comparison_pairs": [
+    [
+     "m2a_mechanisms",
+     "e1_rates"
+    ]
+   ],
+   "detail_only": []
+  },
+  {
+   "gate": "literature/l01_gate.py",
+   "file": "l01_gate.py",
+   "imported_instruments": [],
+   "alias_modules": [],
+   "imported_data": [],
+   "imported_data_never_read": [],
+   "checks": [],
+   "self_comparison_checks": [],
+   "never_reached": [],
+   "never_reached_pairs": [],
+   "only_self_comparison": [],
+   "only_self_comparison_pairs": [],
+   "detail_only": []
+  }
+ ],
+ "gaps": {
+  "never_reached": [
+   {
+    "gate": "experiments/p10_gate.py",
+    "module": "p8_smooth",
+    "name": "rho_smooth"
+   },
+   {
+    "gate": "experiments/p13_gate.py",
+    "module": "p8_smooth",
+    "name": "rho_exact"
+   },
+   {
+    "gate": "experiments/p13_gate.py",
+    "module": "p8_smooth",
+    "name": "rho_smooth"
+   },
+   {
+    "gate": "experiments/p5b_gate.py",
+    "module": "p5_mechanisms",
+    "name": "chain_polarity"
+   },
+   {
+    "gate": "experiments/p5b_gate.py",
+    "module": "p5_mechanisms",
+    "name": "channels"
+   },
+   {
+    "gate": "experiments/p5b_gate.py",
+    "module": "p5_mechanisms",
+    "name": "gap_for"
+   },
+   {
+    "gate": "experiments/p5b_gate.py",
+    "module": "p5_mechanisms",
+    "name": "tnorm"
+   }
+  ],
+  "only_self_comparison": [
+   {
+    "gate": "experiments/p5d_gate.py",
+    "module": "p5d_confirm",
+    "name": "readout_d"
+   },
+   {
+    "gate": "experiments/p8_gate.py",
+    "module": "p8_smooth",
+    "name": "rho_exact"
+   },
+   {
+    "gate": "experiments/phase2_gate.py",
+    "module": "m2a_mechanisms",
+    "name": "e1_rates"
+   }
+  ]
+ },
+ "known_reasons": {
+  "p5b_gate.py::gap_for": "X-79 的实测例：门控 `from p5_mechanisms import gap_for` 却从未调用 ⇒ 该轮量具的输入（驱动差 Δ）在仪器层无人核对；注入 1e-4 全绿已证实其盲。",
+  "p8_gate.py::rho_exact": "X-79 的第二例：唯一读取它的 J5 写的是 `rho_exact(0.6) == rho_exact(0.6)`（自我比较，无可证伪输入）；注入 1e-1（154.664→170.130）后 6 档全绿。",
+  "p10_gate.py::rho_smooth": "本表新查出：Phase X 的门控从 `p8_smooth` 导入 `rho_smooth` 却从未调用，它自己只用 `p10_exponent.rho`。两族读数本应对齐（Phase VIII 的平滑曲线 vs Phase X 的指数族），这一对齐从未在门控层做过。",
+  "p13_gate.py::rho_exact": "本表新查出：Phase XIII 的门控导入 `rho_exact` 未调用，W5 只锚 `rho_smooth` ⇒ 精确仪器在该轮门控层无人核对；`rho_exact` 在 Phase VIII 那里也只是一条自我比较（见上）。",
+  "p13_gate.py::rho_smooth": "本表新查出（同名遮蔽）：门控从 `p8_smooth` 导入 `rho_smooth`，而 W5 实际调用的是 `p12.rho_smooth`（第 59 行）⇒ 两个模块各有一个同名函数，被锚定的不是导入的那个；该轮对 Phase VIII 平滑曲线的门控层依赖是**空的**。文件里 `import p12_lattice as p12  # noqa: F401 (used via rho_smooth)` 这条注释还会把人引向相反结论。它也没有被 `p8_smooth` 内任何被调用的函数间接执行。",
+  "p5b_gate.py::chain_polarity": "本表新查出：与 `gap_for` 同一行导入（`from p5_mechanisms import chain_polarity, gap_for, tnorm, channels, window_exists`），且没有任何被调用的同模块函数在内部调用它 ⇒ 串行极性以及它作用的整条链在该轮门控层无人执行；V-b 只重测了窗口与网格。",
+  "p5b_gate.py::channels": "本表新查出：silent 侧输入构型（hard / one_weak / all_weak）从未被该门控构造，也没有被任何它调用的函数内部构造⇒「三档构型按注册生成」无仪器答案。注意它只被 `gap_for` 消费，而 `gap_for` 自己也没被执行。",
+  "p5b_gate.py::tnorm": "本表新查出：聚合算子在该轮门控层未被执行。这条**不是**「算子从未被测」——Phase IX 的门控有 `C8_tnorm_algebra` 盯它；这里的含义仅限「V-b 声称用到的那条链没有仪器」。",
+  "p5d_gate.py::readout_d": "本表新查出（自我比较类）：`readout_d(0.8, 101, arm)` 只出现在 `G3_determinism`（`a == b`，同种子两次调用）⇒ 该确证轮的 MC 读数在门控层的唯一守护是「同种子给同一个数」，任何确定性实现错误都能通过（X-79 那一族的第三例）。",
+  "phase2_gate.py::e1_rates": "本表新查出（自我比较类）：`e1_rates(\"and\", 2000, seed=3)` 只出现在 `C1_determinism`（`r1 == r2`）⇒ Phase II 的机制生成器在门控层只被「同种子给同一个数」守护；C2/C3 盯的是闭式 `p_action`，不消费 `e1_rates`。这是全仓库最早的一条无可证伪输入检查。"
+ },
+ "corrected_false_positives": [
+  {
+   "claim": "p6_gate.py :: s3_window_exists imported but never called",
+   "status": "retracted",
+   "why": "门控调用 `s3_critical_beta`，其函数体内部调用 `s3_window_exists` ⇒ 该函数被执行，只是不按名字出现。推导器随后加入调用图闭包，此项自动消失。闭包后来又发现一个更隐蔽的同族风险（`p12_lattice` 自己`from p8_smooth import rho_exact` 却不调用），因此闭包已改为**跨模块**执行。"
+  }
+ ],
+ "gates_with_no_check_sites": [
+  "literature/l01_gate.py"
+ ],
+ "injection_blindnesses": {
+  "p5b_gate.py::gap_for": "predicted - imported and never reached",
+  "p8_gate.py::rho_exact": "predicted - reached only by a self-comparison",
+  "p13_gate.py::q_cont": "NOT a syntactic gap: W2 does call q_cont, its registered tolerance is one count, so the blindness is class 1 of this map (real condition, coarser tolerance) - only injection sees it"
+ },
+ "blind_class_this_map_cannot_see": "a name reached by a real condition whose registered tolerance is coarser than the error (p13 W2 = one count, p5d G4 = +-0.005 absolute) - only injection can show that"
+}

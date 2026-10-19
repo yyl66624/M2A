@@ -1588,3 +1588,33 @@ python3 experiments/audit_bindings.py               # 收尾审计，含本套�
 收尾审计复跑：**30/30 套件、270 项检查、24/24 预注册哈希绑定**（逐字取自 `experiments/audit_bindings.py` 的 `SUMMARY` 行）。检查数 245→270 全部来自本节套件：判别力套件自身由 34 条增至 59 条 = 33 个变异 + 25 条门控级规则 + 1 条 `SUITE_accounting`，`245 - 34 + 59 = 270` 逐位对得上。台账由 55 条标签增至 **56 条**（28 CLOSED / 2 SUCCEEDED / 26 OPEN，`derive == pin` 对全部 56 条成立），新增开放项 **O-17** 即 §41.3 那两条仪器段要求的登记处；§40 的 O-16 仍在册，其登记原因已补注「§41 已推广到 25 台 / 33 个」，以免读者把 §40 的规模数字当作当前值。
 
 本节不改动任何判定、不重跑实验、变异只发生在临时副本；`0x` 冻结文件、`registry.json`、412 行账本与预注册哈希一字未动（R6、owner 2026-10-18 第 8 条）。
+
+### 42 从语法侧导出「哪台门控量了哪个量」：静态仪器覆盖表 v1，10 条缺口全部带登记理由
+
+**缘起**。§39–§41 的判别力审计用**注入**回答「多小的错这台门控看不见」，它有一个结构性限制：只能检验有人想到去注入的那个量。X-79 抓到的两处（`p5b_gate` 导入 `gap_for` 却从未调用；`p8_gate` 的 `J5` 写成 `rho_exact(0.6) == rho_exact(0.6)`）本质都是**语法事实**，读源码的当场就能说出来。台账 `O-16`/`O-17` 要求的「import 而未调用的机制函数名单」「无可证伪输入的检查名单」也正是这一类。于是本步把这两句从「审计时想起」变成**可复跑的推导**：`governance/build_coverage_map.py` 从门控源码导出 `report/GATE_COVERAGE_MAP_v1.md` 与 `governance/gate_coverage_map_v1.json`。它不改写任何门控、不跑实验，只读源码。
+
+**口径**。人口 = `experiments/*_gate.py` + `literature/*_gate.py` 共 26 份轮次门控、169 条 `check()`、81 个从本地机制模块导入的可调用量。仪器的身份是 **(模块, 函数)** 而非函数名：`rho_smooth` 在 `p8_smooth` 与 `p12_lattice` 各有一个，Phase XIII 的门控导入前者、调用的却是后者（`p12.rho_smooth`）——按名字统计会把这条缺口看成已覆盖。治理套件（`governance/*_gate.py`）用 `report()` 而非 `check()`，是工件审计不是某一轮的仪器，排除在人口外；`literature/l01_gate.py` 在人口内却贡献 0 条 `check()` ⇒ 本表对不使用 `check()` 的门控**沉默**，「表里没写」不等于「已覆盖」。
+
+**三类判定与结果**：`never_reached`（导入了但没有任何检查执行它，且没有任何被执行的函数在内部调用它）**7 条**；`only_self_comparison`（只被 `a == b` 型检查执行）**3 条**；`detail_only`（只出现在 detail 串里，即 X-67「写下来不等于被检查」）**0 条**。每条缺口都必须带登记理由，**新增而未登记者构建失败**（与台账 EXPECT pin、标签表 RULES 同一条治理规则）。七条 never_reached 里四条集中在 Phase V-b：`chain_polarity`、`channels`、`gap_for`、`tnorm` 同一行导入且无人调用 ⇒ V-b 声称用到的那条串行链在门控层整体没有仪器，而 X-79 此前只实测到 `gap_for` 一条。Phase X 与 Phase XIII 各是一条「两族读数本应对齐、却从未在门控层对齐」（导入 `p8_smooth.rho_smooth` / `rho_exact` 而不调用）。三条 self-comparison 是全仓库最古老的形态：Phase II 的 `C1_determinism`（同种子两次 `e1_rates` 相等）、Phase V-d 的 `G3_determinism`、Phase VIII 的 `J5`。普查层面另有 **18 条** `check()` 属自我比较型——能抓 NaN、崩溃、非确定性，抓不了任何数值错误，按 `O-17` 不计入仪器条数。
+
+**推导器自己的四轮缺陷**（都在写进工件之前查出）：把导入的**常量**当仪器（改为按模块 defs 区分可调用量与数据）；用**变量名**而非位置解析赋值，门控里 `worst` 被多条检查复用导致归因错行（改为 `(lineno, name, value)` 位置化解析）；容器**原地追加**（`e = []` 后 `e.append(f(...))`）的真实被调者在突变调用里（补伪绑定）；调用图闭包只跟**模块内部**，于是把 `p6_gate` 的 `s3_window_exists` 报成死代码——门控调 `s3_critical_beta`，后者体内调它。第四条留下一条撤回记录（表 §5 保留，因为它是推导器边界的证据）。修完后又发现同族风险更狠的一层：`p12_lattice` 自己就 `from p8_smooth import C1, rho_exact`，若它某个被调函数真调了 `rho_exact`，Phase XIII 那条缺口就是假阳性 ⇒ 闭包改为**跨模块**执行。改完重跑，**10 条缺口一字未变**：名单在更强的可达性下站住了，这比「第一次就算对」更能说明名单可用。
+
+**与注入套件对账**（构建时硬校验）：套件里事前登记的 `blind_all` 共 3 条——`p5b::gap_for`、`p8::rho_exact` 本表都预测到；`p13::q_cont` 本表**原理上看不见**，因为 W2 确实调用它，盲在容差（一个计数）而非可达性，属表 §4 声明的第一类盲区。新增 `blind_all` 若既不被预测、也不登记为盲区类，构建直接失败。另有一条**能力控制**：用一份临时合成门控（一条死导入、一条 `a == b`、一个只出现在 detail 串里的量）证明三类判定**都能产出**——否则真实人口里的`detail_only = 0` 只是探测器没通电，不是测量结果（X-77 对注入讲的同一条规矩）。
+
+**校验器 18 条**（`governance/gate_coverage_map_gate.py`）把每条结论用**另一条通路**复核：`tokenize` 证明每条 never_reached 的裸名只出现在 import 行；一遍**超近似**文本闭包（同名即视为可调用，可达集只会不小于 AST 闭包）证明没有任何被调函数体调用它；行文本重放自我比较的 `X == Y` 与逐字相同的右端（含一个能跳过字符串内括号的顶层逗号切分器）；人口文件集与 `check()` 计数字由 tokenize 重数（169 逐字相符）；MD 的表、合计、标题数字与 JSON 逐项相等。三条负控证明 pin 真的会咬：删一条 KNOWN ⇒ 报缺失；撤一条预测 ⇒ 报不一致；凭空新增一条 `blind_all` ⇒ 报未预测。
+
+本步也抓到两处**套件自身**的洞，登记为 X-80：**(a)** 校验器一度打印「15/16」而 16 条全部 PASS——`n_pass` 在 `SUITE_accounting` 追加之前就算好了，§41 的「末行派生计数」修法只做了一半；补 `SUITE_tally`（打印行数 = 记录条数），这是 X-78b 那一族的第三个成员。**(b)** 收尾审计按 `*gate*.py` 收集套件，于是把推导器 `build_gate_coverage_map.py` 也当套件跑并要求它打印 `n/n checks passed`——改名 `build_coverage_map.py` 消除歧义；「文件名与套件约定冲突」是这条 glob 契约（X-68）第一次咬到新建工件。
+
+本步不产出新的科学判定：名单是处置的前提，处置（补检查或删导入）仍属下一轮预注册的仪器段，`O-16`/`O-17` 保持开放，旧轮门控与其 n/n 记录一字未回写（R6、owner 2026-10-18 第 8 条）。
+
+复现：
+
+```bash
+python3 governance/build_coverage_map.py
+python3 governance/gate_coverage_map_gate.py      # 18/18 checks passed
+python3 experiments/audit_bindings.py             # 收尾审计，含本套件
+```
+
+收尾审计复跑：**31/31 套件、288 项检查、24/24 预注册哈希绑定**（`experiments/audit_bindings.py` 的 `SUMMARY` 行原文：`SUMMARY  suites 31/31 green, checks 288, bindings 24/24`）。套件 30→31、检查 270→288：新增的那 1 台套件正是本节的 18 条判定。
+
+本节不改动任何判定、不跑实验、只读源码；`0x` 冻结文件、`registry.json`、412 行账本与预注册哈希一字未动（R6、owner 2026-10-18 第 8 条）。
