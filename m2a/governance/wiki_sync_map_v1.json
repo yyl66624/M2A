@@ -1,0 +1,503 @@
+{
+  "base_section": 31,
+  "claims": [
+    {
+      "draft": null,
+      "in_ledger": true,
+      "node_token": "QdMtweKnXi7ehikF6DUczQ4anng",
+      "section": 31,
+      "title": "M2A Phase I′｜闸门③补做一致性检查"
+    },
+    {
+      "draft": "M2A-文献轮L01-14条全文编码.md",
+      "in_ledger": true,
+      "node_token": "E79DwZ1REi97XNkUzf2cb5OBnGb",
+      "section": 32,
+      "title": "M2A 文献轮 L-01｜14 条全文编码，三锚点全部 INDETERMINATE"
+    },
+    {
+      "draft": "M2A-治理-机制词表v1草案与口径漂移.md",
+      "in_ledger": true,
+      "node_token": "PkCzw0RaWis8wnkjT3ZcIDncnnb",
+      "section": 33,
+      "title": "M2A 治理｜机制词表 v1 草案：由工件推导，推导查出口径漂移"
+    },
+    {
+      "draft": "M2A-治理-五值标签口径表v1到v2.md",
+      "in_ledger": true,
+      "node_token": "VUsPwexuyirFzhkASR5cVUFuned",
+      "section": 34,
+      "title": "M2A 治理｜五值标签口径表 v1→v2：MANUAL_REVIEW 20→0 与 §34 数字更正"
+    },
+    {
+      "draft": "M2A-治理-台账三命名空间与L01主张层重判读.md",
+      "in_ledger": true,
+      "node_token": "P1FfwvlBGiyndek4vHlcBEcwn5c",
+      "section": 35,
+      "title": "M2A 治理｜台账三命名空间与 L-01 主张层重判读（零检验地位）"
+    },
+    {
+      "draft": "M2A-治理-台账三命名空间与L01主张层重判读.md",
+      "in_ledger": true,
+      "node_token": "P1FfwvlBGiyndek4vHlcBEcwn5c",
+      "section": 36,
+      "title": "M2A 治理｜台账三命名空间与 L-01 主张层重判读（零检验地位）"
+    },
+    {
+      "draft": "M2A-治理-五值标签口径表v1到v2.md",
+      "in_ledger": true,
+      "node_token": "VUsPwexuyirFzhkASR5cVUFuned",
+      "section": 37,
+      "title": "M2A 治理｜五值标签口径表 v1→v2：MANUAL_REVIEW 20→0 与 §34 数字更正"
+    },
+    {
+      "draft": "M2A-治理-AO预检落地为仪器.md",
+      "in_ledger": true,
+      "node_token": "AqqSwOrEmiD6iskeZ0EcQ6B0ntg",
+      "section": 38,
+      "title": "M2A 治理｜AO 预检落地为仪器，查出一条永远不会失败的判据"
+    },
+    {
+      "draft": "M2A-治理-门控判别力审计25台与判别地板.md",
+      "in_ledger": true,
+      "node_token": "PvbywrdZiiSsUmkTdQbcsFMPndh",
+      "section": 39,
+      "title": "M2A 治理｜门控判别力审计：25 台的判别地板与装置自身三处失败"
+    },
+    {
+      "draft": "M2A-治理-门控判别力审计25台与判别地板.md",
+      "in_ledger": true,
+      "node_token": "PvbywrdZiiSsUmkTdQbcsFMPndh",
+      "section": 40,
+      "title": "M2A 治理｜门控判别力审计：25 台的判别地板与装置自身三处失败"
+    },
+    {
+      "draft": "M2A-治理-门控判别力审计25台与判别地板.md",
+      "in_ledger": true,
+      "node_token": "PvbywrdZiiSsUmkTdQbcsFMPndh",
+      "section": 41,
+      "title": "M2A 治理｜门控判别力审计：25 台的判别地板与装置自身三处失败"
+    },
+    {
+      "draft": "M2A-治理-门控仪器覆盖表v1.md",
+      "in_ledger": true,
+      "node_token": "D04twrA8UifjkEkAZGZcjM51nVl",
+      "section": 42,
+      "title": "M2A 治理｜门控仪器覆盖表 v1：用语法导出哪台门控量了哪个量"
+    },
+    {
+      "draft": "M2A-治理-runner侧门控强制表v1.md",
+      "in_ledger": true,
+      "node_token": "TqFzw3ElRiuEJ8k2goXciGU8nnc",
+      "section": 43,
+      "title": "M2A 治理｜runner 侧门控强制表 v1：红了就不写盘"
+    },
+    {
+      "draft": "M2A-治理-门控分数三方对账v1.md",
+      "in_ledger": true,
+      "node_token": "VgUswpUdMi7RUckLFu9cMo9Wnmb",
+      "section": 44,
+      "title": "M2A 治理｜门控分数三方对账 v1：文档引用、仪器实跑、语法站点数"
+    },
+    {
+      "draft": "M2A-治理-未测量仪器的治理层检查v1.md",
+      "in_ledger": true,
+      "node_token": "MrE5wnDKoiJgTukBIqBcuHPsnae",
+      "section": 45,
+      "title": "M2A 治理｜未测量仪器的治理层检查 v1：10 台各配一条可推翻的检查"
+    },
+    {
+      "draft": "M2A-治理-wiki同步表v1.md",
+      "in_ledger": true,
+      "node_token": "IVrAw0pvoiJlSXkHMUGcc4Lon8d",
+      "section": 46,
+      "title": "M2A 治理｜wiki 同步表 v1：让「每一步写入飞书」可以被判红"
+    }
+  ],
+  "counts": {
+    "claims_dangling": 0,
+    "claims_stale": 0,
+    "first_batch_off_pin": 0,
+    "first_batch_pages": 12,
+    "first_batch_pages_claimed_by_a_section": 1,
+    "governance_pages": 11,
+    "governance_pages_unclaimed": 0,
+    "ledger_pages_with_node": 23,
+    "report_sections_in_population": 16,
+    "sections_claimed": 16,
+    "sections_unclaimed": 0
+  },
+  "dangling_claims": [],
+  "first_batch_expected": 12,
+  "first_batch_pages": [
+    "M2A Owner Decision 2026-10-18｜八条裁定 + AO 协议 v1",
+    "M2A Phase I′｜闸门③补做一致性检查",
+    "M2A Phase XIV｜速率式 δ(J)=1/(J+2)",
+    "M2A Phase XIX｜时间对称性检验不可满足",
+    "M2A Phase XVIII｜三层位移界下的跨 k 复验",
+    "M2A Phase XVII｜两层离散化同时加密",
+    "M2A Phase XVI｜跨 k 复验否证单层容差模型",
+    "M2A Phase XV｜联合拟合只给出一侧界定",
+    "M2A Phase XXII｜Δt^p 整族扫描与 A 的误纳范围",
+    "M2A Phase XXI｜扩族后 A 单条不再足以挑出 M2",
+    "M2A Phase XX｜重述后的 B-07 筛子可用",
+    "M2A 治理｜义务台账改为机器推导"
+  ],
+  "orphan_pages": [],
+  "pages": [
+    {
+      "draft": "M2A-文献轮L01-14条全文编码.md",
+      "draft_chars": 1090,
+      "draft_sha256": "26e983efcce4e5a07d0db2e7b743e1e5c83cff2c48b29d350aee9ac1af91a5bb",
+      "markers": [
+        "INDETERMINATE",
+        "L01-D5",
+        "42"
+      ],
+      "markers_ok_recorded": true,
+      "node_token": "E79DwZ1REi97XNkUzf2cb5OBnGb",
+      "obj_token": "WY5bdiPkToLjmcxJaXUcD5hFnsd",
+      "read_back_chars_recorded": 1520,
+      "sections": [
+        32
+      ],
+      "title": "M2A 文献轮 L-01｜14 条全文编码，三锚点全部 INDETERMINATE"
+    },
+    {
+      "draft": "M2A-治理-机制词表v1草案与口径漂移.md",
+      "draft_chars": 828,
+      "draft_sha256": "df00216320b6d02c10484fc3f2c9cbd662560eadc6eb5d7e2737a5eedaa274b8",
+      "markers": [
+        "口径漂移表",
+        "PROVISIONAL",
+        "X-70"
+      ],
+      "markers_ok_recorded": true,
+      "node_token": "PkCzw0RaWis8wnkjT3ZcIDncnnb",
+      "obj_token": "QSERd7htPo6JvzxeSy8cJg5fnKc",
+      "read_back_chars_recorded": 1152,
+      "sections": [
+        33
+      ],
+      "title": "M2A 治理｜机制词表 v1 草案：由工件推导，推导查出口径漂移"
+    },
+    {
+      "draft": "M2A-治理-五值标签口径表v1到v2.md",
+      "draft_chars": 1806,
+      "draft_sha256": "7c02bb37ba7a0eb560c32eea9ab43d62bdc9a337d2e694a34e73b4d453da1806",
+      "markers": [
+        "MANUAL_REVIEW",
+        "45",
+        "S5"
+      ],
+      "markers_ok_recorded": true,
+      "node_token": "VUsPwexuyirFzhkASR5cVUFuned",
+      "obj_token": "OEy3doWr3oCi5ZxSbdvcv1nPn3f",
+      "read_back_chars_recorded": 2748,
+      "sections": [
+        34,
+        37
+      ],
+      "title": "M2A 治理｜五值标签口径表 v1→v2：MANUAL_REVIEW 20→0 与 §34 数字更正"
+    },
+    {
+      "draft": "M2A-治理-台账三命名空间与L01主张层重判读.md",
+      "draft_chars": 1690,
+      "draft_sha256": "dcd06831d79fd7742ee56b1856d04db9d3e498986821934d142725d5ddb76e6f",
+      "markers": [
+        "ZERO_TEST_REANALYSIS",
+        "L01-D6",
+        "56"
+      ],
+      "markers_ok_recorded": true,
+      "node_token": "P1FfwvlBGiyndek4vHlcBEcwn5c",
+      "obj_token": "Ua2NdVXIZo3JbTxVsEocXMdunqe",
+      "read_back_chars_recorded": 2217,
+      "sections": [
+        35,
+        36
+      ],
+      "title": "M2A 治理｜台账三命名空间与 L-01 主张层重判读（零检验地位）"
+    },
+    {
+      "draft": "M2A-治理-AO预检落地为仪器.md",
+      "draft_chars": 1320,
+      "draft_sha256": "5d6df6708d465b2b3971253b9739e01782de23571c588ec1b7eb9ae61cb37c59",
+      "markers": [
+        "P6c",
+        "8.425e-04",
+        "X-75"
+      ],
+      "markers_ok_recorded": true,
+      "node_token": "AqqSwOrEmiD6iskeZ0EcQ6B0ntg",
+      "obj_token": "TFsmdd4J5odnfBxlKBscqoqon3c",
+      "read_back_chars_recorded": 1859,
+      "sections": [
+        38
+      ],
+      "title": "M2A 治理｜AO 预检落地为仪器，查出一条永远不会失败的判据"
+    },
+    {
+      "draft": "M2A-治理-门控判别力审计25台与判别地板.md",
+      "draft_chars": 2822,
+      "draft_sha256": "f228b0f68e0a2eda7c4af8c4ef6320f14280b86f10d58cb0abc82f96ae60ecba",
+      "markers": [
+        "判别地板",
+        "SUITE_accounting",
+        "O-17"
+      ],
+      "markers_ok_recorded": true,
+      "node_token": "PvbywrdZiiSsUmkTdQbcsFMPndh",
+      "obj_token": "OaFudj73xoH5AUx8Pcrc9usjnYd",
+      "read_back_chars_recorded": 4270,
+      "sections": [
+        39,
+        40,
+        41
+      ],
+      "title": "M2A 治理｜门控判别力审计：25 台的判别地板与装置自身三处失败"
+    },
+    {
+      "draft": "M2A-治理-门控仪器覆盖表v1.md",
+      "draft_chars": 3663,
+      "draft_sha256": "ad658255c06c3c239710ab3dc3ea01011c56e5f1d54e4fc46042ccaaeaa17f53",
+      "markers": [
+        "never_reached",
+        "SUITE_tally",
+        "跨模块"
+      ],
+      "markers_ok_recorded": true,
+      "node_token": "D04twrA8UifjkEkAZGZcjM51nVl",
+      "obj_token": "FzCJdSbBuoWh5jxKSrGc40L0nDe",
+      "read_back_chars_recorded": 5482,
+      "sections": [
+        42
+      ],
+      "title": "M2A 治理｜门控仪器覆盖表 v1：用语法导出哪台门控量了哪个量"
+    },
+    {
+      "draft": "M2A-治理-runner侧门控强制表v1.md",
+      "draft_chars": 2835,
+      "draft_sha256": "8bbd08df18d5bc803ef4f0b4326f4275e948834011eb2d231d84fdd1b6226aaa",
+      "markers": [
+        "把读当写",
+        "14/14",
+        "登记理由"
+      ],
+      "markers_ok_recorded": true,
+      "node_token": "TqFzw3ElRiuEJ8k2goXciGU8nnc",
+      "obj_token": "WasFdhVNpo1SRsxJlsWcbAxdnxf",
+      "read_back_chars_recorded": 4710,
+      "sections": [
+        43
+      ],
+      "title": "M2A 治理｜runner 侧门控强制表 v1：红了就不写盘"
+    },
+    {
+      "draft": "M2A-治理-门控分数三方对账v1.md",
+      "draft_chars": 2317,
+      "draft_sha256": "2f6985ff6922f9bf7d0f800212fe6f65d49c730ef85651f3e211849cb6728b07",
+      "markers": [
+        "两条完全不同的抵消",
+        "p17_gate.py",
+        "offline"
+      ],
+      "markers_ok_recorded": true,
+      "node_token": "VgUswpUdMi7RUckLFu9cMo9Wnmb",
+      "obj_token": "CJtYdsjd4oHUGqxlq8ycORyjnyf",
+      "read_back_chars_recorded": 3672,
+      "sections": [
+        44
+      ],
+      "title": "M2A 治理｜门控分数三方对账 v1：文档引用、仪器实跑、语法站点数"
+    },
+    {
+      "draft": "M2A-治理-未测量仪器的治理层检查v1.md",
+      "draft_chars": 3803,
+      "draft_sha256": "22e26f364badf601ae1e8b54da6a6abfc5cc3217ea949e577ba65d183557db3e",
+      "markers": [
+        "可推翻",
+        "25/25",
+        "X-83"
+      ],
+      "markers_ok_recorded": true,
+      "node_token": "MrE5wnDKoiJgTukBIqBcuHPsnae",
+      "obj_token": "GIjtdE3TCoB837xAtZNcLgNVnbf",
+      "read_back_chars_recorded": 6286,
+      "sections": [
+        45
+      ],
+      "title": "M2A 治理｜未测量仪器的治理层检查 v1：10 台各配一条可推翻的检查"
+    },
+    {
+      "draft": "M2A-治理-wiki同步表v1.md",
+      "draft_chars": 2651,
+      "draft_sha256": "18903abd33c1e74b92a707a78a64bca179b9df65ed3b82c6a5fdea37ee9968c1",
+      "markers": [
+        "fail-open",
+        "16/16",
+        "node_token"
+      ],
+      "markers_ok_recorded": true,
+      "node_token": "IVrAw0pvoiJlSXkHMUGcc4Lon8d",
+      "obj_token": "MBvtd1uNko7uwixdpWtcpB1ynig",
+      "read_back_chars_recorded": 3335,
+      "sections": [
+        46
+      ],
+      "title": "M2A 治理｜wiki 同步表 v1：让「每一步写入飞书」可以被判红"
+    }
+  ],
+  "schema": "m2a.wiki_sync_map.v1",
+  "sections": [
+    {
+      "section": 31,
+      "title": "Phase I′ 闸门③补做：计票一致性检查此前只被「打了勾」，没有真的跑过（2026-10-18 追加）",
+      "xids_named": []
+    },
+    {
+      "section": 32,
+      "title": "Round L-01（2026-10-18 追加）：第 4 条要求的 14 篇全文机制编码**做完**，三簇判定全为 `INDETERMIN",
+      "xids_named": [
+        62,
+        67
+      ]
+    },
+    {
+      "section": 33,
+      "title": "机制词表 v1（2026-10-18 追加）：术语由工件推导，推导顺带查出注册表的方向列是「6 类拼写表达 4 个状态」",
+      "xids_named": [
+        67,
+        69
+      ]
+    },
+    {
+      "section": 34,
+      "title": "五值标签翻译层（owner decision 2026-10-18 §2-3 / 第 7 条）",
+      "xids_named": [
+        67,
+        70
+      ]
+    },
+    {
+      "section": 35,
+      "title": "义务台账补全三个命名空间（`ROUND_L01_RESULTS.md` §9.6 的「登记待修」已兑现）",
+      "xids_named": [
+        67,
+        70
+      ]
+    },
+    {
+      "section": 36,
+      "title": "L01-O2 重判读：把主张层关系加回一致性判据（零检验地位，判定不变）",
+      "xids_named": [
+        70,
+        73
+      ]
+    },
+    {
+      "section": 37,
+      "title": "口径表 v2：把 20 行 MANUAL_REVIEW 接通，并更正第 34 节抄错的两处数字",
+      "xids_named": [
+        67,
+        71
+      ]
+    },
+    {
+      "section": 38,
+      "title": "AO 预检落地为仪器，并查出一条「永远不会失败」的判据",
+      "xids_named": [
+        29,
+        75
+      ]
+    },
+    {
+      "section": 39,
+      "title": "门控判别力审计：五台门控都拒了被改坏的机制，但交叉路径检查有一条边界",
+      "xids_named": []
+    },
+    {
+      "section": 40,
+      "title": "门控判别力审计的推广：把变异检验做到 Phase IX–XVIII，并先补上审计仪器自己的两个洞",
+      "xids_named": [
+        67,
+        74,
+        76,
+        77
+      ]
+    },
+    {
+      "section": 41,
+      "title": "判别力审计推广到全仓库 25 台门控：给每台门控导出「判别地板」，并在一轮里抓出审计仪器自己的三处缺陷",
+      "xids_named": [
+        68,
+        77,
+        78
+      ]
+    },
+    {
+      "section": 42,
+      "title": "从语法侧导出「哪台门控量了哪个量」：静态仪器覆盖表 v1，10 条缺口全部带登记理由",
+      "xids_named": [
+        67,
+        68,
+        77,
+        78,
+        79,
+        80
+      ]
+    },
+    {
+      "section": 43,
+      "title": "把「门控红了 runner 就不写盘」从文字变成语法：runner 侧强制表 v1，29 个工件写入者全部对上",
+      "xids_named": [
+        67,
+        74,
+        77,
+        81
+      ]
+    },
+    {
+      "section": 44,
+      "title": "门控分数的三方对账：文档引用 ↔ 仪器实跑 ↔ 静态站点数——两个总数相等不代表同一件事",
+      "xids_named": [
+        82
+      ]
+    },
+    {
+      "section": 45,
+      "title": "给 §42 判为未测量的 10 台仪器各配一条可推翻的检查：在治理层测量，任何轮次判定一字不改",
+      "xids_named": [
+        74,
+        83
+      ]
+    },
+    {
+      "section": 46,
+      "title": "把「每一步写入飞书」变成仓库内可以判红的事实：wiki 同步表 v1，并先查出这张表自己与自己打架",
+      "xids_named": [
+        84
+      ]
+    }
+  ],
+  "stale_claims": [],
+  "tools": [
+    {
+      "bytes": 19878,
+      "file": "check_step_draft_numbers.py",
+      "sha256": "7566443cdafea9c72f6ca4607b792864b09efc8d39bdd47c65332cfde006bafc"
+    },
+    {
+      "bytes": 7312,
+      "file": "publish_wiki_steps.py",
+      "sha256": "5e561f829f5cc22263f5a7ce9c84d1e40e63ddaf63622087042a603481864ecb"
+    },
+    {
+      "bytes": 8082,
+      "file": "feishu_wiki_nodes.json",
+      "sha256": "487d7e899d4f40c351a3124a406a3ad062b76e5bd71464b810986cb6124111a0"
+    }
+  ],
+  "unclaimed_sections": [],
+  "wiki_parent_node_token": "GS0Qwtj2fidyu0kRcjTcVDXVnFc"
+}
