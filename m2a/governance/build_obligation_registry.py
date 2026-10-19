@@ -93,6 +93,7 @@ EXPECT = {
     "O-13": ("OPEN", "block", "08_OPEN_QUESTIONS.md", "需明确升级预算", None),
     "O-14": ("OPEN", "block", "08_OPEN_QUESTIONS.md", "需指定复核人", None),
     "O-15": ("OPEN", "block", "08_OPEN_QUESTIONS.md", "需决定治理责任人", None),
+    "O-16": ("OPEN", "block", "08_OPEN_QUESTIONS.md", "判据引用的闭式在门控层没有实现级对照", None),
 }
 CLASS = {"close": CLOSE, "adopt": ADOPT, "hand": HAND, "block": BLOCK}
 
@@ -467,6 +468,10 @@ def main():
         "O-15": "词表治理：v1 草案已交付（`report/MECHANISM_VOCABULARY_v1.md`，owner 第 5 条的 Agent 通道），"
                 "但版本化治理流程与责任人决定未落地，`AGGREGATE` 仍为 `PROVISIONAL`，且推导器查出的方向列拼写漂移"
                 "（X-70）只登记未清洗 ⇒ 开放。",
+        "O-16": "判别力审计推广到 15 台门控 / 19 个注入变异后暴露的两条仪器段要求（`M2A_FINAL_REPORT.md` §40、"
+                "X-77）：闭式 `predicted` 被移 1e-4 后门控全绿且 `rel_diff` 无人读取；W2 的「一个计数」容差与 "
+                "Y2 的网格半步 0.0050 使小于一个晶格步的机制错误原理上不可见。⇒ 两条要求**须先写入下一轮预注册的"
+                "仪器段才可执行**，本轮不替下一轮定判据（owner 第 3 条未授权新一轮），故开放。",
     }
     if unk:
         print("UNCLASSIFIED labels (no wording class attaches): " + ", ".join(unk), file=sys.stderr)
