@@ -62,6 +62,7 @@ PUBLISH_MAP = {
     47: "KDnUwL1XYi262wkzkonc0UvZnsb",   # the score reconciliation page, published before it could be registered
     48: "QuO5w9vGFiikp1kSKbgcrh1jnnb",   # the suite-score registry page, published before it could be registered
     49: "Vftbwqe4QiQZdEk2fhOcSvDbnie",   # the label-provenance page, published before it could be registered
+    50: "D99TwpMdKiqui7kK3eNciniWnhe",   # the value-provenance page, published before it could be registered
 }
 
 SECTION_RE = r"^#{2,3} (\d+) (.*)$"

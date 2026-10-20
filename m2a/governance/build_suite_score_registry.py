@@ -98,7 +98,11 @@ SELF_OUT = {JSON_OUT.name, MD_OUT.name}
 # re-derive the layer that reads the table this generator is writing (X-94's cycle, one level up).
 # Its own reading stays authoritative in the closing audit; quotes of it are disclosed, never judged.
 UNMEASURED = {"label_provenance_gate.py":
-              "re-runs governance/build_label_provenance.py, which reads this layer's table (X-94)"}
+              "re-runs governance/build_label_provenance.py, which reads this layer's table (X-94)",
+              "value_provenance_gate.py":
+              "re-runs governance/build_value_provenance.py and pins this layer's own exclusion list, so "
+              "measuring it here would put the closing audit in an order-dependent loop (X-95, same shape "
+              "as X-94); its printed line stays authoritative in the audit itself"}
 # A3 withdrew the JSON widening the same round it was added: another layer's derived JSON re-emits the
 # very prose lines this layer extracts, so scanning it re-reads this layer's own rows (transcription
 # laundering, X-85(g)) and made the two layers mutually dependent - the closing audit could then never
@@ -108,7 +112,13 @@ LAYER_TRANSCRIPTIONS = {"LABEL_PROVENANCE_v1.md":
                         "out of this layer's own claims (X-94)",
                         "label_provenance_v1.json":
                         "transcription of this layer's own claim lines by governance/"
-                        "build_label_provenance.py; a claim source may not be a copy of the claims"}
+                        "build_label_provenance.py; a claim source may not be a copy of the claims",
+                        "VALUE_PROVENANCE_v1.md":
+                        "the table governance/build_value_provenance.py writes; its rows quote prose "
+                        "lines verbatim, so scanning it re-reads this layer's claims through a copy "
+                        "that can be truncated mid-fraction (X-85(g), X-95)",
+                        "value_provenance_v1.json":
+                        "same table in machine form; a claim source may not be a copy of the claims"}
 SELF_SUITE = "suite_score_registry_gate.py"
 GLOB_SUITES = sorted(M.glob("experiments/*gate*.py")) + sorted(M.glob("literature/*gate*.py")) \
     + sorted(M.glob("governance/*gate*.py"))

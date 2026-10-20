@@ -24,12 +24,16 @@
   ],
   "generator": {
     "file": "governance/build_label_provenance.py",
-    "sha256": "06798e4c81b170225ff5f32eb587acc231b6bcbc11872480cb3dcfd05c4cb3ae"
+    "sha256": "5491e5f7967d0c223ffc31947aca57cd42dfa31604b48fef2b6e4ebbd62c9df7"
   },
   "self_excluded": [
     "LABEL_PROVENANCE_v1.md",
     "label_provenance_v1.json"
   ],
+  "declared_transcriptions": {
+    "VALUE_PROVENANCE_v1.md": "the value layer's table; its rows are excerpts of claims found here",
+    "value_provenance_v1.json": "same, machine form"
+  },
   "errata": [
     {
       "xid": 92,
@@ -2494,7 +2498,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1921,
+      "line": 1926,
       "labels": [
         "CONTRADICTED",
         "INDETERMINATE",
@@ -2511,7 +2515,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1922,
+      "line": 1927,
       "labels": [
         "SUPPORTED"
       ],
@@ -2542,7 +2546,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1945,
+      "line": 1950,
       "labels": [
         "SUPPORTED"
       ],
@@ -2555,7 +2559,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1951,
+      "line": 1956,
       "labels": [
         "IDENTITY_VERIFIED",
         "PASS"
@@ -2587,7 +2591,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1952,
+      "line": 1957,
       "labels": [
         "COUNT_NOT_STATUS",
         "MANUAL_REVIEW"

@@ -12,8 +12,8 @@
 
 | 列 | 数 |
 | --- | --- |
-| 对账的页面 | 15 |
-| 覆盖的步骤节 | 19（同步表登记 19） |
+| 对账的页面 | 16 |
+| 覆盖的步骤节 | 20（同步表登记 20） |
 | **页面上的分数在仓库里查无出处** | 0 |
 | 页面点名的仪器被本仓库有意排除在测量之外（披露，不判红） | 1 页 / 1 个值 |
 | 仅由宽松口径支持的页面分数 | 0 |
@@ -22,7 +22,7 @@
 | 订正已登记但尚未生效（页面缺该数字或缺订正标记） | 0 |
 | 页面分数已被后来的节追上 | 1 |
 | 页面压缩（节里有、页里没有） | 0 |
-| 完全一致 | 13 |
+| 完全一致 | 14 |
 | 无抓取可比 | 0 |
 | 草稿 ↔ 页面不一致（草稿的说法页面上没有） | 0 |
 | 页面在发布之后又追加了内容（草稿是子集） | 2 |
@@ -51,6 +51,7 @@
 | 47 | M2A 治理｜节↔页分数对账 v1：页面说的 | aligned | 2 | - | - | - | - | aligned |
 | 48 | M2A 治理｜套件分数引用对账 v1：仓库自 | self_referential_claim | 1 | - | - | - | - | page_grew_after_publication |
 | 49 | M2A 治理｜判定标签↔工件对账 v1：散文 | aligned | 0 | - | - | - | - | aligned |
+| 50 | M2A 治理｜判据数值↔轮次记录对账 v1： | aligned | 0 | - | - | - | - | aligned |
 
 ## 每条页面分数的仓库出处（`attest`）
 
@@ -66,7 +67,7 @@
 | `p10_gate.py` | 6/6 | `M2A_FINAL_REPORT.md`, `experiments/PHASE10_RESULTS.md` | §44 |
 | `result_score_map_gate.py` | 12/12 | `M2A_FINAL_REPORT.md`, `governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md` | §44 |
 | `gate_coverage_map_gate.py` | 17/17/18/18 | `M2A_FINAL_REPORT.md`, `governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md` | §45 |
-| `obligation_registry_gate.py` | 8/8 | `M2A_FINAL_REPORT.md` | §45 |
+| `obligation_registry_gate.py` | 8/8 | `M2A_FINAL_REPORT.md`, `governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md` | §45 |
 | `unmeasured_instruments_gate.py` | 25/25 | `M2A_FINAL_REPORT.md`, `governance/OBLIGATION_REGISTRY.md` | §45 |
 | `wiki_sync_map_gate.py` | 16/16 | `M2A_FINAL_REPORT.md`, `governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md` | §46 |
 | `gate_discrimination_gate.py` | 59/59 | `M2A_FINAL_REPORT.md`, `governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md` | §47 |

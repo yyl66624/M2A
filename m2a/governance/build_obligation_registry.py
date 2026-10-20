@@ -140,6 +140,14 @@ JOIN = re.compile(r"[\s`/／与和及\-—–()（）*·]*")
 # incident number rather than by when a disposition was reached; letting it decide status would
 # rank a Phase VI incident above a Phase XVIII closure. It still counts as a mention and evidence.
 STATUS_SKIP = {"governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md"}
+# X-95. A derived governance table is a *copy* of prose lines whose authority is the document it quotes, so a
+# copy must never decide a status. This was not hypothetical: the first commit of governance/
+# value_provenance_v1.json flipped P10-O1 CLOSED→OPEN, P11-O2 SUCCEEDED→OPEN, P12-O1 SUCCEEDED→OPEN and
+# P14-O1 CLOSED→OPEN, because its `excerpt` fields hold the original sentences truncated at 90-150 characters -
+# the truncation cut the clause that carried the disposition, so the copy said something the original does not.
+# `collect()` therefore skips every derived table; the primary documents each table quotes are still scanned,
+# which is the direction that can only remove flip-power, never add it.
+TRANSCRIBED_TABLE = re.compile(r"^governance/[A-Za-z0-9_]*_v\d+\.(md|json)$")
 
 
 def label_sort(s):
@@ -283,6 +291,8 @@ def collect():
         if f.name == SELF:
             continue  # the registry must never cite itself
         rel = str(f.relative_to(M))
+        if TRANSCRIBED_TABLE.match(rel):
+            continue  # X-95: a copy of a prose line may not decide a status
         lines = f.read_text(encoding="utf-8", errors="replace").splitlines()
         for ln, sent in units(rel, lines):
             for key in set(m.group(0) for m in ALL_LABEL.finditer(sent)):

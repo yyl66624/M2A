@@ -112,6 +112,13 @@ RUNS_DIR = M / "report"
 RECORD_DIRS = (M / "experiments", M / "literature")
 
 SELF_OUT = {JSON_OUT.name, MD_OUT.name}
+# Cycle prevention, registered before this layer's first re-derivation (X-95, following X-94). The value
+# layer's table is built from the *same* prose corpus as this one and its rows are excerpts of claims this
+# layer already finds in the source document. Scanning it would (a) duplicate every transcribed claim into a
+# new row whose document is a derived table, and (b) make the two layers each re-derive the other's corpus,
+# which is the shape that made a single closing audit unorderable in X-94.
+TRANSCRIBED = {"VALUE_PROVENANCE_v1.md": "the value layer's table; its rows are excerpts of claims found here",
+               "value_provenance_v1.json": "same, machine form"}
 KEYS = ("verdict", "exit", "status", "outcome", "exit_reason")
 LABEL_KEY = re.compile(r"(label|verdict|exit|outcome|status|state)", re.I)
 VERDICT_TOKEN = re.compile(r"^[A-Z][A-Z0-9_-]{3,}$")
@@ -295,7 +302,7 @@ def status_only(arts):
 def corpus():
     docs = [(REPORT, "append_only"), (LOG, "append_only"), (LEDGER, "regenerated")]
     tables = [p for p in sorted(GOV.glob("*.md"))
-              if re.search(r"_v\d+\.md$", p.name) and p.name not in SELF_OUT]
+              if re.search(r"_v\d+\.md$", p.name) and p.name not in SELF_OUT and p.name not in TRANSCRIBED]
     docs += [(p, "derived_summary") for p in sorted(RUNS_DIR.glob("*.md")) + tables]
     docs += [(p, "run_record") for d in RECORD_DIRS for p in sorted(d.glob("*.md"))
              if not re.search(r"PREREG", p.name)]
@@ -453,6 +460,7 @@ def main() -> int:
         "generator": {"file": str(pathlib.Path(__file__).resolve().relative_to(M)),
                       "sha256": sha256(pathlib.Path(__file__).read_bytes())},
         "self_excluded": sorted(SELF_OUT),
+        "declared_transcriptions": dict(TRANSCRIBED),
         "errata": ERRATA,
         "asymmetry": "pairing is at round level, never arm level: looseness can only remove findings",
         "counts": counts,
