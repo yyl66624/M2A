@@ -109,31 +109,79 @@ def main() -> int:
            not bad, "offending: " + (",".join(bad) or "none")
            + " | C_signed per anchor " + json.dumps({k: v["C_signed"] for k, v in et.items()}))
 
+    # The neighbour records carry no `file` field, but the anchors do, and every neighbour text on disk matches
+    # its committed sha256 prefix under the convention "<dir>/L01_<sid>.txt". The directory is therefore derived
+    # from a committed artifact instead of typed. L-01 hashed and indexed its texts with LF endings, while the
+    # mount stores one `local_cache` file with CRLF, so the comparison base is declared (L02-A4): decode, fold
+    # CRLF/CR to LF, then the manifest hash, the character count and every quote offset must hit exactly.
+    # There is no "quote found somewhere else in the text" fallback - an offset that does not hit is a defect.
     ft = json.loads(FULLTEXTS.read_text(encoding="utf-8"))["records"]
-    verified, unverifiable, broken = 0, 0, []
+    ft_dir = pathlib.Path(next(v["file"] for v in ft.values() if v.get("file"))).parent
+    verified, unresolved, broken, hash_bad, normalized, qlens = 0, [], [], [], [], []
     for sid, rec in recs.items():
-        f = (ft.get(sid) or {}).get("file")
-        p = pathlib.Path(f) if f else None
-        if not p or not p.exists():
-            unverifiable += 1
+        r = ft.get(sid) or {}
+        p = pathlib.Path(r["file"]) if r.get("file") else ft_dir / ("L01_%s.txt" % sid)
+        if not p.exists():
+            unresolved.append(sid)
             continue
-        text = p.read_text(encoding="utf-8", errors="replace")
+        blob = p.read_bytes()
+        text = blob.decode("utf-8", "replace")
+        norm = text.replace("\r\n", "\n").replace("\r", "\n")
+        if norm != text:
+            normalized.append(sid)
+        if sha(norm.encode("utf-8"))[:16] != r.get("sha256") and sha(blob)[:16] != r.get("sha256"):
+            hash_bad.append(sid)
+            continue
+        if len(norm) != r.get("chars"):
+            hash_bad.append(sid)
+            continue
         for m in (rec.get("mechanism") or []):
             q, off = m.get("quote", ""), m.get("quote_offset")
-            if isinstance(off, int) and 0 <= off <= len(text) and text[off:off + len(q)] == q:
-                verified += 1
-            elif q and q in text:
+            qlens.append(len(q))
+            if isinstance(off, int) and 0 <= off <= len(norm) and norm[off:off + len(q)] == q \
+                    and sha(q.encode("utf-8"))[:16] == m.get("quote_sha16"):
                 verified += 1
             else:
                 broken.append((sid, (q or "")[:24]))
-    report("G7 quotes are byte-locatable in the full-text files that exist; absences are disclosed not faked",
-           not broken, "verified %d | rows without a local file %d | mismatched %s"
-           % (verified, unverifiable, broken[:3]))
+    report("G7 quotes are byte-located at their recorded offsets in files whose hash and length still match "
+           "the manifest, or the row is named",
+           not broken and not hash_bad and not unresolved and qlens and min(qlens) >= 20 and max(qlens) <= 400,
+           "quotes verified %d | rows unresolvable %s | hash/length mismatch %s | offset or sha mismatch %s "
+           "| line-endings folded %s | quote chars %d-%d"
+           % (verified, unresolved or "none", hash_bad or "none", broken[:2] or "none",
+              normalized or "none", min(qlens) if qlens else -1, max(qlens) if qlens else -1))
 
-    missing_fields = {k: [f for f in REQUIRED_FIELDS if f not in v] for k, v in recs.items()}
-    holes = {k: v for k, v in missing_fields.items() if v}
-    report("G8 the committed field contract holds for all 17 rows, layers included (L-01-D5's hole)",
-           not holes, "rows with missing fields: " + (json.dumps(holes, ensure_ascii=False)[:120] or "none"))
+    # The protocol names two fields the artifact never used by those names: L-01 coded `sid` where `02` §2.2 says
+    # `case_id` and `title` where it says `reference`. Tolerating that silently would launder a real discrepancy
+    # between the registered contract and the committed artifact, so the aliases are declared here and the alias
+    # rows are printed as a disclosure (L02-A3) while the content requirement stays strict.
+    # L02-A5: 12 of the 17 committed rows carry `contradiction_ref` as null - the artifact uses null for "this
+    # case references no contradiction", and `02` section 2.2 never declared whether the field may be empty. The
+    # frozen L-01 artifact cannot be rewritten (R6), so the contract is checked as key presence for all 12 fields
+    # plus non-empty for the 11 that have no null reading, and the null rows are named in the printed line
+    # instead of being rounded away. This is a registered gap in an upstream artifact (negative-log row), not a
+    # green tick for it.
+    ALIAS = {"case_id": ("case_id", "sid"), "reference": ("reference", "title")}
+    NULLABLE = ("contradiction_ref",)
+
+    def has(rec, f):
+        return any(rec.get(n) not in (None, "") for n in ALIAS.get(f, (f,)))
+
+    holes = {k: [f for f in REQUIRED_FIELDS if not has(v, f) and f not in NULLABLE] for k, v in recs.items()}
+    holes = {k: v for k, v in holes.items() if v}
+    keyless = {k: [f for f in REQUIRED_FIELDS if not any(n in v for n in ALIAS.get(f, (f,)))]
+               for k, v in recs.items()}
+    keyless = {k: v for k, v in keyless.items() if v}
+    nulled = sorted(k for k, v in recs.items() if not has(v, "contradiction_ref"))
+    aliased = [f for f in ALIAS if all(f not in r for r in recs.values())
+               and any(ALIAS[f][1] in r for r in recs.values())]
+    report("G8 the committed field contract holds for all 17 rows, layers included, aliases and nulls disclosed",
+           not holes and not keyless and aliased == ["case_id", "reference"],
+           "rows missing a required non-empty field: " + (json.dumps(holes, ensure_ascii=False)[:120] or "none")
+           + " | rows missing a key: " + (json.dumps(keyless, ensure_ascii=False)[:80] or "none")
+           + " | protocol names carried by an alias key: " + ",".join(aliased)
+           + " | `contradiction_ref` null in %d rows: %s"
+           % (len(nulled), ",".join(nulled[:6]) + ("..." if len(nulled) > 6 else "")))
 
     coded_ft = [k for k, v in recs.items() if v.get("verification_level") == "FULLTEXT_REVIEWED"]
     chars = [ft[k]["chars"] for k in coded_ft if k in ft and "chars" in ft[k]]
@@ -153,11 +201,16 @@ def main() -> int:
            q_blocks == 3 and len(tables) >= 7 and len(catch) >= 3,
            "questions %d | exit rows %d | catch-all phrases %d" % (q_blocks, len(tables), len(catch)))
 
+    # G11 teeth: simulate a binding break by making the *git object* differ from the disk bytes. Moving the
+    # preregistration outside the module tree would not test the binding at all - it dies earlier, in path
+    # arithmetic, and a validator that crashes leaves no verdict line, which is a fail-open (X-85).
     before = OUT.read_bytes() if OUT.exists() else None
-    tampered = pathlib.Path("/tmp/l02_prereg_tampered.md")
-    tampered.write_bytes(pre_disk + b"\n(append after the binding - the write path must refuse)\n")
-    R.PREREG = tampered
-    rc = R.main() if hasattr(R, "main") else 1
+    orig_git = R.git_head_bytes
+    R.git_head_bytes = lambda rel: pre_disk + b"\n(tampered after the binding)\n"
+    try:
+        rc = R.main()
+    finally:
+        R.git_head_bytes = orig_git
     after = OUT.read_bytes() if OUT.exists() else None
     report("G11 the write path refuses when the two-channel binding does not hold (fail closed, no artifact)",
            rc == 4 and (before or b"") == (after or b""),
