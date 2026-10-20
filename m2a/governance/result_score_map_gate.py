@@ -2,7 +2,7 @@
 
 The artifact compares a document's quoted gate score, the score the gate prints today, and the
 number of `check()` sites counted syntactically. Two aggregates being EQUAL is not evidence of
-agreement (this population lands on 169 by two different cancellations), so every rule below is
+agreement (this population once landed on the same total by two different cancellations), so every rule below is
 per-instrument, and the live column is re-measured here rather than trusted.
 
   R1/R2  the committed JSON and Markdown are reproduced byte-for-byte by the generator in offline
@@ -100,7 +100,7 @@ def main() -> int:
            "; ".join(bad5) or f"{len(d['rows'])} documents re-read")
 
     disk_docs = {p.relative_to(M).as_posix() for p in (M / "experiments").glob("PHASE*_RESULTS.md")} \
-        | {"literature/ROUND_L01_RESULTS.md"}
+        | {"literature/ROUND_L01_RESULTS.md", "literature/ROUND_L02_RESULTS.md"}
     cm = json.loads(CMAP.read_text(encoding="utf-8"))
     static = {r["file"]: len(r["checks"]) for r in cm["rows"]}
     undocumented = sorted(k for k in static

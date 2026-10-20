@@ -140,6 +140,13 @@
       "node_token": "D99TwpMdKiqui7kK3eNciniWnhe",
       "section": 50,
       "title": "M2A 治理｜判据数值↔轮次记录对账 v1：散文写下的容差与阈值，第一次能被它所说那一轮的记录推翻"
+    },
+    {
+      "draft": "M2A-文献轮L02-主张层重数与竞争理论全文.md",
+      "in_ledger": true,
+      "node_token": "X36OwMb29id4hJk0LRHcN37SnBh",
+      "section": 51,
+      "title": "M2A 文献轮 L-02｜把「族 + 符号」的计入拿到主张层重数一遍，并取回竞争理论的全文"
     }
   ],
   "counts": {
@@ -148,11 +155,11 @@
     "first_batch_off_pin": 0,
     "first_batch_pages": 12,
     "first_batch_pages_claimed_by_a_section": 1,
-    "governance_pages": 15,
+    "governance_pages": 16,
     "governance_pages_unclaimed": 0,
-    "ledger_pages_with_node": 27,
-    "report_sections_in_population": 20,
-    "sections_claimed": 20,
+    "ledger_pages_with_node": 28,
+    "report_sections_in_population": 21,
+    "sections_claimed": 21,
     "sections_unclaimed": 0
   },
   "dangling_claims": [],
@@ -397,8 +404,8 @@
     },
     {
       "draft": "M2A-治理-套件分数引用对账v1.md",
-      "draft_chars": 2820,
-      "draft_sha256": "4f6edb29eca9f5ea9e5d6fc160bafa8c8b83bd4c0e79cc4ba78fe2b473df4772",
+      "draft_chars": 3069,
+      "draft_sha256": "cd20f6d1f03fcd297bf71ded8a9880f971557ad4e0cd0963918ecddd4bc83ebf",
       "markers": [
         "X-86",
         "X-87",
@@ -416,7 +423,7 @@
       "markers_ok_recorded": true,
       "node_token": "QuO5w9vGFiikp1kSKbgcrh1jnnb",
       "obj_token": "JOWndS5SXouZTexE3SFcXoB1nmf",
-      "read_back_chars_recorded": 4411,
+      "read_back_chars_recorded": 4697,
       "sections": [
         48
       ],
@@ -461,6 +468,28 @@
         50
       ],
       "title": "M2A 治理｜判据数值↔轮次记录对账 v1：散文写下的容差与阈值，第一次能被它所说那一轮的记录推翻"
+    },
+    {
+      "draft": "M2A-文献轮L02-主张层重数与竞争理论全文.md",
+      "draft_chars": 2448,
+      "draft_sha256": "4d2ddc5bc02b48380f52400b22da13c3bbbefa117916da521d1cc3ca4daa9c03",
+      "markers": [
+        "主张层",
+        "rules_disagree_rows",
+        "X-100",
+        "零检验地位",
+        "本页故意不给",
+        "COMPETING_CODED",
+        "X-105"
+      ],
+      "markers_ok_recorded": true,
+      "node_token": "X36OwMb29id4hJk0LRHcN37SnBh",
+      "obj_token": "JjAQdQwxfozesqxdTqQcKlx2nJg",
+      "read_back_chars_recorded": 3233,
+      "sections": [
+        51
+      ],
+      "title": "M2A 文献轮 L-02｜把「族 + 符号」的计入拿到主张层重数一遍，并取回竞争理论的全文"
     }
   ],
   "schema": "m2a.wiki_sync_map.v1",
@@ -576,7 +605,8 @@
       "section": 44,
       "title": "门控分数的三方对账：文档引用 ↔ 仪器实跑 ↔ 静态站点数——两个总数相等不代表同一件事",
       "xids_named": [
-        82
+        82,
+        106
       ]
     },
     {
@@ -640,24 +670,36 @@
         96,
         97
       ]
+    },
+    {
+      "section": 51,
+      "title": "文献轮 L-02：把「族 + 符号」的计入拿到主张层重数一遍，并把竞争理论的全文取回来编码",
+      "xids_named": [
+        100,
+        101,
+        102,
+        103,
+        104,
+        105
+      ]
     }
   ],
   "stale_claims": [],
   "tools": [
     {
-      "bytes": 47866,
+      "bytes": 57265,
       "file": "check_step_draft_numbers.py",
-      "sha256": "4d71f9ff171d1798bd744a1266cc546208f062a8a5901e5823e7419a893c29e1"
+      "sha256": "ed4f58feef1f33a09069545eddd03a763bba70d4d1babd3effa7b2729d8285b4"
     },
     {
-      "bytes": 8448,
+      "bytes": 8755,
       "file": "publish_wiki_steps.py",
-      "sha256": "9bc80b6b54b6d9a32e2ea85881363fbe8512828bfc21ab76a1512846deee929c"
+      "sha256": "9a14cb021caf08f290c4a1a8f4078bb4d08955f4760ee9588db5049e37f63d59"
     },
     {
-      "bytes": 10385,
+      "bytes": 10814,
       "file": "feishu_wiki_nodes.json",
-      "sha256": "30c0405b3a586d931efb3ee23556fbec7fe9ec3752de1bb0b0fcaf9c85abed6c"
+      "sha256": "0182e2cfb16a9b4b10d44a9bad2ddbc7515a9401063acca00f7bbbb15665fa76"
     }
   ],
   "unclaimed_sections": [],

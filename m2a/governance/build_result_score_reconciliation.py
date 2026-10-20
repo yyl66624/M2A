@@ -19,7 +19,7 @@ instrument that does not use check() at all and so counts 0 statically), `claim_
 (the doc quotes a gate that is not this round's), `no_claim`. Anything unregistered fails the build:
 a round silently losing its score line is the same drift X-74 recorded for the label table.
 
-Running the 25 gates takes a few minutes, so the deriver can reuse the scores it already recorded
+Running every gate in the population takes a few minutes, so the deriver can reuse the scores it already recorded
 (`--offline`); the validator re-runs a deterministic sample instead of the whole population.
 """
 from __future__ import annotations
@@ -35,7 +35,8 @@ EXP = M / "experiments"
 FRACTION = re.compile(r"(\d{1,2})\s*/\s*(\d{1,2})")
 GATE_NAME = re.compile(r"`([a-z0-9_]+_gate\.py)`")
 
-DOCS = sorted(EXP.glob("PHASE*_RESULTS.md")) + [M / "literature/ROUND_L01_RESULTS.md"]
+DOCS = sorted(EXP.glob("PHASE*_RESULTS.md")) + [M / "literature/ROUND_L01_RESULTS.md",
+                                                M / "literature/ROUND_L02_RESULTS.md"]
 
 # rounds whose document legitimately states no score for its own instrument (name -> why)
 KNOWN_NO_CLAIM = {}
@@ -51,12 +52,18 @@ KNOWN_STATIC_GAPS = {
                     "文献轮的 `l01_gate.py` 不使用 `check()`——它自带断言并打印 `7/7 checks passed`，"
                     "所以 §42 的静态普查对它记 0。这是「两数不可比」，不是缺失：§42 的 §4 第三条"
                     "已声明本库对不使用 `check()` 的门控**沉默**。"),
+    "l02_gate.py": ("other_harness",
+                    "L-02 的门控与 `l01_gate.py` 同一族：它用自己的 `report()` 记录判定并把条数钉在 "
+                    "`RULES` 常量上，`check()` 站点为 0，静态普查与打印的 `n/n` 不可比。它与打印数的唯一"
+                    "区别是判定条数由登记表决定，而不是由出现过几次 `check()` 决定。"),
 }
 
 
 def expected_gate(doc):
     if doc.name == "ROUND_L01_RESULTS.md":
         return "literature/l01_gate.py"
+    if doc.name == "ROUND_L02_RESULTS.md":
+        return "literature/l02_gate.py"
     ph = doc.name.replace("PHASE", "").replace("_RESULTS.md", "")
     stem = "phase2_gate.py" if ph == "2" else "p%s_gate.py" % ph.lower()
     rel = "literature/" if stem.startswith("l01") else "experiments/"
@@ -187,25 +194,53 @@ def main():
 
 
 def write_md(rows, counts):
+    loop = [r for r in rows if r["verdict"] == "loop_nested"]
+    harness = [r for r in rows if r["verdict"] == "other_harness"]
+    cov = json.loads((M / "governance/gate_coverage_map_v1.json").read_text(encoding="utf-8"))
+    n_cov = cov["counts"]["gates"]
+    pop_names = {pathlib.Path(r["gate"]).name for r in rows}
+    out_rows = [g for g in cov["rows"] if pathlib.Path(g["gate"]).name not in pop_names]
+    outside = len(out_rows)
+    cov_out_sites = sum(len(g["checks"]) for g in out_rows)
+    harness_printed = sum(r["live"][1] for r in harness)
+    loop_extra = sum(r["live"][1] - r["static_sites"] for r in loop)
+    harness_names = "、".join("`%s`" % pathlib.Path(r["gate"]).name for r in harness)
+    out_names = "、".join("`%s`" % pathlib.Path(g["gate"]).name for g in out_rows)
+    loop_names = "、".join("`%s`" % pathlib.Path(r["gate"]).name for r in loop)
+    loop_ex = "、".join("`%s`：%d 站点 / %d 判定"
+                       % (pathlib.Path(r["gate"]).name, r["static_sites"], r["live"][1])
+                       for r in loop)
+    harness_ex = "、".join("`%s`：0 站点 / %d 判定"
+                           % (pathlib.Path(r["gate"]).name, r["live"][1]) for r in harness)
+    assert (counts["static_sites_in_population"] + harness_printed + loop_extra
+            == counts["checks_printed"]), "the printed total is not this identity"
+    assert (counts["static_sites_in_population"] + cov_out_sites
+            == counts["check_sites_static"]), "the §42 site total is not this identity"
+    assert n_cov == len(rows) + outside, "§42 and this population are not one subtraction apart"
+    print("  identity printed", counts["static_sites_in_population"], "+", harness_printed, "+",
+          loop_extra, "=", counts["checks_printed"], "| static",
+          counts["static_sites_in_population"], "+", cov_out_sites, "=",
+          counts["check_sites_static"], "| §42 gates", n_cov, "minus population", len(rows),
+          "=", outside)
     md = ["# 门控分数三方对账 v1（文档引用 ↔ 仪器实跑 ↔ 静态站点数）", "",
           "> 生成物：本文件与 `governance/result_score_reconciliation_v1.json`。"
           "不跑实验、不改任何轮次文档与判定；`live` 这一列就是**跑一次门控**。", "",
           "## 1 三个数不是同一个东西", "",
           "* **claim**：轮次文档开头那一行写的分数（`门控 \`p10_gate.py\` **6/6**`）；",
           "* **live**：这台门控今天被跑到时打印的 `n/N checks passed`；",
-          "* **static**：§42 覆盖表按语法数出的 `check()` **站点数**（全库 169）。",
+          f"* **static**：§42 覆盖表按语法数出的 `check()` **站点数**（全库 {counts['check_sites_static']}）。",
           "",
-          "两个数会分开，本库现有两例（都已登记，见 §3.1）：一条写在 `for` 里的 `check()` 只有一个站点、"
-          "却打印多条判定（`p17_gate.py`：6 站点 / 7 判定）；不使用 `check()` 的自带仪器在静态普查里记 0"
-          "（`l01_gate.py`：0 站点 / 7 判定）。这就是为什么 §42 那句「169 条 `check()`」必须被读作"
-          "**站点数**而不是执行量。", "",
+          f"两个数会分开，本库现有 **{len(loop) + len(harness)}** 例（都已登记，见 §3.1）："
+          "一条写在 `for` 里的 `check()` 只有一个站点、却打印多条判定（" + loop_ex + "）；"
+          "不使用 `check()` 的自带仪器在静态普查里记 0（" + harness_ex + "）。这就是为什么 §42 那句「"
+          f"{counts['check_sites_static']} 条 `check()`」必须被读作**站点数**而不是执行量。", "",
           f"人口：**{counts['docs']} 份轮次文档**；判定：**aligned {counts['aligned']}**、"
           f"已登记的静态口径差 {counts['static_gap_registered']}、坏判定 {counts['bad']}、"
           f"无分数声明 {counts['no_claim']}。"
           f"执行侧共打印 **{counts['checks_printed']}** 条判定，"
-          f"本表人口内 25 台仪器静态共 **{counts['static_sites_in_population']}** 个站点"
-          f"（§42 全库 26 台是 {counts['check_sites_static']} 个——**两个总数相等不代表同一件事**，"
-          "见 §1 末尾的抵消说明）。", "",
+          f"本表人口内 {len(rows)} 台仪器静态共 **{counts['static_sites_in_population']}** 个站点"
+          f"（§42 全库 {n_cov} 台是 {counts['check_sites_static']} 个——**这两个总数是两条不同的"
+          "抵消，不代表同一件事**，见 §1.1）。", "",
           "## 2 逐轮对账", "",
           "| 文档 | 仪器 | 文档引用 | 实跑 | 静态站点 | 判定 |", "| --- | --- | --- | --- | --- | --- |"]
     for r in rows:
@@ -233,12 +268,19 @@ def write_md(rows, counts):
            "python3 governance/build_result_score_reconciliation.py           # 跑到实跑一遍门控",
            "python3 governance/build_result_score_reconciliation.py --offline  # 复用已记录分数",
            "python3 governance/result_score_map_gate.py", "```", ""]
-    md += ["", "### 1.1 两个总数相等，却是两条不同的抵消", "",
-           f"文档人口内 25 台仪器的静态站点数之和是 **{counts['static_sites_in_population']}**；"
-           f"§42 的 26 台（多出 `ao_preflight_gate.py` 的 8 条）是 **{counts['check_sites_static']}**。"
-           f"而执行侧打印总数同样落到 **{counts['checks_printed']}**："
-           f"{counts['static_sites_in_population']} + `l01_gate.py` 的 7（静态记 0）"
-           "+ `p17_gate.py` 多出的 1（循环内站点）= 169。**只比总数会同时抹平这两处口径差**，"
+    md += ["", "### 1.1 两条不同的抵消，各自算出各自的总数", "",
+           f"文档人口内 {len(rows)} 台仪器的静态站点数之和是 **{counts['static_sites_in_population']}**；"
+           "§42 的人口比本表多 " + str(outside) + " 台（" + out_names + "），"
+           "它们没有轮次文档、不参与三方对账；这些台在覆盖表里的站点数逐台相加得 "
+           + str(cov_out_sites) + " 个，所以全库是 **" + str(counts["check_sites_static"])
+           + "** 个——这条等式由构建 assert，不成立则构建失败。",
+           "执行侧打印总数是 **" + str(counts["checks_printed"]) + "** 条 = "
+           + str(counts["static_sites_in_population"]) + " + 自带仪器打印的 "
+           + str(harness_printed) + " 条（" + harness_names + "，静态记 0）+ 循环内多出的 "
+           + str(loop_extra) + " 条（" + loop_names + "），同样由构建 assert。",
+           "在 L-02 之前这两个总数恰好相等：当时自带仪器补的判定条数与循环多出的那条，"
+           "刚好等于 §42 多出那台的站点数。两条不同的抵消对上同一个数是巧合不是关系，"
+           "本轮新增的自带仪器把它分开了。**只比总数会同时抹平两处口径差，抹平之后还看不出来**，"
            "所以本表逐台比对，不对总数。", ""]
     (M / "report/RESULT_SCORE_RECONCILIATION_v1.md").write_text("\n".join(md), encoding="utf-8")
     print("wrote report/RESULT_SCORE_RECONCILIATION_v1.md")

@@ -50,13 +50,13 @@
     "stale_value_in_register": 1,
     "value_of_other_round": 42,
     "value_only_in_transcription": 38,
-    "matches_round_records": 51,
-    "criterion_without_anchor": 727,
+    "matches_round_records": 52,
+    "criterion_without_anchor": 730,
     "hard_findings": 6,
     "rounded_matches": 29,
-    "claim_values": 2029,
-    "claim_documents": 39,
-    "corpus_documents": 48,
+    "claim_values": 2033,
+    "claim_documents": 40,
+    "corpus_documents": 49,
     "round_families": 23
   },
   "round_records": {
@@ -253,7 +253,7 @@
       ],
       "prereg_values": 0,
       "artifact_values": 436,
-      "transcription_values": 50
+      "transcription_values": 73
     }
   },
   "rows": [
@@ -3342,48 +3342,6 @@
           "attested_in": {},
           "registered_by_other_round": [
             "10"
-          ]
-        }
-      ],
-      "verdict": "criterion_without_anchor"
-    },
-    {
-      "document": "M2A_FINAL_REPORT.md",
-      "kind": "append_only",
-      "line": 554,
-      "values": [
-        "0"
-      ],
-      "excerpt": "且最优点落在 `e₁ = 0`（域边界）⇒ 二阶项无益。注册域为 `e₀,e₁ ≥ 0`（P10-A1/A4）；",
-      "anchors": [],
-      "phantom": [],
-      "per_value": [
-        {
-          "value": "0",
-          "attested_in": {},
-          "registered_by_other_round": [
-            "1",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "2",
-            "20",
-            "21",
-            "22",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9"
           ]
         }
       ],
@@ -9096,53 +9054,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1705,
-      "values": [
-        "0"
-      ],
-      "excerpt": "| `rho_smooth`（p10、p13） | never_reached | U11–U12 | c1=0 必须还原 Phase VI 闭式（此处独立手打）；Δ≤0 给 inf |",
-      "anchors": [
-        "6"
-      ],
-      "phantom": [],
-      "per_value": [
-        {
-          "value": "0",
-          "attested_in": {
-            "6": "prereg"
-          },
-          "registered_by_other_round": [
-            "1",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "2",
-            "20",
-            "21",
-            "22",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9"
-          ]
-        }
-      ],
-      "verdict": "matches_round_records"
-    },
-    {
-      "document": "M2A_FINAL_REPORT.md",
-      "kind": "append_only",
-      "line": 1715,
+      "line": 1724,
       "values": [
         "0.2710",
         "0.6570",
@@ -9190,7 +9102,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1716,
+      "line": 1725,
       "values": [
         "0.0084",
         "0.90"
@@ -9226,7 +9138,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1717,
+      "line": 1726,
       "values": [
         "0.0e+00",
         "0.195401",
@@ -9302,7 +9214,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1719,
+      "line": 1728,
       "values": [
         "0.005",
         "0.008",
@@ -9379,7 +9291,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1993,
+      "line": 2023,
       "values": [
         "0.005",
         "0.008"
@@ -9425,7 +9337,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2018,
+      "line": 2048,
       "values": [
         "154.1",
         "5.1e-12"
@@ -9450,7 +9362,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2019,
+      "line": 2049,
       "values": [
         "1.0001"
       ],
@@ -9469,7 +9381,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2020,
+      "line": 2050,
       "values": [
         "170.130"
       ],
@@ -9488,7 +9400,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2021,
+      "line": 2051,
       "values": [
         "0.0084",
         "0.9990",
@@ -9519,7 +9431,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2022,
+      "line": 2052,
       "values": [
         "170.130"
       ],
@@ -9531,6 +9443,90 @@
           "value": "170.130",
           "attested_in": {},
           "registered_by_other_round": []
+        }
+      ],
+      "verdict": "criterion_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2130,
+      "values": [
+        "1.0"
+      ],
+      "excerpt": "- Q3 工件打印：wrote L02_coding.json | exit_q3 COMPETING_CODED (CONTRADICTED) | overlap 1.0 | channel local_cache | chars 71382 | entries 4 | directional v",
+      "anchors": [],
+      "phantom": [],
+      "per_value": [
+        {
+          "value": "1.0",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "1",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "2",
+            "20",
+            "21",
+            "22",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"
+          ]
+        }
+      ],
+      "verdict": "criterion_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2145,
+      "values": [
+        "1.0"
+      ],
+      "excerpt": "3. **竞争理论拿到了全文，并且正面否证锚点自己的那句话**。身份：abs 页题名与登记题名 overlap **1.0**（首作者",
+      "anchors": [],
+      "phantom": [],
+      "per_value": [
+        {
+          "value": "1.0",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "1",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "2",
+            "20",
+            "21",
+            "22",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"
+          ]
         }
       ],
       "verdict": "criterion_without_anchor"
@@ -14667,6 +14663,52 @@
         }
       ],
       "verdict": "criterion_without_anchor"
+    },
+    {
+      "document": "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
+      "kind": "append_only",
+      "line": 224,
+      "values": [
+        "1.0"
+      ],
+      "excerpt": "| X-103 | **出口表可以在每一行都写得像样时仍然不完备：缺的那一格正是本仓库已经付过一次学费的状态** | L-02 §3 Q3 写了三档：全文编码成功 / 身份通过但抽取不足 / 取回失败。「取回成功但取回来的不是登记的那一篇」不属于任何一档。而 L-01 的 `L01-A3` 恰好真踩",
+      "anchors": [
+        "L01"
+      ],
+      "phantom": [],
+      "per_value": [
+        {
+          "value": "1.0",
+          "attested_in": {
+            "L01": "artifact"
+          },
+          "registered_by_other_round": [
+            "1",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "2",
+            "20",
+            "21",
+            "22",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"
+          ]
+        }
+      ],
+      "verdict": "matches_round_records"
     },
     {
       "document": "governance/OBLIGATION_REGISTRY.md",
@@ -38641,6 +38683,136 @@
         }
       ],
       "verdict": "matches_round_records"
+    },
+    {
+      "document": "literature/ROUND_L02_RESULTS.md",
+      "kind": "run_record",
+      "line": 22,
+      "values": [
+        "1.0"
+      ],
+      "excerpt": "| `L02-A10` | §3 Q3 的出口表写了三档：编码成功 / 身份通过但抽取不足 / 取回失败 | 表**不完备**：「取回成功但题名与登记的不是同一篇」没有归属。L-01 的 `L01-A3` 恰好真踩过这个状态（选择器先挑中了 Rocchi 那篇同名不同文的论文）；把它折叠进「取回失败",
+      "anchors": [
+        "L01"
+      ],
+      "phantom": [],
+      "per_value": [
+        {
+          "value": "1.0",
+          "attested_in": {
+            "L01": "artifact"
+          },
+          "registered_by_other_round": [
+            "1",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "2",
+            "20",
+            "21",
+            "22",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"
+          ]
+        }
+      ],
+      "verdict": "matches_round_records"
+    },
+    {
+      "document": "literature/ROUND_L02_RESULTS.md",
+      "kind": "run_record",
+      "line": 71,
+      "values": [
+        "1.0"
+      ],
+      "excerpt": "身份：abs 页题名与 `L01_channels.json` 登记的 C-04 题名 token overlap = `1.0`（首作者 Tom Wollschläger，arXiv 2502.17420v2）。",
+      "anchors": [],
+      "phantom": [],
+      "per_value": [
+        {
+          "value": "1.0",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "1",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "2",
+            "20",
+            "21",
+            "22",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"
+          ]
+        }
+      ],
+      "verdict": "criterion_without_anchor"
+    },
+    {
+      "document": "literature/ROUND_L02_RESULTS.md",
+      "kind": "run_record",
+      "line": 95,
+      "values": [
+        "1.0"
+      ],
+      "excerpt": "wrote L02_coding.json | exit_q3 COMPETING_CODED (CONTRADICTED) | overlap 1.0 | channel local_cache | chars 71382 | entries 4 | directional votes REFUT",
+      "anchors": [],
+      "phantom": [],
+      "per_value": [
+        {
+          "value": "1.0",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "1",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "2",
+            "20",
+            "21",
+            "22",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"
+          ]
+        }
+      ],
+      "verdict": "criterion_without_anchor"
     },
     {
       "document": "literature/bibliography_registry.md",

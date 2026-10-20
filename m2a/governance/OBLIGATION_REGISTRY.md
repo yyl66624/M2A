@@ -46,10 +46,10 @@
 | P21-O1 | **CLOSED** | 13 | `experiments/PHASE22_RESULTS.md:64` | 关闭类措辞 | — |
 | P22-O1 | **CLOSED** | 10 | `M2A_FINAL_REPORT.md:945` | 关闭类措辞 | — |
 | L01-O1 | **OPEN** | 6 | `literature/ROUND_L01_RESULTS.md:68` | 开放类措辞 | — |
-| L01-O2 | **OPEN** | 8 | `literature/ROUND_L01_RESULTS.md:103` | 开放类措辞 | — |
-| L01-O3 | **OPEN** | 1 | `literature/ROUND_L01_RESULTS.md:105` | 开放类措辞 | — |
-| L01-O4 | **OPEN** | 2 | `literature/ROUND_L01_RESULTS.md:88` | 开放类措辞 | — |
-| L01-O5 | **OPEN** | 5 | `literature/ROUND_L01_RESULTS.md:107` | 开放类措辞 | — |
+| L01-O2 | **OPEN** | 12 | `literature/ROUND_L01_RESULTS.md:103` | 开放类措辞 | — |
+| L01-O3 | **OPEN** | 2 | `literature/ROUND_L01_RESULTS.md:105` | 开放类措辞 | — |
+| L01-O4 | **OPEN** | 5 | `literature/ROUND_L01_RESULTS.md:88` | 开放类措辞 | — |
+| L01-O5 | **OPEN** | 6 | `literature/ROUND_L01_RESULTS.md:107` | 开放类措辞 | — |
 | O-01 | **OPEN** | 7 | `08_OPEN_QUESTIONS.md:7` | 开放类措辞 | — |
 | O-02 | **OPEN** | 1 | `08_OPEN_QUESTIONS.md:9` | 开放类措辞 | — |
 | O-03 | **OPEN** | 20 | `08_OPEN_QUESTIONS.md:11` | 开放类措辞 | — |

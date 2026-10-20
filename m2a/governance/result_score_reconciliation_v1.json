@@ -1,12 +1,12 @@
 {
  "schema": "m2a.result-score-reconciliation.v1",
  "counts": {
-  "docs": 25,
+  "docs": 26,
   "aligned": 23,
-  "static_gap_registered": 2,
+  "static_gap_registered": 3,
   "bad": 0,
   "no_claim": 0,
-  "checks_printed": 169,
+  "checks_printed": 185,
   "check_sites_static": 169,
   "static_sites_in_population": 161
  },
@@ -435,6 +435,23 @@
    "static_sites": 0,
    "gate_sha256": "4fcbc82ef9a2c0f37e575292cc40b363ecb77b4286dfe32b2a6e56a171218e23",
    "verdict": "other_harness"
+  },
+  {
+   "doc": "literature/ROUND_L02_RESULTS.md",
+   "gate": "literature/l02_gate.py",
+   "named_gate": null,
+   "claim_line": 4,
+   "claim": [
+    16,
+    16
+   ],
+   "live": [
+    16,
+    16
+   ],
+   "static_sites": 0,
+   "gate_sha256": "1c934589a687ef77d4a1e52185486519f5db25ee06eb1e46cf026fed870707a7",
+   "verdict": "other_harness"
   }
  ],
  "known_no_claim": {},
@@ -446,6 +463,10 @@
   "l01_gate.py": {
    "kind": "other_harness",
    "why": "文献轮的 `l01_gate.py` 不使用 `check()`——它自带断言并打印 `7/7 checks passed`，所以 §42 的静态普查对它记 0。这是「两数不可比」，不是缺失：§42 的 §4 第三条已声明本库对不使用 `check()` 的门控**沉默**。"
+  },
+  "l02_gate.py": {
+   "kind": "other_harness",
+   "why": "L-02 的门控与 `l01_gate.py` 同一族：它用自己的 `report()` 记录判定并把条数钉在 `RULES` 常量上，`check()` 站点为 0，静态普查与打印的 `n/n` 不可比。它与打印数的唯一区别是判定条数由登记表决定，而不是由出现过几次 `check()` 决定。"
   }
  },
  "quantities": {

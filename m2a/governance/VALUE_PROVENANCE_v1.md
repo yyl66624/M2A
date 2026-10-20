@@ -2,7 +2,7 @@
 
 问题：散文归给某一轮的判据数值（容差、阈值、指数、步长、种子数），在那一轮自己的记录里存在吗？（GOVERNANCE_ARTIFACT，不跑实验、不改任何注册判据）
 
-生成本表的推导器源码 SHA-256：`c5b27fca19fd3687`；轮次家族 23 个，语料文档 48 份，主张行 864 行 / 数值 2029 个 / 承载文档 39 份。
+生成本表的推导器源码 SHA-256：`c5b27fca19fd3687`；轮次家族 23 个，语料文档 49 份，主张行 868 行 / 数值 2033 个 / 承载文档 40 份。
 
 | 判定 | 条数 |
 |---|---|
@@ -11,15 +11,15 @@
 | `stale_value_in_register` | 1 |
 | `value_of_other_round` | 42 |
 | `value_only_in_transcription` | 38 |
-| `matches_round_records` | 51 |
-| `criterion_without_anchor` | 727 |
+| `matches_round_records` | 52 |
+| `criterion_without_anchor` | 730 |
 | **硬伤合计** | **6** |
 
 主张口径（写死）：带小数点或指数的数，或距判据标记（≤ ≥ ± δ 容差 阈值 门槛 精度 步长 网格 种子）三个字符以内的数；日期与「243 格」这类裸整数不算主张，否则本层判的就是自己的解析而不是仓库。
 
 硬伤逐条：
 
-- `M2A_FINAL_REPORT.md:1717` value_unattested_in_repo → ["0.49", "5.1e-12"] ｜ 摘录：* **一条蒙特卡洛读数可以被逐比特复现**：把 Phase V-d 注册种子池（100–109）的均值重算一遍是 **0.195401**，与 `phase5d_results.
+- `M2A_FINAL_REPORT.md:1726` value_unattested_in_repo → ["0.49", "5.1e-12"] ｜ 摘录：* **一条蒙特卡洛读数可以被逐比特复现**：把 Phase V-d 注册种子池（100–109）的均值重算一遍是 **0.195401**，与 `phase5d_results.
 - `governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md:180` value_unattested_in_repo → ["154.1"] ｜ 摘录：| X-62 | **B-07 承诺的检验已交付，但按文献两句直译出的必要条件在合成机制空间里交集为空** | Phase XIX 出口 **E3 TEST-UNSATISFIAB
 - `governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md:199` value_unattested_in_repo → ["1.0001"] ｜ 摘录：| X-78 | **判别力审计装置自身在一轮里被抓出三处缺陷，其中一处会生产假结论：变异包装器只偏移标量通路，数组通路整条被吞** | 把 §40 的检验推广到 Phase II
 - `governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md:200` value_unattested_in_repo → ["170.130", "1e-4"] ｜ 摘录：| X-79 | **已提交门控里存在「原理上不可能失败」的第二种检查：把确定性自检当作仪器（Phase VIII 的 J5 从未拒绝任何机制错误）** | 判别力推广（§41）给

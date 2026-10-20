@@ -65,14 +65,14 @@
     "anchor_without_recorded_label": 8,
     "label_mention_without_predication": 106,
     "cross_round_refutation": 0,
-    "label_without_anchor": 390,
+    "label_without_anchor": 409,
     "matches_artifact": 83,
     "hard_findings": 0,
     "paired_corrections": 2,
-    "claim_documents": 45,
-    "corpus_documents": 50,
-    "artifact_files": 44,
-    "vocabulary_tokens": 36,
+    "claim_documents": 46,
+    "corpus_documents": 51,
+    "artifact_files": 46,
+    "vocabulary_tokens": 39,
     "registered_phases": 22
   },
   "artifact_labels": {
@@ -356,6 +356,27 @@
         "SECOND_CHANNEL_ERROR",
         "SECOND_CHANNEL_MISMATCH",
         "VERIFIED_TWO_CHANNEL"
+      ]
+    },
+    "literature/L02_coding.json": {
+      "five": [
+        "CONTRADICTED"
+      ],
+      "raw": [
+        "COMPETING_CODED",
+        "CONTRADICTED",
+        "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED"
+      ]
+    },
+    "literature/L02_reanalysis.json": {
+      "five": [
+        "CONTRADICTED"
+      ],
+      "raw": [
+        "CLAIM_LAYER_INFLATION",
+        "CONTRADICTED",
+        "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+        "ZERO_TEST_REANALYSIS"
       ]
     },
     "literature/expansion_candidates.json": {
@@ -2498,7 +2519,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1926,
+      "line": 1948,
       "labels": [
         "CONTRADICTED",
         "INDETERMINATE",
@@ -2515,7 +2536,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1927,
+      "line": 1949,
       "labels": [
         "SUPPORTED"
       ],
@@ -2546,7 +2567,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1950,
+      "line": 1972,
       "labels": [
         "SUPPORTED"
       ],
@@ -2559,7 +2580,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1956,
+      "line": 1978,
       "labels": [
         "IDENTITY_VERIFIED",
         "PASS"
@@ -2591,13 +2612,120 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1957,
+      "line": 1979,
       "labels": [
         "COUNT_NOT_STATUS",
         "MANUAL_REVIEW"
       ],
       "excerpt": "判定（造出 16 条假硬伤）；把 §37 自己的处置词（`MANUAL_REVIEW`/`COUNT_NOT_STATUS`）当轮次判定；",
       "line_len": 72,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2120,
+      "labels": [
+        "CONTRADICTED"
+      ],
+      "excerpt": "状态标签：**Q1 `CONTRADICTED` / Q2 `CONTRADICTED` / Q3 `CONTRADICTED`**（逐问给出，R17 五值；本轮不产生实验、",
+      "line_len": 87,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2129,
+      "labels": [
+        "CLAIM_LAYER_INFLATION",
+        "CONTRADICTED",
+        "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY"
+      ],
+      "excerpt": "- Q1/Q2 工件打印：wrote L02_reanalysis.json | exit_q1 CLAIM_LAYER_INFLATION (CONTRADICTED) | exit_q2 NEUTRAL_ZERO_IS_NOT_A_BOUNDARY (CONTRADICTED) | totals {\"C_surfa",
+      "line_len": 283,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2130,
+      "labels": [
+        "COMPETING_CODED",
+        "CONTRADICTED"
+      ],
+      "excerpt": "- Q3 工件打印：wrote L02_coding.json | exit_q3 COMPETING_CODED (CONTRADICTED) | overlap 1.0 | channel local_cache | chars 71382 | entries 4 | directional votes REFUT",
+      "line_len": 261,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2131,
+      "labels": [
+        "PASS"
+      ],
+      "excerpt": "- 治理层重导后的打印行：义务台账「derive == pin for all 56 labels」；三方对账「PASS  R11 today the three columns agree everywhere except the two registered differences  {\"docs\": 26, \"",
+      "line_len": 441,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2139,
+      "labels": [
+        "INDETERMINATE"
+      ],
+      "excerpt": "这否证的是**计入规则**（「同族同号即支持」），不是任何一轮的判定——L-01 三簇各自的 `INDETERMINATE` 一字未动。",
+      "line_len": 71,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2148,
+      "labels": [
+        "CONTRADICTED"
+      ],
+      "excerpt": "标签 `CONTRADICTED`。锚点侧被否证的是 G5-03 自己记录的「this single direction is both necessary and",
+      "line_len": 85,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2167,
+      "labels": [
+        "CONTRADICTED"
+      ],
+      "excerpt": "本轮的锚点叫 `L02`，不在它的人群里，所以「L-02 判为 CONTRADICTED」这类句子目前**没有**任何仪器能把它对回",
+      "line_len": 66,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2188,
+      "labels": [
+        "PASS"
+      ],
+      "excerpt": "PASS  R11 today the three columns agree everywhere except the two registered differences  {\"docs\": 26, \"aligned\": 23, \"static_gap_registered\": 3, \"bad\": 0, \"no_",
+      "line_len": 255,
       "anchors": [],
       "phantom": [],
       "verdict": "label_without_anchor"
@@ -10888,6 +11016,159 @@
       ],
       "excerpt": "**已提交的 `INDETERMINATE` 可能偏宽**。本轮不据此改判（R6），只把方向登记在此。",
       "line_len": 51,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/ROUND_L02_RESULTS.md",
+      "kind": "run_record",
+      "line": 20,
+      "labels": [
+        "COMPETING_CODED",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "NOT_IDENTIFIED",
+        "SUPPORTED"
+      ],
+      "excerpt": "| `L02-A8` | §3 Q3 第 1 档的标签格写的是「按 ρ 实际读数的方向给 `SUPPORTS` / `REFUTES` / `MIXED`」 | 那一格用了 ρ 的词表，而 R17 要求标签取五值；照字面实现会产出一个五值之外的标签，`MIXED` 也没有定义「几条反证加几条不可判」算不算混合 | 映射",
+      "line_len": 484,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/ROUND_L02_RESULTS.md",
+      "kind": "run_record",
+      "line": 30,
+      "labels": [
+        "COMPETING_CODED"
+      ],
+      "excerpt": "⇒ Q1 走第 1 档；`Z` = 2 ⇒ Q2 走 `Z ≥ 1` 一侧；Q3 读数 `COMPETING_CODED` 第 1 档。",
+      "line_len": 68,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/ROUND_L02_RESULTS.md",
+      "kind": "run_record",
+      "line": 36,
+      "labels": [
+        "CLAIM_LAYER_INFLATION",
+        "CONTRADICTED"
+      ],
+      "excerpt": "| Q1 主张层一致性 | `CLAIM_LAYER_INFLATION` | **CONTRADICTED** | `l02_reanalysis.py` 打印行 `exit_q1` |",
+      "line_len": 94,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/ROUND_L02_RESULTS.md",
+      "kind": "run_record",
+      "line": 37,
+      "labels": [
+        "CONTRADICTED",
+        "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY"
+      ],
+      "excerpt": "| Q2 `neutral` 零值口径 | `NEUTRAL_ZERO_IS_NOT_A_BOUNDARY` | **CONTRADICTED** | 打印行 `exit_q2` |",
+      "line_len": 91,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/ROUND_L02_RESULTS.md",
+      "kind": "run_record",
+      "line": 38,
+      "labels": [
+        "COMPETING_CODED",
+        "CONTRADICTED"
+      ],
+      "excerpt": "| Q3 竞争理论 | `COMPETING_CODED` | **CONTRADICTED** | `l02_coding.py` 打印行（见 §5） |",
+      "line_len": 78,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/ROUND_L02_RESULTS.md",
+      "kind": "run_record",
+      "line": 51,
+      "labels": [
+        "CLAIM_LAYER_INFLATION",
+        "CONTRADICTED",
+        "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY"
+      ],
+      "excerpt": "wrote L02_reanalysis.json | exit_q1 CLAIM_LAYER_INFLATION (CONTRADICTED) | exit_q2 NEUTRAL_ZERO_IS_NOT_A_BOUNDARY (CONTRADICTED) | totals {\"C_surface\": 5, \"S_ro",
+      "line_len": 269,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/ROUND_L02_RESULTS.md",
+      "kind": "run_record",
+      "line": 65,
+      "labels": [
+        "INDETERMINATE"
+      ],
+      "excerpt": "因此 L-01 的 `C_signed` 作为**支持计数**被否证过一次；这不改动 L-01 任何一簇的 `INDETERMINATE`（R6）。",
+      "line_len": 76,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/ROUND_L02_RESULTS.md",
+      "kind": "run_record",
+      "line": 86,
+      "labels": [
+        "CONTRADICTED"
+      ],
+      "excerpt": "读法：取向的 3 行全为 `REFUTES`（`directional_votes` = REFUTES,REFUTES,REFUTES），`UNDECIDABLE` 一行不参与投票——它攻击的是「由正交推独立」这一步推理，本身不断言拒绝方向的数量。按 `L02-A8` 的映射 ⇒ 本轮 Q3 标签 `CONTRADI",
+      "line_len": 166,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/ROUND_L02_RESULTS.md",
+      "kind": "run_record",
+      "line": 95,
+      "labels": [
+        "COMPETING_CODED",
+        "CONTRADICTED"
+      ],
+      "excerpt": "wrote L02_coding.json | exit_q3 COMPETING_CODED (CONTRADICTED) | overlap 1.0 | channel local_cache | chars 71382 | entries 4 | directional votes REFUTES,REFUTES",
+      "line_len": 250,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/ROUND_L02_RESULTS.md",
+      "kind": "run_record",
+      "line": 102,
+      "labels": [
+        "CLAIM_LAYER_INFLATION"
+      ],
+      "excerpt": "- `Δ` 只能把行从「计入」移到「不计入」，因此它**能**制造 `CLAIM_LAYER_INFLATION`，也能因 `U > 0` 自我否决；",
+      "line_len": 75,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/ROUND_L02_RESULTS.md",
+      "kind": "run_record",
+      "line": 103,
+      "labels": [
+        "NOT_IDENTIFIED"
+      ],
+      "excerpt": "不存在「放宽到全绿」的通道，第 4 档 `NOT_IDENTIFIED` 就是出口。",
+      "line_len": 44,
       "anchors": [],
       "phantom": [],
       "verdict": "label_without_anchor"

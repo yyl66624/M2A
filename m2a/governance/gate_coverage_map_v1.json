@@ -2,7 +2,7 @@
  "schema": "m2a.gate-coverage-map.v1",
  "derived_from": "AST of every experiments/*_gate.py and literature/*_gate.py",
  "counts": {
-  "gates": 26,
+  "gates": 27,
   "checks": 169,
   "imported_instruments": 81,
   "never_reached": 7,
@@ -875,6 +875,24 @@
    "only_self_comparison": [],
    "only_self_comparison_pairs": [],
    "detail_only": []
+  },
+  {
+   "gate": "literature/l02_gate.py",
+   "file": "l02_gate.py",
+   "imported_instruments": [],
+   "alias_modules": [
+    "C",
+    "R"
+   ],
+   "imported_data": [],
+   "imported_data_never_read": [],
+   "checks": [],
+   "self_comparison_checks": [],
+   "never_reached": [],
+   "never_reached_pairs": [],
+   "only_self_comparison": [],
+   "only_self_comparison_pairs": [],
+   "detail_only": []
   }
  ],
  "gaps": {
@@ -953,7 +971,8 @@
   }
  ],
  "gates_with_no_check_sites": [
-  "literature/l01_gate.py"
+  "literature/l01_gate.py",
+  "literature/l02_gate.py"
  ],
  "injection_blindnesses": {
   "p5b_gate.py::gap_for": "predicted - imported and never reached",

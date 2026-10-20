@@ -1690,6 +1690,15 @@ python3 experiments/audit_bindings.py
 
 本节不改动任何判定、不跑实验；`0x` 冻结文件、`registry.json`、412 行账本与预注册哈希一字未动（R6、owner 2026-10-18 第 8 条）。
 
+
+**§44 修入（2026-10-20，Round L-02 之后，只追加不回写）**。这台推导器把人口大小写死在正文里（「人口内 25 台」
+「§42 全库 26 台」「两个总数同样落到 169」），而 L-02 的门控一进入人口，这些句子就与它**同一次构建**打印的头条
+`docs 26 | aligned 23 | static gaps 3 | bad 0 | no_claim 0 | printed 185 | static sites 169` 互相矛盾。§44 的校验器当时全绿，因为它没有一条规则把自己的正文与工件对照——这是本层的一个真实缺口，
+登记为 X-106。现在每个数字都由行计算，两条抵消各写成等式并由构建 assert：
+`identity printed 161 + 23 + 1 = 185 | static 161 + 8 = 169 | §42 gates 27 minus population 26 = 1`，即打印侧 161 + 23 + 1 = 185、站点侧 161 + 8 = 169，§42 比本表人口多 1 台。
+上一版这两个总数恰好相等，那是两条不同的抵消对上了同一个数；新增的自带仪器把它们分开了。
+已登记的口径差现在是三例：p17_gate.py（6 站点 / 7 判定）、l01_gate.py（0 站点 / 7 判定）、l02_gate.py（0 站点 / 16 判定）。本节不引用这台校验器的分数。
+
 ### 45 给 §42 判为未测量的 10 台仪器各配一条可推翻的检查：在治理层测量，任何轮次判定一字不改
 
 **缘起**。§42 的静态覆盖表从语法侧数出 **10 台「被门控 import、但没有一条判定真正量它」的仪器**（7 条 `never_reached` + 3 条 `only_self_comparison`）。它们的处置属于后续轮次，而旧门控不回写（R6）。但"此后某轮再去量"不是今天唯一可做的事：可以在**治理层**给每台配一条输入可推翻、且期望值**不由该仪器自己产出**的检查——期望值来自手打闭式、字面向量、退化极限，或已提交工件里的字段。改变的是"是否存在一台仪器"，不是任何一轮的判定。
@@ -1918,6 +1927,19 @@ X-83 已披露：两处一起陈旧时它无声），§44 只对 25 台**轮次*
 **76** 行，其中 `matches_live` **64**、`paired_correction` **4**、`possible_history` **7**、`self_reference` **1**。承载文件 **19** 份，其中语料覆盖 **15** 份，其余是登记在案的自身输出与别层转写表。这与 §50 一节末尾登记的
 「跨层陈年读数」是同一次移动，两处都只登记不覆写：本层判据没变，语料没加宽，变的只是被扫描文档里多出来的行。
 
+**§48 修入三（2026-10-20，Round L-02 之后，只追加不回写）**。本节的人群是按文件名模式发现仪器的，所以 L-02 把它的门控命名为 `l02_gate.py` 的那一刻，本节量到的套件就多了一台。当日打印行的头条：`suites 37 green 37 quotes 91 rows 78 hard 0`。上面写下的数按 R6 **不回写**（写下时它是真的），当前值一律以 `suite_score_registry_v1.json` 头条的当日打印行为准；本段就是这条移动的登记通道。
+
+
+**§48 修入四（2026-10-20，Round L-02 收尾之后，只追加不回写；本段每个数字取自当日打印行与本层工件）**。
+L-02 的门控与轮次记录进入本层语料，引用与判定随语料一起移动。当日打印行
+`suites 37 green 37 quotes 91 rows 78 hard 0`：实跑 **37** 台全绿，引用 **91** 条 / 判定 **78** 行，
+硬伤 **0**；分布 `matches_live` **66**、`paired_correction` **4**、`possible_history` **7**、
+`self_reference` **1**。承载文件 **20** 份，其中语料覆盖 **16** 份，其余 **4** 份是本步自己的输出与
+已声明转写件（SUITE_SCORE_REGISTRY_v1.md、label_provenance_v1.json、suite_score_registry_v1.json、value_provenance_v1.json）；语料文档 **75** 份、产出主张的文档 **16** 份。轮次记录命名空间 **60** 份文档
+（其中真的带分数的是 **12** 对，成为 **11** 行主张）；派生摘要与再生表 **18** 对 / **41** 行。
+`possible_history` **7** 行最大相差 **54** 条规则。上面各段写下的数按 R6 不回写（写下时它们是真的），
+当前值以本层工件头条与本段为准。本节仍刻意不把本层校验器的分数抄成引用。
+
 ### 49 散文判定的标签能不能被那一轮的工件推翻：判定标签↔工件对账 v1（GOVERNANCE_ARTIFACT，不产生科学判定）
 
 状态标签：**GOVERNANCE_ARTIFACT**（无实验、无轮次判定、不改写任何既有工件与预注册；R6 全部保持）。
@@ -1983,6 +2005,14 @@ python3 experiments/audit_bindings.py
 
 **跨层的陈年读数（本节顺带登记，X-93）**。§48 的 amendment A3 把语料加宽之后，本层重扫时发现 §48 那一节的头条已经落后于它自己的工件：实跑台数、引用条数、判定行数、承载份数、语料覆盖份数与派生表贡献行数都移动了。§48 一节按 R6 **不回写**（写下时它是真的），当前值一律以 `suite_score_registry_v1.json` 头条的当日打印行为准，本段就是唯一的登记通道。这条记录同时说明一个仍然存在的看不见之处：本层与 §48 都只对 `n/n` 这一种形状发判据，**非分数的计数**在报告里变陈旧不会有任何仪器报警——除了一次跨层重扫顺带看见它。
 
+
+
+**§49 修入二（2026-10-20，Round L-02 收尾之后，只追加不回写）**。本层的人口是「轮次工件 + 语料文档」，
+L-02 的两份工件与一份轮次记录各进来一条，当日打印行 `rows 637 hard 0`。当前工件 46 份 JSON、
+语料文档 51 份、标签词表 39 个、注册轮次 22 个；主张 637 行 / 承载文档 46 份，其中与工件对上
+**83** 行、五值标签只在翻译层出现 **31** 行、锚点无记录标签 **8** 行、提到标签但该行未下判定 **106** 行、
+无锚点 **409** 行；硬伤 0。生效订正 2 条，仍在被钉住的文档里逐字可见。上面正文写下的数按 R6 不回写；
+当前值以本层工件头条与本段为准。本节不抄本层校验器的分数。
 
 ### 50 散文写下的判据数值能不能被那一轮的记录推翻：判据数值↔轮次记录对账 v1（GOVERNANCE_ARTIFACT，不产生科学判定）
 
@@ -2074,3 +2104,91 @@ X-95 与 X-96 追加进负面日志之后，上一层那张表的当日打印行
 被实现成「从文档中第一次出现该标记处截断」，把终报从 §49 的中段截掉、连带 §50 整节一起消失；是 `git diff --stat`
 只显示删除、且 §50 不在文件里才暴露的。恢复走 HEAD 还原 + 重跑确定性的 append/fill，一字未凭记忆重打。教训写在这里
 而不是只改代码：幂等守卫必须锚在**本节之内**，并用「本节之前的字节一字未动」来断言。
+
+
+**§50 修入二（2026-10-20，Round L-02 收尾之后，只追加不回写）**。本层扫散文里的判据数值，L-02 把预注册的
+容差与全文下限写进轮次记录、又把终报新的一节追加进语料，两边同时加行。当日打印行
+`rows 868 values 2033 hard 6`。当前主张 868 行、数值 2033 个、语料文档 49 份、轮次家族 23 个、承载文档 40 份；
+与那轮记录对上 **52** 行、舍入后对上 **29** 行、同族其他轮 **42** 行、仅出现在转写里 **38** 行、
+仓库内查无记录 **5** 行、登记表里的陈旧值 **1** 行、无锚点判据句 **730** 行。硬伤 6 条 =
+查无记录 5 + 陈旧值 1，两者都是本步之前已登记在册的旧账，本轮未新增也未减少。上面正文写下的数按 R6
+不回写；当前值以本层工件头条与本段为准。本节不抄本层校验器的分数。
+补（同一轮，只追加）：本节上面把六条硬伤逐条点名为「`文档`:行号 的 `数值`」。那个行号是**这一次推导的快照**，不是那条行的身份：本轮向终报追加了四段之后，`M2A_FINAL_REPORT.md` 里那条蒙特卡洛读数在工件里报出的行号已从写下时的 1717 变为 1726，而**没有任何一条判定移动**。身份是（文档, 数值）这一对——本节据此复核，行号只用来找。
+
+### 51 文献轮 L-02：把「族 + 符号」的计入拿到主张层重数一遍，并把竞争理论的全文取回来编码
+
+状态标签：**Q1 `CONTRADICTED` / Q2 `CONTRADICTED` / Q3 `CONTRADICTED`**（逐问给出，R17 五值；本轮不产生实验、
+不改写任何既有轮次的判定，R6 全部保持）。产物：`literature/L02_reanalysis.json`（Q1/Q2，零检验地位的重判读）与
+`literature/L02_coding.json`（Q3，竞争理论 C-04 的全文编码）；仪器：`literature/l02_gate.py`（只验仪器）、
+`literature/l02_reanalysis.py`、`literature/l02_coding.py`；预注册 `literature/L02_PREREGISTRATION.md`
+（SHA-256 `c143a08b5740…`，先于任何读数提交）。
+
+三个问题各自按注册的出口表顺序取，读数只取打印行：
+
+- 本轮门控 `l02_gate.py` 打印：16/16 checks passed（只验仪器，条数钉在 `RULES` 上）；
+- Q1/Q2 工件打印：wrote L02_reanalysis.json | exit_q1 CLAIM_LAYER_INFLATION (CONTRADICTED) | exit_q2 NEUTRAL_ZERO_IS_NOT_A_BOUNDARY (CONTRADICTED) | totals {"C_surface": 5, "S_rows": 6, "delta": 3, "C_claim": 7, "X": 1, "U": 0, "Z": 2} | per-anchor delta {"G5-03": 2, "R13": 0, "R14": 1}；
+- Q3 工件打印：wrote L02_coding.json | exit_q3 COMPETING_CODED (CONTRADICTED) | overlap 1.0 | channel local_cache | chars 71382 | entries 4 | directional votes REFUTES,REFUTES,REFUTES | unlocatable none | target quote occurrences 1 | acquisition RESTORED_BY_REFETCH；
+- 治理层重导后的打印行：义务台账「derive == pin for all 56 labels」；三方对账「PASS  R11 today the three columns agree everywhere except the two registered differences  {"docs": 26, "aligned": 23, "static_gap_registered": 3, "bad": 0, "no_claim": 0, "checks_printed": 185, "check_sites_static": 169, "static_sites_in_population": 161}」；套件分数表「wrote suite_score_registry_v1.json | suites 37 green 37 quotes 91 rows 78 hard 0 dist {"matches_live": 66, "paired_corre」；
+  标签层「wrote label_provenance_v1.json | rows 633 hard 0 dist {"anchor_phantom": 0, "label_unregistered": 0, "label_wrong_for_an」；数值层「wrote value_provenance_v1.json | rows 867 values 2032 hard 6 dist {"anchor_without_records": 0, "value_unattested_in_rep」；
+  节页层「wrote section_page_reconciliation_v1.json | pages 17 sections 21 unattested 0 loose 0 errata 1/1 superseded 1 compressed」；同步表「wrote wiki_sync_map_v1.json | sections 21 claimed 21 unclaimed 0 | governance pages 16 | first_batch 12 (pin 12)」。
+
+实质发现（三条都是这一轮真正学到的东西，不是仪器订正的重复）：
+
+1. **L-01 的「族 + 符号」计入里确实有主张层不支持的行**。`Δ` 合计 **3**（逐锚点 G5-03 **2**、R13 **0**、R14 **1**）：
+   G5-03 的两行被 L-01 计入 `same-family-same-axis`，但主张层读作 UNRELATED / REFUTES；R14 的一行同理。
+   这否证的是**计入规则**（「同族同号即支持」），不是任何一轮的判定——L-01 三簇各自的 `INDETERMINATE` 一字未动。
+   口径同构声明照 §2.2 写死：`Δ` 定义在 L-01 自己的 `S` 行集上，**不得**用 `C_surface − C_claim` 相减得到，
+   因为那两个量在 R14 上根本不是同一个估计量（`C_signed = 1` 而 `|S| = 2`）。
+2. **「零值不能当判别界」这条注册口径接进实现之后，确实改了一个数**：`C_claim` 从 8 到 7。被排除的 `R14-N8`
+   同时是 L-01 计入 `S` 的行、且 ρ 读作 SUPPORTS——两条口径对它方向相反。本轮的处理不是选一个数，而是把这一行
+   按**行名**记进工件（`rules_disagree_rows`）：`Δ` 只看 ρ，`C_claim` 看主张资格，谁也不覆盖谁。
+3. **竞争理论拿到了全文，并且正面否证锚点自己的那句话**。身份：abs 页题名与登记题名 overlap **1.0**（首作者
+   Wollschläger，arXiv 2502.17420v2）；正文 71 382 字符，高于本轮由 L-01 已编码集合推导的地板 21 224；编码 4 条
+   机制条目，逐条引文在抽取正文中出现且仅出现一次、下标与 `quote_sha16` 可复核。取向的 3 行全为 REFUTES ⇒ Q3
+   标签 `CONTRADICTED`。锚点侧被否证的是 G5-03 自己记录的「this single direction is both necessary and
+   sufficient」；C-04 的处置只以**追加**限定出现（`ROUND_L02_RESULTS.md` §5），`07` 各条裁定一字未动。
+   该读数不足以最终裁定哪一侧正确：它是主张层关系，不是实验复验。
+
+订正登记：`L02-A1`…`L02-A11` 十一条全部写在 `ROUND_L02_RESULTS.md` §0，每条第四列明写「这条能不能改变读数」；
+其中 A6/A7 是同一类缺陷的两面——产物声称过一次它体内没有的绑定、注册口径被实现成一个只数不改的计数器，
+发现方式都是**把写出去的东西读回来**（X-100、X-101）。A9 把「缓存命中」补成可核对的来源（X-102）：侧车落仓库外，
+缓存命中必须从侧车读出取得记录，侧车缺失时重取并只接受哈希相同的结果。A10 登记了 Q3 出口表缺的那一档
+（取回成功但身份不符），其反例就在本仓库的历史里——L-01 的选择器选错过一篇同名字样的论文（X-103）。
+A11 是读数之后加的检查（`G13`/`G14`、`G8` 的人群加宽），按 §45 的论证只能多找问题。另有一条跨层事实顺带登记：
+收尾审计用文件名模式发现套件，所以「把一台新仪器命名为 `*gate*.py`」这件事本身会同时加宽审计与所有内部重跑审计
+的校验器（X-104）。
+
+口径不对称与看不见什么：配对只在轮次层；ρ 是论文主张之间的关系，不是「论文是对的」；`EXTENDS` 不重复计为支持；
+`UNDECIDABLE` 与 `UNRELATED` 不参与标签投票（它们不带方向）；Q1/Q2 的确证地位为零（同批读数只能否证）；
+本轮只核题名级身份，作者与单位沿用登记处转述；正文经 arXiv 的 LaTeXML HTML 抽取，行内数学被标记剥离吞掉，
+因此任何跨公式的主张本轮不予编码——锥的维度定义与 RCO 的收敛条件留在看不见之列。
+
+顺带查出的一条覆盖空洞（登记为 X-105）：§49 的判定标签对账只认两种锚点——`Phase <罗马数字>` 与 `L01`。
+本轮的锚点叫 `L02`，不在它的人群里，所以「L-02 判为 CONTRADICTED」这类句子目前**没有**任何仪器能把它对回
+`L02_reanalysis.json`。这不是把它接上去就完事：本轮的订正登记表里有若干行是在**定义**标签词表（A8 那一行同时
+写出四个五值词），把 `L02` 直接加进锚点人群会立刻把这些定义句判成「该轮工件没有这个标签」——那是假红。
+加宽必须先决定「定义性提及」与「谓词性判定」怎么分开，属于治理层的一步，不在本轮顺手改。
+
+复现：
+
+```bash
+python3 literature/l02_gate.py            # 只验仪器
+python3 literature/l02_reanalysis.py --check
+python3 literature/l02_reanalysis.py      # 两路绑定预注册哈希，不过则 rc=4 不写盘
+python3 literature/l02_coding.py          # 先核身份，正文允许命中本地缓存（须有取得记录）
+python3 governance/build_obligation_registry.py
+python3 governance/build_suite_score_registry.py
+python3 experiments/audit_bindings.py
+```
+
+收尾审计打印：`SUMMARY  suites 40/40 green, checks 455, bindings 24/24`；治理层本轮重导后的打印行：
+
+```
+derive == pin for all 56 labels
+PASS  R11 today the three columns agree everywhere except the two registered differences  {"docs": 26, "aligned": 23, "static_gap_registered": 3, "bad": 0, "no_claim": 0, "checks_printed": 185, "check_sites_static": 169, "static_sites_in_population": 161}
+wrote suite_score_registry_v1.json | suites 37 green 37 quotes 91 rows 78 hard 0 dist {"matches_live": 66, "paired_corre
+wrote label_provenance_v1.json | rows 633 hard 0 dist {"anchor_phantom": 0, "label_unregistered": 0, "label_wrong_for_an
+wrote value_provenance_v1.json | rows 867 values 2032 hard 6 dist {"anchor_without_records": 0, "value_unattested_in_rep
+wrote section_page_reconciliation_v1.json | pages 17 sections 21 unattested 0 loose 0 errata 1/1 superseded 1 compressed
+wrote wiki_sync_map_v1.json | sections 21 claimed 21 unclaimed 0 | governance pages 16 | first_batch 12 (pin 12)
+```
