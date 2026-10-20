@@ -126,6 +126,13 @@
       "node_token": "QuO5w9vGFiikp1kSKbgcrh1jnnb",
       "section": 48,
       "title": "M2A 治理｜套件分数引用对账 v1：仓库自己的散文第一次能被那台套件推翻"
+    },
+    {
+      "draft": "M2A-治理-判定标签对账v1.md",
+      "in_ledger": true,
+      "node_token": "Vftbwqe4QiQZdEk2fhOcSvDbnie",
+      "section": 49,
+      "title": "M2A 治理｜判定标签↔工件对账 v1：散文给出的判定，第一次能被它所说那一轮的工件推翻"
     }
   ],
   "counts": {
@@ -134,11 +141,11 @@
     "first_batch_off_pin": 0,
     "first_batch_pages": 12,
     "first_batch_pages_claimed_by_a_section": 1,
-    "governance_pages": 13,
+    "governance_pages": 14,
     "governance_pages_unclaimed": 0,
-    "ledger_pages_with_node": 25,
-    "report_sections_in_population": 18,
-    "sections_claimed": 18,
+    "ledger_pages_with_node": 26,
+    "report_sections_in_population": 19,
+    "sections_claimed": 19,
     "sections_unclaimed": 0
   },
   "dangling_claims": [],
@@ -407,6 +414,25 @@
         48
       ],
       "title": "M2A 治理｜套件分数引用对账 v1：仓库自己的散文第一次能被那台套件推翻"
+    },
+    {
+      "draft": "M2A-治理-判定标签对账v1.md",
+      "draft_chars": 1680,
+      "draft_sha256": "e4e5e911e36faec56970fde7d666f30d37b9f600e690e8c8b0d4cff35b24b259",
+      "markers": [
+        "判定标签",
+        "空允许集不构成否证",
+        "跨系统",
+        "X-92"
+      ],
+      "markers_ok_recorded": true,
+      "node_token": "Vftbwqe4QiQZdEk2fhOcSvDbnie",
+      "obj_token": "WWerdVSCmogbQ2xxdzgcZVe7n7e",
+      "read_back_chars_recorded": 2008,
+      "sections": [
+        49
+      ],
+      "title": "M2A 治理｜判定标签↔工件对账 v1：散文给出的判定，第一次能被它所说那一轮的工件推翻"
     }
   ],
   "schema": "m2a.wiki_sync_map.v1",
@@ -559,26 +585,38 @@
         88,
         89,
         90,
-        91
+        91,
+        93,
+        94
+      ]
+    },
+    {
+      "section": 49,
+      "title": "散文判定的标签能不能被那一轮的工件推翻：判定标签↔工件对账 v1（GOVERNANCE_ARTIFACT，不产生科学判定）",
+      "xids_named": [
+        7,
+        91,
+        92,
+        93
       ]
     }
   ],
   "stale_claims": [],
   "tools": [
     {
-      "bytes": 35272,
+      "bytes": 40577,
       "file": "check_step_draft_numbers.py",
-      "sha256": "669d4c23f9f8154e4c7700649c95009909f6f140f3617748139c779e32cb1e81"
+      "sha256": "0554292488f195c274f25af58ef957a5a61497f903b9a55746b970ec092be9ed"
     },
     {
-      "bytes": 7942,
+      "bytes": 8183,
       "file": "publish_wiki_steps.py",
-      "sha256": "d43be394b5b70dc113975c2e0f9fe22b2a4b8188d3d3eca6a570b42b26b88cf6"
+      "sha256": "a786dda43c5608e6bed6d16fdcdac40608e2507a102e313787fa4b54f4c81f20"
     },
     {
-      "bytes": 9581,
+      "bytes": 9943,
       "file": "feishu_wiki_nodes.json",
-      "sha256": "06b7547fff7521ac728861dece8fe2df7dbf239c7d60d40f1305d38040476f68"
+      "sha256": "24ec15a54586dcd6072f0dfe775b0dfb0d0de25006956560a6b103397d15c3d5"
     }
   ],
   "unclaimed_sections": [],

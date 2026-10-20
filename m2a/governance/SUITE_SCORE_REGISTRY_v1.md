@@ -17,6 +17,7 @@
 | 同一行同时给出实跑值（把错误当错误引用） | 4 |
 | 可能为历史值（小于实跑，仅披露不判红） | 7 |
 | 对本步校验器自身的引用（不可自证） | 1 |
+| 对已登记不测量仪器的引用（label_provenance_gate.py） | 0 |
 
 ## 逐条引用
 
@@ -82,25 +83,25 @@
 | `RESULT_SCORE_RECONCILIATION_v1.md` | derived_summary | `p9_gate.py` | 8/8 | 8/8 | matches_live | 42 |
 | `RESULT_SCORE_RECONCILIATION_v1.md` | derived_summary | `phase2_gate.py` | 7/7 | 7/7 | matches_live | 32 |
 | `ROUND_L01_RESULTS.md` | run_record | `l01_gate.py` | 7/7 | 7/7 | matches_live | 6 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `ao_preflight_gate.py` | 8/8 | 8/8 | matches_live | 61 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `gate_coverage_map_gate.py` | 17/17 | 18/18 | paired_correction | 67 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `gate_coverage_map_gate.py` | 18/18 | 18/18 | matches_live | 63 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `gate_discrimination_gate.py` | 59/59 | 59/59 | matches_live | 62 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `ao_preflight_gate.py` | 8/8 | 8/8 | matches_live | 62 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `gate_coverage_map_gate.py` | 17/17 | 18/18 | paired_correction | 68 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `gate_coverage_map_gate.py` | 18/18 | 18/18 | matches_live | 64 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `gate_discrimination_gate.py` | 59/59 | 59/59 | matches_live | 63 |
 | `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `l01_gate.py` | 6/6 | 7/7 | paired_correction | 40 |
 | `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `obligation_registry_gate.py` | 7/7 | 8/8 | possible_history | 43 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `obligation_registry_gate.py` | 8/8 | 8/8 | matches_live | 68 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `p10_gate.py` | 6/6 | 6/6 | matches_live | 65 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `result_score_map_gate.py` | 12/12 | 12/12 | matches_live | 66 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `runner_enforcement_map_gate.py` | 14/14 | 14/14 | matches_live | 64 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `section_page_reconciliation_gate.py` | 22/22 | 23/23 | possible_history | 72 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `status_label_table_gate.py` | 6/6 | 6/6 | matches_live | 59 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `suite_score_registry_gate.py` | 20/20 | - | self_reference | 73 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `unmeasured_instruments_gate.py` | 25/25 | 25/25 | matches_live | 69 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `wiki_sync_map_gate.py` | 16/16 | 16/16 | matches_live | 70 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `obligation_registry_gate.py` | 8/8 | 8/8 | matches_live | 69 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `p10_gate.py` | 6/6 | 6/6 | matches_live | 66 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `result_score_map_gate.py` | 12/12 | 12/12 | matches_live | 67 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `runner_enforcement_map_gate.py` | 14/14 | 14/14 | matches_live | 65 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `section_page_reconciliation_gate.py` | 22/22 | 23/23 | possible_history | 73 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `status_label_table_gate.py` | 6/6 | 6/6 | matches_live | 60 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `suite_score_registry_gate.py` | 20/20 | - | self_reference | 74 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `unmeasured_instruments_gate.py` | 25/25 | 25/25 | matches_live | 70 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `wiki_sync_map_gate.py` | 16/16 | 16/16 | matches_live | 71 |
 
 ## 人口与指纹
 
-> 生成本表的推导器源码 SHA-256：`657c00885b8c89ce`（`governance/build_suite_score_registry.py`）；语料文档 73 份。语料缩小而不登记，Q18 会红。
+> 生成本表的推导器源码 SHA-256：`1f7f76f7e03a568f`（`governance/build_suite_score_registry.py`）；语料文档 73 份。语料缩小而不登记，Q18 会红。
 
 | 套件 | 路径 | 实跑 | 源码 sha256（前 12） |
 | --- | --- | --- | --- |

@@ -28,7 +28,11 @@ Criteria, frozen before the first run (this file is the register for them):
       `experiments/*RESULTS*.md` and `literature/*RESULTS*.md`: ten documents that really quote the gate of
       their own round sat outside the corpus. Q10 is the rule that caught it - it asks of every file in the
       repository that carries an adjacent name+fraction pair whether the corpus covers it. X-86.
-    A2 the regenerated governance tables (`SECTION_PAGE_RECONCILIATION_v1.md`, `WIKI_SYNC_MAP_v1.md`) are
+    A3 WITHDRAWN the same round it shipped (registered as X-94): Q10 named a carrier this layer had
+     never looked at: another governance layer ships a derived JSON table that quotes suite scores, and the
+     corpus rule only read `*_v<n>.md`. A derived table may be REFUTED without being allowed to ATTEST, so
+     the fix is to widen the claim population to `*_v<n>.json` as well, not to add it to the exclusion set.
+  A2 the regenerated governance tables (`SECTION_PAGE_RECONCILIATION_v1.md`, `WIKI_SYNC_MAP_v1.md`) are
       claims of kind `derived_summary`. A derived document must not *support* a number (§47), but a number
       it prints is still refutable, and its ERRATA rows are exactly the "quoted as an error" shape E5 exists
       to allow. What stays excluded is only this step's own output pair, so the table cannot quote itself.
@@ -61,6 +65,9 @@ Criteria, frozen before the first run (this file is the register for them):
 Self-reference, disclosed instead of hidden: this step's own validator is in population A's namespace and is
 **excluded** from being run by this deriver (a suite may not be its own instrument, R8). Prose that quotes it
 is classified `self_reference` and counted; the authoritative reading of its fraction stays the closing audit.
+  E8 `unmeasured_by_registration` - a suite deliberately kept OUT of population A because running it would
+      re-derive a layer that reads this table (X-94's cycle). Disclosed, never hard, and the reason is stored
+      in `UNMEASURED` so an exclusion can be audited instead of being a silent absence.
 
 Cost, declared: running population A is the expensive part (the discrimination suite alone is ~5 minutes), so
 this deriver is meant to be run once per step, outside the closing audit's own collection. The validator
@@ -87,6 +94,21 @@ RECORD_DIRS = (M / "experiments", M / "literature")
 GOV_TABLE = re.compile(r"_v\d+\.md$")
 
 SELF_OUT = {JSON_OUT.name, MD_OUT.name}
+# A validator that re-runs this layer's generator must stay out of population A: running it here would
+# re-derive the layer that reads the table this generator is writing (X-94's cycle, one level up).
+# Its own reading stays authoritative in the closing audit; quotes of it are disclosed, never judged.
+UNMEASURED = {"label_provenance_gate.py":
+              "re-runs governance/build_label_provenance.py, which reads this layer's table (X-94)"}
+# A3 withdrew the JSON widening the same round it was added: another layer's derived JSON re-emits the
+# very prose lines this layer extracts, so scanning it re-reads this layer's own rows (transcription
+# laundering, X-85(g)) and made the two layers mutually dependent - the closing audit could then never
+# be green whichever order it ran in. It is named here with its reason instead of being silently skipped.
+LAYER_TRANSCRIPTIONS = {"LABEL_PROVENANCE_v1.md":
+                        "the table governance/build_label_provenance.py writes, whose rows are copied "
+                        "out of this layer's own claims (X-94)",
+                        "label_provenance_v1.json":
+                        "transcription of this layer's own claim lines by governance/"
+                        "build_label_provenance.py; a claim source may not be a copy of the claims"}
 SELF_SUITE = "suite_score_registry_gate.py"
 GLOB_SUITES = sorted(M.glob("experiments/*gate*.py")) + sorted(M.glob("literature/*gate*.py")) \
     + sorted(M.glob("governance/*gate*.py"))
@@ -115,10 +137,10 @@ def run_suite(path: pathlib.Path):
 
 def live_table():
     """Population A: the suites the audit collects, plus any quoted name outside that glob."""
-    paths = {p.name: p for p in GLOB_SUITES if p.name != SELF_SUITE}
+    paths = {p.name: p for p in GLOB_SUITES if p.name != SELF_SUITE and p.name not in UNMEASURED}
     for q in quoted_names():
         name = q[2]
-        if name not in paths and name != SELF_SUITE:
+        if name not in paths and name != SELF_SUITE and name not in UNMEASURED:
             found = list(M.rglob(name))
             if found:
                 paths[name] = found[0]
@@ -133,7 +155,8 @@ def live_table():
 def corpus():
     """Population B: one definition, read by the deriver and by its validator (Q5/Q10/Q14/Q15 share it)."""
     docs = [(REPORT, "append_only"), (LOG, "append_only"), (LEDGER, "regenerated")]
-    tables = [p for p in sorted(GOV.glob("*.md")) if GOV_TABLE.search(p.name) and p.name not in SELF_OUT]
+    tables = [p for p in sorted(GOV.glob("*.md")) if GOV_TABLE.search(p.name)
+              and p.name not in SELF_OUT and p.name not in LAYER_TRANSCRIPTIONS]
     docs += [(p, "derived_summary") for p in sorted(RUNS_DIR.glob("*.md")) + tables]
     docs += [(p, "run_record") for d in RECORD_DIRS for p in sorted(d.glob("*.md"))]
     return [(p, kind) for p, kind in docs if p.exists() and p.name not in SELF_OUT]
@@ -159,6 +182,9 @@ def classify(pairs, live):
                                      "context": line[max(0, line.find(name) - 40):line.find(name) + 60]})
         if name == SELF_SUITE:                 # before the phantom branch: this validator is deliberately
             entry["verdict"] = "self_reference"  # outside population A, so absence must not read as invention
+            continue
+        if name in UNMEASURED:            # registered exclusion, disclosed rather than judged
+            entry["verdict"] = "unmeasured_by_registration"
             continue
         info = live.get(name)
         if info is None:
@@ -233,6 +259,8 @@ def main() -> int:
              "| 同一行同时给出实跑值（把错误当错误引用） | %d |" % dist.get("paired_correction", 0),
              "| 可能为历史值（小于实跑，仅披露不判红） | %d |" % dist.get("possible_history", 0),
              "| 对本步校验器自身的引用（不可自证） | %d |" % dist.get("self_reference", 0),
+             "| 对已登记不测量仪器的引用（%s） | %d |" % ("；".join(sorted(UNMEASURED)),
+                                                    dist.get("unmeasured_by_registration", 0)),
              "",
              "## 逐条引用", "",
              "| 文档 | 口径 | 仪器 | 引用 | 实跑 | 判定 | 行 |",

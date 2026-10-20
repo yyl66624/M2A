@@ -9,8 +9,8 @@
     }
   ],
   "counts": {
-    "claims_rows_in_sync_map": 18,
-    "draft_page_aligned": 11,
+    "claims_rows_in_sync_map": 19,
+    "draft_page_aligned": 12,
     "draft_page_grew": 2,
     "draft_page_hard": 0,
     "errata_not_effective": 0,
@@ -28,14 +28,14 @@
       "suite_score_registry_gate.py"
     ],
     "page_superseded": 1,
-    "pages_reconciled": 14,
+    "pages_reconciled": 15,
     "pages_with_self_referential_claims": 1,
-    "pairs_aligned": 12,
+    "pairs_aligned": 13,
     "pairs_compressed": 0,
     "pairs_no_capture": 0,
     "prose_slashes_ignored": 0,
     "score_unattested_in_repo": 0,
-    "sections_covered": 18,
+    "sections_covered": 19,
     "self_referential_values": 1,
     "values_attested_only_in_registration": 1,
     "values_loosely_attested_only": 0
@@ -699,6 +699,31 @@
         ]
       },
       "verdict": "self_referential_claim"
+    },
+    {
+      "attestation": {},
+      "draft_vs_page": {
+        "disagree": {},
+        "verdict": "aligned"
+      },
+      "erratum": {},
+      "loosely_attested": {},
+      "multi_value": {},
+      "node_token": "Vftbwqe4QiQZdEk2fhOcSvDbnie",
+      "not_on_page": [],
+      "page_chars": 2008,
+      "page_claims": {},
+      "page_sha256": "82647171a32b40b9fbeea1e9a8ac190fe30b51facf173045b2cbb3b3e560be93",
+      "prose_slashes_ignored": {},
+      "section_claims": {},
+      "sections": [
+        49
+      ],
+      "superseded": {},
+      "title": "M2A 治理｜判定标签↔工件对账 v1：散文给出的判定，第一次能被它所说那一轮的工件推翻",
+      "unattested": {},
+      "unmeasurable": {},
+      "verdict": "aligned"
     }
   ],
   "repo_attestation": {

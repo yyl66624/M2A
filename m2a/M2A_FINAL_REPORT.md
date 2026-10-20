@@ -1910,3 +1910,70 @@ X-83 已披露：两处一起陈旧时它无声），§44 只对 25 台**轮次*
 源码 SHA-256 逐台钉住（Q2，改仪器不重跑也可见）并加确定性抽样实跑（Q8）。
 
 收尾审计打印：`SUMMARY  suites 37/37 green, checks 399, bindings 24/24`；检查数由 378 增至 399，套件数由 36 增至 37/37，新增恰为本步校验器打印的那一行（18 条判据 + 2 条自计）。
+
+**§48 修入（同轮追加，登记为 X-93 与 X-94；原头条不回写）**。本层曾把另一层派生的表纳入主张扫描（amendment A3），因为它的 Q10 点名那份文件确实承载分数。加宽之后两层互相读取对方正在写的表：**收尾审计无论按哪个顺序跑都无法全绿**，而本层的实跑捕获还把对方门控一次未及重导的中间读数钉成了「今天不打印绿行」的硬伤形状（占位行的文件名与数值都是 `-`，被 Q5 的第二条抽取通路当场抓住）。A3 **同轮撤回**，两份转写件（Markdown 与 JSON）改为在推导器里登记并附理由，Q10 承认「语料 / 本步输出 / 已声明转写件」三选一且集合必须精确相等；§49 的门控也随之移出本层的实跑人口（`UNMEASURED`，运行它会重导读回本表的那一层）。撤回后本层当日打印行：实跑 **36** 台（绿 **36**），引用 **87** 条 / 判定 **75** 行，硬伤 **0**；承载文件 **18** 份，其中语料覆盖 **15** 份；语料文档 **73** 份、产出主张的文档 **15** 份；轮次记录 **58** 份文档 / **10** 对 / **10** 行，派生摘要与再生表 **18** 对 / **40** 行；`possible_history` **7** 行最大相差 **54** 条规则。本节正文上面写的是 §48 收尾当时打印的行（写下时为真）；当前值以 `suite_score_registry_v1.json` 头条与本段为准，而本段的每个数字都来自上面那条打印行。
+
+### 49 散文判定的标签能不能被那一轮的工件推翻：判定标签↔工件对账 v1（GOVERNANCE_ARTIFACT，不产生科学判定）
+
+状态标签：**GOVERNANCE_ARTIFACT**（无实验、无轮次判定、不改写任何既有工件与预注册；R6 全部保持）。
+
+§48 管「散文引用的套件分数」，本节管「散文给出的**判定标签**」。第 7 条要求每轮区分
+`SUPPORTED / CONTRADICTED / NULL / INDETERMINATE / NOT_IDENTIFIED`，而工件是在四套更早的标签体系下写成的，
+所以每一句「Phase XII 判为 SUPPORTED」都踩在一次翻译上。§37 的表只核对它自己的计数，G8 只把台账与终报
+**互相对**（散文对散文）。此前没有任何东西把「某句判定」对回**它所说那一轮的工件**。产物：
+`governance/build_label_provenance.py` → `label_provenance_v1.json` + `LABEL_PROVENANCE_v1.md`；
+校验器 `governance/label_provenance_gate.py`（判据 18 条，含 2 条自计）。翻译权威**只用** §37 已注册的
+映射（`build_status_label_table.py` 的源码 SHA-256 钉进工件，本层不重新定义任何翻译）。登记处 **X-92 / X-93**。
+
+判据先冻结于推导器 docstring，出口按序：L1 `anchor_phantom`（点名的轮次没有工件却下了判定）、
+L2 `label_wrong_for_anchor`（该轮工件记录的五值里没有这个判定）、L3 `label_unregistered`（加粗的判定词形状，
+却既不在注册处置里也不在任何工件里）、L4 `stale_in_register`（再生文档 `OBLIGATION_REGISTRY.md` 带旧判定，
+无「历史」可挡）为硬伤；`paired_correction`、`five_label_only_in_translation`、`not_a_round_verdict`、
+`attested_in_other_round`、`anchor_without_recorded_label`、`label_mention_without_predication`、
+`cross_round_refutation`、`label_without_anchor`、`matches_artifact` 一律如实列出。停机规则同前：硬伤不能靠
+追加订正消除时，就登记为发现上报，**不放宽判据、不改写历史**。
+
+读数全部取自打印行。推导器：工件 44 份 JSON（逐文件扫描，注册轮次 22 个），语料文档
+50 份，标签词表 36 个，主张 618 行 / 承载文档 45 份；判定分布
+`label_without_anchor` 390、`matches_artifact` 83、`label_mention_without_predication` 106、
+`five_label_only_in_translation` 31、`anchor_without_recorded_label` 8，
+**硬伤 0**，生效订正 2 条。
+
+实质发现（两条都是真缺陷，都在首次发布之前处理完并登记，不当作「已修好所以不必说」）：
+
+1. **负面日志把判定挂错了轮次**。X-07 那一行把一次跨系统的否证挂到了 Phase IV 名下，而 `phase4_results.json`
+   里那一轮只写 `SUPPORTED` 一系；给出否证的读数其实属于**后一轮**的复验，那一行没有点名它。另一行把格级
+   不可判状态的名称挂给了 Phase XIV，而该轮工件里这件事记的是布尔 `resolvable` 与 `n_not_resolvable=0`：
+   被引用的那个标签词在这一轮出处为零。两处都是**表述缺陷而不是判定错误**：各轮判定一字未动（R6），处置是追加订正
+   （标记串「订正 X-92」），而硬伤只有在**订正真的写进被点名的那份文档**时才沉默，代码里写白名单不算。
+2. **运行前自查出十条仪器缺陷**，全部以 amendment 记在推导器 docstring 里、先修后跑，所以本层的任何读数
+   都不曾产生在错误判据上：键名扫描用了锚定的 `.match` 而使 `exits[taken_first_exit]` 整层看不见；格级
+   `state` 字段根本没读；`Phase XIX–XXII` 只解析出第一轮；把 `PASS`/`IDENTITY_VERIFIED` 这类**仪器状态**当
+   判定（造出 16 条假硬伤）；把 §37 自己的处置词（`MANUAL_REVIEW`/`COUNT_NOT_STATUS`）当轮次判定；
+   **空允许集被当成否证**（查无五值可对照的轮次不能推翻任何说法）；谓词测试读的是截断到 160 字符的摘录，
+   长表行里真正的判定词与后一轮锚点都被截掉——这一条修完，上面第 1 点才从假否证里浮出来成为真表述缺陷；
+   「订正自己洗白自己」的通道（携带标记串的那一行仍然被判定）；以及把 `--rescan` 那类「钉住字节不等于钉住
+   判定」的思路挡在门口（本层每次推导都重读全部 JSON，代价是秒级，写明在 docstring 的成本声明里）。
+
+口径不对称（与 §47 同向，写死供复核）：配对只在**轮次**层，不在臂层；一轮同时记录 E1/E2 时本层接受其一。
+所有放宽只能删除硬伤，绝不新增。看不见什么：臂级判定、跨轮否证的正当表述（只列类不给红）、
+标签词之外的句子内容与判据数值；`*PREREG*.md` 不参与主张扫描（预注册先于读数，且是冻结文件，R6）。
+
+校验器的要点不在条数，而在每条都问「这条规则能响吗」：Q6 用正则扫原始 JSON 文本另算一遍标签集（与树遍历
+不同通路）；Q7 独立重抽取每一条主张；Q11 双向证明订正承重（忽略它则那些行必须变红）；Q12 证明携带标记串的
+订正行不会被自己洗白；Q13/Q14/Q15/Q16 用合成行逐一验证四种硬伤形状与两种「不该红」的形状；Q18 钉住推导器
+源码与语料份数；Q1/Q2/Q3 遵守 X-91：**校验器不采纳自己推导出的新字节**，不复现即回写进入时的字节。
+
+复现：
+
+```bash
+python3 governance/build_label_provenance.py
+python3 governance/label_provenance_gate.py         # 判据条数与分布只以打印行为准
+python3 governance/build_suite_score_registry.py
+python3 experiments/audit_bindings.py
+```
+
+收尾审计打印：`SUMMARY  suites 38/38 green, checks 419, bindings 24/24`；套件数与检查数取自上一次审计的打印行 SUMMARY  suites 37/37 green, checks 399, bindings 24/24，本层新增恰为一个套件（校验器
+打印的那一行）。
+
+**跨层的陈年读数（本节顺带登记，X-93）**。§48 的 amendment A3 把语料加宽之后，本层重扫时发现 §48 那一节的头条已经落后于它自己的工件：实跑台数、引用条数、判定行数、承载份数、语料覆盖份数与派生表贡献行数都移动了。§48 一节按 R6 **不回写**（写下时它是真的），当前值一律以 `suite_score_registry_v1.json` 头条的当日打印行为准，本段就是唯一的登记通道。这条记录同时说明一个仍然存在的看不见之处：本层与 §48 都只对 `n/n` 这一种形状发判据，**非分数的计数**在报告里变陈旧不会有任何仪器报警——除了一次跨层重扫顺带看见它。

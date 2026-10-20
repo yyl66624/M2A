@@ -107,10 +107,13 @@ def main() -> int:
 
     glob_set = {p.name for p in list(M.glob("experiments/*gate*.py")) + list(M.glob("literature/*gate*.py"))
                 + list(M.glob("governance/*gate*.py"))} - {SELF_SUITE}
-    report("Q3 the run population equals the closing audit's own collection rule",
-           set(live) == glob_set and SELF_SUITE not in live,
-           "live %d | audit glob %d | self excluded %s"
-           % (len(live), len(glob_set), SELF_SUITE not in live))
+    unm = getattr(B, "UNMEASURED", {})
+    report("Q3 the run population equals the audit's collection rule minus the registered exclusions",
+           set(live) == glob_set - {SELF_SUITE} - set(unm) and SELF_SUITE not in live
+           and set(unm) <= glob_set and all(r.strip() for r in unm.values())
+           and all((M / "governance" / n).exists() for n in unm),
+           "live %d | audit glob %d | registered exclusions %s"
+           % (len(live), len(glob_set), sorted(unm) or "none"))
 
     # Q4 the headline numbers must equal what can be enumerated from the rows (X-84), including the hard
     # category and the disclosure categories
@@ -145,7 +148,8 @@ def main() -> int:
     bad_live = [r for r in rows if r["verdict"] != "self_reference"
                 if (r["verdict"] == "phantom_suite") != (r["instrument"] not in live)
                 or (r["live"] is not None and not re.fullmatch(r"(\d+)/\1", r["live"]))
-                or (r["live"] is None and r["verdict"] not in ("phantom_suite", "live_unavailable"))]
+                or (r["live"] is None and r["verdict"] not in
+                    ("phantom_suite", "live_unavailable", "unmeasured_by_registration"))]
     report("Q6 each row's instrument is either a live-pinned suite or explicitly a phantom",
            not bad_live, "offenders: " + (["%s %s %s" % (b["instrument"], b["quoted"], b["verdict"])
                                           for b in bad_live[:3]] or "none"))
@@ -156,6 +160,8 @@ def main() -> int:
     def verdict2(r, live_map, line=""):
         if r["instrument"] == SELF_SUITE:
             return "self_reference"
+        if r["instrument"] in getattr(B, "UNMEASURED", {}):
+            return "unmeasured_by_registration"
         info = live_map.get(r["instrument"])
         if info is None:
             return "phantom_suite"
@@ -207,10 +213,16 @@ def main() -> int:
     carriers = [p for p in candidates if claims_back(strip_lines(text_of(p)))]
     scanned = {p.resolve() for p in scan_corpus()}
     unscanned = [p for p in carriers if p not in scanned]
-    report("Q10 every file carrying a quotable score is in the corpus or is this step's own output",
-           carriers and all(p.name in SELF_OUT for p in unscanned)
+    report("Q10 every file carrying a quotable score is in the corpus, this step's own output, or a declared transcription",
+           carriers and all(p.name in SELF_OUT or p.name in B.LAYER_TRANSCRIPTIONS
+                            for p in unscanned)
            and {p.name for p in unscanned} == {n for n in SELF_OUT
-                                               if (GOV / n).exists() and claims_back(strip_lines(text_of(GOV / n)))}
+                                               if (GOV / n).exists()
+                                               and claims_back(strip_lines(text_of(GOV / n)))}
+                                              | ({p.name for p in carriers}
+                                                 & set(B.LAYER_TRANSCRIPTIONS))
+           and all(reason.strip() for reason in B.LAYER_TRANSCRIPTIONS.values())
+           and len(B.LAYER_TRANSCRIPTIONS) >= 1
            and scanned and all(p.exists() for p in scanned)
            and not (SELF_OUT & {p.name for p in scanned}),
            "carriers %d | in corpus %d | excluded %s"
@@ -227,7 +239,9 @@ def main() -> int:
     added = sorted(grown - base_keys)
     report("Q11 the step's own outputs would be quoted, and the exclusion keeps them out of the claims",
            own_pairs > 0 and added and all(k[0] in SELF_OUT for k in added)
-           and not any(r["document"] in SELF_OUT for r in rows) and "SELF_OUT" in text_of(GEN),
+           and not any(r["document"] in SELF_OUT for r in rows) and "SELF_OUT" in text_of(GEN)
+           and all(name in text_of(GEN) and reason
+                   for name, reason in B.LAYER_TRANSCRIPTIONS.items()),
            "own quotable pairs %d | rows admission would add %d | artifact rows from them %d"
            % (own_pairs, len(added), sum(1 for r in rows if r["document"] in SELF_OUT)))
 
