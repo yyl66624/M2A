@@ -88,12 +88,16 @@ def build() -> dict:
         rows = sorted(s for s in RHO if s.startswith(a + "-"))
         # L-01's own surface set is read from its printed per-neighbour relation labels, not re-derived here
         S_rows = sorted(r[0] for r in et[a]["per_neighbour"] if r[-1] == "same-family-same-axis")
-        c_claim, x, u, z, sup = 0, 0, 0, 0, []
+        c_claim, x, u, z, sup, neu = 0, 0, 0, 0, [], []
         for s in rows:
             rho = RHO[s][0]
-            if neutral_only(recs[s]):
+            neutral = neutral_only(recs[s])
+            if neutral:
                 z += 1
-            if rho in ("SUPPORTS", "EXTENDS"):
+                neu.append(s)
+            # prereg §3 Q2: a claim carried only by d_axis=neutral entries is NEUTRAL_UNDECIDABLE and is *not*
+            # added to C_claim. Without the exclusion the Z reading would change nothing on this corpus.
+            if rho in ("SUPPORTS", "EXTENDS") and not neutral:
                 c_claim += 1
                 sup.append(s)
             elif rho == "REFUTES":
@@ -101,10 +105,15 @@ def build() -> dict:
             elif rho == "UNDECIDABLE":
                 u += 1
         inflated = [s for s in S_rows if RHO[s][0] not in ("SUPPORTS", "EXTENDS")]
+        # The two registered rules are different estimators and can disagree on one row: Delta asks only about rho,
+        # Q2 asks whether the row is claim-eligible. A neutral-only row read as SUPPORTS is counted by neither
+        # inflation nor claim, so the disagreement is named instead of being resolved by whichever is convenient.
+        both = [s for s in neu if RHO[s][0] in ("SUPPORTS", "EXTENDS")]
         surface = et[a]["C_signed"]
         per[a] = {"m_registered": et[a]["m"], "C_surface": surface, "S_rows": S_rows,
                   "delta": len(inflated), "inflated_rows": inflated,
                   "C_claim_all": c_claim, "claim_supporting_rows": sup,
+                  "neutral_undecidable_rows": neu, "rules_disagree_rows": both,
                   "X": x, "U": u, "Z": z,
                   "rows": {s: {"rho": RHO[s][0], "basis": RHO[s][1],
                                "verification_level": recs[s]["verification_level"],
@@ -158,19 +167,22 @@ def build() -> dict:
 def main() -> int:
     check_only = "--check" in sys.argv
     doc = build()
+    # The binding has to be inside the serialized bytes: computing it after the blob was frozen wrote an artifact
+    # that asserted a two-channel match it did not contain (L02-A6).
+    disk = sha(PREREG.read_bytes())
+    head = sha(git_head_bytes("m2a/literature/L02_PREREGISTRATION.md"))
+    doc["prereg_binding"] = {"disk": disk, "git_head": head, "two_channel_match": disk == head}
     blob = (json.dumps(doc, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
     if check_only:
         print("check-only digest", hashlib.sha256(blob).hexdigest()[:16],
               "| rows judged", doc["derived_thresholds"]["rows_judged"],
               "| totals", json.dumps(doc["totals"], ensure_ascii=False),
-              "| per-anchor delta", json.dumps({k: v["delta"] for k, v in doc["per_anchor"].items()}))
+              "| per-anchor delta", json.dumps({k: v["delta"] for k, v in doc["per_anchor"].items()}),
+              "| binding", "match" if disk == head else "MISMATCH")
         return 0
-    disk = sha(PREREG.read_bytes())
-    head = sha(git_head_bytes("m2a/literature/L02_PREREGISTRATION.md"))
     if disk != head:
         print("PREREG NOT COMMITTED: disk %s git %s" % (disk[:12], head[:12]), file=sys.stderr)
         return 4
-    doc["prereg_binding"] = {"disk": disk, "git_head": head, "two_channel_match": True}
     OUT.write_bytes(blob)
     print("wrote L02_reanalysis.json | exit_q1 %s (%s) | exit_q2 %s (%s) | totals %s | per-anchor delta %s"
           % (doc["exit_q1"], doc["exit_q1_label_r17"], doc["exit_q2"], doc["exit_q2_label_r17"],

@@ -1,11 +1,11 @@
-"""Round L-02 gate: instrument-only checks, 10 rules plus 2 self-counts, 12 printed verdict lines.
+"""Round L-02 gate: instrument-only checks, 12 rules plus 2 self-counts, 14 printed verdict lines.
 
 What it refuses to do (R2): it never asks whether the claim-layer reading is *right*, what the anchors' verdicts
 should be, or whether the competing theory wins. A gate that carried a scientific criterion would put the pressure
 to loosen a threshold on the registered text every time a hand check failed - the failure this repo already paid
 for. Every rule here is about the instrument: the binding, the frozen inputs, determinism, the closed vocabulary,
-the field contract, byte-located quotes, a re-derivable threshold, an exit table that can be reached, and a write
-path that refuses to write when the binding does not hold.
+the field contract, byte-located quotes, a re-derivable threshold, an exit table that can be reached, a write
+path that refuses to write when the binding does not hold, and a registered exclusion checked by a second path.
 
 Run from anywhere: `python3 literature/l02_gate.py`.
 """
@@ -30,6 +30,7 @@ FROZEN = ["literature/L01_coding.json", "literature/L01_fulltexts.json", "litera
           "literature/L01_CODING_PROTOCOL.md", "literature/registry.json", "literature/synthesis_v2.json",
           "literature/ROUND_L01_RESULTS.md"]
 RHOS = ("SUPPORTS", "EXTENDS", "REFUTES", "UNRELATED", "UNDECIDABLE")
+RULES = ["G%d" % i for i in range(1, 13)]
 REQUIRED_FIELDS = ["case_id", "reference", "verification_level", "evidence_type", "provenance",
                    "description_scope", "motion_source", "mechanism", "layers", "agency_class",
                    "event_grammar", "contradiction_ref"]
@@ -216,16 +217,43 @@ def main() -> int:
            rc == 4 and (before or b"") == (after or b""),
            "exit=%d | artifact bytes unchanged=%s" % (rc, (before or b"") == (after or b"")))
 
+    # G12: the Q2 exclusion is a *rule* about how counts are formed, so it is checked by a second path - set
+    # arithmetic over the committed d_axis field - rather than by trusting the loop that implements it. No
+    # scientific quantity is re-judged here: this asks only whether the registered exclusion is in the code.
+    d2 = R.build()
+    viol, moved, disagree = [], [], []
+    for a, v in d2["per_anchor"].items():
+        neutral = {s for s, r in v["rows"].items() if r["neutral_only"]}
+        raw_sup = {s for s, r in v["rows"].items() if r["rho"] in ("SUPPORTS", "EXTENDS")}
+        want = raw_sup - neutral
+        sup = set(v["claim_supporting_rows"])
+        if sup != want or v["C_claim_all"] != len(want) or set(v["neutral_undecidable_rows"]) != neutral \
+                or set(v["rules_disagree_rows"]) != (raw_sup & neutral) or sup & neutral:
+            viol.append(a)
+        if raw_sup != want:
+            moved.append(a)
+        disagree += [s for s in v["rules_disagree_rows"] if s not in disagree]
+    # Delta is registered on rho alone, so a row can be non-inflated and still claim-ineligible; the two estimators
+    # are named side by side rather than merged into whichever number is convenient (X-83).
+    in_s = [s for s in disagree if s in {r for v in d2["per_anchor"].values() for r in v["S_rows"]}]
+    report("G12 the registered Q2 exclusion is implemented on every anchor and the rows it touches are named",
+           not viol, "violations: %s | anchors whose C_claim is smaller than the raw supporting set: %s "
+                     "| rows read as supporting yet excluded from claim: %s | of those, rows L-01 itself counted "
+                     "in S: %s"
+           % (viol or "none", moved or "none", disagree or "none", in_s or "none"))
+
     ids = [re.match(r"G\d+", tag).group(0) for tag, _ in _verdicts]
+    # The denominator is pinned by this declared registry, not by how many report() calls happened to run (X-80):
+    # a skipped rule, a duplicated rule or an unregistered extra all move the printed fraction away from RULES.
     report("SUITE_accounting every declared rule id was recorded exactly once",
-           sorted(ids) == sorted("G%d" % i for i in range(1, 12)) and len(ids) == len(set(ids)),
-           "ids=%d" % len(ids))
-    n = len(_verdicts)
-    ok = sum(1 for _, v in _verdicts if v)
+           sorted(ids) == sorted(RULES) and len(ids) == len(set(ids)),
+           "ids=%d declared=%d" % (len(ids), len(RULES)))
     report("SUITE_tally the printed fraction is derived from the recorded verdicts",
-           ok == sum(1 for _, v in _verdicts if v) and n == 12, "recorded=%d passed=%d" % (n, ok))
-    print("%d/%d checks passed" % (ok, n))
-    return 0 if ok == n else 1
+           _n == len(_verdicts) and _ok == sum(1 for _, v in _verdicts if v)
+           and len(_verdicts) == len(RULES) + 1,
+           "recorded=%d passed=%d rules=%d" % (_n, _ok, len(RULES)))
+    print("%d/%d checks passed" % (_ok, _n))
+    return 0 if _ok == _n else 1
 
 
 if __name__ == "__main__":
