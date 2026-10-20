@@ -1,4 +1,4 @@
-"""Round L-02 gate: instrument-only checks, 12 rules plus 2 self-counts, 14 printed verdict lines.
+"""Round L-02 gate: instrument-only checks, 14 rules plus 2 self-counts, 16 printed verdict lines.
 
 What it refuses to do (R2): it never asks whether the claim-layer reading is *right*, what the anchors' verdicts
 should be, or whether the competing theory wins. A gate that carried a scientific criterion would put the pressure
@@ -24,13 +24,19 @@ REPO = M.parent
 PREREG = LIT / "L02_PREREGISTRATION.md"
 CODING = LIT / "L01_coding.json"
 FULLTEXTS = LIT / "L01_fulltexts.json"
+CHANNELS = LIT / "L01_channels.json"
+Q3ART = LIT / "L02_coding.json"
 RUNNER = LIT / "l02_reanalysis.py"
 OUT = LIT / "L02_reanalysis.json"
 FROZEN = ["literature/L01_coding.json", "literature/L01_fulltexts.json", "literature/L01_channels.json",
           "literature/L01_CODING_PROTOCOL.md", "literature/registry.json", "literature/synthesis_v2.json",
           "literature/ROUND_L01_RESULTS.md"]
 RHOS = ("SUPPORTS", "EXTENDS", "REFUTES", "UNRELATED", "UNDECIDABLE")
-RULES = ["G%d" % i for i in range(1, 13)]
+FIVE_LABELS = ("SUPPORTED", "CONTRADICTED", "NULL", "INDETERMINATE", "NOT_IDENTIFIED")
+# The prereg §3 Q3 table has three rows and none of them covers "fetched, but the title is not the registered
+# paper". L02-A10 registers that missing row as its own exit instead of folding it into COMPETING_NOT_OBTAINED.
+EXTRA_EXITS = {"COMPETING_IDENTITY_MISMATCH"}
+RULES = ["G%d" % i for i in range(1, 15)]
 REQUIRED_FIELDS = ["case_id", "reference", "verification_level", "evidence_type", "provenance",
                    "description_scope", "motion_source", "mechanism", "layers", "agency_class",
                    "event_grammar", "contradiction_ref"]
@@ -176,13 +182,21 @@ def main() -> int:
     nulled = sorted(k for k, v in recs.items() if not has(v, "contradiction_ref"))
     aliased = [f for f in ALIAS if all(f not in r for r in recs.values())
                and any(ALIAS[f][1] in r for r in recs.values())]
-    report("G8 the committed field contract holds for all 17 rows, layers included, aliases and nulls disclosed",
-           not holes and not keyless and aliased == ["case_id", "reference"],
+    # The row this round adds must clear the same contract, not a looser one; if the Q3 artifact is not there yet
+    # the rule says so instead of quietly checking half the population.
+    newrec = json.loads(Q3ART.read_text(encoding="utf-8"))["record"] if Q3ART.exists() else None
+    new_holes = ([] if newrec is None else
+                 [f for f in REQUIRED_FIELDS if not has(newrec, f) and f not in NULLABLE]
+                 + [f for f in REQUIRED_FIELDS if not any(n in newrec for n in ALIAS.get(f, (f,)))])
+    report("G8 the committed field contract holds for all 17 rows, layers included, aliases and nulls disclosed, "
+           "and the row this round adds clears the same contract",
+           not holes and not keyless and aliased == ["case_id", "reference"] and not new_holes,
            "rows missing a required non-empty field: " + (json.dumps(holes, ensure_ascii=False)[:120] or "none")
            + " | rows missing a key: " + (json.dumps(keyless, ensure_ascii=False)[:80] or "none")
            + " | protocol names carried by an alias key: " + ",".join(aliased)
            + " | `contradiction_ref` null in %d rows: %s"
-           % (len(nulled), ",".join(nulled[:6]) + ("..." if len(nulled) > 6 else "")))
+           % (len(nulled), ",".join(nulled[:6]) + ("..." if len(nulled) > 6 else ""))
+           + " | new row %s: %s" % (newrec["sid"] if newrec else "absent", new_holes or "clean"))
 
     coded_ft = [k for k, v in recs.items() if v.get("verification_level") == "FULLTEXT_REVIEWED"]
     chars = [ft[k]["chars"] for k in coded_ft if k in ft and "chars" in ft[k]]
@@ -241,6 +255,62 @@ def main() -> int:
                      "| rows read as supporting yet excluded from claim: %s | of those, rows L-01 itself counted "
                      "in S: %s"
            % (viol or "none", moved or "none", disagree or "none", in_s or "none"))
+
+    # G13/G14 cover the Q3 instrument. They were added after the Q3 reading was taken, which can only ever find
+    # a new problem, never launder an old one (the §45 argument, registered as L02-A11). G13 probes the decision
+    # logic offline so it runs whether or not the network is reachable; G14 reconciles the artifact against the
+    # file it quotes.
+    sys.path.insert(0, str(LIT))
+    import l02_coding as C  # noqa: E402
+
+    ch = json.loads(CHANNELS.read_text(encoding="utf-8"))["competing_theory_L01_A1"]
+    disc = (C.overlap(ch["title"], ch["title"]) == 1.0
+            and C.overlap(ch["title"], ch["superseded_first_attempt"]["title"]) < 1.0)
+    states = [(True, "FAILED", 90_000, 4, 0, ["REFUTES"]), (False, "arxiv_html", 90_000, 4, 0, ["REFUTES"]),
+              (True, "arxiv_html", C.FLOOR - 1, 4, 0, ["REFUTES"]), (True, "arxiv_html", 90_000, 2, 0, ["REFUTES"]),
+              (True, "arxiv_html", 90_000, 4, 1, ["REFUTES"]), (True, "arxiv_html", 90_000, 4, 0, ["UNDECIDABLE"]),
+              (True, "arxiv_html", 90_000, 4, 0, ["REFUTES", "SUPPORTS"]),
+              (True, "arxiv_html", 90_000, 4, 0, ["UNRELATED", "EXTENDS"])]
+    named = set(re.findall(r"`([A-Z_]{6,})`", pre_disk.decode("utf-8"))) | set(EXTRA_EXITS)
+    bad_states = [s[:2] for s in states
+                  if C.q3_exit(*s)[0] not in named or C.q3_exit(*s)[1] not in FIVE_LABELS]
+    reachable = sorted({C.q3_exit(*s)[0] for s in states})
+    report("G13 the Q3 decision logic discriminates the superseded selector and names only registered exits and "
+           "five-value labels",
+           disc and not bad_states and len(reachable) >= 3,
+           "identity check separates the earlier wrong pick: %s | states landing outside the table: %s "
+           "| exits reachable by the probe set: %s" % (disc, bad_states or "none", ",".join(reachable)))
+
+    if Q3ART.exists():
+        q3 = json.loads(Q3ART.read_text(encoding="utf-8"))
+        p = pathlib.Path(q3["fulltext"]["file"])
+        text = p.read_text(encoding="utf-8") if p.exists() else ""
+        bad_e = [e["k"] for e in q3["mechanism"]
+                 if text[e["quote_offset"]:e["quote_offset"] + len(e["quote"])] != e["quote"]
+                 or text.count(e["quote"]) != 1
+                 or sha(e["quote"].encode("utf-8"))[:16] != e["quote_sha16"]
+                 or not 20 <= e["quote_chars"] <= 400]
+        votes = [e["rho"] for e in q3["mechanism"] if e["rho"] in ("SUPPORTS", "EXTENDS", "REFUTES")]
+        recomputed = C.q3_exit(q3["identity"]["overlap"] == 1.0, q3["identity"]["channel"],
+                               len(text), len(q3["mechanism"]),
+                               len(q3["mechanisms_unlocatable"]), votes)
+        same_hash = bool(text) and sha(text.encode("utf-8")) == q3["fulltext"]["text_sha256"]
+        report("G14 the Q3 artifact's quotes hit their offsets in the file they cite and its exit is re-derived "
+               "by a second path",
+               bool(text) and q3["fulltext"]["chars"] == len(text) and same_hash and not bad_e
+               and recomputed == (q3["exit_q3"], q3["exit_q3_label_r17"])
+               and q3["fulltext"]["chars"] >= q3["fulltext"]["floor_derived"]
+               and q3["prereg_binding"]["two_channel_match"]
+               and q3.get("acquisition", {}).get("text_sha256") == q3["fulltext"]["text_sha256"]
+               and not q3["coding_defects"]["rho_outside_vocabulary"]
+               and not q3["coding_defects"]["anchor_not_registered"],
+               "entries %d | mismatching %s | second path %s/%s vs artifact %s | text hash holds %s | "
+               "acquisition names the same bytes %s"
+               % (len(q3["mechanism"]), bad_e or "none", recomputed[0], recomputed[1], q3["exit_q3"],
+                  same_hash, q3.get("acquisition", {}).get("text_sha256") == q3["fulltext"]["text_sha256"]))
+    else:
+        report("G14 the Q3 artifact's quotes hit their offsets in the file they cite and its exit is re-derived "
+               "by a second path", False, "artifact absent: " + Q3ART.name)
 
     ids = [re.match(r"G\d+", tag).group(0) for tag, _ in _verdicts]
     # The denominator is pinned by this declared registry, not by how many report() calls happened to run (X-80):

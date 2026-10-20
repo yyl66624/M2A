@@ -1,0 +1,208 @@
+{
+  "schema": "m2a.roundL02.competing.v1",
+  "sid": "C-04",
+  "preregistration": "literature/L02_PREREGISTRATION.md",
+  "prereg_sha256": "c143a08b57400c01afc0bee517c7453bf3276443bfd0eaf94ecaa0c180b9fcd9",
+  "reference": "The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence",
+  "identity": {
+    "abs_title": "The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence",
+    "registered": "The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence",
+    "overlap": 1.0,
+    "channel": "local_cache",
+    "arxiv": "2502.17420v2",
+    "first_author": "Tom Wollschläger"
+  },
+  "obtain_attempts": [
+    {
+      "url": "https://arxiv.org/abs/2502.17420v2",
+      "status": 200,
+      "bytes": 43247,
+      "role": "identity"
+    }
+  ],
+  "acquisition": {
+    "channel": "arxiv_html",
+    "url": "https://arxiv.org/html/2502.17420v2",
+    "status": 200,
+    "html_bytes": 331545,
+    "text_sha256": "38c8eef2fe628b13e92f2944d9a6e6a90f94774d83cf076180aaf885e061d816",
+    "chars": 71382,
+    "written_to": "/media/leonyao/新加卷/workshop/_m2a_ft/L02_C-04.txt",
+    "outside_repository": true,
+    "record": "RESTORED_BY_REFETCH",
+    "refetch_matches_pinned_hash": true
+  },
+  "fulltext": {
+    "file": "/media/leonyao/新加卷/workshop/_m2a_ft/L02_C-04.txt",
+    "chars": 71382,
+    "bytes": 71780,
+    "text_sha256": "38c8eef2fe628b13e92f2944d9a6e6a90f94774d83cf076180aaf885e061d816",
+    "verification_level": "FULLTEXT_REVIEWED",
+    "floor_derived": 21224
+  },
+  "mechanism": [
+    {
+      "k": "K2",
+      "role": "primary",
+      "d_axis": "mixed",
+      "v_axis": "neutral",
+      "anchor": "G5-03",
+      "rho": "REFUTES",
+      "rho_basis": "prereg §2.1 REFUTES covers 「非单方向」「多维表征」 explicitly; this entry asserts refusal is better described by cones than by one linear direction",
+      "claim": "Refusal is mediated by high-dimensional polyhedral cones in activation space, not by a single linear direction.",
+      "quote": "We establish that refusal behaviors can be better understood via high-dimensional polyhedral cones in activation space rather than a single linear direction, highlighting their complex spatial structures.",
+      "quote_offset": 35216,
+      "quote_sha16": "de8dd9bad8935f83",
+      "quote_chars": 204
+    },
+    {
+      "k": "K3",
+      "role": "primary",
+      "d_axis": "mixed",
+      "v_axis": "neutral",
+      "anchor": "G5-03",
+      "rho": "REFUTES",
+      "rho_basis": "the paper's own framing sentence denying the single-direction reading; several independent directions and cones all mediate refusal",
+      "claim": "Multiple independent directions - and multi-dimensional concept cones - mediate refusal.",
+      "quote": "Contrary to prior work, we uncover multiple independent directions and even multi-dimensional concept cones that mediate refusal.",
+      "quote_offset": 2465,
+      "quote_sha16": "28f2b77cae63ccdf",
+      "quote_chars": 129
+    },
+    {
+      "k": "K4",
+      "role": "auxiliary",
+      "d_axis": "mixed",
+      "v_axis": "neutral",
+      "anchor": "G5-03",
+      "rho": "REFUTES",
+      "rho_basis": "distinct mechanisms behind each independent direction contradicts the necessity-and-sufficiency of one direction (the anchor's own coded claim)",
+      "claim": "Within the space of representationally independent directions, several refusal directions exist and correspond to distinct mechanisms.",
+      "quote": "Additionally, we introduce representational independence and show that within this space of independent directions multiple refusal directions exist and correspond to distinct mechanisms.",
+      "quote_offset": 35421,
+      "quote_sha16": "59062884baf9b456",
+      "quote_chars": 187
+    },
+    {
+      "k": "K10",
+      "role": "auxiliary",
+      "d_axis": "value-only",
+      "v_axis": "neutral",
+      "anchor": "G5-03",
+      "rho": "UNDECIDABLE",
+      "rho_basis": "the quote alone settles nothing about the *number* of refusal directions; it attacks the inference from orthogonality to independence, so under §2.1 it is recorded UNDECIDABLE rather than counted as a direction vote",
+      "claim": "Orthogonality of activation directions does not license a causal-independence conclusion under intervention; an explicit independence notion is needed.",
+      "quote": "Moreover, we show that orthogonality alone does not imply independence under intervention, motivating the notion of representational independence that accounts for both linear and non-linear effects.",
+      "quote_offset": 2595,
+      "quote_sha16": "12e2e706e7b6d34e",
+      "quote_chars": 199
+    }
+  ],
+  "record": {
+    "sid": "C-04",
+    "reference": "The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence",
+    "year": "2025",
+    "verification_level": "FULLTEXT_REVIEWED",
+    "identity_check": "abs page title 'The Geometry of Refusal in Large Language Models: Concept Cones and Re' overlaps the C-04 registered title at 1.0; first author Tom Wollschläger",
+    "evidence_type": "causal_intervention",
+    "provenance": "PAPER_CLAIM",
+    "term_type": "MAPPING",
+    "d_class": "mixed",
+    "mapping_note": "paper's 'refusal direction / concept cone' -> our K2 gate (L2 representational mediation), its 'multiple independent directions with distinct mechanisms' -> K3 competition and K4 conjunction; 'orthogonality does not imply independence' -> K10 role re-ordering of the independence criterion (MAPPING: the paper never uses our vocabulary).",
+    "description_scope": "Judged as a claim about which representation-level structures gate emission of a harmful completion; it is not a claim about behaviour rates, so no action-level d_axis is coded.",
+    "motion_source": "L2 - geometry of residual-stream activation directions (gradient-optimised directions and cones), not a behaviour measurement.",
+    "agency_class": "RESPONSIVE",
+    "event_grammar": "[MOTION] harmful vs harmless prompt forms a separable activation structure --> [GATE] any direction inside a multi-dimensional cone (not one vector) can strengthen or weaken refusal --> [ACTION/INACTION] emission is gated along several independent mechanisms at once",
+    "layers": [
+      "L2"
+    ],
+    "contradiction_ref": "C-04",
+    "mechanism": [
+      {
+        "k": "K2",
+        "role": "primary",
+        "d_axis": "mixed",
+        "v_axis": "neutral",
+        "anchor": "G5-03",
+        "rho": "REFUTES",
+        "rho_basis": "prereg §2.1 REFUTES covers 「非单方向」「多维表征」 explicitly; this entry asserts refusal is better described by cones than by one linear direction",
+        "claim": "Refusal is mediated by high-dimensional polyhedral cones in activation space, not by a single linear direction.",
+        "quote": "We establish that refusal behaviors can be better understood via high-dimensional polyhedral cones in activation space rather than a single linear direction, highlighting their complex spatial structures.",
+        "quote_offset": 35216,
+        "quote_sha16": "de8dd9bad8935f83",
+        "quote_chars": 204
+      },
+      {
+        "k": "K3",
+        "role": "primary",
+        "d_axis": "mixed",
+        "v_axis": "neutral",
+        "anchor": "G5-03",
+        "rho": "REFUTES",
+        "rho_basis": "the paper's own framing sentence denying the single-direction reading; several independent directions and cones all mediate refusal",
+        "claim": "Multiple independent directions - and multi-dimensional concept cones - mediate refusal.",
+        "quote": "Contrary to prior work, we uncover multiple independent directions and even multi-dimensional concept cones that mediate refusal.",
+        "quote_offset": 2465,
+        "quote_sha16": "28f2b77cae63ccdf",
+        "quote_chars": 129
+      },
+      {
+        "k": "K4",
+        "role": "auxiliary",
+        "d_axis": "mixed",
+        "v_axis": "neutral",
+        "anchor": "G5-03",
+        "rho": "REFUTES",
+        "rho_basis": "distinct mechanisms behind each independent direction contradicts the necessity-and-sufficiency of one direction (the anchor's own coded claim)",
+        "claim": "Within the space of representationally independent directions, several refusal directions exist and correspond to distinct mechanisms.",
+        "quote": "Additionally, we introduce representational independence and show that within this space of independent directions multiple refusal directions exist and correspond to distinct mechanisms.",
+        "quote_offset": 35421,
+        "quote_sha16": "59062884baf9b456",
+        "quote_chars": 187
+      },
+      {
+        "k": "K10",
+        "role": "auxiliary",
+        "d_axis": "value-only",
+        "v_axis": "neutral",
+        "anchor": "G5-03",
+        "rho": "UNDECIDABLE",
+        "rho_basis": "the quote alone settles nothing about the *number* of refusal directions; it attacks the inference from orthogonality to independence, so under §2.1 it is recorded UNDECIDABLE rather than counted as a direction vote",
+        "claim": "Orthogonality of activation directions does not license a causal-independence conclusion under intervention; an explicit independence notion is needed.",
+        "quote": "Moreover, we show that orthogonality alone does not imply independence under intervention, motivating the notion of representational independence that accounts for both linear and non-linear effects.",
+        "quote_offset": 2595,
+        "quote_sha16": "12e2e706e7b6d34e",
+        "quote_chars": 199
+      }
+    ]
+  },
+  "target_characterization": {
+    "quote": "Prior work suggests that a single refusal direction in the model’s activation space determines whether an LLM refuses a request.",
+    "occurrences_in_text": 1,
+    "quote_offset": 2205,
+    "coded_as_mechanism": false,
+    "why": "it reports the anchor's position rather than asserting a competing one, so no rho is minted for it"
+  },
+  "directional_votes": [
+    "REFUTES",
+    "REFUTES",
+    "REFUTES"
+  ],
+  "label_derivation": "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED",
+  "extraction_note": "the body comes from arXiv's LaTeXML HTML; inline math is dropped by tag stripping, so quotes are chosen from sentences that contain no math and a quote is accepted only when it occurs exactly once",
+  "mechanisms_unlocatable": [],
+  "coding_defects": {
+    "rho_outside_vocabulary": [],
+    "anchor_not_registered": [],
+    "quote_outside_20_400": []
+  },
+  "exit_q3": "COMPETING_CODED",
+  "exit_q3_label_r17": "CONTRADICTED",
+  "stop_rule": "identity or extraction short => the exit table decides; no third channel is tried in this round (prereg §4.2), L01-O4 stays open",
+  "asymmetry": "the competing theory's reading is appended to C-04 and never rewrites an earlier anchor verdict (R6); quotes are located by offset+hash, an offset that misses is an instrument defect, not evidence",
+  "prereg_binding": {
+    "disk": "c143a08b57400c01afc0bee517c7453bf3276443bfd0eaf94ecaa0c180b9fcd9",
+    "git_head": "c143a08b57400c01afc0bee517c7453bf3276443bfd0eaf94ecaa0c180b9fcd9",
+    "two_channel_match": true
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "schema": "m2a.roundL02.reanalysis.v1",
+  "question": "does a claim-layer relation field change the consistency counts that family+sign produced",
+  "preregistration": "literature/L02_PREREGISTRATION.md",
+  "prereg_sha256": "c143a08b57400c01afc0bee517c7453bf3276443bfd0eaf94ecaa0c180b9fcd9",
+  "coding_sha256": "5fde6c1726a9994aaa5fa60d59c7d490a61c1b7245f719729bd7099631cb44c8",
+  "status": "ZERO_TEST_REANALYSIS",
+  "readings_reused": "no re-fetch, no re-coding, no edit of any L-01 artifact (R6)",
+  "relation_vocabulary": [
+    "SUPPORTS",
+    "EXTENDS",
+    "REFUTES",
+    "UNRELATED",
+    "UNDECIDABLE"
+  ],
+  "derived_thresholds": {
+    "neutral_rule": "a row whose mechanism entries are ALL d_axis=neutral is NEUTRAL_UNDECIDABLE and excluded from C_claim (prereg §3 Q2, mechanical on the committed field)",
+    "stopline_absolute": 10,
+    "rows_judged": 14
+  },
+  "totals": {
+    "C_surface": 5,
+    "S_rows": 6,
+    "delta": 3,
+    "C_claim": 7,
+    "X": 1,
+    "U": 0,
+    "Z": 2
+  },
+  "per_anchor": {
+    "G5-03": {
+      "m_registered": 4,
+      "C_surface": 2,
+      "S_rows": [
+        "G5-03-N2",
+        "G5-03-N6"
+      ],
+      "delta": 2,
+      "inflated_rows": [
+        "G5-03-N2",
+        "G5-03-N6"
+      ],
+      "C_claim_all": 0,
+      "claim_supporting_rows": [],
+      "neutral_undecidable_rows": [],
+      "rules_disagree_rows": [],
+      "X": 1,
+      "U": 0,
+      "Z": 0,
+      "rows": {
+        "G5-03-N1": {
+          "rho": "UNRELATED",
+          "basis": "finetuning can produce models behaving in a misaligned way",
+          "verification_level": "FULLTEXT_REVIEWED",
+          "neutral_only": false
+        },
+        "G5-03-N2": {
+          "rho": "UNRELATED",
+          "basis": "we can bypass safety mechanisms reliably by changing the context",
+          "verification_level": "FULLTEXT_REVIEWED",
+          "neutral_only": false
+        },
+        "G5-03-N4": {
+          "rho": "UNRELATED",
+          "basis": "The system prefers abstention over confident but unfounded",
+          "verification_level": "FULLTEXT_REVIEWED",
+          "neutral_only": false
+        },
+        "G5-03-N6": {
+          "rho": "REFUTES",
+          "basis": "Contrary to prior assumptions that refusal mechanisms are linear",
+          "verification_level": "FULLTEXT_REVIEWED",
+          "neutral_only": false
+        }
+      }
+    },
+    "R13": {
+      "m_registered": 6,
+      "C_surface": 2,
+      "S_rows": [
+        "R13-N15",
+        "R13-N8"
+      ],
+      "delta": 0,
+      "inflated_rows": [],
+      "C_claim_all": 5,
+      "claim_supporting_rows": [
+        "R13-N15",
+        "R13-N16",
+        "R13-N17",
+        "R13-N2",
+        "R13-N8"
+      ],
+      "neutral_undecidable_rows": [],
+      "rules_disagree_rows": [],
+      "X": 0,
+      "U": 0,
+      "Z": 0,
+      "rows": {
+        "R13-N15": {
+          "rho": "SUPPORTS",
+          "basis": "overcomes the credit assignment problem of delayed post-ingestive",
+          "verification_level": "ABSTRACT_VERIFIED",
+          "neutral_only": false
+        },
+        "R13-N16": {
+          "rho": "EXTENDS",
+          "basis": "Co-administration of the GIPR agonist",
+          "verification_level": "FULLTEXT_REVIEWED",
+          "neutral_only": false
+        },
+        "R13-N17": {
+          "rho": "SUPPORTS",
+          "basis": "amygdalar activity heightens when novel foods are paired with",
+          "verification_level": "FULLTEXT_REVIEWED",
+          "neutral_only": false
+        },
+        "R13-N2": {
+          "rho": "SUPPORTS",
+          "basis": "learned avoidance of the novel flavors despite the delayed mala",
+          "verification_level": "FULLTEXT_REVIEWED",
+          "neutral_only": false
+        },
+        "R13-N3": {
+          "rho": "UNRELATED",
+          "basis": "rather than waiting for an imbalance to occur, the brain predicts",
+          "verification_level": "FULLTEXT_REVIEWED",
+          "neutral_only": false
+        },
+        "R13-N8": {
+          "rho": "SUPPORTS",
+          "basis": "mice tend to associate novel, but not familiar, flavors with delayed",
+          "verification_level": "FULLTEXT_REVIEWED",
+          "neutral_only": false
+        }
+      }
+    },
+    "R14": {
+      "m_registered": 4,
+      "C_surface": 1,
+      "S_rows": [
+        "R14-N4",
+        "R14-N8"
+      ],
+      "delta": 1,
+      "inflated_rows": [
+        "R14-N4"
+      ],
+      "C_claim_all": 2,
+      "claim_supporting_rows": [
+        "R14-N1",
+        "R14-N7"
+      ],
+      "neutral_undecidable_rows": [
+        "R14-N4",
+        "R14-N8"
+      ],
+      "rules_disagree_rows": [
+        "R14-N8"
+      ],
+      "X": 0,
+      "U": 0,
+      "Z": 2,
+      "rows": {
+        "R14-N1": {
+          "rho": "EXTENDS",
+          "basis": "Conditioned responding was attenuated for the cue-reward contingency",
+          "verification_level": "FULLTEXT_REVIEWED",
+          "neutral_only": false
+        },
+        "R14-N4": {
+          "rho": "UNRELATED",
+          "basis": "common analysis strategies can reduce the detection of effects",
+          "verification_level": "FULLTEXT_REVIEWED",
+          "neutral_only": true
+        },
+        "R14-N7": {
+          "rho": "SUPPORTS",
+          "basis": "The learning rate—operationally defined as the reciprocal",
+          "verification_level": "FULLTEXT_REVIEWED",
+          "neutral_only": false
+        },
+        "R14-N8": {
+          "rho": "SUPPORTS",
+          "basis": "mesolimbic dopamine ramps are only observed when the inter-trial",
+          "verification_level": "FULLTEXT_REVIEWED",
+          "neutral_only": true
+        }
+      }
+    }
+  },
+  "exit_q1": "CLAIM_LAYER_INFLATION",
+  "exit_q1_label_r17": "CONTRADICTED",
+  "exit_q2": "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+  "exit_q2_label_r17": "CONTRADICTED",
+  "asymmetry": "delta counts only rows L-01 itself put in S and which the claim layer does not support, so a row it never counted cannot cancel an inflated one; C_claim_all is disclosed separately and never enters any exit",
+  "rows_not_judged": [
+    "G5-03",
+    "R13",
+    "R14"
+  ],
+  "prereg_binding": {
+    "disk": "c143a08b57400c01afc0bee517c7453bf3276443bfd0eaf94ecaa0c180b9fcd9",
+    "git_head": "c143a08b57400c01afc0bee517c7453bf3276443bfd0eaf94ecaa0c180b9fcd9",
+    "two_channel_match": true
+  }
+}
