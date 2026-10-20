@@ -57,7 +57,16 @@ NAME_RE = re.compile(r"[A-Za-z0-9_]+\.py")
 DOC_RE = re.compile(r"^#{2,3} (\d+) ", re.M)
 # a derived artifact must not attest the scores it reports: reading its own output back would launder any
 # drift recorded once into "attested in the repository" forever, which is the R8 self-verification hole.
+# exclusion is by namespace, not by hand-list: anything this repository *derives* (governance artifacts
+# versioned *_v<N>.json/.md, and the report/ summaries) is a transcription and must not serve as a source
+# for the numbers it tabulates. Round readings (`*_RESULTS.md`, `phase*_results.json`, `L01_coding.json`)
+# are written by runners, not derivers, and stay admissible.
+DERIVED_NS = re.compile(r"(_v\d+\.(json|md)$)")
 SELF_OUT = {JSON_OUT.name, MD_OUT.name}
+
+
+def is_derived(rel: str) -> bool:
+    return rel.startswith("report/") or rel.startswith("governance/") and bool(DERIVED_NS.search(rel))
 # The loose tier is a sentence-level guess, so it is only honoured where a document quotes a run's own
 # printed line: the final report and the per-round result documents. Not the negative log or the ledger -
 # writing a drift into the log would otherwise create the support that hides it (X-85).
@@ -67,6 +76,14 @@ LOOSE_SRC = re.compile(r"(^M2A_FINAL_REPORT\.md$|_RESULTS\.md$)")
 # it), but every score whose ONLY support is a transcription is counted and listed, because the same channel
 # can upgrade a number from "unsupported" to "supported" - which is exactly what the X-85 row did to 59/59.
 REGISTRATION = {"governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md", "governance/OBLIGATION_REGISTRY.md"}
+
+# An instrument this repository deliberately refuses to run has, by construction, no repo-printed score. §48
+# keeps its own validator out of population A (SELF_SUITE, R8: no instrument certifies itself), so a wiki page
+# quoting that validator states something the repository is not allowed to print. The hard verdict presumes
+# attestability, so such claims are disclosed in their own category; every entry must name the excluding layer
+# and the rule, and the gate's P21 proves the registry cannot swallow a claim about a measured instrument.
+UNMEASURED = {"suite_score_registry_gate.py":
+              "kept out of the run population by governance/build_suite_score_registry.py (SELF_SUITE, R8)"}
 
 # Published pages can only be appended to, so a number that turns out to be unsupported stays on the page
 # as quoted text. An erratum row declares exactly that: this value was published, it is retracted, and the
@@ -125,7 +142,8 @@ def repo_record() -> tuple:
     support set; the subset printed inside the report; and the newest report section naming each instrument."""
     attest, attest_loose, latest, rep_values = {}, {}, {}, {}
     for p in sorted(M.rglob("*.md")) + sorted(M.rglob("*.json")):
-        if p.name in SELF_OUT:
+        rel0 = str(p.relative_to(M))
+        if p.name in SELF_OUT or is_derived(rel0):
             continue
         body = p.read_text(encoding="utf-8", errors="replace")
         n = norm(body)
@@ -192,7 +210,7 @@ def main() -> int:
         raw = cachef.read_text(encoding="utf-8")
         page_claims, page_odd = claims(norm(raw))
         err = ERRATA.get(tok, {})
-        unattested, loosely, erratum = {}, {}, {}
+        unattested, loosely, erratum, unmeasurable = {}, {}, {}, {}
         for f, v in page_claims.items():
             strict = set(attest.get(f, {}))
             supported = set(attest_loose.get(f, ()))
@@ -204,7 +222,9 @@ def main() -> int:
             rest, half = v - strict - covered - supported, (v & supported) - strict
             if half:
                 loosely[f] = sorted(half)
-            if rest:
+            if rest and f in UNMEASURED:
+                unmeasurable[f] = sorted(rest)
+            elif rest:
                 unattested[f] = sorted(rest)
         # superseded: the page's value for f is not what the newest citing section used
         superseded = {}
@@ -218,6 +238,7 @@ def main() -> int:
         not_on_page = sorted(f for f in sec_claims if f not in page_claims)
         multi = {f: sorted(v) for f, v in page_claims.items() if len(v) > 1}
         verdict = ("score_unattested_in_repo" if unattested else
+                   "self_referential_claim" if unmeasurable else
                    "compressed" if not_on_page else
                    "page_superseded" if superseded else "aligned")
         drow = {"verdict": "not_a_governance_page", "disagree": {}}
@@ -239,7 +260,8 @@ def main() -> int:
             else:
                 drow = {"verdict": "draft_missing", "disagree": {}}
         pages.append({"node_token": tok, "title": title, "sections": sorted(secs), "verdict": verdict,
-                      "unattested": unattested, "superseded": superseded, "multi_value": multi,
+                      "unattested": unattested, "unmeasurable": unmeasurable,
+                      "superseded": superseded, "multi_value": multi,
                       "loosely_attested": loosely, "erratum": erratum,
                       "not_on_page": not_on_page,
                       "section_claims": {f: sorted(v) for f, v in sorted(sec_claims.items())},
@@ -262,6 +284,8 @@ def main() -> int:
          "sections_covered": sum(len(p["sections"]) for p in pages),
          "claims_rows_in_sync_map": len(sync["claims"]),
          "score_unattested_in_repo": len([p for p in pages if p["verdict"] == "score_unattested_in_repo"]),
+         "pages_with_self_referential_claims": len([p for p in pages if p["unmeasurable"]]),
+         "self_referential_values": sum(len(v) for p in pages for v in p["unmeasurable"].values()),
          "page_superseded": len([p for p in pages if p["verdict"] == "page_superseded"]),
          "pairs_aligned": len([p for p in pages if p["verdict"] == "aligned"]),
          "pairs_compressed": len([p for p in pages if p["verdict"] == "compressed"]),
@@ -296,7 +320,7 @@ def main() -> int:
                 if files and set(files) <= REGISTRATION]
     data = {"schema": "m2a.section_page_reconciliation.v1", "counts": c,
             "attested_only_in_registration": reg_only,
-            "repo_attestation": {f: {v: files[:2] for v, files in sorted(attest[f].items())}
+            "repo_attestation": {f: {v: files[:2] for v, files in sorted(attest.get(f, {}).items())}
                                  for f in sorted(page_files | sec_files)},
             "repo_attestation_loose": {f: v for f, v in sorted(attest_loose.items())},
             "errata": {t: {f: v for f, v in sorted(r.items())} for t, r in sorted(ERRATA.items())},
@@ -325,6 +349,8 @@ def main() -> int:
              "| 对账的页面 | %d |" % c["pages_reconciled"],
              "| 覆盖的步骤节 | %d（同步表登记 %d） |" % (c["sections_covered"], c["claims_rows_in_sync_map"]),
              "| **页面上的分数在仓库里查无出处** | %d |" % c["score_unattested_in_repo"],
+             "| 页面点名的仪器被本仓库有意排除在测量之外（披露，不判红） | %d 页 / %d 个值 |"
+             % (c["pages_with_self_referential_claims"], c["self_referential_values"]),
              "| 仅由宽松口径支持的页面分数 | %d |" % c["values_loosely_attested_only"],
              "| 只由登记处转写支持的分数（洗白通道，逐条列出） | %d |"
              % c["values_attested_only_in_registration"],
@@ -372,6 +398,10 @@ def main() -> int:
               "工具之列（钉住的是数字复核器、发布器与台账），这是已知缺口。出处扫描**排除本工件自己写出的",
               "两个文件**（`section_page_reconciliation_v1.json`、`SECTION_PAGE_RECONCILIATION_v1.md`）：",
               "派生工件若给自己背书，一次漂移被记进工件后就永远“在仓库里印过”，判据从此打不响（R8）。",
+              "排除按**命名空间**而不是手写清单：`governance/` 下所有 `*_v<N>.json/.md` 与 `report/` 下的摘要",
+              "都算转写件不作出处；轮次读数（`*_RESULTS.md`、`phase*_results.json`、`L01_coding.json`）由 runner",
+              "写出，仍是合法出处。这样新增一台派生工件时不必再改排除表（§48 一进来就会被这张表洗白，正是这条",
+              "规则要挡的形状）。",
               "它也不排除台账与负面日志那类转写件——转写错误若进了它们，仍会被当成出处，这是有意保留的宽松。", ""]
     MD_OUT.write_text("\n".join(lines), encoding="utf-8")
     print("wrote %s | pages %d sections %d unattested %d loose %d errata %d/%d superseded %d "

@@ -12,9 +12,10 @@
 
 | 列 | 数 |
 | --- | --- |
-| 对账的页面 | 13 |
-| 覆盖的步骤节 | 17（同步表登记 17） |
+| 对账的页面 | 14 |
+| 覆盖的步骤节 | 18（同步表登记 18） |
 | **页面上的分数在仓库里查无出处** | 0 |
+| 页面点名的仪器被本仓库有意排除在测量之外（披露，不判红） | 1 页 / 1 个值 |
 | 仅由宽松口径支持的页面分数 | 0 |
 | 只由登记处转写支持的分数（洗白通道，逐条列出） | 1 |
 | 已登记的订正（页面上引用为错误的数字） | 1（生效 1） |
@@ -24,11 +25,11 @@
 | 完全一致 | 12 |
 | 无抓取可比 | 0 |
 | 草稿 ↔ 页面不一致（草稿的说法页面上没有） | 0 |
-| 页面在发布之后又追加了内容（草稿是子集） | 1 |
-| 仓库里被印过的仪器 | 35 台 |
-| 页面点名 / 节点名 | 12 台 / 11 台 |
-| 页面分数条数 / 节分数条数 | 15 / 13 |
-| 只在页面出现（节里没点名） | l01_gate.py |
+| 页面在发布之后又追加了内容（草稿是子集） | 2 |
+| 仓库里被印过的仪器 | 20 台 |
+| 页面点名 / 节点名 | 13 台 / 11 台 |
+| 页面分数条数 / 节分数条数 | 16 / 13 |
+| 只在页面出现（节里没点名） | l01_gate.py, suite_score_registry_gate.py |
 | 只在节里出现（页面压缩掉） | - |
 
 ## 逐页
@@ -48,12 +49,13 @@
 | 45 | M2A 治理｜未测量仪器的治理层检查 v1： | aligned | 3 | - | - | - | - | aligned |
 | 46 | M2A 治理｜wiki 同步表 v1：让「每 | aligned | 1 | - | - | - | - | aligned |
 | 47 | M2A 治理｜节↔页分数对账 v1：页面说的 | aligned | 2 | - | - | - | - | aligned |
+| 48 | M2A 治理｜套件分数引用对账 v1：仓库自 | self_referential_claim | 1 | - | - | - | - | page_grew_after_publication |
 
 ## 每条页面分数的仓库出处（`attest`）
 
 | 仪器 | 页面上的分数 | 仓库里印过它的文件 | 节里最新引用它的节号 |
 | --- | --- | --- | --- |
-| `l01_gate.py` | 6/6/7/7 | `literature/ROUND_L01_RESULTS.md`, `report/RESULT_SCORE_RECONCILIATION_v1.md` | §- |
+| `l01_gate.py` | 6/6/7/7 | `literature/ROUND_L01_RESULTS.md` | §- |
 | `status_label_table_gate.py` | 6/6 | `M2A_FINAL_REPORT.md`, `governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md` | §37 |
 | `obligation_registry_gate.py` | 7/7 | `governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md` | §45 |
 | `ao_preflight_gate.py` | 8/8 | `M2A_FINAL_REPORT.md` | §38 |
@@ -68,6 +70,7 @@
 | `wiki_sync_map_gate.py` | 16/16 | `M2A_FINAL_REPORT.md`, `governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md` | §46 |
 | `gate_discrimination_gate.py` | 59/59 | `M2A_FINAL_REPORT.md`, `governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md` | §47 |
 | `section_page_reconciliation_gate.py` | 22/22 | `M2A_FINAL_REPORT.md`, `governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md` | §47 |
+| `suite_score_registry_gate.py` | 20/20 | -无- | §- |
 
 **能看见与看不见**：只比 `n/n` 头条，且只有一条硬判据。它不比句子、判据数值、容差阶梯与
 结论措辞；陈年分数与摘要压缩都如实列出而不判红（本项目规矩是历史陈述不回写，更正出现在新节）；
@@ -75,4 +78,8 @@
 工具之列（钉住的是数字复核器、发布器与台账），这是已知缺口。出处扫描**排除本工件自己写出的
 两个文件**（`section_page_reconciliation_v1.json`、`SECTION_PAGE_RECONCILIATION_v1.md`）：
 派生工件若给自己背书，一次漂移被记进工件后就永远“在仓库里印过”，判据从此打不响（R8）。
+排除按**命名空间**而不是手写清单：`governance/` 下所有 `*_v<N>.json/.md` 与 `report/` 下的摘要
+都算转写件不作出处；轮次读数（`*_RESULTS.md`、`phase*_results.json`、`L01_coding.json`）由 runner
+写出，仍是合法出处。这样新增一台派生工件时不必再改排除表（§48 一进来就会被这张表洗白，正是这条
+规则要挡的形状）。
 它也不排除台账与负面日志那类转写件——转写错误若进了它们，仍会被当成出处，这是有意保留的宽松。

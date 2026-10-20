@@ -66,13 +66,21 @@ def main() -> int:
         return 2
     before_json, before_md = MAP.read_bytes(), MD.read_bytes()
     r1 = subprocess.run([sys.executable, str(GEN)], cwd=M, capture_output=True, text=True)
+    fresh_json, fresh_md = MAP.read_bytes(), MD.read_bytes()
     report("S1 generator reproduces the committed JSON",
-           r1.returncode == 0 and MAP.read_bytes() == before_json,
+           r1.returncode == 0 and fresh_json == before_json,
            (r1.stdout.strip().splitlines() or [""])[0][:78])
-    report("S2 generator reproduces the committed Markdown", MD.read_bytes() == before_md)
+    report("S2 generator reproduces the committed Markdown", fresh_md == before_md)
     r2 = subprocess.run([sys.executable, str(GEN)], cwd=M, capture_output=True, text=True)
-    report("S3 derivation idempotent (second run, byte-identical)",
-           MAP.read_bytes() == before_json and MD.read_bytes() == before_md and r2.returncode == 0)
+    # the generator writes in place, so a mismatch it just printed would otherwise be adopted as its own
+    # repair: put the committed bytes back and require them still there at exit (X-91).
+    if fresh_json != before_json:
+        MAP.write_bytes(before_json)
+    if fresh_md != before_md:
+        MD.write_bytes(before_md)
+    report("S3 derivation idempotent, and a non-reproducing run leaves the committed bytes in place",
+           MAP.read_bytes() == before_json and MD.read_bytes() == before_md
+           and fresh_json == before_json and r2.returncode == 0)
 
     d = json.loads(MAP.read_text(encoding="utf-8"))
     rep = (M / "M2A_FINAL_REPORT.md").read_text(encoding="utf-8")

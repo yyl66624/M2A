@@ -1,0 +1,1106 @@
+{
+  "counts": {
+    "claim_documents": 15,
+    "corpus_documents": 73,
+    "hard_findings": 0,
+    "quote_rows": 75,
+    "quotes_found": 87,
+    "self_reference_quotes": 1,
+    "suites_live_green": 36,
+    "suites_run": 36,
+    "verdict_matches_live": 63,
+    "verdict_paired_correction": 4,
+    "verdict_possible_history": 7,
+    "verdict_self_reference": 1
+  },
+  "generator": {
+    "file": "governance/build_suite_score_registry.py",
+    "sha256": "657c00885b8c89ce56a24b482277a439765fdbdc44b92915b0880ac967668f67"
+  },
+  "hard_findings": [],
+  "live": {
+    "ao_preflight_gate.py": {
+      "file": "experiments/ao_preflight_gate.py",
+      "live": [
+        8,
+        8
+      ],
+      "sha256": "f7cb76ca7e80c0d7094d642581c2a27556c6c8317d21f14e63d2f63f5f2efc28",
+      "why": ""
+    },
+    "check_phase1prime_gate3.py": {
+      "file": "literature/check_phase1prime_gate3.py",
+      "live": [
+        21,
+        21
+      ],
+      "sha256": "20df8e00df4ece2313e201b0c1eebab98206cd2767d99eff049e345754692257",
+      "why": ""
+    },
+    "gate_coverage_map_gate.py": {
+      "file": "governance/gate_coverage_map_gate.py",
+      "live": [
+        18,
+        18
+      ],
+      "sha256": "e4e265a0a8751085a82dcae05b937dcc8782b3bd381a8efb58672f16b4cc0256",
+      "why": ""
+    },
+    "gate_discrimination_gate.py": {
+      "file": "governance/gate_discrimination_gate.py",
+      "live": [
+        59,
+        59
+      ],
+      "sha256": "b487c70a7338d69f9899764c68c7a90e4f57fa20dfff4ac48592a5b5e9fa19ae",
+      "why": ""
+    },
+    "l01_gate.py": {
+      "file": "literature/l01_gate.py",
+      "live": [
+        7,
+        7
+      ],
+      "sha256": "4fcbc82ef9a2c0f37e575292cc40b363ecb77b4286dfe32b2a6e56a171218e23",
+      "why": ""
+    },
+    "obligation_registry_gate.py": {
+      "file": "governance/obligation_registry_gate.py",
+      "live": [
+        8,
+        8
+      ],
+      "sha256": "8cf107bb74105202ecfa8d0b88a6b4d4a672db5d3619c2e7b1dab5205efb7385",
+      "why": ""
+    },
+    "p10_gate.py": {
+      "file": "experiments/p10_gate.py",
+      "live": [
+        6,
+        6
+      ],
+      "sha256": "433f2913cc7a7745d9475fee2f50e75e5a6a1ade73592ff39231a0b16eea1d7f",
+      "why": ""
+    },
+    "p11_gate.py": {
+      "file": "experiments/p11_gate.py",
+      "live": [
+        6,
+        6
+      ],
+      "sha256": "ec5ca1ca28be7e4c15554f456aef7ca64790bb43de8fcb9a49f43c7cdba618d9",
+      "why": ""
+    },
+    "p12_gate.py": {
+      "file": "experiments/p12_gate.py",
+      "live": [
+        4,
+        4
+      ],
+      "sha256": "5a1fd094d95c0100be3d69d5780c3dcfa7e93e3b7960caf0c1d145e4228b46d5",
+      "why": ""
+    },
+    "p13_gate.py": {
+      "file": "experiments/p13_gate.py",
+      "live": [
+        6,
+        6
+      ],
+      "sha256": "3ffad7486680a2f79d038f3a06323a4c7f30c6033d72908f3c689ba3a38cde1f",
+      "why": ""
+    },
+    "p14_gate.py": {
+      "file": "experiments/p14_gate.py",
+      "live": [
+        7,
+        7
+      ],
+      "sha256": "c0bafd7c751b726e91b9053da06462134c5a51a259e6f1a0b735e05d40bd2964",
+      "why": ""
+    },
+    "p15_gate.py": {
+      "file": "experiments/p15_gate.py",
+      "live": [
+        7,
+        7
+      ],
+      "sha256": "610b5e4ed1ac87f9df55583adb411a8496af3793e9321e03258f41cb105e791b",
+      "why": ""
+    },
+    "p16_gate.py": {
+      "file": "experiments/p16_gate.py",
+      "live": [
+        7,
+        7
+      ],
+      "sha256": "2e1b72ca26dbee249723d58b84a88c224e5d461ccbfa0a3ce862a3a200314516",
+      "why": ""
+    },
+    "p17_gate.py": {
+      "file": "experiments/p17_gate.py",
+      "live": [
+        7,
+        7
+      ],
+      "sha256": "686ea937fdc29bdef32b3303eed41875d89523b3db8b81155efb48da4d638faf",
+      "why": ""
+    },
+    "p18_gate.py": {
+      "file": "experiments/p18_gate.py",
+      "live": [
+        7,
+        7
+      ],
+      "sha256": "fd3a54dbd6c52e624ad5998e0a982d62cab7bb4e1102e536379b0c82a25c85a6",
+      "why": ""
+    },
+    "p19_gate.py": {
+      "file": "experiments/p19_gate.py",
+      "live": [
+        6,
+        6
+      ],
+      "sha256": "dcdb4e56cd659e24b2142b66bb65de664d03fa32d506dc128a8d911076df72ab",
+      "why": ""
+    },
+    "p20_gate.py": {
+      "file": "experiments/p20_gate.py",
+      "live": [
+        7,
+        7
+      ],
+      "sha256": "def465f2d5bf375bed33a0bd62983e0c21dc160e89e321477269b27afe7a497c",
+      "why": ""
+    },
+    "p21_gate.py": {
+      "file": "experiments/p21_gate.py",
+      "live": [
+        8,
+        8
+      ],
+      "sha256": "ea8ec46bb2e1024bddc9658533ea2ec33659195b7c2ecef17f10456a131dbdfe",
+      "why": ""
+    },
+    "p22_gate.py": {
+      "file": "experiments/p22_gate.py",
+      "live": [
+        7,
+        7
+      ],
+      "sha256": "7ccef873b7ea6609203c444156142f2d4db5f31ad36bff221c0671703dc40671",
+      "why": ""
+    },
+    "p3_gate.py": {
+      "file": "experiments/p3_gate.py",
+      "live": [
+        7,
+        7
+      ],
+      "sha256": "0dea02e14745c57f000373858b5de46f43eb74a88593347f602c6b0a60e0577d",
+      "why": ""
+    },
+    "p4_gate.py": {
+      "file": "experiments/p4_gate.py",
+      "live": [
+        5,
+        5
+      ],
+      "sha256": "a37dd2e0a5b02fc5405a93dcfd81f355551c9a3d5fcf106a6778420a15d63d92",
+      "why": ""
+    },
+    "p5_gate.py": {
+      "file": "experiments/p5_gate.py",
+      "live": [
+        8,
+        8
+      ],
+      "sha256": "83cfc522d3a678af79b0e3832cce3730cfc2218d206167e69f6877ef3aff5822",
+      "why": ""
+    },
+    "p5b_gate.py": {
+      "file": "experiments/p5b_gate.py",
+      "live": [
+        6,
+        6
+      ],
+      "sha256": "2ad486b3a5e217df48742e476b2d37938fd008fca43a5e2014cb60ae52414a25",
+      "why": ""
+    },
+    "p5c_gate.py": {
+      "file": "experiments/p5c_gate.py",
+      "live": [
+        7,
+        7
+      ],
+      "sha256": "006b0d90456c4776c25a7c36b311057a97f39748ef2921382785f07c864dd97b",
+      "why": ""
+    },
+    "p5d_gate.py": {
+      "file": "experiments/p5d_gate.py",
+      "live": [
+        7,
+        7
+      ],
+      "sha256": "5c0b3ed7015b8ceba30247f0fd5b8f4522ce2961b5d5be35f216ac8ec3668bd3",
+      "why": ""
+    },
+    "p6_gate.py": {
+      "file": "experiments/p6_gate.py",
+      "live": [
+        7,
+        7
+      ],
+      "sha256": "7b6eb4ec5b44af24934d8e3a01eacc33f2b40d65aee0dbe2e94f1a8912e0a5ef",
+      "why": ""
+    },
+    "p7_gate.py": {
+      "file": "experiments/p7_gate.py",
+      "live": [
+        9,
+        9
+      ],
+      "sha256": "433e9f78a5bb7bbec30396896a508d994f98bfd958f6705eb18050047c92f867",
+      "why": ""
+    },
+    "p8_gate.py": {
+      "file": "experiments/p8_gate.py",
+      "live": [
+        6,
+        6
+      ],
+      "sha256": "f8d9a9f53c2d329044b3d8cdc8380d55c68a7740d3ec0376a04f8977359d003a",
+      "why": ""
+    },
+    "p9_gate.py": {
+      "file": "experiments/p9_gate.py",
+      "live": [
+        8,
+        8
+      ],
+      "sha256": "55c0bbc4ef2541bf6feac853a33a72312e224de6e9bfddac364c857bcd2ed796",
+      "why": ""
+    },
+    "phase2_gate.py": {
+      "file": "experiments/phase2_gate.py",
+      "live": [
+        7,
+        7
+      ],
+      "sha256": "57554ebdbfd4fd5392579d88d2d0235f23df9513976cfb333c879f64d7638dd9",
+      "why": ""
+    },
+    "result_score_map_gate.py": {
+      "file": "governance/result_score_map_gate.py",
+      "live": [
+        12,
+        12
+      ],
+      "sha256": "03f55a6f59b4a542c7252a55b3ca3427f58b42365866839ad2f4f2537c97cde2",
+      "why": ""
+    },
+    "runner_enforcement_map_gate.py": {
+      "file": "governance/runner_enforcement_map_gate.py",
+      "live": [
+        14,
+        14
+      ],
+      "sha256": "ea45cda8f0721da491b75dc908dc9562b41e9dae700ad99de7a62d1152e0432d",
+      "why": ""
+    },
+    "section_page_reconciliation_gate.py": {
+      "file": "governance/section_page_reconciliation_gate.py",
+      "live": [
+        23,
+        23
+      ],
+      "sha256": "10404b959e5755b8131abc41674a4b0a33d6092b17f2ffc3b2e6662b26844274",
+      "why": ""
+    },
+    "status_label_table_gate.py": {
+      "file": "governance/status_label_table_gate.py",
+      "live": [
+        6,
+        6
+      ],
+      "sha256": "e5c82a14008604b37bdfe2b336a0179dbf1ffa8a0e3555f7dc6fbd00838b5a6d",
+      "why": ""
+    },
+    "unmeasured_instruments_gate.py": {
+      "file": "governance/unmeasured_instruments_gate.py",
+      "live": [
+        25,
+        25
+      ],
+      "sha256": "e12431e55f5d437903147a7256b85cdd1965c9fe7ca92da632e2f8afa77772fc",
+      "why": ""
+    },
+    "wiki_sync_map_gate.py": {
+      "file": "governance/wiki_sync_map_gate.py",
+      "live": [
+        16,
+        16
+      ],
+      "sha256": "96c4a531c913bd81f24a81515a9f6de6de02d4a23efed5642b86d354b18660d5",
+      "why": ""
+    }
+  },
+  "rows": [
+    {
+      "context": "仪器 experiments/ao_opp.py；门控 experiments/ao_preflight_gate.py（8/8，已接入收尾审计）；",
+      "doc_kind": "append_only",
+      "document": "M2A_FINAL_REPORT.md",
+      "instrument": "ao_preflight_gate.py",
+      "line": 1371,
+      "live": "8/8",
+      "quoted": "8/8",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "(e) 一条本步顺手查出的陈旧：义务台账的 O-17 理由里写着 gate_coverage_map_gate.py 17/17，而那台校验器在 §42 加规则后已经打印 18/18——",
+      "doc_kind": "append_only",
+      "document": "M2A_FINAL_REPORT.md",
+      "instrument": "gate_coverage_map_gate.py",
+      "line": 1721,
+      "live": "18/18",
+      "quoted": "17/17",
+      "verdict": "paired_correction"
+    },
+    {
+      "context": "python3 governance/gate_coverage_map_gate.py # 18/18 checks passed",
+      "doc_kind": "append_only",
+      "document": "M2A_FINAL_REPORT.md",
+      "instrument": "gate_coverage_map_gate.py",
+      "line": 1614,
+      "live": "18/18",
+      "quoted": "18/18",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "> 套件：governance/gate_discrimination_gate.py（5/5，已接入收尾审计；只在临时副本上做变异，",
+      "doc_kind": "append_only",
+      "document": "M2A_FINAL_REPORT.md",
+      "instrument": "gate_discrimination_gate.py",
+      "line": 1398,
+      "live": "59/59",
+      "quoted": "5/5",
+      "verdict": "possible_history"
+    },
+    {
+      "context": "之所以需要它：仓库真实的记录形如 python3 governance/gate_discrimination_gate.py # 59/59 checks passed，",
+      "doc_kind": "append_only",
+      "document": "M2A_FINAL_REPORT.md",
+      "instrument": "gate_discrimination_gate.py",
+      "line": 1789,
+      "live": "59/59",
+      "quoted": "59/59",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "python3 governance/obligation_registry_gate.py # 8/8，G8 是新加的那条",
+      "doc_kind": "append_only",
+      "document": "M2A_FINAL_REPORT.md",
+      "instrument": "obligation_registry_gate.py",
+      "line": 1730,
+      "live": "8/8",
+      "quoted": "8/8",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "的 n/n checks passed，各轮结果文档开头还写着第三个数（门控 \\p10_gate.py\\ 6/6）。这三处日常被当成同一个量引用，但它们是三个不同的东西：文档里的分数是当时的读数，实跑",
+      "doc_kind": "append_only",
+      "document": "M2A_FINAL_REPORT.md",
+      "instrument": "p10_gate.py",
+      "line": 1663,
+      "live": "6/6",
+      "quoted": "6/6",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "python3 governance/result_score_map_gate.py # 12/12",
+      "doc_kind": "append_only",
+      "document": "M2A_FINAL_REPORT.md",
+      "instrument": "result_score_map_gate.py",
+      "line": 1685,
+      "live": "12/12",
+      "quoted": "12/12",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "校验器 14 条（governance/runner_enforcement_map_gate.py，14/14）用行文本这条独立通路复核：28 个写入者的「执",
+      "doc_kind": "append_only",
+      "document": "M2A_FINAL_REPORT.md",
+      "instrument": "runner_enforcement_map_gate.py",
+      "line": 1645,
+      "live": "14/14",
+      "quoted": "14/14",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "校验器 20 条（governance/section_page_reconciliation_gate.py，22/22）的要点不在条数，而在每条",
+      "doc_kind": "append_only",
+      "document": "M2A_FINAL_REPORT.md",
+      "instrument": "section_page_reconciliation_gate.py",
+      "line": 1812,
+      "live": "23/23",
+      "quoted": "22/22",
+      "verdict": "possible_history"
+    },
+    {
+      "context": "python3 governance/status_label_table_gate.py # 6/6",
+      "doc_kind": "append_only",
+      "document": "M2A_FINAL_REPORT.md",
+      "instrument": "status_label_table_gate.py",
+      "line": 1341,
+      "live": "6/6",
+      "quoted": "6/6",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "python3 governance/unmeasured_instruments_gate.py # 25/25，约 19 s（U16 的 10 次训练占一",
+      "doc_kind": "append_only",
+      "document": "M2A_FINAL_REPORT.md",
+      "instrument": "unmeasured_instruments_gate.py",
+      "line": 1728,
+      "live": "25/25",
+      "quoted": "25/25",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "校验器 16 条（governance/wiki_sync_map_gate.py，16/16）用第二条通路复核：生成器两次跑出同一字节（S1–S3）；人口由切",
+      "doc_kind": "append_only",
+      "document": "M2A_FINAL_REPORT.md",
+      "instrument": "wiki_sync_map_gate.py",
+      "line": 1749,
+      "live": "16/16",
+      "quoted": "16/16",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "次兑现）。 (e) 本步顺手查出别处的一处陈旧：义务台账 O-17 的理由写着 gate_coverage_map_gate.py 17/17，而那台校验器在 §42 加规则后打印 18/18——一份",
+      "doc_kind": "append_only",
+      "document": "NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
+      "instrument": "gate_coverage_map_gate.py",
+      "line": 204,
+      "live": "18/18",
+      "quoted": "17/17",
+      "verdict": "paired_correction"
+    },
+    {
+      "context": "te_coverage_map_v1.json）与校验器 governance/gate_coverage_map_gate.py（18/18，全部改走 tokenize 与行文本这条独立通路，含三条",
+      "doc_kind": "append_only",
+      "document": "NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
+      "instrument": "gate_coverage_map_gate.py",
+      "line": 201,
+      "live": "18/18",
+      "quoted": "18/18",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "9 的 G3 在变异下没有失败，拒绝来自 G4 | 新建 governance/gate_discrimination_gate.py（5/5）：给 p19/p20/p21/p22 的机制模块注入 1",
+      "doc_kind": "append_only",
+      "document": "NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
+      "instrument": "gate_discrimination_gate.py",
+      "line": 197,
+      "live": "59/59",
+      "quoted": "5/5",
+      "verdict": "possible_history"
+    },
+    {
+      "context": "率不足造成假阳性——严格三字符窗口读不到 python3 governance/gate_discrimination_gate.py # 59/59 checks passed 这一行，于是把仓库确",
+      "doc_kind": "append_only",
+      "document": "NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
+      "instrument": "gate_discrimination_gate.py",
+      "line": 206,
+      "live": "59/59",
+      "quoted": "59/59",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "」：缺登记原因原先打印 （缺登记原因，须补） 占位串，现改为构建失败；新增门控 obligation_registry_gate.py 7/7（G4 专查台账是否过期，即 X-68「产物存在≠检查已跑",
+      "doc_kind": "append_only",
+      "document": "NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
+      "instrument": "obligation_registry_gate.py",
+      "line": 190,
+      "live": "8/8",
+      "quoted": "7/7",
+      "verdict": "possible_history"
+    },
+    {
+      "context": "_reconciliation_v1.json）与校验器 governance/result_score_map_gate.py（12/12：offline 字节复现、三台门控真再跑并与记录列比对、逐",
+      "doc_kind": "append_only",
+      "document": "NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
+      "instrument": "result_score_map_gate.py",
+      "line": 203,
+      "live": "12/12",
+      "quoted": "12/12",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "enforcement_map_v1.json）与校验器 governance/runner_enforcement_map_gate.py（14/14，行文本独立复算 + 五种判定全部可由合成 ru",
+      "doc_kind": "append_only",
+      "document": "NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
+      "instrument": "runner_enforcement_map_gate.py",
+      "line": 202,
+      "live": "14/14",
+      "quoted": "14/14",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "已发布页面的正文与仓库全量文本逐条比对 n/n）与校验器 governance/section_page_reconciliation_gate.py（22/22，页面正文读自 feishu_wiki",
+      "doc_kind": "append_only",
+      "document": "NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
+      "instrument": "section_page_reconciliation_gate.py",
+      "line": 206,
+      "live": "23/23",
+      "quoted": "22/22",
+      "verdict": "possible_history"
+    },
+    {
+      "context": "8 条），而是补 §37 并在其中逐条更正，再造一台仪器：governance/status_label_table_gate.py 6/6，其中 S5 把 §37 表里每个数字对回 JSON、S6 ",
+      "doc_kind": "append_only",
+      "document": "NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
+      "instrument": "status_label_table_gate.py",
+      "line": 193,
+      "live": "6/6",
+      "quoted": "6/6",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "指纹、承接登记表 节 → node_token）与校验器 governance/wiki_sync_map_gate.py（16/16）。第一版跑出一处 FAIL 与一处自相矛盾： (a) 页面行只对",
+      "doc_kind": "append_only",
+      "document": "NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
+      "instrument": "wiki_sync_map_gate.py",
+      "line": 205,
+      "live": "16/16",
+      "quoted": "16/16",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "governance/build_coverage_map.py（覆盖表 v1，gate_coverage_map_gate.py 18/18）给出 26 台门控 / 81 个导入仪器 / 10 条缺",
+      "doc_kind": "regenerated",
+      "document": "OBLIGATION_REGISTRY.md",
+      "instrument": "gate_coverage_map_gate.py",
+      "line": 104,
+      "live": "18/18",
+      "quoted": "18/18",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "关闭。§45 追加：那 10 条名单已在治理层各配到至少一条带可推翻输入的检查（unmeasured_instruments_gate.py 25/25，rho_exact 由两台闭式夹逼、gap_f",
+      "doc_kind": "regenerated",
+      "document": "OBLIGATION_REGISTRY.md",
+      "instrument": "unmeasured_instruments_gate.py",
+      "line": 104,
+      "live": "25/25",
+      "quoted": "25/25",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "> 门控 p10_gate.py 6/6；判定 run_phase10.py ⇒ 出口 E1 CONFIRMED（verdict ",
+      "doc_kind": "run_record",
+      "document": "PHASE10_RESULTS.md",
+      "instrument": "p10_gate.py",
+      "line": 4,
+      "live": "6/6",
+      "quoted": "6/6",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "> 门控 p11_gate.py 6/6；判定 run_phase11.py ⇒ 出口 E1 CONFIRMED（verdict ",
+      "doc_kind": "run_record",
+      "document": "PHASE11_RESULTS.md",
+      "instrument": "p11_gate.py",
+      "line": 4,
+      "live": "6/6",
+      "quoted": "6/6",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "> 门控 p12_gate.py 4/4；判定 run_phase12.py ⇒ 出口 E1 CONFIRMED（verdict ",
+      "doc_kind": "run_record",
+      "document": "PHASE12_RESULTS.md",
+      "instrument": "p12_gate.py",
+      "line": 4,
+      "live": "4/4",
+      "quoted": "4/4",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "> 门控 p13_gate.py 6/6；判定 run_phase13.py；C 组随机对照用异池种子 3000–3009（R4）",
+      "doc_kind": "run_record",
+      "document": "PHASE13_RESULTS.md",
+      "instrument": "p13_gate.py",
+      "line": 4,
+      "live": "6/6",
+      "quoted": "6/6",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "> 门控：p14_gate.py 7/7 全绿，runner 先跑门控、失败即拒跑（R2）。运行时 5.2 s，确定性求值（无采样",
+      "doc_kind": "run_record",
+      "document": "PHASE14_RESULTS.md",
+      "instrument": "p14_gate.py",
+      "line": 5,
+      "live": "7/7",
+      "quoted": "7/7",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "p19_gate.py 6/6 全绿：G1 无随机流、G2 确定性、G3 M3 两条独立路径（几何闭式 vs 逐事件累加",
+      "doc_kind": "run_record",
+      "document": "PHASE19_RESULTS.md",
+      "instrument": "p19_gate.py",
+      "line": 10,
+      "live": "6/6",
+      "quoted": "6/6",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "p20_gate.py 7/7 全绿。要点两条：",
+      "doc_kind": "run_record",
+      "document": "PHASE20_RESULTS.md",
+      "instrument": "p20_gate.py",
+      "line": 10,
+      "live": "7/7",
+      "quoted": "7/7",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "> 门控：phase2_gate.py 7/7 PASS（确定性、解析已知答案、阴性对照、手算 Q 值、状态可辨识性、收敛、Spe",
+      "doc_kind": "run_record",
+      "document": "PHASE2_RESULTS.md",
+      "instrument": "phase2_gate.py",
+      "line": 4,
+      "live": "7/7",
+      "quoted": "7/7",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "> 门控：p9_gate.py 8/8 通过；判定：run_phase9.py ⇒ 出口 E1 CONFIRMED（verdict",
+      "doc_kind": "run_record",
+      "document": "PHASE9_RESULTS.md",
+      "instrument": "p9_gate.py",
+      "line": 4,
+      "live": "8/8",
+      "quoted": "8/8",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "| ROUND_L01_RESULTS.md | literature/l01_gate.py | 7/7 | 7/7 | 0 | other_harness |",
+      "doc_kind": "derived_summary",
+      "document": "RESULT_SCORE_RECONCILIATION_v1.md",
+      "instrument": "l01_gate.py",
+      "line": 43,
+      "live": "7/7",
+      "quoted": "7/7",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "claim：轮次文档开头那一行写的分数（门控 \\p10_gate.py\\ 6/6）；",
+      "doc_kind": "derived_summary",
+      "document": "RESULT_SCORE_RECONCILIATION_v1.md",
+      "instrument": "p10_gate.py",
+      "line": 7,
+      "live": "6/6",
+      "quoted": "6/6",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "| PHASE11_RESULTS.md | experiments/p11_gate.py | 6/6 | 6/6 | 6 | aligned |",
+      "doc_kind": "derived_summary",
+      "document": "RESULT_SCORE_RECONCILIATION_v1.md",
+      "instrument": "p11_gate.py",
+      "line": 20,
+      "live": "6/6",
+      "quoted": "6/6",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "| PHASE12_RESULTS.md | experiments/p12_gate.py | 4/4 | 4/4 | 4 | aligned |",
+      "doc_kind": "derived_summary",
+      "document": "RESULT_SCORE_RECONCILIATION_v1.md",
+      "instrument": "p12_gate.py",
+      "line": 21,
+      "live": "4/4",
+      "quoted": "4/4",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "| PHASE13_RESULTS.md | experiments/p13_gate.py | 6/6 | 6/6 | 6 | aligned |",
+      "doc_kind": "derived_summary",
+      "document": "RESULT_SCORE_RECONCILIATION_v1.md",
+      "instrument": "p13_gate.py",
+      "line": 22,
+      "live": "6/6",
+      "quoted": "6/6",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "| PHASE14_RESULTS.md | experiments/p14_gate.py | 7/7 | 7/7 | 7 | aligned |",
+      "doc_kind": "derived_summary",
+      "document": "RESULT_SCORE_RECONCILIATION_v1.md",
+      "instrument": "p14_gate.py",
+      "line": 23,
+      "live": "7/7",
+      "quoted": "7/7",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "| PHASE15_RESULTS.md | experiments/p15_gate.py | 7/7 | 7/7 | 7 | aligned |",
+      "doc_kind": "derived_summary",
+      "document": "RESULT_SCORE_RECONCILIATION_v1.md",
+      "instrument": "p15_gate.py",
+      "line": 24,
+      "live": "7/7",
+      "quoted": "7/7",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "| PHASE16_RESULTS.md | experiments/p16_gate.py | 7/7 | 7/7 | 7 | aligned |",
+      "doc_kind": "derived_summary",
+      "document": "RESULT_SCORE_RECONCILIATION_v1.md",
+      "instrument": "p16_gate.py",
+      "line": 25,
+      "live": "7/7",
+      "quoted": "7/7",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "| PHASE17_RESULTS.md | experiments/p17_gate.py | 7/7 | 7/7 | 6 | loop_nested |",
+      "doc_kind": "derived_summary",
+      "document": "RESULT_SCORE_RECONCILIATION_v1.md",
+      "instrument": "p17_gate.py",
+      "line": 26,
+      "live": "7/7",
+      "quoted": "7/7",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "| PHASE18_RESULTS.md | experiments/p18_gate.py | 7/7 | 7/7 | 7 | aligned |",
+      "doc_kind": "derived_summary",
+      "document": "RESULT_SCORE_RECONCILIATION_v1.md",
+      "instrument": "p18_gate.py",
+      "line": 27,
+      "live": "7/7",
+      "quoted": "7/7",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "| PHASE19_RESULTS.md | experiments/p19_gate.py | 6/6 | 6/6 | 6 | aligned |",
+      "doc_kind": "derived_summary",
+      "document": "RESULT_SCORE_RECONCILIATION_v1.md",
+      "instrument": "p19_gate.py",
+      "line": 28,
+      "live": "6/6",
+      "quoted": "6/6",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "| PHASE20_RESULTS.md | experiments/p20_gate.py | 7/7 | 7/7 | 7 | aligned |",
+      "doc_kind": "derived_summary",
+      "document": "RESULT_SCORE_RECONCILIATION_v1.md",
+      "instrument": "p20_gate.py",
+      "line": 29,
+      "live": "7/7",
+      "quoted": "7/7",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "| PHASE21_RESULTS.md | experiments/p21_gate.py | 8/8 | 8/8 | 8 | aligned |",
+      "doc_kind": "derived_summary",
+      "document": "RESULT_SCORE_RECONCILIATION_v1.md",
+      "instrument": "p21_gate.py",
+      "line": 30,
+      "live": "8/8",
+      "quoted": "8/8",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "| PHASE22_RESULTS.md | experiments/p22_gate.py | 7/7 | 7/7 | 7 | aligned |",
+      "doc_kind": "derived_summary",
+      "document": "RESULT_SCORE_RECONCILIATION_v1.md",
+      "instrument": "p22_gate.py",
+      "line": 31,
+      "live": "7/7",
+      "quoted": "7/7",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "| PHASE3_RESULTS.md | experiments/p3_gate.py | 7/7 | 7/7 | 7 | aligned |",
+      "doc_kind": "derived_summary",
+      "document": "RESULT_SCORE_RECONCILIATION_v1.md",
+      "instrument": "p3_gate.py",
+      "line": 33,
+      "live": "7/7",
+      "quoted": "7/7",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "| PHASE4_RESULTS.md | experiments/p4_gate.py | 5/5 | 5/5 | 5 | aligned |",
+      "doc_kind": "derived_summary",
+      "document": "RESULT_SCORE_RECONCILIATION_v1.md",
+      "instrument": "p4_gate.py",
+      "line": 34,
+      "live": "5/5",
+      "quoted": "5/5",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "| PHASE5_RESULTS.md | experiments/p5_gate.py | 8/8 | 8/8 | 8 | aligned |",
+      "doc_kind": "derived_summary",
+      "document": "RESULT_SCORE_RECONCILIATION_v1.md",
+      "instrument": "p5_gate.py",
+      "line": 38,
+      "live": "8/8",
+      "quoted": "8/8",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "| PHASE5B_RESULTS.md | experiments/p5b_gate.py | 6/6 | 6/6 | 6 | aligned |",
+      "doc_kind": "derived_summary",
+      "document": "RESULT_SCORE_RECONCILIATION_v1.md",
+      "instrument": "p5b_gate.py",
+      "line": 35,
+      "live": "6/6",
+      "quoted": "6/6",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "| PHASE5C_RESULTS.md | experiments/p5c_gate.py | 7/7 | 7/7 | 7 | aligned |",
+      "doc_kind": "derived_summary",
+      "document": "RESULT_SCORE_RECONCILIATION_v1.md",
+      "instrument": "p5c_gate.py",
+      "line": 36,
+      "live": "7/7",
+      "quoted": "7/7",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "| PHASE5D_RESULTS.md | experiments/p5d_gate.py | 7/7 | 7/7 | 7 | aligned |",
+      "doc_kind": "derived_summary",
+      "document": "RESULT_SCORE_RECONCILIATION_v1.md",
+      "instrument": "p5d_gate.py",
+      "line": 37,
+      "live": "7/7",
+      "quoted": "7/7",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "| PHASE6_RESULTS.md | experiments/p6_gate.py | 7/7 | 7/7 | 7 | aligned |",
+      "doc_kind": "derived_summary",
+      "document": "RESULT_SCORE_RECONCILIATION_v1.md",
+      "instrument": "p6_gate.py",
+      "line": 39,
+      "live": "7/7",
+      "quoted": "7/7",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "| PHASE7_RESULTS.md | experiments/p7_gate.py | 9/9 | 9/9 | 9 | aligned |",
+      "doc_kind": "derived_summary",
+      "document": "RESULT_SCORE_RECONCILIATION_v1.md",
+      "instrument": "p7_gate.py",
+      "line": 40,
+      "live": "9/9",
+      "quoted": "9/9",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "| PHASE8_RESULTS.md | experiments/p8_gate.py | 6/6 | 6/6 | 6 | aligned |",
+      "doc_kind": "derived_summary",
+      "document": "RESULT_SCORE_RECONCILIATION_v1.md",
+      "instrument": "p8_gate.py",
+      "line": 41,
+      "live": "6/6",
+      "quoted": "6/6",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "| PHASE9_RESULTS.md | experiments/p9_gate.py | 8/8 | 8/8 | 8 | aligned |",
+      "doc_kind": "derived_summary",
+      "document": "RESULT_SCORE_RECONCILIATION_v1.md",
+      "instrument": "p9_gate.py",
+      "line": 42,
+      "live": "8/8",
+      "quoted": "8/8",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "| PHASE2_RESULTS.md | experiments/phase2_gate.py | 7/7 | 7/7 | 7 | aligned |",
+      "doc_kind": "derived_summary",
+      "document": "RESULT_SCORE_RECONCILIATION_v1.md",
+      "instrument": "phase2_gate.py",
+      "line": 32,
+      "live": "7/7",
+      "quoted": "7/7",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "> → L01_coding.json；仪器：l01_gate.py（7/7）｜运行器：run_L01.py（门控不过即拒跑）",
+      "doc_kind": "run_record",
+      "document": "ROUND_L01_RESULTS.md",
+      "instrument": "l01_gate.py",
+      "line": 6,
+      "live": "7/7",
+      "quoted": "7/7",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "| ao_preflight_gate.py | 8/8 | M2A_FINAL_REPORT.md | §38 |",
+      "doc_kind": "derived_summary",
+      "document": "SECTION_PAGE_RECONCILIATION_v1.md",
+      "instrument": "ao_preflight_gate.py",
+      "line": 61,
+      "live": "8/8",
+      "quoted": "8/8",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "| gate_coverage_map_gate.py | 17/17/18/18 | M2A_FINAL_REPORT.m",
+      "doc_kind": "derived_summary",
+      "document": "SECTION_PAGE_RECONCILIATION_v1.md",
+      "instrument": "gate_coverage_map_gate.py",
+      "line": 67,
+      "live": "18/18",
+      "quoted": "17/17",
+      "verdict": "paired_correction"
+    },
+    {
+      "context": "| gate_coverage_map_gate.py | 18/18 | M2A_FINAL_REPORT.md, gov",
+      "doc_kind": "derived_summary",
+      "document": "SECTION_PAGE_RECONCILIATION_v1.md",
+      "instrument": "gate_coverage_map_gate.py",
+      "line": 63,
+      "live": "18/18",
+      "quoted": "18/18",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "| gate_discrimination_gate.py | 59/59 | M2A_FINAL_REPORT.md, g",
+      "doc_kind": "derived_summary",
+      "document": "SECTION_PAGE_RECONCILIATION_v1.md",
+      "instrument": "gate_discrimination_gate.py",
+      "line": 62,
+      "live": "59/59",
+      "quoted": "59/59",
+      "verdict": "matches_live"
+    },
+    {
+      "context": " 文献轮 L-01｜14 条全文编码， | aligned | 1 | - | l01_gate.py 6/6→7/7 | - | - | page_grew_after_publication |",
+      "doc_kind": "derived_summary",
+      "document": "SECTION_PAGE_RECONCILIATION_v1.md",
+      "instrument": "l01_gate.py",
+      "line": 40,
+      "live": "7/7",
+      "quoted": "6/6",
+      "verdict": "paired_correction"
+    },
+    {
+      "context": "1 主 | page_superseded | 1 | - | - | - | obligation_registry_gate.py 7/7 | aligned |",
+      "doc_kind": "derived_summary",
+      "document": "SECTION_PAGE_RECONCILIATION_v1.md",
+      "instrument": "obligation_registry_gate.py",
+      "line": 43,
+      "live": "8/8",
+      "quoted": "7/7",
+      "verdict": "possible_history"
+    },
+    {
+      "context": "| obligation_registry_gate.py | 8/8 | M2A_FINAL_REPORT.md | §4",
+      "doc_kind": "derived_summary",
+      "document": "SECTION_PAGE_RECONCILIATION_v1.md",
+      "instrument": "obligation_registry_gate.py",
+      "line": 68,
+      "live": "8/8",
+      "quoted": "8/8",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "| p10_gate.py | 6/6 | M2A_FINAL_REPORT.md, experiments/PHASE10",
+      "doc_kind": "derived_summary",
+      "document": "SECTION_PAGE_RECONCILIATION_v1.md",
+      "instrument": "p10_gate.py",
+      "line": 65,
+      "live": "6/6",
+      "quoted": "6/6",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "| result_score_map_gate.py | 12/12 | M2A_FINAL_REPORT.md, gove",
+      "doc_kind": "derived_summary",
+      "document": "SECTION_PAGE_RECONCILIATION_v1.md",
+      "instrument": "result_score_map_gate.py",
+      "line": 66,
+      "live": "12/12",
+      "quoted": "12/12",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "| runner_enforcement_map_gate.py | 14/14 | M2A_FINAL_REPORT.md",
+      "doc_kind": "derived_summary",
+      "document": "SECTION_PAGE_RECONCILIATION_v1.md",
+      "instrument": "runner_enforcement_map_gate.py",
+      "line": 64,
+      "live": "14/14",
+      "quoted": "14/14",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "| section_page_reconciliation_gate.py | 22/22 | M2A_FINAL_REPO",
+      "doc_kind": "derived_summary",
+      "document": "SECTION_PAGE_RECONCILIATION_v1.md",
+      "instrument": "section_page_reconciliation_gate.py",
+      "line": 72,
+      "live": "23/23",
+      "quoted": "22/22",
+      "verdict": "possible_history"
+    },
+    {
+      "context": "| status_label_table_gate.py | 6/6 | M2A_FINAL_REPORT.md, gove",
+      "doc_kind": "derived_summary",
+      "document": "SECTION_PAGE_RECONCILIATION_v1.md",
+      "instrument": "status_label_table_gate.py",
+      "line": 59,
+      "live": "6/6",
+      "quoted": "6/6",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "| suite_score_registry_gate.py | 20/20 | -无- | §- |",
+      "doc_kind": "derived_summary",
+      "document": "SECTION_PAGE_RECONCILIATION_v1.md",
+      "instrument": "suite_score_registry_gate.py",
+      "line": 73,
+      "live": null,
+      "quoted": "20/20",
+      "verdict": "self_reference"
+    },
+    {
+      "context": "| unmeasured_instruments_gate.py | 25/25 | M2A_FINAL_REPORT.md",
+      "doc_kind": "derived_summary",
+      "document": "SECTION_PAGE_RECONCILIATION_v1.md",
+      "instrument": "unmeasured_instruments_gate.py",
+      "line": 69,
+      "live": "25/25",
+      "quoted": "25/25",
+      "verdict": "matches_live"
+    },
+    {
+      "context": "| wiki_sync_map_gate.py | 16/16 | M2A_FINAL_REPORT.md, governa",
+      "doc_kind": "derived_summary",
+      "document": "SECTION_PAGE_RECONCILIATION_v1.md",
+      "instrument": "wiki_sync_map_gate.py",
+      "line": 70,
+      "live": "16/16",
+      "quoted": "16/16",
+      "verdict": "matches_live"
+    }
+  ],
+  "schema": "m2a.suite_score_registry.v1",
+  "verdict_distribution": {
+    "matches_live": 63,
+    "paired_correction": 4,
+    "possible_history": 7,
+    "self_reference": 1
+  }
+}

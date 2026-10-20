@@ -119,6 +119,13 @@
       "node_token": "KDnUwL1XYi262wkzkonc0UvZnsb",
       "section": 47,
       "title": "M2A 治理｜节↔页分数对账 v1：页面说的话第一次能被仓库推翻"
+    },
+    {
+      "draft": "M2A-治理-套件分数引用对账v1.md",
+      "in_ledger": true,
+      "node_token": "QuO5w9vGFiikp1kSKbgcrh1jnnb",
+      "section": 48,
+      "title": "M2A 治理｜套件分数引用对账 v1：仓库自己的散文第一次能被那台套件推翻"
     }
   ],
   "counts": {
@@ -127,11 +134,11 @@
     "first_batch_off_pin": 0,
     "first_batch_pages": 12,
     "first_batch_pages_claimed_by_a_section": 1,
-    "governance_pages": 12,
+    "governance_pages": 13,
     "governance_pages_unclaimed": 0,
-    "ledger_pages_with_node": 24,
-    "report_sections_in_population": 17,
-    "sections_claimed": 17,
+    "ledger_pages_with_node": 25,
+    "report_sections_in_population": 18,
+    "sections_claimed": 18,
     "sections_unclaimed": 0
   },
   "dangling_claims": [],
@@ -373,6 +380,33 @@
         47
       ],
       "title": "M2A 治理｜节↔页分数对账 v1：页面说的话第一次能被仓库推翻"
+    },
+    {
+      "draft": "M2A-治理-套件分数引用对账v1.md",
+      "draft_chars": 2820,
+      "draft_sha256": "4f6edb29eca9f5ea9e5d6fc160bafa8c8b83bd4c0e79cc4ba78fe2b473df4772",
+      "markers": [
+        "X-86",
+        "X-87",
+        "phantom_suite",
+        "impossible_growth",
+        "possible_history",
+        "self_reference",
+        "那台套件自己打印",
+        "本页故意不给",
+        "语料文档",
+        "本页一个",
+        "也不写",
+        "回路闭合之后仍然成立"
+      ],
+      "markers_ok_recorded": true,
+      "node_token": "QuO5w9vGFiikp1kSKbgcrh1jnnb",
+      "obj_token": "JOWndS5SXouZTexE3SFcXoB1nmf",
+      "read_back_chars_recorded": 4411,
+      "sections": [
+        48
+      ],
+      "title": "M2A 治理｜套件分数引用对账 v1：仓库自己的散文第一次能被那台套件推翻"
     }
   ],
   "schema": "m2a.wiki_sync_map.v1",
@@ -513,24 +547,38 @@
         84,
         85
       ]
+    },
+    {
+      "section": 48,
+      "title": "仓库自己的散文说的话能不能被仓库推翻：套件分数引用对账 v1（GOVERNANCE_ARTIFACT，不产生科学判定）",
+      "xids_named": [
+        83,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91
+      ]
     }
   ],
   "stale_claims": [],
   "tools": [
     {
-      "bytes": 24993,
+      "bytes": 35272,
       "file": "check_step_draft_numbers.py",
-      "sha256": "b4f4f87306713044a742d688e5bbe58c510fd8497d7d33af81d9c2dc67490548"
+      "sha256": "669d4c23f9f8154e4c7700649c95009909f6f140f3617748139c779e32cb1e81"
     },
     {
-      "bytes": 7563,
+      "bytes": 7942,
       "file": "publish_wiki_steps.py",
-      "sha256": "b6b65598430ab3f9d993e8eed77f72c1fc095e7a50277ec61ce44b2a82b0c37f"
+      "sha256": "d43be394b5b70dc113975c2e0f9fe22b2a4b8188d3d3eca6a570b42b26b88cf6"
     },
     {
-      "bytes": 8740,
+      "bytes": 9581,
       "file": "feishu_wiki_nodes.json",
-      "sha256": "8bd096b1cca055ff3e811e0b490000a8fa7f7be2c6eb28e4a9d0c34306c81cc1"
+      "sha256": "06b7547fff7521ac728861dece8fe2df7dbf239c7d60d40f1305d38040476f68"
     }
   ],
   "unclaimed_sections": [],

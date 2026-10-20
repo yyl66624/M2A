@@ -9,31 +9,34 @@
     }
   ],
   "counts": {
-    "claims_rows_in_sync_map": 17,
+    "claims_rows_in_sync_map": 18,
     "draft_page_aligned": 11,
-    "draft_page_grew": 1,
+    "draft_page_grew": 2,
     "draft_page_hard": 0,
     "errata_not_effective": 0,
     "erratum_rows": 1,
     "erratum_rows_effective": 1,
     "hard_findings": 0,
-    "instrument_claims_pages": 15,
+    "instrument_claims_pages": 16,
     "instrument_claims_sections": 13,
-    "instruments_attested_in_repo": 35,
+    "instruments_attested_in_repo": 20,
     "instruments_missing_from_pages": [],
     "instruments_named_in_sections": 11,
-    "instruments_named_on_pages": 12,
+    "instruments_named_on_pages": 13,
     "instruments_only_on_pages": [
-      "l01_gate.py"
+      "l01_gate.py",
+      "suite_score_registry_gate.py"
     ],
     "page_superseded": 1,
-    "pages_reconciled": 13,
+    "pages_reconciled": 14,
+    "pages_with_self_referential_claims": 1,
     "pairs_aligned": 12,
     "pairs_compressed": 0,
     "pairs_no_capture": 0,
     "prose_slashes_ignored": 0,
     "score_unattested_in_repo": 0,
-    "sections_covered": 17,
+    "sections_covered": 18,
+    "self_referential_values": 1,
     "values_attested_only_in_registration": 1,
     "values_loosely_attested_only": 0
   },
@@ -84,14 +87,14 @@
       "superseded": {},
       "title": "M2A Phase I′｜闸门③补做一致性检查",
       "unattested": {},
+      "unmeasurable": {},
       "verdict": "aligned"
     },
     {
       "attestation": {
         "l01_gate.py": {
           "7/7": [
-            "literature/ROUND_L01_RESULTS.md",
-            "report/RESULT_SCORE_RECONCILIATION_v1.md"
+            "literature/ROUND_L01_RESULTS.md"
           ]
         }
       },
@@ -143,6 +146,7 @@
       "superseded": {},
       "title": "M2A 文献轮 L-01｜14 条全文编码，三锚点全部 INDETERMINATE",
       "unattested": {},
+      "unmeasurable": {},
       "verdict": "aligned"
     },
     {
@@ -167,6 +171,7 @@
       "superseded": {},
       "title": "M2A 治理｜机制词表 v1 草案：由工件推导，推导查出口径漂移",
       "unattested": {},
+      "unmeasurable": {},
       "verdict": "aligned"
     },
     {
@@ -207,6 +212,7 @@
       "superseded": {},
       "title": "M2A 治理｜五值标签口径表 v1→v2：MANUAL_REVIEW 20→0 与 §34 数字更正",
       "unattested": {},
+      "unmeasurable": {},
       "verdict": "aligned"
     },
     {
@@ -255,6 +261,7 @@
       },
       "title": "M2A 治理｜台账三命名空间与 L-01 主张层重判读（零检验地位）",
       "unattested": {},
+      "unmeasurable": {},
       "verdict": "page_superseded"
     },
     {
@@ -293,6 +300,7 @@
       "superseded": {},
       "title": "M2A 治理｜AO 预检落地为仪器，查出一条永远不会失败的判据",
       "unattested": {},
+      "unmeasurable": {},
       "verdict": "aligned"
     },
     {
@@ -338,6 +346,7 @@
       "superseded": {},
       "title": "M2A 治理｜门控判别力审计：25 台的判别地板与装置自身三处失败",
       "unattested": {},
+      "unmeasurable": {},
       "verdict": "aligned"
     },
     {
@@ -381,6 +390,7 @@
       "superseded": {},
       "title": "M2A 治理｜门控仪器覆盖表 v1：用语法导出哪台门控量了哪个量",
       "unattested": {},
+      "unmeasurable": {},
       "verdict": "aligned"
     },
     {
@@ -420,6 +430,7 @@
       "superseded": {},
       "title": "M2A 治理｜runner 侧门控强制表 v1：红了就不写盘",
       "unattested": {},
+      "unmeasurable": {},
       "verdict": "aligned"
     },
     {
@@ -471,6 +482,7 @@
       "superseded": {},
       "title": "M2A 治理｜门控分数三方对账 v1：文档引用、仪器实跑、语法站点数",
       "unattested": {},
+      "unmeasurable": {},
       "verdict": "aligned"
     },
     {
@@ -547,6 +559,7 @@
       "superseded": {},
       "title": "M2A 治理｜未测量仪器的治理层检查 v1：10 台各配一条可推翻的检查",
       "unattested": {},
+      "unmeasurable": {},
       "verdict": "aligned"
     },
     {
@@ -586,6 +599,7 @@
       "superseded": {},
       "title": "M2A 治理｜wiki 同步表 v1：让「每一步写入飞书」可以被判红",
       "unattested": {},
+      "unmeasurable": {},
       "verdict": "aligned"
     },
     {
@@ -641,7 +655,50 @@
       "superseded": {},
       "title": "M2A 治理｜节↔页分数对账 v1：页面说的话第一次能被仓库推翻",
       "unattested": {},
+      "unmeasurable": {},
       "verdict": "aligned"
+    },
+    {
+      "attestation": {
+        "suite_score_registry_gate.py": {}
+      },
+      "draft_vs_page": {
+        "disagree": {
+          "suite_score_registry_gate.py": {
+            "draft": [],
+            "page": [
+              "20/20"
+            ]
+          }
+        },
+        "verdict": "page_grew_after_publication"
+      },
+      "erratum": {},
+      "loosely_attested": {},
+      "multi_value": {},
+      "node_token": "QuO5w9vGFiikp1kSKbgcrh1jnnb",
+      "not_on_page": [],
+      "page_chars": 4411,
+      "page_claims": {
+        "suite_score_registry_gate.py": [
+          "20/20"
+        ]
+      },
+      "page_sha256": "bd1a79898e75ed8d8c63aab360c073fb26ac9cd92bd52204db580b95a4c3c37c",
+      "prose_slashes_ignored": {},
+      "section_claims": {},
+      "sections": [
+        48
+      ],
+      "superseded": {},
+      "title": "M2A 治理｜套件分数引用对账 v1：仓库自己的散文第一次能被那台套件推翻",
+      "unattested": {},
+      "unmeasurable": {
+        "suite_score_registry_gate.py": [
+          "20/20"
+        ]
+      },
+      "verdict": "self_referential_claim"
     }
   ],
   "repo_attestation": {
@@ -672,8 +729,7 @@
     },
     "l01_gate.py": {
       "7/7": [
-        "literature/ROUND_L01_RESULTS.md",
-        "report/RESULT_SCORE_RECONCILIATION_v1.md"
+        "literature/ROUND_L01_RESULTS.md"
       ]
     },
     "obligation_registry_gate.py": {
@@ -714,6 +770,7 @@
         "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md"
       ]
     },
+    "suite_score_registry_gate.py": {},
     "unmeasured_instruments_gate.py": {
       "25/25": [
         "M2A_FINAL_REPORT.md",

@@ -122,9 +122,9 @@ def repo_oracle():
     if "oracle" not in _sc:
         strict, loose, srcs = {}, {}, {}
         for p in sorted(M.rglob("*.md")) + sorted(M.rglob("*.json")):
-            if p.name in (ART.name, MD.name):
-                continue
             rel = str(p.relative_to(M))
+            if p.name in (ART.name, MD.name) or B.is_derived(rel):
+                continue
             for f, v in scanned(rel).items():
                 strict.setdefault(f, set()).update(v)
                 for val in v:
@@ -162,7 +162,7 @@ def decide(page_claims, sec_claims, strict_map, loose_map, rep_values, latest, s
     compressed, with the precedence the deriver documents. `body` is the stripped page text, passed in so
     a control can simulate a page whose correction has not been published yet."""
     rows = rows or {}
-    unatt, only_loose, errata = {}, {}, {}
+    unatt, only_loose, errata, unmeas = {}, {}, {}, {}
     for f, v in page_claims.items():
         covered = erratum_cover(rows, f, v, body, strict_map)
         if covered:
@@ -171,15 +171,17 @@ def decide(page_claims, sec_claims, strict_map, loose_map, rep_values, latest, s
         rest = v - strict_map.get(f, set()) - loose_map.get(f, set()) - covered
         if half:
             only_loose[f] = sorted(half)
-        if rest:
+        if rest and f in B.UNMEASURED:
+            unmeas[f] = sorted(rest)
+        elif rest:
             unatt[f] = sorted(rest)
     sup = {f: latest[f] for f, v in page_claims.items()
            if f in latest and latest[f] > max(secs) and v - set(rep_values.get(f, ()))}
     missing = sorted(f for f in sec_claims if f not in page_claims)
-    verdict = ("score_unattested_in_repo" if unatt else "compressed" if missing else
-               "page_superseded" if sup else "aligned")
-    return {"unattested": unatt, "loose": only_loose, "errata": errata, "superseded": sup,
-            "not_on_page": missing, "verdict": verdict}
+    verdict = ("score_unattested_in_repo" if unatt else "self_referential_claim" if unmeas else
+               "compressed" if missing else "page_superseded" if sup else "aligned")
+    return {"unattested": unatt, "unmeasurable": unmeas, "loose": only_loose, "errata": errata,
+            "superseded": sup, "not_on_page": missing, "verdict": verdict}
 
 
 def main() -> int:
@@ -189,13 +191,19 @@ def main() -> int:
         return 2
     before_json, before_md = ART.read_bytes(), MD.read_bytes()
     r1 = subprocess.run([sys.executable, str(GEN)], cwd=M, capture_output=True, text=True)
+    fresh_json, fresh_md = ART.read_bytes(), MD.read_bytes()
     report("P1 generator reproduces the committed JSON",
-           r1.returncode == 0 and ART.read_bytes() == before_json,
+           r1.returncode == 0 and fresh_json == before_json,
            (r1.stdout.strip().splitlines() or ["", ""])[0][:78])
-    report("P2 generator reproduces the committed Markdown", MD.read_bytes() == before_md)
+    report("P2 generator reproduces the committed Markdown", fresh_md == before_md)
     r2 = subprocess.run([sys.executable, str(GEN)], cwd=M, capture_output=True, text=True)
-    report("P3 derivation idempotent (second run, byte-identical)",
-           ART.read_bytes() == before_json and MD.read_bytes() == before_md and r2.returncode == 0,
+    if fresh_json != before_json:
+        ART.write_bytes(before_json)
+    if fresh_md != before_md:
+        MD.write_bytes(before_md)
+    report("P3 derivation idempotent, and a non-reproducing run leaves the committed bytes in place",
+           ART.read_bytes() == before_json and MD.read_bytes() == before_md
+           and fresh_json == before_json and r2.returncode == 0,
            "rc=%d, and the generator must exit 0: a crash leaves the committed artifact in place"
            % r2.returncode)
 
@@ -219,13 +227,16 @@ def main() -> int:
     # hard category, which this file's first version omitted, making the sum equal the page count exactly
     # when nothing was wrong: a check that is vacuous by construction.
     part = (c["pairs_aligned"] + c["pairs_compressed"] + c["page_superseded"]
-            + c["pairs_no_capture"] + c["score_unattested_in_repo"])
+            + c["pairs_no_capture"] + c["score_unattested_in_repo"]
+            + c["pages_with_self_referential_claims"])
     draft_rows = sum(1 for p in pages if p["node_token"] in gov_tokens)
     report("P5 counts equal enumerable rows: partition (hard category included), unattested, draft side",
            part == c["pages_reconciled"] == len(pages)
            and c["score_unattested_in_repo"] == sum(1 for p in pages if p["unattested"])
            and c["values_loosely_attested_only"] == sum(len(v) for p in pages
                                                         for v in p["loosely_attested"].values())
+           and c["pages_with_self_referential_claims"] == len([p for p in pages if p["unmeasurable"]])
+           and c["self_referential_values"] == sum(len(v) for p in pages for v in p["unmeasurable"].values())
            and c["erratum_rows"] == sum(len(p["erratum"]) for p in pages)
            and c["erratum_rows_effective"] == sum(1 for p in pages for v in p["erratum"].values()
                                                   if v["marker_on_page"])
@@ -245,7 +256,7 @@ def main() -> int:
 
     # P7 the hard verdict computed from live inputs only: capture bytes + this suite's own repo scan
     strict, loose, srcs = repo_oracle()
-    live_un = {}
+    live_un, live_self = {}, {}
     for p in pages:
         cf = CACHE / (p["node_token"] + ".txt")
         if not cf.exists():
@@ -255,7 +266,9 @@ def main() -> int:
         for f, v in claims2(body).items():
             miss = sorted(v - strict.get(f, set()) - loose.get(f, set())
                           - erratum_cover(B.ERRATA.get(p["node_token"], {}), f, v, body, strict))
-            if miss:
+            if miss and f in B.UNMEASURED:
+                live_self[f] = sorted(set(live_self.get(f, [])) | set(miss))
+            elif miss:
                 live_un.setdefault(p["title"][:14], []).extend(miss)
     report("P7 no page states a score the repo cannot support (live recompute, artifact not trusted)",
            not live_un and c["score_unattested_in_repo"] == 0 and not any(p["unattested"] for p in pages)
@@ -507,6 +520,32 @@ def main() -> int:
            "shapes %s | live %s | stale row %s %s | loose-only row %s"
            % ([bool(v) for v in ctrl.values()], {k: len(v) for k, v in live_shapes.items()}, sf, sv,
               loose_only[0]))
+
+    # P21 the disclosed category is a registry with teeth in both directions: (i) every registered instrument
+    # must really be absent from §48's measured population and carry the reason, otherwise its score IS
+    # printable and the exclusion would launder a genuine finding; (ii) a page claim about a measured
+    # instrument must still come out hard; (iii) the live recompute and the artifact must agree on the list.
+    un = B.UNMEASURED
+    s48 = GOV / "suite_score_registry_v1.json"
+    pop48 = set(json.loads(s48.read_text(encoding="utf-8"))["live"]) if s48.exists() else set()
+    bad_reg = [f for f, why in un.items() if f in pop48 or "SELF_SUITE" not in why or "R8" not in why]
+    measured_names = sorted(pop48 - set(un))
+    # the probe's fraction is derived from the union of both attestation tiers, never hard-coded (X-84c):
+    # a value the repo really printed would make the control vacuous.
+    universe = [int(str(x).split("/")[0]) for vals in strict.values() for x in vals] +                [int(str(x).split("/")[0]) for vals in loose.values() for x in vals] + [0]
+    hi = max(universe) + 1
+    probe_f = measured_names[0] if measured_names else None
+    probe = decide({probe_f: {"%d/%d" % (hi, hi)}} if probe_f else {},
+                   {}, strict, loose, rep_values, latest, [0], "", rows={}) if probe_f else {}
+    art_self = {f: sorted(set(sum([p["unmeasurable"].get(f, []) for p in pages], [])))
+                for f in {f for p in pages for f in p["unmeasurable"]}}
+    report("P21 the self-referential registry cannot swallow a claim about a measured instrument",
+           un and not bad_reg and live_self == art_self and c["self_referential_values"]
+           == sum(len(v) for v in live_self.values())
+           and probe.get("verdict") == "score_unattested_in_repo"
+           and all(f not in un for f in measured_names),
+           "registered %s | offenders %s | live %s | measured instruments %d"
+           % (sorted(un), bad_reg or "none", sorted(live_self), len(measured_names)))
 
     names = [n for n, _ in results]
     report("SUITE_accounting", len(names) == len(set(names)) and len(names) >= 18,
