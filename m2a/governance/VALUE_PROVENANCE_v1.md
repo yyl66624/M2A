@@ -2,7 +2,7 @@
 
 问题：散文归给某一轮的判据数值（容差、阈值、指数、步长、种子数），在那一轮自己的记录里存在吗？（GOVERNANCE_ARTIFACT，不跑实验、不改任何注册判据）
 
-生成本表的推导器源码 SHA-256：`c5b27fca19fd3687`；轮次家族 23 个，语料文档 49 份，主张行 868 行 / 数值 2033 个 / 承载文档 40 份。
+生成本表的推导器源码 SHA-256：`c5b27fca19fd3687`；轮次家族 23 个，语料文档 50 份，主张行 868 行 / 数值 2033 个 / 承载文档 40 份。
 
 | 判定 | 条数 |
 |---|---|
@@ -24,7 +24,7 @@
 - `governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md:199` value_unattested_in_repo → ["1.0001"] ｜ 摘录：| X-78 | **判别力审计装置自身在一轮里被抓出三处缺陷，其中一处会生产假结论：变异包装器只偏移标量通路，数组通路整条被吞** | 把 §40 的检验推广到 Phase II
 - `governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md:200` value_unattested_in_repo → ["170.130", "1e-4"] ｜ 摘录：| X-79 | **已提交门控里存在「原理上不可能失败」的第二种检查：把确定性自检当作仪器（Phase VIII 的 J5 从未拒绝任何机制错误）** | 判别力推广（§41）给
 - `governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md:204` value_unattested_in_repo → ["0.0084", "0.49", "0.9990", "5.1e-12"] ｜ 摘录：| X-83 | **给未测量仪器写检查时，三条预期是我自己写错的（其中一条的容差凭印象手打、来源记错），顺手还查出台账散文里带着一处陈旧分数** | 新建 `governance
-- `governance/OBLIGATION_REGISTRY.md:104` stale_value_in_register → ["170.130"] ｜ 摘录：- **O-17**：同一次推广（§41、X-79）暴露的另两条：Phase VIII 的 `J5` 写的是 `rho_exact(0.6) == rho_exact(0.6)`，
+- `governance/OBLIGATION_REGISTRY.md:106` stale_value_in_register → ["170.130"] ｜ 摘录：- **O-17**：同一次推广（§41、X-79）暴露的另两条：Phase VIII 的 `J5` 写的是 `rho_exact(0.6) == rho_exact(0.6)`，
 
 跨轮搬运（只披露，不判红：数值确实注册过，但注册它的是别的轮次——R9 的形状）：
 

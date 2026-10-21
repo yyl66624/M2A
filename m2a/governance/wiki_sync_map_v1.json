@@ -147,6 +147,13 @@
       "node_token": "X36OwMb29id4hJk0LRHcN37SnBh",
       "section": 51,
       "title": "M2A 文献轮 L-02｜把「族 + 符号」的计入拿到主张层重数一遍，并取回竞争理论的全文"
+    },
+    {
+      "draft": "M2A-治理-义务台账命名空间由标签形状推导.md",
+      "in_ledger": true,
+      "node_token": "KCMhwheuIiKKUjkmHjBcNaHtnHb",
+      "section": 52,
+      "title": "M2A 治理｜义务台账的命名空间由标签形状推导：L-02 的读数据此处置 L-01 的三条开放项"
     }
   ],
   "counts": {
@@ -155,11 +162,11 @@
     "first_batch_off_pin": 0,
     "first_batch_pages": 12,
     "first_batch_pages_claimed_by_a_section": 1,
-    "governance_pages": 16,
+    "governance_pages": 17,
     "governance_pages_unclaimed": 0,
-    "ledger_pages_with_node": 28,
-    "report_sections_in_population": 21,
-    "sections_claimed": 21,
+    "ledger_pages_with_node": 29,
+    "report_sections_in_population": 22,
+    "sections_claimed": 22,
     "sections_unclaimed": 0
   },
   "dangling_claims": [],
@@ -404,8 +411,8 @@
     },
     {
       "draft": "M2A-治理-套件分数引用对账v1.md",
-      "draft_chars": 3069,
-      "draft_sha256": "cd20f6d1f03fcd297bf71ded8a9880f971557ad4e0cd0963918ecddd4bc83ebf",
+      "draft_chars": 3223,
+      "draft_sha256": "58092241edb2b2a62a2f99d45132bf2dd8cb340358be90663bcd5476abcbec73",
       "markers": [
         "X-86",
         "X-87",
@@ -423,7 +430,7 @@
       "markers_ok_recorded": true,
       "node_token": "QuO5w9vGFiikp1kSKbgcrh1jnnb",
       "obj_token": "JOWndS5SXouZTexE3SFcXoB1nmf",
-      "read_back_chars_recorded": 4697,
+      "read_back_chars_recorded": 4882,
       "sections": [
         48
       ],
@@ -490,6 +497,26 @@
         51
       ],
       "title": "M2A 文献轮 L-02｜把「族 + 符号」的计入拿到主张层重数一遍，并取回竞争理论的全文"
+    },
+    {
+      "draft": "M2A-治理-义务台账命名空间由标签形状推导.md",
+      "draft_chars": 1542,
+      "draft_sha256": "22a22d94b3b217503dd8cbe665192e18f7cb82396b3e1aa2f7e0c1237dfa12fd",
+      "markers": [
+        "命名空间由标签形状推导",
+        "X-107",
+        "NAMESPACES WITHOUT A CARRIER",
+        "仍开放",
+        "本节不抄它的分数"
+      ],
+      "markers_ok_recorded": true,
+      "node_token": "KCMhwheuIiKKUjkmHjBcNaHtnHb",
+      "obj_token": "Y8ORdXsIAoipJHxwtwGcED1knVo",
+      "read_back_chars_recorded": 2113,
+      "sections": [
+        52
+      ],
+      "title": "M2A 治理｜义务台账的命名空间由标签形状推导：L-02 的读数据此处置 L-01 的三条开放项"
     }
   ],
   "schema": "m2a.wiki_sync_map.v1",
@@ -682,24 +709,34 @@
         104,
         105
       ]
+    },
+    {
+      "section": 52,
+      "title": "义务台账的命名空间由标签形状推导，L-02 的读数据此处置 L-01 的三条开放项（GOVERNANCE_ARTIFACT，不产生科学判定）",
+      "xids_named": [
+        83,
+        106,
+        107,
+        108
+      ]
     }
   ],
   "stale_claims": [],
   "tools": [
     {
-      "bytes": 57265,
+      "bytes": 57736,
       "file": "check_step_draft_numbers.py",
-      "sha256": "ed4f58feef1f33a09069545eddd03a763bba70d4d1babd3effa7b2729d8285b4"
+      "sha256": "13e257c6c7d49329772ffb252afe48704c0a7551711ccc13e9a5fba3404a42ac"
     },
     {
-      "bytes": 8755,
+      "bytes": 9073,
       "file": "publish_wiki_steps.py",
-      "sha256": "9a14cb021caf08f290c4a1a8f4078bb4d08955f4760ee9588db5049e37f63d59"
+      "sha256": "5d13c257f8af31112e2d818e8bfb10778e7c06fb843bc201287b37821ae46363"
     },
     {
-      "bytes": 10862,
+      "bytes": 11189,
       "file": "feishu_wiki_nodes.json",
-      "sha256": "304085b0d50388b35f76bb5322abd5bd0d3faebeae9b76bade49198f7741932c"
+      "sha256": "14ad97e305bc742f47efda12c8c055f31cf826172841e138aa607c28913020eb"
     }
   ],
   "unclaimed_sections": [],

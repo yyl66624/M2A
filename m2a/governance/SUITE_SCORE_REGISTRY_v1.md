@@ -10,7 +10,7 @@
 | 列 | 数 |
 | --- | --- |
 | 实跑的套件 | 37（今天为绿 37） |
-| 语料内文档 / 其中真的产出主张行的 | 75 / 16 |
+| 语料内文档 / 其中真的产出主张行的 | 76 / 16 |
 | 引用条数 / 去重后的判定行 | 91 / 78 |
 | **硬伤（凭空仪器 / 实跑不绿 / 再生文档陈旧 / 不可能的增长）** | 0 |
 | 引用与实跑一致 | 66 |
@@ -47,8 +47,8 @@
 | `NEGATIVE_AND_NULL_EVIDENCE_LOG.md` | append_only | `section_page_reconciliation_gate.py` | 22/22 | 23/23 | possible_history | 206 |
 | `NEGATIVE_AND_NULL_EVIDENCE_LOG.md` | append_only | `status_label_table_gate.py` | 6/6 | 6/6 | matches_live | 193 |
 | `NEGATIVE_AND_NULL_EVIDENCE_LOG.md` | append_only | `wiki_sync_map_gate.py` | 16/16 | 16/16 | matches_live | 205 |
-| `OBLIGATION_REGISTRY.md` | regenerated | `gate_coverage_map_gate.py` | 18/18 | 18/18 | matches_live | 104 |
-| `OBLIGATION_REGISTRY.md` | regenerated | `unmeasured_instruments_gate.py` | 25/25 | 25/25 | matches_live | 104 |
+| `OBLIGATION_REGISTRY.md` | regenerated | `gate_coverage_map_gate.py` | 18/18 | 18/18 | matches_live | 106 |
+| `OBLIGATION_REGISTRY.md` | regenerated | `unmeasured_instruments_gate.py` | 25/25 | 25/25 | matches_live | 106 |
 | `PHASE10_RESULTS.md` | run_record | `p10_gate.py` | 6/6 | 6/6 | matches_live | 4 |
 | `PHASE11_RESULTS.md` | run_record | `p11_gate.py` | 6/6 | 6/6 | matches_live | 4 |
 | `PHASE12_RESULTS.md` | run_record | `p12_gate.py` | 4/4 | 4/4 | matches_live | 4 |
@@ -86,25 +86,25 @@
 | `RESULT_SCORE_RECONCILIATION_v1.md` | derived_summary | `phase2_gate.py` | 7/7 | 7/7 | matches_live | 32 |
 | `ROUND_L01_RESULTS.md` | run_record | `l01_gate.py` | 7/7 | 7/7 | matches_live | 6 |
 | `ROUND_L02_RESULTS.md` | run_record | `l02_gate.py` | 16/16 | 16/16 | matches_live | 4 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `ao_preflight_gate.py` | 8/8 | 8/8 | matches_live | 64 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `gate_coverage_map_gate.py` | 17/17 | 18/18 | paired_correction | 70 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `gate_coverage_map_gate.py` | 18/18 | 18/18 | matches_live | 66 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `gate_discrimination_gate.py` | 59/59 | 59/59 | matches_live | 65 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `ao_preflight_gate.py` | 8/8 | 8/8 | matches_live | 65 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `gate_coverage_map_gate.py` | 17/17 | 18/18 | paired_correction | 71 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `gate_coverage_map_gate.py` | 18/18 | 18/18 | matches_live | 67 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `gate_discrimination_gate.py` | 59/59 | 59/59 | matches_live | 66 |
 | `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `l01_gate.py` | 6/6 | 7/7 | paired_correction | 40 |
 | `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `obligation_registry_gate.py` | 7/7 | 8/8 | possible_history | 43 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `obligation_registry_gate.py` | 8/8 | 8/8 | matches_live | 71 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `p10_gate.py` | 6/6 | 6/6 | matches_live | 68 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `result_score_map_gate.py` | 12/12 | 12/12 | matches_live | 69 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `runner_enforcement_map_gate.py` | 14/14 | 14/14 | matches_live | 67 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `section_page_reconciliation_gate.py` | 22/22 | 23/23 | possible_history | 75 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `status_label_table_gate.py` | 6/6 | 6/6 | matches_live | 62 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `suite_score_registry_gate.py` | 20/20 | - | self_reference | 76 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `unmeasured_instruments_gate.py` | 25/25 | 25/25 | matches_live | 72 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `wiki_sync_map_gate.py` | 16/16 | 16/16 | matches_live | 73 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `obligation_registry_gate.py` | 8/8 | 8/8 | matches_live | 72 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `p10_gate.py` | 6/6 | 6/6 | matches_live | 69 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `result_score_map_gate.py` | 12/12 | 12/12 | matches_live | 70 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `runner_enforcement_map_gate.py` | 14/14 | 14/14 | matches_live | 68 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `section_page_reconciliation_gate.py` | 22/22 | 23/23 | possible_history | 76 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `status_label_table_gate.py` | 6/6 | 6/6 | matches_live | 63 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `suite_score_registry_gate.py` | 20/20 | - | self_reference | 77 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `unmeasured_instruments_gate.py` | 25/25 | 25/25 | matches_live | 73 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `wiki_sync_map_gate.py` | 16/16 | 16/16 | matches_live | 74 |
 
 ## 人口与指纹
 
-> 生成本表的推导器源码 SHA-256：`96f922e1a41fbd8b`（`governance/build_suite_score_registry.py`）；语料文档 75 份。语料缩小而不登记，Q18 会红。
+> 生成本表的推导器源码 SHA-256：`96f922e1a41fbd8b`（`governance/build_suite_score_registry.py`）；语料文档 76 份。语料缩小而不登记，Q18 会红。
 
 | 套件 | 路径 | 实跑 | 源码 sha256（前 12） |
 | --- | --- | --- | --- |
@@ -114,7 +114,7 @@
 | `gate_discrimination_gate.py` | `governance/gate_discrimination_gate.py` | 59/59 | `b487c70a7338` |
 | `l01_gate.py` | `literature/l01_gate.py` | 7/7 | `4fcbc82ef9a2` |
 | `l02_gate.py` | `literature/l02_gate.py` | 16/16 | `1c934589a687` |
-| `obligation_registry_gate.py` | `governance/obligation_registry_gate.py` | 8/8 | `a154befac68a` |
+| `obligation_registry_gate.py` | `governance/obligation_registry_gate.py` | 8/8 | `b1aabd652014` |
 | `p10_gate.py` | `experiments/p10_gate.py` | 6/6 | `433f2913cc7a` |
 | `p11_gate.py` | `experiments/p11_gate.py` | 6/6 | `ec5ca1ca28be` |
 | `p12_gate.py` | `experiments/p12_gate.py` | 4/4 | `5a1fd094d95c` |

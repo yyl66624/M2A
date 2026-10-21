@@ -71,11 +71,11 @@ EXPECT = {
     "P22-O1": ("CLOSED", "close", "M2A_FINAL_REPORT.md", "已以推导关闭", None),
     # --- literature round L-01: all five are preconditions for round L-02, none disposed here
     # (ROUND_L01_RESULTS.md §9 is the status-bearing artifact for this namespace)
-    "L01-O1": ("OPEN", "block", "literature/ROUND_L01_RESULTS.md", "分歧登记为开放项", None),
-    "L01-O2": ("OPEN", "block", "literature/ROUND_L01_RESULTS.md", "族 + 符号 + 主张层关系", None),
-    "L01-O3": ("OPEN", "block", "literature/ROUND_L01_RESULTS.md", "轴的零值处理", None),
-    "L01-O4": ("OPEN", "block", "literature/ROUND_L01_RESULTS.md", "竞争理论全文编码须另开一轮", None),
-    "L01-O5": ("OPEN", "block", "literature/ROUND_L01_RESULTS.md", "全文仍不可得", None),
+    "L01-O1": ("OPEN", "block", "literature/ROUND_L01_DISPOSITIONS.md", "仍开放：把 R13", None),
+    "L01-O2": ("CLOSED", "close", "literature/ROUND_L01_DISPOSITIONS.md", "已落实：主张层关系", None),
+    "L01-O3": ("CLOSED", "close", "literature/ROUND_L01_DISPOSITIONS.md", "已裁定：`neutral` 轴", None),
+    "L01-O4": ("CLOSED", "close", "literature/ROUND_L01_DISPOSITIONS.md", "已完成：《Concept Cones》", None),
+    "L01-O5": ("OPEN", "block", "literature/ROUND_L01_DISPOSITIONS.md", "仍开放：`R13-N15`", None),
     # --- core open-questions list (08): the status words there are kept as written; owner
     # 2026-10-18 froze them (`O-01…O-15` 的状态字保持原样), so nothing here is closed in place
     "O-01": ("OPEN", "block", "08_OPEN_QUESTIONS.md", "K4 协同族单薄", None),
@@ -95,6 +95,9 @@ EXPECT = {
     "O-15": ("OPEN", "block", "08_OPEN_QUESTIONS.md", "需决定治理责任人", None),
     "O-16": ("OPEN", "block", "08_OPEN_QUESTIONS.md", "判据引用的闭式在门控层没有实现级对照", None),
     "O-17": ("OPEN", "block", "08_OPEN_QUESTIONS.md", "每条数值检查都必须有可证伪输入", None),
+    # --- round L-02 registers its own two disclosed gaps (the namespace now comes from the id)
+    "L02-O1": ("OPEN", "block", "literature/ROUND_L02_RESULTS.md", "仍开放：本轮 Q1", None),
+    "L02-O2": ("OPEN", "block", "literature/ROUND_L02_RESULTS.md", "仍开放：表征层的定义侧", None),
 }
 CLASS = {"close": CLOSE, "adopt": ADOPT, "hand": HAND, "block": BLOCK}
 
@@ -107,8 +110,16 @@ CLASS = {"close": CLOSE, "adopt": ADOPT, "hand": HAND, "block": BLOCK}
 # because X-67/X-71 established that a disposition must live in the artifact that carries the
 # judgement. For these two namespaces that artifact is the open-questions list and the round's own
 # results document, not the cumulative report.
+L_SHAPE = re.compile(r"^(L\d\d)-O\d$")
+
+
 def ns_of(key):
-    return "P" if key.startswith("P") else ("L01" if key.startswith("L01") else "O")
+    """The namespace is read off the label shape, never off a list of known rounds: an id named
+    `L03-O1` must land in `L03` with `ROUND_L03_RESULTS.md` as its carrier, or the build says so."""
+    m = L_SHAPE.match(key)
+    if m:
+        return m.group(1)
+    return "P" if key.startswith("P") else "O"
 
 
 NAMESPACES = {
@@ -130,7 +141,25 @@ CLASS_NS = {
 }
 # None = every document may decide status (the experiment namespace, unchanged). A path = only that
 # document decides, everything else counts as a mention and as evidence but cannot flip a status.
-STATUS_FILE = {"P": None, "L01": "literature/ROUND_L01_RESULTS.md", "O": "08_OPEN_QUESTIONS.md"}
+STATUS_FILE = {"P": (), "L01": ("literature/ROUND_L01_RESULTS.md",
+                               "literature/ROUND_L01_DISPOSITIONS.md"),
+               "O": ("08_OPEN_QUESTIONS.md",)}
+
+# Every literature round record on disk brings its own namespace with it: same wording classes as
+# L-01 (a round writes dispositions as 已落实/已裁定/仍开放, not 已关闭/待裁定), its own carrier, and the
+# same glue window (WIN is the experiment default of 60, literature namespaces take 160 by
+# the fallback at the lookup site). A round with no record on disk cannot host an id,
+# and main() says so.
+for _p in sorted((M / "literature").glob("ROUND_L*_RESULTS.md")):
+    _m = re.match(r"ROUND_(L\d\d)_RESULTS\.md", _p.name)
+    if _m:
+        _n = _m.group(1)
+        NAMESPACES.setdefault(_n, re.compile(_n + r"-O\d"))
+        CLASS_NS.setdefault(_n, CLASS_NS["L01"])
+        # merge, do not overwrite: a declared addendum (处置附加件) is part of the carrier list
+        # and must keep its rank behind the round record it supplements
+        STATUS_FILE[_n] = tuple(dict.fromkeys(
+            list(STATUS_FILE.get(_n, ())) + ["literature/" + _p.name]))
 
 LABEL = NAMESPACES["P"]
 BOUNDARY = re.compile(r"[，,。；;！!？?]")
@@ -158,15 +187,23 @@ def label_sort(s):
     if n == "P":
         m = re.match(r"P(\d+)-O(\d)", s)
         return (0, int(m.group(1)), int(m.group(2)))
-    if n == "L01":
-        return (1, 0, int(s.split("-O")[1]))
+    if n.startswith("L"):
+        return (1, int(n[1:]), int(s.split("-O")[1]))
     return (2, 0, int(s.split("-")[1]))
 
 
 def order(path, ln):
-    """Sort key: phase rounds by round number, cumulative documents last, then path, then line."""
+    """Sort key: phase rounds by round number, cumulative documents last, then the **declared carrier
+    rank** inside that namespace, then path, then line. The rank is what makes an addendum outrank the
+    record it supplements: without it, paths compare alphabetically and `..._RESULTS.md` sorts *below*
+    `..._DISPOSITIONS.md`, so the original registration silently wins over the later disposition."""
     m = re.search(r"PHASE(\d{1,3})", path)
-    return (int(m.group(1)) if m else 999, path, ln)
+    rank = 0
+    for v in STATUS_FILE.values():
+        for i, f in enumerate(v or ()):
+            if path == f:
+                rank = i
+    return (int(m.group(1)) if m else 999, rank, path, ln)
 
 
 def attaches(sent, key, pat, window=None):
@@ -185,7 +222,7 @@ def attaches(sent, key, pat, window=None):
       verdict must not break the gluing test for an experiment label.
     """
     if window is None:
-        window = WIN[ns_of(key)]
+        window = WIN.get(ns_of(key), 160)
     kpos = [(m.start(), m.end()) for m in re.finditer(re.escape(key), sent)]
     pat_ns = NAMESPACES[ns_of(key)]
     others = sorted((m.start(), m.end()) for m in pat_ns.finditer(sent) if m.group(0) != key)
@@ -241,7 +278,7 @@ def successor(sent, key):
     return None
 
 
-ALL_LABEL = re.compile(r"\b(?:P\d{1,2}-O\d|L01-O\d|O-\d{2})\b")
+ALL_LABEL = re.compile(r"\b(?:P\d{1,2}-O\d|L\d{2}-O\d|O-\d{2})\b")
 ITEM_START = re.compile(r"^\s*(?:[-*]|\d+\.)\s+")
 WIN = {"P": 60, "L01": 160, "O": 160}
 
@@ -256,7 +293,7 @@ def units(rel, lines):
     `08_OPEN_QUESTIONS.md` and `ROUND_L01_RESULTS.md` §9 hold exactly one obligation per item and
     break a long item across lines, so a line-local window would cut the label off from the wording
     that disposes of it (that is what made `L01-O2` and `L01-O5` unclassifiable on first run)."""
-    if rel not in STATUS_FILE.values():
+    if rel not in {f for v in STATUS_FILE.values() for f in (v or ())}:
         for ln, line in enumerate(lines, 1):
             for sent in SENT.split(line):
                 s = sent.strip()
@@ -302,12 +339,12 @@ def collect():
 
 def derive(key, hits):
     n = ns_of(key)
-    cls, sf = CLASS_NS[n], STATUS_FILE[n]
+    cls, sf = CLASS_NS[n], STATUS_FILE.get(n)
     pos, neg = [], []
     for h in hits:
         # a status-bearing namespace reads its disposition from one artifact; every other mention
         # is evidence and is counted, but may not flip the status
-        if h[0] in STATUS_SKIP or (sf is not None and h[0] != sf):
+        if h[0] in STATUS_SKIP or (sf and h[0] not in sf):
             continue
         s = h[2]
         if cls["close"].search(s) and attaches(s, key, cls["close"]):
@@ -378,6 +415,12 @@ def main():
         print("\n".join("PIN BROKEN  " + e for e in errors), file=sys.stderr)
         raise SystemExit(2)
     labels = collect()
+    no_carrier = sorted({ns_of(k) for k in labels
+                           if L_SHAPE.match(k) and not STATUS_FILE.get(ns_of(k))})
+    if no_carrier:
+        print("NAMESPACES WITHOUT A CARRIER RECORD: " + ", ".join(no_carrier) +
+              " - an id of that shape needs literature/ROUND_<ns>_RESULTS.md", file=sys.stderr)
+        raise SystemExit(2)
     unknown = sorted(set(labels) - set(EXPECT))
     untracked = sorted(set(EXPECT) - set(labels))
     if unknown or untracked:
@@ -409,12 +452,14 @@ def main():
            "台账因此不能悄悄漂移。",
            "> **出处是内容锚定而非写死行号**：断言记的是「文件 + 该句的特征片段」，行号在构建时解析。"
            "本仓库文档只追加不删改，中途插入一段就会让所有后续行号失效——这个失效模式在本脚本第一次改完正文后真实出现过。",
-           "> **三个命名空间、三套措辞、三份承载工件**：`P<n>-O<m>`（实验轮）、`L01-O<m>`（文献轮 L-01）、"
-           "`O-<nn>`（08 开放问题清单）。后两个命名空间此前**不在扫描范围内**，一条开放项可以从台账上消失而构建"
-           "毫无察觉（`ROUND_L01_RESULTS.md` §9.6 登记，与 X-67 同源）。每个命名空间的措辞类别不同（文献侧写"
-           "「待裁定 / 建议 / 需指定」而非「关闭 / 落实」），且**状态只由其承载判定措辞的那份工件决定**："
-           "`L01-O<m>` 只看 `literature/ROUND_L01_RESULTS.md`，`O-<nn>` 只看 `08_OPEN_QUESTIONS.md`"
-           "（owner 2026-10-18 明示「状态字保持原样」）；其他文件的提及计入证据与漂移检测，但不得翻转状态。",
+           f"> **命名空间由标签形状推导（当前 {len(STATUS_FILE)} 个命名空间、{len({f for v in STATUS_FILE.values() for f in (v or ())})} 份承载工件）**："
+           "`P<n>-O<m>`（实验轮）、`L0n-O<m>`（每一轮文献各一份，承载工件就是那一轮自己的记录）、"
+           "`O-<nn>`（08 开放问题清单）。`L01-O*` 与 `O-*` 此前不在扫描范围内，一条开放项可以从台账上消失而"
+           "构建毫无察觉（`ROUND_L01_RESULTS.md` §9.6 登记，与 X-67 同源）；命名空间若改用列举而非形状，下一轮"
+           "仍然不在名单上（X-106 同族）。每个命名空间的措辞类别不同（文献侧写「待裁定 / 建议 / 需指定」而非"
+           "「关闭 / 落实」），且**状态只由其承载判定措辞的那份工件决定**：`L0n-O<m>` 只看"
+           "``ROUND_L0n_RESULTS.md``，`O-<nn>` 只看 `08_OPEN_QUESTIONS.md`（owner 2026-10-18 明示「状态字保持"
+           "原样」）；其他文件的提及计入证据与漂移检测，但不得翻转状态。",
            "> **提及句数**按「提到该标签的句子数」计，同一句里重复出现只算一句（X-67 行内两次写到 "
            "`P16-O1`，此处计 1）；它衡量的是**散布度**不是出现次数，因此与旧版按出现次数计的读数会有"
            "±1 的差，状态列不受影响。",
@@ -452,6 +497,11 @@ def main():
                   "「保守序」本身成了未测分支 ⇒ 须与纪律规则 R14 同形地在注册时决定。",
         "L01-O4": "竞争理论《Concept Cones》已取得题录与 OA 地址（`L01_verification.json` 的 "
                   "`competing_theory_channel_L01_A1`），但**全文编码与正反证同表计票未做** ⇒ 须另开一轮并预先规定口径。",
+        # --- L-02 自己登记的两条：命名空间由标签形状推导，承载工件就是这一轮的记录
+        "L02-O1": "本轮 Q1 / Q2 与 L-01 共用同一批读数，按 §6 只有否证地位、确证地位为零 ⇒ 要取得确证须换语料"
+                  "并把判据先于读数注册（`ROUND_L02_RESULTS.md` §8）。",
+        "L02-O2": "表征层定义侧未编码：锥的维度与 `RCO` 收敛条件落在被剥离的数学行上，本轮按预注册不予编码"
+                  "（`ROUND_L02_RESULTS.md` §5、§8）。",
         "L01-O5": "R13-N15 端点只返回 bioRxiv 预览页（5 370 字符，403/无全文）⇒ 按 `ANNOTATION_ADDENDUM` 增补 3 "
                   "保持 `ABSTRACT_VERIFIED`，不得以摘要冒充全文；不可得原因已记录，升级路径未定。",
         # --- 08 开放问题清单：owner 2026-10-18 明示「状态字保持原样」，故没有任何一条就地关闭
@@ -502,7 +552,8 @@ def main():
     if no_reason:
         print("OPEN label with no registered reason: " + ", ".join(sorted(no_reason)), file=sys.stderr)
         raise SystemExit(4)
-    ns_count = {n: sum(1 for r in rows if ns_of(r[0]) == n) for n in ("P", "L01", "O")}
+    ns_count = {n: sum(1 for r in rows if ns_of(r[0]) == n)
+                for n in sorted({ns_of(r[0]) for r in rows})}
     out += ["", "---", "",
             "**计数**：CLOSED " + str(len(closed)) + " / SUCCEEDED " + str(len(succ_rows))
             + " / OPEN " + str(len(openi)) + " / UNCLASSIFIED " + str(len(unk))

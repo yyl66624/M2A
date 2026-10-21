@@ -108,7 +108,17 @@ def main() -> int:
     rows = [l for l in text.splitlines() if l.startswith("| ") and "**" in l]
     bad = [r.split("|")[1].strip() for r in rows
            if not any("**" + s + "**" in r for s in STATUSES)]
-    report("G5 every row has a lawful status", not bad, "offending: " + ", ".join(bad[:4]))
+    _rows_ns = {r.split("|")[1].strip(): (r.split("|")[4].strip().strip("`").split(":")[0]
+                      if len(r.split("|")) > 4 else "") for r in rows}
+    _carriers = {k: tuple(v or ()) for k, v in B.STATUS_FILE.items()}
+    wrong_carrier = sorted(k for k, v in _rows_ns.items()
+                           if B.ns_of(k).startswith("L") and v not in _carriers.get(B.ns_of(k), ()))
+    report("G5 every row has a lawful status, and a literature row's carrier is the record its own"
+           " namespace names", not bad and not wrong_carrier,
+           "offending: " + (", ".join(bad[:4]) or "none")
+           + " | carriers: " + (", ".join(wrong_carrier[:4]) or "all match")
+           + " | namespaces " + str(len(B.STATUS_FILE)) + " | L-rows "
+           + str(sum(1 for k in _rows_ns if B.ns_of(k).startswith("L"))))
 
     open_labels = [r.split("|")[1].strip() for r in rows if "**OPEN**" in r]
     reasons = [l for l in text.splitlines() if l.startswith("- **") and "】" not in l]

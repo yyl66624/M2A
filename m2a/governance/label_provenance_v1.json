@@ -65,12 +65,12 @@
     "anchor_without_recorded_label": 8,
     "label_mention_without_predication": 106,
     "cross_round_refutation": 0,
-    "label_without_anchor": 409,
+    "label_without_anchor": 411,
     "matches_artifact": 83,
     "hard_findings": 0,
     "paired_corrections": 2,
-    "claim_documents": 46,
-    "corpus_documents": 51,
+    "claim_documents": 47,
+    "corpus_documents": 52,
     "artifact_files": 46,
     "vocabulary_tokens": 39,
     "registered_phases": 22
@@ -2519,7 +2519,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1948,
+      "line": 1950,
       "labels": [
         "CONTRADICTED",
         "INDETERMINATE",
@@ -2536,7 +2536,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1949,
+      "line": 1951,
       "labels": [
         "SUPPORTED"
       ],
@@ -2567,7 +2567,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1972,
+      "line": 1974,
       "labels": [
         "SUPPORTED"
       ],
@@ -2580,7 +2580,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1978,
+      "line": 1980,
       "labels": [
         "IDENTITY_VERIFIED",
         "PASS"
@@ -2612,7 +2612,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1979,
+      "line": 1981,
       "labels": [
         "COUNT_NOT_STATUS",
         "MANUAL_REVIEW"
@@ -2626,7 +2626,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2120,
+      "line": 2126,
       "labels": [
         "CONTRADICTED"
       ],
@@ -2639,7 +2639,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2129,
+      "line": 2135,
       "labels": [
         "CLAIM_LAYER_INFLATION",
         "CONTRADICTED",
@@ -2654,7 +2654,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2130,
+      "line": 2136,
       "labels": [
         "COMPETING_CODED",
         "CONTRADICTED"
@@ -2668,7 +2668,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2131,
+      "line": 2137,
       "labels": [
         "PASS"
       ],
@@ -2681,7 +2681,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2139,
+      "line": 2145,
       "labels": [
         "INDETERMINATE"
       ],
@@ -2694,7 +2694,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2148,
+      "line": 2154,
       "labels": [
         "CONTRADICTED"
       ],
@@ -2707,7 +2707,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2167,
+      "line": 2173,
       "labels": [
         "CONTRADICTED"
       ],
@@ -2720,12 +2720,25 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2188,
+      "line": 2194,
       "labels": [
         "PASS"
       ],
       "excerpt": "PASS  R11 today the three columns agree everywhere except the two registered differences  {\"docs\": 26, \"aligned\": 23, \"static_gap_registered\": 3, \"bad\": 0, \"no_",
       "line_len": 255,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2222,
+      "labels": [
+        "CLAIM_LAYER_INFLATION"
+      ],
+      "excerpt": "判据、读数与出口分别由 `L02_reanalysis.json`（Δ=3，`CLAIM_LAYER_INFLATION`）、`L02-A7` 的实现（`C_claim` 8→7）",
+      "line_len": 90,
       "anchors": [],
       "phantom": [],
       "verdict": "label_without_anchor"
@@ -3388,7 +3401,7 @@
     {
       "document": "governance/OBLIGATION_REGISTRY.md",
       "kind": "regenerated",
-      "line": 80,
+      "line": 82,
       "labels": [
         "PARTIALLY_IDENTIFIED"
       ],
@@ -3409,7 +3422,7 @@
     {
       "document": "governance/OBLIGATION_REGISTRY.md",
       "kind": "regenerated",
-      "line": 98,
+      "line": 100,
       "labels": [
         "INDETERMINATE"
       ],
@@ -10618,6 +10631,19 @@
       ],
       "excerpt": "> 核验：104 × IDENTITY_VERIFIED + 2 × ABSTRACT_VERIFIED；**0 × FULLTEXT_REVIEWED**（未变）",
       "line_len": 82,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/ROUND_L01_DISPOSITIONS.md",
+      "kind": "run_record",
+      "line": 10,
+      "labels": [
+        "CLAIM_LAYER_INFLATION"
+      ],
+      "excerpt": "出口 `CLAIM_LAYER_INFLATION`（`literature/ROUND_L02_RESULTS.md` §3）。",
+      "line_len": 67,
       "anchors": [],
       "phantom": [],
       "verdict": "label_without_anchor"
