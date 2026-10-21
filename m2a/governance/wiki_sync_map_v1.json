@@ -154,6 +154,13 @@
       "node_token": "KCMhwheuIiKKUjkmHjBcNaHtnHb",
       "section": 52,
       "title": "M2A 治理｜义务台账的命名空间由标签形状推导：L-02 的读数据此处置 L-01 的三条开放项"
+    },
+    {
+      "draft": "M2A-治理-判定锚点加宽与门控里的科学判据.md",
+      "in_ledger": true,
+      "node_token": "Cyx3wvKSOimovIkm9T9cxLTCnCe",
+      "section": 53,
+      "title": "M2A 治理｜判定锚点加宽之后，门控里不能装「仓库是干净的」"
     }
   ],
   "counts": {
@@ -162,11 +169,11 @@
     "first_batch_off_pin": 0,
     "first_batch_pages": 12,
     "first_batch_pages_claimed_by_a_section": 1,
-    "governance_pages": 17,
+    "governance_pages": 18,
     "governance_pages_unclaimed": 0,
-    "ledger_pages_with_node": 29,
-    "report_sections_in_population": 22,
-    "sections_claimed": 22,
+    "ledger_pages_with_node": 30,
+    "report_sections_in_population": 23,
+    "sections_claimed": 23,
     "sections_unclaimed": 0
   },
   "dangling_claims": [],
@@ -517,6 +524,26 @@
         52
       ],
       "title": "M2A 治理｜义务台账的命名空间由标签形状推导：L-02 的读数据此处置 L-01 的三条开放项"
+    },
+    {
+      "draft": "M2A-治理-判定锚点加宽与门控里的科学判据.md",
+      "draft_chars": 1609,
+      "draft_sha256": "a399f3ca89b8ff8b13166f2a828dff13688814fa83f61bca00ec625e87e1d150",
+      "markers": [
+        "判定锚点加宽",
+        "X-109",
+        "X-110",
+        "门控里不能装",
+        "不抄校验器的分数"
+      ],
+      "markers_ok_recorded": true,
+      "node_token": "Cyx3wvKSOimovIkm9T9cxLTCnCe",
+      "obj_token": "OdSgd0BvJotLduxzRxjcQZShnRg",
+      "read_back_chars_recorded": 1947,
+      "sections": [
+        53
+      ],
+      "title": "M2A 治理｜判定锚点加宽之后，门控里不能装「仓库是干净的」"
     }
   ],
   "schema": "m2a.wiki_sync_map.v1",
@@ -682,7 +709,10 @@
         7,
         91,
         92,
-        93
+        93,
+        108,
+        109,
+        110
       ]
     },
     {
@@ -719,24 +749,35 @@
         107,
         108
       ]
+    },
+    {
+      "section": 53,
+      "title": "加宽判定锚点必须同时教会仪器分辨「用」与「提及」，而门控里不能装「仓库是干净的」（GOVERNANCE_ARTIFACT，不产生科学判定）",
+      "xids_named": [
+        91,
+        92,
+        108,
+        109,
+        110
+      ]
     }
   ],
   "stale_claims": [],
   "tools": [
     {
-      "bytes": 57736,
+      "bytes": 58236,
       "file": "check_step_draft_numbers.py",
-      "sha256": "13e257c6c7d49329772ffb252afe48704c0a7551711ccc13e9a5fba3404a42ac"
+      "sha256": "188dcc5578a2d497bafe28046c7c956be8902924321a39bfe10b31fc48b8f1a6"
     },
     {
-      "bytes": 9073,
+      "bytes": 9330,
       "file": "publish_wiki_steps.py",
-      "sha256": "5d13c257f8af31112e2d818e8bfb10778e7c06fb843bc201287b37821ae46363"
+      "sha256": "959e13f27c2f2bd39d4201f03abd7d81be7aacf3377d5cf317f5a44c5095d594"
     },
     {
-      "bytes": 11189,
+      "bytes": 11515,
       "file": "feishu_wiki_nodes.json",
-      "sha256": "14ad97e305bc742f47efda12c8c055f31cf826172841e138aa607c28913020eb"
+      "sha256": "dae9a731ee41810af6a343d8b97364435730db9833e5fe6a7ca5c0446bbde68b"
     }
   ],
   "unclaimed_sections": [],

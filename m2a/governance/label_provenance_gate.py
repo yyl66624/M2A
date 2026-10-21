@@ -1,4 +1,4 @@
-"""§49 validator for the label-provenance table: 17 rules plus 2 self-counts, and every rule is asked
+"""§49 validator for the label-provenance table: 18 rules plus 2 self-counts, and every rule is asked
 whether it can fire.
 
 Reads only committed artifacts and the repo's own JSON; the audit itself does not run experiments and does not
@@ -153,10 +153,36 @@ def main() -> int:
     silenced = [r for r in rows if r.get("errata")]
     hard_now = [r for r in rows if r["verdict"] in B.HARD_TERMS]
     without = [r for r in rows if any(v in B.HARD_TERMS for _, v in r.get("per_label", []))]
+    keys = lambda rs: {(r["document"], r["line"]) for r in rs}
+
+    def destinations(rs):
+        """The four places a row whose labels include a hard term is allowed to end up."""
+        wo = [r for r in rs if any(v in B.HARD_TERMS for _, v in r.get("per_label", []))]
+        return (keys(wo), (keys([r for r in rs if r["verdict"] in B.HARD_TERMS]),
+                           keys([r for r in rs if r.get("errata")]),
+                           keys([r for r in wo if r["verdict"] == "cross_round_refutation"]),
+                           keys([r for r in wo if r.get("paired_correction")])))
+
+    w_set, (h_set, s_set, c_set, p_set) = destinations(rows)
+    # Teeth for the rule itself: drop one row's errata record - the laundering this rule exists to refuse - and
+    # the equation must fail. The probe runs on a copy of the in-memory rows, never on the artifact (X-91), and
+    # it is what replaces the `not hard_now` conjunct that the old rule mistook for a check of the instrument.
+    i0 = next((i for i, r in enumerate(rows) if r.get("errata")), None)
+    laundered = [dict(r, errata=None) if i == i0 else r for i, r in enumerate(rows)] if i0 is not None else None
+    ld = destinations(laundered) if laundered is not None else None
+    teeth = ld is not None and ld[0] != set().union(*ld[1])
+    # The rule used to end with `not hard_now`: a claim about the repository sitting inside a check of the
+    # instrument, so the gate turned red the moment the layer found anything (X-109). What is actually being
+    # verified is that nothing is *laundered*: a row whose labels include a hard term must end either hard,
+    # or silenced by a published errata, or disclosed as cross-round / paired-correction - and a row cannot
+    # be both corrected and paired, because emptying `hard` is what pairs it.
     report("Q11 every errata entry's marker is in the document it names, and it silences exactly its rows",
-           not dead and len(silenced) >= len(d["errata"]) and not hard_now and len(without) >= len(d["errata"]),
-           "errata=%d silenced=%d would-be-hard=%d live-hard=%d dead=%d"
-           % (len(d["errata"]), len(silenced), len(without), len(hard_now), len(dead)))
+           not dead and len(silenced) >= len(d["errata"]) and len(without) >= len(d["errata"])
+           and w_set == h_set | s_set | c_set | p_set and teeth
+           and not (h_set & p_set) and not (s_set & c_set),
+           "errata=%d silenced=%d would-be-hard=%d live-hard=%d cross=%d paired=%d laundering-probe=%s dead=%d"
+           % (len(d["errata"]), len(silenced), len(without), len(hard_now), len(c_set), len(p_set),
+              "fires" if teeth else "DEAD", len(dead)))
 
     # Q12 a correction row does not silence itself: rebuild the row with the marker inside it
     if d["errata"]:

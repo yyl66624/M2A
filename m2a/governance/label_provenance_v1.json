@@ -24,7 +24,7 @@
   ],
   "generator": {
     "file": "governance/build_label_provenance.py",
-    "sha256": "5491e5f7967d0c223ffc31947aca57cd42dfa31604b48fef2b6e4ebbd62c9df7"
+    "sha256": "64707e807cf99e0b464db8601e1935a150208969cf57a5beec0176672844fb00"
   },
   "self_excluded": [
     "LABEL_PROVENANCE_v1.md",
@@ -44,31 +44,39 @@
       "replacement": "由 Phase VI 的跨系统复验否证"
     },
     {
-      "xid": 92,
+      "xid": 110,
       "document": "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
-      "quoted": "NOT_RESOLVABLE",
-      "anchor": "14",
-      "marker": "订正 X-92",
-      "replacement": "格级状态在 phase14 工件里记为布尔 resolvable 与 n_not_resolvable=0"
+      "quoted": "NULL",
+      "anchor": "L01",
+      "marker": "订正 X-110",
+      "replacement": "那一句说的是 §37 口径表里「仅出现在文档措辞中」的那一行计数，不是 L-01 的判定"
+    },
+    {
+      "xid": 110,
+      "document": "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
+      "quoted": "PARTIALLY_IDENTIFIED",
+      "anchor": "L01",
+      "marker": "订正 X-110",
+      "replacement": "那一句说的是该标签在语料里没有指称对象，不是把该标签判给任何一轮"
     }
   ],
   "asymmetry": "pairing is at round level, never arm level: looseness can only remove findings",
   "counts": {
     "anchor_phantom": 0,
     "label_unregistered": 0,
-    "label_wrong_for_anchor": 0,
+    "label_wrong_for_anchor": 1,
     "stale_in_register": 0,
     "paired_correction": 0,
-    "five_label_only_in_translation": 31,
+    "five_label_only_in_translation": 1,
     "not_a_round_verdict": 0,
     "attested_in_other_round": 0,
-    "anchor_without_recorded_label": 8,
-    "label_mention_without_predication": 106,
+    "anchor_without_recorded_label": 3,
+    "label_mention_without_predication": 200,
     "cross_round_refutation": 0,
-    "label_without_anchor": 411,
-    "matches_artifact": 83,
-    "hard_findings": 0,
-    "paired_corrections": 2,
+    "label_without_anchor": 391,
+    "matches_artifact": 44,
+    "hard_findings": 1,
+    "paired_corrections": 0,
     "claim_documents": 47,
     "corpus_documents": 52,
     "artifact_files": 46,
@@ -540,6 +548,9 @@
         "SUPPORTED"
       ],
       "predicated": true,
+      "attested_labels": [
+        "J_NOT_DECISIVE"
+      ],
       "per_label": [
         [
           "J_NOT_DECISIVE",
@@ -569,6 +580,7 @@
         "SUPPORTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -698,6 +710,7 @@
         "SUPPORTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -735,6 +748,7 @@
         "REFUTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -779,6 +793,7 @@
         "SUPPORTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -808,6 +823,7 @@
         "SUPPORTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -837,6 +853,7 @@
         "SUPPORTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -862,6 +879,10 @@
         "REFUTED"
       ],
       "predicated": true,
+      "attested_labels": [
+        "O-REFUTED",
+        "REFUTED"
+      ],
       "per_label": [
         [
           "O-REFUTED",
@@ -898,6 +919,7 @@
         "SUPPORTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -922,6 +944,7 @@
         "S2 stays REFUTED (P8-F4); this round only explains its readings"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -946,6 +969,7 @@
         "a_all_and_b_all"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -970,6 +994,7 @@
         "X1-X5 all pass"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -994,6 +1019,7 @@
         "a_all_and_b_all"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -1018,6 +1044,7 @@
         "PASS"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -1042,6 +1069,7 @@
         "PASS"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -1064,6 +1092,7 @@
         "PASS"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -1088,6 +1117,7 @@
         "PASS"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -1114,6 +1144,7 @@
         "REFUTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -1164,6 +1195,9 @@
         "a_all_and_b_all"
       ],
       "predicated": true,
+      "attested_labels": [
+        "CONFIRMED"
+      ],
       "per_label": [
         [
           "CONFIRMED",
@@ -1195,6 +1229,9 @@
         "X1-X5 all pass"
       ],
       "predicated": true,
+      "attested_labels": [
+        "CONFIRMED"
+      ],
       "per_label": [
         [
           "CONFIRMED",
@@ -1226,6 +1263,7 @@
         "REFUTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -1250,6 +1288,9 @@
         "SUPPORTED"
       ],
       "predicated": true,
+      "attested_labels": [
+        "CONFIRMED"
+      ],
       "per_label": [
         [
           "CONFIRMED",
@@ -1281,6 +1322,9 @@
         "XC1-XC4 and XC6 pass; XC5 recorded as a finding"
       ],
       "predicated": true,
+      "attested_labels": [
+        "CONFIRMED"
+      ],
       "per_label": [
         [
           "CONFIRMED",
@@ -1338,6 +1382,9 @@
         "PASS"
       ],
       "predicated": true,
+      "attested_labels": [
+        "EXACT"
+      ],
       "per_label": [
         [
           "EXACT",
@@ -1408,6 +1455,7 @@
         "PASS"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -1432,6 +1480,7 @@
         "PASS"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -1454,6 +1503,9 @@
         "E3 TEST-UNSATISFIABLE"
       ],
       "predicated": true,
+      "attested_labels": [
+        "UNSATISFIABLE"
+      ],
       "per_label": [
         [
           "UNSATISFIABLE",
@@ -1483,6 +1535,9 @@
         "E1 FILTER-USABLE"
       ],
       "predicated": true,
+      "attested_labels": [
+        "USABLE"
+      ],
       "per_label": [
         [
           "USABLE",
@@ -1514,6 +1569,9 @@
         "zero-test re-analysis on committed readings; no round verdict is altered (R6)"
       ],
       "predicated": true,
+      "attested_labels": [
+        "PREDICTED"
+      ],
       "per_label": [
         [
           "PREDICTED",
@@ -1545,9 +1603,38 @@
       ],
       "excerpt": "## 32 Round L-01（2026-10-18 追加）：第 4 条要求的 14 篇全文机制编码**做完**，三簇判定全为 `INDETERMINATE`",
       "line_len": 80,
-      "anchors": [],
+      "anchors": [
+        "L01"
+      ],
       "phantom": [],
-      "verdict": "label_without_anchor"
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": true,
+      "attested_labels": [
+        "INDETERMINATE"
+      ],
+      "per_label": [
+        [
+          "INDETERMINATE",
+          "matches_artifact"
+        ]
+      ],
+      "errata": [],
+      "verdict": "matches_artifact"
     },
     {
       "document": "M2A_FINAL_REPORT.md",
@@ -1646,6 +1733,7 @@
         "ZERO_TEST_REANALYSIS"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -1678,6 +1766,7 @@
         "ZERO_TEST_REANALYSIS"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -1702,9 +1791,29 @@
       ],
       "excerpt": "而 L-01 的 17 条里 `FULLTEXT_REVIEWED` 14、`QUALIFIED` 2、`ABSTRACT_VERIFIED` 1。",
       "line_len": 76,
-      "anchors": [],
+      "anchors": [
+        "L01"
+      ],
       "phantom": [],
-      "verdict": "label_without_anchor"
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "M2A_FINAL_REPORT.md",
@@ -1893,9 +2002,29 @@
       ],
       "excerpt": "2. **两个层级都为 0 的标签**：无（五值标签全部至少出现一次）。但 `NULL` 只出现 1 次（文献轮 L-01 的",
       "line_len": 63,
-      "anchors": [],
+      "anchors": [
+        "L01"
+      ],
       "phantom": [],
-      "verdict": "label_without_anchor"
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "M2A_FINAL_REPORT.md",
@@ -2046,6 +2175,9 @@
         "ZERO_TEST_REANALYSIS"
       ],
       "predicated": true,
+      "attested_labels": [
+        "CONTRADICTED"
+      ],
       "per_label": [
         [
           "CONTRADICTED",
@@ -2153,6 +2285,10 @@
         "E1 | E2 | E3 | E4"
       ],
       "predicated": true,
+      "attested_labels": [
+        "GAP-IS-NOISE",
+        "SUPPORTED"
+      ],
       "verdict": "anchor_without_recorded_label"
     },
     {
@@ -2311,9 +2447,29 @@
       ],
       "excerpt": "2. §34 把这一行归给「文献轮 L-01 的 `NOT_OBTAINED`」。`NOT_OBTAINED` 在",
       "line_len": 57,
-      "anchors": [],
+      "anchors": [
+        "L01"
+      ],
       "phantom": [],
-      "verdict": "label_without_anchor"
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "M2A_FINAL_REPORT.md",
@@ -2464,6 +2620,9 @@
         "zero-test re-analysis on committed readings; no round verdict is altered (R6)"
       ],
       "predicated": true,
+      "attested_labels": [
+        "CONTRADICTED"
+      ],
       "per_label": [
         [
           "CONTRADICTED",
@@ -2471,7 +2630,7 @@
         ],
         [
           "SUPPORTED",
-          "five_label_only_in_translation"
+          "label_mention_without_predication"
         ]
       ],
       "errata": [],
@@ -2555,6 +2714,9 @@
         "XC1-XC4 and XC6 pass; XC5 recorded as a finding"
       ],
       "predicated": true,
+      "attested_labels": [
+        "SUPPORTED"
+      ],
       "per_label": [
         [
           "SUPPORTED",
@@ -2607,6 +2769,7 @@
         "zero-test re-analysis on committed readings; no round verdict is altered (R6)"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -2626,7 +2789,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2126,
+      "line": 2138,
       "labels": [
         "CONTRADICTED"
       ],
@@ -2639,7 +2802,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2135,
+      "line": 2147,
       "labels": [
         "CLAIM_LAYER_INFLATION",
         "CONTRADICTED",
@@ -2654,7 +2817,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2136,
+      "line": 2148,
       "labels": [
         "COMPETING_CODED",
         "CONTRADICTED"
@@ -2668,7 +2831,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2137,
+      "line": 2149,
       "labels": [
         "PASS"
       ],
@@ -2681,20 +2844,49 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2145,
+      "line": 2157,
       "labels": [
         "INDETERMINATE"
       ],
       "excerpt": "这否证的是**计入规则**（「同族同号即支持」），不是任何一轮的判定——L-01 三簇各自的 `INDETERMINATE` 一字未动。",
       "line_len": 71,
-      "anchors": [],
+      "anchors": [
+        "L01"
+      ],
       "phantom": [],
-      "verdict": "label_without_anchor"
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": true,
+      "attested_labels": [
+        "INDETERMINATE"
+      ],
+      "per_label": [
+        [
+          "INDETERMINATE",
+          "matches_artifact"
+        ]
+      ],
+      "errata": [],
+      "verdict": "matches_artifact"
     },
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2154,
+      "line": 2166,
       "labels": [
         "CONTRADICTED"
       ],
@@ -2707,20 +2899,44 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2173,
+      "line": 2185,
       "labels": [
         "CONTRADICTED"
       ],
       "excerpt": "本轮的锚点叫 `L02`，不在它的人群里，所以「L-02 判为 CONTRADICTED」这类句子目前**没有**任何仪器能把它对回",
       "line_len": 66,
-      "anchors": [],
+      "anchors": [
+        "L02"
+      ],
       "phantom": [],
-      "verdict": "label_without_anchor"
+      "allowed_five": [
+        "CONTRADICTED"
+      ],
+      "artifact_raw": [
+        "CLAIM_LAYER_INFLATION",
+        "COMPETING_CODED",
+        "CONTRADICTED",
+        "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+        "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": true,
+      "attested_labels": [
+        "CONTRADICTED"
+      ],
+      "per_label": [
+        [
+          "CONTRADICTED",
+          "matches_artifact"
+        ]
+      ],
+      "errata": [],
+      "verdict": "matches_artifact"
     },
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2194,
+      "line": 2206,
       "labels": [
         "PASS"
       ],
@@ -2733,15 +2949,30 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2222,
+      "line": 2234,
       "labels": [
         "CLAIM_LAYER_INFLATION"
       ],
       "excerpt": "判据、读数与出口分别由 `L02_reanalysis.json`（Δ=3，`CLAIM_LAYER_INFLATION`）、`L02-A7` 的实现（`C_claim` 8→7）",
       "line_len": 90,
-      "anchors": [],
+      "anchors": [
+        "L02"
+      ],
       "phantom": [],
-      "verdict": "label_without_anchor"
+      "allowed_five": [
+        "CONTRADICTED"
+      ],
+      "artifact_raw": [
+        "CLAIM_LAYER_INFLATION",
+        "COMPETING_CODED",
+        "CONTRADICTED",
+        "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+        "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
@@ -2789,6 +3020,9 @@
         "SUPPORTED"
       ],
       "predicated": true,
+      "attested_labels": [
+        "REFUTED"
+      ],
       "per_label": [
         [
           "REFUTED",
@@ -2851,6 +3085,7 @@
         "SUPPORTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -2896,15 +3131,9 @@
         "SUPPORTED",
         "X1-X5 all pass"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "REFUTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
@@ -2932,6 +3161,9 @@
         "PASS"
       ],
       "predicated": true,
+      "attested_labels": [
+        "K-DEPENDENT-RESIDUAL"
+      ],
       "per_label": [
         [
           "K-DEPENDENT-RESIDUAL",
@@ -2962,21 +3194,9 @@
         "E1 RATE-LAW EXACT",
         "PASS"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "NOT_RESOLVABLE",
-          "label_wrong_for_anchor"
-        ]
-      ],
-      "errata": [
-        {
-          "quoted": "NOT_RESOLVABLE",
-          "xid": 92,
-          "marker": "订正 X-92"
-        }
-      ],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
@@ -3011,6 +3231,9 @@
         "E3 TEST-UNSATISFIABLE"
       ],
       "predicated": true,
+      "attested_labels": [
+        "UNSATISFIABLE"
+      ],
       "per_label": [
         [
           "UNSATISFIABLE",
@@ -3045,6 +3268,9 @@
         "SUPPORTED"
       ],
       "predicated": true,
+      "attested_labels": [
+        "USABLE"
+      ],
       "per_label": [
         [
           "USABLE",
@@ -3076,6 +3302,9 @@
         "SUPPORTED"
       ],
       "predicated": true,
+      "attested_labels": [
+        "SEPARABLE"
+      ],
       "per_label": [
         [
           "SEPARABLE",
@@ -3107,6 +3336,9 @@
         "zero-test re-analysis on committed readings; no round verdict is altered (R6)"
       ],
       "predicated": true,
+      "attested_labels": [
+        "PREDICTED"
+      ],
       "per_label": [
         [
           "PREDICTED",
@@ -3150,6 +3382,9 @@
         "ZERO_TEST_REANALYSIS"
       ],
       "predicated": true,
+      "attested_labels": [
+        "INDETERMINATE"
+      ],
       "per_label": [
         [
           "INDETERMINATE",
@@ -3157,7 +3392,7 @@
         ],
         [
           "QUALIFIED",
-          "matches_artifact"
+          "label_mention_without_predication"
         ]
       ],
       "errata": [],
@@ -3177,20 +3412,6 @@
       ],
       "excerpt": "| X-71 | **五值标签翻译层暴露两层缺口：格级状态只写在文档里、NULL 在实验侧从未被单独命名** | `governance/build_status_label_table.py` 扫描全部 `phase*_results.json`、`phase*_reanalysis.json`、`L01_codin",
       "line_len": 732,
-      "anchors": [],
-      "phantom": [],
-      "verdict": "label_without_anchor"
-    },
-    {
-      "document": "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
-      "kind": "append_only",
-      "line": 191,
-      "labels": [
-        "CONTRADICTED",
-        "INDETERMINATE"
-      ],
-      "excerpt": "| X-73 | **L01-D3 的成因比原登记更具体：反证在同一份工件里已被记录，是计票时被机械轴比较覆盖掉的**（零检验地位重判读，不改原判定） | `literature/run_L01_reanalysis.py` → `literature/L01_reanalysis.json`（`registered_",
-      "line_len": 1263,
       "anchors": [
         "L01"
       ],
@@ -3212,6 +3433,83 @@
         "ZERO_TEST_REANALYSIS"
       ],
       "predicated": true,
+      "attested_labels": [
+        "NULL"
+      ],
+      "per_label": [
+        [
+          "MANUAL_REVIEW",
+          "label_mention_without_predication"
+        ],
+        [
+          "NOT_IDENTIFIED",
+          "label_mention_without_predication"
+        ],
+        [
+          "NOT_OBTAINED",
+          "label_mention_without_predication"
+        ],
+        [
+          "NOT_RESOLVABLE",
+          "label_mention_without_predication"
+        ],
+        [
+          "NULL",
+          "label_wrong_for_anchor"
+        ],
+        [
+          "PARTIALLY_IDENTIFIED",
+          "label_mention_without_predication"
+        ]
+      ],
+      "errata": [
+        {
+          "quoted": "NULL",
+          "xid": 110,
+          "marker": "订正 X-110"
+        }
+      ],
+      "verdict": "matches_artifact"
+    },
+    {
+      "document": "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
+      "kind": "append_only",
+      "line": 191,
+      "labels": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "excerpt": "| X-73 | **L01-D3 的成因比原登记更具体：反证在同一份工件里已被记录，是计票时被机械轴比较覆盖掉的**（零检验地位重判读，不改原判定） | `literature/run_L01_reanalysis.py` → `literature/L01_reanalysis.json`（`registered_",
+      "line_len": 1263,
+      "anchors": [
+        "L01",
+        "L02"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CLAIM_LAYER_INFLATION",
+        "COMPETING_CODED",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": true,
+      "attested_labels": [
+        "CONTRADICTED"
+      ],
       "per_label": [
         [
           "CONTRADICTED",
@@ -3219,7 +3517,7 @@
         ],
         [
           "INDETERMINATE",
-          "matches_artifact"
+          "label_mention_without_predication"
         ]
       ],
       "errata": [],
@@ -3241,16 +3539,71 @@
       "excerpt": "| X-74 | **报告里的数字是手敲的，不是从工件抄的：§34 对 `NULL` 的两处陈述都与其自己引用的工件矛盾** | 为口径表补上「同文件求解」后重跑，`MANUAL_REVIEW` 由 20 降到 0；同时查出一处覆盖漏洞——出口**名**写在 `exits` 字典的**键**上，旧扫描器只看值，于是 `",
       "line_len": 1432,
       "anchors": [
-        "15"
+        "15",
+        "L01"
       ],
       "phantom": [],
-      "allowed_five": [],
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
       "artifact_raw": [
         "4/4 closed",
-        "E1 | E2 | E3 | E4"
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "E1 | E2 | E3 | E4",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
       ],
       "predicated": true,
-      "verdict": "anchor_without_recorded_label"
+      "attested_labels": [
+        "PARTIALLY_IDENTIFIED",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "per_label": [
+        [
+          "COUNT_NOT_STATUS",
+          "label_mention_without_predication"
+        ],
+        [
+          "MANUAL_REVIEW",
+          "label_mention_without_predication"
+        ],
+        [
+          "NOT_OBTAINED",
+          "label_mention_without_predication"
+        ],
+        [
+          "NULL",
+          "label_mention_without_predication"
+        ],
+        [
+          "PARTIALLY_IDENTIFIED",
+          "label_wrong_for_anchor"
+        ],
+        [
+          "SUPPORTED",
+          "label_mention_without_predication"
+        ],
+        [
+          "ZERO_TEST_REANALYSIS",
+          "not_a_round_verdict"
+        ]
+      ],
+      "errata": [
+        {
+          "quoted": "PARTIALLY_IDENTIFIED",
+          "xid": 110,
+          "marker": "订正 X-110"
+        }
+      ],
+      "verdict": "matches_artifact"
     },
     {
       "document": "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
@@ -3291,15 +3644,9 @@
         "S2 stays REFUTED (P8-F4); this round only explains its readings",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "PASS",
-          "not_a_round_verdict"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
@@ -3360,6 +3707,10 @@
         "zero-test re-analysis on committed readings; no round verdict is altered (R6)"
       ],
       "predicated": true,
+      "attested_labels": [
+        "COUNT_NOT_STATUS",
+        "IDENTITY_VERIFIED"
+      ],
       "per_label": [
         [
           "COUNT_NOT_STATUS",
@@ -3371,32 +3722,64 @@
         ],
         [
           "MANUAL_REVIEW",
-          "not_a_round_verdict"
+          "label_mention_without_predication"
         ],
         [
           "NOT_RESOLVABLE",
-          "label_wrong_for_anchor"
+          "label_mention_without_predication"
         ],
         [
           "O-REFUTED",
-          "matches_artifact"
+          "label_mention_without_predication"
         ],
         [
           "PASS",
-          "not_a_round_verdict"
+          "label_mention_without_predication"
         ],
         [
           "REFUTED",
-          "matches_artifact"
+          "label_mention_without_predication"
         ],
         [
           "SUPPORTED",
-          "matches_artifact"
+          "label_mention_without_predication"
         ]
       ],
       "errata": [],
-      "paired_correction": true,
       "verdict": "matches_artifact"
+    },
+    {
+      "document": "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
+      "kind": "append_only",
+      "line": 231,
+      "labels": [
+        "NULL"
+      ],
+      "excerpt": "| X-110 | **加宽锚点后本层第一次产出的三条硬伤：两条是本日志自己的归层措辞，第三条在冻结的轮次记录里、按 R6 不能追加** | 其一（本日志 X-71 行）把「五值标签 `NULL` 在语料里只出现 1 次」写成「在文献轮 L-01 出现 1 次」：那句引用的是 §37 口径表里**仅出现在文档措辞中**",
+      "line_len": 673,
+      "anchors": [
+        "L01"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "governance/OBLIGATION_REGISTRY.md",
@@ -3417,6 +3800,9 @@
         "E1 | E2 | E3 | E4"
       ],
       "predicated": true,
+      "attested_labels": [
+        "PARTIALLY_IDENTIFIED"
+      ],
       "verdict": "anchor_without_recorded_label"
     },
     {
@@ -3428,9 +3814,29 @@
       ],
       "excerpt": "- **O-11**：全文编码缺失：L-01 已对 3 锚点 + 14 邻域做全文编码（42 条逐字引文），仍低于条目建议的 20–30 条核心子集，且三簇全部判 `INDETERMINATE` ⇒ 「校准 K 族标注」的目标未达成，本条保持开放。",
       "line_len": 124,
-      "anchors": [],
+      "anchors": [
+        "L01"
+      ],
       "phantom": [],
-      "verdict": "label_without_anchor"
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/AO_MEASUREMENT_PROTOCOL_v1.md",
@@ -3466,6 +3872,7 @@
         "E3 TEST-UNSATISFIABLE"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -3558,9 +3965,29 @@
       ],
       "excerpt": "核验级别同样漂移：`IDENTITY_VERIFIED` 104 行、`ABSTRACT_VERIFIED` 2 行，而 L-01 的 17 条里出现 `FULLTEXT_REVIEWED` 14 条、`QUALIFIED` 2 条、`ABSTRACT_VERIFIED` 1 条 ⇒ 注册表的级别字段与全文级读数是**",
       "line_len": 180,
-      "anchors": [],
+      "anchors": [
+        "L01"
+      ],
       "phantom": [],
-      "verdict": "label_without_anchor"
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/RUNNER_GATE_ENFORCEMENT_v1.md",
@@ -3571,9 +3998,29 @@
       ],
       "excerpt": "- `run_L01_reanalysis.py`：L-01 主张层重判读：输入是已提交的 `L01_coding.json`，输出 `L01_reanalysis.json` 标注 `ZERO_TEST_REANALYSIS`；该轮的门控由 `run_L01.py` 在编码时执行过（`l01_gate.py`），重判",
       "line_len": 172,
-      "anchors": [],
+      "anchors": [
+        "L01"
+      ],
       "phantom": [],
-      "verdict": "label_without_anchor"
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -3649,6 +4096,7 @@
         "X1-X5 all pass"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -3673,6 +4121,7 @@
         "X1-X5 all pass"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -3696,15 +4145,9 @@
         "SUPPORTED",
         "X1-X5 all pass"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "SUPPORTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -3732,6 +4175,7 @@
         "SUPPORTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -3755,15 +4199,9 @@
         "E1 CONFIRMED",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "SUPPORTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -3791,6 +4229,7 @@
         "XC1-XC4 and XC6 pass; XC5 recorded as a finding"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -3815,6 +4254,7 @@
         "XC1-XC4 and XC6 pass; XC5 recorded as a finding"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -3838,15 +4278,9 @@
         "SUPPORTED",
         "XC1-XC4 and XC6 pass; XC5 recorded as a finding"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "SUPPORTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -3871,6 +4305,7 @@
         "E1 CONVENTION RECONCILED / E3 K4 CONFIRMED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -3893,15 +4328,9 @@
         "2/4 closed",
         "E1 CONVENTION RECONCILED / E3 K4 CONFIRMED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "MANUAL_REVIEW",
-          "not_a_round_verdict"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -3926,6 +4355,7 @@
         "PASS"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -3949,15 +4379,9 @@
         "E1 RATE-LAW EXACT",
         "PASS"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "MANUAL_REVIEW",
-          "not_a_round_verdict"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -3977,8 +4401,9 @@
         "4/4 closed",
         "E1 | E2 | E3 | E4"
       ],
-      "predicated": true,
-      "verdict": "anchor_without_recorded_label"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -4003,6 +4428,7 @@
         "PASS"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -4026,15 +4452,9 @@
         "E2 K-DEPENDENT-RESIDUAL",
         "PASS"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "MANUAL_REVIEW",
-          "not_a_round_verdict"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -4057,6 +4477,7 @@
         "PASS"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -4078,8 +4499,9 @@
         "E2 TRUNCATION-NOT-THE-CULPRIT",
         "PASS"
       ],
-      "predicated": true,
-      "verdict": "anchor_without_recorded_label"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -4104,6 +4526,7 @@
         "PASS"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -4127,15 +4550,9 @@
         "E1 LAW-K-INVARIANT-UNDER-3LAYER",
         "PASS"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "MANUAL_REVIEW",
-          "not_a_round_verdict"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -4158,6 +4575,7 @@
         "E3 TEST-UNSATISFIABLE"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -4180,19 +4598,9 @@
       "artifact_raw": [
         "E3 TEST-UNSATISFIABLE"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "MANUAL_REVIEW",
-          "not_a_round_verdict"
-        ],
-        [
-          "UNSATISFIABLE",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -4215,6 +4623,7 @@
         "E1 FILTER-USABLE"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -4238,6 +4647,7 @@
         "E1 UNIQUE-AND-SEPARABLE"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -4263,6 +4673,7 @@
         "zero-test re-analysis on committed readings; no round verdict is altered (R6)"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -4284,15 +4695,9 @@
       "artifact_raw": [
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "SUPPORTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -4313,15 +4718,9 @@
       "artifact_raw": [
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "SUPPORTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -4342,15 +4741,9 @@
       "artifact_raw": [
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "SUPPORTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -4371,15 +4764,9 @@
       "artifact_raw": [
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "SUPPORTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -4400,15 +4787,9 @@
       "artifact_raw": [
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "SUPPORTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -4429,15 +4810,9 @@
       "artifact_raw": [
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "SUPPORTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -4458,15 +4833,9 @@
       "artifact_raw": [
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "SUPPORTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -4487,15 +4856,9 @@
       "artifact_raw": [
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "SUPPORTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -4516,15 +4879,9 @@
       "artifact_raw": [
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "SUPPORTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -4553,19 +4910,9 @@
         "REFUTED",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "INDETERMINATE",
-          "five_label_only_in_translation"
-        ],
-        [
-          "NOT_EXPLAINED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "five_label_only_in_translation"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -4593,15 +4940,9 @@
         "REFUTED",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "SUPPORTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -4630,19 +4971,9 @@
         "REFUTED",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "CONTRADICTED",
-          "five_label_only_in_translation"
-        ],
-        [
-          "REFUTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "five_label_only_in_translation"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -4670,15 +5001,9 @@
         "REFUTED",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "SUPPORTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -4708,6 +5033,7 @@
         "SUPPORTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -4737,19 +5063,9 @@
         "REFUTED",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "INDETERMINATE",
-          "five_label_only_in_translation"
-        ],
-        [
-          "NOT_EXPLAINED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "five_label_only_in_translation"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -4778,19 +5094,9 @@
         "REFUTED",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "J_NOT_DECISIVE",
-          "matches_artifact"
-        ],
-        [
-          "MANUAL_REVIEW",
-          "not_a_round_verdict"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -4823,6 +5129,7 @@
         "SUPPORTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -4848,6 +5155,7 @@
         "REFUTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -4880,19 +5188,9 @@
         "REFUTED",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "CONTRADICTED",
-          "five_label_only_in_translation"
-        ],
-        [
-          "REFUTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "five_label_only_in_translation"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -4918,6 +5216,7 @@
         "SUPPORTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -4942,15 +5241,9 @@
         "S2 REFUTED / S3 numeric-vs-analytic agreement stands (both used the r=n-1 config, see P7-A2)",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "SUPPORTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -4985,19 +5278,9 @@
         "S2 REFUTED / S3 numeric-vs-analytic agreement stands (both used the r=n-1 config, see P7-A2)",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "CONTRADICTED",
-          "five_label_only_in_translation"
-        ],
-        [
-          "REFUTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "five_label_only_in_translation"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -5022,6 +5305,7 @@
         "S2 stays REFUTED (P8-F4); this round only explains its readings"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -5046,19 +5330,9 @@
         "QUALIFIED",
         "S2 stays REFUTED (P8-F4); this round only explains its readings"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "CONTRADICTED",
-          "five_label_only_in_translation"
-        ],
-        [
-          "QUALIFIED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "five_label_only_in_translation"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -5094,19 +5368,9 @@
         "S2 stays REFUTED (P8-F4); this round only explains its readings",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "CONTRADICTED",
-          "five_label_only_in_translation"
-        ],
-        [
-          "REFUTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "five_label_only_in_translation"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -5134,6 +5398,7 @@
         "a_all_and_b_all"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -5157,15 +5422,9 @@
         "SUPPORTED",
         "a_all_and_b_all"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "SUPPORTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -5188,15 +5447,9 @@
         "E1 FAMILY-MAP-AS-PREDICTED",
         "zero-test re-analysis on committed readings; no round verdict is altered (R6)"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "MANUAL_REVIEW",
-          "not_a_round_verdict"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -5221,6 +5474,7 @@
         "REFUTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -5245,6 +5499,7 @@
         "REFUTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -5270,6 +5525,7 @@
         "REFUTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -5333,9 +5589,38 @@
       ],
       "excerpt": "| `literature/L01_coding.json` | `exit_table[R13]` | `label_reported=INDETERMINATE` | **INDETERMINATE** | artifact-field | Round L-01 emits the five labels nati",
       "line_len": 239,
-      "anchors": [],
+      "anchors": [
+        "L01"
+      ],
       "phantom": [],
-      "verdict": "label_without_anchor"
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": true,
+      "attested_labels": [
+        "INDETERMINATE"
+      ],
+      "per_label": [
+        [
+          "INDETERMINATE",
+          "matches_artifact"
+        ]
+      ],
+      "errata": [],
+      "verdict": "matches_artifact"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -5346,9 +5631,38 @@
       ],
       "excerpt": "| `literature/L01_coding.json` | `exit_table[G5-03]` | `label_reported=INDETERMINATE` | **INDETERMINATE** | artifact-field | Round L-01 emits the five labels na",
       "line_len": 241,
-      "anchors": [],
+      "anchors": [
+        "L01"
+      ],
       "phantom": [],
-      "verdict": "label_without_anchor"
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": true,
+      "attested_labels": [
+        "INDETERMINATE"
+      ],
+      "per_label": [
+        [
+          "INDETERMINATE",
+          "matches_artifact"
+        ]
+      ],
+      "errata": [],
+      "verdict": "matches_artifact"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -5359,9 +5673,38 @@
       ],
       "excerpt": "| `literature/L01_coding.json` | `exit_table[R14]` | `label_reported=INDETERMINATE` | **INDETERMINATE** | artifact-field | Round L-01 emits the five labels nati",
       "line_len": 239,
-      "anchors": [],
+      "anchors": [
+        "L01"
+      ],
       "phantom": [],
-      "verdict": "label_without_anchor"
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": true,
+      "attested_labels": [
+        "INDETERMINATE"
+      ],
+      "per_label": [
+        [
+          "INDETERMINATE",
+          "matches_artifact"
+        ]
+      ],
+      "errata": [],
+      "verdict": "matches_artifact"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -5403,19 +5746,9 @@
         "REFUTED",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "CONTRADICTED",
-          "five_label_only_in_translation"
-        ],
-        [
-          "REFUTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "five_label_only_in_translation"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -5470,19 +5803,9 @@
         "REFUTED",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "CONTRADICTED",
-          "five_label_only_in_translation"
-        ],
-        [
-          "REFUTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "five_label_only_in_translation"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -5511,19 +5834,9 @@
         "REFUTED",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "CONTRADICTED",
-          "five_label_only_in_translation"
-        ],
-        [
-          "REFUTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "five_label_only_in_translation"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -5632,19 +5945,9 @@
         "REFUTED",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "CONTRADICTED",
-          "five_label_only_in_translation"
-        ],
-        [
-          "REFUTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "five_label_only_in_translation"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -5686,19 +5989,9 @@
         "REFUTED",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "CONTRADICTED",
-          "five_label_only_in_translation"
-        ],
-        [
-          "REFUTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "five_label_only_in_translation"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -5727,19 +6020,9 @@
         "REFUTED",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "CONTRADICTED",
-          "five_label_only_in_translation"
-        ],
-        [
-          "REFUTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "five_label_only_in_translation"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -5768,19 +6051,9 @@
         "REFUTED",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "CONTRADICTED",
-          "five_label_only_in_translation"
-        ],
-        [
-          "REFUTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "five_label_only_in_translation"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -6020,15 +6293,9 @@
         "XC1-XC4 and XC6 pass; XC5 recorded as a finding",
         "zero-test re-analysis on committed readings; no round verdict is altered (R6)"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "MANUAL_REVIEW",
-          "not_a_round_verdict"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -6130,6 +6397,7 @@
         "X1-X5 all pass"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -6154,6 +6422,9 @@
         "X1-X5 all pass"
       ],
       "predicated": true,
+      "attested_labels": [
+        "SUPPORTED"
+      ],
       "per_label": [
         [
           "SUPPORTED",
@@ -6184,15 +6455,9 @@
         "SUPPORTED",
         "X1-X5 all pass"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "SUPPORTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -6220,6 +6485,7 @@
         "SUPPORTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -6243,15 +6509,9 @@
         "E1 CONFIRMED",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "SUPPORTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -6279,6 +6539,7 @@
         "XC1-XC4 and XC6 pass; XC5 recorded as a finding"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -6303,6 +6564,9 @@
         "XC1-XC4 and XC6 pass; XC5 recorded as a finding"
       ],
       "predicated": true,
+      "attested_labels": [
+        "SUPPORTED"
+      ],
       "per_label": [
         [
           "SUPPORTED",
@@ -6333,15 +6597,9 @@
         "SUPPORTED",
         "XC1-XC4 and XC6 pass; XC5 recorded as a finding"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "SUPPORTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -6365,6 +6623,7 @@
         "E1 CONVENTION RECONCILED / E3 K4 CONFIRMED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -6390,6 +6649,7 @@
         "E1 CONVENTION RECONCILED / E3 K4 CONFIRMED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -6412,15 +6672,9 @@
         "2/4 closed",
         "E1 CONVENTION RECONCILED / E3 K4 CONFIRMED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "COUNT_NOT_STATUS",
-          "not_a_round_verdict"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -6445,6 +6699,7 @@
         "PASS"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -6470,6 +6725,7 @@
         "PASS"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -6493,15 +6749,9 @@
         "E1 RATE-LAW EXACT",
         "PASS"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "COUNT_NOT_STATUS",
-          "not_a_round_verdict"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -6523,6 +6773,7 @@
         "E1 | E2 | E3 | E4"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -6543,8 +6794,9 @@
         "4/4 closed",
         "E1 | E2 | E3 | E4"
       ],
-      "predicated": true,
-      "verdict": "anchor_without_recorded_label"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -6569,6 +6821,7 @@
         "PASS"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -6594,6 +6847,7 @@
         "PASS"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -6617,15 +6871,9 @@
         "E2 K-DEPENDENT-RESIDUAL",
         "PASS"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "COUNT_NOT_STATUS",
-          "not_a_round_verdict"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -6648,6 +6896,7 @@
         "PASS"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -6671,6 +6920,7 @@
         "PASS"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -6692,8 +6942,9 @@
         "E2 TRUNCATION-NOT-THE-CULPRIT",
         "PASS"
       ],
-      "predicated": true,
-      "verdict": "anchor_without_recorded_label"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -6718,6 +6969,7 @@
         "PASS"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -6743,6 +6995,7 @@
         "PASS"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -6766,15 +7019,9 @@
         "E1 LAW-K-INVARIANT-UNDER-3LAYER",
         "PASS"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "COUNT_NOT_STATUS",
-          "not_a_round_verdict"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -6797,6 +7044,7 @@
         "E3 TEST-UNSATISFIABLE"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -6820,6 +7068,7 @@
         "E3 TEST-UNSATISFIABLE"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -6842,19 +7091,9 @@
       "artifact_raw": [
         "E3 TEST-UNSATISFIABLE"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "CONTRADICTED",
-          "five_label_only_in_translation"
-        ],
-        [
-          "UNSATISFIABLE",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "five_label_only_in_translation"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -6883,6 +7122,7 @@
         "zero-test re-analysis on committed readings; no round verdict is altered (R6)"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -6912,6 +7152,7 @@
         "zero-test re-analysis on committed readings; no round verdict is altered (R6)"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -6935,6 +7176,7 @@
         "E1 UNIQUE-AND-SEPARABLE"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -6958,6 +7200,7 @@
         "E1 UNIQUE-AND-SEPARABLE"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -6983,6 +7226,7 @@
         "zero-test re-analysis on committed readings; no round verdict is altered (R6)"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -7008,6 +7252,7 @@
         "zero-test re-analysis on committed readings; no round verdict is altered (R6)"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -7029,15 +7274,9 @@
       "artifact_raw": [
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "SUPPORTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -7058,15 +7297,9 @@
       "artifact_raw": [
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "SUPPORTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -7087,15 +7320,9 @@
       "artifact_raw": [
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "SUPPORTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -7116,15 +7343,9 @@
       "artifact_raw": [
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "SUPPORTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -7145,15 +7366,9 @@
       "artifact_raw": [
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "SUPPORTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -7174,15 +7389,9 @@
       "artifact_raw": [
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "SUPPORTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -7203,15 +7412,9 @@
       "artifact_raw": [
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "SUPPORTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -7232,15 +7435,9 @@
       "artifact_raw": [
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "SUPPORTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -7261,15 +7458,9 @@
       "artifact_raw": [
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "SUPPORTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -7298,19 +7489,9 @@
         "REFUTED",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "INDETERMINATE",
-          "five_label_only_in_translation"
-        ],
-        [
-          "NOT_EXPLAINED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "five_label_only_in_translation"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -7338,15 +7519,9 @@
         "REFUTED",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "SUPPORTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -7375,19 +7550,9 @@
         "REFUTED",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "CONTRADICTED",
-          "five_label_only_in_translation"
-        ],
-        [
-          "REFUTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "five_label_only_in_translation"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -7415,15 +7580,9 @@
         "REFUTED",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "SUPPORTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -7453,6 +7612,7 @@
         "SUPPORTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -7482,19 +7642,9 @@
         "REFUTED",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "INDETERMINATE",
-          "five_label_only_in_translation"
-        ],
-        [
-          "NOT_EXPLAINED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "five_label_only_in_translation"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -7523,19 +7673,9 @@
         "REFUTED",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "INDETERMINATE",
-          "five_label_only_in_translation"
-        ],
-        [
-          "J_NOT_DECISIVE",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "five_label_only_in_translation"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -7568,6 +7708,7 @@
         "SUPPORTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -7593,6 +7734,7 @@
         "REFUTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -7625,19 +7767,9 @@
         "REFUTED",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "CONTRADICTED",
-          "five_label_only_in_translation"
-        ],
-        [
-          "REFUTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "five_label_only_in_translation"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -7663,6 +7795,7 @@
         "SUPPORTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -7687,15 +7820,9 @@
         "S2 REFUTED / S3 numeric-vs-analytic agreement stands (both used the r=n-1 config, see P7-A2)",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "SUPPORTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -7730,19 +7857,9 @@
         "S2 REFUTED / S3 numeric-vs-analytic agreement stands (both used the r=n-1 config, see P7-A2)",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "CONTRADICTED",
-          "five_label_only_in_translation"
-        ],
-        [
-          "REFUTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "five_label_only_in_translation"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -7767,6 +7884,7 @@
         "S2 stays REFUTED (P8-F4); this round only explains its readings"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -7791,19 +7909,9 @@
         "QUALIFIED",
         "S2 stays REFUTED (P8-F4); this round only explains its readings"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "CONTRADICTED",
-          "five_label_only_in_translation"
-        ],
-        [
-          "QUALIFIED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "five_label_only_in_translation"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -7839,19 +7947,9 @@
         "S2 stays REFUTED (P8-F4); this round only explains its readings",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "CONTRADICTED",
-          "five_label_only_in_translation"
-        ],
-        [
-          "REFUTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "five_label_only_in_translation"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -7879,6 +7977,7 @@
         "a_all_and_b_all"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -7902,15 +8001,9 @@
         "SUPPORTED",
         "a_all_and_b_all"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "SUPPORTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -7933,15 +8026,9 @@
         "E1 FAMILY-MAP-AS-PREDICTED",
         "zero-test re-analysis on committed readings; no round verdict is altered (R6)"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "ZERO_TEST_REANALYSIS",
-          "not_a_round_verdict"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -7966,6 +8053,7 @@
         "REFUTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -7989,15 +8077,9 @@
         "O-REFUTED",
         "REFUTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "ZERO_TEST_REANALYSIS",
-          "not_a_round_verdict"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -8022,6 +8104,7 @@
         "REFUTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -8085,9 +8168,38 @@
       ],
       "excerpt": "| `literature/L01_coding.json` | `exit_table[R13]` | `label_reported=INDETERMINATE` | **INDETERMINATE** | artifact-field | Round L-01 emits the five labels nati",
       "line_len": 239,
-      "anchors": [],
+      "anchors": [
+        "L01"
+      ],
       "phantom": [],
-      "verdict": "label_without_anchor"
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": true,
+      "attested_labels": [
+        "INDETERMINATE"
+      ],
+      "per_label": [
+        [
+          "INDETERMINATE",
+          "matches_artifact"
+        ]
+      ],
+      "errata": [],
+      "verdict": "matches_artifact"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -8098,9 +8210,38 @@
       ],
       "excerpt": "| `literature/L01_coding.json` | `exit_table[G5-03]` | `label_reported=INDETERMINATE` | **INDETERMINATE** | artifact-field | Round L-01 emits the five labels na",
       "line_len": 241,
-      "anchors": [],
+      "anchors": [
+        "L01"
+      ],
       "phantom": [],
-      "verdict": "label_without_anchor"
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": true,
+      "attested_labels": [
+        "INDETERMINATE"
+      ],
+      "per_label": [
+        [
+          "INDETERMINATE",
+          "matches_artifact"
+        ]
+      ],
+      "errata": [],
+      "verdict": "matches_artifact"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -8111,9 +8252,38 @@
       ],
       "excerpt": "| `literature/L01_coding.json` | `exit_table[R14]` | `label_reported=INDETERMINATE` | **INDETERMINATE** | artifact-field | Round L-01 emits the five labels nati",
       "line_len": 239,
-      "anchors": [],
+      "anchors": [
+        "L01"
+      ],
       "phantom": [],
-      "verdict": "label_without_anchor"
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": true,
+      "attested_labels": [
+        "INDETERMINATE"
+      ],
+      "per_label": [
+        [
+          "INDETERMINATE",
+          "matches_artifact"
+        ]
+      ],
+      "errata": [],
+      "verdict": "matches_artifact"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -8155,19 +8325,9 @@
         "REFUTED",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "CONTRADICTED",
-          "five_label_only_in_translation"
-        ],
-        [
-          "REFUTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "five_label_only_in_translation"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -8222,19 +8382,9 @@
         "REFUTED",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "CONTRADICTED",
-          "five_label_only_in_translation"
-        ],
-        [
-          "REFUTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "five_label_only_in_translation"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -8263,19 +8413,9 @@
         "REFUTED",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "CONTRADICTED",
-          "five_label_only_in_translation"
-        ],
-        [
-          "REFUTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "five_label_only_in_translation"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -8384,19 +8524,9 @@
         "REFUTED",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "CONTRADICTED",
-          "five_label_only_in_translation"
-        ],
-        [
-          "REFUTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "five_label_only_in_translation"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -8438,19 +8568,9 @@
         "REFUTED",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "CONTRADICTED",
-          "five_label_only_in_translation"
-        ],
-        [
-          "REFUTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "five_label_only_in_translation"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -8479,19 +8599,9 @@
         "REFUTED",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "CONTRADICTED",
-          "five_label_only_in_translation"
-        ],
-        [
-          "REFUTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "five_label_only_in_translation"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -8520,19 +8630,9 @@
         "REFUTED",
         "SUPPORTED"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "CONTRADICTED",
-          "five_label_only_in_translation"
-        ],
-        [
-          "REFUTED",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "five_label_only_in_translation"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -8814,6 +8914,7 @@
         "S2 stays REFUTED (P8-F4); this round only explains its readings"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -8877,6 +8978,7 @@
         "X1-X5 all pass"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -8915,6 +9017,7 @@
         "REFUTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -8939,6 +9042,9 @@
         "PASS"
       ],
       "predicated": true,
+      "attested_labels": [
+        "EXACT"
+      ],
       "per_label": [
         [
           "EXACT",
@@ -9009,6 +9115,7 @@
         "E1 CONVENTION RECONCILED / E3 K4 CONFIRMED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -9058,6 +9165,7 @@
         "E1 CONVENTION RECONCILED / E3 K4 CONFIRMED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -9108,6 +9216,7 @@
         "S2 stays REFUTED (P8-F4); this round only explains its readings"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -9132,6 +9241,9 @@
         "PASS"
       ],
       "predicated": true,
+      "attested_labels": [
+        "K-DEPENDENT-RESIDUAL"
+      ],
       "per_label": [
         [
           "K-DEPENDENT-RESIDUAL",
@@ -9228,6 +9340,7 @@
         "PASS"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -9250,6 +9363,9 @@
         "PASS"
       ],
       "predicated": true,
+      "attested_labels": [
+        "NOT-THE-CULPRIT"
+      ],
       "verdict": "anchor_without_recorded_label"
     },
     {
@@ -9278,6 +9394,7 @@
         "PASS"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -9328,6 +9445,9 @@
         "PASS"
       ],
       "predicated": true,
+      "attested_labels": [
+        "LAW-K-INVARIANT-UNDER-3LAYER"
+      ],
       "per_label": [
         [
           "LAW-K-INVARIANT-UNDER-3LAYER",
@@ -9362,6 +9482,7 @@
         "PASS"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -9437,6 +9558,7 @@
         "E3 TEST-UNSATISFIABLE"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -9485,6 +9607,9 @@
         "E1 FILTER-USABLE"
       ],
       "predicated": true,
+      "attested_labels": [
+        "USABLE"
+      ],
       "per_label": [
         [
           "USABLE",
@@ -9527,6 +9652,9 @@
         "E1 UNIQUE-AND-SEPARABLE"
       ],
       "predicated": true,
+      "attested_labels": [
+        "SEPARABLE"
+      ],
       "per_label": [
         [
           "SEPARABLE",
@@ -9571,6 +9699,9 @@
         "zero-test re-analysis on committed readings; no round verdict is altered (R6)"
       ],
       "predicated": true,
+      "attested_labels": [
+        "PREDICTED"
+      ],
       "per_label": [
         [
           "PREDICTED",
@@ -9613,6 +9744,7 @@
         "SUPPORTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -9838,6 +9970,9 @@
         "SUPPORTED"
       ],
       "predicated": true,
+      "attested_labels": [
+        "J_NOT_DECISIVE"
+      ],
       "per_label": [
         [
           "J_NOT_DECISIVE",
@@ -9874,6 +10009,7 @@
         "SUPPORTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -9903,6 +10039,9 @@
         "SUPPORTED"
       ],
       "predicated": true,
+      "attested_labels": [
+        "J_NOT_DECISIVE"
+      ],
       "per_label": [
         [
           "J_NOT_DECISIVE",
@@ -9939,6 +10078,7 @@
         "SUPPORTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -9968,6 +10108,7 @@
         "SUPPORTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -10010,6 +10151,7 @@
         "SUPPORTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -10039,6 +10181,7 @@
         "SUPPORTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -10068,6 +10211,7 @@
         "SUPPORTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -10104,6 +10248,7 @@
         "SUPPORTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -10207,6 +10352,7 @@
         "REFUTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -10285,6 +10431,7 @@
         "SUPPORTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -10310,6 +10457,7 @@
         "SUPPORTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -10334,6 +10482,7 @@
         "S2 stays REFUTED (P8-F4); this round only explains its readings"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -10384,6 +10533,7 @@
         "REFUTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -10423,6 +10573,7 @@
         "SUPPORTED"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -10703,15 +10854,9 @@
         "VERIFIED_TWO_CHANNEL",
         "ZERO_TEST_REANALYSIS"
       ],
-      "predicated": true,
-      "per_label": [
-        [
-          "INDETERMINATE",
-          "matches_artifact"
-        ]
-      ],
-      "errata": [],
-      "verdict": "matches_artifact"
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "literature/ROUND_L01_RESULTS.md",
@@ -10836,6 +10981,7 @@
         "ZERO_TEST_REANALYSIS"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -10882,6 +11028,9 @@
         "ZERO_TEST_REANALYSIS"
       ],
       "predicated": true,
+      "attested_labels": [
+        "NOT_OBTAINED"
+      ],
       "per_label": [
         [
           "NOT_OBTAINED",
@@ -10889,12 +11038,11 @@
         ],
         [
           "OBTAINED_THIRD_CHANNEL",
-          "matches_artifact"
+          "label_mention_without_predication"
         ]
       ],
       "errata": [],
-      "paired_correction": true,
-      "verdict": "matches_artifact"
+      "verdict": "label_wrong_for_anchor"
     },
     {
       "document": "literature/ROUND_L01_RESULTS.md",
@@ -10926,6 +11074,7 @@
         "ZERO_TEST_REANALYSIS"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -11024,6 +11173,9 @@
         "ZERO_TEST_REANALYSIS"
       ],
       "predicated": true,
+      "attested_labels": [
+        "CONTRADICTED"
+      ],
       "per_label": [
         [
           "CONTRADICTED",
@@ -11059,9 +11211,49 @@
       ],
       "excerpt": "| `L02-A8` | §3 Q3 第 1 档的标签格写的是「按 ρ 实际读数的方向给 `SUPPORTS` / `REFUTES` / `MIXED`」 | 那一格用了 ρ 的词表，而 R17 要求标签取五值；照字面实现会产出一个五值之外的标签，`MIXED` 也没有定义「几条反证加几条不可判」算不算混合 | 映射",
       "line_len": 484,
-      "anchors": [],
+      "anchors": [
+        "L02"
+      ],
       "phantom": [],
-      "verdict": "label_without_anchor"
+      "allowed_five": [
+        "CONTRADICTED"
+      ],
+      "artifact_raw": [
+        "CLAIM_LAYER_INFLATION",
+        "COMPETING_CODED",
+        "CONTRADICTED",
+        "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+        "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": true,
+      "attested_labels": [
+        "COMPETING_CODED"
+      ],
+      "per_label": [
+        [
+          "COMPETING_CODED",
+          "matches_artifact"
+        ],
+        [
+          "CONTRADICTED",
+          "label_mention_without_predication"
+        ],
+        [
+          "INDETERMINATE",
+          "label_mention_without_predication"
+        ],
+        [
+          "NOT_IDENTIFIED",
+          "label_mention_without_predication"
+        ],
+        [
+          "SUPPORTED",
+          "label_mention_without_predication"
+        ]
+      ],
+      "errata": [],
+      "verdict": "matches_artifact"
     },
     {
       "document": "literature/ROUND_L02_RESULTS.md",
@@ -11142,9 +11334,29 @@
       ],
       "excerpt": "因此 L-01 的 `C_signed` 作为**支持计数**被否证过一次；这不改动 L-01 任何一簇的 `INDETERMINATE`（R6）。",
       "line_len": 76,
-      "anchors": [],
+      "anchors": [
+        "L01"
+      ],
       "phantom": [],
-      "verdict": "label_without_anchor"
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "literature/ROUND_L02_RESULTS.md",
@@ -11155,9 +11367,24 @@
       ],
       "excerpt": "读法：取向的 3 行全为 `REFUTES`（`directional_votes` = REFUTES,REFUTES,REFUTES），`UNDECIDABLE` 一行不参与投票——它攻击的是「由正交推独立」这一步推理，本身不断言拒绝方向的数量。按 `L02-A8` 的映射 ⇒ 本轮 Q3 标签 `CONTRADI",
       "line_len": 166,
-      "anchors": [],
+      "anchors": [
+        "L02"
+      ],
       "phantom": [],
-      "verdict": "label_without_anchor"
+      "allowed_five": [
+        "CONTRADICTED"
+      ],
+      "artifact_raw": [
+        "CLAIM_LAYER_INFLATION",
+        "COMPETING_CODED",
+        "CONTRADICTED",
+        "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+        "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "literature/ROUND_L02_RESULTS.md",
@@ -11231,6 +11458,7 @@
         "PASS"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -11265,6 +11493,7 @@
         "PASS"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {
@@ -12664,6 +12893,7 @@
         "PASS"
       ],
       "predicated": false,
+      "attested_labels": [],
       "verdict": "label_mention_without_predication"
     },
     {

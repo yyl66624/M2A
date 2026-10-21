@@ -65,6 +65,7 @@ PUBLISH_MAP = {
     50: "D99TwpMdKiqui7kK3eNciniWnhe",   # the value-provenance page, published before it could be registered
     51: "X36OwMb29id4hJk0LRHcN37SnBh",   # the Round L-02 page, published before it could be registered
     52: "KCMhwheuIiKKUjkmHjBcNaHtnHb",   # the Round L-02 page, published before it could be registered
+    53: "Cyx3wvKSOimovIkm9T9cxLTCnCe",   # the label-provenance widening page, published before it could be registered
 }
 
 SECTION_RE = r"^#{2,3} (\d+) (.*)$"

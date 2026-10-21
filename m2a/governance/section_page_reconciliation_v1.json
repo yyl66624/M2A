@@ -9,8 +9,8 @@
     }
   ],
   "counts": {
-    "claims_rows_in_sync_map": 22,
-    "draft_page_aligned": 15,
+    "claims_rows_in_sync_map": 23,
+    "draft_page_aligned": 16,
     "draft_page_grew": 2,
     "draft_page_hard": 0,
     "errata_not_effective": 0,
@@ -28,14 +28,14 @@
       "suite_score_registry_gate.py"
     ],
     "page_superseded": 1,
-    "pages_reconciled": 18,
+    "pages_reconciled": 19,
     "pages_with_self_referential_claims": 1,
-    "pairs_aligned": 16,
+    "pairs_aligned": 17,
     "pairs_compressed": 0,
     "pairs_no_capture": 0,
     "prose_slashes_ignored": 0,
     "score_unattested_in_repo": 0,
-    "sections_covered": 22,
+    "sections_covered": 23,
     "self_referential_values": 1,
     "values_attested_only_in_registration": 1,
     "values_loosely_attested_only": 0
@@ -798,6 +798,31 @@
       ],
       "superseded": {},
       "title": "M2A 治理｜义务台账的命名空间由标签形状推导：L-02 的读数据此处置 L-01 的三条开放项",
+      "unattested": {},
+      "unmeasurable": {},
+      "verdict": "aligned"
+    },
+    {
+      "attestation": {},
+      "draft_vs_page": {
+        "disagree": {},
+        "verdict": "aligned"
+      },
+      "erratum": {},
+      "loosely_attested": {},
+      "multi_value": {},
+      "node_token": "Cyx3wvKSOimovIkm9T9cxLTCnCe",
+      "not_on_page": [],
+      "page_chars": 1947,
+      "page_claims": {},
+      "page_sha256": "1358aa6d34c10fdadd781c25111de950caf86eb5e3835edd7f0dfeabbdc390e9",
+      "prose_slashes_ignored": {},
+      "section_claims": {},
+      "sections": [
+        53
+      ],
+      "superseded": {},
+      "title": "M2A 治理｜判定锚点加宽之后，门控里不能装「仓库是干净的」",
       "unattested": {},
       "unmeasurable": {},
       "verdict": "aligned"

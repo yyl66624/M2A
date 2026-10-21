@@ -24,7 +24,9 @@ tokens (`^[A-Z][A-Z0-9_-]{3,}$`); nothing else is treated as a claim, so no sent
 was never a verdict.
 
 ANCHOR. A line is paired with a round only when it names one: `Phase <roman>` / `Phase I′` / `phase<N>` in a
-code span / `L01`. Resolution is by registered phase number (derived from the artifact file names, not typed).
+code span / a literature round written `L02` **or** `L-02`. The literature families are derived from the
+artifacts that exist (`literature/L<nn>_*`), not from a list (A12). Resolution is by registered phase number
+(derived from the artifact file names, not typed).
 
 VERDICTS - the registered exit order, frozen before the first run:
   L1 `anchor_phantom`        HARD  - the line names a phase number outside the registered set, yet states a
@@ -56,7 +58,31 @@ suite-score machinery; §48 owns scores, this layer owns labels.
 COST. Every prose iteration costs a full corpus re-scan (seconds - no suite is run), and population A is
 re-read from JSON on every derivation.
 
-AMENDMENTS (all made before the first run, so no reading was ever produced under the old criteria):
+AMENDMENTS made after §49's first readings, each one a widening or a fix of this instrument
+and none a relaxation of any round's judgement (R6):
+  A12 the anchor set is derived (every `literature/L<nn>_*` family) and accepts the hyphenated prose form.
+     X-105 registered the hole: the anchor was the literal `\bL01\b`, so a verdict sentence about L-02 - and
+     most sentences about L-01, which the report writes 「Round L-01」 / 「L-01」 - had no anchor at all. That
+     is what made `label_without_anchor` the largest tier (411 of 639 rows) and the least informative.
+  A13 a label counts as a claim about the anchored round only when a verdict predicate is in the SAME clause
+     as it (no clause boundary, no other vocabulary token between). Without this, A12 would mint refutations:
+     a register row that explains the rho -> five-value mapping by listing four tokens in one cell would be
+     read as judging each of them of that round. Narrowing only - it can remove hardings, never add them.
+  A14 `family_artifacts` receives the anchor strings stored in an entry, and `family_of` compared
+     `int(...) == anchor`, so every numeric anchor resolved to no artifacts there and the declared
+     `cross_round_refutation` tier could never fire - a rule with no teeth (X-51's shape, found here because
+     A12 made the same expression a family lookup).
+  A15 (after the readings, dated 订正 X-110) two of the three hardings A12 produced are this repository's
+     own wording: a count of the §37 table's prose-only rows, written as though it were a round's judgement.
+     They are re-attributed by an errata whose marker string must be present in the log to count. The third
+     sits in `literature/ROUND_L01_RESULTS.md`, a frozen input of `literature/l02_gate.py` G2 (X-108), so it
+     cannot be appended to and is reported as-is - the stop rule's own case, not an exemption.
+  A16 (after the readings, same step as A13) the `NOT_RESOLVABLE`/Phase XIV errata entry leaves the list:
+     under A13 that label is no longer predicated in the same clause as the round it names, so the entry had
+     no row left to silence. Q11's "no registered correction points at nothing" conjunct is the reason this
+     is visible at all - a padding errata would look exactly like a vestigial one. The published correction
+     stays in the log text (R6); only the instrument's registration list changes.
+BEFORE THE FIRST RUN:
   A1 population A also reads `exits[taken_first_exit]` and any key naming a label/verdict/exit/outcome/status.
      The first key set was typed from five names and missed that field, which made Phase XV/XVII look
      label-less - a false `label_wrong_for_anchor`, and an empty allow-list is never a refutation.
@@ -127,9 +153,12 @@ VERDICT_TOKEN = re.compile(r"^[A-Z][A-Z0-9_-]{3,}$")
 ERRATA = [{"xid": 92, "document": "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
            "quoted": "REFUTED", "anchor": "4", "marker": "订正 X-92",
            "replacement": "由 Phase VI 的跨系统复验否证"},
-          {"xid": 92, "document": "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
-           "quoted": "NOT_RESOLVABLE", "anchor": "14", "marker": "订正 X-92",
-           "replacement": "格级状态在 phase14 工件里记为布尔 resolvable 与 n_not_resolvable=0"}]
+          {"xid": 110, "document": "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
+           "quoted": "NULL", "anchor": "L01", "marker": "订正 X-110",
+           "replacement": "那一句说的是 §37 口径表里「仅出现在文档措辞中」的那一行计数，不是 L-01 的判定"},
+          {"xid": 110, "document": "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
+           "quoted": "PARTIALLY_IDENTIFIED", "anchor": "L01", "marker": "订正 X-110",
+           "replacement": "那一句说的是该标签在语料里没有指称对象，不是把该标签判给任何一轮"}]
 
 
 def errata_live(entry, label, doc_text, full=""):
@@ -232,7 +261,16 @@ def registered_phases(arts):
 
 
 def family_of(anchor_num, arts):
-    """Artifacts belonging to a round family: phase12_results.json, and phase5b for anchor 5 (sub-rounds)."""
+    """Artifacts belonging to a round family: phase12_results.json, and phase5b for anchor 5 (sub-rounds).
+
+    The coercion is the cross-round fix (A14): callers that pass the anchors read back out of an entry hand
+    over strings, and `int(...) == "4"` is never true, so a numeric anchor silently resolved to no artifacts.
+    An anchor that is not a phase number yields no artifacts - an empty allow-list, which the classifier
+    reports as `anchor_without_recorded_label` rather than as a refutation."""
+    try:
+        anchor_num = int(anchor_num)
+    except (TypeError, ValueError):
+        return []
     hits = []
     for rel in arts:
         m = re.search(r"phase(\d+)", rel)
@@ -241,7 +279,41 @@ def family_of(anchor_num, arts):
     return hits
 
 
-L01 = re.compile(r"\bL01\b")
+LIT = re.compile(r"\bL[-–]?(\d\d)\b")
+CLAUSE = re.compile(r"[，,。；;、！!？?|/／]")
+# The families are the ones that actually have artifacts, derived from the artifact paths - the same lesson
+# §52 applied to the obligation ledger (X-107): an enumerated namespace is a list the next round is not on.
+# Computed at import so a validator that calls classify() directly sees exactly what the deriver sees.
+def lit_families(arts):
+    return {"L" + m.group(1) for m in (re.match(r"literature/L(\d\d)_", r) for r in arts) if m}
+
+
+LIT_FAMS = lit_families(population_a())
+# L-01's artifacts quote five-value words for the rounds being translated rather than the round being judged,
+# so a cross-round test that let L01 into the union would call a correct L-02 reading a refutation of L-01.
+# The exemption predates this amendment; it is named here instead of buried in a comparison.
+CROSS_EXEMPT = {"L01"}
+
+
+def predicate_attaches(line, lab, toks):
+    """A label is a claim about the anchored round only when a verdict predicate sits in the SAME clause as
+    it: no clause boundary and no other vocabulary token between. A line that merely enumerates the
+    vocabulary (a row explaining the rho -> five-value mapping lists several tokens in one cell) therefore
+    predicates nothing of any round. Narrowing only: it can remove hardings, never add them."""
+    others = [t for t in toks if t != lab]
+    other = re.compile(r"\b(" + "|".join(re.escape(t) for t in sorted(others, key=len, reverse=True))
+                       + r")\b") if others else None
+    for pm in PREDICATE.finditer(line):
+        for lm in re.finditer(r"\b" + re.escape(lab) + r"\b", line):
+            lo, hi = (pm.end(), lm.start()) if pm.end() <= lm.start() else (lm.end(), pm.start())
+            if lo > hi:
+                continue          # an inverted region means the two spans overlap: ambiguous, not attached
+            seg = line[lo:hi]
+            if other and other.search(seg):
+                continue
+            if not CLAUSE.search(seg):
+                return True
+    return False
 
 
 def anchors_of(line, nums):
@@ -263,15 +335,19 @@ def anchors_of(line, nums):
     for m in re.finditer(r"\bphase(\d+)[a-z]?(?![A-Za-z0-9])", line):
         n = int(m.group(1))
         (fam if n in nums else phan).add(n)
-    if L01.search(line):
-        fam.add("L01")
+    for m in LIT.finditer(line):
+        if "L" + m.group(1) in LIT_FAMS:
+            fam.add("L" + m.group(1))
     return fam, phan
 
 
 def family_artifacts(anchor, arts):
-    if anchor == "L01":
-        return [r for r in arts if r.startswith("literature/L01")] + \
-               [r for r in arts if r == "literature/phase1prime_gate3_check.json"]
+    anchor = str(anchor)
+    if anchor in LIT_FAMS:
+        hits = [r for r in arts if r.startswith("literature/" + anchor)]
+        if anchor == "L01":
+            hits += [r for r in arts if r == "literature/phase1prime_gate3_check.json"]
+        return hits
     return family_of(anchor, arts)
 
 
@@ -367,7 +443,9 @@ def classify(rows, arts, nums, toks, state_words=None):
                 literal |= set(arts[rel]["raw"])
         entry["allowed_five"] = sorted(allowed)
         entry["artifact_raw"] = sorted(literal)
-        entry["predicated"] = bool(PREDICATE.search(full))
+        att = [lab for lab in r["labels"] if predicate_attaches(full, lab, toks)]
+        entry["predicated"] = bool(att)
+        entry["attested_labels"] = att
         if not entry["predicated"]:
             entry["verdict"] = "label_mention_without_predication"
             out.append(entry)
@@ -380,6 +458,10 @@ def classify(rows, arts, nums, toks, state_words=None):
             continue
         per = []
         for lab in r["labels"]:
+            if lab not in att:
+                # on the line, but not what that line's predicate was about
+                per.append((lab, "label_mention_without_predication"))
+                continue
             fv = five_of(lab)
             if fv is None and lab in DISPOSITIONS:
                 per.append((lab, "not_a_round_verdict"))
@@ -406,7 +488,7 @@ def classify(rows, arts, nums, toks, state_words=None):
         if hard and CROSS.search(full) and any(
                 five_of(lab) in set().union(*[set(arts[x]["five"]) for x in family_artifacts(a, arts)]
                                             if family_artifacts(a, arts) else [set()])
-                for lab in r["labels"] for a in entry["anchors"] if a != "L01"):
+                for lab in r["labels"] for a in entry["anchors"] if a not in CROSS_EXEMPT):
             entry["verdict"] = "cross_round_refutation"
             out.append(entry)
             continue
@@ -421,7 +503,7 @@ def classify(rows, arts, nums, toks, state_words=None):
             hard = []
         entry["verdict"] = hard[0] if hard else (
             "five_label_only_in_translation" if any(v == "five_label_only_in_translation" for _, v in per)
-            else "matches_artifact")
+            else "matches_artifact" if att else "label_mention_without_predication")
         out.append(entry)
     return out
 
