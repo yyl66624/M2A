@@ -100,7 +100,7 @@ def main() -> int:
            "; ".join(bad5) or f"{len(d['rows'])} documents re-read")
 
     disk_docs = {p.relative_to(M).as_posix() for p in (M / "experiments").glob("PHASE*_RESULTS.md")} \
-        | {"literature/ROUND_L01_RESULTS.md", "literature/ROUND_L02_RESULTS.md"}
+        | {p.relative_to(M).as_posix() for p in (M / "literature").glob("ROUND_*_RESULTS.md")}
     cm = json.loads(CMAP.read_text(encoding="utf-8"))
     static = {r["file"]: len(r["checks"]) for r in cm["rows"]}
     undocumented = sorted(k for k in static

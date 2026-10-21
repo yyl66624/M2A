@@ -189,6 +189,13 @@
       "node_token": "I2kOwPzVciTztBkfjyocS1uPnnx",
       "section": 57,
       "title": "M2A 治理｜校验器进人口不是往清单里加一行，它自己也被扫"
+    },
+    {
+      "draft": "M2A-文献轮L03-R13N15全文取回与K7改写.md",
+      "in_ledger": true,
+      "node_token": "NmzPwc9xhizOwVkhDwucQYLCnle",
+      "section": 58,
+      "title": "M2A 文献轮 L-03｜R13-N15 全文取回与全文级编码：K5/K10 确认、K7 改写、L01-O5 关闭"
     }
   ],
   "counts": {
@@ -197,11 +204,11 @@
     "first_batch_off_pin": 0,
     "first_batch_pages": 12,
     "first_batch_pages_claimed_by_a_section": 1,
-    "governance_pages": 22,
+    "governance_pages": 23,
     "governance_pages_unclaimed": 0,
-    "ledger_pages_with_node": 34,
-    "report_sections_in_population": 27,
-    "sections_claimed": 27,
+    "ledger_pages_with_node": 35,
+    "report_sections_in_population": 28,
+    "sections_claimed": 28,
     "sections_unclaimed": 0
   },
   "dangling_claims": [],
@@ -446,8 +453,8 @@
     },
     {
       "draft": "M2A-治理-套件分数引用对账v1.md",
-      "draft_chars": 3348,
-      "draft_sha256": "3348f52f8961fee061ed28705e0c11a0857450c71c99da8bc98fe91c3e38a98e",
+      "draft_chars": 3576,
+      "draft_sha256": "763e6523f79e247945e6e2a45adbe7f4d7ac99aca27a5c5c31fdecfeb9013490",
       "markers": [
         "X-86",
         "X-87",
@@ -465,7 +472,7 @@
       "markers_ok_recorded": true,
       "node_token": "QuO5w9vGFiikp1kSKbgcrh1jnnb",
       "obj_token": "JOWndS5SXouZTexE3SFcXoB1nmf",
-      "read_back_chars_recorded": 5031,
+      "read_back_chars_recorded": 5292,
       "sections": [
         48
       ],
@@ -652,6 +659,26 @@
         57
       ],
       "title": "M2A 治理｜校验器进人口不是往清单里加一行，它自己也被扫"
+    },
+    {
+      "draft": "M2A-文献轮L03-R13N15全文取回与K7改写.md",
+      "draft_chars": 1330,
+      "draft_sha256": "2c817fa57d991cce14a281e2720ffd1f15998bb964b31ba3345910ab7d73905c",
+      "markers": [
+        "两条读数",
+        "FULLTEXT_REVISES",
+        "K7",
+        "L01-O5",
+        "L03-O1"
+      ],
+      "markers_ok_recorded": true,
+      "node_token": "NmzPwc9xhizOwVkhDwucQYLCnle",
+      "obj_token": "Q9rSdPXqwom5dzx8ZdWcfZkmn7b",
+      "read_back_chars_recorded": 1683,
+      "sections": [
+        58
+      ],
+      "title": "M2A 文献轮 L-03｜R13-N15 全文取回与全文级编码：K5/K10 确认、K7 改写、L01-O5 关闭"
     }
   ],
   "schema": "m2a.wiki_sync_map.v1",
@@ -820,7 +847,8 @@
         93,
         108,
         109,
-        110
+        110,
+        124
       ]
     },
     {
@@ -909,24 +937,35 @@
         118,
         119
       ]
+    },
+    {
+      "section": 58,
+      "title": "文献轮 L-03：R13-N15 的全文把 K7 的「离散相位反转」改写成「快速下降后转为相对回避」（GOVERNANCE_ARTIFACT",
+      "xids_named": [
+        120,
+        121,
+        122,
+        123,
+        124
+      ]
     }
   ],
   "stale_claims": [],
   "tools": [
     {
-      "bytes": 83057,
+      "bytes": 97002,
       "file": "check_step_draft_numbers.py",
-      "sha256": "e8cf19e0f3ebd35750856641cf7e5f807ad03c740ccc102e8047dcf3208aecf9"
+      "sha256": "29adca1128594163e9b7eeb6cf36ab73b51535d85045e74ea780de22097436d2"
     },
     {
-      "bytes": 10550,
+      "bytes": 10790,
       "file": "publish_wiki_steps.py",
-      "sha256": "5c85ba8dc001c7aa13c84b3437981dc39b3b799dbc1729914116fb75cbac6d2e"
+      "sha256": "ace138e12b255869682f5d0f385cb12c0056a3f12c586214c4dcdb40630ca71a"
     },
     {
-      "bytes": 13193,
+      "bytes": 13555,
       "file": "feishu_wiki_nodes.json",
-      "sha256": "6fdc75835d66615d2e61aa2d3f3c180511ec60ea44e9cf054edb01a9aab8f774"
+      "sha256": "c42846e9a4f8c36dbbb8d60bf378a281d29bb54b269d355f3f6a350c6476628f"
     }
   ],
   "unclaimed_sections": [],

@@ -8,7 +8,7 @@
 * **拒绝真的会停**：针对返回码的 `if` 守卫，其体内有 `return <非零>` / `sys.exit` / `raise`——注意守卫可以隔一层（Phase XIV 的 `run_gate()` 自己返回 rc，真正的拒绝在调用处）；
 * **写盘在守卫之后**：所有工件写入的行号都晚于守卫，于是门控红了也不会留下 results 文件。
 
-人口：**29 个工件写入者**，写 **29 个**已提交 JSON。判定：**enforced 25**、其它 0、登记在册的无门控 4。
+人口：**30 个工件写入者**，写 **30 个**已提交 JSON。判定：**enforced 26**、其它 0、登记在册的无门控 4。
 
 ## 2 逐行结果
 
@@ -43,6 +43,7 @@
 | `experiments/run_phase9.py` | p9_gate.py@205 | 207（停） | phase9_results.json@231 | `enforced` |
 | `literature/run_L01.py` | l01_gate.py@40 | 43（停） | L01_coding.json@178 | `enforced` |
 | `literature/run_L01_reanalysis.py` | — | — | L01_reanalysis.json@200 | `no_gate_at_all` |
+| `literature/run_L03.py` | l03_gate.py@28 | 33（停）；55（停） | L03_coding.json@52 | `enforced` |
 
 ## 3 登记在册的无门控写入者（每条都必须写明为什么合法）
 

@@ -121,7 +121,9 @@ def rc_guards(tree, src, call_lines, gate_helpers):
             continue
         test = ast.get_source_segment(src, n.test) or ""
         hit_call = any(isinstance(c, ast.Attribute) and c.attr == "returncode" for c in ast.walk(n.test))
-        hit_helper = bool(re.search(r"\b(" + "|".join(gate_helpers) + r")\s*\(\s*\)", test)) if gate_helpers else False
+        # a gate helper may take arguments (`if gate("--pre") != 0`); requiring empty parentheses made
+        # run_L03 read as "ran the gate but never checked the code" when it checks both calls.
+        hit_helper = bool(re.search(r"\b(" + "|".join(gate_helpers) + r")\s*\(", test)) if gate_helpers else False
         var = None
         for c in ast.walk(n.test):
             if isinstance(c, ast.Name):
@@ -138,15 +140,36 @@ def rc_guards(tree, src, call_lines, gate_helpers):
     return guards
 
 
-def artifact_writes(tree, src):
+def module_attr_source(base, module, attr):
+    """Source of `attr = ...` in an imported module. A runner may write `C.OUT.write_text(...)` where the
+    path lives in the imported module; name-only resolution dropped that whole runner from the population."""
+    p = base / (module + ".py")
+    if not p.exists():
+        return ""
+    msrc = p.read_text(encoding="utf-8")
+    for n in ast.walk(ast.parse(msrc)):
+        if isinstance(n, ast.Assign) and isinstance(n.targets[0], ast.Name) \
+                and n.targets[0].id == attr:
+            return ast.get_source_segment(msrc, n.value) or ""
+    return ""
+
+
+def artifact_writes(tree, src, base):
     """(lineno, artifact) for calls that WRITE a committed artifact (reads are excluded).
     The name is often not in the call itself - `dst = LIT / "L01_reanalysis.json"` then
     `dst.write_text(...)` - so a callee name is resolved to its last assignment above the call.
-    Without that resolution two of the four reanalysis writers looked like they wrote nothing."""
+    Without that resolution two of the four reanalysis writers looked like they wrote nothing.
+    A path can also live in an imported module (`C.OUT.write_text`), so module constants are resolved
+    from that module's AST; without it the runner disappeared from the table with no trace."""
     assigns = {}
     for n in ast.walk(tree):
         if isinstance(n, ast.Assign) and isinstance(n.targets[0], ast.Name):
             assigns[n.targets[0].id] = (n.lineno, ast.get_source_segment(src, n.value) or "")
+    aliases = {}
+    for n in ast.walk(tree):
+        if isinstance(n, ast.Import):
+            for a in n.names:
+                aliases[a.asname or a.name] = a.name
     out = []
     for n in ast.walk(tree):
         if not isinstance(n, ast.Call):
@@ -160,6 +183,11 @@ def artifact_writes(tree, src):
             owner = n.args[0].id
         if owner and owner in assigns and assigns[owner][0] <= n.lineno:
             seg = seg + " " + assigns[owner][1]
+        elif isinstance(n.func, ast.Attribute) and isinstance(n.func.value, ast.Attribute) \
+                and isinstance(n.func.value.value, ast.Name):
+            mod, attr = n.func.value.value.id, n.func.value.attr
+            if mod in aliases:
+                seg = seg + " " + module_attr_source(base, aliases[mod], attr)
         art = ARTIFACT.findall(seg)
         if not art:
             continue
@@ -180,9 +208,8 @@ def analyze(path):
         if re.search(r"_gate\.py", body) and re.search(r"return\s+\w+\.returncode", body):
             helpers.append(f.name)
     guards = rc_guards(tree, src, [c[0] for c in calls], helpers)
-    writes = artifact_writes(tree, src)
+    writes = artifact_writes(tree, src, path.parent)
     written = sorted({w for _, w in writes})
-    last_guard = max((g["line"] for g in guards), default=None)
     enforced = any(g["stops"] for g in guards)
     if not calls:
         verdict = "no_gate_at_all"
@@ -190,7 +217,9 @@ def analyze(path):
         verdict = "gate_ran_but_rc_unchecked"
     elif not enforced:
         verdict = "rc_checked_but_refusal_does_not_stop"
-    elif last_guard is not None and any(line < last_guard for line, _ in writes):
+    # a write is licensed by any stopping guard that precedes it; a full-gate run after the write is a
+    # verification step, not the licence (run_L03 writes at line 52 between its pre-gate and full-gate).
+    elif any(not any(g["stops"] and g["line"] < line for g in guards) for line, _ in writes):
         verdict = "writes_before_the_guard"
     else:
         verdict = "enforced"
@@ -226,6 +255,15 @@ def main():
                       if p.name in KNOWN_NO_GATE})
     analyzed = [analyze(p) for p in files]
     rows = [r for r in analyzed if r["artifacts_written"]]
+    by_runner = {r["runner"]: r for r in analyzed}
+    blind = sorted(r for r in by_runner
+                   if not by_runner[r]["artifacts_written"]
+                   and re.search(r"\.write_text\s*\(|\.write_bytes\s*\(|json\.dump\s*\(",
+                                 (M / r).read_text(encoding="utf-8")))
+    if blind:
+        print("a runner writes but no artifact name could be resolved: " + str(blind),
+              file=sys.stderr)
+        raise SystemExit(4)
     unregistered, stale, wrong_target = registration_errors(rows)
     if unregistered or stale or wrong_target:
         print("registration failed - unregistered no-gate writers: " + str(unregistered)

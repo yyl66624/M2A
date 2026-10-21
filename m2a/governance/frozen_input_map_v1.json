@@ -3,7 +3,7 @@
   "question": "if these bytes change, which recorded attestation can no longer be verified",
   "generator": {
     "file": "governance/build_frozen_input_map.py",
-    "sha256": "c8a08c1c35a15714616810c1d4d3db5d85b2f0f7217e677c09feada81924a852"
+    "sha256": "4a8ba7213e2e9e4386401be61661378433e7efa4714b0edf614ec6b6ad570c33"
   },
   "pairing": {
     "rule": "by key name, exactly one candidate",
@@ -59,23 +59,24 @@
     "stale_attestation": 0,
     "named_object_absent": 0,
     "pin_of_this_layer_output": 0,
-    "frozen_by_round_instrument": 26,
-    "renewable_governance_pin": 79,
-    "hash_without_named_object": 56,
-    "ambiguous_pairing": 13,
+    "frozen_by_round_instrument": 38,
+    "renewable_governance_pin": 81,
+    "hash_without_named_object": 61,
+    "ambiguous_pairing": 14,
     "hard_findings": 0,
-    "rows": 174,
-    "pinning_documents": 49,
-    "pinned_objects": 77,
-    "repo_files_scanned": 293,
-    "workshop_objects": 71,
-    "instrument_collection_pins": 23,
-    "freeze_rows_visible": 26,
+    "rows": 194,
+    "pinning_documents": 52,
+    "pinned_objects": 82,
+    "repo_files_scanned": 299,
+    "workshop_objects": 114,
+    "instrument_collection_pins": 31,
+    "freeze_rows_visible": 38,
     "freeze_visibility_states": 2,
     "freeze_not_visible": 0,
     "freeze_visibility_unread": 0
   },
   "frozen_inputs": [
+    "_m2a_ft/L03_R13-N15.raw.txt",
     "experiments/p14_gate.py",
     "experiments/p15_gate.py",
     "experiments/p16_gate.py",
@@ -93,7 +94,9 @@
     "literature/L01_fulltexts.json",
     "literature/L01_verification.json",
     "literature/L02_PREREGISTRATION.md",
+    "literature/L03_PREREGISTRATION.md",
     "literature/ROUND_L01_RESULTS.md",
+    "literature/l03_coding.py",
     "literature/registry.json",
     "literature/synthesis_v2.json"
   ],
@@ -539,7 +542,7 @@
     {
       "pinner": "governance/label_provenance_v1.json",
       "key": "sha256",
-      "hash": "64707e807cf99e0b464db8601e1935a150208969cf57a5beec0176672844fb00",
+      "hash": "9f87c71d61da7e73e32f50b09c2d24b26dd01291452763a4911f4157752beff8",
       "pair": [
         [
           "file",
@@ -1088,6 +1091,29 @@
       "visibility": null
     },
     {
+      "pinner": "governance/result_score_reconciliation_v1.json",
+      "key": "gate_sha256",
+      "hash": "a75586a42de0e94eae4e95da47aa414f7dd2206aecec49060df3a9b8b5295e12",
+      "pair": [
+        [
+          "gate",
+          "literature/l03_gate.py"
+        ],
+        [
+          "named_gate",
+          "l03_gate.py"
+        ]
+      ],
+      "json_path": "rows/26",
+      "pair_count": 2,
+      "verdict": "ambiguous_pairing",
+      "candidates": [
+        "l03_gate.py",
+        "literature/l03_gate.py"
+      ],
+      "visibility": null
+    },
+    {
       "pinner": "governance/section_page_reconciliation_v1.json",
       "key": "page_sha256",
       "hash": "73c3425578277f451a52ddeff73eff0be5801045ac37166c1f10217045bc9db6",
@@ -1220,7 +1246,7 @@
     {
       "pinner": "governance/section_page_reconciliation_v1.json",
       "key": "page_sha256",
-      "hash": "5661b322c6f701174ef0fd4be018f88dcf2cf66302170829c79d5dd2f4caec44",
+      "hash": "d2ecd5354b7b9df64634da65ef0bcfcd327c0c5b48b98d0f306ec45ae96147cb",
       "pair": [],
       "json_path": "pages/13",
       "pair_count": 0,
@@ -1313,6 +1339,16 @@
       "hash": "e5e917fda2c271645b109f01589c38a4535a23d927a3c1c58652d898a6904355",
       "pair": [],
       "json_path": "pages/22",
+      "pair_count": 0,
+      "verdict": "hash_without_named_object",
+      "visibility": null
+    },
+    {
+      "pinner": "governance/section_page_reconciliation_v1.json",
+      "key": "page_sha256",
+      "hash": "5ea9ed6343064c8219342290f6e7b02f66f6069ad741fdfba2408769d373aa2b",
+      "pair": [],
+      "json_path": "pages/23",
       "pair_count": 0,
       "verdict": "hash_without_named_object",
       "visibility": null
@@ -1439,6 +1475,24 @@
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "literature/l02_gate.py",
+      "bytes_match": true,
+      "verdict": "renewable_governance_pin",
+      "visibility": null
+    },
+    {
+      "pinner": "governance/suite_score_registry_v1.json",
+      "key": "sha256",
+      "hash": "a75586a42de0e94eae4e95da47aa414f7dd2206aecec49060df3a9b8b5295e12",
+      "pair": [
+        [
+          "file",
+          "literature/l03_gate.py"
+        ]
+      ],
+      "json_path": "live/l03_gate.py",
+      "pair_count": 1,
+      "object_namespace": "repo",
+      "object": "literature/l03_gate.py",
       "bytes_match": true,
       "verdict": "renewable_governance_pin",
       "visibility": null
@@ -1896,7 +1950,7 @@
     {
       "pinner": "governance/suite_score_registry_v1.json",
       "key": "sha256",
-      "hash": "761bc8ecc5e26f8e064465054e2e53400c7e4aeb467ba42af62f6e531b1f80b4",
+      "hash": "ab9fba1673a379c861d6f10b025002734b7f1afd40e1e5adede36493fc47b741",
       "pair": [
         [
           "file",
@@ -1914,7 +1968,7 @@
     {
       "pinner": "governance/suite_score_registry_v1.json",
       "key": "sha256",
-      "hash": "ea45cda8f0721da491b75dc908dc9562b41e9dae700ad99de7a62d1152e0432d",
+      "hash": "3f97e9754e86d3ccecbee62796cb467f62350819d37f16fdaadd16931d138573",
       "pair": [
         [
           "file",
@@ -2238,7 +2292,7 @@
     {
       "pinner": "governance/wiki_sync_map_v1.json",
       "key": "draft_sha256",
-      "hash": "3348f52f8961fee061ed28705e0c11a0857450c71c99da8bc98fe91c3e38a98e",
+      "hash": "763e6523f79e247945e6e2a45adbe7f4d7ac99aca27a5c5c31fdecfeb9013490",
       "pair": [
         [
           "draft",
@@ -2417,8 +2471,26 @@
     },
     {
       "pinner": "governance/wiki_sync_map_v1.json",
+      "key": "draft_sha256",
+      "hash": "2c817fa57d991cce14a281e2720ffd1f15998bb964b31ba3345910ab7d73905c",
+      "pair": [
+        [
+          "draft",
+          "M2A-文献轮L03-R13N15全文取回与K7改写.md"
+        ]
+      ],
+      "json_path": "pages/22",
+      "pair_count": 1,
+      "object_namespace": "workshop",
+      "object": "feishu_wiki_drafts/M2A-文献轮L03-R13N15全文取回与K7改写.md",
+      "bytes_match": true,
+      "verdict": "renewable_governance_pin",
+      "visibility": null
+    },
+    {
+      "pinner": "governance/wiki_sync_map_v1.json",
       "key": "sha256",
-      "hash": "e8cf19e0f3ebd35750856641cf7e5f807ad03c740ccc102e8047dcf3208aecf9",
+      "hash": "29adca1128594163e9b7eeb6cf36ab73b51535d85045e74ea780de22097436d2",
       "pair": [
         [
           "file",
@@ -2436,7 +2508,7 @@
     {
       "pinner": "governance/wiki_sync_map_v1.json",
       "key": "sha256",
-      "hash": "5c85ba8dc001c7aa13c84b3437981dc39b3b799dbc1729914116fb75cbac6d2e",
+      "hash": "ace138e12b255869682f5d0f385cb12c0056a3f12c586214c4dcdb40630ca71a",
       "pair": [
         [
           "file",
@@ -2454,7 +2526,7 @@
     {
       "pinner": "governance/wiki_sync_map_v1.json",
       "key": "sha256",
-      "hash": "6fdc75835d66615d2e61aa2d3f3c180511ec60ea44e9cf054edb01a9aab8f774",
+      "hash": "c42846e9a4f8c36dbbb8d60bf378a281d29bb54b269d355f3f6a350c6476628f",
       "pair": [
         [
           "file",
@@ -2602,6 +2674,118 @@
       "pair_count": 0,
       "verdict": "hash_without_named_object",
       "visibility": null
+    },
+    {
+      "pinner": "literature/L03_coding.json",
+      "key": "sha256",
+      "hash": "29bb39fbef77dbd89487f88c49ed007621013393363055d6790f48ee0cc41fab",
+      "pair": [
+        [
+          "path",
+          "literature/L03_PREREGISTRATION.md"
+        ]
+      ],
+      "json_path": "preregistration",
+      "pair_count": 1,
+      "object_namespace": "repo",
+      "object": "literature/L03_PREREGISTRATION.md",
+      "bytes_match": true,
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "json_key_reproduced"
+    },
+    {
+      "pinner": "literature/L03_coding.json",
+      "key": "prereg_sha256",
+      "hash": "29bb39fbef77dbd89487f88c49ed007621013393363055d6790f48ee0cc41fab",
+      "pair": [],
+      "json_path": "",
+      "pair_count": 0,
+      "verdict": "hash_without_named_object",
+      "visibility": null
+    },
+    {
+      "pinner": "literature/L03_coding.json",
+      "key": "disk_sha256",
+      "hash": "29bb39fbef77dbd89487f88c49ed007621013393363055d6790f48ee0cc41fab",
+      "pair": [],
+      "json_path": "prereg_binding",
+      "pair_count": 0,
+      "verdict": "hash_without_named_object",
+      "visibility": null
+    },
+    {
+      "pinner": "literature/L03_coding.json",
+      "key": "git_sha256",
+      "hash": "29bb39fbef77dbd89487f88c49ed007621013393363055d6790f48ee0cc41fab",
+      "pair": [
+        [
+          "git_ref",
+          "HEAD:m2a/literature/L03_PREREGISTRATION.md"
+        ]
+      ],
+      "json_path": "prereg_binding",
+      "pair_count": 1,
+      "object_namespace": "repo",
+      "object": "literature/L03_PREREGISTRATION.md",
+      "bytes_match": true,
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "json_key_reproduced"
+    },
+    {
+      "pinner": "literature/L03_coding.json",
+      "key": "raw_file_sha256",
+      "hash": "479a93a384fe36015a0a7151ae068614c37d7204776e2f290ae6f6f045548f4b",
+      "pair": [
+        [
+          "raw_file",
+          "/media/leonyao/新加卷/workshop/_m2a_ft/L03_R13-N15.raw.txt"
+        ]
+      ],
+      "json_path": "acquisition",
+      "pair_count": 1,
+      "object_namespace": "workshop",
+      "object": "_m2a_ft/L03_R13-N15.raw.txt",
+      "bytes_match": true,
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "json_key_reproduced"
+    },
+    {
+      "pinner": "literature/L03_coding.json",
+      "key": "text_sha256",
+      "hash": "8be1559ff9d4c7c03a6c9969a448a4d8cb3bc22c973f74aef3b766371355514b",
+      "pair": [],
+      "json_path": "acquisition",
+      "pair_count": 0,
+      "verdict": "hash_without_named_object",
+      "visibility": null
+    },
+    {
+      "pinner": "literature/L03_coding.json",
+      "key": "text_sha256",
+      "hash": "8be1559ff9d4c7c03a6c9969a448a4d8cb3bc22c973f74aef3b766371355514b",
+      "pair": [],
+      "json_path": "fulltext",
+      "pair_count": 0,
+      "verdict": "hash_without_named_object",
+      "visibility": null
+    },
+    {
+      "pinner": "literature/L03_coding.json",
+      "key": "sha256",
+      "hash": "0f3a9cb37637bb84fa01aa4f0bd313f43a0cbee673906e4f44d41c62e51109a3",
+      "pair": [
+        [
+          "name",
+          "literature/l03_coding.py"
+        ]
+      ],
+      "json_path": "generator",
+      "pair_count": 1,
+      "object_namespace": "repo",
+      "object": "literature/l03_coding.py",
+      "bytes_match": true,
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "json_key_reproduced"
     },
     {
       "pinner": "literature/l02_coding.py",
@@ -2753,6 +2937,142 @@
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "literature/L02_PREREGISTRATION.md",
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "source_call_visible"
+    },
+    {
+      "pinner": "literature/l03_coding.py",
+      "key": "instrument_collection",
+      "hash": null,
+      "pair": [
+        [
+          "src",
+          "literature/l03_coding.py"
+        ]
+      ],
+      "json_path": "line:349",
+      "pair_count": 1,
+      "object_namespace": "repo",
+      "object": "literature/l03_coding.py",
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "source_call_visible"
+    },
+    {
+      "pinner": "literature/l03_gate.py",
+      "key": "instrument_collection",
+      "hash": null,
+      "pair": [
+        [
+          "src",
+          "l03_coding.py"
+        ]
+      ],
+      "json_path": "line:248",
+      "pair_count": 1,
+      "object_namespace": "repo",
+      "object": "literature/l03_coding.py",
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "source_call_visible"
+    },
+    {
+      "pinner": "literature/l03_gate.py",
+      "key": "instrument_collection",
+      "hash": null,
+      "pair": [
+        [
+          "src",
+          "l03_coding.py"
+        ]
+      ],
+      "json_path": "line:252",
+      "pair_count": 1,
+      "object_namespace": "repo",
+      "object": "literature/l03_coding.py",
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "source_call_visible"
+    },
+    {
+      "pinner": "literature/l03_gate.py",
+      "key": "instrument_collection",
+      "hash": null,
+      "pair": [
+        [
+          "src",
+          "literature/L01_CODING_PROTOCOL.md"
+        ]
+      ],
+      "json_path": "line:34",
+      "pair_count": 1,
+      "object_namespace": "repo",
+      "object": "literature/L01_CODING_PROTOCOL.md",
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "source_call_visible"
+    },
+    {
+      "pinner": "literature/l03_gate.py",
+      "key": "instrument_collection",
+      "hash": null,
+      "pair": [
+        [
+          "src",
+          "literature/L01_channels.json"
+        ]
+      ],
+      "json_path": "line:33",
+      "pair_count": 1,
+      "object_namespace": "repo",
+      "object": "literature/L01_channels.json",
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "source_call_visible"
+    },
+    {
+      "pinner": "literature/l03_gate.py",
+      "key": "instrument_collection",
+      "hash": null,
+      "pair": [
+        [
+          "src",
+          "literature/L01_coding.json"
+        ]
+      ],
+      "json_path": "line:33",
+      "pair_count": 1,
+      "object_namespace": "repo",
+      "object": "literature/L01_coding.json",
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "source_call_visible"
+    },
+    {
+      "pinner": "literature/l03_gate.py",
+      "key": "instrument_collection",
+      "hash": null,
+      "pair": [
+        [
+          "src",
+          "literature/L01_fulltexts.json"
+        ]
+      ],
+      "json_path": "line:33",
+      "pair_count": 1,
+      "object_namespace": "repo",
+      "object": "literature/L01_fulltexts.json",
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "source_call_visible"
+    },
+    {
+      "pinner": "literature/l03_gate.py",
+      "key": "instrument_collection",
+      "hash": null,
+      "pair": [
+        [
+          "src",
+          "literature/ROUND_L01_RESULTS.md"
+        ]
+      ],
+      "json_path": "line:34",
+      "pair_count": 1,
+      "object_namespace": "repo",
+      "object": "literature/ROUND_L01_RESULTS.md",
       "verdict": "frozen_by_round_instrument",
       "visibility": "source_call_visible"
     },

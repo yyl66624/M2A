@@ -2,9 +2,9 @@
  "schema": "m2a.runner-gate-map.v1",
  "derived_from": "AST of every experiments/run_*.py and literature/run_*.py that writes a committed artifact, plus the registered reanalysis writers",
  "counts": {
-  "writers": 29,
-  "artifacts": 29,
-  "enforced": 25,
+  "writers": 30,
+  "artifacts": 30,
+  "enforced": 26,
   "ungated_round_runners": 0,
   "no_gate_registered": 4,
   "guards_that_do_not_stop": 5
@@ -879,6 +879,42 @@
     "L01_coding.json"
    ],
    "verdict": "no_gate_at_all"
+  },
+  {
+   "runner": "literature/run_L03.py",
+   "file": "run_L03.py",
+   "gate_calls": [
+    {
+     "line": 28,
+     "gate": "l03_gate.py"
+    }
+   ],
+   "gate_helpers": [
+    "gate"
+   ],
+   "rc_guards": [
+    {
+     "line": 33,
+     "test": "gate(\"--pre\") != 0",
+     "stops": true
+    },
+    {
+     "line": 55,
+     "test": "gate(\"--full\") != 0",
+     "stops": true
+    }
+   ],
+   "artifact_writes": [
+    {
+     "line": 52,
+     "artifact": "L03_coding.json"
+    }
+   ],
+   "artifacts_written": [
+    "L03_coding.json"
+   ],
+   "writes_read_too": [],
+   "verdict": "enforced"
   }
  ],
  "readers_not_writers": [],

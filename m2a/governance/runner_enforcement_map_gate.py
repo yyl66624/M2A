@@ -63,6 +63,7 @@ def text_verdict(path):
     stop_at = None
     for i, l in enumerate(lines):
         if not re.match(r"^\s*if .*returncode", l) and not re.match(r"^\s*if .*\brun_gate\(\)", l) \
+                and not re.match(r"^\s*if .*\b\w+\([^)]*\)\s*!=\s*0", l) \
                 and not re.match(r"^\s*if .*\b(code|rc|out|res)\b.*!= *0", l):
             continue
         for j in range(i + 1, min(i + 8, len(lines))):

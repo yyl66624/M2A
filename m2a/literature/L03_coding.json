@@ -1,0 +1,480 @@
+{
+  "schema": "m2a.literature.round_l03.v1",
+  "round": "L-03",
+  "sid": "R13-N15",
+  "preregistration": {
+    "path": "literature/L03_PREREGISTRATION.md",
+    "commit": "77c4bb1",
+    "sha256": "29bb39fbef77dbd89487f88c49ed007621013393363055d6790f48ee0cc41fab"
+  },
+  "prereg_sha256": "29bb39fbef77dbd89487f88c49ed007621013393363055d6790f48ee0cc41fab",
+  "prereg_binding": {
+    "disk_sha256": "29bb39fbef77dbd89487f88c49ed007621013393363055d6790f48ee0cc41fab",
+    "git_sha256": "29bb39fbef77dbd89487f88c49ed007621013393363055d6790f48ee0cc41fab",
+    "git_ref": "HEAD:m2a/literature/L03_PREREGISTRATION.md",
+    "match": true
+  },
+  "reference": {
+    "sid": "R13-N15",
+    "title": "Visceral signaling of post-ingestive malaise directs memory updating in Drosophila",
+    "year": 2025,
+    "doi": "10.1101/2025.10.21.683769",
+    "authors": [
+      "Bhagyashree Senapati",
+      "Christoph D. Treiber",
+      "Scott Waddell"
+    ],
+    "posted": "2025-10-22",
+    "peer_reviewed": false
+  },
+  "identity": {
+    "registered_title": "Visceral signaling of post-ingestive malaise directs memory updating in Drosophila",
+    "title_in_text": "Visceral signaling of post-ingestive malaise directs memory updating in Drosophila",
+    "title_equal_after_normalization": true,
+    "doi": "10.1101/2025.10.21.683769",
+    "doi_in_text": true,
+    "surnames": {
+      "Senapati": true,
+      "Treiber": true,
+      "Waddell": true
+    },
+    "overlap": 1.0,
+    "all_pass": true
+  },
+  "obtain_attempts": [
+    {
+      "order": "C1",
+      "channel": "europepmc_fulltext_html",
+      "route": "command_line",
+      "status": 429,
+      "bytes": 0,
+      "accepted": false,
+      "note": "Cloudflare challenge; the same C1 entry was then opened in the in-app browser (record below)."
+    },
+    {
+      "order": "C2",
+      "channel": "europepmc_oa_pdf",
+      "route": "command_line",
+      "status": 403,
+      "bytes": 0,
+      "accepted": false,
+      "note": "response: PDF link has expired or is invalid"
+    },
+    {
+      "order": "C3",
+      "channel": "biorxiv_jats_xml",
+      "route": "browser",
+      "status": null,
+      "bytes": 0,
+      "accepted": false,
+      "note": "browser ERR_FAILED (-2); the command-line route was rate-limited (429) before the prereg commit"
+    },
+    {
+      "order": "C4",
+      "channel": "biorxiv_pdf",
+      "route": "command_line",
+      "status": 429,
+      "bytes": 0,
+      "accepted": false,
+      "note": "rate-limited before the prereg commit"
+    },
+    {
+      "order": "C1",
+      "channel": "europepmc_fulltext_html",
+      "route": "in_app_browser",
+      "status": 200,
+      "bytes": 117489,
+      "chars": 116345,
+      "accepted": true,
+      "note": "#fulltextcontent innerText saved as a JSON string and parsed; fetched after prereg commit 77c4bb1; no later channel attempted"
+    }
+  ],
+  "acquisition": {
+    "sid": "R13-N15",
+    "identity": {
+      "title": "Visceral signaling of post-ingestive malaise directs memory updating in Drosophila",
+      "doi": "10.1101/2025.10.21.683769",
+      "authors": [
+        "Bhagyashree Senapati",
+        "Christoph D. Treiber",
+        "Scott Waddell"
+      ]
+    },
+    "channel": "europepmc_fulltext_html",
+    "url": "https://europepmc.org/article/PPR/PPR1106376",
+    "container": "#fulltextcontent",
+    "access_method": "in-app browser DOM innerText (the page is Cloudflare-protected to command-line HTTP); the result was saved by the browser tool as a JSON string and parsed before normalization",
+    "status": 200,
+    "fetched_at": "2026-10-21T11:31:01+00:00",
+    "raw_file": "/media/leonyao/新加卷/workshop/_m2a_ft/L03_R13-N15.raw.txt",
+    "raw_file_sha256": "479a93a384fe36015a0a7151ae068614c37d7204776e2f290ae6f6f045548f4b",
+    "raw_file_bytes": 117489,
+    "decoded_chars": 116345,
+    "normalization": [
+      "CRLF/CR -> LF",
+      "rstrip every line",
+      "collapse 3+ newlines to 2",
+      "strip leading/trailing whitespace"
+    ],
+    "chars": 116342,
+    "bytes": 116893,
+    "text_sha256": "8be1559ff9d4c7c03a6c9969a448a4d8cb3bc22c973f74aef3b766371355514b",
+    "written_to": "/media/leonyao/新加卷/workshop/_m2a_ft/L03_R13-N15.txt",
+    "outside_repository": true,
+    "accepted": true,
+    "text_source": "C1",
+    "obtain_attempts": [
+      {
+        "channel": "C1",
+        "method": "urllib HEAD",
+        "status": 429,
+        "result": "Cloudflare challenge/rate limit",
+        "accepted": false
+      },
+      {
+        "channel": "C2",
+        "method": "urllib HEAD",
+        "status": 403,
+        "result": "Europe PMC PDF link expired or invalid",
+        "accepted": false
+      },
+      {
+        "channel": "C3",
+        "method": "urllib GET",
+        "status": 429,
+        "result": "Cloudflare challenge",
+        "accepted": false
+      },
+      {
+        "channel": "C4",
+        "method": "urllib HEAD",
+        "status": 429,
+        "result": "Cloudflare challenge",
+        "accepted": false
+      },
+      {
+        "channel": "C1",
+        "method": "in-app browser",
+        "status": 200,
+        "result": "full text container present; body text 116345 chars; accepted",
+        "accepted": true
+      }
+    ],
+    "note": "C1-C4 的命令行探测发生在预注册之前/期间；预注册之后只从 C1 的浏览器通路取得正文，未从 C2-C5 接受任何正文。C1 成功之后未再尝试后续通道。",
+    "attempts": [
+      {
+        "order": "C1",
+        "channel": "europepmc_fulltext_html",
+        "route": "command_line",
+        "status": 429,
+        "bytes": 0,
+        "accepted": false,
+        "note": "Cloudflare challenge; the same C1 entry was then opened in the in-app browser (record below)."
+      },
+      {
+        "order": "C2",
+        "channel": "europepmc_oa_pdf",
+        "route": "command_line",
+        "status": 403,
+        "bytes": 0,
+        "accepted": false,
+        "note": "response: PDF link has expired or is invalid"
+      },
+      {
+        "order": "C3",
+        "channel": "biorxiv_jats_xml",
+        "route": "browser",
+        "status": null,
+        "bytes": 0,
+        "accepted": false,
+        "note": "browser ERR_FAILED (-2); the command-line route was rate-limited (429) before the prereg commit"
+      },
+      {
+        "order": "C4",
+        "channel": "biorxiv_pdf",
+        "route": "command_line",
+        "status": 429,
+        "bytes": 0,
+        "accepted": false,
+        "note": "rate-limited before the prereg commit"
+      },
+      {
+        "order": "C1",
+        "channel": "europepmc_fulltext_html",
+        "route": "in_app_browser",
+        "status": 200,
+        "bytes": 117489,
+        "chars": 116345,
+        "accepted": true,
+        "note": "#fulltextcontent innerText saved as a JSON string and parsed; fetched after prereg commit 77c4bb1; no later channel attempted"
+      }
+    ],
+    "attempts_note": "Rule 1 of prereg 2: both readings for C1 are recorded - the command-line 429 and the browser 200. The body text was accepted only from the browser reading of C1; C2-C5 were not accepted after the prereg commit."
+  },
+  "fulltext": {
+    "file": "/media/leonyao/新加卷/workshop/_m2a_ft/L03_R13-N15.txt",
+    "outside_repository": true,
+    "chars": 116342,
+    "bytes": 116893,
+    "text_sha256": "8be1559ff9d4c7c03a6c9969a448a4d8cb3bc22c973f74aef3b766371355514b",
+    "verification_level": "FULLTEXT_REVIEWED",
+    "floor_derived": 21224,
+    "above_floor": true,
+    "headings_checked": [
+      "Abstract",
+      "Introduction",
+      "Results",
+      "Discussion",
+      "Methods",
+      "References"
+    ],
+    "headings_present": [
+      "Abstract",
+      "Introduction",
+      "Results",
+      "Discussion",
+      "Methods",
+      "References"
+    ],
+    "normalization_checks": {
+      "no_cr": true,
+      "no_trailing_whitespace": true,
+      "no_triple_newline": true
+    }
+  },
+  "record": {
+    "case_id": "R13-N15",
+    "sid": "R13-N15",
+    "reference": "Visceral signaling of post-ingestive malaise directs memory updating in Drosophila",
+    "title": "Visceral signaling of post-ingestive malaise directs memory updating in Drosophila",
+    "year": 2025,
+    "verification_level": "FULLTEXT_REVIEWED",
+    "identity_check": "Full text retrieved from Europe PMC (PPR1106376) contains DOI 10.1101/2025.10.21.683769, the title line 'Visceral signaling of post-ingestive malaise directs memory updating in Drosophila' (normalized equality), and the surnames Senapati/Treiber/Waddell; all three identity criteria pass.",
+    "evidence_type": "causal_intervention",
+    "provenance": "PAPER_CLAIM",
+    "term_type": "PAPER_TERM",
+    "mapping_note": "term_type PAPER_TERM: the full text uses the mechanism words mapped here - delayed post-ingestive reinforcement/cancellation (K5), the approach-to-relative-avoidance switch (K7), and serotonergic suppression plus safety memory (K10). Our contribution is only the family labels and the CONFIRMED/REVISED comparison.",
+    "description_scope": "Action judged under the description 'the fly approaches or avoids the trained odor at test'. Because one training protocol produces approach to one odor and avoidance of the other, the D-axis can only be read per odor; the record-level class is therefore the condition-split (02 2.1-1).",
+    "motion_source": "L3/L1 - visceral (gut) malaise signal after toxin-tainted sugar, acting through fat-body releasing modSP and Turandot A onto autocrine Toll signalling in the same dopaminergic neurons that formed and consolidate the sugar memory.",
+    "mechanism": [
+      {
+        "k": "K5",
+        "core_class": "CORE",
+        "role": "primary",
+        "d_axis": "D−",
+        "v_axis": "B-",
+        "relation": "CONFIRMED",
+        "claim": "Delayed post-ingestive reinforcement is credited back to earlier odor memories by updating them during the consolidation window: the sugar reward memory for the toxin-paired odor is cancelled by the delayed post-ingestive aversive reinforcement while the memory is still labile.",
+        "quote": "This SA memory timeline is consistent with flies forming a sugar reward memory that is cancelled by delayed post-ingestive aversive reinforcement.",
+        "search_terms": [
+          "credit assignment",
+          "delayed",
+          "post-ingestive",
+          "consolidation",
+          "update"
+        ],
+        "note": "The full text supports the credit-assignment/updating mechanism and its consolidation-window timing. The abstract's phrase 'turns approach into avoidance' is not counted as part of K5 here; the full text's behavioural qualification of that phrase is recorded under K7's REVISED difference.",
+        "quote_offset": 11057,
+        "quote_sha16": "caee848107de2d05",
+        "quote_chars": 146,
+        "search_hits": {
+          "credit assignment": 2,
+          "delayed": 9,
+          "post-ingestive": 29,
+          "consolidation": 39,
+          "update": 11
+        }
+      },
+      {
+        "k": "K7",
+        "core_class": "CORE",
+        "role": "auxiliary",
+        "d_axis": "D−",
+        "v_axis": "B-",
+        "relation": "REVISED",
+        "claim": "The same training first produces conditioned approach and later a relative avoidance of the food-paired odor. The full text reports a rapid decline within 120 min followed by conversion to avoidance by 6 h, and attributes the 24 h choice to a parallel safety memory for the non-food odor rather than to an absolute aversive memory of CS+.",
+        "quote": "In contrast, SA trained flies initially showed strong approach to the previously food-paired odor which rapidly declined within the first 120 min after training and converted to avoidance by 6 h that persisted for at least 24 h.",
+        "supporting_quote": "24 h after training behavior appears to be solely directed by a safety memory for the non-food paired odor – no CS+ approach or avoidance was evident at this time.",
+        "search_terms": [
+          "switch",
+          "switches",
+          "reversal",
+          "avoidance",
+          "approach",
+          "consolidation"
+        ],
+        "difference": "L-01 describes a discrete phase-reversed switch, explicitly 'not a gradual decline', whose direction is an absolute switch of the CS+ response to avoidance. The full text reports a rapid decline of CS+ approach within the first 120 min and conversion to avoidance by 6 h in the CS+ vs CS- choice, but a CS+ vs novel-odor test shows no preference by 2 h, and the 24 h behaviour is attributed to a safety memory for CS-: 'no CS+ approach or avoidance was evident at this time'. The approach-to-relative-avoidance direction and the consolidation-window dependence are retained; the temporal shape and the scope of the avoidance differ.",
+        "retained": "approach-to-relative-avoidance direction and consolidation-window dependence",
+        "quote_offset": 10828,
+        "quote_sha16": "be3f6c91f5ddc84e",
+        "quote_chars": 228,
+        "supporting_quote_offset": 57549,
+        "supporting_quote_sha16": "8af6a8b6e2a47df5",
+        "supporting_quote_chars": 163,
+        "search_hits": {
+          "switch": 7,
+          "switches": 2,
+          "reversal": 6,
+          "avoidance": 15,
+          "approach": 70,
+          "consolidation": 39
+        }
+      },
+      {
+        "k": "K10",
+        "core_class": "CORE",
+        "role": "auxiliary",
+        "d_axis": "D+",
+        "v_axis": "B+",
+        "relation": "CONFIRMED",
+        "claim": "The malaise signal suppresses consolidation of the initial odor-sugar memory and forms a parallel safety memory for the odor experienced without food, through serotonergic modulation of distinct dopaminergic subtypes. Full text: DPM output 15-30 min after training is required for both the suppression and the CS- approach memory.",
+        "quote": "The DPM blocking experiments therefore demonstrate that 15-30 min after training is a critical time for malaise information to both suppress sugar-rewarded CS+ approach memory and form a CS- approach memory.",
+        "search_terms": [
+          "serotonin",
+          "serotonergic",
+          "dopaminergic",
+          "safety",
+          "suppress",
+          "invert"
+        ],
+        "note": "The full text also identifies the receptor/Toll combinations in specific DAN subtypes; that detail is carried as an ADDITIONAL K10 entry and does not enter the core counts.",
+        "quote_offset": 16410,
+        "quote_sha16": "544e3506eeb0b54e",
+        "quote_chars": 207,
+        "search_hits": {
+          "serotonin": 19,
+          "serotonergic": 7,
+          "dopaminergic": 19,
+          "safety": 7,
+          "suppress": 6,
+          "invert": 2
+        }
+      },
+      {
+        "k": "K5",
+        "core_class": "ADDITIONAL",
+        "role": "additional",
+        "d_axis": "D−",
+        "v_axis": "B-",
+        "relation": "CONFIRMED",
+        "claim": "DPM-released 5-HT extends the effective inter-stimulus interval after feeding into the consolidation window, allowing post-ingestive reinforcement to be integrated.",
+        "quote": "Our work here suggests that DPM neuron released 5-HT can extend the effective ISI much further after a feeding event into the consolidation window so that post-ingestive reinforcement can be integrated.",
+        "search_terms": [
+          "credit assignment",
+          "delayed",
+          "post-ingestive",
+          "consolidation",
+          "update"
+        ],
+        "note": "ADDITIONAL: supports the K5 family's timing claim but is not part of L-01's core set.",
+        "quote_offset": 43666,
+        "quote_sha16": "4dcf507022d6d2c1",
+        "quote_chars": 202,
+        "search_hits": {
+          "credit assignment": 2,
+          "delayed": 9,
+          "post-ingestive": 29,
+          "consolidation": 39,
+          "update": 11
+        }
+      },
+      {
+        "k": "K10",
+        "core_class": "ADDITIONAL",
+        "role": "additional",
+        "d_axis": "D+",
+        "v_axis": "B+",
+        "relation": "CONFIRMED",
+        "claim": "Specific 5-HT receptor and Toll combinations in PAM-γ3, PAM-β'2mp and PAM-γ5 DANs are required for the 24 h CS- approach memory.",
+        "quote": "Development of 24 h CS- approach required excitatory 5-HT7 receptors in PAM-γ3, 5-HT7 and Toll-6 in PAM-β'2mp, and inhibitory 5-HT1A and Toll-1 in PAM-γ5 DANs.",
+        "search_terms": [
+          "serotonin",
+          "serotonergic",
+          "dopaminergic",
+          "safety",
+          "suppress",
+          "invert"
+        ],
+        "note": "ADDITIONAL: subtype-level support for K10, not part of L-01's core set.",
+        "quote_offset": 52819,
+        "quote_sha16": "59cb05b742de308e",
+        "quote_chars": 159,
+        "search_hits": {
+          "serotonin": 19,
+          "serotonergic": 7,
+          "dopaminergic": 19,
+          "safety": 7,
+          "suppress": 6,
+          "invert": 2
+        }
+      }
+    ],
+    "d_class": "mixed",
+    "agency_class": "RESPONSIVE",
+    "event_grammar": "[MOTION] ingestion of toxin-tainted sugar --> [GATE] visceral signals (modSP / Turandot A -> autocrine Toll in dopaminergic neurons) admit updating only during the consolidation window --> [INACTION/ACTION] avoidance of the paired odor, approach maintained to the unpaired 'safety' odor --> [OUTCOME] poisoned food not re-ingested, safe food still exploited --> [FEEDBACK] earlier odor memories rewritten retrospectively by the later visceral state",
+    "contradiction_ref": null,
+    "anchor_concordance": {
+      "anchor_primary_k": "K5",
+      "same_family": true,
+      "same_sign": true,
+      "reason": "Independent (insect) system, same committed family and sign: a delayed post-ingestive reinforcer is bound back onto the recently sampled cue and suppresses re-consumption - supporting the anchor's mechanism at the level of the credit-assignment problem, though by retrospective memory updating rather than reactivation-driven stabilization."
+    },
+    "notes": "Level FULLTEXT_REVIEWED: the normalized Europe PMC body is 116342 characters, above the registered floor of 21224. The preprint was posted 2025-10-22 and is not peer reviewed; the supplementary figures were not independently coded. The L-01 record is untouched: this is a new, parallel record. K7 is REVISED because the full text reports a rapid decline and a CS- safety-memory account rather than a discrete absolute switch to CS+ avoidance; K5 and K10 are CONFIRMED at the mechanism-family level.",
+    "layers": [
+      "L3",
+      "L1"
+    ],
+    "layers_provenance": "L01-D5: the protocol's §2 field list requires layers[], but the coding schema dropped it and l01_gate.py's field loop did not check it. Recovered by extracting exactly the L-tokens already present in motion_source, in first-mention order - no layer is invented here"
+  },
+  "counts": {
+    "core_total": 3,
+    "confirmed": 2,
+    "revised": 1,
+    "unsupported": 0,
+    "refuted": 0,
+    "additional": 2,
+    "mechanism_total": 5,
+    "quotes_primary": 5,
+    "quotes_supporting": 1,
+    "quotes_total": 6,
+    "quote_chars_min": 146,
+    "quote_chars_max": 228,
+    "fulltext_chars": 116342,
+    "floor": 21224,
+    "above_floor": true
+  },
+  "exit_q1": "FULLTEXT_REVISES",
+  "exit_q1_label_r17": "INDETERMINATE",
+  "differences": [
+    {
+      "k": "K7",
+      "l01_claim": "The behavioral output is a discrete phase-reversed switch, not a gradual decline: flies first express conditioned odor approach and only after consolidation does the same training switch the response to avoidance - a bistable, time-gated reversal whose direction depends on passing the consolidation window.",
+      "fulltext_claim": "The same training first produces conditioned approach and later a relative avoidance of the food-paired odor. The full text reports a rapid decline within 120 min followed by conversion to avoidance by 6 h, and attributes the 24 h choice to a parallel safety memory for the non-food odor rather than to an absolute aversive memory of CS+.",
+      "difference": "L-01 describes a discrete phase-reversed switch, explicitly 'not a gradual decline', whose direction is an absolute switch of the CS+ response to avoidance. The full text reports a rapid decline of CS+ approach within the first 120 min and conversion to avoidance by 6 h in the CS+ vs CS- choice, but a CS+ vs novel-odor test shows no preference by 2 h, and the 24 h behaviour is attributed to a safety memory for CS-: 'no CS+ approach or avoidance was evident at this time'. The approach-to-relative-avoidance direction and the consolidation-window dependence are retained; the temporal shape and the scope of the avoidance differ.",
+      "retained": "approach-to-relative-avoidance direction and consolidation-window dependence"
+    }
+  ],
+  "l01_o5": {
+    "status": "CLOSED",
+    "basis": "exit FULLTEXT_REVISES closes L01-O5 as 'full text retrieved and coded under the registered criteria'; the L-01 record and level are not rewritten"
+  },
+  "l03_o1": {
+    "status": "OPEN",
+    "reason": "exit FULLTEXT_REVISES means the full-text coding differs from the abstract-level record; the difference is recorded here and in ROUND_L03_RESULTS.md, not written back to L-01"
+  },
+  "stop_rule": "prereg 5: exits 5/6/7 halt without coding; exits 1-4 close L01-O5; exits 2/3/4 open L03-O1; no write-back to L-01.",
+  "asymmetry": "prereg 6: confirmation is internal to one preprint (abstract-level vs full-text-level coding); it does not establish the paper's mechanism, upgrade the preprint to peer review, or code the supplementary figures.",
+  "amendments": [
+    {
+      "id": "L03-A1",
+      "when": "before coding",
+      "what": "the acquisition sidecar's `attempts` field was null; the five channel readings (C1 CLI 429, C2 403, C3 browser ERR_FAILED, C4 429, C1 browser 200) were added before any coding reading",
+      "effect": "the text hash, character count and all registered criteria are unchanged; rule 1's two C1 readings are now recorded"
+    }
+  ],
+  "generator": {
+    "name": "literature/l03_coding.py",
+    "sha256": "0f3a9cb37637bb84fa01aa4f0bd313f43a0cbee673906e4f44d41c62e51109a3"
+  },
+  "written_at": "2026-10-21T11:35:02+00:00"
+}

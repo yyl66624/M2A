@@ -35,8 +35,7 @@ EXP = M / "experiments"
 FRACTION = re.compile(r"(\d{1,2})\s*/\s*(\d{1,2})")
 GATE_NAME = re.compile(r"`([a-z0-9_]+_gate\.py)`")
 
-DOCS = sorted(EXP.glob("PHASE*_RESULTS.md")) + [M / "literature/ROUND_L01_RESULTS.md",
-                                                M / "literature/ROUND_L02_RESULTS.md"]
+DOCS = sorted(EXP.glob("PHASE*_RESULTS.md")) + sorted((M / "literature").glob("ROUND_*_RESULTS.md"))
 
 # rounds whose document legitimately states no score for its own instrument (name -> why)
 KNOWN_NO_CLAIM = {}
@@ -56,14 +55,16 @@ KNOWN_STATIC_GAPS = {
                     "L-02 的门控与 `l01_gate.py` 同一族：它用自己的 `report()` 记录判定并把条数钉在 "
                     "`RULES` 常量上，`check()` 站点为 0，静态普查与打印的 `n/n` 不可比。它与打印数的唯一"
                     "区别是判定条数由登记表决定，而不是由出现过几次 `check()` 决定。"),
+    "l03_gate.py": ("other_harness",
+                    "L-03 的门控与 `l01_gate.py`/`l02_gate.py` 同一族：它用自己的 `report()` 记录判定，"
+                    "`check()` 站点为 0；full 模式打印 20/20，pre 模式打印 13/13，静态站点数与两者都不可比。"),
 }
 
 
 def expected_gate(doc):
-    if doc.name == "ROUND_L01_RESULTS.md":
-        return "literature/l01_gate.py"
-    if doc.name == "ROUND_L02_RESULTS.md":
-        return "literature/l02_gate.py"
+    m = re.fullmatch(r"ROUND_L(\d+)_RESULTS\.md", doc.name)
+    if m:
+        return "literature/l%s_gate.py" % m.group(1).lower()
     ph = doc.name.replace("PHASE", "").replace("_RESULTS.md", "")
     stem = "phase2_gate.py" if ph == "2" else "p%s_gate.py" % ph.lower()
     rel = "literature/" if stem.startswith("l01") else "experiments/"

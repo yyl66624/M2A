@@ -279,7 +279,7 @@ def family_of(anchor_num, arts):
     return hits
 
 
-LIT = re.compile(r"\bL[-–]?(\d\d)\b")
+LIT = re.compile(r"\bL[-–]?(\d\d)(?![A-Za-z0-9])")
 CLAUSE = re.compile(r"[，,。；;、！!？?|/／]")
 # The families are the ones that actually have artifacts, derived from the artifact paths - the same lesson
 # §52 applied to the obligation ledger (X-107): an enumerated namespace is a list the next round is not on.

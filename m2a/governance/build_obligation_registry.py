@@ -75,7 +75,7 @@ EXPECT = {
     "L01-O2": ("CLOSED", "close", "literature/ROUND_L01_DISPOSITIONS.md", "已落实：主张层关系", None),
     "L01-O3": ("CLOSED", "close", "literature/ROUND_L01_DISPOSITIONS.md", "已裁定：`neutral` 轴", None),
     "L01-O4": ("CLOSED", "close", "literature/ROUND_L01_DISPOSITIONS.md", "已完成：《Concept Cones》", None),
-    "L01-O5": ("OPEN", "block", "literature/ROUND_L01_DISPOSITIONS.md", "仍开放：`R13-N15`", None),
+    "L01-O5": ("CLOSED", "close", "literature/ROUND_L01_DISPOSITIONS.md", "已落实：`R13-N15` 全文", None),
     # --- core open-questions list (08): the status words there are kept as written; owner
     # 2026-10-18 froze them (`O-01…O-15` 的状态字保持原样), so nothing here is closed in place
     "O-01": ("OPEN", "block", "08_OPEN_QUESTIONS.md", "K4 协同族单薄", None),
@@ -98,6 +98,7 @@ EXPECT = {
     # --- round L-02 registers its own two disclosed gaps (the namespace now comes from the id)
     "L02-O1": ("OPEN", "block", "literature/ROUND_L02_RESULTS.md", "仍开放：本轮 Q1", None),
     "L02-O2": ("OPEN", "block", "literature/ROUND_L02_RESULTS.md", "仍开放：表征层的定义侧", None),
+    "L03-O1": ("OPEN", "block", "literature/ROUND_L03_RESULTS.md", "仍开放：K7 的全文级", None),
 }
 CLASS = {"close": CLOSE, "adopt": ADOPT, "hand": HAND, "block": BLOCK}
 
@@ -502,8 +503,12 @@ def main():
                   "并把判据先于读数注册（`ROUND_L02_RESULTS.md` §8）。",
         "L02-O2": "表征层定义侧未编码：锥的维度与 `RCO` 收敛条件落在被剥离的数学行上，本轮按预注册不予编码"
                   "（`ROUND_L02_RESULTS.md` §5、§8）。",
-        "L01-O5": "R13-N15 端点只返回 bioRxiv 预览页（5 370 字符，403/无全文）⇒ 按 `ANNOTATION_ADDENDUM` 增补 3 "
-                  "保持 `ABSTRACT_VERIFIED`，不得以摘要冒充全文；不可得原因已记录，升级路径未定。",
+        "L03-O1": "K7 的全文级编码与 L-01 摘要级 claim 在时间形态（120 min 内快速下降 vs 离散相位反转）"
+                  "与 avoidance 的作用域（相对 CS− 的 safety memory vs CS+ 的绝对回避）上不同；"
+                  "差异只写入 `L03_coding.json` 与 `ROUND_L03_RESULTS.md`，不回写 L-01（R6）。",
+        "L01-O5": "R13-N15 全文已按 L-03 预注册取回并编码（Europe PMC C1 浏览器通路，116 342 字符），"
+                  "出口 `FULLTEXT_REVISES`：K5/K10 确认、K7 的全文级差异另立 `L03-O1`。"
+                  "`L01_coding.json` 的 `ABSTRACT_VERIFIED` 与 L-01 判定一字未改（R6）。",
         # --- 08 开放问题清单：owner 2026-10-18 明示「状态字保持原样」，故没有任何一条就地关闭
         "O-01": "K4 协同族单薄：Phase I′ 补入 7 条后仍为 3/8，缺口已被改判为**结构性**而非检索性"
                 "（`M2A_FINAL_REPORT.md` §2 第 3 条）⇒ 检索建议已执行，条目诉求（取得因果级协同证据）未达。",

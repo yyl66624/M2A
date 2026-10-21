@@ -85,6 +85,7 @@ MD_OUT = GOV / "FROZEN_INPUT_MAP_v1.md"
 SELF_OUT = {JSON_OUT.name, MD_OUT.name}
 DRAFTS = W / "feishu_wiki_drafts"
 FETCH = W / "feishu_wiki_fetches"
+FT = W / "_m2a_ft"
 GUARD = [W / "check_step_draft_numbers.py", W / "publish_wiki_steps.py", W / "publish_wiki_pages.py",
          W / "capture_wiki_pages.py", W / "feishu_wiki_nodes.json", W / "run_chain.py"]
 
@@ -118,7 +119,7 @@ def repo_files():
 
 def workshop_files():
     out = [p for p in GUARD if p.exists()]
-    return sorted(out + list(DRAFTS.glob("*.md")) + list(FETCH.glob("*.txt")))
+    return sorted(out + list(DRAFTS.glob("*.md")) + list(FETCH.glob("*.txt")) + list(FT.glob("*.txt")))
 
 
 def by_basename():
@@ -258,7 +259,10 @@ def visibility(r):
             doc = json.loads(txt)
         except ValueError:
             return "pinner_unreadable"
-        cur = sha256((M / r["object"]).read_bytes()) if r.get("object_namespace") == "repo" else None
+        cur = None
+        if r.get("object_namespace") in ("repo", "workshop"):
+            root = M if r["object_namespace"] == "repo" else W
+            cur = sha256((root / r["object"]).read_bytes())
         for k, v in _hex_pairs(doc):
             if HASHKEY.search(k) and v == r["hash"] and cur is not None and v == cur:
                 return "json_key_reproduced"

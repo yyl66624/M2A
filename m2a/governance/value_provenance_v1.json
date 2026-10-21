@@ -56,7 +56,7 @@
     "rounded_matches": 29,
     "claim_values": 2033,
     "claim_documents": 40,
-    "corpus_documents": 51,
+    "corpus_documents": 52,
     "round_families": 23
   },
   "round_records": {
@@ -253,7 +253,7 @@
       ],
       "prereg_values": 0,
       "artifact_values": 436,
-      "transcription_values": 74
+      "transcription_values": 106
     }
   },
   "rows": [
@@ -9291,7 +9291,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2043,
+      "line": 2053,
       "values": [
         "0.005",
         "0.008"
@@ -9337,7 +9337,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2068,
+      "line": 2078,
       "values": [
         "154.1",
         "5.1e-12"
@@ -9362,7 +9362,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2069,
+      "line": 2079,
       "values": [
         "1.0001"
       ],
@@ -9381,7 +9381,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2070,
+      "line": 2080,
       "values": [
         "170.130"
       ],
@@ -9400,7 +9400,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2071,
+      "line": 2081,
       "values": [
         "0.0084",
         "0.9990",
@@ -9431,7 +9431,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2072,
+      "line": 2082,
       "values": [
         "170.130"
       ],
@@ -9450,7 +9450,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2154,
+      "line": 2168,
       "values": [
         "1.0"
       ],
@@ -9492,7 +9492,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2169,
+      "line": 2183,
       "values": [
         "1.0"
       ],
@@ -14755,7 +14755,7 @@
     {
       "document": "governance/OBLIGATION_REGISTRY.md",
       "kind": "regenerated",
-      "line": 105,
+      "line": 107,
       "values": [
         "0.0050",
         "1e-4"
@@ -14802,7 +14802,7 @@
     {
       "document": "governance/OBLIGATION_REGISTRY.md",
       "kind": "regenerated",
-      "line": 106,
+      "line": 108,
       "values": [
         "0.6",
         "154.664",
@@ -14875,7 +14875,7 @@
     {
       "document": "governance/OBLIGATION_REGISTRY.md",
       "kind": "regenerated",
-      "line": 110,
+      "line": 112,
       "values": [
         "0.2"
       ],

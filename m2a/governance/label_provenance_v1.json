@@ -24,7 +24,7 @@
   ],
   "generator": {
     "file": "governance/build_label_provenance.py",
-    "sha256": "64707e807cf99e0b464db8601e1935a150208969cf57a5beec0176672844fb00"
+    "sha256": "9f87c71d61da7e73e32f50b09c2d24b26dd01291452763a4911f4157752beff8"
   },
   "self_excluded": [
     "LABEL_PROVENANCE_v1.md",
@@ -71,16 +71,16 @@
     "not_a_round_verdict": 0,
     "attested_in_other_round": 0,
     "anchor_without_recorded_label": 3,
-    "label_mention_without_predication": 200,
+    "label_mention_without_predication": 233,
     "cross_round_refutation": 0,
-    "label_without_anchor": 391,
-    "matches_artifact": 44,
+    "label_without_anchor": 448,
+    "matches_artifact": 47,
     "hard_findings": 1,
     "paired_corrections": 0,
-    "claim_documents": 47,
-    "corpus_documents": 53,
-    "artifact_files": 46,
-    "vocabulary_tokens": 39,
+    "claim_documents": 48,
+    "corpus_documents": 54,
+    "artifact_files": 47,
+    "vocabulary_tokens": 42,
     "registered_phases": 22
   },
   "artifact_labels": {
@@ -385,6 +385,17 @@
         "CONTRADICTED",
         "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
         "ZERO_TEST_REANALYSIS"
+      ]
+    },
+    "literature/L03_coding.json": {
+      "five": [
+        "INDETERMINATE"
+      ],
+      "raw": [
+        "CLOSED",
+        "FULLTEXT_REVISES",
+        "INDETERMINATE",
+        "OPEN"
       ]
     },
     "literature/expansion_candidates.json": {
@@ -1169,6 +1180,19 @@
       ],
       "excerpt": "正确表述为「S1 过 / S2 REFUTED / S3 过，轮次出口 O-NONE」。教训：**汇总性文档里的判定标签必须回指工件字段，",
       "line_len": 69,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 493,
+      "labels": [
+        "CLOSED"
+      ],
+      "excerpt": "把它们并入 CLOSED 会掩盖判据当时失败的事实。该工具暴露的三处治理缺陷登记于 **X-67**。",
+      "line_len": 51,
       "anchors": [],
       "phantom": [],
       "verdict": "label_without_anchor"
@@ -2095,6 +2119,112 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
+      "line": 1191,
+      "labels": [
+        "CLOSED",
+        "OPEN"
+      ],
+      "excerpt": "`derive == pin for all 54 labels`，54 条 = CLOSED 28 / SUCCEEDED 2 / OPEN 24，`UNCLASSIFIED 0`。",
+      "line_len": 92,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 1198,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "而审查本身未做、`O-15` 因词表 v1 只是草案且 X-70 的拼写漂移只登记未清洗 ⇒ **全部保持 OPEN**。",
+      "line_len": 61,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 1199,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "`L01-O1…O5` 同样全部 OPEN：第 4 条批到「14 篇编码 + 独立核验 + 竞争理论比较」为止。",
+      "line_len": 56,
+      "anchors": [
+        "L01"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 1205,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "逐字节一致（**台账不得过期**）、G5 每行状态合法、G6 每条 OPEN 都有登记原因、G7 计数自洽。",
+      "line_len": 54,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 1211,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "* 把 `L01-O5` 的登记原因改名 ⇒ 构建以 `OPEN label with no registered reason` 退出码 4 失败（已还原）。",
+      "line_len": 80,
+      "anchors": [
+        "L01"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
       "line": 1246,
       "labels": [
         "CONTRADICTED",
@@ -2593,6 +2723,19 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
+      "line": 1373,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "> `P11-O1`/`P12-O3` 仍 OPEN。",
+      "line_len": 27,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
       "line": 1413,
       "labels": [
         "CONTRADICTED",
@@ -2639,6 +2782,20 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
+      "line": 1508,
+      "labels": [
+        "CLOSED",
+        "OPEN"
+      ],
+      "excerpt": "收尾审计复跑：**30/30 套件、245 项检查、24/24 预注册哈希绑定**。检查数 216→245 全部来自本节套件：判别力套件自身由 5 条增至 34 条（19 个变异 + 15 条门控级规则），`216 - 5 + 34 = 245` 逐位对得上；台账由 54 条标签增至 **55 条**（28 CLOSE",
+      "line_len": 290,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
       "line": 1569,
       "labels": [
         "PASS"
@@ -2665,6 +2822,20 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
+      "line": 1588,
+      "labels": [
+        "CLOSED",
+        "OPEN"
+      ],
+      "excerpt": "收尾审计复跑：**30/30 套件、270 项检查、24/24 预注册哈希绑定**（逐字取自 `experiments/audit_bindings.py` 的 `SUMMARY` 行）。检查数 245→270 全部来自本节套件：判别力套件自身由 34 条增至 59 条 = 33 个变异 + 25 条门控级规则 + 1",
+      "line_len": 397,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
       "line": 1606,
       "labels": [
         "PASS"
@@ -2678,7 +2849,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1952,
+      "line": 1958,
       "labels": [
         "CONTRADICTED",
         "INDETERMINATE",
@@ -2695,7 +2866,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1953,
+      "line": 1959,
       "labels": [
         "SUPPORTED"
       ],
@@ -2729,7 +2900,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1976,
+      "line": 1982,
       "labels": [
         "SUPPORTED"
       ],
@@ -2742,7 +2913,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1982,
+      "line": 1988,
       "labels": [
         "IDENTITY_VERIFIED",
         "PASS"
@@ -2775,7 +2946,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1983,
+      "line": 1989,
       "labels": [
         "COUNT_NOT_STATUS",
         "MANUAL_REVIEW"
@@ -2789,7 +2960,20 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2144,
+      "line": 2086,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "从 8/8 掉到 5/8：四条义务被 derive != pin 判成 OPEN，deciding-sentence 全指向新表 JSON 的 `excerpt` 字段。",
+      "line_len": 88,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2158,
       "labels": [
         "CONTRADICTED"
       ],
@@ -2802,7 +2986,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2153,
+      "line": 2167,
       "labels": [
         "CLAIM_LAYER_INFLATION",
         "CONTRADICTED",
@@ -2810,28 +2994,58 @@
       ],
       "excerpt": "- Q1/Q2 工件打印：wrote L02_reanalysis.json | exit_q1 CLAIM_LAYER_INFLATION (CONTRADICTED) | exit_q2 NEUTRAL_ZERO_IS_NOT_A_BOUNDARY (CONTRADICTED) | totals {\"C_surfa",
       "line_len": 283,
-      "anchors": [],
+      "anchors": [
+        "L02"
+      ],
       "phantom": [],
-      "verdict": "label_without_anchor"
+      "allowed_five": [
+        "CONTRADICTED"
+      ],
+      "artifact_raw": [
+        "CLAIM_LAYER_INFLATION",
+        "COMPETING_CODED",
+        "CONTRADICTED",
+        "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+        "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2154,
+      "line": 2168,
       "labels": [
         "COMPETING_CODED",
         "CONTRADICTED"
       ],
       "excerpt": "- Q3 工件打印：wrote L02_coding.json | exit_q3 COMPETING_CODED (CONTRADICTED) | overlap 1.0 | channel local_cache | chars 71382 | entries 4 | directional votes REFUT",
       "line_len": 261,
-      "anchors": [],
+      "anchors": [
+        "L02"
+      ],
       "phantom": [],
-      "verdict": "label_without_anchor"
+      "allowed_five": [
+        "CONTRADICTED"
+      ],
+      "artifact_raw": [
+        "CLAIM_LAYER_INFLATION",
+        "COMPETING_CODED",
+        "CONTRADICTED",
+        "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+        "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2155,
+      "line": 2169,
       "labels": [
         "PASS"
       ],
@@ -2844,7 +3058,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2163,
+      "line": 2177,
       "labels": [
         "INDETERMINATE"
       ],
@@ -2886,7 +3100,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2172,
+      "line": 2186,
       "labels": [
         "CONTRADICTED"
       ],
@@ -2899,7 +3113,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2191,
+      "line": 2205,
       "labels": [
         "CONTRADICTED"
       ],
@@ -2936,7 +3150,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2212,
+      "line": 2226,
       "labels": [
         "PASS"
       ],
@@ -2949,7 +3163,21 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2240,
+      "line": 2250,
+      "labels": [
+        "CLOSED",
+        "OPEN"
+      ],
+      "excerpt": "**读数**（全部取自打印行）。**计数**：CLOSED 31 / SUCCEEDED 2 / OPEN 25 / UNCLASSIFIED 0，共 58 条标签。本轮之后 `L` 命名空间的行共 **7** 条、命名空间 **4** 个（由标签形状推导：",
+      "line_len": 129,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2254,
       "labels": [
         "CLAIM_LAYER_INFLATION"
       ],
@@ -2973,6 +3201,138 @@
       "predicated": false,
       "attested_labels": [],
       "verdict": "label_mention_without_predication"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2520,
+      "labels": [
+        "FULLTEXT_REVISES",
+        "INDETERMINATE"
+      ],
+      "excerpt": "状态标签（本轮 L03，对回 `literature/L03_coding.json`）：Q1 **判为** `FULLTEXT_REVISES`；五值标签**判为** `INDETERMINATE`（R17）。本轮只做文献全文的取回与编码，不产生实验读数，",
+      "line_len": 129,
+      "anchors": [
+        "L03"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "CLOSED",
+        "FULLTEXT_REVISES",
+        "INDETERMINATE",
+        "OPEN"
+      ],
+      "predicated": true,
+      "attested_labels": [
+        "FULLTEXT_REVISES",
+        "INDETERMINATE"
+      ],
+      "per_label": [
+        [
+          "FULLTEXT_REVISES",
+          "matches_artifact"
+        ],
+        [
+          "INDETERMINATE",
+          "matches_artifact"
+        ]
+      ],
+      "errata": [],
+      "verdict": "matches_artifact"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2538,
+      "labels": [
+        "FULLTEXT_REVISES",
+        "INDETERMINATE"
+      ],
+      "excerpt": "L03 reading: exit FULLTEXT_REVISES | core c=2 r=1 u=0 f=0 | fulltext 116342 chars >= 21224 | quotes 6 | additional 2 | label INDETERMINATE",
+      "line_len": 138,
+      "anchors": [
+        "L03"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "CLOSED",
+        "FULLTEXT_REVISES",
+        "INDETERMINATE",
+        "OPEN"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2539,
+      "labels": [
+        "CLOSED",
+        "OPEN"
+      ],
+      "excerpt": "L03 obligations: L01-O5 CLOSED | L03-O1 OPEN",
+      "line_len": 44,
+      "anchors": [
+        "L01",
+        "L03"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CLOSED",
+        "CONTRADICTED",
+        "FULLTEXT_REVISES",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "OPEN",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2543,
+      "labels": [
+        "CONFIRMED"
+      ],
+      "excerpt": "两条分数分别是 pre 与 full；pre 只验仪器。K5 `CONFIRMED`、K10 `CONFIRMED`、K7 `REVISED`（核心三条中",
+      "line_len": 77,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2548,
+      "labels": [
+        "REFUTED"
+      ],
+      "excerpt": "avoidance 的作用域不同。按预注册 §3.4 记 `REVISED`，不记 `REFUTED`——摘要句本身仍写「switches to",
+      "line_len": 72,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
     },
     {
       "document": "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
@@ -3351,6 +3711,42 @@
     {
       "document": "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
       "kind": "append_only",
+      "line": 185,
+      "labels": [
+        "CLOSED"
+      ],
+      "excerpt": "| X-67 | **义务台账首跑暴露三处治理缺陷：两条开放项从未被任何结果文档处置、两条被误记为「关闭」、以及自动推导器本身会误判** | 建 `governance/build_obligation_registry.py`（34 条开放项标签，逐条带 `路径:行号` 与措辞类别）后逐项核对：**①** `P16-",
+      "line_len": 949,
+      "anchors": [
+        "13",
+        "17",
+        "18",
+        "6"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "CONTRADICTED",
+        "SUPPORTED"
+      ],
+      "artifact_raw": [
+        "2/4 closed",
+        "3/4 closed",
+        "4/4 closed",
+        "E1 CONVENTION RECONCILED / E3 K4 CONFIRMED",
+        "E1 LAW-K-INVARIANT-UNDER-3LAYER",
+        "E2 TRUNCATION-NOT-THE-CULPRIT",
+        "O-NONE (three registered exits all inapplicable)",
+        "O-REFUTED",
+        "PASS",
+        "REFUTED"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
+    },
+    {
+      "document": "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
+      "kind": "append_only",
       "line": 187,
       "labels": [
         "INDETERMINATE",
@@ -3470,6 +3866,40 @@
         }
       ],
       "verdict": "matches_artifact"
+    },
+    {
+      "document": "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
+      "kind": "append_only",
+      "line": 190,
+      "labels": [
+        "CLOSED",
+        "OPEN"
+      ],
+      "excerpt": "| X-72 | **义务台账只覆盖三个命名空间里的一个：20 条开放项可以从台账上消失而构建毫无察觉** | `build_obligation_registry.py` 的标签式写作 `P<n>-O<m>`，因此 `L01-O*`（5 条，出处 `ROUND_L01_RESULTS.md` §9）与 `O-<nn>",
+      "line_len": 1525,
+      "anchors": [
+        "L01"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
@@ -3604,6 +4034,19 @@
         }
       ],
       "verdict": "matches_artifact"
+    },
+    {
+      "document": "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
+      "kind": "append_only",
+      "line": 194,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "| X-75 | **AO 协议 §4 的「独立仪器」预检没有判别力：把 Z 改成协议自己禁止的补集定义后，门控仍然全绿** | §4 六条预检此前只是散文，按 X-68 口径「列了检查」不等于「检查能跑」，故实现为 `experiments/ao_opp.py` + `ao_preflight_gate.py`。实现",
+      "line_len": 1056,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
     },
     {
       "document": "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
@@ -3751,6 +4194,20 @@
     {
       "document": "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
       "kind": "append_only",
+      "line": 216,
+      "labels": [
+        "CLOSED",
+        "OPEN"
+      ],
+      "excerpt": "| X-95 | **一层新表把台账四条义务从 CLOSED/SUCCEEDED 判成 OPEN：转写表进了状态判定语料；同轮修好一条永不成立的浮点分支与一处轮次锚点形状** | 新建 §50 判据数值对账层（`governance/build_value_provenance.py` → `value_provena",
+      "line_len": 1395,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
+      "kind": "append_only",
       "line": 231,
       "labels": [
         "NULL"
@@ -3784,7 +4241,939 @@
     {
       "document": "governance/OBLIGATION_REGISTRY.md",
       "kind": "regenerated",
-      "line": 82,
+      "line": 6,
+      "labels": [
+        "CLOSED",
+        "OPEN"
+      ],
+      "excerpt": "> **双机制**：状态先由句子措辞推导（CLOSED / SUCCEEDED / OPEN），再与脚本内固定断言 `EXPECT` 逐条比对；不一致、断言句找不到或匹配多处、转手指向未关闭的后继、或出现无处置的新标签 ⇒ 构建失败并打印原因。台账因此不能悄悄漂移。",
+      "line_len": 133,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 14,
+      "labels": [
+        "CLOSED"
+      ],
+      "excerpt": "| P5-O1 | **CLOSED** | 2 | `experiments/PHASE5_RESULTS.md:130` | 关闭类措辞 | — |",
+      "line_len": 76,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 15,
+      "labels": [
+        "CLOSED"
+      ],
+      "excerpt": "| P5-O2 | **CLOSED** | 11 | `M2A_FINAL_REPORT.md:265` | 关闭类措辞 | — |",
+      "line_len": 67,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 16,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "| P5-O3 | **OPEN** | 3 | `experiments/PHASE5_RESULTS.md:132` | 开放类措辞 | — |",
+      "line_len": 74,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 17,
+      "labels": [
+        "CLOSED"
+      ],
+      "excerpt": "| P6-O1 | **CLOSED** | 13 | `M2A_FINAL_REPORT.md:310` | 关闭类措辞 | — |",
+      "line_len": 67,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 18,
+      "labels": [
+        "CLOSED"
+      ],
+      "excerpt": "| P6-O2 | **CLOSED** | 5 | `experiments/PHASE7_PREREGISTRATION.md:4` | 执行/沿用类措辞 | — |",
+      "line_len": 85,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 19,
+      "labels": [
+        "CLOSED"
+      ],
+      "excerpt": "| P6-O3 | **CLOSED** | 7 | `experiments/PHASE7_PREREGISTRATION.md:51` | 执行/沿用类措辞 | — |",
+      "line_len": 86,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 20,
+      "labels": [
+        "CLOSED"
+      ],
+      "excerpt": "| P7-O1 | **CLOSED** | 18 | `experiments/PHASE9_RESULTS.md:1` | 关闭类措辞 | — |",
+      "line_len": 75,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 21,
+      "labels": [
+        "CLOSED"
+      ],
+      "excerpt": "| P7-O2 | **CLOSED** | 14 | `experiments/PHASE9_RESULTS.md:1` | 关闭类措辞 | — |",
+      "line_len": 75,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 22,
+      "labels": [
+        "CLOSED"
+      ],
+      "excerpt": "| P7-O3 | **CLOSED** | 4 | `experiments/PHASE8_PREREGISTRATION.md:5` | 执行/沿用类措辞 | — |",
+      "line_len": 85,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 23,
+      "labels": [
+        "CLOSED"
+      ],
+      "excerpt": "| P8-O1 | **CLOSED** | 27 | `M2A_FINAL_REPORT.md:538` | 关闭类措辞 | — |",
+      "line_len": 67,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 24,
+      "labels": [
+        "CLOSED"
+      ],
+      "excerpt": "| P8-O2 | **CLOSED** | 15 | `M2A_FINAL_REPORT.md:538` | 关闭类措辞 | — |",
+      "line_len": 67,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 25,
+      "labels": [
+        "CLOSED"
+      ],
+      "excerpt": "| P8-O3 | **CLOSED** | 1 | `M2A_PROGRAM_PLAN.md:118` | 关闭类措辞 | — |",
+      "line_len": 66,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 26,
+      "labels": [
+        "CLOSED"
+      ],
+      "excerpt": "| P9-O1 | **CLOSED** | 15 | `M2A_FINAL_REPORT.md:575` | 关闭类措辞 | — |",
+      "line_len": 67,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 27,
+      "labels": [
+        "CLOSED"
+      ],
+      "excerpt": "| P9-O2 | **CLOSED** | 10 | `M2A_FINAL_REPORT.md:575` | 关闭类措辞 | — |",
+      "line_len": 67,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 28,
+      "labels": [
+        "CLOSED"
+      ],
+      "excerpt": "| P9-O3 | **CLOSED** | 6 | `M2A_FINAL_REPORT.md:601` | 关闭类措辞 | — |",
+      "line_len": 66,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 29,
+      "labels": [
+        "CLOSED"
+      ],
+      "excerpt": "| P10-O1 | **CLOSED** | 16 | `M2A_FINAL_REPORT.md:613` | 关闭类措辞 | — |",
+      "line_len": 68,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 30,
+      "labels": [
+        "CLOSED"
+      ],
+      "excerpt": "| P10-O2 | **CLOSED** | 9 | `M2A_FINAL_REPORT.md:613` | 关闭类措辞 | — |",
+      "line_len": 67,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 31,
+      "labels": [
+        "CLOSED"
+      ],
+      "excerpt": "| P10-O3 | **CLOSED** | 5 | `M2A_FINAL_REPORT.md:607` | 关闭类措辞 | — |",
+      "line_len": 67,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 32,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "| P11-O1 | **OPEN** | 25 | `M2A_FINAL_REPORT.md:855` | 开放类措辞 | — |",
+      "line_len": 66,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 34,
+      "labels": [
+        "CLOSED"
+      ],
+      "excerpt": "| P11-O3 | **CLOSED** | 13 | `experiments/PHASE13_RESULTS.md:28` | 关闭类措辞 | — |",
+      "line_len": 78,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 36,
+      "labels": [
+        "CLOSED"
+      ],
+      "excerpt": "| P12-O2 | **CLOSED** | 11 | `experiments/PHASE13_RESULTS.md:10` | 关闭类措辞 | — |",
+      "line_len": 78,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 37,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "| P12-O3 | **OPEN** | 20 | `M2A_FINAL_REPORT.md:855` | 开放类措辞 | — |",
+      "line_len": 66,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 38,
+      "labels": [
+        "CLOSED"
+      ],
+      "excerpt": "| P13-O1 | **CLOSED** | 24 | `experiments/PHASE14_RESULTS.md:23` | 关闭类措辞 | — |",
+      "line_len": 78,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 39,
+      "labels": [
+        "CLOSED"
+      ],
+      "excerpt": "| P13-O2 | **CLOSED** | 31 | `M2A_FINAL_REPORT.md:738` | 关闭类措辞 | — |",
+      "line_len": 68,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 40,
+      "labels": [
+        "CLOSED"
+      ],
+      "excerpt": "| P14-O1 | **CLOSED** | 47 | `experiments/PHASE18_RESULTS.md:19` | 关闭类措辞 | — |",
+      "line_len": 78,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 41,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "| P15-O1 | **OPEN** | 10 | `M2A_FINAL_REPORT.md:855` | 开放类措辞 | — |",
+      "line_len": 66,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 42,
+      "labels": [
+        "CLOSED"
+      ],
+      "excerpt": "| P16-O1 | **CLOSED** | 11 | `M2A_FINAL_REPORT.md:806` | 执行/沿用类措辞 | — |",
+      "line_len": 71,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 43,
+      "labels": [
+        "CLOSED"
+      ],
+      "excerpt": "| P17-O1 | **CLOSED** | 10 | `experiments/PHASE18_PREREGISTRATION.md:1` | 关闭类措辞 | — |",
+      "line_len": 85,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 44,
+      "labels": [
+        "CLOSED"
+      ],
+      "excerpt": "| P19-O1 | **CLOSED** | 14 | `experiments/PHASE20_RESULTS.md:64` | 关闭类措辞 | — |",
+      "line_len": 78,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 45,
+      "labels": [
+        "CLOSED"
+      ],
+      "excerpt": "| P20-O1 | **CLOSED** | 16 | `experiments/PHASE21_RESULTS.md:61` | 关闭类措辞 | — |",
+      "line_len": 78,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 46,
+      "labels": [
+        "CLOSED"
+      ],
+      "excerpt": "| P21-O1 | **CLOSED** | 13 | `experiments/PHASE22_RESULTS.md:64` | 关闭类措辞 | — |",
+      "line_len": 78,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 47,
+      "labels": [
+        "CLOSED"
+      ],
+      "excerpt": "| P22-O1 | **CLOSED** | 10 | `M2A_FINAL_REPORT.md:945` | 关闭类措辞 | — |",
+      "line_len": 68,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 48,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "| L01-O1 | **OPEN** | 11 | `literature/ROUND_L01_DISPOSITIONS.md:15` | 开放类措辞 | — |",
+      "line_len": 82,
+      "anchors": [
+        "L01"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 49,
+      "labels": [
+        "CLOSED"
+      ],
+      "excerpt": "| L01-O2 | **CLOSED** | 13 | `literature/ROUND_L01_DISPOSITIONS.md:9` | 关闭类措辞 | — |",
+      "line_len": 83,
+      "anchors": [
+        "L01"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 50,
+      "labels": [
+        "CLOSED"
+      ],
+      "excerpt": "| L01-O3 | **CLOSED** | 4 | `literature/ROUND_L01_DISPOSITIONS.md:11` | 关闭类措辞 | — |",
+      "line_len": 83,
+      "anchors": [
+        "L01"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 51,
+      "labels": [
+        "CLOSED"
+      ],
+      "excerpt": "| L01-O4 | **CLOSED** | 7 | `literature/ROUND_L01_DISPOSITIONS.md:13` | 关闭类措辞 | — |",
+      "line_len": 83,
+      "anchors": [
+        "L01"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 52,
+      "labels": [
+        "CLOSED"
+      ],
+      "excerpt": "| L01-O5 | **CLOSED** | 25 | `literature/ROUND_L01_DISPOSITIONS.md:17` | 关闭类措辞 | — |",
+      "line_len": 84,
+      "anchors": [
+        "L01"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 53,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "| L02-O1 | **OPEN** | 5 | `literature/ROUND_L02_RESULTS.md:122` | 开放类措辞 | — |",
+      "line_len": 77,
+      "anchors": [
+        "L02"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "CONTRADICTED"
+      ],
+      "artifact_raw": [
+        "CLAIM_LAYER_INFLATION",
+        "COMPETING_CODED",
+        "CONTRADICTED",
+        "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+        "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 54,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "| L02-O2 | **OPEN** | 5 | `literature/ROUND_L02_RESULTS.md:124` | 开放类措辞 | — |",
+      "line_len": 77,
+      "anchors": [
+        "L02"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "CONTRADICTED"
+      ],
+      "artifact_raw": [
+        "CLAIM_LAYER_INFLATION",
+        "COMPETING_CODED",
+        "CONTRADICTED",
+        "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+        "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 55,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "| L03-O1 | **OPEN** | 12 | `literature/ROUND_L03_RESULTS.md:93` | 开放类措辞 | — |",
+      "line_len": 77,
+      "anchors": [
+        "L03"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "CLOSED",
+        "FULLTEXT_REVISES",
+        "INDETERMINATE",
+        "OPEN"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 56,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "| O-01 | **OPEN** | 7 | `08_OPEN_QUESTIONS.md:7` | 开放类措辞 | — |",
+      "line_len": 62,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 57,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "| O-02 | **OPEN** | 1 | `08_OPEN_QUESTIONS.md:9` | 开放类措辞 | — |",
+      "line_len": 62,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 58,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "| O-03 | **OPEN** | 20 | `08_OPEN_QUESTIONS.md:11` | 开放类措辞 | — |",
+      "line_len": 64,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 59,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "| O-04 | **OPEN** | 1 | `08_OPEN_QUESTIONS.md:13` | 开放类措辞 | — |",
+      "line_len": 63,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 60,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "| O-05 | **OPEN** | 1 | `08_OPEN_QUESTIONS.md:15` | 开放类措辞 | — |",
+      "line_len": 63,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 61,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "| O-06 | **OPEN** | 9 | `08_OPEN_QUESTIONS.md:20` | 开放类措辞 | — |",
+      "line_len": 63,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 62,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "| O-07 | **OPEN** | 11 | `08_OPEN_QUESTIONS.md:22` | 开放类措辞 | — |",
+      "line_len": 64,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 63,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "| O-08 | **OPEN** | 1 | `08_OPEN_QUESTIONS.md:24` | 开放类措辞 | — |",
+      "line_len": 63,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 64,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "| O-09 | **OPEN** | 2 | `08_OPEN_QUESTIONS.md:26` | 开放类措辞 | — |",
+      "line_len": 63,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 65,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "| O-10 | **OPEN** | 1 | `08_OPEN_QUESTIONS.md:31` | 开放类措辞 | — |",
+      "line_len": 63,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 66,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "| O-11 | **OPEN** | 2 | `08_OPEN_QUESTIONS.md:32` | 开放类措辞 | — |",
+      "line_len": 63,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 67,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "| O-12 | **OPEN** | 5 | `08_OPEN_QUESTIONS.md:34` | 开放类措辞 | — |",
+      "line_len": 63,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 68,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "| O-13 | **OPEN** | 3 | `08_OPEN_QUESTIONS.md:39` | 开放类措辞 | — |",
+      "line_len": 63,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 69,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "| O-14 | **OPEN** | 8 | `08_OPEN_QUESTIONS.md:41` | 开放类措辞 | — |",
+      "line_len": 63,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 70,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "| O-15 | **OPEN** | 16 | `08_OPEN_QUESTIONS.md:43` | 开放类措辞 | — |",
+      "line_len": 64,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 71,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "| O-16 | **OPEN** | 7 | `08_OPEN_QUESTIONS.md:67` | 开放类措辞 | — |",
+      "line_len": 63,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 72,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "| O-17 | **OPEN** | 13 | `08_OPEN_QUESTIONS.md:81` | 开放类措辞 | — |",
+      "line_len": 64,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 76,
+      "labels": [
+        "CLOSED",
+        "OPEN"
+      ],
+      "excerpt": "**计数**：CLOSED 32 / SUCCEEDED 2 / OPEN 25 / UNCLASSIFIED 0，共 59 条标签。命名空间分布：实验轮 `P<n>-O<m>` 34 条、文献轮 `L01-O<m>` 5 条、开放问题 `O-<nn>` 17 条。",
+      "line_len": 133,
+      "anchors": [
+        "L01"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 83,
       "labels": [
         "PARTIALLY_IDENTIFIED"
       ],
@@ -3808,7 +5197,7 @@
     {
       "document": "governance/OBLIGATION_REGISTRY.md",
       "kind": "regenerated",
-      "line": 100,
+      "line": 102,
       "labels": [
         "INDETERMINATE"
       ],
@@ -3833,6 +5222,40 @@
         "VERIFIED_THIRD_CHANNEL",
         "VERIFIED_TWO_CHANNEL",
         "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
+    },
+    {
+      "document": "governance/OBLIGATION_REGISTRY.md",
+      "kind": "regenerated",
+      "line": 108,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "- **O-17**：同一次推广（§41、X-79）暴露的另两条：Phase VIII 的 `J5` 写的是 `rho_exact(0.6) == rho_exact(0.6)`，注入 1e-1 偏移使读数由 154.664 变到 170.130，门控 6 档仍全绿——该条不存在可证伪输入；Phase V-b 的门控 ",
+      "line_len": 653,
+      "anchors": [
+        "5",
+        "8"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "SUPPORTED"
+      ],
+      "artifact_raw": [
+        "CONFIRMED",
+        "E2 EXPONENT-NOT-MINUS-TWO",
+        "J_NOT_DECISIVE",
+        "J_NOT_DECISIVE (registered in Phase V; P5c-F4)",
+        "NOT_EXPLAINED",
+        "QUALIFIED",
+        "REFUTED",
+        "S2 stays REFUTED (P8-F4); this round only explains its readings",
+        "SUPPORTED"
       ],
       "predicated": false,
       "attested_labels": [],
@@ -3917,6 +5340,19 @@
       "verdict": "label_without_anchor"
     },
     {
+      "document": "report/AO_MEASUREMENT_PROTOCOL_v1.md",
+      "kind": "derived_summary",
+      "line": 101,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "> `P11-O1`/`P12-O3` 状态不变（仍 OPEN，判据未写进预注册）。",
+      "line_len": 42,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
       "document": "report/B02_hysteresis_indicator_design.md",
       "kind": "derived_summary",
       "line": 81,
@@ -3992,7 +5428,7 @@
     {
       "document": "report/RUNNER_GATE_ENFORCEMENT_v1.md",
       "kind": "derived_summary",
-      "line": 52,
+      "line": 53,
       "labels": [
         "ZERO_TEST_REANALYSIS"
       ],
@@ -5431,6 +6867,7 @@
       "kind": "derived_summary",
       "line": 71,
       "labels": [
+        "CLOSED",
         "MANUAL_REVIEW"
       ],
       "excerpt": "| `experiments/phase22_reanalysis.json` | `verdict_on_P22_O1` | `CLOSED by derivation on committed readings, zero-test status` | **MANUAL_REVIEW** | artifact-fi",
@@ -5537,9 +6974,29 @@
       ],
       "excerpt": "| `literature/L01_coding.json` | `exit_table[R13]` | `{'anchor_primary_family_from_registry': 'K5', 'anchor_primar` | **INDETERMINATE** | artifact-field | alrea",
       "line_len": 229,
-      "anchors": [],
+      "anchors": [
+        "L01"
+      ],
       "phantom": [],
-      "verdict": "label_without_anchor"
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -5550,9 +7007,29 @@
       ],
       "excerpt": "| `literature/L01_coding.json` | `exit_table[G5-03]` | `{'anchor_primary_family_from_registry': 'K2', 'anchor_primar` | **INDETERMINATE** | artifact-field | alr",
       "line_len": 231,
-      "anchors": [],
+      "anchors": [
+        "L01"
+      ],
       "phantom": [],
-      "verdict": "label_without_anchor"
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -5563,9 +7040,29 @@
       ],
       "excerpt": "| `literature/L01_coding.json` | `exit_table[R14]` | `{'anchor_primary_family_from_registry': 'K5', 'anchor_primar` | **INDETERMINATE** | artifact-field | alrea",
       "line_len": 229,
-      "anchors": [],
+      "anchors": [
+        "L01"
+      ],
       "phantom": [],
-      "verdict": "label_without_anchor"
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -5576,9 +7073,29 @@
       ],
       "excerpt": "| `literature/L01_coding.json` | `round_label` | `INDETERMINATE` | **INDETERMINATE** | artifact-field | already canonical - this artifact field literally carrie",
       "line_len": 178,
-      "anchors": [],
+      "anchors": [
+        "L01"
+      ],
       "phantom": [],
-      "verdict": "label_without_anchor"
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v1.md",
@@ -8010,6 +9527,7 @@
       "kind": "derived_summary",
       "line": 81,
       "labels": [
+        "CLOSED",
         "ZERO_TEST_REANALYSIS"
       ],
       "excerpt": "| `experiments/phase22_reanalysis.json` | `verdict_on_P22_O1` | `CLOSED by derivation on committed readings, zero-test status` | **ZERO_TEST_REANALYSIS** | arti",
@@ -8116,9 +9634,29 @@
       ],
       "excerpt": "| `literature/L01_coding.json` | `exit_table[R13]` | `{'anchor_primary_family_from_registry': 'K5', 'anchor_primar` | **INDETERMINATE** | artifact-field | alrea",
       "line_len": 229,
-      "anchors": [],
+      "anchors": [
+        "L01"
+      ],
       "phantom": [],
-      "verdict": "label_without_anchor"
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -8129,9 +9667,29 @@
       ],
       "excerpt": "| `literature/L01_coding.json` | `exit_table[G5-03]` | `{'anchor_primary_family_from_registry': 'K2', 'anchor_primar` | **INDETERMINATE** | artifact-field | alr",
       "line_len": 231,
-      "anchors": [],
+      "anchors": [
+        "L01"
+      ],
       "phantom": [],
-      "verdict": "label_without_anchor"
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -8142,9 +9700,29 @@
       ],
       "excerpt": "| `literature/L01_coding.json` | `exit_table[R14]` | `{'anchor_primary_family_from_registry': 'K5', 'anchor_primar` | **INDETERMINATE** | artifact-field | alrea",
       "line_len": 229,
-      "anchors": [],
+      "anchors": [
+        "L01"
+      ],
       "phantom": [],
-      "verdict": "label_without_anchor"
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -8155,9 +9733,29 @@
       ],
       "excerpt": "| `literature/L01_coding.json` | `round_label` | `INDETERMINATE` | **INDETERMINATE** | artifact-field | already canonical - this artifact field literally carrie",
       "line_len": 178,
-      "anchors": [],
+      "anchors": [
+        "L01"
+      ],
       "phantom": [],
-      "verdict": "label_without_anchor"
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
@@ -10665,9 +12263,29 @@
       ],
       "excerpt": "`L01_verification.json` 已给出严格口径读数 **14/17 `VERIFIED_TWO_CHANNEL`**。三条例外逐条定名处理，",
       "line_len": 78,
-      "anchors": [],
+      "anchors": [
+        "L01"
+      ],
       "phantom": [],
-      "verdict": "label_without_anchor"
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "literature/L01_CODING_PROTOCOL.md",
@@ -10798,6 +12416,52 @@
       "anchors": [],
       "phantom": [],
       "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/ROUND_L01_DISPOSITIONS.md",
+      "kind": "run_record",
+      "line": 17,
+      "labels": [
+        "FULLTEXT_REVISES"
+      ],
+      "excerpt": "- **L01-O5** 已落实：`R13-N15` 全文已按 L-03 预注册取回并编码，出口 `FULLTEXT_REVISES`（K5/K10 确认，K7 的差异另立 `L03-O1`，见 `literature/ROUND_L03_RESULTS.md`）；旧记录与旧轮判定保持原样。",
+      "line_len": 146,
+      "anchors": [
+        "L01",
+        "L03"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CLOSED",
+        "CONTRADICTED",
+        "FULLTEXT_REVISES",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "OPEN",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": true,
+      "attested_labels": [
+        "FULLTEXT_REVISES"
+      ],
+      "per_label": [
+        [
+          "FULLTEXT_REVISES",
+          "matches_artifact"
+        ]
+      ],
+      "errata": [],
+      "verdict": "matches_artifact"
     },
     {
       "document": "literature/ROUND_L01_RESULTS.md",
@@ -11321,9 +12985,24 @@
       ],
       "excerpt": "wrote L02_reanalysis.json | exit_q1 CLAIM_LAYER_INFLATION (CONTRADICTED) | exit_q2 NEUTRAL_ZERO_IS_NOT_A_BOUNDARY (CONTRADICTED) | totals {\"C_surface\": 5, \"S_ro",
       "line_len": 269,
-      "anchors": [],
+      "anchors": [
+        "L02"
+      ],
       "phantom": [],
-      "verdict": "label_without_anchor"
+      "allowed_five": [
+        "CONTRADICTED"
+      ],
+      "artifact_raw": [
+        "CLAIM_LAYER_INFLATION",
+        "COMPETING_CODED",
+        "CONTRADICTED",
+        "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+        "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "literature/ROUND_L02_RESULTS.md",
@@ -11357,6 +13036,48 @@
       "predicated": false,
       "attested_labels": [],
       "verdict": "label_mention_without_predication"
+    },
+    {
+      "document": "literature/ROUND_L02_RESULTS.md",
+      "kind": "run_record",
+      "line": 66,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "- `L01-O2`：本轮 `U` = `0`。本轮把 ρ 注册成了字段并跑完它的读法，所以 `L01-O2` 要求的**前置**（先注册新字段，再谈改判据）已完成。该义务保持 **OPEN**：把 L-01 三簇的判定换成主张层口径重下不在本轮权限内（R6：旧判定各自保持），关闭它需要 owner 决定是否把 ρ 写",
+      "line_len": 193,
+      "anchors": [
+        "L01"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": true,
+      "attested_labels": [
+        "OPEN"
+      ],
+      "per_label": [
+        [
+          "OPEN",
+          "not_a_round_verdict"
+        ]
+      ],
+      "errata": [],
+      "verdict": "matches_artifact"
     },
     {
       "document": "literature/ROUND_L02_RESULTS.md",
@@ -11396,9 +13117,24 @@
       ],
       "excerpt": "wrote L02_coding.json | exit_q3 COMPETING_CODED (CONTRADICTED) | overlap 1.0 | channel local_cache | chars 71382 | entries 4 | directional votes REFUTES,REFUTES",
       "line_len": 250,
-      "anchors": [],
+      "anchors": [
+        "L02"
+      ],
       "phantom": [],
-      "verdict": "label_without_anchor"
+      "allowed_five": [
+        "CONTRADICTED"
+      ],
+      "artifact_raw": [
+        "CLAIM_LAYER_INFLATION",
+        "COMPETING_CODED",
+        "CONTRADICTED",
+        "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+        "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "literature/ROUND_L02_RESULTS.md",
@@ -11422,6 +13158,215 @@
       ],
       "excerpt": "不存在「放宽到全绿」的通道，第 4 档 `NOT_IDENTIFIED` 就是出口。",
       "line_len": 44,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/ROUND_L03_RESULTS.md",
+      "kind": "run_record",
+      "line": 14,
+      "labels": [
+        "CONFIRMED",
+        "FULLTEXT_REVISES",
+        "INDETERMINATE"
+      ],
+      "excerpt": "`R13-N15` 的全文已从 Europe PMC 的 C1 浏览器通路取回（归一化后 116 342 字符，身份三项全过），按预注册 §3.4 编码三条核心机制：K5、K10 为 `CONFIRMED`，K7 为 `REVISED`（全文把「离散相位反转、不是渐降」改成 120 min 内快速下降、6 h 转为相对",
+      "line_len": 314,
+      "anchors": [
+        "L01",
+        "L03"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CLOSED",
+        "CONTRADICTED",
+        "FULLTEXT_REVISES",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "OPEN",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
+    },
+    {
+      "document": "literature/ROUND_L03_RESULTS.md",
+      "kind": "run_record",
+      "line": 20,
+      "labels": [
+        "FULLTEXT_REVISES",
+        "INDETERMINATE"
+      ],
+      "excerpt": "| Q1 全文与摘要级编码是否一致 | `FULLTEXT_REVISES` | **INDETERMINATE** | `run_L03.py` 的 `L03 reading:` 打印行 |",
+      "line_len": 96,
+      "anchors": [
+        "L03"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "CLOSED",
+        "FULLTEXT_REVISES",
+        "INDETERMINATE",
+        "OPEN"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
+    },
+    {
+      "document": "literature/ROUND_L03_RESULTS.md",
+      "kind": "run_record",
+      "line": 39,
+      "labels": [
+        "FULLTEXT_REVISES",
+        "INDETERMINATE"
+      ],
+      "excerpt": "L03 reading: exit FULLTEXT_REVISES | core c=2 r=1 u=0 f=0 | fulltext 116342 chars >= 21224 | quotes 6 | additional 2 | label INDETERMINATE",
+      "line_len": 138,
+      "anchors": [
+        "L03"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "CLOSED",
+        "FULLTEXT_REVISES",
+        "INDETERMINATE",
+        "OPEN"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
+    },
+    {
+      "document": "literature/ROUND_L03_RESULTS.md",
+      "kind": "run_record",
+      "line": 40,
+      "labels": [
+        "CLOSED",
+        "OPEN"
+      ],
+      "excerpt": "L03 obligations: L01-O5 CLOSED | L03-O1 OPEN",
+      "line_len": 44,
+      "anchors": [
+        "L01",
+        "L03"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CLOSED",
+        "CONTRADICTED",
+        "FULLTEXT_REVISES",
+        "INDETERMINATE",
+        "OBTAINED_THIRD_CHANNEL",
+        "OPEN",
+        "PASS",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
+    },
+    {
+      "document": "literature/ROUND_L03_RESULTS.md",
+      "kind": "run_record",
+      "line": 54,
+      "labels": [
+        "CONFIRMED"
+      ],
+      "excerpt": "| `K5` | CORE | primary | `D−` | **CONFIRMED** | 「This SA memory timeline is consistent with flies forming a sugar reward memory…」 | 11057 | 146 | `caee848107de",
+      "line_len": 167,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/ROUND_L03_RESULTS.md",
+      "kind": "run_record",
+      "line": 56,
+      "labels": [
+        "CONFIRMED"
+      ],
+      "excerpt": "| `K10` | CORE | auxiliary | `D+` | **CONFIRMED** | 「The DPM blocking experiments therefore demonstrate that 15-30 min after training…」 | 16410 | 207 | `544e350",
+      "line_len": 172,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/ROUND_L03_RESULTS.md",
+      "kind": "run_record",
+      "line": 57,
+      "labels": [
+        "CONFIRMED"
+      ],
+      "excerpt": "| `K5` | ADDITIONAL | additional | `D−` | CONFIRMED | 「Our work here suggests that DPM neuron released 5-HT can extend…」 | 43666 | 202 | `4dcf507022d6d2c1` |",
+      "line_len": 157,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/ROUND_L03_RESULTS.md",
+      "kind": "run_record",
+      "line": 58,
+      "labels": [
+        "CONFIRMED"
+      ],
+      "excerpt": "| `K10` | ADDITIONAL | additional | `D+` | CONFIRMED | 「Development of 24 h CS- approach required excitatory 5-HT7 receptors…」 | 52819 | 159 | `59cb05b742de308e",
+      "line_len": 163,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/ROUND_L03_RESULTS.md",
+      "kind": "run_record",
+      "line": 67,
+      "labels": [
+        "REFUTED"
+      ],
+      "excerpt": "- 差异：时间形态（快速下降 vs 离散相位反转）与 avoidance 的作用域（相对 CS− 的选择 vs CS+ 的绝对回避记忆）。按预注册 §3.4，这属于 `REVISED`，不是 `REFUTED`——论文的摘要句本身仍写「switches to avoidance」，全文没有一句明确主张「接近不会转向回避",
+      "line_len": 201,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/ROUND_L03_RESULTS.md",
+      "kind": "run_record",
+      "line": 79,
+      "labels": [
+        "CONFIRMED"
+      ],
+      "excerpt": "- 检索词表只用于定位候选段落；`CONFIRMED` / `REVISED` 由人读段落并逐字引用判定。`UNSUPPORTED` 本轮未触发，但这不表示全篇没有遗漏——它只表示按 §3.5 的固定词表未见支持段落。",
+      "line_len": 109,
       "anchors": [],
       "phantom": [],
       "verdict": "label_without_anchor"

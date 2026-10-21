@@ -1,13 +1,13 @@
 # 冻结输入登记表 v1（FROZEN_INPUT_MAP_v1）
 
 问题：这份文档的字节一改，哪条已记录的背书就再也验不过？（GOVERNANCE_ARTIFACT，不跑实验、不改判定）
-推导器源码 SHA-256：`c8a08c1c35a15714`；扫描仓库文件 293 份、仓库外守门件 71 份；配对 174 行，出处文档 49 份，被钉对象 77 个。
+推导器源码 SHA-256：`4a8ba7213e2e9e43`；扫描仓库文件 299 份、仓库外守门件 114 份；配对 194 行，出处文档 52 份，被钉对象 82 个。
 配对口径：**按键名配对且要求唯一候选**（先量过：按「第一个同级的路径」配对会把 27 行判成陈旧，全是把文档哈希配到门控路径上——伪造的硬伤）。
 
 | 可见性状态 | 条数 |
 |---|---|
-| `json_key_reproduced` | 3 |
-| `source_call_visible` | 23 |
+| `json_key_reproduced` | 7 |
+| `source_call_visible` | 31 |
 
 冻结行的可见性按读法分开记录，三态以上各自一条通路；不可见与未读都属于披露，不是硬伤（R2）。
 
@@ -16,14 +16,15 @@
 | `stale_attestation` | 0 |
 | `named_object_absent` | 0 |
 | `pin_of_this_layer_output` | 0 |
-| `frozen_by_round_instrument` | 26 |
-| `renewable_governance_pin` | 79 |
-| `hash_without_named_object` | 56 |
-| `ambiguous_pairing` | 13 |
+| `frozen_by_round_instrument` | 38 |
+| `renewable_governance_pin` | 81 |
+| `hash_without_named_object` | 61 |
+| `ambiguous_pairing` | 14 |
 | **硬伤合计** | **0** |
 
 被轮次仪器或其预注册钉住的对象（追加不可用，R6）：
 
+- `_m2a_ft/L03_R13-N15.raw.txt`
 - `experiments/p14_gate.py`
 - `experiments/p15_gate.py`
 - `experiments/p16_gate.py`
@@ -41,7 +42,9 @@
 - `literature/L01_fulltexts.json`
 - `literature/L01_verification.json`
 - `literature/L02_PREREGISTRATION.md`
+- `literature/L03_PREREGISTRATION.md`
 - `literature/ROUND_L01_RESULTS.md`
+- `literature/l03_coding.py`
 - `literature/registry.json`
 - `literature/synthesis_v2.json`
 

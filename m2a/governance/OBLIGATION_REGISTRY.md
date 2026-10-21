@@ -5,7 +5,7 @@
 > **负面日志不参与判定**：`governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md` 记的是当时已知的缺陷，行序按事件号而非处置时间，若让它参与排序，一条 Phase VI 的事故会压过 Phase XVIII 的关闭。该文件仍计入提及与证据，只是不决定状态。
 > **双机制**：状态先由句子措辞推导（CLOSED / SUCCEEDED / OPEN），再与脚本内固定断言 `EXPECT` 逐条比对；不一致、断言句找不到或匹配多处、转手指向未关闭的后继、或出现无处置的新标签 ⇒ 构建失败并打印原因。台账因此不能悄悄漂移。
 > **出处是内容锚定而非写死行号**：断言记的是「文件 + 该句的特征片段」，行号在构建时解析。本仓库文档只追加不删改，中途插入一段就会让所有后续行号失效——这个失效模式在本脚本第一次改完正文后真实出现过。
-> **命名空间由标签形状推导（当前 4 个命名空间、4 份承载工件）**：`P<n>-O<m>`（实验轮）、`L0n-O<m>`（每一轮文献各一份，承载工件就是那一轮自己的记录）、`O-<nn>`（08 开放问题清单）。`L01-O*` 与 `O-*` 此前不在扫描范围内，一条开放项可以从台账上消失而构建毫无察觉（`ROUND_L01_RESULTS.md` §9.6 登记，与 X-67 同源）；命名空间若改用列举而非形状，下一轮仍然不在名单上（X-106 同族）。每个命名空间的措辞类别不同（文献侧写「待裁定 / 建议 / 需指定」而非「关闭 / 落实」），且**状态只由其承载判定措辞的那份工件决定**：`L0n-O<m>` 只看``ROUND_L0n_RESULTS.md``，`O-<nn>` 只看 `08_OPEN_QUESTIONS.md`（owner 2026-10-18 明示「状态字保持原样」）；其他文件的提及计入证据与漂移检测，但不得翻转状态。
+> **命名空间由标签形状推导（当前 5 个命名空间、5 份承载工件）**：`P<n>-O<m>`（实验轮）、`L0n-O<m>`（每一轮文献各一份，承载工件就是那一轮自己的记录）、`O-<nn>`（08 开放问题清单）。`L01-O*` 与 `O-*` 此前不在扫描范围内，一条开放项可以从台账上消失而构建毫无察觉（`ROUND_L01_RESULTS.md` §9.6 登记，与 X-67 同源）；命名空间若改用列举而非形状，下一轮仍然不在名单上（X-106 同族）。每个命名空间的措辞类别不同（文献侧写「待裁定 / 建议 / 需指定」而非「关闭 / 落实」），且**状态只由其承载判定措辞的那份工件决定**：`L0n-O<m>` 只看``ROUND_L0n_RESULTS.md``，`O-<nn>` 只看 `08_OPEN_QUESTIONS.md`（owner 2026-10-18 明示「状态字保持原样」）；其他文件的提及计入证据与漂移检测，但不得翻转状态。
 > **提及句数**按「提到该标签的句子数」计，同一句里重复出现只算一句（X-67 行内两次写到 `P16-O1`，此处计 1）；它衡量的是**散布度**不是出现次数，因此与旧版按出现次数计的读数会有±1 的差，状态列不受影响。
 > 证据为相对 `m2a/` 的 `路径:行号`，回指原文；本文件自身不参与扫描（否则会用自己当证据）。
 
@@ -45,13 +45,14 @@
 | P20-O1 | **CLOSED** | 16 | `experiments/PHASE21_RESULTS.md:61` | 关闭类措辞 | — |
 | P21-O1 | **CLOSED** | 13 | `experiments/PHASE22_RESULTS.md:64` | 关闭类措辞 | — |
 | P22-O1 | **CLOSED** | 10 | `M2A_FINAL_REPORT.md:945` | 关闭类措辞 | — |
-| L01-O1 | **OPEN** | 8 | `literature/ROUND_L01_DISPOSITIONS.md:15` | 开放类措辞 | — |
+| L01-O1 | **OPEN** | 11 | `literature/ROUND_L01_DISPOSITIONS.md:15` | 开放类措辞 | — |
 | L01-O2 | **CLOSED** | 13 | `literature/ROUND_L01_DISPOSITIONS.md:9` | 关闭类措辞 | — |
 | L01-O3 | **CLOSED** | 4 | `literature/ROUND_L01_DISPOSITIONS.md:11` | 关闭类措辞 | — |
 | L01-O4 | **CLOSED** | 7 | `literature/ROUND_L01_DISPOSITIONS.md:13` | 关闭类措辞 | — |
-| L01-O5 | **OPEN** | 8 | `literature/ROUND_L01_DISPOSITIONS.md:17` | 开放类措辞 | — |
-| L02-O1 | **OPEN** | 2 | `literature/ROUND_L02_RESULTS.md:122` | 开放类措辞 | — |
-| L02-O2 | **OPEN** | 2 | `literature/ROUND_L02_RESULTS.md:124` | 开放类措辞 | — |
+| L01-O5 | **CLOSED** | 25 | `literature/ROUND_L01_DISPOSITIONS.md:17` | 关闭类措辞 | — |
+| L02-O1 | **OPEN** | 5 | `literature/ROUND_L02_RESULTS.md:122` | 开放类措辞 | — |
+| L02-O2 | **OPEN** | 5 | `literature/ROUND_L02_RESULTS.md:124` | 开放类措辞 | — |
+| L03-O1 | **OPEN** | 12 | `literature/ROUND_L03_RESULTS.md:93` | 开放类措辞 | — |
 | O-01 | **OPEN** | 7 | `08_OPEN_QUESTIONS.md:7` | 开放类措辞 | — |
 | O-02 | **OPEN** | 1 | `08_OPEN_QUESTIONS.md:9` | 开放类措辞 | — |
 | O-03 | **OPEN** | 20 | `08_OPEN_QUESTIONS.md:11` | 开放类措辞 | — |
@@ -72,7 +73,7 @@
 
 ---
 
-**计数**：CLOSED 31 / SUCCEEDED 2 / OPEN 25 / UNCLASSIFIED 0，共 58 条标签。命名空间分布：实验轮 `P<n>-O<m>` 34 条、文献轮 `L01-O<m>` 5 条、开放问题 `O-<nn>` 17 条。
+**计数**：CLOSED 32 / SUCCEEDED 2 / OPEN 25 / UNCLASSIFIED 0，共 59 条标签。命名空间分布：实验轮 `P<n>-O<m>` 34 条、文献轮 `L01-O<m>` 5 条、开放问题 `O-<nn>` 17 条。
 
 ## 仍开放（每条都必须带登记原因；缺原因即构建失败）
 
@@ -82,10 +83,11 @@
 - **P15-O1**：`e₁` 只给单侧界。**已裁定**保留单侧界（owner 第 2、7 条），不得改目标函数制造双侧结论 ⇒ 本条作为「双侧估计」的诉求已放弃，但作为「双侧可识别」的证据缺口仍在册。**注意**：owner 第 2 条要求的 `PARTIALLY_IDENTIFIED` 状态字目前只写在治理文档与累计报告里，`experiments/PHASE15_RESULTS.md` 与 `phase15_results.json` 均为 0 次命中，口径表 v2 的扫描已证实（X-74 / `M2A_FINAL_REPORT.md` §37.5）⇒ 「按 `PARTIALLY_IDENTIFIED` 记录」这一半**尚未落在承载判定的工件里**；旧轮文档不回写（R6、第 8 条），补法是本条的下一轮在新结果 JSON 里直接带该字段。
 
 - **L01-O1**：注册层 R13/R14 标注与全文读数的分歧：升为全文级须由一次带**新判据**的轮次决定，不在本轮权限内。`registry.json` 仍 0 条 FULLTEXT（第 8 条禁止回写）。
-- **L01-O5**：R13-N15 端点只返回 bioRxiv 预览页（5 370 字符，403/无全文）⇒ 按 `ANNOTATION_ADDENDUM` 增补 3 保持 `ABSTRACT_VERIFIED`，不得以摘要冒充全文；不可得原因已记录，升级路径未定。
 
 - **L02-O1**：本轮 Q1 / Q2 与 L-01 共用同一批读数，按 §6 只有否证地位、确证地位为零 ⇒ 要取得确证须换语料并把判据先于读数注册（`ROUND_L02_RESULTS.md` §8）。
 - **L02-O2**：表征层定义侧未编码：锥的维度与 `RCO` 收敛条件落在被剥离的数学行上，本轮按预注册不予编码（`ROUND_L02_RESULTS.md` §5、§8）。
+
+- **L03-O1**：K7 的全文级编码与 L-01 摘要级 claim 在时间形态（120 min 内快速下降 vs 离散相位反转）与 avoidance 的作用域（相对 CS− 的 safety memory vs CS+ 的绝对回避）上不同；差异只写入 `L03_coding.json` 与 `ROUND_L03_RESULTS.md`，不回写 L-01（R6）。
 
 - **O-01**：K4 协同族单薄：Phase I′ 补入 7 条后仍为 3/8，缺口已被改判为**结构性**而非检索性（`M2A_FINAL_REPORT.md` §2 第 3 条）⇒ 检索建议已执行，条目诉求（取得因果级协同证据）未达。
 - **O-02**：K10 角色重排族单薄：由 2/8 升到 4/8，说明缺口**部分**是检索造成的，方向仍一半混合 ⇒ 未闭合。

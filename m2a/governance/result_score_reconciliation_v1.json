@@ -1,12 +1,12 @@
 {
  "schema": "m2a.result-score-reconciliation.v1",
  "counts": {
-  "docs": 26,
+  "docs": 27,
   "aligned": 23,
-  "static_gap_registered": 3,
+  "static_gap_registered": 4,
   "bad": 0,
   "no_claim": 0,
-  "checks_printed": 185,
+  "checks_printed": 205,
   "check_sites_static": 169,
   "static_sites_in_population": 161
  },
@@ -452,6 +452,23 @@
    "static_sites": 0,
    "gate_sha256": "1c934589a687ef77d4a1e52185486519f5db25ee06eb1e46cf026fed870707a7",
    "verdict": "other_harness"
+  },
+  {
+   "doc": "literature/ROUND_L03_RESULTS.md",
+   "gate": "literature/l03_gate.py",
+   "named_gate": "l03_gate.py",
+   "claim_line": 3,
+   "claim": [
+    20,
+    20
+   ],
+   "live": [
+    20,
+    20
+   ],
+   "static_sites": 0,
+   "gate_sha256": "a75586a42de0e94eae4e95da47aa414f7dd2206aecec49060df3a9b8b5295e12",
+   "verdict": "other_harness"
   }
  ],
  "known_no_claim": {},
@@ -467,6 +484,10 @@
   "l02_gate.py": {
    "kind": "other_harness",
    "why": "L-02 的门控与 `l01_gate.py` 同一族：它用自己的 `report()` 记录判定并把条数钉在 `RULES` 常量上，`check()` 站点为 0，静态普查与打印的 `n/n` 不可比。它与打印数的唯一区别是判定条数由登记表决定，而不是由出现过几次 `check()` 决定。"
+  },
+  "l03_gate.py": {
+   "kind": "other_harness",
+   "why": "L-03 的门控与 `l01_gate.py`/`l02_gate.py` 同一族：它用自己的 `report()` 记录判定，`check()` 站点为 0；full 模式打印 20/20，pre 模式打印 13/13，静态站点数与两者都不可比。"
   }
  },
  "quantities": {
