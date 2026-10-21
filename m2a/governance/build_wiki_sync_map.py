@@ -67,6 +67,7 @@ PUBLISH_MAP = {
     52: "KCMhwheuIiKKUjkmHjBcNaHtnHb",   # the Round L-02 page, published before it could be registered
     53: "Cyx3wvKSOimovIkm9T9cxLTCnCe",   # the label-provenance widening page, published before it could be registered
     54: "RSUQwO0FsiwASnkYsc6cSJq2nua",   # the frozen-input map page, published before it could be registered
+    55: "PReJwmGfZiKA2wkGrZacBTnonzb",   # the tier-reachability step page, published before it could be registered
 }
 
 SECTION_RE = r"^#{2,3} (\d+) (.*)$"

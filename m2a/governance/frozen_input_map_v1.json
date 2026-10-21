@@ -3,7 +3,7 @@
   "question": "if these bytes change, which recorded attestation can no longer be verified",
   "generator": {
     "file": "governance/build_frozen_input_map.py",
-    "sha256": "16ed0475e3ec65b8a75b56b79577ccafa0d7ad8a927d688f14e9436d2e5f58c0"
+    "sha256": "ff0ac1472a062076175e87563b10a0230471dba3d932654ad6f9272a1b9af96e"
   },
   "pairing": {
     "rule": "by key name, exactly one candidate",
@@ -28,7 +28,15 @@
     "frozen_input_map_v1.json"
   ],
   "teeth": {
-    "probe_rows_doctored": 2,
+    "probe_shapes": {
+      "stale_attestation": "stale_attestation",
+      "named_object_absent": "named_object_absent",
+      "pin_of_this_layer_output": "pin_of_this_layer_output",
+      "control_current_pin": "renewable_governance_pin",
+      "hash_without_named_object": "hash_without_named_object",
+      "ambiguous_pairing": "ambiguous_pairing"
+    },
+    "probe_rows_synthesised": 6,
     "live_hard_counts": {
       "stale_attestation": 0,
       "named_object_absent": 0,
@@ -36,23 +44,31 @@
     },
     "tiers_reachable": [
       "named_object_absent",
+      "pin_of_this_layer_output",
       "stale_attestation"
-    ]
+    ],
+    "disclosure_reachable": [
+      "ambiguous_pairing",
+      "hash_without_named_object"
+    ],
+    "probe_object_isolated": true,
+    "control_stayed_non_hard": true,
+    "self_output_of_this_layer": "FROZEN_INPUT_MAP_v1.md"
   },
   "counts": {
     "stale_attestation": 0,
     "named_object_absent": 0,
     "pin_of_this_layer_output": 0,
     "frozen_by_round_instrument": 26,
-    "renewable_governance_pin": 75,
-    "hash_without_named_object": 52,
+    "renewable_governance_pin": 77,
+    "hash_without_named_object": 54,
     "ambiguous_pairing": 13,
     "hard_findings": 0,
-    "rows": 166,
+    "rows": 170,
     "pinning_documents": 49,
-    "pinned_objects": 73,
+    "pinned_objects": 75,
     "repo_files_scanned": 292,
-    "workshop_objects": 63,
+    "workshop_objects": 67,
     "instrument_collection_pins": 23
   },
   "frozen_inputs": [
@@ -1124,7 +1140,7 @@
     {
       "pinner": "governance/section_page_reconciliation_v1.json",
       "key": "page_sha256",
-      "hash": "9440f9e15eeacbb8c0a7489d360ea8f34bde3b9ce816c35b187e6e2e7262e192",
+      "hash": "5661b322c6f701174ef0fd4be018f88dcf2cf66302170829c79d5dd2f4caec44",
       "pair": [],
       "json_path": "pages/13",
       "pair_count": 0,
@@ -1172,6 +1188,24 @@
       "hash": "1358aa6d34c10fdadd781c25111de950caf86eb5e3835edd7f0dfeabbdc390e9",
       "pair": [],
       "json_path": "pages/18",
+      "pair_count": 0,
+      "verdict": "hash_without_named_object"
+    },
+    {
+      "pinner": "governance/section_page_reconciliation_v1.json",
+      "key": "page_sha256",
+      "hash": "2f5229fdf529d4296d333babe978b54b124844851a7b42689d21950e8aebef75",
+      "pair": [],
+      "json_path": "pages/19",
+      "pair_count": 0,
+      "verdict": "hash_without_named_object"
+    },
+    {
+      "pinner": "governance/section_page_reconciliation_v1.json",
+      "key": "page_sha256",
+      "hash": "b96a3b000f113e70c00715cca884f2727a9a9a783ba4343ce8e09fe4d51fc23b",
+      "pair": [],
+      "json_path": "pages/20",
       "pair_count": 0,
       "verdict": "hash_without_named_object"
     },
@@ -2045,7 +2079,7 @@
     {
       "pinner": "governance/wiki_sync_map_v1.json",
       "key": "draft_sha256",
-      "hash": "58092241edb2b2a62a2f99d45132bf2dd8cb340358be90663bcd5476abcbec73",
+      "hash": "3348f52f8961fee061ed28705e0c11a0857450c71c99da8bc98fe91c3e38a98e",
       "pair": [
         [
           "draft",
@@ -2146,8 +2180,42 @@
     },
     {
       "pinner": "governance/wiki_sync_map_v1.json",
+      "key": "draft_sha256",
+      "hash": "056ddf061d9ef32d09fc8b81e64923336522683aa3cc3d70853eae284ecd6728",
+      "pair": [
+        [
+          "draft",
+          "M2A-治理-冻结输入登记表谁在按字节引用这份文档.md"
+        ]
+      ],
+      "json_path": "pages/18",
+      "pair_count": 1,
+      "object_namespace": "workshop",
+      "object": "feishu_wiki_drafts/M2A-治理-冻结输入登记表谁在按字节引用这份文档.md",
+      "bytes_match": true,
+      "verdict": "renewable_governance_pin"
+    },
+    {
+      "pinner": "governance/wiki_sync_map_v1.json",
+      "key": "draft_sha256",
+      "hash": "cc566eda96136acc705552a2cdf87721e58bd653a0b2de19ab835fd23d6994fb",
+      "pair": [
+        [
+          "draft",
+          "M2A-治理-硬伤档可达性与没进链的推导.md"
+        ]
+      ],
+      "json_path": "pages/19",
+      "pair_count": 1,
+      "object_namespace": "workshop",
+      "object": "feishu_wiki_drafts/M2A-治理-硬伤档可达性与没进链的推导.md",
+      "bytes_match": true,
+      "verdict": "renewable_governance_pin"
+    },
+    {
+      "pinner": "governance/wiki_sync_map_v1.json",
       "key": "sha256",
-      "hash": "188dcc5578a2d497bafe28046c7c956be8902924321a39bfe10b31fc48b8f1a6",
+      "hash": "838ab9dda92d86786823125e1baf2f9d122d551c4d7e768754b77770e353d952",
       "pair": [
         [
           "file",
@@ -2164,7 +2232,7 @@
     {
       "pinner": "governance/wiki_sync_map_v1.json",
       "key": "sha256",
-      "hash": "959e13f27c2f2bd39d4201f03abd7d81be7aacf3377d5cf317f5a44c5095d594",
+      "hash": "6c9866e194b057416510a847ef7a618867961b7ecf63e3ac856f6f9a3bbbaf67",
       "pair": [
         [
           "file",
@@ -2181,7 +2249,7 @@
     {
       "pinner": "governance/wiki_sync_map_v1.json",
       "key": "sha256",
-      "hash": "dae9a731ee41810af6a343d8b97364435730db9833e5fe6a7ca5c0446bbde68b",
+      "hash": "9e4e020cf17e246ca70a3e64e770873adad5352f530572d7b9cf4d087fa15d6c",
       "pair": [
         [
           "file",

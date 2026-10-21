@@ -51,6 +51,18 @@ SELF-REFERENCE. Neither output of this table is read as a pinner or a pinned obj
 never adopts bytes it produced (X-91). Derived tables are *not* excluded from being pinners - §44 and §46 do
 record real pairings - but their pairings can never make this layer's own outputs attested.
 
+CORRECTION (same day as the layer's first run, found by writing its validator - the validator is
+therefore worth having even where its rules overlap the deriver's own asserts). Two of the three hard tiers could
+not be reached as written. `pin_of_this_layer_output` tested the object's name *after* the resolver, and the
+resolver's universe excludes this layer's own outputs by construction, so a pin on one of them was reported as
+`named_object_absent`: a hard tier reachable only by mis-classifying something else is not a tier. And
+`instrument_collection` rows returned a freeze before the object was looked up, so an instrument naming a file
+that does not exist was told "appending is not available" instead of "this object is absent". The checks now run
+in the order the criteria name them: pairing shape, self, existence, then what the pinner's kind implies. A third
+finding was mechanical, not conceptual: the chain script's registered deriver list did not include this layer, so
+its committed artifact went stale the moment the step published a page (the map reads §46/§47's pairings, which
+name drafts and pages) and Q1 of any validator would necessarily report non-reproducibility.
+
 KNOWN LIMITATION, registered. J3 sees only the single-line form `sha256((X / "a/b.md").read_bytes())`; a gate
 that hashes a file it obtained from a variable or a glob is invisible to this layer, and the map then understates
 who pins those bytes. Understating removes findings and never invents them - same direction as §49's round-level
@@ -229,6 +241,7 @@ def classify(rows, repo_paths, ws_paths):
     for r in rows:
         e = dict(r)
         e["pair_count"] = len(r["pair"])
+        # order is the criteria, not convenience: pairing shape, then self, then existence, then kind
         if not r["pair"]:
             e["verdict"] = "hash_without_named_object"
             out.append(e)
@@ -239,21 +252,30 @@ def classify(rows, repo_paths, ws_paths):
             out.append(e)
             continue
         name = r["pair"][0][1]
+        if pathlib.Path(name).name in SELF_OUT:
+            # the resolver cannot see this object (its own outputs are excluded from the universe by design), so
+            # the check has to happen before lookup or the tier is only reachable as a mis-classified absence
+            e["object_namespace"], e["object"] = "self", name
+            e["verdict"] = "pin_of_this_layer_output"
+            out.append(e)
+            continue
         ns, found = resolve(name, repo_paths, ws_paths)
         e["object_namespace"], e["object"] = ns, found
+        if ns is None:
+            e["verdict"] = "named_object_absent"
+            out.append(e)
+            continue
+        if ns == "ambiguous":
+            e["verdict"] = "ambiguous_pairing"
+            out.append(e)
+            continue
         if r["key"] == "instrument_collection":
             # the instrument hashes these bytes today; whether the attestation holds is the instrument's own business
             e["verdict"] = ("frozen_by_round_instrument" if PRE_REG.search(r["pinner"]) or
                             ROUND_PINNER.match(r["pinner"]) else "renewable_governance_pin")
             out.append(e)
             continue
-        if ns is None:
-            e["verdict"] = "named_object_absent"
-        elif ns == "ambiguous":
-            e["verdict"] = "ambiguous_pairing"
-        elif pathlib.Path(found).name in SELF_OUT:
-            e["verdict"] = "pin_of_this_layer_output"
-        else:
+        if ns in ("repo", "workshop") and r["hash"]:
             cur = sha256((M / found).read_bytes() if ns == "repo" else
                          pathlib.Path(W / found).read_bytes())
             e["bytes_match"] = (cur == r["hash"])
@@ -268,19 +290,45 @@ def classify(rows, repo_paths, ws_paths):
 
 
 def teeth_probe(rows, repo_paths, ws_paths):
-    """The hard tiers must be reachable, and the pairing must be the thing that decides. A copy of one real row
-    is doctored three ways - the object's bytes changed, the object removed, the pairing key dropped - and each
-    must land in the tier the criteria name. Nothing here touches disk: the probe runs on in-memory rows."""
-    hold = next((r for r in rows if r.get("bytes_match")), None)
-    made = []
-    if hold is not None:
-        for kind in ("stale_attestation", "named_object_absent"):
-            e = dict(hold)
-            e["verdict"] = kind
-            made.append(kind)
+    """Reachability is demonstrated, never asserted. Each probe shape goes through the real `classify()` and the
+    verdict the classifier *returns* is what is recorded: relabelling a row would report a tier as reachable
+    without the criteria ever producing it (X-51's family, one level up - a probe that cannot fail is not a
+    probe). Three hard shapes, both disclosure shapes, and one control whose pin is current and must therefore
+    stay non-hard, so the probe cannot call every row it touches hard. Sentinels are derived from the live rows
+    and from SELF_OUT, never typed (X-84). In-memory only: nothing here writes."""
+    ran = []
+
+    def probe(pair, digest, key="sha256", pinner="governance/build_obligation_registry.py"):
+        row = {"pinner": pinner, "key": key, "hash": digest, "json_path": "synthetic", "pair": pair}
+        ran.append(row)
+        return classify([row], repo_paths, ws_paths)[0]["verdict"]
+
+    current = next((r for r in rows if r.get("bytes_match")
+                    and r["verdict"] in ("frozen_by_round_instrument", "renewable_governance_pin")), None)
+    self_out = sorted(SELF_OUT)[0]
+    absent = "governance/%s_ABSENT_PROBE.md" % pathlib.Path(self_out).stem
+    isolated = resolve(absent, repo_paths, ws_paths)[0] is None
+    flip = None
+    if current is not None:
+        flip = "%x" % (int(current["hash"][0], 16) ^ 1) + current["hash"][1:]
+    shapes = {
+        "stale_attestation": probe([("file", current["object"])], flip) if current else None,
+        "named_object_absent": probe([("file", absent)], flip) if current and isolated else "probe_not_isolated",
+        "pin_of_this_layer_output": probe([("file", self_out)], flip or "0" * 64),
+        "control_current_pin": probe([("file", current["object"])], current["hash"]) if current else None,
+        "hash_without_named_object": probe([], flip),
+        "ambiguous_pairing": probe([("file", current["object"]), ("document", self_out)], flip) if current else None,
+    }
     counts = {k: sum(1 for r in rows if r["verdict"] == k) for k in HARD_TERMS}
-    return {"probe_rows_doctored": len(made), "live_hard_counts": counts,
-            "tiers_reachable": sorted(set(made)) if hold is not None else []}
+    return {"probe_shapes": shapes, "probe_rows_synthesised": len(ran),
+            "live_hard_counts": counts,
+            "tiers_reachable": sorted(k for k in HARD_TERMS if shapes.get(k) == k),
+            "disclosure_reachable": sorted(k for k in ("hash_without_named_object", "ambiguous_pairing")
+                                           if shapes.get(k) == k),
+            "probe_object_isolated": isolated,
+            "control_stayed_non_hard": shapes["control_current_pin"] in
+                                       ("frozen_by_round_instrument", "renewable_governance_pin"),
+            "self_output_of_this_layer": self_out}
 
 
 def main() -> int:
@@ -323,8 +371,11 @@ def main() -> int:
     lines += ["", "被轮次仪器或其预注册钉住的对象（追加不可用，R6）：", ""]
     for o in out["frozen_inputs"]:
         lines.append("- `%s`" % o)
-    lines += ["", "档位可达性探针（在内存的行副本上做的，不落盘）：`%s`；活硬伤计数 `%s`。"
-              % (json.dumps(out["teeth"]["tiers_reachable"], ensure_ascii=False),
+    lines += ["", "档位可达性探针（合成行送入真正的 `classify()`，读它返回的判定；在内存的行副本上做，不落盘）："
+              "可达硬档 `%s`；披露档 `%s`；对照行保持非硬 `%s`；活硬伤计数 `%s`。"
+              % (",".join(out["teeth"]["tiers_reachable"]) or "无",
+                 ",".join(out["teeth"]["disclosure_reachable"]) or "无",
+                 out["teeth"]["control_stayed_non_hard"],
                  json.dumps(out["teeth"]["live_hard_counts"], ensure_ascii=False)), "", "硬伤逐条：", ""]
     for r in rows:
         if r["verdict"] in HARD_TERMS:
@@ -335,8 +386,9 @@ def main() -> int:
               "宽松只能删发现，绝不铸造发现）。仓库外的对象（草稿、页面缓存、守门件）按字节所在侧判定命名空间，"
               "不靠字段名猜。本表两个输出不参与任何一侧的配对（X-85(a)）。", ""]
     MD_OUT.write_text("\n".join(lines) + "\n", encoding="utf-8")
-    print("wrote frozen_input_map_v1.json | rows %d hard %d dist %s"
-          % (counts["rows"], counts["hard_findings"], json.dumps(counts, ensure_ascii=False)))
+    print("wrote frozen_input_map_v1.json | rows %d hard %d reachable %s control_non_hard %s dist %s"
+          % (counts["rows"], counts["hard_findings"], ",".join(out["teeth"]["tiers_reachable"]) or "none",
+             out["teeth"]["control_stayed_non_hard"], json.dumps(counts, ensure_ascii=False)))
     return 0
 
 

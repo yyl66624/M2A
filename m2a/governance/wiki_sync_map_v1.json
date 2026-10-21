@@ -168,6 +168,13 @@
       "node_token": "RSUQwO0FsiwASnkYsc6cSJq2nua",
       "section": 54,
       "title": "M2A 治理｜冻结输入登记表 v1：谁已经记下这份字节的哈希"
+    },
+    {
+      "draft": "M2A-治理-硬伤档可达性与没进链的推导.md",
+      "in_ledger": true,
+      "node_token": "PReJwmGfZiKA2wkGrZacBTnonzb",
+      "section": 55,
+      "title": "M2A 治理｜一条硬伤档只能在误判别的形状时触发，就不算一条档"
     }
   ],
   "counts": {
@@ -176,11 +183,11 @@
     "first_batch_off_pin": 0,
     "first_batch_pages": 12,
     "first_batch_pages_claimed_by_a_section": 1,
-    "governance_pages": 19,
+    "governance_pages": 20,
     "governance_pages_unclaimed": 0,
-    "ledger_pages_with_node": 31,
-    "report_sections_in_population": 24,
-    "sections_claimed": 24,
+    "ledger_pages_with_node": 32,
+    "report_sections_in_population": 25,
+    "sections_claimed": 25,
     "sections_unclaimed": 0
   },
   "dangling_claims": [],
@@ -571,6 +578,26 @@
         54
       ],
       "title": "M2A 治理｜冻结输入登记表 v1：谁已经记下这份字节的哈希"
+    },
+    {
+      "draft": "M2A-治理-硬伤档可达性与没进链的推导.md",
+      "draft_chars": 1178,
+      "draft_sha256": "cc566eda96136acc705552a2cdf87721e58bd653a0b2de19ab835fd23d6994fb",
+      "markers": [
+        "一条硬伤档",
+        "误判别的形状",
+        "收尾链的推导清单",
+        "168 行",
+        "本页不写任何分数形状"
+      ],
+      "markers_ok_recorded": true,
+      "node_token": "PReJwmGfZiKA2wkGrZacBTnonzb",
+      "obj_token": "HzopdVflHogxYBxT8MjcbfWBncg",
+      "read_back_chars_recorded": 2095,
+      "sections": [
+        55
+      ],
+      "title": "M2A 治理｜一条硬伤档只能在误判别的形状时触发，就不算一条档"
     }
   ],
   "schema": "m2a.wiki_sync_map.v1",
@@ -798,24 +825,35 @@
         108,
         111
       ]
+    },
+    {
+      "section": 55,
+      "title": "一条硬伤档只能在「把别的东西误判成它」时触发，就不算一条档：登记表的两档不可达与一次没进链的推导（GOVERNANCE_ARTIFACT，不",
+      "xids_named": [
+        85,
+        108,
+        112,
+        113,
+        114
+      ]
     }
   ],
   "stale_claims": [],
   "tools": [
     {
-      "bytes": 58236,
+      "bytes": 66552,
       "file": "check_step_draft_numbers.py",
-      "sha256": "188dcc5578a2d497bafe28046c7c956be8902924321a39bfe10b31fc48b8f1a6"
+      "sha256": "838ab9dda92d86786823125e1baf2f9d122d551c4d7e768754b77770e353d952"
     },
     {
-      "bytes": 9610,
+      "bytes": 9888,
       "file": "publish_wiki_steps.py",
-      "sha256": "a1621a32ec2047012dddec13b3ff04cfd7c59943ce954007398507106d5b2559"
+      "sha256": "6c9866e194b057416510a847ef7a618867961b7ecf63e3ac856f6f9a3bbbaf67"
     },
     {
-      "bytes": 11964,
+      "bytes": 12523,
       "file": "feishu_wiki_nodes.json",
-      "sha256": "4be6019ca44cdd603a3480ca832e9071665bbf28f0526c6b7434bd46851b0b14"
+      "sha256": "9e4e020cf17e246ca70a3e64e770873adad5352f530572d7b9cf4d087fa15d6c"
     }
   ],
   "unclaimed_sections": [],

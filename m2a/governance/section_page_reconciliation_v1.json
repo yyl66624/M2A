@@ -9,8 +9,8 @@
     }
   ],
   "counts": {
-    "claims_rows_in_sync_map": 24,
-    "draft_page_aligned": 17,
+    "claims_rows_in_sync_map": 25,
+    "draft_page_aligned": 18,
     "draft_page_grew": 2,
     "draft_page_hard": 0,
     "errata_not_effective": 0,
@@ -28,14 +28,14 @@
       "suite_score_registry_gate.py"
     ],
     "page_superseded": 1,
-    "pages_reconciled": 20,
+    "pages_reconciled": 21,
     "pages_with_self_referential_claims": 1,
-    "pairs_aligned": 18,
+    "pairs_aligned": 19,
     "pairs_compressed": 0,
     "pairs_no_capture": 0,
     "prose_slashes_ignored": 0,
     "score_unattested_in_repo": 0,
-    "sections_covered": 24,
+    "sections_covered": 25,
     "self_referential_values": 1,
     "values_attested_only_in_registration": 1,
     "values_loosely_attested_only": 0
@@ -848,6 +848,31 @@
       ],
       "superseded": {},
       "title": "M2A 治理｜冻结输入登记表 v1：谁已经记下这份字节的哈希",
+      "unattested": {},
+      "unmeasurable": {},
+      "verdict": "aligned"
+    },
+    {
+      "attestation": {},
+      "draft_vs_page": {
+        "disagree": {},
+        "verdict": "aligned"
+      },
+      "erratum": {},
+      "loosely_attested": {},
+      "multi_value": {},
+      "node_token": "PReJwmGfZiKA2wkGrZacBTnonzb",
+      "not_on_page": [],
+      "page_chars": 2095,
+      "page_claims": {},
+      "page_sha256": "b96a3b000f113e70c00715cca884f2727a9a9a783ba4343ce8e09fe4d51fc23b",
+      "prose_slashes_ignored": {},
+      "section_claims": {},
+      "sections": [
+        55
+      ],
+      "superseded": {},
+      "title": "M2A 治理｜一条硬伤档只能在误判别的形状时触发，就不算一条档",
       "unattested": {},
       "unmeasurable": {},
       "verdict": "aligned"
