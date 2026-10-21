@@ -146,13 +146,15 @@ def main() -> int:
            % (len(art_rows), len(re_rows), missing or "none", added or "none"))
 
     bad_live = [r for r in rows if r["verdict"] != "self_reference"
-                if (r["verdict"] == "phantom_suite") != (r["instrument"] not in live)
+                if (r["instrument"] not in live
+                    and r["verdict"] not in ("phantom_suite", "unmeasured_by_registration"))
+                or (r["instrument"] in live and r["verdict"] == "phantom_suite")
                 or (r["live"] is not None and not re.fullmatch(r"(\d+)/\1", r["live"]))
                 or (r["live"] is None and r["verdict"] not in
                     ("phantom_suite", "live_unavailable", "unmeasured_by_registration"))]
     report("Q6 each row's instrument is either a live-pinned suite or explicitly a phantom",
-           not bad_live, "offenders: " + (["%s %s %s" % (b["instrument"], b["quoted"], b["verdict"])
-                                          for b in bad_live[:3]] or "none"))
+           not bad_live, "offenders: " + (", ".join("%s %s %s" % (b["instrument"], b["quoted"], b["verdict"])
+                                                     for b in bad_live[:3]) or "none"))
 
     # Q7 every verdict is recomputed here, with the precedence frozen in the deriver's docstring
     corpus = {p.name: strip_lines(text_of(p)).splitlines() for p in scan_corpus()}

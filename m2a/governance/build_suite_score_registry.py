@@ -102,7 +102,12 @@ UNMEASURED = {"label_provenance_gate.py":
               "value_provenance_gate.py":
               "re-runs governance/build_value_provenance.py and pins this layer's own exclusion list, so "
               "measuring it here would put the closing audit in an order-dependent loop (X-95, same shape "
-              "as X-94); its printed line stays authoritative in the audit itself"}
+              "as X-94); its printed line stays authoritative in the audit itself",
+              "frozen_input_map_gate.py":
+              "re-runs governance/build_frozen_input_map.py, the last deriver, which reads this layer's own "
+              "JSON; measuring it here would require this table to be final before the map it writes and the "
+              "map to be final before this table (X-94's cycle, registered as X-117); its printed line stays "
+              "authoritative in the closing audit"}
 # A3 withdrew the JSON widening the same round it was added: another layer's derived JSON re-emits the
 # very prose lines this layer extracts, so scanning it re-reads this layer's own rows (transcription
 # laundering, X-85(g)) and made the two layers mutually dependent - the closing audit could then never

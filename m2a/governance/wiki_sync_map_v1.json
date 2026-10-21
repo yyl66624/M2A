@@ -182,6 +182,13 @@
       "node_token": "VmLywSmdqiLDdukYpY9cAoaenZb",
       "section": 56,
       "title": "M2A 治理｜冻结的「看得见」不是一个开关，而是按出处种类分派的三条读数通路"
+    },
+    {
+      "draft": "M2A-治理-校验器进人口与自扫位移.md",
+      "in_ledger": true,
+      "node_token": "I2kOwPzVciTztBkfjyocS1uPnnx",
+      "section": 57,
+      "title": "M2A 治理｜校验器进人口不是往清单里加一行，它自己也被扫"
     }
   ],
   "counts": {
@@ -190,11 +197,11 @@
     "first_batch_off_pin": 0,
     "first_batch_pages": 12,
     "first_batch_pages_claimed_by_a_section": 1,
-    "governance_pages": 21,
+    "governance_pages": 22,
     "governance_pages_unclaimed": 0,
-    "ledger_pages_with_node": 33,
-    "report_sections_in_population": 26,
-    "sections_claimed": 26,
+    "ledger_pages_with_node": 34,
+    "report_sections_in_population": 27,
+    "sections_claimed": 27,
     "sections_unclaimed": 0
   },
   "dangling_claims": [],
@@ -625,6 +632,26 @@
         56
       ],
       "title": "M2A 治理｜冻结的「看得见」不是一个开关，而是按出处种类分派的三条读数通路"
+    },
+    {
+      "draft": "M2A-治理-校验器进人口与自扫位移.md",
+      "draft_chars": 634,
+      "draft_sha256": "960d8d9e5a320c363d26a78505c5c65ade9d0b3b1ccc1612175b86fed39ba49c",
+      "markers": [
+        "校验器进人口",
+        "同一次派生里结清",
+        "进了清单不等于被审过",
+        "不交付条数",
+        "不写任何分数形状"
+      ],
+      "markers_ok_recorded": true,
+      "node_token": "I2kOwPzVciTztBkfjyocS1uPnnx",
+      "obj_token": "GulSd8eBuoQjwCxp1WdcW3PLngh",
+      "read_back_chars_recorded": 753,
+      "sections": [
+        57
+      ],
+      "title": "M2A 治理｜校验器进人口不是往清单里加一行，它自己也被扫"
     }
   ],
   "schema": "m2a.wiki_sync_map.v1",
@@ -871,24 +898,35 @@
         112,
         115
       ]
+    },
+    {
+      "section": 57,
+      "title": "把校验器挪进人口不是往清单里加一行：它自己也是被扫的文件（GOVERNANCE_ARTIFACT，不产生科学判定）",
+      "xids_named": [
+        94,
+        116,
+        117,
+        118,
+        119
+      ]
     }
   ],
   "stale_claims": [],
   "tools": [
     {
-      "bytes": 73946,
+      "bytes": 83057,
       "file": "check_step_draft_numbers.py",
-      "sha256": "b5a64fba59b33dea3f9d8c423a63a604e9ef6ebfc878b9019b7d56c972deeb65"
+      "sha256": "e8cf19e0f3ebd35750856641cf7e5f807ad03c740ccc102e8047dcf3208aecf9"
     },
     {
-      "bytes": 10267,
+      "bytes": 10550,
       "file": "publish_wiki_steps.py",
-      "sha256": "ac76645a5bc0dc0816db1f2d4ae0eb9cdc19bd80fe4be95a996079a161abb8bc"
+      "sha256": "5c85ba8dc001c7aa13c84b3437981dc39b3b799dbc1729914116fb75cbac6d2e"
     },
     {
-      "bytes": 12872,
+      "bytes": 13193,
       "file": "feishu_wiki_nodes.json",
-      "sha256": "1821973a3b5298da7e9658690fa805648f2531fd187090de1a2311d27cd1c095"
+      "sha256": "6fdc75835d66615d2e61aa2d3f3c180511ec60ea44e9cf054edb01a9aab8f774"
     }
   ],
   "unclaimed_sections": [],

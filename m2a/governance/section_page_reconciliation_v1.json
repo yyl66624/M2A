@@ -9,8 +9,8 @@
     }
   ],
   "counts": {
-    "claims_rows_in_sync_map": 26,
-    "draft_page_aligned": 19,
+    "claims_rows_in_sync_map": 27,
+    "draft_page_aligned": 20,
     "draft_page_grew": 2,
     "draft_page_hard": 0,
     "errata_not_effective": 0,
@@ -18,24 +18,26 @@
     "erratum_rows_effective": 1,
     "hard_findings": 0,
     "instrument_claims_pages": 16,
-    "instrument_claims_sections": 13,
-    "instruments_attested_in_repo": 21,
-    "instruments_missing_from_pages": [],
-    "instruments_named_in_sections": 11,
+    "instrument_claims_sections": 14,
+    "instruments_attested_in_repo": 22,
+    "instruments_missing_from_pages": [
+      "frozen_input_map_gate.py"
+    ],
+    "instruments_named_in_sections": 12,
     "instruments_named_on_pages": 13,
     "instruments_only_on_pages": [
       "l01_gate.py",
       "suite_score_registry_gate.py"
     ],
     "page_superseded": 1,
-    "pages_reconciled": 22,
+    "pages_reconciled": 23,
     "pages_with_self_referential_claims": 1,
     "pairs_aligned": 20,
-    "pairs_compressed": 0,
+    "pairs_compressed": 1,
     "pairs_no_capture": 0,
     "prose_slashes_ignored": 0,
     "score_unattested_in_repo": 0,
-    "sections_covered": 26,
+    "sections_covered": 27,
     "self_referential_values": 1,
     "values_attested_only_in_registration": 1,
     "values_loosely_attested_only": 0
@@ -53,6 +55,7 @@
   "hard_findings": [],
   "newest_section_by_instrument": {
     "ao_preflight_gate.py": 38,
+    "frozen_input_map_gate.py": 57,
     "gate_coverage_map_gate.py": 45,
     "gate_discrimination_gate.py": 47,
     "obligation_registry_gate.py": 45,
@@ -901,11 +904,47 @@
       "unattested": {},
       "unmeasurable": {},
       "verdict": "aligned"
+    },
+    {
+      "attestation": {},
+      "draft_vs_page": {
+        "disagree": {},
+        "verdict": "aligned"
+      },
+      "erratum": {},
+      "loosely_attested": {},
+      "multi_value": {},
+      "node_token": "I2kOwPzVciTztBkfjyocS1uPnnx",
+      "not_on_page": [
+        "frozen_input_map_gate.py"
+      ],
+      "page_chars": 753,
+      "page_claims": {},
+      "page_sha256": "e5e917fda2c271645b109f01589c38a4535a23d927a3c1c58652d898a6904355",
+      "prose_slashes_ignored": {},
+      "section_claims": {
+        "frozen_input_map_gate.py": [
+          "18/18"
+        ]
+      },
+      "sections": [
+        57
+      ],
+      "superseded": {},
+      "title": "M2A 治理｜校验器进人口不是往清单里加一行，它自己也被扫",
+      "unattested": {},
+      "unmeasurable": {},
+      "verdict": "compressed"
     }
   ],
   "repo_attestation": {
     "ao_preflight_gate.py": {
       "8/8": [
+        "M2A_FINAL_REPORT.md"
+      ]
+    },
+    "frozen_input_map_gate.py": {
+      "18/18": [
         "M2A_FINAL_REPORT.md"
       ]
     },
@@ -1000,6 +1039,9 @@
       "34/34",
       "35/35"
     ],
+    "frozen_input_map_gate.py": [
+      "18/18"
+    ],
     "gate.py": [
       "7/7"
     ],
@@ -1080,6 +1122,9 @@
   "report_values_by_instrument": {
     "ao_preflight_gate.py": [
       "8/8"
+    ],
+    "frozen_input_map_gate.py": [
+      "18/18"
     ],
     "gate_coverage_map_gate.py": [
       "17/17",
