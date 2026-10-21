@@ -78,7 +78,7 @@
     "hard_findings": 1,
     "paired_corrections": 0,
     "claim_documents": 47,
-    "corpus_documents": 52,
+    "corpus_documents": 53,
     "artifact_files": 46,
     "vocabulary_tokens": 39,
     "registered_phases": 22
@@ -2678,7 +2678,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1950,
+      "line": 1952,
       "labels": [
         "CONTRADICTED",
         "INDETERMINATE",
@@ -2695,7 +2695,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1951,
+      "line": 1953,
       "labels": [
         "SUPPORTED"
       ],
@@ -2729,7 +2729,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1974,
+      "line": 1976,
       "labels": [
         "SUPPORTED"
       ],
@@ -2742,7 +2742,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1980,
+      "line": 1982,
       "labels": [
         "IDENTITY_VERIFIED",
         "PASS"
@@ -2775,7 +2775,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1981,
+      "line": 1983,
       "labels": [
         "COUNT_NOT_STATUS",
         "MANUAL_REVIEW"
@@ -2789,7 +2789,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2138,
+      "line": 2144,
       "labels": [
         "CONTRADICTED"
       ],
@@ -2802,7 +2802,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2147,
+      "line": 2153,
       "labels": [
         "CLAIM_LAYER_INFLATION",
         "CONTRADICTED",
@@ -2817,7 +2817,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2148,
+      "line": 2154,
       "labels": [
         "COMPETING_CODED",
         "CONTRADICTED"
@@ -2831,7 +2831,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2149,
+      "line": 2155,
       "labels": [
         "PASS"
       ],
@@ -2844,7 +2844,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2157,
+      "line": 2163,
       "labels": [
         "INDETERMINATE"
       ],
@@ -2886,7 +2886,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2166,
+      "line": 2172,
       "labels": [
         "CONTRADICTED"
       ],
@@ -2899,7 +2899,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2185,
+      "line": 2191,
       "labels": [
         "CONTRADICTED"
       ],
@@ -2936,7 +2936,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2206,
+      "line": 2212,
       "labels": [
         "PASS"
       ],
@@ -2949,7 +2949,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2234,
+      "line": 2240,
       "labels": [
         "CLAIM_LAYER_INFLATION"
       ],

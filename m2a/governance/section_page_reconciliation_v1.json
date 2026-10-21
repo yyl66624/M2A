@@ -9,8 +9,8 @@
     }
   ],
   "counts": {
-    "claims_rows_in_sync_map": 23,
-    "draft_page_aligned": 16,
+    "claims_rows_in_sync_map": 24,
+    "draft_page_aligned": 17,
     "draft_page_grew": 2,
     "draft_page_hard": 0,
     "errata_not_effective": 0,
@@ -28,14 +28,14 @@
       "suite_score_registry_gate.py"
     ],
     "page_superseded": 1,
-    "pages_reconciled": 19,
+    "pages_reconciled": 20,
     "pages_with_self_referential_claims": 1,
-    "pairs_aligned": 17,
+    "pairs_aligned": 18,
     "pairs_compressed": 0,
     "pairs_no_capture": 0,
     "prose_slashes_ignored": 0,
     "score_unattested_in_repo": 0,
-    "sections_covered": 23,
+    "sections_covered": 24,
     "self_referential_values": 1,
     "values_attested_only_in_registration": 1,
     "values_loosely_attested_only": 0
@@ -680,13 +680,13 @@
       "multi_value": {},
       "node_token": "QuO5w9vGFiikp1kSKbgcrh1jnnb",
       "not_on_page": [],
-      "page_chars": 4882,
+      "page_chars": 5031,
       "page_claims": {
         "suite_score_registry_gate.py": [
           "20/20"
         ]
       },
-      "page_sha256": "9440f9e15eeacbb8c0a7489d360ea8f34bde3b9ce816c35b187e6e2e7262e192",
+      "page_sha256": "5661b322c6f701174ef0fd4be018f88dcf2cf66302170829c79d5dd2f4caec44",
       "prose_slashes_ignored": {},
       "section_claims": {},
       "sections": [
@@ -823,6 +823,31 @@
       ],
       "superseded": {},
       "title": "M2A 治理｜判定锚点加宽之后，门控里不能装「仓库是干净的」",
+      "unattested": {},
+      "unmeasurable": {},
+      "verdict": "aligned"
+    },
+    {
+      "attestation": {},
+      "draft_vs_page": {
+        "disagree": {},
+        "verdict": "aligned"
+      },
+      "erratum": {},
+      "loosely_attested": {},
+      "multi_value": {},
+      "node_token": "RSUQwO0FsiwASnkYsc6cSJq2nua",
+      "not_on_page": [],
+      "page_chars": 2005,
+      "page_claims": {},
+      "page_sha256": "2f5229fdf529d4296d333babe978b54b124844851a7b42689d21950e8aebef75",
+      "prose_slashes_ignored": {},
+      "section_claims": {},
+      "sections": [
+        54
+      ],
+      "superseded": {},
+      "title": "M2A 治理｜冻结输入登记表 v1：谁已经记下这份字节的哈希",
       "unattested": {},
       "unmeasurable": {},
       "verdict": "aligned"

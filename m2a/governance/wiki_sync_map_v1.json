@@ -161,6 +161,13 @@
       "node_token": "Cyx3wvKSOimovIkm9T9cxLTCnCe",
       "section": 53,
       "title": "M2A 治理｜判定锚点加宽之后，门控里不能装「仓库是干净的」"
+    },
+    {
+      "draft": "M2A-治理-冻结输入登记表谁在按字节引用这份文档.md",
+      "in_ledger": true,
+      "node_token": "RSUQwO0FsiwASnkYsc6cSJq2nua",
+      "section": 54,
+      "title": "M2A 治理｜冻结输入登记表 v1：谁已经记下这份字节的哈希"
     }
   ],
   "counts": {
@@ -169,11 +176,11 @@
     "first_batch_off_pin": 0,
     "first_batch_pages": 12,
     "first_batch_pages_claimed_by_a_section": 1,
-    "governance_pages": 18,
+    "governance_pages": 19,
     "governance_pages_unclaimed": 0,
-    "ledger_pages_with_node": 30,
-    "report_sections_in_population": 23,
-    "sections_claimed": 23,
+    "ledger_pages_with_node": 31,
+    "report_sections_in_population": 24,
+    "sections_claimed": 24,
     "sections_unclaimed": 0
   },
   "dangling_claims": [],
@@ -418,8 +425,8 @@
     },
     {
       "draft": "M2A-治理-套件分数引用对账v1.md",
-      "draft_chars": 3223,
-      "draft_sha256": "58092241edb2b2a62a2f99d45132bf2dd8cb340358be90663bcd5476abcbec73",
+      "draft_chars": 3348,
+      "draft_sha256": "3348f52f8961fee061ed28705e0c11a0857450c71c99da8bc98fe91c3e38a98e",
       "markers": [
         "X-86",
         "X-87",
@@ -437,7 +444,7 @@
       "markers_ok_recorded": true,
       "node_token": "QuO5w9vGFiikp1kSKbgcrh1jnnb",
       "obj_token": "JOWndS5SXouZTexE3SFcXoB1nmf",
-      "read_back_chars_recorded": 4882,
+      "read_back_chars_recorded": 5031,
       "sections": [
         48
       ],
@@ -544,6 +551,26 @@
         53
       ],
       "title": "M2A 治理｜判定锚点加宽之后，门控里不能装「仓库是干净的」"
+    },
+    {
+      "draft": "M2A-治理-冻结输入登记表谁在按字节引用这份文档.md",
+      "draft_chars": 1692,
+      "draft_sha256": "056ddf061d9ef32d09fc8b81e64923336522683aa3cc3d70853eae284ecd6728",
+      "markers": [
+        "冻结输入登记表",
+        "X-108",
+        "配对不唯一",
+        "93 行里有 27 行",
+        "本页不写任何分数形状"
+      ],
+      "markers_ok_recorded": true,
+      "node_token": "RSUQwO0FsiwASnkYsc6cSJq2nua",
+      "obj_token": "EcTEdbxZcojye1xS7ficDKrOnLc",
+      "read_back_chars_recorded": 2005,
+      "sections": [
+        54
+      ],
+      "title": "M2A 治理｜冻结输入登记表 v1：谁已经记下这份字节的哈希"
     }
   ],
   "schema": "m2a.wiki_sync_map.v1",
@@ -760,6 +787,17 @@
         109,
         110
       ]
+    },
+    {
+      "section": 54,
+      "title": "「这份文档的字节一改，谁就背不了书」——冻结输入登记表 v1（GOVERNANCE_ARTIFACT，不产生科学判定）",
+      "xids_named": [
+        83,
+        95,
+        104,
+        108,
+        111
+      ]
     }
   ],
   "stale_claims": [],
@@ -770,14 +808,14 @@
       "sha256": "188dcc5578a2d497bafe28046c7c956be8902924321a39bfe10b31fc48b8f1a6"
     },
     {
-      "bytes": 9330,
+      "bytes": 9610,
       "file": "publish_wiki_steps.py",
-      "sha256": "959e13f27c2f2bd39d4201f03abd7d81be7aacf3377d5cf317f5a44c5095d594"
+      "sha256": "a1621a32ec2047012dddec13b3ff04cfd7c59943ce954007398507106d5b2559"
     },
     {
-      "bytes": 11515,
+      "bytes": 11964,
       "file": "feishu_wiki_nodes.json",
-      "sha256": "dae9a731ee41810af6a343d8b97364435730db9833e5fe6a7ca5c0446bbde68b"
+      "sha256": "4be6019ca44cdd603a3480ca832e9071665bbf28f0526c6b7434bd46851b0b14"
     }
   ],
   "unclaimed_sections": [],
