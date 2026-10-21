@@ -236,6 +236,52 @@ def occurrences():
     return rows
 
 
+def visibility(r):
+    """How is this freeze visible *in the pinner*, not merely in this table's join? One state per reading path:
+    a Python instrument must contain a hashing call and name the object literally; a JSON round record must carry
+    the digest under a hashing-named key and the digest must reproduce from the object's bytes today (a second
+    path that does not depend on which sibling key the joiner picked); a pre-registration line attests the pair on
+    one line. Anything else is disclosed as unread. This is a reported state, never a hard verdict (R2)."""
+    if r["verdict"] != "frozen_by_round_instrument" or not r.get("object"):
+        return None
+    name = pathlib.Path(r["object"]).name
+    pinner = M / r["pinner"]
+    try:
+        txt = pinner.read_text(encoding="utf-8")
+    except (OSError, UnicodeDecodeError):
+        return "pinner_unreadable"
+    if r["pinner"].endswith(".py"):
+        return ("source_call_visible" if (("sha256(" in txt or re.search(r"\bsha\(", txt)) and name in txt)
+                else "freeze_not_visible_in_source")
+    if r["pinner"].endswith(".json"):
+        try:
+            doc = json.loads(txt)
+        except ValueError:
+            return "pinner_unreadable"
+        cur = sha256((M / r["object"]).read_bytes()) if r.get("object_namespace") == "repo" else None
+        for k, v in _hex_pairs(doc):
+            if HASHKEY.search(k) and v == r["hash"] and cur is not None and v == cur:
+                return "json_key_reproduced"
+        return "digest_not_reproduced"
+    if PRE_REG.search(r["pinner"]) and r["key"] == "prereg_md":
+        return "same_line_named"
+    return "pinner_unreadable"
+
+
+def _hex_pairs(node, acc=None):
+    """Every (key, 64-hex value) pair anywhere inside a JSON document, independent of the joiner's sibling rule."""
+    acc = [] if acc is None else acc
+    if isinstance(node, dict):
+        for k, v in node.items():
+            if isinstance(v, str) and HEX.match(v):
+                acc.append((str(k), v))
+            _hex_pairs(v, acc)
+    elif isinstance(node, list):
+        for v in node:
+            _hex_pairs(v, acc)
+    return acc
+
+
 def classify(rows, repo_paths, ws_paths):
     out = []
     for r in rows:
@@ -335,6 +381,8 @@ def main() -> int:
     repo_hash_names = {n for s in by_basename()[0].values() for n in s}
     ws_all = {str(p.relative_to(W)) for p in workshop_files()}
     rows = classify(occurrences(), repo_hash_names, ws_all)
+    for r in rows:
+        r["visibility"] = visibility(r)
     counts = {v: sum(1 for r in rows if r["verdict"] == v) for v in ORDER}
     counts["hard_findings"] = sum(counts[v] for v in HARD_TERMS)
     counts["rows"] = len(rows)
@@ -343,6 +391,16 @@ def main() -> int:
     counts["repo_files_scanned"] = len(repo_files())
     counts["workshop_objects"] = len(ws_all)
     counts["instrument_collection_pins"] = sum(1 for r in rows if r["key"] == "instrument_collection")
+    vis = {}
+    for r in rows:
+        if r.get("visibility"):
+            vis[r["visibility"]] = vis.get(r["visibility"], 0) + 1
+    visible_states = ("source_call_visible", "json_key_reproduced", "same_line_named")
+    counts["freeze_rows_visible"] = sum(v for k, v in vis.items() if k in visible_states)
+    counts["freeze_visibility_states"] = len(vis)
+    counts["freeze_not_visible"] = sum(v for k, v in vis.items() if k in ("freeze_not_visible_in_source",
+                                                                         "digest_not_reproduced"))
+    counts["freeze_visibility_unread"] = sum(v for k, v in vis.items() if k == "pinner_unreadable")
     out = {"schema": "frozen_input_map_v1",
            "question": "if these bytes change, which recorded attestation can no longer be verified",
            "generator": {"file": str(pathlib.Path(__file__).resolve().relative_to(M)),
@@ -365,7 +423,10 @@ def main() -> int:
                                   counts["pinned_objects"]),
              "配对口径：**按键名配对且要求唯一候选**（先量过：按「第一个同级的路径」配对会把 %d 行判成陈旧，"
              "全是把文档哈希配到门控路径上——伪造的硬伤）。" % out["pairing"]["naive_first_sibling_stale_rows_measured"],
-             "", "| 判定 | 条数 |", "|---|---|"]
+             "", "| 可见性状态 | 条数 |", "|---|---|"]
+    lines += ["| `%s` | %d |" % (k, vis[k]) for k in sorted(vis)]
+    lines += ["", "冻结行的可见性按读法分开记录，三态以上各自一条通路；不可见与未读都属于披露，不是硬伤（R2）。",
+              "", "| 判定 | 条数 |", "|---|---|"]
     lines += ["| `%s` | %d |" % (v, counts[v]) for v in ORDER]
     lines.append("| **硬伤合计** | **%d** |" % counts["hard_findings"])
     lines += ["", "被轮次仪器或其预注册钉住的对象（追加不可用，R6）：", ""]
@@ -388,7 +449,11 @@ def main() -> int:
     MD_OUT.write_text("\n".join(lines) + "\n", encoding="utf-8")
     print("wrote frozen_input_map_v1.json | rows %d hard %d reachable %s control_non_hard %s dist %s"
           % (counts["rows"], counts["hard_findings"], ",".join(out["teeth"]["tiers_reachable"]) or "none",
-             out["teeth"]["control_stayed_non_hard"], json.dumps(counts, ensure_ascii=False)))
+             out["teeth"]["control_stayed_non_hard"],
+             "visible %d not_visible %d unread %d states %d | "
+             % (counts["freeze_rows_visible"], counts["freeze_not_visible"],
+                counts["freeze_visibility_unread"], counts["freeze_visibility_states"])
+             + json.dumps(counts, ensure_ascii=False)))
     return 0
 
 

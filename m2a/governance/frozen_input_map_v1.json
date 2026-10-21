@@ -3,7 +3,7 @@
   "question": "if these bytes change, which recorded attestation can no longer be verified",
   "generator": {
     "file": "governance/build_frozen_input_map.py",
-    "sha256": "ff0ac1472a062076175e87563b10a0230471dba3d932654ad6f9272a1b9af96e"
+    "sha256": "c8a08c1c35a15714616810c1d4d3db5d85b2f0f7217e677c09feada81924a852"
   },
   "pairing": {
     "rule": "by key name, exactly one candidate",
@@ -60,16 +60,20 @@
     "named_object_absent": 0,
     "pin_of_this_layer_output": 0,
     "frozen_by_round_instrument": 26,
-    "renewable_governance_pin": 77,
-    "hash_without_named_object": 54,
+    "renewable_governance_pin": 78,
+    "hash_without_named_object": 55,
     "ambiguous_pairing": 13,
     "hard_findings": 0,
-    "rows": 170,
+    "rows": 172,
     "pinning_documents": 49,
-    "pinned_objects": 75,
+    "pinned_objects": 76,
     "repo_files_scanned": 292,
-    "workshop_objects": 67,
-    "instrument_collection_pins": 23
+    "workshop_objects": 69,
+    "instrument_collection_pins": 23,
+    "freeze_rows_visible": 26,
+    "freeze_visibility_states": 2,
+    "freeze_not_visible": 0,
+    "freeze_visibility_unread": 0
   },
   "frozen_inputs": [
     "experiments/p14_gate.py",
@@ -108,7 +112,8 @@
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "experiments/phase6_results.json",
-      "verdict": "frozen_by_round_instrument"
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "source_call_visible"
     },
     {
       "pinner": "experiments/phase10_results.json",
@@ -117,7 +122,8 @@
       "pair": [],
       "json_path": "",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "experiments/phase11_results.json",
@@ -126,7 +132,8 @@
       "pair": [],
       "json_path": "",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "experiments/phase12_results.json",
@@ -135,7 +142,8 @@
       "pair": [],
       "json_path": "",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "experiments/phase13_results.json",
@@ -144,7 +152,8 @@
       "pair": [],
       "json_path": "",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "experiments/phase14_results.json",
@@ -153,7 +162,8 @@
       "pair": [],
       "json_path": "",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "experiments/phase15_results.json",
@@ -162,7 +172,8 @@
       "pair": [],
       "json_path": "",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "experiments/phase16_results.json",
@@ -171,7 +182,8 @@
       "pair": [],
       "json_path": "",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "experiments/phase17_results.json",
@@ -180,7 +192,8 @@
       "pair": [],
       "json_path": "",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "experiments/phase18_results.json",
@@ -189,7 +202,8 @@
       "pair": [],
       "json_path": "",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "experiments/phase19_results.json",
@@ -198,7 +212,8 @@
       "pair": [],
       "json_path": "",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "experiments/phase20_results.json",
@@ -207,7 +222,8 @@
       "pair": [],
       "json_path": "",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "experiments/phase21_results.json",
@@ -216,7 +232,8 @@
       "pair": [],
       "json_path": "",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "experiments/phase22_results.json",
@@ -225,7 +242,8 @@
       "pair": [],
       "json_path": "",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "experiments/phase2_results.json",
@@ -234,7 +252,8 @@
       "pair": [],
       "json_path": "",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "experiments/phase3_results.json",
@@ -243,7 +262,8 @@
       "pair": [],
       "json_path": "",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "experiments/phase4_results.json",
@@ -252,7 +272,8 @@
       "pair": [],
       "json_path": "",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "experiments/phase5_results.json",
@@ -261,7 +282,8 @@
       "pair": [],
       "json_path": "",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "experiments/phase5b_results.json",
@@ -270,7 +292,8 @@
       "pair": [],
       "json_path": "",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "experiments/phase5c_results.json",
@@ -279,7 +302,8 @@
       "pair": [],
       "json_path": "",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "experiments/phase5d_results.json",
@@ -288,7 +312,8 @@
       "pair": [],
       "json_path": "",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "experiments/phase6_reanalysis.json",
@@ -297,7 +322,8 @@
       "pair": [],
       "json_path": "",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "experiments/phase6_results.json",
@@ -306,7 +332,8 @@
       "pair": [],
       "json_path": "",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "experiments/phase7_results.json",
@@ -315,7 +342,8 @@
       "pair": [],
       "json_path": "",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "experiments/phase8_results.json",
@@ -324,7 +352,8 @@
       "pair": [],
       "json_path": "",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "experiments/phase9_results.json",
@@ -333,7 +362,8 @@
       "pair": [],
       "json_path": "",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "experiments/run_phase14.py",
@@ -349,7 +379,8 @@
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "experiments/p14_gate.py",
-      "verdict": "frozen_by_round_instrument"
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "source_call_visible"
     },
     {
       "pinner": "experiments/run_phase15.py",
@@ -365,7 +396,8 @@
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "experiments/p15_gate.py",
-      "verdict": "frozen_by_round_instrument"
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "source_call_visible"
     },
     {
       "pinner": "experiments/run_phase16.py",
@@ -381,7 +413,8 @@
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "experiments/p16_gate.py",
-      "verdict": "frozen_by_round_instrument"
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "source_call_visible"
     },
     {
       "pinner": "experiments/run_phase17.py",
@@ -397,7 +430,8 @@
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "experiments/p17_gate.py",
-      "verdict": "frozen_by_round_instrument"
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "source_call_visible"
     },
     {
       "pinner": "experiments/run_phase18.py",
@@ -413,7 +447,8 @@
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "experiments/p18_gate.py",
-      "verdict": "frozen_by_round_instrument"
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "source_call_visible"
     },
     {
       "pinner": "experiments/run_phase19.py",
@@ -429,7 +464,8 @@
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "experiments/p19_gate.py",
-      "verdict": "frozen_by_round_instrument"
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "source_call_visible"
     },
     {
       "pinner": "experiments/run_phase20.py",
@@ -445,7 +481,8 @@
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "experiments/p20_gate.py",
-      "verdict": "frozen_by_round_instrument"
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "source_call_visible"
     },
     {
       "pinner": "experiments/run_phase21.py",
@@ -461,7 +498,8 @@
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "experiments/p21_gate.py",
-      "verdict": "frozen_by_round_instrument"
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "source_call_visible"
     },
     {
       "pinner": "experiments/run_phase22.py",
@@ -477,7 +515,8 @@
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "experiments/p22_gate.py",
-      "verdict": "frozen_by_round_instrument"
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "source_call_visible"
     },
     {
       "pinner": "governance/label_provenance_v1.json",
@@ -494,7 +533,8 @@
       "object_namespace": "repo",
       "object": "governance/build_status_label_table.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/label_provenance_v1.json",
@@ -511,7 +551,8 @@
       "object_namespace": "repo",
       "object": "governance/build_label_provenance.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/result_score_reconciliation_v1.json",
@@ -533,7 +574,8 @@
       "candidates": [
         "experiments/p10_gate.py",
         "p10_gate.py"
-      ]
+      ],
+      "visibility": null
     },
     {
       "pinner": "governance/result_score_reconciliation_v1.json",
@@ -555,7 +597,8 @@
       "candidates": [
         "experiments/p11_gate.py",
         "p11_gate.py"
-      ]
+      ],
+      "visibility": null
     },
     {
       "pinner": "governance/result_score_reconciliation_v1.json",
@@ -577,7 +620,8 @@
       "candidates": [
         "experiments/p12_gate.py",
         "p12_gate.py"
-      ]
+      ],
+      "visibility": null
     },
     {
       "pinner": "governance/result_score_reconciliation_v1.json",
@@ -599,7 +643,8 @@
       "candidates": [
         "experiments/p13_gate.py",
         "p13_gate.py"
-      ]
+      ],
+      "visibility": null
     },
     {
       "pinner": "governance/result_score_reconciliation_v1.json",
@@ -621,7 +666,8 @@
       "candidates": [
         "experiments/p14_gate.py",
         "p14_gate.py"
-      ]
+      ],
+      "visibility": null
     },
     {
       "pinner": "governance/result_score_reconciliation_v1.json",
@@ -638,7 +684,8 @@
       "object_namespace": "repo",
       "object": "experiments/p15_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/result_score_reconciliation_v1.json",
@@ -660,7 +707,8 @@
       "candidates": [
         "experiments/p16_gate.py",
         "p16_gate.py"
-      ]
+      ],
+      "visibility": null
     },
     {
       "pinner": "governance/result_score_reconciliation_v1.json",
@@ -682,7 +730,8 @@
       "candidates": [
         "experiments/p17_gate.py",
         "p17_gate.py"
-      ]
+      ],
+      "visibility": null
     },
     {
       "pinner": "governance/result_score_reconciliation_v1.json",
@@ -699,7 +748,8 @@
       "object_namespace": "repo",
       "object": "experiments/p18_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/result_score_reconciliation_v1.json",
@@ -721,7 +771,8 @@
       "candidates": [
         "experiments/p19_gate.py",
         "p19_gate.py"
-      ]
+      ],
+      "visibility": null
     },
     {
       "pinner": "governance/result_score_reconciliation_v1.json",
@@ -743,7 +794,8 @@
       "candidates": [
         "experiments/p20_gate.py",
         "p20_gate.py"
-      ]
+      ],
+      "visibility": null
     },
     {
       "pinner": "governance/result_score_reconciliation_v1.json",
@@ -760,7 +812,8 @@
       "object_namespace": "repo",
       "object": "experiments/p21_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/result_score_reconciliation_v1.json",
@@ -777,7 +830,8 @@
       "object_namespace": "repo",
       "object": "experiments/p22_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/result_score_reconciliation_v1.json",
@@ -799,7 +853,8 @@
       "candidates": [
         "experiments/phase2_gate.py",
         "phase2_gate.py"
-      ]
+      ],
+      "visibility": null
     },
     {
       "pinner": "governance/result_score_reconciliation_v1.json",
@@ -816,7 +871,8 @@
       "object_namespace": "repo",
       "object": "experiments/p3_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/result_score_reconciliation_v1.json",
@@ -833,7 +889,8 @@
       "object_namespace": "repo",
       "object": "experiments/p4_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/result_score_reconciliation_v1.json",
@@ -850,7 +907,8 @@
       "object_namespace": "repo",
       "object": "experiments/p5b_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/result_score_reconciliation_v1.json",
@@ -867,7 +925,8 @@
       "object_namespace": "repo",
       "object": "experiments/p5c_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/result_score_reconciliation_v1.json",
@@ -884,7 +943,8 @@
       "object_namespace": "repo",
       "object": "experiments/p5d_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/result_score_reconciliation_v1.json",
@@ -906,7 +966,8 @@
       "candidates": [
         "experiments/p5_gate.py",
         "p5_gate.py"
-      ]
+      ],
+      "visibility": null
     },
     {
       "pinner": "governance/result_score_reconciliation_v1.json",
@@ -923,7 +984,8 @@
       "object_namespace": "repo",
       "object": "experiments/p6_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/result_score_reconciliation_v1.json",
@@ -940,7 +1002,8 @@
       "object_namespace": "repo",
       "object": "experiments/p7_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/result_score_reconciliation_v1.json",
@@ -957,7 +1020,8 @@
       "object_namespace": "repo",
       "object": "experiments/p8_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/result_score_reconciliation_v1.json",
@@ -979,7 +1043,8 @@
       "candidates": [
         "experiments/p9_gate.py",
         "p9_gate.py"
-      ]
+      ],
+      "visibility": null
     },
     {
       "pinner": "governance/result_score_reconciliation_v1.json",
@@ -1001,7 +1066,8 @@
       "candidates": [
         "l01_gate.py",
         "literature/l01_gate.py"
-      ]
+      ],
+      "visibility": null
     },
     {
       "pinner": "governance/result_score_reconciliation_v1.json",
@@ -1018,7 +1084,8 @@
       "object_namespace": "repo",
       "object": "literature/l02_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/section_page_reconciliation_v1.json",
@@ -1027,7 +1094,8 @@
       "pair": [],
       "json_path": "pages/0",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "governance/section_page_reconciliation_v1.json",
@@ -1036,7 +1104,8 @@
       "pair": [],
       "json_path": "pages/1",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "governance/section_page_reconciliation_v1.json",
@@ -1045,7 +1114,8 @@
       "pair": [],
       "json_path": "pages/2",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "governance/section_page_reconciliation_v1.json",
@@ -1054,7 +1124,8 @@
       "pair": [],
       "json_path": "pages/3",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "governance/section_page_reconciliation_v1.json",
@@ -1063,7 +1134,8 @@
       "pair": [],
       "json_path": "pages/4",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "governance/section_page_reconciliation_v1.json",
@@ -1072,7 +1144,8 @@
       "pair": [],
       "json_path": "pages/5",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "governance/section_page_reconciliation_v1.json",
@@ -1081,7 +1154,8 @@
       "pair": [],
       "json_path": "pages/6",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "governance/section_page_reconciliation_v1.json",
@@ -1090,7 +1164,8 @@
       "pair": [],
       "json_path": "pages/7",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "governance/section_page_reconciliation_v1.json",
@@ -1099,7 +1174,8 @@
       "pair": [],
       "json_path": "pages/8",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "governance/section_page_reconciliation_v1.json",
@@ -1108,7 +1184,8 @@
       "pair": [],
       "json_path": "pages/9",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "governance/section_page_reconciliation_v1.json",
@@ -1117,7 +1194,8 @@
       "pair": [],
       "json_path": "pages/10",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "governance/section_page_reconciliation_v1.json",
@@ -1126,7 +1204,8 @@
       "pair": [],
       "json_path": "pages/11",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "governance/section_page_reconciliation_v1.json",
@@ -1135,7 +1214,8 @@
       "pair": [],
       "json_path": "pages/12",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "governance/section_page_reconciliation_v1.json",
@@ -1144,7 +1224,8 @@
       "pair": [],
       "json_path": "pages/13",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "governance/section_page_reconciliation_v1.json",
@@ -1153,7 +1234,8 @@
       "pair": [],
       "json_path": "pages/14",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "governance/section_page_reconciliation_v1.json",
@@ -1162,7 +1244,8 @@
       "pair": [],
       "json_path": "pages/15",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "governance/section_page_reconciliation_v1.json",
@@ -1171,7 +1254,8 @@
       "pair": [],
       "json_path": "pages/16",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "governance/section_page_reconciliation_v1.json",
@@ -1180,7 +1264,8 @@
       "pair": [],
       "json_path": "pages/17",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "governance/section_page_reconciliation_v1.json",
@@ -1189,7 +1274,8 @@
       "pair": [],
       "json_path": "pages/18",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "governance/section_page_reconciliation_v1.json",
@@ -1198,7 +1284,8 @@
       "pair": [],
       "json_path": "pages/19",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "governance/section_page_reconciliation_v1.json",
@@ -1207,7 +1294,18 @@
       "pair": [],
       "json_path": "pages/20",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
+    },
+    {
+      "pinner": "governance/section_page_reconciliation_v1.json",
+      "key": "page_sha256",
+      "hash": "c912b829efe940ba937da773a5670eee8180473929170803fdcfeb92f9656c7b",
+      "pair": [],
+      "json_path": "pages/21",
+      "pair_count": 0,
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1224,7 +1322,8 @@
       "object_namespace": "repo",
       "object": "governance/build_suite_score_registry.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1241,7 +1340,8 @@
       "object_namespace": "repo",
       "object": "experiments/ao_preflight_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1258,7 +1358,8 @@
       "object_namespace": "repo",
       "object": "literature/check_phase1prime_gate3.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1275,7 +1376,8 @@
       "object_namespace": "repo",
       "object": "governance/gate_coverage_map_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1292,7 +1394,8 @@
       "object_namespace": "repo",
       "object": "governance/gate_discrimination_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1309,7 +1412,8 @@
       "object_namespace": "repo",
       "object": "literature/l01_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1326,7 +1430,8 @@
       "object_namespace": "repo",
       "object": "literature/l02_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1343,7 +1448,8 @@
       "object_namespace": "repo",
       "object": "governance/obligation_registry_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1360,7 +1466,8 @@
       "object_namespace": "repo",
       "object": "experiments/p10_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1377,7 +1484,8 @@
       "object_namespace": "repo",
       "object": "experiments/p11_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1394,7 +1502,8 @@
       "object_namespace": "repo",
       "object": "experiments/p12_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1411,7 +1520,8 @@
       "object_namespace": "repo",
       "object": "experiments/p13_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1428,7 +1538,8 @@
       "object_namespace": "repo",
       "object": "experiments/p14_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1445,7 +1556,8 @@
       "object_namespace": "repo",
       "object": "experiments/p15_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1462,7 +1574,8 @@
       "object_namespace": "repo",
       "object": "experiments/p16_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1479,7 +1592,8 @@
       "object_namespace": "repo",
       "object": "experiments/p17_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1496,7 +1610,8 @@
       "object_namespace": "repo",
       "object": "experiments/p18_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1513,7 +1628,8 @@
       "object_namespace": "repo",
       "object": "experiments/p19_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1530,7 +1646,8 @@
       "object_namespace": "repo",
       "object": "experiments/p20_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1547,7 +1664,8 @@
       "object_namespace": "repo",
       "object": "experiments/p21_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1564,7 +1682,8 @@
       "object_namespace": "repo",
       "object": "experiments/p22_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1581,7 +1700,8 @@
       "object_namespace": "repo",
       "object": "experiments/p3_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1598,7 +1718,8 @@
       "object_namespace": "repo",
       "object": "experiments/p4_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1615,7 +1736,8 @@
       "object_namespace": "repo",
       "object": "experiments/p5_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1632,7 +1754,8 @@
       "object_namespace": "repo",
       "object": "experiments/p5b_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1649,7 +1772,8 @@
       "object_namespace": "repo",
       "object": "experiments/p5c_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1666,7 +1790,8 @@
       "object_namespace": "repo",
       "object": "experiments/p5d_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1683,7 +1808,8 @@
       "object_namespace": "repo",
       "object": "experiments/p6_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1700,7 +1826,8 @@
       "object_namespace": "repo",
       "object": "experiments/p7_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1717,7 +1844,8 @@
       "object_namespace": "repo",
       "object": "experiments/p8_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1734,7 +1862,8 @@
       "object_namespace": "repo",
       "object": "experiments/p9_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1751,7 +1880,8 @@
       "object_namespace": "repo",
       "object": "experiments/phase2_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1768,7 +1898,8 @@
       "object_namespace": "repo",
       "object": "governance/result_score_map_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1785,7 +1916,8 @@
       "object_namespace": "repo",
       "object": "governance/runner_enforcement_map_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1802,7 +1934,8 @@
       "object_namespace": "repo",
       "object": "governance/section_page_reconciliation_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1819,7 +1952,8 @@
       "object_namespace": "repo",
       "object": "governance/status_label_table_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1836,7 +1970,8 @@
       "object_namespace": "repo",
       "object": "governance/unmeasured_instruments_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/suite_score_registry_v1.json",
@@ -1853,7 +1988,8 @@
       "object_namespace": "repo",
       "object": "governance/wiki_sync_map_gate.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/value_provenance_v1.json",
@@ -1870,7 +2006,8 @@
       "object_namespace": "repo",
       "object": "governance/build_value_provenance.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/wiki_sync_map_v1.json",
@@ -1887,7 +2024,8 @@
       "object_namespace": "workshop",
       "object": "feishu_wiki_drafts/M2A-文献轮L01-14条全文编码.md",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/wiki_sync_map_v1.json",
@@ -1904,7 +2042,8 @@
       "object_namespace": "workshop",
       "object": "feishu_wiki_drafts/M2A-治理-机制词表v1草案与口径漂移.md",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/wiki_sync_map_v1.json",
@@ -1921,7 +2060,8 @@
       "object_namespace": "workshop",
       "object": "feishu_wiki_drafts/M2A-治理-五值标签口径表v1到v2.md",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/wiki_sync_map_v1.json",
@@ -1938,7 +2078,8 @@
       "object_namespace": "workshop",
       "object": "feishu_wiki_drafts/M2A-治理-台账三命名空间与L01主张层重判读.md",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/wiki_sync_map_v1.json",
@@ -1955,7 +2096,8 @@
       "object_namespace": "workshop",
       "object": "feishu_wiki_drafts/M2A-治理-AO预检落地为仪器.md",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/wiki_sync_map_v1.json",
@@ -1972,7 +2114,8 @@
       "object_namespace": "workshop",
       "object": "feishu_wiki_drafts/M2A-治理-门控判别力审计25台与判别地板.md",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/wiki_sync_map_v1.json",
@@ -1989,7 +2132,8 @@
       "object_namespace": "workshop",
       "object": "feishu_wiki_drafts/M2A-治理-门控仪器覆盖表v1.md",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/wiki_sync_map_v1.json",
@@ -2006,7 +2150,8 @@
       "object_namespace": "workshop",
       "object": "feishu_wiki_drafts/M2A-治理-runner侧门控强制表v1.md",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/wiki_sync_map_v1.json",
@@ -2023,7 +2168,8 @@
       "object_namespace": "workshop",
       "object": "feishu_wiki_drafts/M2A-治理-门控分数三方对账v1.md",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/wiki_sync_map_v1.json",
@@ -2040,7 +2186,8 @@
       "object_namespace": "workshop",
       "object": "feishu_wiki_drafts/M2A-治理-未测量仪器的治理层检查v1.md",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/wiki_sync_map_v1.json",
@@ -2057,7 +2204,8 @@
       "object_namespace": "workshop",
       "object": "feishu_wiki_drafts/M2A-治理-wiki同步表v1.md",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/wiki_sync_map_v1.json",
@@ -2074,7 +2222,8 @@
       "object_namespace": "workshop",
       "object": "feishu_wiki_drafts/M2A-治理-节页分数对账v1.md",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/wiki_sync_map_v1.json",
@@ -2091,7 +2240,8 @@
       "object_namespace": "workshop",
       "object": "feishu_wiki_drafts/M2A-治理-套件分数引用对账v1.md",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/wiki_sync_map_v1.json",
@@ -2108,7 +2258,8 @@
       "object_namespace": "workshop",
       "object": "feishu_wiki_drafts/M2A-治理-判定标签对账v1.md",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/wiki_sync_map_v1.json",
@@ -2125,7 +2276,8 @@
       "object_namespace": "workshop",
       "object": "feishu_wiki_drafts/M2A-治理-判据数值对账v1.md",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/wiki_sync_map_v1.json",
@@ -2142,7 +2294,8 @@
       "object_namespace": "workshop",
       "object": "feishu_wiki_drafts/M2A-文献轮L02-主张层重数与竞争理论全文.md",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/wiki_sync_map_v1.json",
@@ -2159,7 +2312,8 @@
       "object_namespace": "workshop",
       "object": "feishu_wiki_drafts/M2A-治理-义务台账命名空间由标签形状推导.md",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/wiki_sync_map_v1.json",
@@ -2176,7 +2330,8 @@
       "object_namespace": "workshop",
       "object": "feishu_wiki_drafts/M2A-治理-判定锚点加宽与门控里的科学判据.md",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/wiki_sync_map_v1.json",
@@ -2193,7 +2348,8 @@
       "object_namespace": "workshop",
       "object": "feishu_wiki_drafts/M2A-治理-冻结输入登记表谁在按字节引用这份文档.md",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/wiki_sync_map_v1.json",
@@ -2210,12 +2366,31 @@
       "object_namespace": "workshop",
       "object": "feishu_wiki_drafts/M2A-治理-硬伤档可达性与没进链的推导.md",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
+    },
+    {
+      "pinner": "governance/wiki_sync_map_v1.json",
+      "key": "draft_sha256",
+      "hash": "1bfe55e6f597d65dedd8e8666e95bd26d16c95e579ea7ece88b9394f805a0058",
+      "pair": [
+        [
+          "draft",
+          "M2A-治理-冻结可见性按出处种类分派三条通路.md"
+        ]
+      ],
+      "json_path": "pages/20",
+      "pair_count": 1,
+      "object_namespace": "workshop",
+      "object": "feishu_wiki_drafts/M2A-治理-冻结可见性按出处种类分派三条通路.md",
+      "bytes_match": true,
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/wiki_sync_map_v1.json",
       "key": "sha256",
-      "hash": "838ab9dda92d86786823125e1baf2f9d122d551c4d7e768754b77770e353d952",
+      "hash": "b5a64fba59b33dea3f9d8c423a63a604e9ef6ebfc878b9019b7d56c972deeb65",
       "pair": [
         [
           "file",
@@ -2227,12 +2402,13 @@
       "object_namespace": "workshop",
       "object": "check_step_draft_numbers.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/wiki_sync_map_v1.json",
       "key": "sha256",
-      "hash": "6c9866e194b057416510a847ef7a618867961b7ecf63e3ac856f6f9a3bbbaf67",
+      "hash": "ac76645a5bc0dc0816db1f2d4ae0eb9cdc19bd80fe4be95a996079a161abb8bc",
       "pair": [
         [
           "file",
@@ -2244,12 +2420,13 @@
       "object_namespace": "workshop",
       "object": "publish_wiki_steps.py",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "governance/wiki_sync_map_v1.json",
       "key": "sha256",
-      "hash": "9e4e020cf17e246ca70a3e64e770873adad5352f530572d7b9cf4d087fa15d6c",
+      "hash": "1821973a3b5298da7e9658690fa805648f2531fd187090de1a2311d27cd1c095",
       "pair": [
         [
           "file",
@@ -2261,7 +2438,8 @@
       "object_namespace": "workshop",
       "object": "feishu_wiki_nodes.json",
       "bytes_match": true,
-      "verdict": "renewable_governance_pin"
+      "verdict": "renewable_governance_pin",
+      "visibility": null
     },
     {
       "pinner": "literature/L01_coding.json",
@@ -2278,7 +2456,8 @@
       "object_namespace": "repo",
       "object": "literature/L01_CODING_PROTOCOL.md",
       "bytes_match": true,
-      "verdict": "frozen_by_round_instrument"
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "json_key_reproduced"
     },
     {
       "pinner": "literature/L01_coding.json",
@@ -2287,7 +2466,8 @@
       "pair": [],
       "json_path": "upstream_artifacts",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "literature/L01_coding.json",
@@ -2296,7 +2476,8 @@
       "pair": [],
       "json_path": "upstream_artifacts",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "literature/L01_coding.json",
@@ -2305,7 +2486,8 @@
       "pair": [],
       "json_path": "upstream_artifacts",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "literature/L01_coding.json",
@@ -2314,7 +2496,8 @@
       "pair": [],
       "json_path": "upstream_artifacts",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "literature/L01_reanalysis.json",
@@ -2323,7 +2506,8 @@
       "pair": [],
       "json_path": "",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "literature/L02_coding.json",
@@ -2340,7 +2524,8 @@
       "object_namespace": "repo",
       "object": "literature/L02_PREREGISTRATION.md",
       "bytes_match": true,
-      "verdict": "frozen_by_round_instrument"
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "json_key_reproduced"
     },
     {
       "pinner": "literature/L02_coding.json",
@@ -2349,7 +2534,8 @@
       "pair": [],
       "json_path": "acquisition",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "literature/L02_coding.json",
@@ -2358,7 +2544,8 @@
       "pair": [],
       "json_path": "fulltext",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "literature/L02_reanalysis.json",
@@ -2375,7 +2562,8 @@
       "object_namespace": "repo",
       "object": "literature/L02_PREREGISTRATION.md",
       "bytes_match": true,
-      "verdict": "frozen_by_round_instrument"
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "json_key_reproduced"
     },
     {
       "pinner": "literature/L02_reanalysis.json",
@@ -2384,7 +2572,8 @@
       "pair": [],
       "json_path": "",
       "pair_count": 0,
-      "verdict": "hash_without_named_object"
+      "verdict": "hash_without_named_object",
+      "visibility": null
     },
     {
       "pinner": "literature/l02_coding.py",
@@ -2400,7 +2589,8 @@
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "literature/L02_PREREGISTRATION.md",
-      "verdict": "frozen_by_round_instrument"
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "source_call_visible"
     },
     {
       "pinner": "literature/l02_gate.py",
@@ -2416,7 +2606,8 @@
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "literature/L01_CODING_PROTOCOL.md",
-      "verdict": "frozen_by_round_instrument"
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "source_call_visible"
     },
     {
       "pinner": "literature/l02_gate.py",
@@ -2432,7 +2623,8 @@
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "literature/L01_channels.json",
-      "verdict": "frozen_by_round_instrument"
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "source_call_visible"
     },
     {
       "pinner": "literature/l02_gate.py",
@@ -2448,7 +2640,8 @@
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "literature/L01_coding.json",
-      "verdict": "frozen_by_round_instrument"
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "source_call_visible"
     },
     {
       "pinner": "literature/l02_gate.py",
@@ -2464,7 +2657,8 @@
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "literature/L01_fulltexts.json",
-      "verdict": "frozen_by_round_instrument"
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "source_call_visible"
     },
     {
       "pinner": "literature/l02_gate.py",
@@ -2480,7 +2674,8 @@
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "literature/ROUND_L01_RESULTS.md",
-      "verdict": "frozen_by_round_instrument"
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "source_call_visible"
     },
     {
       "pinner": "literature/l02_gate.py",
@@ -2496,7 +2691,8 @@
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "literature/registry.json",
-      "verdict": "frozen_by_round_instrument"
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "source_call_visible"
     },
     {
       "pinner": "literature/l02_gate.py",
@@ -2512,7 +2708,8 @@
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "literature/synthesis_v2.json",
-      "verdict": "frozen_by_round_instrument"
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "source_call_visible"
     },
     {
       "pinner": "literature/l02_reanalysis.py",
@@ -2528,7 +2725,8 @@
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "literature/L02_PREREGISTRATION.md",
-      "verdict": "frozen_by_round_instrument"
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "source_call_visible"
     },
     {
       "pinner": "literature/run_L01.py",
@@ -2544,7 +2742,8 @@
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "literature/L01_candidates.json",
-      "verdict": "frozen_by_round_instrument"
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "source_call_visible"
     },
     {
       "pinner": "literature/run_L01.py",
@@ -2560,7 +2759,8 @@
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "literature/L01_channels.json",
-      "verdict": "frozen_by_round_instrument"
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "source_call_visible"
     },
     {
       "pinner": "literature/run_L01.py",
@@ -2576,7 +2776,8 @@
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "literature/L01_fulltexts.json",
-      "verdict": "frozen_by_round_instrument"
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "source_call_visible"
     },
     {
       "pinner": "literature/run_L01.py",
@@ -2592,7 +2793,8 @@
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "literature/L01_verification.json",
-      "verdict": "frozen_by_round_instrument"
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "source_call_visible"
     }
   ]
 }

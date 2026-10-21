@@ -9,8 +9,8 @@
     }
   ],
   "counts": {
-    "claims_rows_in_sync_map": 25,
-    "draft_page_aligned": 18,
+    "claims_rows_in_sync_map": 26,
+    "draft_page_aligned": 19,
     "draft_page_grew": 2,
     "draft_page_hard": 0,
     "errata_not_effective": 0,
@@ -28,14 +28,14 @@
       "suite_score_registry_gate.py"
     ],
     "page_superseded": 1,
-    "pages_reconciled": 21,
+    "pages_reconciled": 22,
     "pages_with_self_referential_claims": 1,
-    "pairs_aligned": 19,
+    "pairs_aligned": 20,
     "pairs_compressed": 0,
     "pairs_no_capture": 0,
     "prose_slashes_ignored": 0,
     "score_unattested_in_repo": 0,
-    "sections_covered": 25,
+    "sections_covered": 26,
     "self_referential_values": 1,
     "values_attested_only_in_registration": 1,
     "values_loosely_attested_only": 0
@@ -873,6 +873,31 @@
       ],
       "superseded": {},
       "title": "M2A 治理｜一条硬伤档只能在误判别的形状时触发，就不算一条档",
+      "unattested": {},
+      "unmeasurable": {},
+      "verdict": "aligned"
+    },
+    {
+      "attestation": {},
+      "draft_vs_page": {
+        "disagree": {},
+        "verdict": "aligned"
+      },
+      "erratum": {},
+      "loosely_attested": {},
+      "multi_value": {},
+      "node_token": "VmLywSmdqiLDdukYpY9cAoaenZb",
+      "not_on_page": [],
+      "page_chars": 1081,
+      "page_claims": {},
+      "page_sha256": "c912b829efe940ba937da773a5670eee8180473929170803fdcfeb92f9656c7b",
+      "prose_slashes_ignored": {},
+      "section_claims": {},
+      "sections": [
+        56
+      ],
+      "superseded": {},
+      "title": "M2A 治理｜冻结的「看得见」不是一个开关，而是按出处种类分派的三条读数通路",
       "unattested": {},
       "unmeasurable": {},
       "verdict": "aligned"
