@@ -60,15 +60,15 @@
     "named_object_absent": 0,
     "pin_of_this_layer_output": 0,
     "frozen_by_round_instrument": 43,
-    "renewable_governance_pin": 84,
-    "hash_without_named_object": 64,
+    "renewable_governance_pin": 85,
+    "hash_without_named_object": 65,
     "ambiguous_pairing": 14,
     "hard_findings": 0,
-    "rows": 205,
+    "rows": 207,
     "pinning_documents": 54,
-    "pinned_objects": 87,
-    "repo_files_scanned": 305,
-    "workshop_objects": 116,
+    "pinned_objects": 88,
+    "repo_files_scanned": 308,
+    "workshop_objects": 118,
     "instrument_collection_pins": 35,
     "freeze_rows_visible": 43,
     "freeze_visibility_states": 2,
@@ -1492,9 +1492,19 @@
       "visibility": null
     },
     {
+      "pinner": "governance/section_page_reconciliation_v1.json",
+      "key": "page_sha256",
+      "hash": "7a6bf7f494e7b76d7bf377f44e54e753b3bfe7f25e43c95ff4df17a74f7ba087",
+      "pair": [],
+      "json_path": "pages/25",
+      "pair_count": 0,
+      "verdict": "hash_without_named_object",
+      "visibility": null
+    },
+    {
       "pinner": "governance/suite_score_registry_v1.json",
       "key": "sha256",
-      "hash": "c630f934c91d49098a4f850db7acdce7a52246de2e95e31574e6264579fff3f8",
+      "hash": "e138a87c76b7641f962486ef7fa63b8fd194d2570de53ee389fd011128fe2e48",
       "pair": [
         [
           "file",
@@ -2663,8 +2673,26 @@
     },
     {
       "pinner": "governance/wiki_sync_map_v1.json",
+      "key": "draft_sha256",
+      "hash": "480d7f31cb2d34446d623a1a7825432bc9375950e65c1c9faafa1011b518f466",
+      "pair": [
+        [
+          "draft",
+          "M2A-PhaseXXIII-AO测度设计.md"
+        ]
+      ],
+      "json_path": "pages/24",
+      "pair_count": 1,
+      "object_namespace": "workshop",
+      "object": "feishu_wiki_drafts/M2A-PhaseXXIII-AO测度设计.md",
+      "bytes_match": true,
+      "verdict": "renewable_governance_pin",
+      "visibility": null
+    },
+    {
+      "pinner": "governance/wiki_sync_map_v1.json",
       "key": "sha256",
-      "hash": "ad555117b32a0caa2070c8f15de5cb8c645004cadf59edc1b1858650bf7212de",
+      "hash": "160795317fbe77e8e5417871a74f6b6deaddee7d7cd0331e249d6a7cfc389de9",
       "pair": [
         [
           "file",
@@ -2682,7 +2710,7 @@
     {
       "pinner": "governance/wiki_sync_map_v1.json",
       "key": "sha256",
-      "hash": "9bbdfd9e364d06acf7a44ff7e72b9886e2a0b115220cbe833ee937475ade4258",
+      "hash": "c45aa2ae3d7121d85043a464ac572f6e515475523bf55a33314797683da081e2",
       "pair": [
         [
           "file",
@@ -2700,7 +2728,7 @@
     {
       "pinner": "governance/wiki_sync_map_v1.json",
       "key": "sha256",
-      "hash": "46e43c1a35a29b20742f0318867619d43f0a47afb5befe2340a7c17f286f268d",
+      "hash": "5e2af3246f0e6577480f80cb095d51afdc2797dd28741bc2a4e4532b09af7771",
       "pair": [
         [
           "file",

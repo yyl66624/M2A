@@ -203,6 +203,13 @@
       "node_token": "NwGZwI3ZUigRXrkKkFBcMMPcnuo",
       "section": 59,
       "title": "M2A Phase XXIV｜L2 权重衰减不修复 L3 中段偏差：按访问加权算子移动并把旧律偏差推大"
+    },
+    {
+      "draft": "M2A-PhaseXXIII-AO测度设计.md",
+      "in_ledger": true,
+      "node_token": "XKQvws1sNiViZvkSAOacELKEnvP",
+      "section": 60,
+      "title": "M2A Phase XXIII｜AO 测度把发放与静默分成两个泛函：设计登记，正式运行待批准"
     }
   ],
   "counts": {
@@ -211,11 +218,11 @@
     "first_batch_off_pin": 0,
     "first_batch_pages": 12,
     "first_batch_pages_claimed_by_a_section": 1,
-    "governance_pages": 24,
+    "governance_pages": 25,
     "governance_pages_unclaimed": 0,
-    "ledger_pages_with_node": 36,
-    "report_sections_in_population": 29,
-    "sections_claimed": 29,
+    "ledger_pages_with_node": 37,
+    "report_sections_in_population": 30,
+    "sections_claimed": 30,
     "sections_unclaimed": 0
   },
   "dangling_claims": [],
@@ -706,6 +713,26 @@
         59
       ],
       "title": "M2A Phase XXIV｜L2 权重衰减不修复 L3 中段偏差：按访问加权算子移动并把旧律偏差推大"
+    },
+    {
+      "draft": "M2A-PhaseXXIII-AO测度设计.md",
+      "draft_chars": 716,
+      "draft_sha256": "480d7f31cb2d34446d623a1a7825432bc9375950e65c1c9faafa1011b518f466",
+      "markers": [
+        "AO-SEPARATES",
+        "0.259165",
+        "0.349254",
+        "P11-O1",
+        "G_old"
+      ],
+      "markers_ok_recorded": true,
+      "node_token": "XKQvws1sNiViZvkSAOacELKEnvP",
+      "obj_token": "IdjxdbISforCZRxh0LEcy0SBnJd",
+      "read_back_chars_recorded": 1063,
+      "sections": [
+        60
+      ],
+      "title": "M2A Phase XXIII｜AO 测度把发放与静默分成两个泛函：设计登记，正式运行待批准"
     }
   ],
   "schema": "m2a.wiki_sync_map.v1",
@@ -980,24 +1007,29 @@
       "section": 59,
       "title": "Phase XXIV（2026-10-21 追加）：给 L3 的表格 Q-learning 加 L2 权重衰减——正则化不修复中段偏差，它按",
       "xids_named": []
+    },
+    {
+      "section": 60,
+      "title": "Phase XXIII 设计与门控：AO 测度把「发放」与「静默」分成两个泛函（GOVERNANCE_ARTIFACT，设计步骤，不产生科学",
+      "xids_named": []
     }
   ],
   "stale_claims": [],
   "tools": [
     {
-      "bytes": 104702,
+      "bytes": 109130,
       "file": "check_step_draft_numbers.py",
-      "sha256": "ad555117b32a0caa2070c8f15de5cb8c645004cadf59edc1b1858650bf7212de"
+      "sha256": "160795317fbe77e8e5417871a74f6b6deaddee7d7cd0331e249d6a7cfc389de9"
     },
     {
-      "bytes": 11060,
+      "bytes": 11279,
       "file": "publish_wiki_steps.py",
-      "sha256": "9bbdfd9e364d06acf7a44ff7e72b9886e2a0b115220cbe833ee937475ade4258"
+      "sha256": "c45aa2ae3d7121d85043a464ac572f6e515475523bf55a33314797683da081e2"
     },
     {
-      "bytes": 13910,
+      "bytes": 14255,
       "file": "feishu_wiki_nodes.json",
-      "sha256": "46e43c1a35a29b20742f0318867619d43f0a47afb5befe2340a7c17f286f268d"
+      "sha256": "5e2af3246f0e6577480f80cb095d51afdc2797dd28741bc2a4e4532b09af7771"
     }
   ],
   "unclaimed_sections": [],

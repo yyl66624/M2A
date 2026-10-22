@@ -73,7 +73,7 @@
     "anchor_without_recorded_label": 3,
     "label_mention_without_predication": 235,
     "cross_round_refutation": 0,
-    "label_without_anchor": 449,
+    "label_without_anchor": 451,
     "matches_artifact": 50,
     "hard_findings": 1,
     "paired_corrections": 0,
@@ -2903,7 +2903,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1962,
+      "line": 1964,
       "labels": [
         "CONTRADICTED",
         "INDETERMINATE",
@@ -2920,7 +2920,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1963,
+      "line": 1965,
       "labels": [
         "SUPPORTED"
       ],
@@ -2954,7 +2954,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1986,
+      "line": 1988,
       "labels": [
         "SUPPORTED"
       ],
@@ -2967,7 +2967,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1992,
+      "line": 1994,
       "labels": [
         "IDENTITY_VERIFIED",
         "PASS"
@@ -3000,7 +3000,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1993,
+      "line": 1995,
       "labels": [
         "COUNT_NOT_STATUS",
         "MANUAL_REVIEW"
@@ -3014,7 +3014,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2092,
+      "line": 2096,
       "labels": [
         "OPEN"
       ],
@@ -3027,7 +3027,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2166,
+      "line": 2172,
       "labels": [
         "CONTRADICTED"
       ],
@@ -3040,7 +3040,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2175,
+      "line": 2181,
       "labels": [
         "CLAIM_LAYER_INFLATION",
         "CONTRADICTED",
@@ -3070,7 +3070,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2176,
+      "line": 2182,
       "labels": [
         "COMPETING_CODED",
         "CONTRADICTED"
@@ -3099,7 +3099,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2177,
+      "line": 2183,
       "labels": [
         "PASS"
       ],
@@ -3112,7 +3112,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2185,
+      "line": 2191,
       "labels": [
         "INDETERMINATE"
       ],
@@ -3154,7 +3154,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2194,
+      "line": 2200,
       "labels": [
         "CONTRADICTED"
       ],
@@ -3167,7 +3167,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2213,
+      "line": 2219,
       "labels": [
         "CONTRADICTED"
       ],
@@ -3204,7 +3204,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2234,
+      "line": 2240,
       "labels": [
         "PASS"
       ],
@@ -3217,7 +3217,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2258,
+      "line": 2264,
       "labels": [
         "CLOSED",
         "OPEN"
@@ -3231,7 +3231,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2262,
+      "line": 2268,
       "labels": [
         "CLAIM_LAYER_INFLATION"
       ],
@@ -3259,7 +3259,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2528,
+      "line": 2534,
       "labels": [
         "FULLTEXT_REVISES",
         "INDETERMINATE"
@@ -3300,7 +3300,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2546,
+      "line": 2552,
       "labels": [
         "FULLTEXT_REVISES",
         "INDETERMINATE"
@@ -3327,7 +3327,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2547,
+      "line": 2553,
       "labels": [
         "CLOSED",
         "OPEN"
@@ -3365,7 +3365,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2551,
+      "line": 2557,
       "labels": [
         "CONFIRMED"
       ],
@@ -3378,7 +3378,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2556,
+      "line": 2562,
       "labels": [
         "REFUTED"
       ],
@@ -3391,7 +3391,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2591,
+      "line": 2597,
       "labels": [
         "REGULARIZATION-DOES-NOT-REPAIR",
         "SUPPORTED"
@@ -3427,6 +3427,36 @@
       ],
       "errata": [],
       "verdict": "matches_artifact"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2632,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "状态标签：**GOVERNANCE_ARTIFACT**（设计登记；**不运行正式实验、不产生读数、不改写任何历史判定**；`P11-O1` / `P12-O3` 仍 OPEN）。",
+      "line_len": 90,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2642,
+      "labels": [
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "NOT_IDENTIFIED",
+        "NULL",
+        "SUPPORTED"
+      ],
+      "excerpt": "旧口径把静默当作发放的补集，故 `G_old ≡ 0`。运行前的精确读数：多行动 `two_windows` 的 `G(θ*=0.1)=0.259165`、`adjacent` 的 `G=0.349254`；三网格旋钮容差分别为 `4.136e-04` / `8.785e-04`；单行动 `gate_upper` / ",
+      "line_len": 464,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
     },
     {
       "document": "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
@@ -4587,7 +4617,7 @@
       "labels": [
         "OPEN"
       ],
-      "excerpt": "| P11-O1 | **OPEN** | 25 | `M2A_FINAL_REPORT.md:855` | 开放类措辞 | — |",
+      "excerpt": "| P11-O1 | **OPEN** | 28 | `M2A_FINAL_REPORT.md:855` | 开放类措辞 | — |",
       "line_len": 66,
       "anchors": [],
       "phantom": [],
@@ -4626,7 +4656,7 @@
       "labels": [
         "OPEN"
       ],
-      "excerpt": "| P12-O3 | **OPEN** | 20 | `M2A_FINAL_REPORT.md:855` | 开放类措辞 | — |",
+      "excerpt": "| P12-O3 | **OPEN** | 23 | `M2A_FINAL_REPORT.md:855` | 开放类措辞 | — |",
       "line_len": 66,
       "anchors": [],
       "phantom": [],

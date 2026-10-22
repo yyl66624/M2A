@@ -123,7 +123,11 @@ LAYER_TRANSCRIPTIONS = {"LABEL_PROVENANCE_v1.md":
                         "lines verbatim, so scanning it re-reads this layer's claims through a copy "
                         "that can be truncated mid-fraction (X-85(g), X-95)",
                         "value_provenance_v1.json":
-                        "same table in machine form; a claim source may not be a copy of the claims"}
+                        "same table in machine form; a claim source may not be a copy of the claims",
+                        "PHASE23_PREREGISTRATION.md":
+                        "the Phase XXIII design prereg (staged in experiments/p23_design/) quotes the AO "
+                        "preflight's 8/8; it is a design document, not a round claim source, and stays out "
+                        "of the corpus until the formal run is approved (P23-A4)"}
 SELF_SUITE = "suite_score_registry_gate.py"
 GLOB_SUITES = sorted(M.glob("experiments/*gate*.py")) + sorted(M.glob("literature/*gate*.py")) \
     + sorted(M.glob("governance/*gate*.py"))

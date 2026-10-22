@@ -51,10 +51,10 @@
     "value_of_other_round": 42,
     "value_only_in_transcription": 39,
     "matches_round_records": 54,
-    "criterion_without_anchor": 769,
+    "criterion_without_anchor": 770,
     "hard_findings": 6,
     "rounded_matches": 29,
-    "claim_values": 2311,
+    "claim_values": 2320,
     "claim_documents": 41,
     "corpus_documents": 53,
     "round_families": 24
@@ -9437,7 +9437,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2059,
+      "line": 2063,
       "values": [
         "0.005",
         "0.008"
@@ -9484,7 +9484,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2084,
+      "line": 2088,
       "values": [
         "154.1",
         "5.1e-12"
@@ -9509,7 +9509,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2085,
+      "line": 2089,
       "values": [
         "1.0001"
       ],
@@ -9528,7 +9528,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2086,
+      "line": 2090,
       "values": [
         "170.130"
       ],
@@ -9547,7 +9547,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2087,
+      "line": 2091,
       "values": [
         "0.0084",
         "0.9990",
@@ -9578,7 +9578,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2088,
+      "line": 2092,
       "values": [
         "170.130"
       ],
@@ -9597,7 +9597,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2176,
+      "line": 2182,
       "values": [
         "1.0"
       ],
@@ -9640,7 +9640,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2191,
+      "line": 2197,
       "values": [
         "1.0"
       ],
@@ -9683,7 +9683,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2595,
+      "line": 2601,
       "values": [
         "0.1",
         "0.2",
@@ -9946,7 +9946,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2601,
+      "line": 2607,
       "values": [
         "0.0",
         "0.001349",
@@ -10041,7 +10041,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2602,
+      "line": 2608,
       "values": [
         "0.001111",
         "0.019885",
@@ -10134,7 +10134,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2603,
+      "line": 2609,
       "values": [
         "0.000628",
         "0.031487",
@@ -10221,7 +10221,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2604,
+      "line": 2610,
       "values": [
         "0.0",
         "0.000702",
@@ -10318,7 +10318,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2605,
+      "line": 2611,
       "values": [
         "0.000775",
         "0.054564",
@@ -10414,7 +10414,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2606,
+      "line": 2612,
       "values": [
         "0.000563",
         "0.099184",
@@ -10503,7 +10503,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2607,
+      "line": 2613,
       "values": [
         "0.0",
         "0.000910",
@@ -10604,7 +10604,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2608,
+      "line": 2614,
       "values": [
         "0.000350",
         "0.062829",
@@ -10709,7 +10709,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2609,
+      "line": 2615,
       "values": [
         "0.000021",
         "0.176347",
@@ -10811,7 +10811,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2611,
+      "line": 2617,
       "values": [
         "-0.001044",
         "0.000106",
@@ -11032,7 +11032,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2613,
+      "line": 2619,
       "values": [
         "0.36"
       ],
@@ -11060,6 +11060,122 @@
         }
       ],
       "verdict": "matches_round_records"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2642,
+      "values": [
+        "0.1",
+        "0.259165",
+        "0.349254",
+        "1.83",
+        "1e-1",
+        "1e-12",
+        "3.57",
+        "4.136e-04",
+        "8.785e-04"
+      ],
+      "excerpt": "旧口径把静默当作发放的补集，故 `G_old ≡ 0`。运行前的精确读数：多行动 `two_windows` 的 `G(θ*=0.1)=0.259165`、`adjacent` 的 `G=0.349254`；三网格旋钮容差分别为 `4.136e-04` / `8.785e-04`；单行动 `gate",
+      "anchors": [],
+      "phantom": [],
+      "per_value": [
+        {
+          "value": "0.1",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "2",
+            "20",
+            "21",
+            "22",
+            "24",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"
+          ]
+        },
+        {
+          "value": "0.259165",
+          "attested_in": {},
+          "registered_by_other_round": []
+        },
+        {
+          "value": "0.349254",
+          "attested_in": {},
+          "registered_by_other_round": []
+        },
+        {
+          "value": "1.83",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "5"
+          ]
+        },
+        {
+          "value": "1e-1",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "15",
+            "19",
+            "2",
+            "20",
+            "21",
+            "22",
+            "24",
+            "3",
+            "8",
+            "9"
+          ]
+        },
+        {
+          "value": "1e-12",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "10",
+            "14",
+            "15",
+            "19",
+            "20",
+            "21",
+            "22",
+            "24",
+            "3",
+            "4",
+            "5",
+            "9"
+          ]
+        },
+        {
+          "value": "3.57",
+          "attested_in": {},
+          "registered_by_other_round": []
+        },
+        {
+          "value": "4.136e-04",
+          "attested_in": {},
+          "registered_by_other_round": []
+        },
+        {
+          "value": "8.785e-04",
+          "attested_in": {},
+          "registered_by_other_round": []
+        }
+      ],
+      "verdict": "criterion_without_anchor"
     },
     {
       "document": "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md",

@@ -4,7 +4,7 @@
     "corpus_documents": 81,
     "hard_findings": 0,
     "quote_rows": 84,
-    "quotes_found": 98,
+    "quotes_found": 99,
     "self_reference_quotes": 1,
     "suites_live_green": 39,
     "suites_run": 39,
@@ -16,7 +16,7 @@
   },
   "generator": {
     "file": "governance/build_suite_score_registry.py",
-    "sha256": "c630f934c91d49098a4f850db7acdce7a52246de2e95e31574e6264579fff3f8"
+    "sha256": "e138a87c76b7641f962486ef7fa63b8fd194d2570de53ee389fd011128fe2e48"
   },
   "hard_findings": [],
   "live": {
@@ -388,7 +388,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "frozen_input_map_gate.py",
-      "line": 2493,
+      "line": 2499,
       "live": null,
       "quoted": "18/18",
       "verdict": "unmeasured_by_registration"
@@ -458,7 +458,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "p24_gate.py",
-      "line": 2593,
+      "line": 2599,
       "live": "15/15",
       "quoted": "15/15",
       "verdict": "matches_live"
@@ -1064,11 +1064,11 @@
       "verdict": "matches_live"
     },
     {
-      "context": "| ao_preflight_gate.py | 8/8 | M2A_FINAL_REPORT.md | §38 |",
+      "context": "| ao_preflight_gate.py | 8/8 | M2A_FINAL_REPORT.md, experiment",
       "doc_kind": "derived_summary",
       "document": "SECTION_PAGE_RECONCILIATION_v1.md",
       "instrument": "ao_preflight_gate.py",
-      "line": 72,
+      "line": 73,
       "live": "8/8",
       "quoted": "8/8",
       "verdict": "matches_live"
@@ -1078,7 +1078,7 @@
       "doc_kind": "derived_summary",
       "document": "SECTION_PAGE_RECONCILIATION_v1.md",
       "instrument": "gate_coverage_map_gate.py",
-      "line": 78,
+      "line": 79,
       "live": "18/18",
       "quoted": "17/17",
       "verdict": "paired_correction"
@@ -1088,7 +1088,7 @@
       "doc_kind": "derived_summary",
       "document": "SECTION_PAGE_RECONCILIATION_v1.md",
       "instrument": "gate_coverage_map_gate.py",
-      "line": 74,
+      "line": 75,
       "live": "18/18",
       "quoted": "18/18",
       "verdict": "matches_live"
@@ -1098,7 +1098,7 @@
       "doc_kind": "derived_summary",
       "document": "SECTION_PAGE_RECONCILIATION_v1.md",
       "instrument": "gate_discrimination_gate.py",
-      "line": 73,
+      "line": 74,
       "live": "59/59",
       "quoted": "59/59",
       "verdict": "matches_live"
@@ -1128,7 +1128,7 @@
       "doc_kind": "derived_summary",
       "document": "SECTION_PAGE_RECONCILIATION_v1.md",
       "instrument": "obligation_registry_gate.py",
-      "line": 79,
+      "line": 80,
       "live": "8/8",
       "quoted": "8/8",
       "verdict": "matches_live"
@@ -1138,7 +1138,7 @@
       "doc_kind": "derived_summary",
       "document": "SECTION_PAGE_RECONCILIATION_v1.md",
       "instrument": "p10_gate.py",
-      "line": 76,
+      "line": 77,
       "live": "6/6",
       "quoted": "6/6",
       "verdict": "matches_live"
@@ -1148,7 +1148,7 @@
       "doc_kind": "derived_summary",
       "document": "SECTION_PAGE_RECONCILIATION_v1.md",
       "instrument": "result_score_map_gate.py",
-      "line": 77,
+      "line": 78,
       "live": "12/12",
       "quoted": "12/12",
       "verdict": "matches_live"
@@ -1158,7 +1158,7 @@
       "doc_kind": "derived_summary",
       "document": "SECTION_PAGE_RECONCILIATION_v1.md",
       "instrument": "runner_enforcement_map_gate.py",
-      "line": 75,
+      "line": 76,
       "live": "14/14",
       "quoted": "14/14",
       "verdict": "matches_live"
@@ -1168,7 +1168,7 @@
       "doc_kind": "derived_summary",
       "document": "SECTION_PAGE_RECONCILIATION_v1.md",
       "instrument": "section_page_reconciliation_gate.py",
-      "line": 83,
+      "line": 84,
       "live": "23/23",
       "quoted": "22/22",
       "verdict": "possible_history"
@@ -1178,7 +1178,7 @@
       "doc_kind": "derived_summary",
       "document": "SECTION_PAGE_RECONCILIATION_v1.md",
       "instrument": "status_label_table_gate.py",
-      "line": 70,
+      "line": 71,
       "live": "6/6",
       "quoted": "6/6",
       "verdict": "matches_live"
@@ -1188,7 +1188,7 @@
       "doc_kind": "derived_summary",
       "document": "SECTION_PAGE_RECONCILIATION_v1.md",
       "instrument": "suite_score_registry_gate.py",
-      "line": 84,
+      "line": 85,
       "live": null,
       "quoted": "20/20",
       "verdict": "self_reference"
@@ -1198,7 +1198,7 @@
       "doc_kind": "derived_summary",
       "document": "SECTION_PAGE_RECONCILIATION_v1.md",
       "instrument": "unmeasured_instruments_gate.py",
-      "line": 80,
+      "line": 81,
       "live": "25/25",
       "quoted": "25/25",
       "verdict": "matches_live"
@@ -1208,7 +1208,7 @@
       "doc_kind": "derived_summary",
       "document": "SECTION_PAGE_RECONCILIATION_v1.md",
       "instrument": "wiki_sync_map_gate.py",
-      "line": 81,
+      "line": 82,
       "live": "16/16",
       "quoted": "16/16",
       "verdict": "matches_live"
