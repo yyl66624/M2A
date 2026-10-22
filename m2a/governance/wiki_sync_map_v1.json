@@ -474,8 +474,8 @@
     },
     {
       "draft": "M2A-治理-套件分数引用对账v1.md",
-      "draft_chars": 3801,
-      "draft_sha256": "48d5b247f11fa745ead46c7db03a46bf6c27a35ca27fe11de51de59545e0b1e8",
+      "draft_chars": 4029,
+      "draft_sha256": "0227a6a520b0fd105f30ccf4c4e3782169bff3e9978f20155e1ecf323de22ccd",
       "markers": [
         "X-86",
         "X-87",
@@ -493,7 +493,7 @@
       "markers_ok_recorded": true,
       "node_token": "QuO5w9vGFiikp1kSKbgcrh1jnnb",
       "obj_token": "JOWndS5SXouZTexE3SFcXoB1nmf",
-      "read_back_chars_recorded": 5551,
+      "read_back_chars_recorded": 5813,
       "sections": [
         48
       ],
@@ -1043,15 +1043,17 @@
     {
       "section": 61,
       "title": "Phase XXIII（2026-10-22 追加）：AO 测度把发放与静默分开——出口 AO-SEPARATES，Q1 判为 SUPPOR",
-      "xids_named": []
+      "xids_named": [
+        125
+      ]
     }
   ],
   "stale_claims": [],
   "tools": [
     {
-      "bytes": 109130,
+      "bytes": 113052,
       "file": "check_step_draft_numbers.py",
-      "sha256": "160795317fbe77e8e5417871a74f6b6deaddee7d7cd0331e249d6a7cfc389de9"
+      "sha256": "f5dc89c9814cc2053e57dd7ca3e8e52a062867ebef7b6eb976be31093c420047"
     },
     {
       "bytes": 11489,
@@ -1061,7 +1063,7 @@
     {
       "bytes": 14587,
       "file": "feishu_wiki_nodes.json",
-      "sha256": "e402ce0e6bf02e2bcd861c3c2cf135944a4bc068dd74520b7187b3e234916b98"
+      "sha256": "f98d582eb03e0f3cbba72c25c7b4894136b91cbc1b6ea203c81a76560e56e259"
     }
   ],
   "unclaimed_sections": [],

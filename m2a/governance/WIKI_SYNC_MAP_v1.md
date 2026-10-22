@@ -49,7 +49,7 @@
 | 58 | 文献轮 L-03：R13-N15 的全文把 K7 的「离散相 | `NmzPwc9xhizOwVkhDwucQYLC` M2A 文献轮 L-03｜R13-N15 全 | X-121, X-122, X-123, X-124 |
 | 59 | Phase XXIV（2026-10-21 追加）：给 L3 | `NwGZwI3ZUigRXrkKkFBcMMPc` M2A Phase XXIV｜L2 权重衰减 | - |
 | 60 | Phase XXIII 设计与门控：AO 测度把「发放」与「 | `XKQvws1sNiViZvkSAOacELKE` M2A Phase XXIII｜AO 测度把 | - |
-| 61 | Phase XXIII（2026-10-22 追加）：AO  | `Lw7TwSfediyhnuk0xYHc8e60` M2A Phase XXIII｜AO 测度分 | - |
+| 61 | Phase XXIII（2026-10-22 追加）：AO  | `Lw7TwSfediyhnuk0xYHc8e60` M2A Phase XXIII｜AO 测度分 | X-125 |
 
 ## 每一页的草稿指纹
 
@@ -67,7 +67,7 @@
 | M2A 治理｜未测量仪器的治理层检查 v1：10 台 | M2A-治理-未测量仪器的治理层检查v1.md | `22e26f364bad` | 6286 | True |
 | M2A 治理｜wiki 同步表 v1：让「每一步写入 | M2A-治理-wiki同步表v1.md | `851c68b700ae` | 3774 | True |
 | M2A 治理｜节↔页分数对账 v1：页面说的话第一次 | M2A-治理-节页分数对账v1.md | `06828a5dc15f` | 2833 | True |
-| M2A 治理｜套件分数引用对账 v1：仓库自己的散文 | M2A-治理-套件分数引用对账v1.md | `48d5b247f11f` | 5551 | True |
+| M2A 治理｜套件分数引用对账 v1：仓库自己的散文 | M2A-治理-套件分数引用对账v1.md | `0227a6a520b0` | 5813 | True |
 | M2A 治理｜判定标签↔工件对账 v1：散文给出的判 | M2A-治理-判定标签对账v1.md | `e4e5e911e36f` | 2008 | True |
 | M2A 治理｜判据数值↔轮次记录对账 v1：散文写下 | M2A-治理-判据数值对账v1.md | `e6762ccda772` | 4000 | True |
 | M2A 文献轮 L-02｜把「族 + 符号」的计入拿 | M2A-文献轮L02-主张层重数与竞争理论全文.md | `4d2ddc5bc02b` | 4087 | True |
@@ -86,9 +86,9 @@
 
 | 工具 | sha256（前 12） | 字节 |
 | --- | --- | --- |
-| `check_step_draft_numbers.py` | `160795317fbe` | 109130 |
+| `check_step_draft_numbers.py` | `f5dc89c9814c` | 113052 |
 | `publish_wiki_steps.py` | `0b2fbf317e2e` | 11489 |
-| `feishu_wiki_nodes.json` | `e402ce0e6bf0` | 14587 |
+| `feishu_wiki_nodes.json` | `f98d582eb03e` | 14587 |
 
 **这张表能看见什么、看不见什么**：它在四件事上立刻变红——新步骤节没有对应页面；
 页面草稿在发布后被改写（sha 变了）；守门脚本被改写；首批页面数目偏离钉住的 12。

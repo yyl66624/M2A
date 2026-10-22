@@ -1485,7 +1485,7 @@
     {
       "pinner": "governance/section_page_reconciliation_v1.json",
       "key": "page_sha256",
-      "hash": "4df7811dc5684f1f4f0d723b0c4860c9585a60fee88bbd70a8556b93294ccbdf",
+      "hash": "56a0d48cbd5a2c443202140a45ff1f4bf414bc9816e0b981b01c1f4655bb8c21",
       "pair": [],
       "json_path": "pages/13",
       "pair_count": 0,
@@ -2597,7 +2597,7 @@
     {
       "pinner": "governance/wiki_sync_map_v1.json",
       "key": "draft_sha256",
-      "hash": "48d5b247f11fa745ead46c7db03a46bf6c27a35ca27fe11de51de59545e0b1e8",
+      "hash": "0227a6a520b0fd105f30ccf4c4e3782169bff3e9978f20155e1ecf323de22ccd",
       "pair": [
         [
           "draft",
@@ -2849,7 +2849,7 @@
     {
       "pinner": "governance/wiki_sync_map_v1.json",
       "key": "sha256",
-      "hash": "160795317fbe77e8e5417871a74f6b6deaddee7d7cd0331e249d6a7cfc389de9",
+      "hash": "f5dc89c9814cc2053e57dd7ca3e8e52a062867ebef7b6eb976be31093c420047",
       "pair": [
         [
           "file",
@@ -2885,7 +2885,7 @@
     {
       "pinner": "governance/wiki_sync_map_v1.json",
       "key": "sha256",
-      "hash": "e402ce0e6bf02e2bcd861c3c2cf135944a4bc068dd74520b7187b3e234916b98",
+      "hash": "f98d582eb03e0f3cbba72c25c7b4894136b91cbc1b6ea203c81a76560e56e259",
       "pair": [
         [
           "file",

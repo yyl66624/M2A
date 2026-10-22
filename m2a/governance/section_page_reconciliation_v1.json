@@ -688,13 +688,13 @@
       "multi_value": {},
       "node_token": "QuO5w9vGFiikp1kSKbgcrh1jnnb",
       "not_on_page": [],
-      "page_chars": 5551,
+      "page_chars": 5813,
       "page_claims": {
         "suite_score_registry_gate.py": [
           "20/20"
         ]
       },
-      "page_sha256": "4df7811dc5684f1f4f0d723b0c4860c9585a60fee88bbd70a8556b93294ccbdf",
+      "page_sha256": "56a0d48cbd5a2c443202140a45ff1f4bf414bc9816e0b981b01c1f4655bb8c21",
       "prose_slashes_ignored": {},
       "section_claims": {},
       "sections": [
