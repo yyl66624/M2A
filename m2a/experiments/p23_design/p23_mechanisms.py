@@ -5,8 +5,12 @@ G = 1 - I - Z and the multinomial estimator. No scientific criterion is evaluate
 """
 from __future__ import annotations
 
+import pathlib
+import sys
+
 import numpy as np
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 import ao_opp as ao
 
 THETAS = (0.1, 0.25, 0.5, 0.75, 0.9)
