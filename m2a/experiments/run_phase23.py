@@ -21,12 +21,11 @@ sys.path.insert(0, str(HERE))
 import ao_opp as ao
 import p23_mechanisms as P
 
-REPO = HERE.parents[2]
+REPO = HERE.parents[1]
 PREREG = HERE / "PHASE23_PREREGISTRATION.md"
-PREREG_REL = "m2a/experiments/p23_design/PHASE23_PREREGISTRATION.md"
-CODE_RELS = [PREREG_REL, "m2a/experiments/p23_design/p23_mechanisms.py",
-             "m2a/experiments/p23_design/p23_gate.py",
-             "m2a/experiments/p23_design/run_phase23.py"]
+PREREG_REL = "m2a/experiments/PHASE23_PREREGISTRATION.md"
+CODE_RELS = [PREREG_REL, "m2a/experiments/p23_mechanisms.py",
+             "m2a/experiments/p23_gate.py", "m2a/experiments/run_phase23.py"]
 OUT_JSON = HERE / "phase23_results.json"
 OUT_MD = HERE / "PHASE23_RESULTS.md"
 T975_9 = 2.2621571627409915

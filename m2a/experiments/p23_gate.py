@@ -21,7 +21,7 @@ sys.path.insert(0, str(HERE))
 import ao_opp as ao
 import p23_mechanisms as P
 
-M = HERE.parent.parent
+M = HERE.parent
 PREREG = HERE / "PHASE23_PREREGISTRATION.md"
 CHECKS = []
 
@@ -83,7 +83,7 @@ def main() -> int:
     sha = hashlib.sha256(PREREG.read_bytes()).hexdigest()
 
     # G01 the audited AO preflight
-    pf = subprocess.run([sys.executable, str(HERE.parent / "ao_preflight_gate.py")], cwd=HERE.parent,
+    pf = subprocess.run([sys.executable, str(HERE / "ao_preflight_gate.py")], cwd=HERE,
                         capture_output=True, text=True)
     tail = pf.stdout.strip().splitlines()[-1] if pf.stdout.strip() else ""
     check("G01", "the AO P1-P6 preflight still exits 0 at its printed 8/8",
