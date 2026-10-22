@@ -2646,3 +2646,31 @@ G(o) = 1 − I(o) − Z(o) = 非最大行动上的质量
 **收尾审计**（第 60 步）：`SUMMARY  suites 43/43 green, checks 508, bindings 25/25`
 
 **修入（第 60 步同日，只追加）**：Phase XXIII 的 runner `experiments/p23_design/run_phase23.py` 已写好并做过管线冒烟（只验管线，不产生读数）；它先跑门控（全过），正式模式要求 `--approved-by-owner`。正式运行仍未获 owner 批准。
+
+### 61 Phase XXIII（2026-10-22 追加）：AO 测度把发放与静默分开——出口 AO-SEPARATES，Q1 判为 SUPPORTED
+
+状态标签：**Q1 判为 `SUPPORTED`**（R17 五值；出口 `AO-SEPARATES`，对回 `phase23_results.json` 的 `label_r17`）。`P11-O1` / `P12-O3` 按本轮结果关闭：已落实：AO 测度把发放 `I(o)=max_a μ(a)` 与静默 `Z(o)=μ(NONE)` 定义为同一测度上的两个泛函，四个固定模型上给出非退化分离，旧补集口径恒为 0；实际主体上的应用仍须新授权。
+
+预注册 `PHASE23_PREREGISTRATION.md`（sha256 `2fec0e677a68348b4d11e98558af590acf84fd634977e516cc163e4c83559c7d`）；登记提交 `509efbd1079210a3db897ec726f40cc4aeefea1f`；门控 `p23_gate.py` **15/15**；结果 `phase23_results.json` / `PHASE23_RESULTS.md`。设计页（第 60 步）与结果页（第 61 步）分开，设计阶段没有读数。
+
+实验：4 个固定模型 × 10 个种子（5000–5009）× 6 000 000 次多项抽样，θ*=0.1（固定网格上的 argmax）。精确值、三网格容差与采样：
+
+| 模型 | 精确 G | 网格容差 | 采样均值 | 95% CI |
+| --- | --- | --- | --- | --- |
+| `two_windows` | 0.259165 | 4.136e-04 | 0.259208 | [0.259076, 0.259340] |
+| `adjacent` | 0.349254 | 8.785e-04 | 0.349298 | [0.349149, 0.349448] |
+| `gate_upper` | -3.053e-16 | — | -0.000000 | — |
+| `gate_upper_half` | -2.220e-16 | — | -0.000000 | — |
+
+判据：**C1/C2** 精确分离与三网格稳定过；**C3** 采样均值与精确值的差为 `4.23e-05` / `4.41e-05`，均在容差内且 CI 不含 0；**C4** 旧补集口径的 `G_old` 均值为 0，符合代数恒等。出口 **`AO-SEPARATES`** ⇒ 五值 **`SUPPORTED`**。
+
+**边界**：只覆盖四个固定模型、θ*=0.1、`G` 的定义与这组种子；不声明真实主体、真实时间窗或其它层级系统；全为 `SIMULATION_RESULT`。`P11-O1`/`P12-O3` 的关闭只表示测度定义在合成模型上可分，实际主体上的应用仍属新授权范围。
+
+**复现**。
+
+```bash
+cd m2a/experiments
+python3 p23_gate.py          # 15/15
+python3 run_phase23.py --approved-by-owner
+```
+**收尾审计**（第 61 步）：`__P23RUN_SUMMARY__`

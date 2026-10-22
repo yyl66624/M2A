@@ -181,7 +181,7 @@ def main() -> int:
               "## 边界", "",
               "只覆盖四个固定模型、θ*=0.1、G 的定义与这组种子；不声明真实主体或其它层级系统；"
               "全为 `SIMULATION_RESULT`。", "",
-              "## 复现", "", "```bash", "cd m2a/experiments/p23_design",
+              "## 复现", "", "```bash", "cd m2a/experiments",
               "python3 p23_gate.py          # 15/15",
               "python3 run_phase23.py --approved-by-owner", "```", ""]
     OUT_MD.write_text("\n".join(lines), encoding="utf-8")

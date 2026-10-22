@@ -51,14 +51,14 @@ EXPECT = {
     "P10-O1": ("CLOSED", "close", "M2A_FINAL_REPORT.md", "P10-O1 与 P10-O2 关闭", None),
     "P10-O2": ("CLOSED", "close", "M2A_FINAL_REPORT.md", "P10-O1 与 P10-O2 关闭", None),
     "P10-O3": ("CLOSED", "close", "M2A_FINAL_REPORT.md", "已落实为规则", None),
-    "P11-O1": ("OPEN", "block", "M2A_FINAL_REPORT.md", "测度口径（须先重定义判据", None),
+    "P11-O1": ("CLOSED", "close", "experiments/PHASE23_RESULTS.md", "已落实：AO 测度", None),
     # Phase XIII failed E2/E4 on purpose (a tolerance not derived in advance), so these two were
     # handed to P13-O1 / P13-O2 rather than closed; the successors closed in XIV and XV.
     "P11-O2": ("SUCCEEDED", "hand", "M2A_FINAL_REPORT.md", "（→ P13-O1）、P12-O1", "P13-O1"),
     "P11-O3": ("CLOSED", "close", "experiments/PHASE13_RESULTS.md", "E3 关闭", None),
     "P12-O1": ("SUCCEEDED", "hand", "experiments/PHASE15_RESULTS.md", "P13-O2 前身", "P13-O2"),
     "P12-O2": ("CLOSED", "close", "experiments/PHASE13_RESULTS.md", "E1 关闭", None),
-    "P12-O3": ("OPEN", "block", "M2A_FINAL_REPORT.md", "测度口径（须先重定义判据", None),
+    "P12-O3": ("CLOSED", "close", "experiments/PHASE23_RESULTS.md", "已落实：AO 测度", None),
     "P13-O1": ("CLOSED", "close", "experiments/PHASE14_RESULTS.md", "这关闭了什么", None),
     "P13-O2": ("CLOSED", "close", "M2A_FINAL_REPORT.md", "多少信息", None),
     "P14-O1": ("CLOSED", "close", "experiments/PHASE18_RESULTS.md", "注册的关闭条件正是 E1", None),

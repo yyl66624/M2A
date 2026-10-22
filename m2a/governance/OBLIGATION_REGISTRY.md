@@ -29,12 +29,12 @@
 | P10-O1 | **CLOSED** | 16 | `M2A_FINAL_REPORT.md:613` | 关闭类措辞 | — |
 | P10-O2 | **CLOSED** | 9 | `M2A_FINAL_REPORT.md:613` | 关闭类措辞 | — |
 | P10-O3 | **CLOSED** | 5 | `M2A_FINAL_REPORT.md:607` | 关闭类措辞 | — |
-| P11-O1 | **OPEN** | 28 | `M2A_FINAL_REPORT.md:855` | 开放类措辞 | — |
+| P11-O1 | **CLOSED** | 32 | `experiments/PHASE23_RESULTS.md:34` | 关闭类措辞 | — |
 | P11-O2 | **SUCCEEDED** | 16 | `M2A_FINAL_REPORT.md:694` | 转手类措辞 | P13-O1 |
 | P11-O3 | **CLOSED** | 13 | `experiments/PHASE13_RESULTS.md:28` | 关闭类措辞 | — |
 | P12-O1 | **SUCCEEDED** | 16 | `experiments/PHASE15_RESULTS.md:33` | 转手类措辞 | P13-O2 |
 | P12-O2 | **CLOSED** | 11 | `experiments/PHASE13_RESULTS.md:10` | 关闭类措辞 | — |
-| P12-O3 | **OPEN** | 23 | `M2A_FINAL_REPORT.md:855` | 开放类措辞 | — |
+| P12-O3 | **CLOSED** | 27 | `experiments/PHASE23_RESULTS.md:34` | 关闭类措辞 | — |
 | P13-O1 | **CLOSED** | 24 | `experiments/PHASE14_RESULTS.md:23` | 关闭类措辞 | — |
 | P13-O2 | **CLOSED** | 31 | `M2A_FINAL_REPORT.md:738` | 关闭类措辞 | — |
 | P14-O1 | **CLOSED** | 47 | `experiments/PHASE18_RESULTS.md:19` | 关闭类措辞 | — |
@@ -73,13 +73,11 @@
 
 ---
 
-**计数**：CLOSED 32 / SUCCEEDED 2 / OPEN 25 / UNCLASSIFIED 0，共 59 条标签。命名空间分布：实验轮 `P<n>-O<m>` 34 条、文献轮 `L01-O<m>` 5 条、开放问题 `O-<nn>` 17 条。
+**计数**：CLOSED 34 / SUCCEEDED 2 / OPEN 23 / UNCLASSIFIED 0，共 59 条标签。命名空间分布：实验轮 `P<n>-O<m>` 34 条、文献轮 `L01-O<m>` 5 条、开放问题 `O-<nn>` 17 条。
 
 ## 仍开放（每条都必须带登记原因；缺原因即构建失败）
 
 - **P5-O3**：三个以上独立系统的跨域复验——真实数据未授权；owner 2026-10-18 第 3 条裁定「继续停留在设计阶段」。
-- **P11-O1**：测度口径：静默事件与发放事件互为补集 ⇒ 双侧窗口塌缩。**已裁定**采用 Action Opportunity 统一分析单位（owner 第 1 条），协议设计稿见 `report/AO_MEASUREMENT_PROTOCOL_v1.md`；但正式实验未被自动批准，判据也未写进预注册 ⇒ 本条仍开放。
-- **P12-O3**：发放事件一侧的测度口径，同上：协议 §2 给出 `I(o)` 候选形式，预注册与读数尚未做 ⇒ 仍开放。
 - **P15-O1**：`e₁` 只给单侧界。**已裁定**保留单侧界（owner 第 2、7 条），不得改目标函数制造双侧结论 ⇒ 本条作为「双侧估计」的诉求已放弃，但作为「双侧可识别」的证据缺口仍在册。**注意**：owner 第 2 条要求的 `PARTIALLY_IDENTIFIED` 状态字目前只写在治理文档与累计报告里，`experiments/PHASE15_RESULTS.md` 与 `phase15_results.json` 均为 0 次命中，口径表 v2 的扫描已证实（X-74 / `M2A_FINAL_REPORT.md` §37.5）⇒ 「按 `PARTIALLY_IDENTIFIED` 记录」这一半**尚未落在承载判定的工件里**；旧轮文档不回写（R6、第 8 条），补法是本条的下一轮在新结果 JSON 里直接带该字段。
 
 - **L01-O1**：注册层 R13/R14 标注与全文读数的分歧：升为全文级须由一次带**新判据**的轮次决定，不在本轮权限内。`registry.json` 仍 0 条 FULLTEXT（第 8 条禁止回写）。
