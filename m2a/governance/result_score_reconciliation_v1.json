@@ -1,14 +1,14 @@
 {
  "schema": "m2a.result-score-reconciliation.v1",
  "counts": {
-  "docs": 27,
-  "aligned": 23,
+  "docs": 28,
+  "aligned": 24,
   "static_gap_registered": 4,
   "bad": 0,
   "no_claim": 0,
-  "checks_printed": 205,
-  "check_sites_static": 169,
-  "static_sites_in_population": 161
+  "checks_printed": 220,
+  "check_sites_static": 184,
+  "static_sites_in_population": 176
  },
  "rows": [
   {
@@ -230,6 +230,23 @@
    ],
    "static_sites": 7,
    "gate_sha256": "7ccef873b7ea6609203c444156142f2d4db5f31ad36bff221c0671703dc40671",
+   "verdict": "aligned"
+  },
+  {
+   "doc": "experiments/PHASE24_RESULTS.md",
+   "gate": "experiments/p24_gate.py",
+   "named_gate": null,
+   "claim_line": 3,
+   "claim": [
+    15,
+    15
+   ],
+   "live": [
+    15,
+    15
+   ],
+   "static_sites": 15,
+   "gate_sha256": "96211720a5acad59711f2f0a4af5524971f7c7f9fe72b4b25d80aef82d22eec7",
    "verdict": "aligned"
   },
   {

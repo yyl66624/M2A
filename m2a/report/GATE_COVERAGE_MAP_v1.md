@@ -9,8 +9,8 @@
 本表用**语法**回答「哪个量根本没有进入任何判定」。两者不可互相替代：
 本表能枚举没人想到去注入的缺口，注入能发现本表看不见的口径问题（见 §4）。
 
-覆盖人口：28 份轮次门控（`experiments/*_gate.py` + `literature/*_gate.py`），
-169 条 `check()`，81 个从本地机制模块导入的可调用量。
+覆盖人口：29 份轮次门控（`experiments/*_gate.py` + `literature/*_gate.py`），
+184 条 `check()`，84 个从本地机制模块导入的可调用量。
 
 ## 2 缺口清单（每条都必须带登记理由；新增而未登记者构建失败）
 
@@ -27,7 +27,7 @@
 | `experiments/p8_gate.py` | `p8_smooth.rho_exact` | 被执行，但只被「与自己比较」的检查执行 | X-79 的第二例：唯一读取它的 J5 写的是 `rho_exact(0.6) == rho_exact(0.6)`（自我比较，无可证伪输入）；注入 1e-1（154.664→170.130）后 6 档全绿。 |
 | `experiments/phase2_gate.py` | `m2a_mechanisms.e1_rates` | 被执行，但只被「与自己比较」的检查执行 | 本表新查出（自我比较类）：`e1_rates("and", 2000, seed=3)` 只出现在 `C1_determinism`（`r1 == r2`）⇒ Phase II 的机制生成器在门控层只被「同种子给同一个数」守护；C2/C3 盯的是闭式 `p_action`，不消费 `e1_rates`。这是全仓库最早的一条无可证伪输入检查。 |
 
-**合计**：`never_reached` 7 条、`only_self_comparison` 3 条、`detail_only` 0 条。
+**合计**：`never_reached` 7 条、`only_self_comparison` 3 条、`detail_only` 3 条。
 
 ## 3 自我比较型检查的普查（这些检查本身没有错，错在被当作仪器）
 

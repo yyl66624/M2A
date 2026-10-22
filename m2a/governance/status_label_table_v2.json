@@ -371,6 +371,26 @@
    "layer": "artifact-field"
   },
   {
+   "artifact": "experiments/phase24_results.json",
+   "field": "exit",
+   "raw": "REGULARIZATION-DOES-NOT-REPAIR",
+   "label": "SUPPORTED",
+   "why": "Phase XXIV E1: L2 weight decay did not repair the old-law deviation",
+   "via": "REGULARIZATION-DOES-NOT-REPAIR",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase24_results.json",
+   "field": "label_r17",
+   "raw": "SUPPORTED",
+   "label": "SUPPORTED",
+   "why": "02/05-era arm verdict: the registered criterion was met",
+   "via": "SUPPORTED",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
    "artifact": "experiments/phase2_results.json",
    "field": "verdicts[E1]",
    "raw": "SUPPORTED",
@@ -834,6 +854,14 @@
    "layer": "document-only"
   },
   {
+   "artifact": "experiments/PHASE24_RESULTS.md",
+   "field": "prose",
+   "raw": "SUPPORTED",
+   "label": "SUPPORTED",
+   "why": "02/05-era arm verdict: the registered criterion was met",
+   "layer": "document-only"
+  },
+  {
    "artifact": "experiments/PHASE2_RESULTS.md",
    "field": "prose",
    "raw": "SUPPORTED",
@@ -947,7 +975,7 @@
   }
  ],
  "counts": {
-  "SUPPORTED": 45,
+  "SUPPORTED": 48,
   "CONTRADICTED": 22,
   "NULL": 1,
   "INDETERMINATE": 14,
@@ -956,7 +984,7 @@
   "ZERO_TEST_REANALYSIS": 2,
   "COUNT_NOT_STATUS": 6,
   "_derived_rows": 2,
-  "_rows_total": 94
+  "_rows_total": 97
  },
  "rules": {
   "SUPPORTED": {
@@ -990,6 +1018,10 @@
   "SEPARABLE": {
    "label": "SUPPORTED",
    "why": "Phase XXI E1 UNIQUE-AND-SEPARABLE"
+  },
+  "REGULARIZATION-DOES-NOT-REPAIR": {
+   "label": "SUPPORTED",
+   "why": "Phase XXIV E1: L2 weight decay did not repair the old-law deviation"
   },
   "REFUTED": {
    "label": "CONTRADICTED",
@@ -1062,8 +1094,8 @@
  },
  "gap": {
   "SUPPORTED": {
-   "artifact_fields": 35,
-   "prose_only": 10
+   "artifact_fields": 37,
+   "prose_only": 11
   },
   "CONTRADICTED": {
    "artifact_fields": 14,
@@ -1082,7 +1114,7 @@
    "prose_only": 2
   }
  },
- "artifact_field_rows": 72,
- "prose_rows": 22,
+ "artifact_field_rows": 74,
+ "prose_rows": 23,
  "reading": "one row per claim-bearing field, not per round; MANUAL_REVIEW rows are listed with the reason they cannot be translated mechanically"
 }

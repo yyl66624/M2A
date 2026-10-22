@@ -196,6 +196,13 @@
       "node_token": "NmzPwc9xhizOwVkhDwucQYLCnle",
       "section": 58,
       "title": "M2A 文献轮 L-03｜R13-N15 全文取回与全文级编码：K5/K10 确认、K7 改写、L01-O5 关闭"
+    },
+    {
+      "draft": "M2A-PhaseXXIV-正则化与L3中段偏差.md",
+      "in_ledger": true,
+      "node_token": "NwGZwI3ZUigRXrkKkFBcMMPcnuo",
+      "section": 59,
+      "title": "M2A Phase XXIV｜L2 权重衰减不修复 L3 中段偏差：按访问加权算子移动并把旧律偏差推大"
     }
   ],
   "counts": {
@@ -204,11 +211,11 @@
     "first_batch_off_pin": 0,
     "first_batch_pages": 12,
     "first_batch_pages_claimed_by_a_section": 1,
-    "governance_pages": 23,
+    "governance_pages": 24,
     "governance_pages_unclaimed": 0,
-    "ledger_pages_with_node": 35,
-    "report_sections_in_population": 28,
-    "sections_claimed": 28,
+    "ledger_pages_with_node": 36,
+    "report_sections_in_population": 29,
+    "sections_claimed": 29,
     "sections_unclaimed": 0
   },
   "dangling_claims": [],
@@ -453,8 +460,8 @@
     },
     {
       "draft": "M2A-治理-套件分数引用对账v1.md",
-      "draft_chars": 3576,
-      "draft_sha256": "763e6523f79e247945e6e2a45adbe7f4d7ac99aca27a5c5c31fdecfeb9013490",
+      "draft_chars": 3801,
+      "draft_sha256": "48d5b247f11fa745ead46c7db03a46bf6c27a35ca27fe11de51de59545e0b1e8",
       "markers": [
         "X-86",
         "X-87",
@@ -472,7 +479,7 @@
       "markers_ok_recorded": true,
       "node_token": "QuO5w9vGFiikp1kSKbgcrh1jnnb",
       "obj_token": "JOWndS5SXouZTexE3SFcXoB1nmf",
-      "read_back_chars_recorded": 5292,
+      "read_back_chars_recorded": 5551,
       "sections": [
         48
       ],
@@ -679,6 +686,26 @@
         58
       ],
       "title": "M2A 文献轮 L-03｜R13-N15 全文取回与全文级编码：K5/K10 确认、K7 改写、L01-O5 关闭"
+    },
+    {
+      "draft": "M2A-PhaseXXIV-正则化与L3中段偏差.md",
+      "draft_chars": 1021,
+      "draft_sha256": "9b0d2c903b1f6ec9f48f42fef3df5d4c216c433454438d64a5055d289e173e10",
+      "markers": [
+        "REGULARIZATION-DOES-NOT-REPAIR",
+        "SUPPORTED",
+        "0.033665",
+        "0.054564",
+        "L2 权重衰减"
+      ],
+      "markers_ok_recorded": true,
+      "node_token": "NwGZwI3ZUigRXrkKkFBcMMPcnuo",
+      "obj_token": "ZoUudEYZAoBNifxheQbcdIr0ndg",
+      "read_back_chars_recorded": 2513,
+      "sections": [
+        59
+      ],
+      "title": "M2A Phase XXIV｜L2 权重衰减不修复 L3 中段偏差：按访问加权算子移动并把旧律偏差推大"
     }
   ],
   "schema": "m2a.wiki_sync_map.v1",
@@ -948,24 +975,29 @@
         123,
         124
       ]
+    },
+    {
+      "section": 59,
+      "title": "Phase XXIV（2026-10-21 追加）：给 L3 的表格 Q-learning 加 L2 权重衰减——正则化不修复中段偏差，它按",
+      "xids_named": []
     }
   ],
   "stale_claims": [],
   "tools": [
     {
-      "bytes": 97002,
+      "bytes": 104702,
       "file": "check_step_draft_numbers.py",
-      "sha256": "29adca1128594163e9b7eeb6cf36ab73b51535d85045e74ea780de22097436d2"
+      "sha256": "ad555117b32a0caa2070c8f15de5cb8c645004cadf59edc1b1858650bf7212de"
     },
     {
-      "bytes": 10790,
+      "bytes": 11060,
       "file": "publish_wiki_steps.py",
-      "sha256": "ace138e12b255869682f5d0f385cb12c0056a3f12c586214c4dcdb40630ca71a"
+      "sha256": "9bbdfd9e364d06acf7a44ff7e72b9886e2a0b115220cbe833ee937475ade4258"
     },
     {
-      "bytes": 13555,
+      "bytes": 13910,
       "file": "feishu_wiki_nodes.json",
-      "sha256": "c42846e9a4f8c36dbbb8d60bf378a281d29bb54b269d355f3f6a350c6476628f"
+      "sha256": "46e43c1a35a29b20742f0318867619d43f0a47afb5befe2340a7c17f286f268d"
     }
   ],
   "unclaimed_sections": [],

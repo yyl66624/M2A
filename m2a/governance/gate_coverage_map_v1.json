@@ -2,12 +2,12 @@
  "schema": "m2a.gate-coverage-map.v1",
  "derived_from": "AST of every experiments/*_gate.py and literature/*_gate.py",
  "counts": {
-  "gates": 28,
-  "checks": 169,
-  "imported_instruments": 81,
+  "gates": 29,
+  "checks": 184,
+  "imported_instruments": 84,
   "never_reached": 7,
   "only_self_comparison": 3,
-  "detail_only": 0,
+  "detail_only": 3,
   "imported_data_never_read": 6,
   "self_comparison_checks": 18
  },
@@ -421,6 +421,47 @@
    "only_self_comparison": [],
    "only_self_comparison_pairs": [],
    "detail_only": []
+  },
+  {
+   "gate": "experiments/p24_gate.py",
+   "file": "p24_gate.py",
+   "imported_instruments": [
+    "cue_sensitivity",
+    "dp_sensitivity",
+    "train_cue_agent"
+   ],
+   "alias_modules": [
+    "P"
+   ],
+   "imported_data": [],
+   "imported_data_never_read": [],
+   "checks": [
+    "G01",
+    "G02",
+    "G03",
+    "G04",
+    "G05",
+    "G06",
+    "G07",
+    "G08",
+    "G09",
+    "G10",
+    "G11",
+    "G12",
+    "G13",
+    "SUITE_accounting",
+    "SUITE_tally"
+   ],
+   "self_comparison_checks": [],
+   "never_reached": [],
+   "never_reached_pairs": [],
+   "only_self_comparison": [],
+   "only_self_comparison_pairs": [],
+   "detail_only": [
+    "cue_sensitivity",
+    "dp_sensitivity",
+    "train_cue_agent"
+   ]
   },
   {
    "gate": "experiments/p3_gate.py",
