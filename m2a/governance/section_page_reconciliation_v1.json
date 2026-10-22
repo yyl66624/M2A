@@ -9,8 +9,8 @@
     }
   ],
   "counts": {
-    "claims_rows_in_sync_map": 30,
-    "draft_page_aligned": 23,
+    "claims_rows_in_sync_map": 31,
+    "draft_page_aligned": 24,
     "draft_page_grew": 2,
     "draft_page_hard": 0,
     "errata_not_effective": 0,
@@ -18,27 +18,28 @@
     "erratum_rows_effective": 1,
     "hard_findings": 0,
     "instrument_claims_pages": 16,
-    "instrument_claims_sections": 16,
-    "instruments_attested_in_repo": 24,
+    "instrument_claims_sections": 17,
+    "instruments_attested_in_repo": 25,
     "instruments_missing_from_pages": [
       "frozen_input_map_gate.py",
+      "p23_gate.py",
       "p24_gate.py"
     ],
-    "instruments_named_in_sections": 13,
+    "instruments_named_in_sections": 14,
     "instruments_named_on_pages": 13,
     "instruments_only_on_pages": [
       "l01_gate.py",
       "suite_score_registry_gate.py"
     ],
     "page_superseded": 1,
-    "pages_reconciled": 26,
+    "pages_reconciled": 27,
     "pages_with_self_referential_claims": 1,
     "pairs_aligned": 21,
-    "pairs_compressed": 3,
+    "pairs_compressed": 4,
     "pairs_no_capture": 0,
     "prose_slashes_ignored": 0,
     "score_unattested_in_repo": 0,
-    "sections_covered": 30,
+    "sections_covered": 31,
     "self_referential_values": 1,
     "values_attested_only_in_registration": 1,
     "values_loosely_attested_only": 0
@@ -61,6 +62,7 @@
     "gate_discrimination_gate.py": 47,
     "obligation_registry_gate.py": 45,
     "p10_gate.py": 44,
+    "p23_gate.py": 61,
     "p24_gate.py": 59,
     "result_score_map_gate.py": 44,
     "runner_enforcement_map_gate.py": 43,
@@ -275,7 +277,7 @@
         "ao_preflight_gate.py": {
           "8/8": [
             "M2A_FINAL_REPORT.md",
-            "experiments/p23_design/PHASE23_PREREGISTRATION.md"
+            "experiments/PHASE23_PREREGISTRATION.md"
           ]
         }
       },
@@ -1025,13 +1027,44 @@
       "unattested": {},
       "unmeasurable": {},
       "verdict": "compressed"
+    },
+    {
+      "attestation": {},
+      "draft_vs_page": {
+        "disagree": {},
+        "verdict": "aligned"
+      },
+      "erratum": {},
+      "loosely_attested": {},
+      "multi_value": {},
+      "node_token": "Lw7TwSfediyhnuk0xYHc8e60nFe",
+      "not_on_page": [
+        "p23_gate.py"
+      ],
+      "page_chars": 1465,
+      "page_claims": {},
+      "page_sha256": "abc71aee3cd711bd49be9816d48099635c8309baa3b237c5c0ec44e50ed6da11",
+      "prose_slashes_ignored": {},
+      "section_claims": {
+        "p23_gate.py": [
+          "15/15"
+        ]
+      },
+      "sections": [
+        61
+      ],
+      "superseded": {},
+      "title": "M2A Phase XXIII｜AO 测度分开发放与静默：出口 AO-SEPARATES，五值 SUPPORTED",
+      "unattested": {},
+      "unmeasurable": {},
+      "verdict": "compressed"
     }
   ],
   "repo_attestation": {
     "ao_preflight_gate.py": {
       "8/8": [
         "M2A_FINAL_REPORT.md",
-        "experiments/p23_design/PHASE23_PREREGISTRATION.md"
+        "experiments/PHASE23_PREREGISTRATION.md"
       ]
     },
     "frozen_input_map_gate.py": {
@@ -1077,6 +1110,12 @@
       "6/6": [
         "M2A_FINAL_REPORT.md",
         "experiments/PHASE10_RESULTS.md"
+      ]
+    },
+    "p23_gate.py": {
+      "15/15": [
+        "M2A_FINAL_REPORT.md",
+        "experiments/PHASE23_RESULTS.md"
       ]
     },
     "p24_gate.py": {
@@ -1186,6 +1225,9 @@
     "p20_gate.py": [
       "7/7"
     ],
+    "p23_gate.py": [
+      "15/15"
+    ],
     "p24_gate.py": [
       "15/15"
     ],
@@ -1246,6 +1288,9 @@
     ],
     "p10_gate.py": [
       "6/6"
+    ],
+    "p23_gate.py": [
+      "15/15"
     ],
     "p24_gate.py": [
       "15/15"

@@ -210,6 +210,13 @@
       "node_token": "XKQvws1sNiViZvkSAOacELKEnvP",
       "section": 60,
       "title": "M2A Phase XXIII｜AO 测度把发放与静默分成两个泛函：设计登记，正式运行待批准"
+    },
+    {
+      "draft": "M2A-PhaseXXIII-AO测度结果.md",
+      "in_ledger": true,
+      "node_token": "Lw7TwSfediyhnuk0xYHc8e60nFe",
+      "section": 61,
+      "title": "M2A Phase XXIII｜AO 测度分开发放与静默：出口 AO-SEPARATES，五值 SUPPORTED"
     }
   ],
   "counts": {
@@ -218,11 +225,11 @@
     "first_batch_off_pin": 0,
     "first_batch_pages": 12,
     "first_batch_pages_claimed_by_a_section": 1,
-    "governance_pages": 25,
+    "governance_pages": 26,
     "governance_pages_unclaimed": 0,
-    "ledger_pages_with_node": 37,
-    "report_sections_in_population": 30,
-    "sections_claimed": 30,
+    "ledger_pages_with_node": 38,
+    "report_sections_in_population": 31,
+    "sections_claimed": 31,
     "sections_unclaimed": 0
   },
   "dangling_claims": [],
@@ -733,6 +740,26 @@
         60
       ],
       "title": "M2A Phase XXIII｜AO 测度把发放与静默分成两个泛函：设计登记，正式运行待批准"
+    },
+    {
+      "draft": "M2A-PhaseXXIII-AO测度结果.md",
+      "draft_chars": 612,
+      "draft_sha256": "4d70c734d6ad32dd38a6ecab0d277fe238adfaac51402dad0557137aa0b82e9a",
+      "markers": [
+        "AO-SEPARATES",
+        "SUPPORTED",
+        "0.259208",
+        "0.349298",
+        "P11-O1"
+      ],
+      "markers_ok_recorded": true,
+      "node_token": "Lw7TwSfediyhnuk0xYHc8e60nFe",
+      "obj_token": "CvJ8dlvQvouuymxQLrhcxcfrnmf",
+      "read_back_chars_recorded": 1465,
+      "sections": [
+        61
+      ],
+      "title": "M2A Phase XXIII｜AO 测度分开发放与静默：出口 AO-SEPARATES，五值 SUPPORTED"
     }
   ],
   "schema": "m2a.wiki_sync_map.v1",
@@ -1012,6 +1039,11 @@
       "section": 60,
       "title": "Phase XXIII 设计与门控：AO 测度把「发放」与「静默」分成两个泛函（GOVERNANCE_ARTIFACT，设计步骤，不产生科学",
       "xids_named": []
+    },
+    {
+      "section": 61,
+      "title": "Phase XXIII（2026-10-22 追加）：AO 测度把发放与静默分开——出口 AO-SEPARATES，Q1 判为 SUPPOR",
+      "xids_named": []
     }
   ],
   "stale_claims": [],
@@ -1022,14 +1054,14 @@
       "sha256": "160795317fbe77e8e5417871a74f6b6deaddee7d7cd0331e249d6a7cfc389de9"
     },
     {
-      "bytes": 11279,
+      "bytes": 11489,
       "file": "publish_wiki_steps.py",
-      "sha256": "c45aa2ae3d7121d85043a464ac572f6e515475523bf55a33314797683da081e2"
+      "sha256": "0b2fbf317e2e86a1c3e7d653e6e2e6b35e7e99aed149c14358a6bdf57fdfb530"
     },
     {
-      "bytes": 14255,
+      "bytes": 14587,
       "file": "feishu_wiki_nodes.json",
-      "sha256": "5e2af3246f0e6577480f80cb095d51afdc2797dd28741bc2a4e4532b09af7771"
+      "sha256": "e402ce0e6bf02e2bcd861c3c2cf135944a4bc068dd74520b7187b3e234916b98"
     }
   ],
   "unclaimed_sections": [],

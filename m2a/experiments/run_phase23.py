@@ -60,14 +60,9 @@ def bind():
             "commit": git("rev-parse", "HEAD").stdout.strip()}
 
 
-def gate_ok():
-    p = subprocess.run([sys.executable, str(HERE / "p23_gate.py")], cwd=HERE,
-                       capture_output=True, text=True)
-    print(p.stdout)
-    if p.returncode != 0:
-        print("REFUSING TO RUN: gate failed", file=sys.stderr)
-        return False
-    return True
+def gate_run():
+    return subprocess.run([sys.executable, str(HERE / "p23_gate.py")], cwd=HERE,
+                          capture_output=True, text=True)
 
 
 def collect(n, seeds):
@@ -100,7 +95,10 @@ def main() -> int:
     smoke = None
     if "--smoke" in argv:
         smoke = int(argv[argv.index("--smoke") + 1])
-    if not gate_ok():
+    gp = gate_run()
+    print(gp.stdout)
+    if gp.returncode != 0:
+        print("REFUSING TO RUN: gate failed", file=sys.stderr)
         return 1
     if smoke is not None:
         cols = collect(smoke, P.SEEDS[:2])

@@ -87,8 +87,11 @@ def header_claim(doc):
 
 def run_gate(rel):
     r = subprocess.run([sys.executable, rel], cwd=M, capture_output=True, text=True, timeout=900)
-    m = re.search(r"(\d+)/(\d+) checks passed", r.stdout)
-    return (int(m.group(1)), int(m.group(2))) if m else None
+    # A gate may wrap another gate (p23_gate runs the AO preflight and quotes its 8/8 in a
+    # detail). X-68's contract is the gate's own LAST line, so take the last fraction, not the
+    # first one (X-125: re.search read the wrapper as 8/8 and marked the 15/15 document stale).
+    ms = re.findall(r"(\d+)/(\d+) checks passed", r.stdout)
+    return (int(ms[-1][0]), int(ms[-1][1])) if ms else None
 
 
 def classify(row):

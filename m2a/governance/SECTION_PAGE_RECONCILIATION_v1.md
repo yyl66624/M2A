@@ -12,8 +12,8 @@
 
 | 列 | 数 |
 | --- | --- |
-| 对账的页面 | 26 |
-| 覆盖的步骤节 | 30（同步表登记 30） |
+| 对账的页面 | 27 |
+| 覆盖的步骤节 | 31（同步表登记 31） |
 | **页面上的分数在仓库里查无出处** | 0 |
 | 页面点名的仪器被本仓库有意排除在测量之外（披露，不判红） | 1 页 / 1 个值 |
 | 仅由宽松口径支持的页面分数 | 0 |
@@ -21,16 +21,16 @@
 | 已登记的订正（页面上引用为错误的数字） | 1（生效 1） |
 | 订正已登记但尚未生效（页面缺该数字或缺订正标记） | 0 |
 | 页面分数已被后来的节追上 | 1 |
-| 页面压缩（节里有、页里没有） | 3 |
+| 页面压缩（节里有、页里没有） | 4 |
 | 完全一致 | 21 |
 | 无抓取可比 | 0 |
 | 草稿 ↔ 页面不一致（草稿的说法页面上没有） | 0 |
 | 页面在发布之后又追加了内容（草稿是子集） | 2 |
-| 仓库里被印过的仪器 | 24 台 |
-| 页面点名 / 节点名 | 13 台 / 13 台 |
-| 页面分数条数 / 节分数条数 | 16 / 16 |
+| 仓库里被印过的仪器 | 25 台 |
+| 页面点名 / 节点名 | 13 台 / 14 台 |
+| 页面分数条数 / 节分数条数 | 16 / 17 |
 | 只在页面出现（节里没点名） | l01_gate.py, suite_score_registry_gate.py |
-| 只在节里出现（页面压缩掉） | frozen_input_map_gate.py, p24_gate.py |
+| 只在节里出现（页面压缩掉） | frozen_input_map_gate.py, p23_gate.py, p24_gate.py |
 
 ## 逐页
 
@@ -62,6 +62,7 @@
 | 58 | M2A 文献轮 L-03｜R13-N15 全 | aligned | 0 | - | - | - | - | aligned |
 | 59 | M2A Phase XXIV｜L2 权重衰减 | compressed | 0 | - | - | p24_gate.py | - | aligned |
 | 60 | M2A Phase XXIII｜AO 测度把 | compressed | 0 | - | - | ao_preflight_gate.py | - | aligned |
+| 61 | M2A Phase XXIII｜AO 测度分 | compressed | 0 | - | - | p23_gate.py | - | aligned |
 
 ## 每条页面分数的仓库出处（`attest`）
 
@@ -70,7 +71,7 @@
 | `l01_gate.py` | 6/6/7/7 | `literature/ROUND_L01_RESULTS.md` | §- |
 | `status_label_table_gate.py` | 6/6 | `M2A_FINAL_REPORT.md`, `governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md` | §37 |
 | `obligation_registry_gate.py` | 7/7 | `governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md` | §45 |
-| `ao_preflight_gate.py` | 8/8 | `M2A_FINAL_REPORT.md`, `experiments/p23_design/PHASE23_PREREGISTRATION.md` | §60 |
+| `ao_preflight_gate.py` | 8/8 | `M2A_FINAL_REPORT.md`, `experiments/PHASE23_PREREGISTRATION.md` | §60 |
 | `gate_discrimination_gate.py` | 59/59 | `M2A_FINAL_REPORT.md`, `governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md` | §47 |
 | `gate_coverage_map_gate.py` | 18/18 | `M2A_FINAL_REPORT.md`, `governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md` | §45 |
 | `runner_enforcement_map_gate.py` | 14/14 | `M2A_FINAL_REPORT.md`, `governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md` | §43 |

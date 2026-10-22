@@ -5,14 +5,14 @@
 
 | 列 | 数 |
 | --- | --- |
-| 人口内步骤节 | 30 |
-| 已被页面承接 | 30 |
+| 人口内步骤节 | 31 |
+| 已被页面承接 | 31 |
 | **未承接（本步未发布即为红）** | 0 |
 | 指向不存在页面的承接 | 0 |
 | 承接了已不在人口内的旧节（陈旧） | 0 |
-| 治理期页面（PAGES manifest） | 25 |
+| 治理期页面（PAGES manifest） | 26 |
 | 未被任何节认领的治理期页面 | 0 |
-| 台账中带 node_token 的页面 | 37 |
+| 台账中带 node_token 的页面 | 38 |
 | 首批驱动页面（按 12 条钉住） | 12 |
 
 ## 每一节由哪一页承载
@@ -49,6 +49,7 @@
 | 58 | 文献轮 L-03：R13-N15 的全文把 K7 的「离散相 | `NmzPwc9xhizOwVkhDwucQYLC` M2A 文献轮 L-03｜R13-N15 全 | X-121, X-122, X-123, X-124 |
 | 59 | Phase XXIV（2026-10-21 追加）：给 L3 | `NwGZwI3ZUigRXrkKkFBcMMPc` M2A Phase XXIV｜L2 权重衰减 | - |
 | 60 | Phase XXIII 设计与门控：AO 测度把「发放」与「 | `XKQvws1sNiViZvkSAOacELKE` M2A Phase XXIII｜AO 测度把 | - |
+| 61 | Phase XXIII（2026-10-22 追加）：AO  | `Lw7TwSfediyhnuk0xYHc8e60` M2A Phase XXIII｜AO 测度分 | - |
 
 ## 每一页的草稿指纹
 
@@ -79,14 +80,15 @@
 | M2A 文献轮 L-03｜R13-N15 全文取回与 | M2A-文献轮L03-R13N15全文取回与K7改写.md | `2c817fa57d99` | 1683 | True |
 | M2A Phase XXIV｜L2 权重衰减不修复  | M2A-PhaseXXIV-正则化与L3中段偏差.md | `9b0d2c903b1f` | 2513 | True |
 | M2A Phase XXIII｜AO 测度把发放与静 | M2A-PhaseXXIII-AO测度设计.md | `480d7f31cb2d` | 1063 | True |
+| M2A Phase XXIII｜AO 测度分开发放与 | M2A-PhaseXXIII-AO测度结果.md | `4d70c734d6ad` | 1465 | True |
 
 ## 守门工具的指纹
 
 | 工具 | sha256（前 12） | 字节 |
 | --- | --- | --- |
 | `check_step_draft_numbers.py` | `160795317fbe` | 109130 |
-| `publish_wiki_steps.py` | `c45aa2ae3d71` | 11279 |
-| `feishu_wiki_nodes.json` | `5e2af3246f0e` | 14255 |
+| `publish_wiki_steps.py` | `0b2fbf317e2e` | 11489 |
+| `feishu_wiki_nodes.json` | `e402ce0e6bf0` | 14587 |
 
 **这张表能看见什么、看不见什么**：它在四件事上立刻变红——新步骤节没有对应页面；
 页面草稿在发布后被改写（sha 变了）；守门脚本被改写；首批页面数目偏离钉住的 12。
