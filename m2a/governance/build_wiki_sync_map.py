@@ -72,6 +72,7 @@ PUBLISH_MAP = {
     57: "I2kOwPzVciTztBkfjyocS1uPnnx",   # the validator-landing step page, published after it could be registered
     58: "NmzPwc9xhizOwVkhDwucQYLCnle",   # the Round L-03 page, published after it could be registered
     59: "NwGZwI3ZUigRXrkKkFBcMMPcnuo",   # the Phase XXIV page, published after it could be registered
+    60: "XKQvws1sNiViZvkSAOacELKEnvP",   # the Phase XXIII design page, published after it could be registered
 }
 
 SECTION_RE = r"^#{2,3} (\d+) (.*)$"

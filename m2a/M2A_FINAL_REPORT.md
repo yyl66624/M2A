@@ -2620,3 +2620,21 @@ python3 p24_gate.py          # 15/15
 python3 run_phase24.py       # 预注册绑定 + 24 格 × 10 种子
 ```
 **收尾审计**（第 59 步）：`SUMMARY  suites 43/43 green, checks 508, bindings 25/25`
+
+### 60 Phase XXIII 设计与门控：AO 测度把「发放」与「静默」分成两个泛函（GOVERNANCE_ARTIFACT，设计步骤，不产生科学判定）
+
+状态标签：**GOVERNANCE_ARTIFACT**（设计登记；**不运行正式实验、不产生读数、不改写任何历史判定**；`P11-O1` / `P12-O3` 仍 OPEN）。
+
+预注册 `PHASE23_PREREGISTRATION.md`（sha256 `2fec0e677a68348b4d11e98558af590acf84fd634977e516cc163e4c83559c7d`）；纯仪器 `p23_mechanisms.py`；门控 `p23_gate.py` **15/15**（它先跑已审计的 `ao_preflight_gate.py` 8/8，再验本轮的四条判据、规划分辨率、种子池与出口可达性）。**正式运行未获 owner 批准**：`AO_MEASUREMENT_PROTOCOL_v1.md` 明文只批了模型定义 + 预检。
+
+**设计**。AO 测度把发放 `I(o)=max_a μ(a)` 与静默 `Z(o)=μ(NONE)` 定义为同一测度上的两个泛函；分离间隙
+
+```
+G(o) = 1 − I(o) − Z(o) = 非最大行动上的质量
+```
+
+旧口径把静默当作发放的补集，故 `G_old ≡ 0`。运行前的精确读数：多行动 `two_windows` 的 `G(θ*=0.1)=0.259165`、`adjacent` 的 `G=0.349254`；三网格旋钮容差分别为 `4.136e-04` / `8.785e-04`；单行动 `gate_upper` / `gate_upper_half` 的 `G ≤ 1e-12`。规划 `N=6 000 000`/seed、10 seeds：种子均值 SE 为 `tol/4` 的 1/1.83 与 1/3.57。窗口 `h` 的 ~1e-1 灵敏度按 AO §7.2 排除在容差外。出口 `AO-SEPARATES / AO-COLLAPSES / SAMPLING-UNDERPOWERED / OLD-COMPLEMENT-ALSO-SEPARATES / O-NONE`，对应五值 `SUPPORTED / CONTRADICTED / INDETERMINATE / NULL / NOT_IDENTIFIED`。
+
+**本步边界**。只登记设计与门控；没有 runner、没有结果 JSON、没有科学判定。设计页已按「每步写入飞书」发布；正式运行须 owner 另行批准，届时再提交预注册、写 runner、按预注册跑并登记结果。
+
+**收尾审计**（第 60 步）：`__P23_SUMMARY__`
