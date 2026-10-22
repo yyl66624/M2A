@@ -2644,3 +2644,5 @@ G(o) = 1 − I(o) − Z(o) = 非最大行动上的质量
 **本步边界**。只登记设计与门控；没有 runner、没有结果 JSON、没有科学判定。设计文件**暂存**于 `experiments/p23_design/`，不在 `experiments/PHASE*_PREREGISTRATION.md` 与 `experiments/*gate*.py` 的活跃人口内；正式运行登记时再移入 `experiments/` 并重导治理链。设计页已按「每步写入飞书」发布；正式运行须 owner 另行批准。
 
 **收尾审计**（第 60 步）：`SUMMARY  suites 43/43 green, checks 508, bindings 25/25`
+
+**修入（第 60 步同日，只追加）**：Phase XXIII 的 runner `experiments/p23_design/run_phase23.py` 已写好并做过管线冒烟（只验管线，不产生读数）；它先跑门控（全过），正式模式要求 `--approved-by-owner`。正式运行仍未获 owner 批准。
