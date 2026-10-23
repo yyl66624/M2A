@@ -1,0 +1,228 @@
+{
+  "boundary": "17 committed L-01 rows; the 21-record full-text review population is not an I1 denominator; no second coder; non-constructive S-only arm not run",
+  "counts": {
+    "C_ONLY": 1,
+    "NEITHER": 12,
+    "S_ONLY": 1,
+    "S_PLUS_C": 3,
+    "UNDECIDABLE": 0,
+    "i1_relevant": 5,
+    "rows": 17
+  },
+  "defects": [],
+  "exit": "I1_LAYERS_SEPARABLE",
+  "extra_rows": [],
+  "label_r17": "INDETERMINATE",
+  "missing_rows": [],
+  "no_new_data": true,
+  "prereg_binding": {
+    "disk_sha256": "1234142f0c72dc6c520098b952b5aa4e21e5efd3f7f5116b7e859bb496f8fb2a",
+    "git_head_sha256": "1234142f0c72dc6c520098b952b5aa4e21e5efd3f7f5116b7e859bb496f8fb2a",
+    "path": "m2a/literature/L04_PREREGISTRATION.md",
+    "two_channel_match": true
+  },
+  "prereg_sha256": "1234142f0c72dc6c520098b952b5aa4e21e5efd3f7f5116b7e859bb496f8fb2a",
+  "preregistration": "literature/L04_PREREGISTRATION.md",
+  "rows": [
+    {
+      "claim_excerpt": "Emergent misalignment is released only when a threshold-like input condition is met - a specific trigger word or an eval format close to the finetuning format.",
+      "code": "NEITHER",
+      "evidence_k": [
+        "K1"
+      ],
+      "quote_chars": 146,
+      "quote_sha16": "f0944f9b0d2e3a44",
+      "rationale": "Trigger and cross-domain misalignment only; no omission or availability claim.",
+      "sid": "G5-03-N1"
+    },
+    {
+      "claim_excerpt": "A safety guardrail acts as an intent-gated filter that, when engaged, withholds self-harm/suicide methods and redirects to help-seeking.",
+      "code": "NEITHER",
+      "evidence_k": [
+        "K2"
+      ],
+      "quote_chars": 116,
+      "quote_sha16": "baa22d3f44796809",
+      "rationale": "Intent-gated refusal, not selective non-response or a representation of skipped options.",
+      "sid": "G5-03-N2"
+    },
+    {
+      "claim_excerpt": "Reasoned abstention: the system deliberately withholds (omits) a confident answer in favour of an explanation of evidential limits.",
+      "code": "S_ONLY",
+      "evidence_k": [
+        "K9"
+      ],
+      "quote_chars": 206,
+      "quote_sha16": "930d2eac5ff23b63",
+      "rationale": "Reasoned abstention with a confidence threshold; no description of representing the skipped answer.",
+      "sid": "G5-03-N4"
+    },
+    {
+      "claim_excerpt": "Refusal is a genuine, universal gating feature separating harmful from harmless activations, but it is nonlinear and multidimensional rather than a single linea",
+      "code": "NEITHER",
+      "evidence_k": [
+        "K2"
+      ],
+      "quote_chars": 186,
+      "quote_sha16": "89c1af36d7ca5866",
+      "rationale": "Refusal representation and multi-dimensional gate; neither omission nor availability of omitted options.",
+      "sid": "G5-03-N6"
+    },
+    {
+      "claim_excerpt": "Refusal is mediated by one necessary-and-sufficient residual-stream direction that behaves as an on/off gate: ablating it abolishes refusal, adding it induces r",
+      "code": "NEITHER",
+      "evidence_k": [
+        "K2"
+      ],
+      "quote_chars": 85,
+      "quote_sha16": "913774b279b3a95e",
+      "rationale": "A single necessary-and-sufficient refusal direction; not an omission claim.",
+      "sid": "G5-03"
+    },
+    {
+      "claim_excerpt": "Delayed post-ingestive reinforcement is credited back to earlier odor memories by updating them during the consolidation window - the abstract states this expli",
+      "code": "NEITHER",
+      "evidence_k": [
+        "K5"
+      ],
+      "quote_chars": 152,
+      "quote_sha16": "6e800f45deda5565",
+      "rationale": "Delayed reinforcement and phase-reversed switch; not omission or counterfactual availability.",
+      "sid": "R13-N15"
+    },
+    {
+      "claim_excerpt": "An inflammation-derived aversion can be gated upstream: GIPR agonism with DA-GIP significantly attenuated IL-1beta-induced conditioned taste avoidance, and sile",
+      "code": "NEITHER",
+      "evidence_k": [
+        "K2"
+      ],
+      "quote_chars": 137,
+      "quote_sha16": "f45e21f876f82c23",
+      "rationale": "GIPR suppression of inflammation-derived aversion is a gate, not omission.",
+      "sid": "R13-N16"
+    },
+    {
+      "claim_excerpt": "Whether the organism acts is settled by an energetic budget: motivational intensity theory as the review applies it says energy expenditure tracks task difficul",
+      "code": "NEITHER",
+      "evidence_k": [
+        "K11"
+      ],
+      "quote_chars": 259,
+      "quote_sha16": "5d6efcb17d7e1cb5",
+      "rationale": "Motivational intensity and effort; no selective non-response or availability representation.",
+      "sid": "R13-N17"
+    },
+    {
+      "claim_excerpt": "Feeding is stopped by cell-type-specific inhibitory gates in the brainstem: area-postrema GLP1R-defined excitatory populations are reported both sufficient and ",
+      "code": "S_PLUS_C",
+      "evidence_k": [
+        "K2",
+        "K5"
+      ],
+      "quote_chars": 230,
+      "quote_sha16": "9ca2b31b0734435a",
+      "rationale": "Feeding is stopped by cell-type-specific gates (S) and novel flavours activate/reactivate amygdala representations (C).",
+      "sid": "R13-N2"
+    },
+    {
+      "claim_excerpt": "Allostasis moves control of action ahead of the bodily signal: rather than waiting for an imbalance, the brain predicts future needs and initiates regulatory ac",
+      "code": "C_ONLY",
+      "evidence_k": [
+        "K5"
+      ],
+      "quote_chars": 277,
+      "quote_sha16": "4ceb53687aaf8e91",
+      "rationale": "Predictive allostatic model (C); no selective non-response is described.",
+      "sid": "R13-N3"
+    },
+    {
+      "claim_excerpt": "Abstention is self-reinforcing through a closed loop: fear of a food triggers a hypervigilant autonomic response that produces symptoms mimicking allergy or sen",
+      "code": "S_PLUS_C",
+      "evidence_k": [
+        "K6",
+        "K5"
+      ],
+      "quote_chars": 299,
+      "quote_sha16": "5439033a91b8dfa4",
+      "rationale": "Restrictive eating/abstention is self-reinforcing (S) and the amygdala is experience-driven and represents food cues (C).",
+      "sid": "R13-N8"
+    },
+    {
+      "claim_excerpt": "Novelty acts as a selectivity gate on the delayed signal: only recent NOVEL flavor representations are reactivated and stabilized, familiar ones are excluded an",
+      "code": "S_PLUS_C",
+      "evidence_k": [
+        "K2",
+        "K5"
+      ],
+      "quote_chars": 295,
+      "quote_sha16": "fc8a84dfbafc3fb4",
+      "rationale": "Novelty gates the delayed signal (S) and malaise reactivates neural representations of novel flavours (C).",
+      "sid": "R13"
+    },
+    {
+      "claim_excerpt": "Adding noncontingent rewards in the intertrial interval attenuates the conditioned response and the cue- and reward-evoked dopamine signals for that specific co",
+      "code": "NEITHER",
+      "evidence_k": [
+        "K2"
+      ],
+      "quote_chars": 226,
+      "quote_sha16": "e2fe967fc3d547d3",
+      "rationale": "Dopamine contingency tracking; not an omission or availability claim.",
+      "sid": "R14-N1"
+    },
+    {
+      "claim_excerpt": "Modelling the entire within-trial signal instead of summary measures preserves trial-level temporal information and reveals dopamine components with distinct te",
+      "code": "NEITHER",
+      "evidence_k": [
+        "K5"
+      ],
+      "quote_chars": 191,
+      "quote_sha16": "f297112e2a6e612c",
+      "rationale": "Statistical analysis of within-trial signals; not omission.",
+      "sid": "R14-N4"
+    },
+    {
+      "claim_excerpt": "Learning rate is an almost scalar function of the relative temporal separation of events (informativeness), so wider spacing - not more pairings - buys faster a",
+      "code": "NEITHER",
+      "evidence_k": [
+        "K5"
+      ],
+      "quote_chars": 219,
+      "quote_sha16": "6cc685044603badf",
+      "rationale": "Learning rate as a function of temporal separation; not omission.",
+      "sid": "R14-N7"
+    },
+    {
+      "claim_excerpt": "The timescale of the mesolimbic dopamine signal - whether a within-trial ramp appears at all - is set by the interval between rewards relative to the trial peri",
+      "code": "NEITHER",
+      "evidence_k": [
+        "K5"
+      ],
+      "quote_chars": 187,
+      "quote_sha16": "31fddb021fa68bc0",
+      "rationale": "Dopamine ramps and intertrial interval; not omission.",
+      "sid": "R14-N8"
+    },
+    {
+      "claim_excerpt": "The duration between rewards, not the number of cue-reward pairings, sets the rate of both behavioral and dopaminergic learning: with total conditioning time he",
+      "code": "NEITHER",
+      "evidence_k": [
+        "K5"
+      ],
+      "quote_chars": 295,
+      "quote_sha16": "304f2c5982c5ccfb",
+      "rationale": "Reward duration sets the learning rate; not omission or counterfactual availability.",
+      "sid": "R14"
+    }
+  ],
+  "schema": "m2a.roundL04.i1audit.v1",
+  "single_coder": true,
+  "source": {
+    "denominator_is_i1_specific": false,
+    "fulltext_review": "literature/fulltext_review.json",
+    "fulltext_review_records": 21,
+    "l01": "literature/L01_coding.json",
+    "l01_sha256": "5fde6c1726a9994aaa5fa60d59c7d490a61c1b7245f719729bd7099631cb44c8"
+  },
+  "zero_test_status": "reanalysis_only: cannot confirm I1; only refute or narrow it"
+}

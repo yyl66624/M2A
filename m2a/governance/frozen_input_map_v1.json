@@ -59,18 +59,18 @@
     "stale_attestation": 0,
     "named_object_absent": 0,
     "pin_of_this_layer_output": 0,
-    "frozen_by_round_instrument": 50,
-    "renewable_governance_pin": 91,
-    "hash_without_named_object": 76,
+    "frozen_by_round_instrument": 52,
+    "renewable_governance_pin": 92,
+    "hash_without_named_object": 78,
     "ambiguous_pairing": 14,
     "hard_findings": 0,
-    "rows": 231,
-    "pinning_documents": 58,
-    "pinned_objects": 98,
-    "repo_files_scanned": 316,
+    "rows": 236,
+    "pinning_documents": 59,
+    "pinned_objects": 100,
+    "repo_files_scanned": 322,
     "workshop_objects": 125,
     "instrument_collection_pins": 40,
-    "freeze_rows_visible": 50,
+    "freeze_rows_visible": 52,
     "freeze_visibility_states": 2,
     "freeze_not_visible": 0,
     "freeze_visibility_unread": 0
@@ -105,6 +105,7 @@
     "literature/L02_REPRESENTATION_ADDENDUM.md",
     "literature/L02_coding.json",
     "literature/L03_PREREGISTRATION.md",
+    "literature/L04_PREREGISTRATION.md",
     "literature/ROUND_L01_RESULTS.md",
     "literature/l03_coding.py",
     "literature/registry.json",
@@ -1487,7 +1488,7 @@
     {
       "pinner": "governance/section_page_reconciliation_v1.json",
       "key": "page_sha256",
-      "hash": "41c33cd8c185626cb712fc5b70f05d4b11f6e4aec18da792142a7589f1bac103",
+      "hash": "e8dde690a4cb1ab9bb2099aa3faf50df6a676b2a83704ecdbbb7c5e4afa571de",
       "pair": [],
       "json_path": "pages/13",
       "pair_count": 0,
@@ -1802,6 +1803,24 @@
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "literature/l03_gate.py",
+      "bytes_match": true,
+      "verdict": "renewable_governance_pin",
+      "visibility": null
+    },
+    {
+      "pinner": "governance/suite_score_registry_v1.json",
+      "key": "sha256",
+      "hash": "ab54d1e295bad1d0d20378950a58c4e78954438dae03c0428654a9c52db3e0d0",
+      "pair": [
+        [
+          "file",
+          "literature/l04_i1_gate.py"
+        ]
+      ],
+      "json_path": "live/l04_i1_gate.py",
+      "pair_count": 1,
+      "object_namespace": "repo",
+      "object": "literature/l04_i1_gate.py",
       "bytes_match": true,
       "verdict": "renewable_governance_pin",
       "visibility": null
@@ -2295,7 +2314,7 @@
     {
       "pinner": "governance/suite_score_registry_v1.json",
       "key": "sha256",
-      "hash": "ddab7690d373b732027d6751441904646ffdefa09586174d256b429fd16d3323",
+      "hash": "c407716d18af5613079d239361e9ed49d8257b2e43bcc45d6b2df286b9b10964",
       "pair": [
         [
           "file",
@@ -2637,7 +2656,7 @@
     {
       "pinner": "governance/wiki_sync_map_v1.json",
       "key": "draft_sha256",
-      "hash": "d737e72c2ea028c8249eb8a91b931bacf70f11faea7c701b55031cfe479c0667",
+      "hash": "b85ce236ab450d7cec15a1ce1ecb16558678038d1956153dd61d4fe6f46af7e2",
       "pair": [
         [
           "draft",
@@ -2961,7 +2980,7 @@
     {
       "pinner": "governance/wiki_sync_map_v1.json",
       "key": "sha256",
-      "hash": "685780ee05d3a249b0f19bf5c9e729d8e2600d2983940331eda7eb3e200290de",
+      "hash": "2fc590764519c04acc68e0d475170d1d2c374a1f21231eec968afb2ae8657003",
       "pair": [
         [
           "file",
@@ -3296,6 +3315,62 @@
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "literature/l03_coding.py",
+      "bytes_match": true,
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "json_key_reproduced"
+    },
+    {
+      "pinner": "literature/L04_I1_AUDIT.json",
+      "key": "disk_sha256",
+      "hash": "1234142f0c72dc6c520098b952b5aa4e21e5efd3f7f5116b7e859bb496f8fb2a",
+      "pair": [],
+      "json_path": "prereg_binding",
+      "pair_count": 0,
+      "verdict": "hash_without_named_object",
+      "visibility": null
+    },
+    {
+      "pinner": "literature/L04_I1_AUDIT.json",
+      "key": "git_head_sha256",
+      "hash": "1234142f0c72dc6c520098b952b5aa4e21e5efd3f7f5116b7e859bb496f8fb2a",
+      "pair": [],
+      "json_path": "prereg_binding",
+      "pair_count": 0,
+      "verdict": "hash_without_named_object",
+      "visibility": null
+    },
+    {
+      "pinner": "literature/L04_I1_AUDIT.json",
+      "key": "prereg_sha256",
+      "hash": "1234142f0c72dc6c520098b952b5aa4e21e5efd3f7f5116b7e859bb496f8fb2a",
+      "pair": [
+        [
+          "preregistration",
+          "literature/L04_PREREGISTRATION.md"
+        ]
+      ],
+      "json_path": "",
+      "pair_count": 1,
+      "object_namespace": "repo",
+      "object": "literature/L04_PREREGISTRATION.md",
+      "bytes_match": true,
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "json_key_reproduced"
+    },
+    {
+      "pinner": "literature/L04_I1_AUDIT.json",
+      "key": "l01_sha256",
+      "hash": "5fde6c1726a9994aaa5fa60d59c7d490a61c1b7245f719729bd7099631cb44c8",
+      "pair": [
+        [
+          "l01",
+          "literature/L01_coding.json"
+        ]
+      ],
+      "json_path": "source",
+      "pair_count": 1,
+      "object_namespace": "repo",
+      "object": "literature/L01_coding.json",
       "bytes_match": true,
       "verdict": "frozen_by_round_instrument",
       "visibility": "json_key_reproduced"

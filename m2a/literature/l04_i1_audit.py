@@ -75,9 +75,9 @@ def git_head(rel: str) -> bytes:
     return subprocess.run(["git", "-C", str(REPO), "show", "HEAD:" + rel], capture_output=True).stdout
 
 
-def bind() -> dict:
-    rel = str(PREREG.relative_to(REPO))
-    disk = PREREG.read_bytes() if PREREG.exists() else b""
+def bind(prereg: pathlib.Path = PREREG) -> dict:
+    rel = str(prereg.resolve().relative_to(REPO)) if prereg.resolve().is_relative_to(REPO) else ""
+    disk = prereg.read_bytes() if prereg.exists() else b""
     head = git_head(rel)
     return {"path": rel, "disk_sha256": sha(disk) if disk else "",
             "git_head_sha256": sha(head) if head else "",
