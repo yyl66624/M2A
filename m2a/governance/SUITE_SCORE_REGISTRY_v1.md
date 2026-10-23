@@ -9,11 +9,11 @@
 
 | 列 | 数 |
 | --- | --- |
-| 实跑的套件 | 40（今天为绿 40） |
-| 语料内文档 / 其中真的产出主张行的 | 83 / 20 |
-| 引用条数 / 去重后的判定行 | 105 / 88 |
+| 实跑的套件 | 41（今天为绿 41） |
+| 语料内文档 / 其中真的产出主张行的 | 85 / 21 |
+| 引用条数 / 去重后的判定行 | 107 / 90 |
 | **硬伤（凭空仪器 / 实跑不绿 / 再生文档陈旧 / 不可能的增长）** | 0 |
-| 引用与实跑一致 | 75 |
+| 引用与实跑一致 | 77 |
 | 同一行同时给出实跑值（把错误当错误引用） | 4 |
 | 可能为历史值（小于实跑，仅披露不判红） | 7 |
 | 对本步校验器自身的引用（不可自证） | 1 |
@@ -24,15 +24,16 @@
 | 文档 | 口径 | 仪器 | 引用 | 实跑 | 判定 | 行 |
 | --- | --- | --- | --- | --- | --- | --- |
 | `M2A_FINAL_REPORT.md` | append_only | `ao_preflight_gate.py` | 8/8 | 8/8 | matches_live | 1375 |
-| `M2A_FINAL_REPORT.md` | append_only | `frozen_input_map_gate.py` | 18/18 | - | unmeasured_by_registration | 2507 |
+| `M2A_FINAL_REPORT.md` | append_only | `frozen_input_map_gate.py` | 18/18 | - | unmeasured_by_registration | 2513 |
 | `M2A_FINAL_REPORT.md` | append_only | `gate_coverage_map_gate.py` | 17/17 | 18/18 | paired_correction | 1734 |
 | `M2A_FINAL_REPORT.md` | append_only | `gate_coverage_map_gate.py` | 18/18 | 18/18 | matches_live | 1618 |
 | `M2A_FINAL_REPORT.md` | append_only | `gate_discrimination_gate.py` | 5/5 | 59/59 | possible_history | 1402 |
 | `M2A_FINAL_REPORT.md` | append_only | `gate_discrimination_gate.py` | 59/59 | 59/59 | matches_live | 1802 |
+| `M2A_FINAL_REPORT.md` | append_only | `l02_representation_gate.py` | 16/16 | 16/16 | matches_live | 2698 |
 | `M2A_FINAL_REPORT.md` | append_only | `obligation_registry_gate.py` | 8/8 | 8/8 | matches_live | 1743 |
 | `M2A_FINAL_REPORT.md` | append_only | `p10_gate.py` | 6/6 | 6/6 | matches_live | 1667 |
-| `M2A_FINAL_REPORT.md` | append_only | `p23_gate.py` | 15/15 | 15/15 | matches_live | 2662 |
-| `M2A_FINAL_REPORT.md` | append_only | `p24_gate.py` | 15/15 | 15/15 | matches_live | 2607 |
+| `M2A_FINAL_REPORT.md` | append_only | `p23_gate.py` | 15/15 | 15/15 | matches_live | 2668 |
+| `M2A_FINAL_REPORT.md` | append_only | `p24_gate.py` | 15/15 | 15/15 | matches_live | 2613 |
 | `M2A_FINAL_REPORT.md` | append_only | `result_score_map_gate.py` | 12/12 | 12/12 | matches_live | 1689 |
 | `M2A_FINAL_REPORT.md` | append_only | `runner_enforcement_map_gate.py` | 14/14 | 14/14 | matches_live | 1649 |
 | `M2A_FINAL_REPORT.md` | append_only | `section_page_reconciliation_gate.py` | 22/22 | 23/23 | possible_history | 1825 |
@@ -50,8 +51,8 @@
 | `NEGATIVE_AND_NULL_EVIDENCE_LOG.md` | append_only | `section_page_reconciliation_gate.py` | 22/22 | 23/23 | possible_history | 206 |
 | `NEGATIVE_AND_NULL_EVIDENCE_LOG.md` | append_only | `status_label_table_gate.py` | 6/6 | 6/6 | matches_live | 193 |
 | `NEGATIVE_AND_NULL_EVIDENCE_LOG.md` | append_only | `wiki_sync_map_gate.py` | 16/16 | 16/16 | matches_live | 205 |
-| `OBLIGATION_REGISTRY.md` | regenerated | `gate_coverage_map_gate.py` | 18/18 | 18/18 | matches_live | 106 |
-| `OBLIGATION_REGISTRY.md` | regenerated | `unmeasured_instruments_gate.py` | 25/25 | 25/25 | matches_live | 106 |
+| `OBLIGATION_REGISTRY.md` | regenerated | `gate_coverage_map_gate.py` | 18/18 | 18/18 | matches_live | 105 |
+| `OBLIGATION_REGISTRY.md` | regenerated | `unmeasured_instruments_gate.py` | 25/25 | 25/25 | matches_live | 105 |
 | `PHASE10_RESULTS.md` | run_record | `p10_gate.py` | 6/6 | 6/6 | matches_live | 4 |
 | `PHASE11_RESULTS.md` | run_record | `p11_gate.py` | 6/6 | 6/6 | matches_live | 4 |
 | `PHASE12_RESULTS.md` | run_record | `p12_gate.py` | 4/4 | 4/4 | matches_live | 4 |
@@ -94,27 +95,28 @@
 | `RESULT_SCORE_RECONCILIATION_v1.md` | derived_summary | `p9_gate.py` | 8/8 | 8/8 | matches_live | 44 |
 | `RESULT_SCORE_RECONCILIATION_v1.md` | derived_summary | `phase2_gate.py` | 7/7 | 7/7 | matches_live | 34 |
 | `ROUND_L01_RESULTS.md` | run_record | `l01_gate.py` | 7/7 | 7/7 | matches_live | 6 |
+| `ROUND_L02_REPRESENTATION.md` | run_record | `l02_representation_gate.py` | 16/16 | 16/16 | matches_live | 5 |
 | `ROUND_L02_RESULTS.md` | run_record | `l02_gate.py` | 16/16 | 16/16 | matches_live | 4 |
 | `ROUND_L03_RESULTS.md` | run_record | `l03_gate.py` | 20/20 | 20/20 | matches_live | 3 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `ao_preflight_gate.py` | 8/8 | 8/8 | matches_live | 74 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `gate_coverage_map_gate.py` | 17/17 | 18/18 | paired_correction | 80 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `gate_coverage_map_gate.py` | 18/18 | 18/18 | matches_live | 76 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `gate_discrimination_gate.py` | 59/59 | 59/59 | matches_live | 75 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `ao_preflight_gate.py` | 8/8 | 8/8 | matches_live | 75 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `gate_coverage_map_gate.py` | 17/17 | 18/18 | paired_correction | 81 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `gate_coverage_map_gate.py` | 18/18 | 18/18 | matches_live | 77 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `gate_discrimination_gate.py` | 59/59 | 59/59 | matches_live | 76 |
 | `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `l01_gate.py` | 6/6 | 7/7 | paired_correction | 40 |
 | `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `obligation_registry_gate.py` | 7/7 | 8/8 | possible_history | 43 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `obligation_registry_gate.py` | 8/8 | 8/8 | matches_live | 81 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `p10_gate.py` | 6/6 | 6/6 | matches_live | 78 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `result_score_map_gate.py` | 12/12 | 12/12 | matches_live | 79 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `runner_enforcement_map_gate.py` | 14/14 | 14/14 | matches_live | 77 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `section_page_reconciliation_gate.py` | 22/22 | 23/23 | possible_history | 85 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `status_label_table_gate.py` | 6/6 | 6/6 | matches_live | 72 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `suite_score_registry_gate.py` | 20/20 | - | self_reference | 86 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `unmeasured_instruments_gate.py` | 25/25 | 25/25 | matches_live | 82 |
-| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `wiki_sync_map_gate.py` | 16/16 | 16/16 | matches_live | 83 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `obligation_registry_gate.py` | 8/8 | 8/8 | matches_live | 82 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `p10_gate.py` | 6/6 | 6/6 | matches_live | 79 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `result_score_map_gate.py` | 12/12 | 12/12 | matches_live | 80 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `runner_enforcement_map_gate.py` | 14/14 | 14/14 | matches_live | 78 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `section_page_reconciliation_gate.py` | 22/22 | 23/23 | possible_history | 86 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `status_label_table_gate.py` | 6/6 | 6/6 | matches_live | 73 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `suite_score_registry_gate.py` | 20/20 | - | self_reference | 87 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `unmeasured_instruments_gate.py` | 25/25 | 25/25 | matches_live | 83 |
+| `SECTION_PAGE_RECONCILIATION_v1.md` | derived_summary | `wiki_sync_map_gate.py` | 16/16 | 16/16 | matches_live | 84 |
 
 ## 人口与指纹
 
-> 生成本表的推导器源码 SHA-256：`c630f934c91d4909`（`governance/build_suite_score_registry.py`）；语料文档 83 份。语料缩小而不登记，Q18 会红。
+> 生成本表的推导器源码 SHA-256：`c630f934c91d4909`（`governance/build_suite_score_registry.py`）；语料文档 85 份。语料缩小而不登记，Q18 会红。
 
 | 套件 | 路径 | 实跑 | 源码 sha256（前 12） |
 | --- | --- | --- | --- |
@@ -124,6 +126,7 @@
 | `gate_discrimination_gate.py` | `governance/gate_discrimination_gate.py` | 59/59 | `b487c70a7338` |
 | `l01_gate.py` | `literature/l01_gate.py` | 7/7 | `4fcbc82ef9a2` |
 | `l02_gate.py` | `literature/l02_gate.py` | 16/16 | `1c934589a687` |
+| `l02_representation_gate.py` | `literature/l02_representation_gate.py` | 16/16 | `7188e21f18a1` |
 | `l03_gate.py` | `literature/l03_gate.py` | 20/20 | `a75586a42de0` |
 | `obligation_registry_gate.py` | `governance/obligation_registry_gate.py` | 8/8 | `b1aabd652014` |
 | `p10_gate.py` | `experiments/p10_gate.py` | 6/6 | `433f2913cc7a` |
@@ -152,7 +155,7 @@
 | `p8_gate.py` | `experiments/p8_gate.py` | 6/6 | `f8d9a9f53c2d` |
 | `p9_gate.py` | `experiments/p9_gate.py` | 8/8 | `55c0bbc4ef25` |
 | `phase2_gate.py` | `experiments/phase2_gate.py` | 7/7 | `57554ebdbfd4` |
-| `result_score_map_gate.py` | `governance/result_score_map_gate.py` | 12/12 | `ab9fba1673a3` |
+| `result_score_map_gate.py` | `governance/result_score_map_gate.py` | 12/12 | `ddab7690d373` |
 | `runner_enforcement_map_gate.py` | `governance/runner_enforcement_map_gate.py` | 14/14 | `3f97e9754e86` |
 | `section_page_reconciliation_gate.py` | `governance/section_page_reconciliation_gate.py` | 23/23 | `10404b959e57` |
 | `status_label_table_gate.py` | `governance/status_label_table_gate.py` | 6/6 | `e5c82a140086` |

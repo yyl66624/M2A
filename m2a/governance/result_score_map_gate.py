@@ -33,6 +33,10 @@ GOV = pathlib.Path(__file__).resolve().parent
 M = GOV.parent
 GEN = GOV / "build_result_score_reconciliation.py"
 MAP = GOV / "result_score_reconciliation_v1.json"
+# Instruments whose round record is not a `*_RESULTS.md` file. The population below cannot see such a record,
+# so the pairing is declared here - and the declaration is checked (the file must exist and must name the gate)
+# rather than widening the glob, which would drag a non-`*_RESULTS` document into a score-claim namespace.
+EXTRA_RECORDS = {"l02_representation_gate.py": "literature/ROUND_L02_REPRESENTATION.md"}
 MD = M / "report/RESULT_SCORE_RECONCILIATION_v1.md"
 CMAP = GOV / "gate_coverage_map_v1.json"
 
@@ -103,12 +107,15 @@ def main() -> int:
         | {p.relative_to(M).as_posix() for p in (M / "literature").glob("ROUND_*_RESULTS.md")}
     cm = json.loads(CMAP.read_text(encoding="utf-8"))
     static = {r["file"]: len(r["checks"]) for r in cm["rows"]}
-    undocumented = sorted(k for k in static
-                          if k not in {pathlib.Path(r["gate"]).name for r in d["rows"]})
+    documented = {pathlib.Path(r["gate"]).name for r in d["rows"]} | set(EXTRA_RECORDS)
+    undocumented = sorted(k for k in static if k not in documented)
+    declared_ok = all((M / p).exists() and g in (M / p).read_text(encoding="utf-8")
+                      for g, p in EXTRA_RECORDS.items())
     report("R6 population equals the documents on disk, and undocumented instruments are named",
            disk_docs == {r["doc"] for r in d["rows"]}
-           and len(d["rows"]) == len(disk_docs) and undocumented == ["ao_preflight_gate.py"],
-           f"{len(disk_docs)} docs | no doc for: {undocumented}")
+           and len(d["rows"]) == len(disk_docs) and undocumented == ["ao_preflight_gate.py"]
+           and declared_ok,
+           f"{len(disk_docs)} docs | no doc for: {undocumented} | declared records {sorted(EXTRA_RECORDS)}")
 
     bad7 = [r["gate"] for r in d["rows"]
             if r["static_sites"] != static.get(pathlib.Path(r["gate"]).name)]

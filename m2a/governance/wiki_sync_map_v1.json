@@ -217,6 +217,13 @@
       "node_token": "Lw7TwSfediyhnuk0xYHc8e60nFe",
       "section": 61,
       "title": "M2A Phase XXIII｜AO 测度分开发放与静默：出口 AO-SEPARATES，五值 SUPPORTED"
+    },
+    {
+      "draft": "M2A-文献轮L02-表征层编码.md",
+      "in_ledger": true,
+      "node_token": "CRhzwSdCNikNJKkjy7gcNvNRn9d",
+      "section": 62,
+      "title": "M2A 文献轮 L-02｜表征层编码落实：锥与 RepInd 有定义，RCO 没有收敛判据"
     }
   ],
   "counts": {
@@ -225,11 +232,11 @@
     "first_batch_off_pin": 0,
     "first_batch_pages": 12,
     "first_batch_pages_claimed_by_a_section": 1,
-    "governance_pages": 26,
+    "governance_pages": 27,
     "governance_pages_unclaimed": 0,
-    "ledger_pages_with_node": 38,
-    "report_sections_in_population": 31,
-    "sections_claimed": 31,
+    "ledger_pages_with_node": 39,
+    "report_sections_in_population": 32,
+    "sections_claimed": 32,
     "sections_unclaimed": 0
   },
   "dangling_claims": [],
@@ -474,8 +481,8 @@
     },
     {
       "draft": "M2A-治理-套件分数引用对账v1.md",
-      "draft_chars": 4029,
-      "draft_sha256": "0227a6a520b0fd105f30ccf4c4e3782169bff3e9978f20155e1ecf323de22ccd",
+      "draft_chars": 4225,
+      "draft_sha256": "d737e72c2ea028c8249eb8a91b931bacf70f11faea7c701b55031cfe479c0667",
       "markers": [
         "X-86",
         "X-87",
@@ -493,7 +500,7 @@
       "markers_ok_recorded": true,
       "node_token": "QuO5w9vGFiikp1kSKbgcrh1jnnb",
       "obj_token": "JOWndS5SXouZTexE3SFcXoB1nmf",
-      "read_back_chars_recorded": 5813,
+      "read_back_chars_recorded": 6043,
       "sections": [
         48
       ],
@@ -760,6 +767,26 @@
         61
       ],
       "title": "M2A Phase XXIII｜AO 测度分开发放与静默：出口 AO-SEPARATES，五值 SUPPORTED"
+    },
+    {
+      "draft": "M2A-文献轮L02-表征层编码.md",
+      "draft_chars": 631,
+      "draft_sha256": "2a718edde08c24e52c6839bfdbb12130deef722fe821e114a7638e490ffe2077",
+      "markers": [
+        "表征层不再有未编码的定义项",
+        "都没有给出可复核的判据",
+        "while not converged",
+        "两个声明区间",
+        "零确证地位"
+      ],
+      "markers_ok_recorded": true,
+      "node_token": "CRhzwSdCNikNJKkjy7gcNvNRn9d",
+      "obj_token": "EHEqd9Iawo3CmQxmx8lceviVn7v",
+      "read_back_chars_recorded": 1155,
+      "sections": [
+        62
+      ],
+      "title": "M2A 文献轮 L-02｜表征层编码落实：锥与 RepInd 有定义，RCO 没有收敛判据"
     }
   ],
   "schema": "m2a.wiki_sync_map.v1",
@@ -1046,24 +1073,32 @@
       "xids_named": [
         125
       ]
+    },
+    {
+      "section": 62,
+      "title": "L-02 表征层编码（2026-10-23 追加）：`L02-O2` 落实——五项 `STATED`、`RCO` 收敛条件 `NOT_STA",
+      "xids_named": [
+        126,
+        127
+      ]
     }
   ],
   "stale_claims": [],
   "tools": [
     {
-      "bytes": 113052,
+      "bytes": 117452,
       "file": "check_step_draft_numbers.py",
-      "sha256": "f5dc89c9814cc2053e57dd7ca3e8e52a062867ebef7b6eb976be31093c420047"
+      "sha256": "2cb3ad6e5754812c9bd4a43e65a4246180833e708c334163b6030f7b25db5c5a"
     },
     {
-      "bytes": 11489,
+      "bytes": 11786,
       "file": "publish_wiki_steps.py",
-      "sha256": "0b2fbf317e2e86a1c3e7d653e6e2e6b35e7e99aed149c14358a6bdf57fdfb530"
+      "sha256": "1c376126e92df76dc0ea94e8f3a468f146bb51670c88fa77a73debc8f6225dbd"
     },
     {
-      "bytes": 14587,
+      "bytes": 15082,
       "file": "feishu_wiki_nodes.json",
-      "sha256": "f98d582eb03e0f3cbba72c25c7b4894136b91cbc1b6ea203c81a76560e56e259"
+      "sha256": "568bcb87d3b61df48c9223565c01d5d62bf5588477aac2a0401679cbaf362387"
     }
   ],
   "unclaimed_sections": [],

@@ -97,7 +97,7 @@ EXPECT = {
     "O-17": ("OPEN", "block", "08_OPEN_QUESTIONS.md", "每条数值检查都必须有可证伪输入", None),
     # --- round L-02 registers its own two disclosed gaps (the namespace now comes from the id)
     "L02-O1": ("OPEN", "block", "literature/ROUND_L02_RESULTS.md", "仍开放：本轮 Q1", None),
-    "L02-O2": ("OPEN", "block", "literature/ROUND_L02_RESULTS.md", "仍开放：表征层的定义侧", None),
+    "L02-O2": ("CLOSED", "close", "literature/ROUND_L02_REPRESENTATION.md", "已落实：表征层定义侧", None),
     "L03-O1": ("OPEN", "block", "literature/ROUND_L03_RESULTS.md", "仍开放：K7 的全文级", None),
 }
 CLASS = {"close": CLOSE, "adopt": ADOPT, "hand": HAND, "block": BLOCK}
@@ -161,6 +161,11 @@ for _p in sorted((M / "literature").glob("ROUND_L*_RESULTS.md")):
         # and must keep its rank behind the round record it supplements
         STATUS_FILE[_n] = tuple(dict.fromkeys(
             list(STATUS_FILE.get(_n, ())) + ["literature/" + _p.name]))
+
+# The addendum that closed L02-O2 is not a `ROUND_L02_RESULTS.md` file, so the glob above cannot see it. Add it
+# to the carrier list explicitly, after the round record it supplements, so the closure has a decider.
+STATUS_FILE["L02"] = tuple(dict.fromkeys(
+    list(STATUS_FILE.get("L02", ())) + ["literature/ROUND_L02_REPRESENTATION.md"]))
 
 LABEL = NAMESPACES["P"]
 BOUNDARY = re.compile(r"[，,。；;！!？?]")
@@ -459,7 +464,8 @@ def main():
            "构建毫无察觉（`ROUND_L01_RESULTS.md` §9.6 登记，与 X-67 同源）；命名空间若改用列举而非形状，下一轮"
            "仍然不在名单上（X-106 同族）。每个命名空间的措辞类别不同（文献侧写「待裁定 / 建议 / 需指定」而非"
            "「关闭 / 落实」），且**状态只由其承载判定措辞的那份工件决定**：`L0n-O<m>` 只看"
-           "``ROUND_L0n_RESULTS.md``，`O-<nn>` 只看 `08_OPEN_QUESTIONS.md`（owner 2026-10-18 明示「状态字保持"
+           "``ROUND_L0n_RESULTS.md`` 加上该轮登记的附加件（当前只有 `L02` 多一份表征层附加件），"
+           "`O-<nn>` 只看 `08_OPEN_QUESTIONS.md`（owner 2026-10-18 明示「状态字保持"
            "原样」）；其他文件的提及计入证据与漂移检测，但不得翻转状态。",
            "> **提及句数**按「提到该标签的句子数」计，同一句里重复出现只算一句（X-67 行内两次写到 "
            "`P16-O1`，此处计 1）；它衡量的是**散布度**不是出现次数，因此与旧版按出现次数计的读数会有"
@@ -501,8 +507,9 @@ def main():
         # --- L-02 自己登记的两条：命名空间由标签形状推导，承载工件就是这一轮的记录
         "L02-O1": "本轮 Q1 / Q2 与 L-01 共用同一批读数，按 §6 只有否证地位、确证地位为零 ⇒ 要取得确证须换语料"
                   "并把判据先于读数注册（`ROUND_L02_RESULTS.md` §8）。",
-        "L02-O2": "表征层定义侧未编码：锥的维度与 `RCO` 收敛条件落在被剥离的数学行上，本轮按预注册不予编码"
-                  "（`ROUND_L02_RESULTS.md` §5、§8）。",
+        "L02-O2": "已落实：PDF v2 上按附加件逐项编码表征层（六项：五项 `STATED`、`RCO` 收敛条件 `NOT_STATED`），"
+                  "出口 `REPRESENTATION_CODED` / `REFUTED`；缺的一项是源文没有给出，不是未编码"
+                  "（`ROUND_L02_REPRESENTATION.md` §3）。",
         "L03-O1": "K7 的全文级编码与 L-01 摘要级 claim 在时间形态（120 min 内快速下降 vs 离散相位反转）"
                   "与 avoidance 的作用域（相对 CS− 的 safety memory vs CS+ 的绝对回避）上不同；"
                   "差异只写入 `L03_coding.json` 与 `ROUND_L03_RESULTS.md`，不回写 L-01（R6）。",

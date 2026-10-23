@@ -51,12 +51,12 @@
     "value_of_other_round": 42,
     "value_only_in_transcription": 39,
     "matches_round_records": 54,
-    "criterion_without_anchor": 782,
+    "criterion_without_anchor": 787,
     "hard_findings": 6,
     "rounded_matches": 29,
-    "claim_values": 2355,
-    "claim_documents": 42,
-    "corpus_documents": 54,
+    "claim_values": 2358,
+    "claim_documents": 44,
+    "corpus_documents": 56,
     "round_families": 25
   },
   "round_records": {
@@ -269,7 +269,7 @@
       ],
       "prereg_values": 0,
       "artifact_values": 436,
-      "transcription_values": 106
+      "transcription_values": 126
     }
   },
   "rows": [
@@ -9554,7 +9554,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2069,
+      "line": 2073,
       "values": [
         "0.005",
         "0.008"
@@ -9601,7 +9601,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2094,
+      "line": 2098,
       "values": [
         "154.1",
         "5.1e-12"
@@ -9626,7 +9626,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2095,
+      "line": 2099,
       "values": [
         "1.0001"
       ],
@@ -9645,7 +9645,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2096,
+      "line": 2100,
       "values": [
         "170.130"
       ],
@@ -9664,7 +9664,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2097,
+      "line": 2101,
       "values": [
         "0.0084",
         "0.9990",
@@ -9695,7 +9695,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2098,
+      "line": 2102,
       "values": [
         "170.130"
       ],
@@ -9714,7 +9714,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2190,
+      "line": 2196,
       "values": [
         "1.0"
       ],
@@ -9758,7 +9758,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2205,
+      "line": 2211,
       "values": [
         "1.0"
       ],
@@ -9802,7 +9802,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2609,
+      "line": 2615,
       "values": [
         "0.1",
         "0.2",
@@ -10070,7 +10070,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2615,
+      "line": 2621,
       "values": [
         "0.0",
         "0.001349",
@@ -10166,7 +10166,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2616,
+      "line": 2622,
       "values": [
         "0.001111",
         "0.019885",
@@ -10260,7 +10260,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2617,
+      "line": 2623,
       "values": [
         "0.000628",
         "0.031487",
@@ -10347,7 +10347,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2618,
+      "line": 2624,
       "values": [
         "0.0",
         "0.000702",
@@ -10445,7 +10445,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2619,
+      "line": 2625,
       "values": [
         "0.000775",
         "0.054564",
@@ -10542,7 +10542,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2620,
+      "line": 2626,
       "values": [
         "0.000563",
         "0.099184",
@@ -10631,7 +10631,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2621,
+      "line": 2627,
       "values": [
         "0.0",
         "0.000910",
@@ -10734,7 +10734,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2622,
+      "line": 2628,
       "values": [
         "0.000350",
         "0.062829",
@@ -10841,7 +10841,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2623,
+      "line": 2629,
       "values": [
         "0.000021",
         "0.176347",
@@ -10944,7 +10944,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2625,
+      "line": 2631,
       "values": [
         "-0.001044",
         "0.000106",
@@ -11167,7 +11167,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2627,
+      "line": 2633,
       "values": [
         "0.36"
       ],
@@ -11199,7 +11199,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2650,
+      "line": 2656,
       "values": [
         "0.1",
         "0.259165",
@@ -11329,7 +11329,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2664,
+      "line": 2670,
       "values": [
         "0.1"
       ],
@@ -11372,7 +11372,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2668,
+      "line": 2674,
       "values": [
         "0.259076",
         "0.259165",
@@ -11425,7 +11425,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2669,
+      "line": 2675,
       "values": [
         "0.349149",
         "0.349254",
@@ -11478,7 +11478,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2670,
+      "line": 2676,
       "values": [
         "-0.000000",
         "-3.053e-16"
@@ -11530,7 +11530,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2671,
+      "line": 2677,
       "values": [
         "-0.000000",
         "-2.220e-16"
@@ -11582,7 +11582,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2673,
+      "line": 2679,
       "values": [
         "4.23e-05",
         "4.41e-05"
@@ -11612,7 +11612,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2677,
+      "line": 2683,
       "values": [
         "0.1"
       ],
@@ -11647,6 +11647,27 @@
             "7",
             "8",
             "9"
+          ]
+        }
+      ],
+      "verdict": "criterion_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2717,
+      "values": [
+        "6.1"
+      ],
+      "excerpt": "| `R-4` | `STATED` | RepInd 定义 6.1 | 30613 | 178 |",
+      "anchors": [],
+      "phantom": [],
+      "per_value": [
+        {
+          "value": "6.1",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "13"
           ]
         }
       ],
@@ -13330,7 +13351,6 @@
       "kind": "append_only",
       "line": 106,
       "values": [
-        "0",
         "0.0168",
         "0.1397",
         "0.8"
@@ -13339,36 +13359,6 @@
       "anchors": [],
       "phantom": [],
       "per_value": [
-        {
-          "value": "0",
-          "attested_in": {},
-          "registered_by_other_round": [
-            "1",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "2",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9"
-          ]
-        },
         {
           "value": "0.0168",
           "attested_in": {},
@@ -14826,7 +14816,6 @@
       "line": 150,
       "values": [
         "-2.000",
-        "0",
         "0.0114",
         "0.3290",
         "0.3320",
@@ -14850,36 +14839,6 @@
             "17",
             "6",
             "8"
-          ]
-        },
-        {
-          "value": "0",
-          "attested_in": {},
-          "registered_by_other_round": [
-            "1",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "2",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9"
           ]
         },
         {
@@ -17022,7 +16981,7 @@
     {
       "document": "governance/OBLIGATION_REGISTRY.md",
       "kind": "regenerated",
-      "line": 105,
+      "line": 104,
       "values": [
         "0.0050",
         "1e-4"
@@ -17070,7 +17029,7 @@
     {
       "document": "governance/OBLIGATION_REGISTRY.md",
       "kind": "regenerated",
-      "line": 106,
+      "line": 105,
       "values": [
         "0.6",
         "154.664",
@@ -17146,7 +17105,7 @@
     {
       "document": "governance/OBLIGATION_REGISTRY.md",
       "kind": "regenerated",
-      "line": 110,
+      "line": 109,
       "values": [
         "0.2"
       ],
@@ -45036,6 +44995,76 @@
       "verdict": "criterion_without_anchor"
     },
     {
+      "document": "literature/L02_REPRESENTATION_ADDENDUM.md",
+      "kind": "run_record",
+      "line": 33,
+      "values": [
+        "4.1"
+      ],
+      "excerpt": "| `R-1` | 锥的定义：正交基 `B` 张成 `N` 维多面体锥 `R_N = {Σλ_i b_i \\| λ_i ≥ 0}\\{0}`，且锥内所有方向满足拒绝性质（定理 4.1）；同一锥内的方向被称作 **concept cone** | 引文一遍命中 | 正文 |",
+      "anchors": [],
+      "phantom": [],
+      "per_value": [
+        {
+          "value": "4.1",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "4",
+            "5",
+            "6",
+            "8"
+          ]
+        }
+      ],
+      "verdict": "criterion_without_anchor"
+    },
+    {
+      "document": "literature/L02_REPRESENTATION_ADDENDUM.md",
+      "kind": "run_record",
+      "line": 36,
+      "values": [
+        "6.1"
+      ],
+      "excerpt": "| `R-4` | RepInd 定义 6.1：在逐层余弦相似度意义上，消融一个方向不改变另一个方向的表达 | 引文一遍命中 | 正文 |",
+      "anchors": [],
+      "phantom": [],
+      "per_value": [
+        {
+          "value": "6.1",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "13"
+          ]
+        }
+      ],
+      "verdict": "criterion_without_anchor"
+    },
+    {
+      "document": "literature/L02_REPRESENTATION_ADDENDUM.md",
+      "kind": "run_record",
+      "line": 100,
+      "values": [
+        "1e-6"
+      ],
+      "excerpt": "2. **循环即判据**：若 `while not converged` 被某个数值条件填充（如误差 < 1e-6），关键词表能抓住",
+      "anchors": [],
+      "phantom": [],
+      "per_value": [
+        {
+          "value": "1e-6",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "10",
+            "14",
+            "15",
+            "21",
+            "8"
+          ]
+        }
+      ],
+      "verdict": "criterion_without_anchor"
+    },
+    {
       "document": "literature/PRELIMINARY_CONCLUSIONS_V2.md",
       "kind": "run_record",
       "line": 91,
@@ -45266,6 +45295,30 @@
         }
       ],
       "verdict": "matches_round_records"
+    },
+    {
+      "document": "literature/ROUND_L02_REPRESENTATION.md",
+      "kind": "run_record",
+      "line": 45,
+      "values": [
+        "4.1"
+      ],
+      "excerpt": "| `R-1` | **STATED** | 「For this, we optimize an orthonormal basis … where all directions r ∈ RN satisfy the refusal properties (Theorem 4.1).」 | 2052",
+      "anchors": [],
+      "phantom": [],
+      "per_value": [
+        {
+          "value": "4.1",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "4",
+            "5",
+            "6",
+            "8"
+          ]
+        }
+      ],
+      "verdict": "criterion_without_anchor"
     },
     {
       "document": "literature/ROUND_L02_RESULTS.md",

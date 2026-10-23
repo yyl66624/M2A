@@ -9,8 +9,8 @@
     }
   ],
   "counts": {
-    "claims_rows_in_sync_map": 31,
-    "draft_page_aligned": 24,
+    "claims_rows_in_sync_map": 32,
+    "draft_page_aligned": 25,
     "draft_page_grew": 2,
     "draft_page_hard": 0,
     "errata_not_effective": 0,
@@ -18,28 +18,29 @@
     "erratum_rows_effective": 1,
     "hard_findings": 0,
     "instrument_claims_pages": 16,
-    "instrument_claims_sections": 17,
-    "instruments_attested_in_repo": 25,
+    "instrument_claims_sections": 18,
+    "instruments_attested_in_repo": 26,
     "instruments_missing_from_pages": [
       "frozen_input_map_gate.py",
+      "l02_representation_gate.py",
       "p23_gate.py",
       "p24_gate.py"
     ],
-    "instruments_named_in_sections": 14,
+    "instruments_named_in_sections": 15,
     "instruments_named_on_pages": 13,
     "instruments_only_on_pages": [
       "l01_gate.py",
       "suite_score_registry_gate.py"
     ],
     "page_superseded": 1,
-    "pages_reconciled": 27,
+    "pages_reconciled": 28,
     "pages_with_self_referential_claims": 1,
     "pairs_aligned": 21,
-    "pairs_compressed": 4,
+    "pairs_compressed": 5,
     "pairs_no_capture": 0,
     "prose_slashes_ignored": 0,
     "score_unattested_in_repo": 0,
-    "sections_covered": 31,
+    "sections_covered": 32,
     "self_referential_values": 1,
     "values_attested_only_in_registration": 1,
     "values_loosely_attested_only": 0
@@ -60,6 +61,7 @@
     "frozen_input_map_gate.py": 57,
     "gate_coverage_map_gate.py": 45,
     "gate_discrimination_gate.py": 47,
+    "l02_representation_gate.py": 62,
     "obligation_registry_gate.py": 45,
     "p10_gate.py": 44,
     "p23_gate.py": 61,
@@ -688,13 +690,13 @@
       "multi_value": {},
       "node_token": "QuO5w9vGFiikp1kSKbgcrh1jnnb",
       "not_on_page": [],
-      "page_chars": 5813,
+      "page_chars": 6043,
       "page_claims": {
         "suite_score_registry_gate.py": [
           "20/20"
         ]
       },
-      "page_sha256": "56a0d48cbd5a2c443202140a45ff1f4bf414bc9816e0b981b01c1f4655bb8c21",
+      "page_sha256": "41c33cd8c185626cb712fc5b70f05d4b11f6e4aec18da792142a7589f1bac103",
       "prose_slashes_ignored": {},
       "section_claims": {},
       "sections": [
@@ -1058,6 +1060,37 @@
       "unattested": {},
       "unmeasurable": {},
       "verdict": "compressed"
+    },
+    {
+      "attestation": {},
+      "draft_vs_page": {
+        "disagree": {},
+        "verdict": "aligned"
+      },
+      "erratum": {},
+      "loosely_attested": {},
+      "multi_value": {},
+      "node_token": "CRhzwSdCNikNJKkjy7gcNvNRn9d",
+      "not_on_page": [
+        "l02_representation_gate.py"
+      ],
+      "page_chars": 1155,
+      "page_claims": {},
+      "page_sha256": "16198370b25ffa51670ed103920b571fe5c2f954943b4a62cb9a5292ad6b67d1",
+      "prose_slashes_ignored": {},
+      "section_claims": {
+        "l02_representation_gate.py": [
+          "16/16"
+        ]
+      },
+      "sections": [
+        62
+      ],
+      "superseded": {},
+      "title": "M2A 文献轮 L-02｜表征层编码落实：锥与 RepInd 有定义，RCO 没有收敛判据",
+      "unattested": {},
+      "unmeasurable": {},
+      "verdict": "compressed"
     }
   ],
   "repo_attestation": {
@@ -1095,6 +1128,12 @@
     "l01_gate.py": {
       "7/7": [
         "literature/ROUND_L01_RESULTS.md"
+      ]
+    },
+    "l02_representation_gate.py": {
+      "16/16": [
+        "M2A_FINAL_REPORT.md",
+        "literature/ROUND_L02_REPRESENTATION.md"
       ]
     },
     "obligation_registry_gate.py": {
@@ -1197,6 +1236,10 @@
     "l02_gate.py": [
       "16/16"
     ],
+    "l02_representation_gate.py": [
+      "14/14",
+      "16/16"
+    ],
     "l03_gate.py": [
       "13/13",
       "20/20"
@@ -1282,6 +1325,9 @@
     "gate_discrimination_gate.py": [
       "5/5",
       "59/59"
+    ],
+    "l02_representation_gate.py": [
+      "16/16"
     ],
     "obligation_registry_gate.py": [
       "8/8"

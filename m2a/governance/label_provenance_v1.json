@@ -71,16 +71,16 @@
     "not_a_round_verdict": 0,
     "attested_in_other_round": 0,
     "anchor_without_recorded_label": 3,
-    "label_mention_without_predication": 237,
+    "label_mention_without_predication": 245,
     "cross_round_refutation": 0,
-    "label_without_anchor": 454,
-    "matches_artifact": 53,
+    "label_without_anchor": 491,
+    "matches_artifact": 56,
     "hard_findings": 1,
     "paired_corrections": 0,
-    "claim_documents": 50,
-    "corpus_documents": 56,
-    "artifact_files": 49,
-    "vocabulary_tokens": 44,
+    "claim_documents": 52,
+    "corpus_documents": 58,
+    "artifact_files": 50,
+    "vocabulary_tokens": 47,
     "registered_phases": 24
   },
   "artifact_labels": {
@@ -403,6 +403,20 @@
         "CONTRADICTED",
         "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
         "ZERO_TEST_REANALYSIS"
+      ]
+    },
+    "literature/L02_representation_coding.json": {
+      "five": [
+        "CONTRADICTED",
+        "SUPPORTED"
+      ],
+      "raw": [
+        "NOT_STATED",
+        "REFUTED",
+        "REPRESENTATION_CODED",
+        "STATED",
+        "descriptive_only: the text was acquired before the addendum (L02-REP-0), so this round can describe the source but cannot confirm any cross-domain claim",
+        "the conjunctive claim H-R fails if any item is NOT_STATED (REFUTED); all STATED would be SUPPORTED; an unresolvable item is an instrument defect and takes exit 2"
       ]
     },
     "literature/L03_coding.json": {
@@ -2956,7 +2970,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1968,
+      "line": 1970,
       "labels": [
         "CONTRADICTED",
         "INDETERMINATE",
@@ -2973,7 +2987,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1969,
+      "line": 1971,
       "labels": [
         "SUPPORTED"
       ],
@@ -3007,7 +3021,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1992,
+      "line": 1994,
       "labels": [
         "SUPPORTED"
       ],
@@ -3020,7 +3034,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1998,
+      "line": 2000,
       "labels": [
         "IDENTITY_VERIFIED",
         "PASS"
@@ -3053,7 +3067,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1999,
+      "line": 2001,
       "labels": [
         "COUNT_NOT_STATUS",
         "MANUAL_REVIEW"
@@ -3067,7 +3081,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2102,
+      "line": 2106,
       "labels": [
         "OPEN"
       ],
@@ -3080,7 +3094,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2180,
+      "line": 2186,
       "labels": [
         "CONTRADICTED"
       ],
@@ -3093,7 +3107,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2189,
+      "line": 2195,
       "labels": [
         "CLAIM_LAYER_INFLATION",
         "CONTRADICTED",
@@ -3106,15 +3120,22 @@
       ],
       "phantom": [],
       "allowed_five": [
-        "CONTRADICTED"
+        "CONTRADICTED",
+        "SUPPORTED"
       ],
       "artifact_raw": [
         "CLAIM_LAYER_INFLATION",
         "COMPETING_CODED",
         "CONTRADICTED",
         "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+        "NOT_STATED",
         "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED",
-        "ZERO_TEST_REANALYSIS"
+        "REFUTED",
+        "REPRESENTATION_CODED",
+        "STATED",
+        "ZERO_TEST_REANALYSIS",
+        "descriptive_only: the text was acquired before the addendum (L02-REP-0), so this round can describe the source but cannot confirm any cross-domain claim",
+        "the conjunctive claim H-R fails if any item is NOT_STATED (REFUTED); all STATED would be SUPPORTED; an unresolvable item is an instrument defect and takes exit 2"
       ],
       "predicated": false,
       "attested_labels": [],
@@ -3123,7 +3144,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2190,
+      "line": 2196,
       "labels": [
         "COMPETING_CODED",
         "CONTRADICTED"
@@ -3135,15 +3156,22 @@
       ],
       "phantom": [],
       "allowed_five": [
-        "CONTRADICTED"
+        "CONTRADICTED",
+        "SUPPORTED"
       ],
       "artifact_raw": [
         "CLAIM_LAYER_INFLATION",
         "COMPETING_CODED",
         "CONTRADICTED",
         "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+        "NOT_STATED",
         "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED",
-        "ZERO_TEST_REANALYSIS"
+        "REFUTED",
+        "REPRESENTATION_CODED",
+        "STATED",
+        "ZERO_TEST_REANALYSIS",
+        "descriptive_only: the text was acquired before the addendum (L02-REP-0), so this round can describe the source but cannot confirm any cross-domain claim",
+        "the conjunctive claim H-R fails if any item is NOT_STATED (REFUTED); all STATED would be SUPPORTED; an unresolvable item is an instrument defect and takes exit 2"
       ],
       "predicated": false,
       "attested_labels": [],
@@ -3152,7 +3180,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2191,
+      "line": 2197,
       "labels": [
         "PASS"
       ],
@@ -3165,7 +3193,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2199,
+      "line": 2205,
       "labels": [
         "INDETERMINATE"
       ],
@@ -3207,7 +3235,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2208,
+      "line": 2214,
       "labels": [
         "CONTRADICTED"
       ],
@@ -3220,7 +3248,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2227,
+      "line": 2233,
       "labels": [
         "CONTRADICTED"
       ],
@@ -3231,15 +3259,22 @@
       ],
       "phantom": [],
       "allowed_five": [
-        "CONTRADICTED"
+        "CONTRADICTED",
+        "SUPPORTED"
       ],
       "artifact_raw": [
         "CLAIM_LAYER_INFLATION",
         "COMPETING_CODED",
         "CONTRADICTED",
         "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+        "NOT_STATED",
         "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED",
-        "ZERO_TEST_REANALYSIS"
+        "REFUTED",
+        "REPRESENTATION_CODED",
+        "STATED",
+        "ZERO_TEST_REANALYSIS",
+        "descriptive_only: the text was acquired before the addendum (L02-REP-0), so this round can describe the source but cannot confirm any cross-domain claim",
+        "the conjunctive claim H-R fails if any item is NOT_STATED (REFUTED); all STATED would be SUPPORTED; an unresolvable item is an instrument defect and takes exit 2"
       ],
       "predicated": true,
       "attested_labels": [
@@ -3257,7 +3292,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2248,
+      "line": 2254,
       "labels": [
         "PASS"
       ],
@@ -3270,7 +3305,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2272,
+      "line": 2278,
       "labels": [
         "CLOSED",
         "OPEN"
@@ -3284,7 +3319,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2276,
+      "line": 2282,
       "labels": [
         "CLAIM_LAYER_INFLATION"
       ],
@@ -3295,15 +3330,22 @@
       ],
       "phantom": [],
       "allowed_five": [
-        "CONTRADICTED"
+        "CONTRADICTED",
+        "SUPPORTED"
       ],
       "artifact_raw": [
         "CLAIM_LAYER_INFLATION",
         "COMPETING_CODED",
         "CONTRADICTED",
         "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+        "NOT_STATED",
         "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED",
-        "ZERO_TEST_REANALYSIS"
+        "REFUTED",
+        "REPRESENTATION_CODED",
+        "STATED",
+        "ZERO_TEST_REANALYSIS",
+        "descriptive_only: the text was acquired before the addendum (L02-REP-0), so this round can describe the source but cannot confirm any cross-domain claim",
+        "the conjunctive claim H-R fails if any item is NOT_STATED (REFUTED); all STATED would be SUPPORTED; an unresolvable item is an instrument defect and takes exit 2"
       ],
       "predicated": false,
       "attested_labels": [],
@@ -3312,7 +3354,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2542,
+      "line": 2548,
       "labels": [
         "FULLTEXT_REVISES",
         "INDETERMINATE"
@@ -3353,7 +3395,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2560,
+      "line": 2566,
       "labels": [
         "FULLTEXT_REVISES",
         "INDETERMINATE"
@@ -3380,7 +3422,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2561,
+      "line": 2567,
       "labels": [
         "CLOSED",
         "OPEN"
@@ -3418,7 +3460,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2565,
+      "line": 2571,
       "labels": [
         "CONFIRMED"
       ],
@@ -3431,7 +3473,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2570,
+      "line": 2576,
       "labels": [
         "REFUTED"
       ],
@@ -3444,7 +3486,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2605,
+      "line": 2611,
       "labels": [
         "REGULARIZATION-DOES-NOT-REPAIR",
         "SUPPORTED"
@@ -3484,7 +3526,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2640,
+      "line": 2646,
       "labels": [
         "OPEN"
       ],
@@ -3497,7 +3539,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2650,
+      "line": 2656,
       "labels": [
         "AO-SEPARATES",
         "CONTRADICTED",
@@ -3515,7 +3557,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2658,
+      "line": 2664,
       "labels": [
         "AO-SEPARATES",
         "SUPPORTED"
@@ -3554,7 +3596,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2660,
+      "line": 2666,
       "labels": [
         "AO-SEPARATES",
         "SUPPORTED"
@@ -3593,7 +3635,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2673,
+      "line": 2679,
       "labels": [
         "AO-SEPARATES",
         "SUPPORTED"
@@ -3603,6 +3645,305 @@
       "anchors": [],
       "phantom": [],
       "verdict": "label_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2694,
+      "labels": [
+        "NOT_STATED",
+        "STATED"
+      ],
+      "excerpt": "### 62 L-02 表征层编码（2026-10-23 追加）：`L02-O2` 落实——五项 `STATED`、`RCO` 收敛条件 `NOT_STATED`",
+      "line_len": 81,
+      "anchors": [
+        "L02"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "CONTRADICTED",
+        "SUPPORTED"
+      ],
+      "artifact_raw": [
+        "CLAIM_LAYER_INFLATION",
+        "COMPETING_CODED",
+        "CONTRADICTED",
+        "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+        "NOT_STATED",
+        "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED",
+        "REFUTED",
+        "REPRESENTATION_CODED",
+        "STATED",
+        "ZERO_TEST_REANALYSIS",
+        "descriptive_only: the text was acquired before the addendum (L02-REP-0), so this round can describe the source but cannot confirm any cross-domain claim",
+        "the conjunctive claim H-R fails if any item is NOT_STATED (REFUTED); all STATED would be SUPPORTED; an unresolvable item is an instrument defect and takes exit 2"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2696,
+      "labels": [
+        "CLOSED",
+        "OPEN",
+        "REFUTED",
+        "REPRESENTATION_CODED"
+      ],
+      "excerpt": "状态标签：**编码判定 `REFUTED`**（R17 五值；出口 `REPRESENTATION_CODED`，对回 `L02_representation_coding.json` 的 `label_r17`）。`L02-O2` 由 `OPEN` 改为 `CLOSED`：表征层的六项定义性内容逐项落定，缺的那一项是",
+      "line_len": 222,
+      "anchors": [
+        "L01",
+        "L02",
+        "L03"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "CONTRADICTED",
+        "INDETERMINATE",
+        "SUPPORTED"
+      ],
+      "artifact_raw": [
+        "71c3cac127ec8ba9",
+        "CLAIM_LAYER_INFLATION",
+        "CLOSED",
+        "COMPETING_CODED",
+        "CONTRADICTED",
+        "FULLTEXT_REVISES",
+        "INDETERMINATE",
+        "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+        "NOT_STATED",
+        "OBTAINED_THIRD_CHANNEL",
+        "OPEN",
+        "PASS",
+        "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED",
+        "REFUTED",
+        "REPRESENTATION_CODED",
+        "SECOND_CHANNEL_ERROR",
+        "SECOND_CHANNEL_MISMATCH",
+        "STATED",
+        "VERIFIED_THIRD_CHANNEL",
+        "VERIFIED_TWO_CHANNEL",
+        "ZERO_TEST_REANALYSIS",
+        "descriptive_only: the text was acquired before the addendum (L02-REP-0), so this round can describe the source but cannot confirm any cross-domain claim",
+        "the conjunctive claim H-R fails if any item is NOT_STATED (REFUTED); all STATED would be SUPPORTED; an unresolvable item is an instrument defect and takes exit 2"
+      ],
+      "predicated": true,
+      "attested_labels": [
+        "REFUTED",
+        "REPRESENTATION_CODED"
+      ],
+      "per_label": [
+        [
+          "CLOSED",
+          "label_mention_without_predication"
+        ],
+        [
+          "OPEN",
+          "label_mention_without_predication"
+        ],
+        [
+          "REFUTED",
+          "matches_artifact"
+        ],
+        [
+          "REPRESENTATION_CODED",
+          "matches_artifact"
+        ]
+      ],
+      "errata": [],
+      "verdict": "matches_artifact"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2705,
+      "labels": [
+        "REFUTED",
+        "REPRESENTATION_CODED"
+      ],
+      "excerpt": "wrote L02_representation_coding.json | exit REPRESENTATION_CODED (REFUTED) | items 6 | stated 5 | not_stated ['R-5'] | text_sha256 83656c4e44864edd | binding ma",
+      "line_len": 163,
+      "anchors": [
+        "L02"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "CONTRADICTED",
+        "SUPPORTED"
+      ],
+      "artifact_raw": [
+        "CLAIM_LAYER_INFLATION",
+        "COMPETING_CODED",
+        "CONTRADICTED",
+        "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+        "NOT_STATED",
+        "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED",
+        "REFUTED",
+        "REPRESENTATION_CODED",
+        "STATED",
+        "ZERO_TEST_REANALYSIS",
+        "descriptive_only: the text was acquired before the addendum (L02-REP-0), so this round can describe the source but cannot confirm any cross-domain claim",
+        "the conjunctive claim H-R fails if any item is NOT_STATED (REFUTED); all STATED would be SUPPORTED; an unresolvable item is an instrument defect and takes exit 2"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2712,
+      "labels": [
+        "STATED"
+      ],
+      "excerpt": "| `R-1` | `STATED` | 正交基 `B` 张成 `N` 维多面体锥 `R_N`，锥内所有方向满足拒绝性质 | 20524 | 214 |",
+      "line_len": 76,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2713,
+      "labels": [
+        "STATED"
+      ],
+      "excerpt": "| `R-1` | `STATED` | 同一锥内的方向即 concept cone | 20739 | 113 |",
+      "line_len": 58,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2714,
+      "labels": [
+        "STATED"
+      ],
+      "excerpt": "| `R-2` | `STATED` | 所有被测模型可达「最多五维」 | 23060 | 88 |",
+      "line_len": 50,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2715,
+      "labels": [
+        "STATED"
+      ],
+      "excerpt": "| `R-2` | `STATED` | 四维处饱和 | 25526 | 94 |",
+      "line_len": 41,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2716,
+      "labels": [
+        "STATED"
+      ],
+      "excerpt": "| `R-3` | `STATED` | Gram–Schmidt 把基投影回锥 | 22225 | 90 |",
+      "line_len": 55,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2717,
+      "labels": [
+        "STATED"
+      ],
+      "excerpt": "| `R-4` | `STATED` | RepInd 定义 6.1 | 30613 | 178 |",
+      "line_len": 50,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2718,
+      "labels": [
+        "STATED"
+      ],
+      "excerpt": "| `R-6` | `STATED` | 正交不保证贯穿网络的独立 | 29821 | 118 |",
+      "line_len": 49,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2720,
+      "labels": [
+        "NOT_STATED"
+      ],
+      "excerpt": "`R-5`（`RCO` 的收敛条件）是唯一的 `NOT_STATED`：`A2_BODY` 304 字符、`A2_PROSE` 925 字符，12 个登记关键词与两类数值写法**逐项零命中**；唯一候选短语 `while not converged do` 在 `A2_BODY` 内恰 1 次、全文 2 次（算法 1 ",
+      "line_len": 205,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2726,
+      "labels": [
+        "NOT_STATED"
+      ],
+      "excerpt": "**边界**：只对 v2 的 SHA-256 负责；`NOT_STATED` 是关于两个声明区间的否定，不是「论文没有收敛判据」的全域命题；本轮没有复跑 `RCO`、不检验论文实现是否收敛；零确证地位，不改变 `ROUND_L02_RESULTS.md` 的任何判定。",
+      "line_len": 134,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2728,
+      "labels": [
+        "CLOSED",
+        "OPEN"
+      ],
+      "excerpt": "**台账**：59 labels，35 CLOSED + 2 SUCCEEDED + 22 OPEN（构建器打印行；`L02-O2` 的承载工件是 `ROUND_L02_REPRESENTATION.md`，由构建器的追加登记接入 `L02` 命名空间）。",
+      "line_len": 128,
+      "anchors": [
+        "L02"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "CONTRADICTED",
+        "SUPPORTED"
+      ],
+      "artifact_raw": [
+        "CLAIM_LAYER_INFLATION",
+        "COMPETING_CODED",
+        "CONTRADICTED",
+        "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+        "NOT_STATED",
+        "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED",
+        "REFUTED",
+        "REPRESENTATION_CODED",
+        "STATED",
+        "ZERO_TEST_REANALYSIS",
+        "descriptive_only: the text was acquired before the addendum (L02-REP-0), so this round can describe the source but cannot confirm any cross-domain claim",
+        "the conjunctive claim H-R fails if any item is NOT_STATED (REFUTED); all STATED would be SUPPORTED; an unresolvable item is an instrument defect and takes exit 2"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
     },
     {
       "document": "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
@@ -4188,7 +4529,8 @@
       "phantom": [],
       "allowed_five": [
         "CONTRADICTED",
-        "INDETERMINATE"
+        "INDETERMINATE",
+        "SUPPORTED"
       ],
       "artifact_raw": [
         "71c3cac127ec8ba9",
@@ -4197,14 +4539,20 @@
         "CONTRADICTED",
         "INDETERMINATE",
         "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+        "NOT_STATED",
         "OBTAINED_THIRD_CHANNEL",
         "PASS",
         "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED",
+        "REFUTED",
+        "REPRESENTATION_CODED",
         "SECOND_CHANNEL_ERROR",
         "SECOND_CHANNEL_MISMATCH",
+        "STATED",
         "VERIFIED_THIRD_CHANNEL",
         "VERIFIED_TWO_CHANNEL",
-        "ZERO_TEST_REANALYSIS"
+        "ZERO_TEST_REANALYSIS",
+        "descriptive_only: the text was acquired before the addendum (L02-REP-0), so this round can describe the source but cannot confirm any cross-domain claim",
+        "the conjunctive claim H-R fails if any item is NOT_STATED (REFUTED); all STATED would be SUPPORTED; an unresolvable item is an instrument defect and takes exit 2"
       ],
       "predicated": true,
       "attested_labels": [
@@ -4945,7 +5293,7 @@
       "labels": [
         "OPEN"
       ],
-      "excerpt": "| L01-O1 | **OPEN** | 11 | `literature/ROUND_L01_DISPOSITIONS.md:15` | 开放类措辞 | — |",
+      "excerpt": "| L01-O1 | **OPEN** | 13 | `literature/ROUND_L01_DISPOSITIONS.md:15` | 开放类措辞 | — |",
       "line_len": 82,
       "anchors": [
         "L01"
@@ -5110,22 +5458,29 @@
       "labels": [
         "OPEN"
       ],
-      "excerpt": "| L02-O1 | **OPEN** | 5 | `literature/ROUND_L02_RESULTS.md:122` | 开放类措辞 | — |",
+      "excerpt": "| L02-O1 | **OPEN** | 9 | `literature/ROUND_L02_RESULTS.md:122` | 开放类措辞 | — |",
       "line_len": 77,
       "anchors": [
         "L02"
       ],
       "phantom": [],
       "allowed_five": [
-        "CONTRADICTED"
+        "CONTRADICTED",
+        "SUPPORTED"
       ],
       "artifact_raw": [
         "CLAIM_LAYER_INFLATION",
         "COMPETING_CODED",
         "CONTRADICTED",
         "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+        "NOT_STATED",
         "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED",
-        "ZERO_TEST_REANALYSIS"
+        "REFUTED",
+        "REPRESENTATION_CODED",
+        "STATED",
+        "ZERO_TEST_REANALYSIS",
+        "descriptive_only: the text was acquired before the addendum (L02-REP-0), so this round can describe the source but cannot confirm any cross-domain claim",
+        "the conjunctive claim H-R fails if any item is NOT_STATED (REFUTED); all STATED would be SUPPORTED; an unresolvable item is an instrument defect and takes exit 2"
       ],
       "predicated": false,
       "attested_labels": [],
@@ -5136,24 +5491,31 @@
       "kind": "regenerated",
       "line": 54,
       "labels": [
-        "OPEN"
+        "CLOSED"
       ],
-      "excerpt": "| L02-O2 | **OPEN** | 5 | `literature/ROUND_L02_RESULTS.md:124` | 开放类措辞 | — |",
-      "line_len": 77,
+      "excerpt": "| L02-O2 | **CLOSED** | 18 | `literature/ROUND_L02_REPRESENTATION.md:65` | 关闭类措辞 | — |",
+      "line_len": 86,
       "anchors": [
         "L02"
       ],
       "phantom": [],
       "allowed_five": [
-        "CONTRADICTED"
+        "CONTRADICTED",
+        "SUPPORTED"
       ],
       "artifact_raw": [
         "CLAIM_LAYER_INFLATION",
         "COMPETING_CODED",
         "CONTRADICTED",
         "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+        "NOT_STATED",
         "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED",
-        "ZERO_TEST_REANALYSIS"
+        "REFUTED",
+        "REPRESENTATION_CODED",
+        "STATED",
+        "ZERO_TEST_REANALYSIS",
+        "descriptive_only: the text was acquired before the addendum (L02-REP-0), so this round can describe the source but cannot confirm any cross-domain claim",
+        "the conjunctive claim H-R fails if any item is NOT_STATED (REFUTED); all STATED would be SUPPORTED; an unresolvable item is an instrument defect and takes exit 2"
       ],
       "predicated": false,
       "attested_labels": [],
@@ -5166,7 +5528,7 @@
       "labels": [
         "OPEN"
       ],
-      "excerpt": "| L03-O1 | **OPEN** | 12 | `literature/ROUND_L03_RESULTS.md:93` | 开放类措辞 | — |",
+      "excerpt": "| L03-O1 | **OPEN** | 14 | `literature/ROUND_L03_RESULTS.md:93` | 开放类措辞 | — |",
       "line_len": 77,
       "anchors": [
         "L03"
@@ -5414,7 +5776,7 @@
         "CLOSED",
         "OPEN"
       ],
-      "excerpt": "**计数**：CLOSED 34 / SUCCEEDED 2 / OPEN 23 / UNCLASSIFIED 0，共 59 条标签。命名空间分布：实验轮 `P<n>-O<m>` 34 条、文献轮 `L01-O<m>` 5 条、开放问题 `O-<nn>` 17 条。",
+      "excerpt": "**计数**：CLOSED 35 / SUCCEEDED 2 / OPEN 22 / UNCLASSIFIED 0，共 59 条标签。命名空间分布：实验轮 `P<n>-O<m>` 34 条、文献轮 `L01-O<m>` 5 条、开放问题 `O-<nn>` 17 条。",
       "line_len": 133,
       "anchors": [
         "L01"
@@ -5467,7 +5829,7 @@
     {
       "document": "governance/OBLIGATION_REGISTRY.md",
       "kind": "regenerated",
-      "line": 100,
+      "line": 99,
       "labels": [
         "INDETERMINATE"
       ],
@@ -5500,7 +5862,7 @@
     {
       "document": "governance/OBLIGATION_REGISTRY.md",
       "kind": "regenerated",
-      "line": 106,
+      "line": 105,
       "labels": [
         "OPEN"
       ],
@@ -12839,6 +13201,305 @@
       "verdict": "label_without_anchor"
     },
     {
+      "document": "literature/L02_REPRESENTATION_ADDENDUM.md",
+      "kind": "run_record",
+      "line": 16,
+      "labels": [
+        "NOT_STATED",
+        "STATED"
+      ],
+      "excerpt": "- 冻结的是**编码与引用规则**（编哪些项、什么算 `STATED`、什么算 `NOT_STATED`、引文与缺失如何复核），",
+      "line_len": 64,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/L02_REPRESENTATION_ADDENDUM.md",
+      "kind": "run_record",
+      "line": 19,
+      "labels": [
+        "CONTRADICTED",
+        "SUPPORTED"
+      ],
+      "excerpt": "- 本轮**没有确证地位**——它不能确认任何跨域主张，也不能把 L-02 的 `CONTRADICTED` 抬成 `SUPPORTED`；",
+      "line_len": 70,
+      "anchors": [
+        "L02"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "CONTRADICTED",
+        "SUPPORTED"
+      ],
+      "artifact_raw": [
+        "CLAIM_LAYER_INFLATION",
+        "COMPETING_CODED",
+        "CONTRADICTED",
+        "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+        "NOT_STATED",
+        "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED",
+        "REFUTED",
+        "REPRESENTATION_CODED",
+        "STATED",
+        "ZERO_TEST_REANALYSIS",
+        "descriptive_only: the text was acquired before the addendum (L02-REP-0), so this round can describe the source but cannot confirm any cross-domain claim",
+        "the conjunctive claim H-R fails if any item is NOT_STATED (REFUTED); all STATED would be SUPPORTED; an unresolvable item is an instrument defect and takes exit 2"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
+    },
+    {
+      "document": "literature/L02_REPRESENTATION_ADDENDUM.md",
+      "kind": "run_record",
+      "line": 27,
+      "labels": [
+        "STATED"
+      ],
+      "excerpt": "六条合取项 `R-1…R-6`，登记如下。每条要么 `STATED`（存在一段 20–400 字符、在规范化正文中**出现且仅出现一次**",
+      "line_len": 69,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/L02_REPRESENTATION_ADDENDUM.md",
+      "kind": "run_record",
+      "line": 28,
+      "labels": [
+        "NOT_STATED"
+      ],
+      "excerpt": "的逐字引文），要么 `NOT_STATED`（在 §3 登记的区间内，登记的关键词**零命中**；且唯一候选短语的出现次数被记录）。",
+      "line_len": 66,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/L02_REPRESENTATION_ADDENDUM.md",
+      "kind": "run_record",
+      "line": 29,
+      "labels": [
+        "NOT_STATED"
+      ],
+      "excerpt": "不允许第三种状态：`UNLOCATABLE` 属于仪器缺陷，会把整轮降级为 `REPRESENTATION_PARTIAL`，不会静默变成 `NOT_STATED`。",
+      "line_len": 83,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/L02_REPRESENTATION_ADDENDUM.md",
+      "kind": "run_record",
+      "line": 37,
+      "labels": [
+        "NOT_STATED",
+        "STATED"
+      ],
+      "excerpt": "| `R-5` | `RCO` 的**收敛条件**：`while not converged` 是否有可复核的数值判据（容差、最大迭代、相对变化、停止规则） | 区间内零命中 ⇒ `NOT_STATED`；任一命中 ⇒ `STATED` | 正文 |",
+      "line_len": 125,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/L02_REPRESENTATION_ADDENDUM.md",
+      "kind": "run_record",
+      "line": 40,
+      "labels": [
+        "NOT_STATED"
+      ],
+      "excerpt": "`R-5` 是本轮唯一允许落 `NOT_STATED` 的项，因为它的判据是**缺失**；其余五项若 `NOT_STATED`，那是引文没找对，",
+      "line_len": 72,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/L02_REPRESENTATION_ADDENDUM.md",
+      "kind": "run_record",
+      "line": 75,
+      "labels": [
+        "STATED"
+      ],
+      "excerpt": "同样算 `STATED`。两个区间之外（例如附录的伪代码复本）**不**参与判定——这是本轮声明的可主张范围，不是全域。",
+      "line_len": 60,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/L02_REPRESENTATION_ADDENDUM.md",
+      "kind": "run_record",
+      "line": 81,
+      "labels": [
+        "REFUTED",
+        "REPRESENTATION_CODED",
+        "STATED",
+        "SUPPORTED"
+      ],
+      "excerpt": "| 1 | 六项全部落定（五条引文一遍命中；`R-5` 的区间与零命中可复核） | `REPRESENTATION_CODED` | 六项全 `STATED` ⇒ `SUPPORTED`；否则 `REFUTED` |",
+      "line_len": 108,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/L02_REPRESENTATION_ADDENDUM.md",
+      "kind": "run_record",
+      "line": 82,
+      "labels": [
+        "NOT_IDENTIFIED"
+      ],
+      "excerpt": "| 2 | 任一项引文不唯一/找不到，或区间端点不唯一，或词表外状态 | `REPRESENTATION_PARTIAL` | `NOT_IDENTIFIED` |",
+      "line_len": 82,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/L02_REPRESENTATION_ADDENDUM.md",
+      "kind": "run_record",
+      "line": 83,
+      "labels": [
+        "NULL"
+      ],
+      "excerpt": "| 3 | PDF 存在但 SHA-256 不符 | `REPRESENTATION_SOURCE_MISMATCH` | `NULL` |",
+      "line_len": 70,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/L02_REPRESENTATION_ADDENDUM.md",
+      "kind": "run_record",
+      "line": 84,
+      "labels": [
+        "NULL"
+      ],
+      "excerpt": "| 4 | PDF 不存在 | `REPRESENTATION_SOURCE_MISSING` | `NULL` |",
+      "line_len": 58,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/L02_REPRESENTATION_ADDENDUM.md",
+      "kind": "run_record",
+      "line": 86,
+      "labels": [
+        "NOT_STATED",
+        "REFUTED"
+      ],
+      "excerpt": "标签推导只由合取项决定：`H-R` 只要有一条合取项 `NOT_STATED` 就整体被否证（`REFUTED`）；",
+      "line_len": 58,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/L02_REPRESENTATION_ADDENDUM.md",
+      "kind": "run_record",
+      "line": 87,
+      "labels": [
+        "STATED"
+      ],
+      "excerpt": "本轮预期 `refuting_items = [\"R-5\"]` 是**读数**，不是预写结论——若区间内出现任一关键词，`R-5` 落 `STATED`，",
+      "line_len": 77,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/L02_REPRESENTATION_ADDENDUM.md",
+      "kind": "run_record",
+      "line": 88,
+      "labels": [
+        "SUPPORTED"
+      ],
+      "excerpt": "标签随之为 `SUPPORTED`。两种结果都按出口表取，不做事后改档。",
+      "line_len": 36,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/L02_REPRESENTATION_ADDENDUM.md",
+      "kind": "run_record",
+      "line": 90,
+      "labels": [
+        "REFUTED",
+        "REPRESENTATION_CODED"
+      ],
+      "excerpt": "`REPRESENTATION_CODED / REFUTED` 的正确读法是：**编码完成了**，而被编码的合取主张被源文否证",
+      "line_len": 64,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/L02_REPRESENTATION_ADDENDUM.md",
+      "kind": "run_record",
+      "line": 92,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "`L02-O2` 关闭后，`L02-O1`（确证地位）**保持 OPEN**。",
+      "line_len": 39,
+      "anchors": [
+        "L02"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "CONTRADICTED",
+        "SUPPORTED"
+      ],
+      "artifact_raw": [
+        "CLAIM_LAYER_INFLATION",
+        "COMPETING_CODED",
+        "CONTRADICTED",
+        "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+        "NOT_STATED",
+        "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED",
+        "REFUTED",
+        "REPRESENTATION_CODED",
+        "STATED",
+        "ZERO_TEST_REANALYSIS",
+        "descriptive_only: the text was acquired before the addendum (L02-REP-0), so this round can describe the source but cannot confirm any cross-domain claim",
+        "the conjunctive claim H-R fails if any item is NOT_STATED (REFUTED); all STATED would be SUPPORTED; an unresolvable item is an instrument defect and takes exit 2"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
+    },
+    {
+      "document": "literature/L02_REPRESENTATION_ADDENDUM.md",
+      "kind": "run_record",
+      "line": 98,
+      "labels": [
+        "STATED"
+      ],
+      "excerpt": "1. **判据写在别处**：若收敛判据只出现在正文对算法 2 的解释段（`A2_PROSE`）而不是伪代码里，`R-5` 必须落 `STATED`。",
+      "line_len": 74,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/L02_REPRESENTATION_ADDENDUM.md",
+      "kind": "run_record",
+      "line": 99,
+      "labels": [
+        "NOT_STATED"
+      ],
+      "excerpt": "该区间是为此设的；两个区间都零命中才允许 `NOT_STATED`。",
+      "line_len": 37,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
       "document": "literature/PRELIMINARY_CONCLUSIONS_V2.md",
       "kind": "run_record",
       "line": 5,
@@ -13310,6 +13971,351 @@
       "verdict": "label_without_anchor"
     },
     {
+      "document": "literature/ROUND_L02_REPRESENTATION.md",
+      "kind": "run_record",
+      "line": 16,
+      "labels": [
+        "NOT_STATED",
+        "STATED"
+      ],
+      "excerpt": "六项定义性内容里五项 `STATED`、一项 `NOT_STATED`（`R-5`：`RCO` 的收敛条件）；合取主张 `H-R` 被否证",
+      "line_len": 69,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/ROUND_L02_REPRESENTATION.md",
+      "kind": "run_record",
+      "line": 17,
+      "labels": [
+        "REFUTED",
+        "REPRESENTATION_CODED"
+      ],
+      "excerpt": "⇒ 出口 `REPRESENTATION_CODED`，五值标签 **REFUTED**。`L02-O2` 的**编码义务**由此落实：",
+      "line_len": 68,
+      "anchors": [
+        "L02"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "CONTRADICTED",
+        "SUPPORTED"
+      ],
+      "artifact_raw": [
+        "CLAIM_LAYER_INFLATION",
+        "COMPETING_CODED",
+        "CONTRADICTED",
+        "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+        "NOT_STATED",
+        "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED",
+        "REFUTED",
+        "REPRESENTATION_CODED",
+        "STATED",
+        "ZERO_TEST_REANALYSIS",
+        "descriptive_only: the text was acquired before the addendum (L02-REP-0), so this round can describe the source but cannot confirm any cross-domain claim",
+        "the conjunctive claim H-R fails if any item is NOT_STATED (REFUTED); all STATED would be SUPPORTED; an unresolvable item is an instrument defect and takes exit 2"
+      ],
+      "predicated": true,
+      "attested_labels": [
+        "REPRESENTATION_CODED"
+      ],
+      "per_label": [
+        [
+          "REFUTED",
+          "label_mention_without_predication"
+        ],
+        [
+          "REPRESENTATION_CODED",
+          "matches_artifact"
+        ]
+      ],
+      "errata": [],
+      "verdict": "matches_artifact"
+    },
+    {
+      "document": "literature/ROUND_L02_REPRESENTATION.md",
+      "kind": "run_record",
+      "line": 24,
+      "labels": [
+        "REFUTED",
+        "REPRESENTATION_CODED"
+      ],
+      "excerpt": "| 表征层定义能否逐字恢复 | `REPRESENTATION_CODED` | **REFUTED** | `l02_representation_coding.py` 打印行，见 §3 |",
+      "line_len": 96,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/ROUND_L02_REPRESENTATION.md",
+      "kind": "run_record",
+      "line": 27,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "`ROUND_L02_RESULTS.md` 的任何判定；`L02-O1`（确证地位）**保持 OPEN**。",
+      "line_len": 55,
+      "anchors": [
+        "L02"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "CONTRADICTED",
+        "SUPPORTED"
+      ],
+      "artifact_raw": [
+        "CLAIM_LAYER_INFLATION",
+        "COMPETING_CODED",
+        "CONTRADICTED",
+        "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+        "NOT_STATED",
+        "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED",
+        "REFUTED",
+        "REPRESENTATION_CODED",
+        "STATED",
+        "ZERO_TEST_REANALYSIS",
+        "descriptive_only: the text was acquired before the addendum (L02-REP-0), so this round can describe the source but cannot confirm any cross-domain claim",
+        "the conjunctive claim H-R fails if any item is NOT_STATED (REFUTED); all STATED would be SUPPORTED; an unresolvable item is an instrument defect and takes exit 2"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
+    },
+    {
+      "document": "literature/ROUND_L02_REPRESENTATION.md",
+      "kind": "run_record",
+      "line": 34,
+      "labels": [
+        "REFUTED",
+        "REPRESENTATION_CODED"
+      ],
+      "excerpt": "wrote L02_representation_coding.json | exit REPRESENTATION_CODED (REFUTED) | items 6 | stated 5 | not_stated ['R-5'] | text_sha256 83656c4e44864edd | binding ma",
+      "line_len": 163,
+      "anchors": [
+        "L02"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "CONTRADICTED",
+        "SUPPORTED"
+      ],
+      "artifact_raw": [
+        "CLAIM_LAYER_INFLATION",
+        "COMPETING_CODED",
+        "CONTRADICTED",
+        "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+        "NOT_STATED",
+        "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED",
+        "REFUTED",
+        "REPRESENTATION_CODED",
+        "STATED",
+        "ZERO_TEST_REANALYSIS",
+        "descriptive_only: the text was acquired before the addendum (L02-REP-0), so this round can describe the source but cannot confirm any cross-domain claim",
+        "the conjunctive claim H-R fails if any item is NOT_STATED (REFUTED); all STATED would be SUPPORTED; an unresolvable item is an instrument defect and takes exit 2"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
+    },
+    {
+      "document": "literature/ROUND_L02_REPRESENTATION.md",
+      "kind": "run_record",
+      "line": 45,
+      "labels": [
+        "STATED"
+      ],
+      "excerpt": "| `R-1` | **STATED** | 「For this, we optimize an orthonormal basis … where all directions r ∈ RN satisfy the refusal properties (Theorem 4.1).」 | 20524 | 214 | ",
+      "line_len": 180,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/ROUND_L02_REPRESENTATION.md",
+      "kind": "run_record",
+      "line": 46,
+      "labels": [
+        "STATED"
+      ],
+      "excerpt": "| `R-1` | **STATED** | 「Since all directions in the cone correspond to the same refusal concept, we also refer to this as a concept cone.」 | 20739 | 113 | `68f3",
+      "line_len": 175,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/ROUND_L02_REPRESENTATION.md",
+      "kind": "run_record",
+      "line": 47,
+      "labels": [
+        "STATED"
+      ],
+      "excerpt": "| `R-2` | **STATED** | 「we identify refusal–mediating cones with dimensions up to five across all tested models.」 | 23060 | 88 | `b3c6d244aa39fd0f` |",
+      "line_len": 149,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/ROUND_L02_REPRESENTATION.md",
+      "kind": "run_record",
+      "line": 48,
+      "labels": [
+        "STATED"
+      ],
+      "excerpt": "| `R-2` | **STATED** | 「Figure 19 reveals that ASR increases with cone dimensionality but plateaus at four dimensions.」 | 25526 | 94 | `8eb95f617c3e5635` |",
+      "line_len": 155,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/ROUND_L02_REPRESENTATION.md",
+      "kind": "run_record",
+      "line": 49,
+      "labels": [
+        "STATED"
+      ],
+      "excerpt": "| `R-3` | **STATED** | 「we project the basis back onto the cone using the Gram–Schmidt orthogonalization procedure」 | 22225 | 90 | `bcbb619a0f111986` |",
+      "line_len": 151,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/ROUND_L02_REPRESENTATION.md",
+      "kind": "run_record",
+      "line": 50,
+      "labels": [
+        "STATED"
+      ],
+      "excerpt": "| `R-4` | **STATED** | 「Definition 6.1. The directions λ, µ ∈ Rd are representationally independent … if:」 | 30613 | 178 | `cea56a7ea596f6c6` |",
+      "line_len": 143,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/ROUND_L02_REPRESENTATION.md",
+      "kind": "run_record",
+      "line": 51,
+      "labels": [
+        "STATED"
+      ],
+      "excerpt": "| `R-6` | **STATED** | 「This effect is reciprocal, suggesting that orthogonality alone does not guarantee independence throughout the network.」 | 29821 | 118 | ",
+      "line_len": 180,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/ROUND_L02_REPRESENTATION.md",
+      "kind": "run_record",
+      "line": 66,
+      "labels": [
+        "CLOSED",
+        "OPEN"
+      ],
+      "excerpt": "台账由 `OPEN` 改为 `CLOSED`，理由是「已落实：表征层定义侧」，不是「已确认」。",
+      "line_len": 49,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "literature/ROUND_L02_REPRESENTATION.md",
+      "kind": "run_record",
+      "line": 67,
+      "labels": [
+        "OPEN"
+      ],
+      "excerpt": "- **`L02-O1` 保持 OPEN**：本轮没有换语料、没有新判据、没有确证地位；它要求的是一次带新判据的前瞻轮。",
+      "line_len": 60,
+      "anchors": [
+        "L02"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "CONTRADICTED",
+        "SUPPORTED"
+      ],
+      "artifact_raw": [
+        "CLAIM_LAYER_INFLATION",
+        "COMPETING_CODED",
+        "CONTRADICTED",
+        "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+        "NOT_STATED",
+        "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED",
+        "REFUTED",
+        "REPRESENTATION_CODED",
+        "STATED",
+        "ZERO_TEST_REANALYSIS",
+        "descriptive_only: the text was acquired before the addendum (L02-REP-0), so this round can describe the source but cannot confirm any cross-domain claim",
+        "the conjunctive claim H-R fails if any item is NOT_STATED (REFUTED); all STATED would be SUPPORTED; an unresolvable item is an instrument defect and takes exit 2"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
+    },
+    {
+      "document": "literature/ROUND_L02_REPRESENTATION.md",
+      "kind": "run_record",
+      "line": 69,
+      "labels": [
+        "CONTRADICTED"
+      ],
+      "excerpt": "- 本轮不改变 `L02_coding.json` 的四条机制条目与 `CONTRADICTED` 判定；`R-4`/`R-6` 只是把 L-02 §5",
+      "line_len": 76,
+      "anchors": [
+        "L02"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "CONTRADICTED",
+        "SUPPORTED"
+      ],
+      "artifact_raw": [
+        "CLAIM_LAYER_INFLATION",
+        "COMPETING_CODED",
+        "CONTRADICTED",
+        "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+        "NOT_STATED",
+        "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED",
+        "REFUTED",
+        "REPRESENTATION_CODED",
+        "STATED",
+        "ZERO_TEST_REANALYSIS",
+        "descriptive_only: the text was acquired before the addendum (L02-REP-0), so this round can describe the source but cannot confirm any cross-domain claim",
+        "the conjunctive claim H-R fails if any item is NOT_STATED (REFUTED); all STATED would be SUPPORTED; an unresolvable item is an instrument defect and takes exit 2"
+      ],
+      "predicated": true,
+      "attested_labels": [
+        "CONTRADICTED"
+      ],
+      "per_label": [
+        [
+          "CONTRADICTED",
+          "matches_artifact"
+        ]
+      ],
+      "errata": [],
+      "verdict": "matches_artifact"
+    },
+    {
+      "document": "literature/ROUND_L02_REPRESENTATION.md",
+      "kind": "run_record",
+      "line": 76,
+      "labels": [
+        "NOT_STATED"
+      ],
+      "excerpt": "- `NOT_STATED` 是**关于两个声明区间的否定**，不是「论文没有收敛判据」的全域命题：附录、代码仓库、",
+      "line_len": 58,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
       "document": "literature/ROUND_L02_RESULTS.md",
       "kind": "run_record",
       "line": 20,
@@ -13327,15 +14333,22 @@
       ],
       "phantom": [],
       "allowed_five": [
-        "CONTRADICTED"
+        "CONTRADICTED",
+        "SUPPORTED"
       ],
       "artifact_raw": [
         "CLAIM_LAYER_INFLATION",
         "COMPETING_CODED",
         "CONTRADICTED",
         "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+        "NOT_STATED",
         "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED",
-        "ZERO_TEST_REANALYSIS"
+        "REFUTED",
+        "REPRESENTATION_CODED",
+        "STATED",
+        "ZERO_TEST_REANALYSIS",
+        "descriptive_only: the text was acquired before the addendum (L02-REP-0), so this round can describe the source but cannot confirm any cross-domain claim",
+        "the conjunctive claim H-R fails if any item is NOT_STATED (REFUTED); all STATED would be SUPPORTED; an unresolvable item is an instrument defect and takes exit 2"
       ],
       "predicated": true,
       "attested_labels": [
@@ -13437,15 +14450,22 @@
       ],
       "phantom": [],
       "allowed_five": [
-        "CONTRADICTED"
+        "CONTRADICTED",
+        "SUPPORTED"
       ],
       "artifact_raw": [
         "CLAIM_LAYER_INFLATION",
         "COMPETING_CODED",
         "CONTRADICTED",
         "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+        "NOT_STATED",
         "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED",
-        "ZERO_TEST_REANALYSIS"
+        "REFUTED",
+        "REPRESENTATION_CODED",
+        "STATED",
+        "ZERO_TEST_REANALYSIS",
+        "descriptive_only: the text was acquired before the addendum (L02-REP-0), so this round can describe the source but cannot confirm any cross-domain claim",
+        "the conjunctive claim H-R fails if any item is NOT_STATED (REFUTED); all STATED would be SUPPORTED; an unresolvable item is an instrument defect and takes exit 2"
       ],
       "predicated": false,
       "attested_labels": [],
@@ -13540,15 +14560,22 @@
       ],
       "phantom": [],
       "allowed_five": [
-        "CONTRADICTED"
+        "CONTRADICTED",
+        "SUPPORTED"
       ],
       "artifact_raw": [
         "CLAIM_LAYER_INFLATION",
         "COMPETING_CODED",
         "CONTRADICTED",
         "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+        "NOT_STATED",
         "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED",
-        "ZERO_TEST_REANALYSIS"
+        "REFUTED",
+        "REPRESENTATION_CODED",
+        "STATED",
+        "ZERO_TEST_REANALYSIS",
+        "descriptive_only: the text was acquired before the addendum (L02-REP-0), so this round can describe the source but cannot confirm any cross-domain claim",
+        "the conjunctive claim H-R fails if any item is NOT_STATED (REFUTED); all STATED would be SUPPORTED; an unresolvable item is an instrument defect and takes exit 2"
       ],
       "predicated": false,
       "attested_labels": [],
@@ -13569,15 +14596,22 @@
       ],
       "phantom": [],
       "allowed_five": [
-        "CONTRADICTED"
+        "CONTRADICTED",
+        "SUPPORTED"
       ],
       "artifact_raw": [
         "CLAIM_LAYER_INFLATION",
         "COMPETING_CODED",
         "CONTRADICTED",
         "NEUTRAL_ZERO_IS_NOT_A_BOUNDARY",
+        "NOT_STATED",
         "R17 label read only off entries whose rho takes a side (§2.1 leaves UNDECIDABLE and UNRELATED directionless); all REFUTES => CONTRADICTED",
-        "ZERO_TEST_REANALYSIS"
+        "REFUTED",
+        "REPRESENTATION_CODED",
+        "STATED",
+        "ZERO_TEST_REANALYSIS",
+        "descriptive_only: the text was acquired before the addendum (L02-REP-0), so this round can describe the source but cannot confirm any cross-domain claim",
+        "the conjunctive claim H-R fails if any item is NOT_STATED (REFUTED); all STATED would be SUPPORTED; an unresolvable item is an instrument defect and takes exit 2"
       ],
       "predicated": false,
       "attested_labels": [],

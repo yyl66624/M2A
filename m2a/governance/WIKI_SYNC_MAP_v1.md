@@ -5,14 +5,14 @@
 
 | 列 | 数 |
 | --- | --- |
-| 人口内步骤节 | 31 |
-| 已被页面承接 | 31 |
+| 人口内步骤节 | 32 |
+| 已被页面承接 | 32 |
 | **未承接（本步未发布即为红）** | 0 |
 | 指向不存在页面的承接 | 0 |
 | 承接了已不在人口内的旧节（陈旧） | 0 |
-| 治理期页面（PAGES manifest） | 26 |
+| 治理期页面（PAGES manifest） | 27 |
 | 未被任何节认领的治理期页面 | 0 |
-| 台账中带 node_token 的页面 | 38 |
+| 台账中带 node_token 的页面 | 39 |
 | 首批驱动页面（按 12 条钉住） | 12 |
 
 ## 每一节由哪一页承载
@@ -50,6 +50,7 @@
 | 59 | Phase XXIV（2026-10-21 追加）：给 L3 | `NwGZwI3ZUigRXrkKkFBcMMPc` M2A Phase XXIV｜L2 权重衰减 | - |
 | 60 | Phase XXIII 设计与门控：AO 测度把「发放」与「 | `XKQvws1sNiViZvkSAOacELKE` M2A Phase XXIII｜AO 测度把 | - |
 | 61 | Phase XXIII（2026-10-22 追加）：AO  | `Lw7TwSfediyhnuk0xYHc8e60` M2A Phase XXIII｜AO 测度分 | X-125 |
+| 62 | L-02 表征层编码（2026-10-23 追加）：`L02 | `CRhzwSdCNikNJKkjy7gcNvNR` M2A 文献轮 L-02｜表征层编码落实：锥 | X-126, X-127 |
 
 ## 每一页的草稿指纹
 
@@ -67,7 +68,7 @@
 | M2A 治理｜未测量仪器的治理层检查 v1：10 台 | M2A-治理-未测量仪器的治理层检查v1.md | `22e26f364bad` | 6286 | True |
 | M2A 治理｜wiki 同步表 v1：让「每一步写入 | M2A-治理-wiki同步表v1.md | `851c68b700ae` | 3774 | True |
 | M2A 治理｜节↔页分数对账 v1：页面说的话第一次 | M2A-治理-节页分数对账v1.md | `06828a5dc15f` | 2833 | True |
-| M2A 治理｜套件分数引用对账 v1：仓库自己的散文 | M2A-治理-套件分数引用对账v1.md | `0227a6a520b0` | 5813 | True |
+| M2A 治理｜套件分数引用对账 v1：仓库自己的散文 | M2A-治理-套件分数引用对账v1.md | `d737e72c2ea0` | 6043 | True |
 | M2A 治理｜判定标签↔工件对账 v1：散文给出的判 | M2A-治理-判定标签对账v1.md | `e4e5e911e36f` | 2008 | True |
 | M2A 治理｜判据数值↔轮次记录对账 v1：散文写下 | M2A-治理-判据数值对账v1.md | `e6762ccda772` | 4000 | True |
 | M2A 文献轮 L-02｜把「族 + 符号」的计入拿 | M2A-文献轮L02-主张层重数与竞争理论全文.md | `4d2ddc5bc02b` | 4087 | True |
@@ -81,14 +82,15 @@
 | M2A Phase XXIV｜L2 权重衰减不修复  | M2A-PhaseXXIV-正则化与L3中段偏差.md | `9b0d2c903b1f` | 2513 | True |
 | M2A Phase XXIII｜AO 测度把发放与静 | M2A-PhaseXXIII-AO测度设计.md | `480d7f31cb2d` | 1063 | True |
 | M2A Phase XXIII｜AO 测度分开发放与 | M2A-PhaseXXIII-AO测度结果.md | `4d70c734d6ad` | 1465 | True |
+| M2A 文献轮 L-02｜表征层编码落实：锥与 Re | M2A-文献轮L02-表征层编码.md | `2a718edde08c` | 1155 | True |
 
 ## 守门工具的指纹
 
 | 工具 | sha256（前 12） | 字节 |
 | --- | --- | --- |
-| `check_step_draft_numbers.py` | `f5dc89c9814c` | 113052 |
-| `publish_wiki_steps.py` | `0b2fbf317e2e` | 11489 |
-| `feishu_wiki_nodes.json` | `f98d582eb03e` | 14587 |
+| `check_step_draft_numbers.py` | `2cb3ad6e5754` | 117452 |
+| `publish_wiki_steps.py` | `1c376126e92d` | 11786 |
+| `feishu_wiki_nodes.json` | `568bcb87d3b6` | 15082 |
 
 **这张表能看见什么、看不见什么**：它在四件事上立刻变红——新步骤节没有对应页面；
 页面草稿在发布后被改写（sha 变了）；守门脚本被改写；首批页面数目偏离钉住的 12。

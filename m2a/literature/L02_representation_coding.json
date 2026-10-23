@@ -1,0 +1,222 @@
+{
+  "exit": "REPRESENTATION_CODED",
+  "frozen_inputs_sha256": {
+    "literature/L02_PREREGISTRATION.md": "c143a08b57400c01afc0bee517c7453bf3276443bfd0eaf94ecaa0c180b9fcd9",
+    "literature/L02_coding.json": "98f70b9a9776ebf5b7499f87f393642750cf77aac316d4ae78e4299e2237fd34"
+  },
+  "instrument_sha256": {
+    "literature/l02_representation_coding.py": "2c425c04f4820f9b8ff0cef71ecab24eb1d3fcf0f22b0178e5bf5992887144f5"
+  },
+  "items": [
+    {
+      "criterion": "cone definition and the concept-cone identity",
+      "id": "R-1",
+      "kind": "quote",
+      "quotes": [
+        {
+          "chars": 214,
+          "in_contract": true,
+          "occurrences": 1,
+          "offset": 20524,
+          "quote": "For this, we optimize an orthonormal basis B = [b1, . . . , bN ] spanning an N-dimensional polyhedral cone RN = { PN i=1 λibi | λi ≥ 0}\\{0}, where all directions r ∈ RN satisfy the refusal properties (Theorem 4.1).",
+          "quote_sha16": "4413d5110eb3f85a"
+        },
+        {
+          "chars": 113,
+          "in_contract": true,
+          "occurrences": 1,
+          "offset": 20739,
+          "quote": "Since all directions in the cone correspond to the same refusal concept, we also refer to this as a concept cone.",
+          "quote_sha16": "68f3985d547c727b"
+        }
+      ],
+      "status": "STATED"
+    },
+    {
+      "criterion": "observed cone dimensionality (up to five; plateau at four)",
+      "id": "R-2",
+      "kind": "quote",
+      "quotes": [
+        {
+          "chars": 88,
+          "in_contract": true,
+          "occurrences": 1,
+          "offset": 23060,
+          "quote": "we identify refusal–mediating cones with dimensions up to five across all tested models.",
+          "quote_sha16": "b3c6d244aa39fd0f"
+        },
+        {
+          "chars": 94,
+          "in_contract": true,
+          "occurrences": 1,
+          "offset": 25526,
+          "quote": "Figure 19 reveals that ASR increases with cone dimensionality but plateaus at four dimensions.",
+          "quote_sha16": "8eb95f617c3e5635"
+        }
+      ],
+      "status": "STATED"
+    },
+    {
+      "criterion": "RCO projects the basis back with Gram-Schmidt",
+      "id": "R-3",
+      "kind": "quote",
+      "quotes": [
+        {
+          "chars": 90,
+          "in_contract": true,
+          "occurrences": 1,
+          "offset": 22225,
+          "quote": "we project the basis back onto the cone using the Gram–Schmidt orthogonalization procedure",
+          "quote_sha16": "bcbb619a0f111986"
+        }
+      ],
+      "status": "STATED"
+    },
+    {
+      "criterion": "Representational Independence, Definition 6.1",
+      "id": "R-4",
+      "kind": "quote",
+      "quotes": [
+        {
+          "chars": 178,
+          "in_contract": true,
+          "occurrences": 1,
+          "offset": 30613,
+          "quote": "Definition 6.1. The directions λ, µ ∈ Rd are representationally independent (under directional ablation) with respect to the activations x of a model in a set of layers l ∈ L if:",
+          "quote_sha16": "cea56a7ea596f6c6"
+        }
+      ],
+      "status": "STATED"
+    },
+    {
+      "criterion": "explicit RCO convergence criterion",
+      "decision_rule": "NOT_STATED iff both regions resolve, every registered token and numeric pattern has zero hits, and the loop phrase occurs once in A2_BODY; otherwise STATED or UNLOCATABLE",
+      "id": "R-5",
+      "kind": "absence",
+      "numeric_hits_total": 0,
+      "probe_occurrences_document": 2,
+      "probe_occurrences_in_A2_BODY": 1,
+      "probe_phrase": "while not converged do",
+      "regions": [
+        {
+          "block_sha256": "96e0f93dd8a7c0c22864205a8930c8d1311754150f32109da8157393a0878f85",
+          "chars": 304,
+          "end": "1: function SAMPLE(B)",
+          "end_occurrences": 1,
+          "name": "A2_BODY",
+          "numeric_hits": [],
+          "start": "Algorithm 2 Refusal Cone Optimization (RCO)",
+          "start_occurrences": 1,
+          "token_hits": {
+            "convergence criterion": 0,
+            "epsilon": 0,
+            "gradient norm": 0,
+            "max iter": 0,
+            "max-iter": 0,
+            "max_iter": 0,
+            "patience": 0,
+            "relative change": 0,
+            "stopping criterion": 0,
+            "threshold": 0,
+            "tol": 0,
+            "tolerance": 0
+          }
+        },
+        {
+          "block_sha256": "6f2a99b212500e8c972b9b84d04e7dba7415a54d282f19025b18607f757cee3f",
+          "chars": 925,
+          "end": "Can we find refusal concept cones?",
+          "end_occurrences": 1,
+          "name": "A2_PROSE",
+          "numeric_hits": [],
+          "start": "In Algorithm 2, we describe the procedure",
+          "start_occurrences": 1,
+          "token_hits": {
+            "convergence criterion": 0,
+            "epsilon": 0,
+            "gradient norm": 0,
+            "max iter": 0,
+            "max-iter": 0,
+            "max_iter": 0,
+            "patience": 0,
+            "relative change": 0,
+            "stopping criterion": 0,
+            "threshold": 0,
+            "tol": 0,
+            "tolerance": 0
+          }
+        }
+      ],
+      "status": "NOT_STATED",
+      "token_hits_total": 0
+    },
+    {
+      "criterion": "orthogonality does not guarantee independence",
+      "id": "R-6",
+      "kind": "quote",
+      "quotes": [
+        {
+          "chars": 118,
+          "in_contract": true,
+          "occurrences": 1,
+          "offset": 29821,
+          "quote": "This effect is reciprocal, suggesting that orthogonality alone does not guarantee independence throughout the network.",
+          "quote_sha16": "2df42cc6594d855d"
+        }
+      ],
+      "status": "STATED"
+    }
+  ],
+  "label_derivation": "the conjunctive claim H-R fails if any item is NOT_STATED (REFUTED); all STATED would be SUPPORTED; an unresolvable item is an instrument defect and takes exit 2",
+  "label_r17": "REFUTED",
+  "no_new_experiment": true,
+  "prereg_binding": {
+    "disk_sha256": "ec51c0b87cde4de7eac03ca554cac7079a2302e257a67f6df15783943b829e77",
+    "git_head_sha256": "ec51c0b87cde4de7eac03ca554cac7079a2302e257a67f6df15783943b829e77",
+    "path": "m2a/literature/L02_REPRESENTATION_ADDENDUM.md",
+    "two_channel_match": true
+  },
+  "prereg_sha256": "ec51c0b87cde4de7eac03ca554cac7079a2302e257a67f6df15783943b829e77",
+  "preregistration": "literature/L02_REPRESENTATION_ADDENDUM.md",
+  "schema": "m2a.roundL02.representation.v1",
+  "sid": "C-04",
+  "source": {
+    "extractor": "pdftotext -raw",
+    "extractor_version": "pdftotext version 22.02.0",
+    "file": "/media/leonyao/新加卷/workshop/_m2a_ft/L02_C-04_v2.pdf",
+    "identity": {
+      "arxiv": "2502.17420v2",
+      "first_author": "Tom Wollschläger",
+      "paper": "The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence"
+    },
+    "normalization": "CRLF/CR folded to LF; '-\\n' at a word break removed; whitespace collapsed; ends stripped",
+    "outside_repository": true,
+    "pdf_bytes": 3261118,
+    "pdf_sha256": "998a608e506b286ddb047996add9eb86aeca51afa36f3eba125089607249d534",
+    "record": "EXTRACTED",
+    "returncode": 0,
+    "text_chars": 71950,
+    "text_sha256": "83656c4e44864eddc441cf64f3dbfda5db3e81d00cfc705910957f12e593eccb"
+  },
+  "summary": {
+    "items": 6,
+    "not_stated": 1,
+    "not_stated_ids": [
+      "R-5"
+    ],
+    "refuting_items": [
+      "R-5"
+    ],
+    "stated": 5,
+    "stated_ids": [
+      "R-1",
+      "R-2",
+      "R-3",
+      "R-4",
+      "R-6"
+    ],
+    "unlocatable": 0,
+    "unlocatable_ids": []
+  },
+  "zero_test_status": "descriptive_only: the text was acquired before the addendum (L02-REP-0), so this round can describe the source but cannot confirm any cross-domain claim"
+}

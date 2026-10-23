@@ -104,7 +104,9 @@ def main() -> int:
                 bad_q.append(row["id"])
     report("G6 every coded quote is 20-400 characters, unique in the text, and its offset and sha16 check out",
            not bad_q and all(20 <= len(q["quote"]) <= 400 for r in coded["items"] for q in r.get("quotes", [])),
-           "quotes %d | violations %s" % (sum(len(r.get("quotes", [])) for r in coded["items"]), bad_q or "none"))
+           "quotes %d | violations %s | offsets %s"
+           % (sum(len(r.get("quotes", [])) for r in coded["items"]), bad_q or "none",
+              [(r["id"], q["offset"], q["chars"]) for r in coded["items"] for q in r.get("quotes", [])]))
     ids = [r["id"] for r in coded["items"]]
     report("G7 the vocabulary is closed: six registered ids, quote or absence kinds, three possible statuses",
            ids == REQUIRED_IDS and all(r["kind"] in {"quote", "absence"} for r in coded["items"])
