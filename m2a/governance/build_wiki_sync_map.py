@@ -75,6 +75,7 @@ PUBLISH_MAP = {
     60: "XKQvws1sNiViZvkSAOacELKEnvP",   # the Phase XXIII design page, published after it could be registered
     61: "Lw7TwSfediyhnuk0xYHc8e60nFe",   # the Phase XXIII result page, published after it could be registered
     62: "CRhzwSdCNikNJKkjy7gcNvNRn9d",   # the L-02 representation page, published after it could be registered
+    63: "WkZGws2lGiFImzkEAlvcg3nnnag",   # the post-review claim-table page, published after it could be registered
 }
 
 SECTION_RE = r"^#{2,3} (\d+) (.*)$"

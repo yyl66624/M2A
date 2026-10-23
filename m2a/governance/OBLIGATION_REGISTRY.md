@@ -51,7 +51,7 @@
 | L01-O4 | **CLOSED** | 7 | `literature/ROUND_L01_DISPOSITIONS.md:13` | 关闭类措辞 | — |
 | L01-O5 | **CLOSED** | 25 | `literature/ROUND_L01_DISPOSITIONS.md:17` | 关闭类措辞 | — |
 | L02-O1 | **OPEN** | 9 | `literature/ROUND_L02_RESULTS.md:122` | 开放类措辞 | — |
-| L02-O2 | **CLOSED** | 18 | `literature/ROUND_L02_REPRESENTATION.md:65` | 关闭类措辞 | — |
+| L02-O2 | **CLOSED** | 19 | `literature/ROUND_L02_REPRESENTATION.md:65` | 关闭类措辞 | — |
 | L03-O1 | **OPEN** | 14 | `literature/ROUND_L03_RESULTS.md:93` | 开放类措辞 | — |
 | O-01 | **OPEN** | 7 | `08_OPEN_QUESTIONS.md:7` | 开放类措辞 | — |
 | O-02 | **OPEN** | 1 | `08_OPEN_QUESTIONS.md:9` | 开放类措辞 | — |

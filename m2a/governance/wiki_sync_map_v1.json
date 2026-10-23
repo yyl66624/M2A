@@ -224,6 +224,13 @@
       "node_token": "CRhzwSdCNikNJKkjy7gcNvNRn9d",
       "section": 62,
       "title": "M2A 文献轮 L-02｜表征层编码落实：锥与 RepInd 有定义，RCO 没有收敛判据"
+    },
+    {
+      "draft": "M2A-治理-Nature三份互盲审稿后的口径合并.md",
+      "in_ledger": true,
+      "node_token": "WkZGws2lGiFImzkEAlvcg3nnnag",
+      "section": 63,
+      "title": "M2A 治理｜Nature 三份互盲审稿后的权威口径合并"
     }
   ],
   "counts": {
@@ -232,11 +239,11 @@
     "first_batch_off_pin": 0,
     "first_batch_pages": 12,
     "first_batch_pages_claimed_by_a_section": 1,
-    "governance_pages": 27,
+    "governance_pages": 28,
     "governance_pages_unclaimed": 0,
-    "ledger_pages_with_node": 39,
-    "report_sections_in_population": 32,
-    "sections_claimed": 32,
+    "ledger_pages_with_node": 40,
+    "report_sections_in_population": 33,
+    "sections_claimed": 33,
     "sections_unclaimed": 0
   },
   "dangling_claims": [],
@@ -787,6 +794,27 @@
         62
       ],
       "title": "M2A 文献轮 L-02｜表征层编码落实：锥与 RepInd 有定义，RCO 没有收敛判据"
+    },
+    {
+      "draft": "M2A-治理-Nature三份互盲审稿后的口径合并.md",
+      "draft_chars": 586,
+      "draft_sha256": "80b71b4f28555648f2b54949c5a0d24244b845ee686f4bf22b2020e724ee3d70",
+      "markers": [
+        "当前权威主张表",
+        "与噪声分布无关",
+        "恒等平坦",
+        "不是因子乘积",
+        "没有真实系统指涉",
+        "NO_GO"
+      ],
+      "markers_ok_recorded": true,
+      "node_token": "WkZGws2lGiFImzkEAlvcg3nnnag",
+      "obj_token": "DFgvdsUkgoarzJxVGNvc6rOUnZf",
+      "read_back_chars_recorded": 773,
+      "sections": [
+        63
+      ],
+      "title": "M2A 治理｜Nature 三份互盲审稿后的权威口径合并"
     }
   ],
   "schema": "m2a.wiki_sync_map.v1",
@@ -1081,24 +1109,29 @@
         126,
         127
       ]
+    },
+    {
+      "section": 63,
+      "title": "Nature Skills 三份互盲审稿后的口径合并（2026-10-23，GOVERNANCE_ARTIFACT，不产生科学判定）",
+      "xids_named": []
     }
   ],
   "stale_claims": [],
   "tools": [
     {
-      "bytes": 117452,
+      "bytes": 119812,
       "file": "check_step_draft_numbers.py",
-      "sha256": "2cb3ad6e5754812c9bd4a43e65a4246180833e708c334163b6030f7b25db5c5a"
+      "sha256": "0e60ce82524f594cfdb6f4fcd32cf5d4b6fe0158373f0b86b1b4356b62280aef"
     },
     {
-      "bytes": 11786,
+      "bytes": 12054,
       "file": "publish_wiki_steps.py",
-      "sha256": "1c376126e92df76dc0ea94e8f3a468f146bb51670c88fa77a73debc8f6225dbd"
+      "sha256": "a51a6e6453f7bdff416bf589b567274ad1158c20d7daeb34538da2ee61bf60a0"
     },
     {
-      "bytes": 15082,
+      "bytes": 15386,
       "file": "feishu_wiki_nodes.json",
-      "sha256": "568bcb87d3b61df48c9223565c01d5d62bf5588477aac2a0401679cbaf362387"
+      "sha256": "685780ee05d3a249b0f19bf5c9e729d8e2600d2983940331eda7eb3e200290de"
     }
   ],
   "unclaimed_sections": [],

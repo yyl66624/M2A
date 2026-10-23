@@ -2,7 +2,7 @@
 
 问题：散文归给某一轮的判据数值（容差、阈值、指数、步长、种子数），在那一轮自己的记录里存在吗？（GOVERNANCE_ARTIFACT，不跑实验、不改任何注册判据）
 
-生成本表的推导器源码 SHA-256：`c5b27fca19fd3687`；轮次家族 25 个，语料文档 56 份，主张行 931 行 / 数值 2372 个 / 承载文档 44 份。
+生成本表的推导器源码 SHA-256：`c5b27fca19fd3687`；轮次家族 25 个，语料文档 56 份，主张行 936 行 / 数值 2387 个 / 承载文档 44 份。
 
 | 判定 | 条数 |
 |---|---|
@@ -10,9 +10,9 @@
 | `value_unattested_in_repo` | 5 |
 | `stale_value_in_register` | 1 |
 | `value_of_other_round` | 42 |
-| `value_only_in_transcription` | 39 |
-| `matches_round_records` | 54 |
-| `criterion_without_anchor` | 790 |
+| `value_only_in_transcription` | 41 |
+| `matches_round_records` | 55 |
+| `criterion_without_anchor` | 792 |
 | **硬伤合计** | **6** |
 
 主张口径（写死）：带小数点或指数的数，或距判据标记（≤ ≥ ± δ 容差 阈值 门槛 精度 步长 网格 种子）三个字符以内的数；日期与「243 格」这类裸整数不算主张，否则本层判的就是自己的解析而不是仓库。

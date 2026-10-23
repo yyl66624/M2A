@@ -60,15 +60,15 @@
     "named_object_absent": 0,
     "pin_of_this_layer_output": 0,
     "frozen_by_round_instrument": 50,
-    "renewable_governance_pin": 90,
-    "hash_without_named_object": 75,
+    "renewable_governance_pin": 91,
+    "hash_without_named_object": 76,
     "ambiguous_pairing": 14,
     "hard_findings": 0,
-    "rows": 229,
+    "rows": 231,
     "pinning_documents": 58,
-    "pinned_objects": 97,
+    "pinned_objects": 98,
     "repo_files_scanned": 316,
-    "workshop_objects": 123,
+    "workshop_objects": 125,
     "instrument_collection_pins": 40,
     "freeze_rows_visible": 50,
     "freeze_visibility_states": 2,
@@ -1635,6 +1635,16 @@
       "visibility": null
     },
     {
+      "pinner": "governance/section_page_reconciliation_v1.json",
+      "key": "page_sha256",
+      "hash": "75631ff52d14f4aa049f3cd63a35aaec4c10d0b9c1789fecea3671aa0485d587",
+      "pair": [],
+      "json_path": "pages/28",
+      "pair_count": 0,
+      "verdict": "hash_without_named_object",
+      "visibility": null
+    },
+    {
       "pinner": "governance/suite_score_registry_v1.json",
       "key": "sha256",
       "hash": "c630f934c91d49098a4f850db7acdce7a52246de2e95e31574e6264579fff3f8",
@@ -2896,8 +2906,26 @@
     },
     {
       "pinner": "governance/wiki_sync_map_v1.json",
+      "key": "draft_sha256",
+      "hash": "80b71b4f28555648f2b54949c5a0d24244b845ee686f4bf22b2020e724ee3d70",
+      "pair": [
+        [
+          "draft",
+          "M2A-治理-Nature三份互盲审稿后的口径合并.md"
+        ]
+      ],
+      "json_path": "pages/27",
+      "pair_count": 1,
+      "object_namespace": "workshop",
+      "object": "feishu_wiki_drafts/M2A-治理-Nature三份互盲审稿后的口径合并.md",
+      "bytes_match": true,
+      "verdict": "renewable_governance_pin",
+      "visibility": null
+    },
+    {
+      "pinner": "governance/wiki_sync_map_v1.json",
       "key": "sha256",
-      "hash": "2cb3ad6e5754812c9bd4a43e65a4246180833e708c334163b6030f7b25db5c5a",
+      "hash": "0e60ce82524f594cfdb6f4fcd32cf5d4b6fe0158373f0b86b1b4356b62280aef",
       "pair": [
         [
           "file",
@@ -2915,7 +2943,7 @@
     {
       "pinner": "governance/wiki_sync_map_v1.json",
       "key": "sha256",
-      "hash": "1c376126e92df76dc0ea94e8f3a468f146bb51670c88fa77a73debc8f6225dbd",
+      "hash": "a51a6e6453f7bdff416bf589b567274ad1158c20d7daeb34538da2ee61bf60a0",
       "pair": [
         [
           "file",
@@ -2933,7 +2961,7 @@
     {
       "pinner": "governance/wiki_sync_map_v1.json",
       "key": "sha256",
-      "hash": "568bcb87d3b61df48c9223565c01d5d62bf5588477aac2a0401679cbaf362387",
+      "hash": "685780ee05d3a249b0f19bf5c9e729d8e2600d2983940331eda7eb3e200290de",
       "pair": [
         [
           "file",

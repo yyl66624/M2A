@@ -73,7 +73,7 @@
     "anchor_without_recorded_label": 3,
     "label_mention_without_predication": 245,
     "cross_round_refutation": 0,
-    "label_without_anchor": 491,
+    "label_without_anchor": 492,
     "matches_artifact": 56,
     "hard_findings": 1,
     "paired_corrections": 0,
@@ -3081,7 +3081,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2112,
+      "line": 2114,
       "labels": [
         "OPEN"
       ],
@@ -3094,7 +3094,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2194,
+      "line": 2198,
       "labels": [
         "CONTRADICTED"
       ],
@@ -3107,7 +3107,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2203,
+      "line": 2207,
       "labels": [
         "CLAIM_LAYER_INFLATION",
         "CONTRADICTED",
@@ -3144,7 +3144,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2204,
+      "line": 2208,
       "labels": [
         "COMPETING_CODED",
         "CONTRADICTED"
@@ -3180,7 +3180,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2205,
+      "line": 2209,
       "labels": [
         "PASS"
       ],
@@ -3193,7 +3193,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2213,
+      "line": 2217,
       "labels": [
         "INDETERMINATE"
       ],
@@ -3235,7 +3235,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2222,
+      "line": 2226,
       "labels": [
         "CONTRADICTED"
       ],
@@ -3248,7 +3248,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2241,
+      "line": 2245,
       "labels": [
         "CONTRADICTED"
       ],
@@ -3292,7 +3292,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2262,
+      "line": 2266,
       "labels": [
         "PASS"
       ],
@@ -3305,7 +3305,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2286,
+      "line": 2290,
       "labels": [
         "CLOSED",
         "OPEN"
@@ -3319,7 +3319,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2290,
+      "line": 2294,
       "labels": [
         "CLAIM_LAYER_INFLATION"
       ],
@@ -3354,7 +3354,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2556,
+      "line": 2560,
       "labels": [
         "FULLTEXT_REVISES",
         "INDETERMINATE"
@@ -3395,7 +3395,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2574,
+      "line": 2578,
       "labels": [
         "FULLTEXT_REVISES",
         "INDETERMINATE"
@@ -3422,7 +3422,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2575,
+      "line": 2579,
       "labels": [
         "CLOSED",
         "OPEN"
@@ -3460,7 +3460,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2579,
+      "line": 2583,
       "labels": [
         "CONFIRMED"
       ],
@@ -3473,7 +3473,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2584,
+      "line": 2588,
       "labels": [
         "REFUTED"
       ],
@@ -3486,7 +3486,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2619,
+      "line": 2623,
       "labels": [
         "REGULARIZATION-DOES-NOT-REPAIR",
         "SUPPORTED"
@@ -3526,7 +3526,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2654,
+      "line": 2658,
       "labels": [
         "OPEN"
       ],
@@ -3539,7 +3539,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2664,
+      "line": 2668,
       "labels": [
         "AO-SEPARATES",
         "CONTRADICTED",
@@ -3557,7 +3557,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2672,
+      "line": 2676,
       "labels": [
         "AO-SEPARATES",
         "SUPPORTED"
@@ -3596,7 +3596,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2674,
+      "line": 2678,
       "labels": [
         "AO-SEPARATES",
         "SUPPORTED"
@@ -3635,7 +3635,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2687,
+      "line": 2691,
       "labels": [
         "AO-SEPARATES",
         "SUPPORTED"
@@ -3649,7 +3649,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2702,
+      "line": 2706,
       "labels": [
         "NOT_STATED",
         "STATED"
@@ -3685,7 +3685,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2704,
+      "line": 2708,
       "labels": [
         "CLOSED",
         "OPEN",
@@ -3759,7 +3759,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2713,
+      "line": 2717,
       "labels": [
         "REFUTED",
         "REPRESENTATION_CODED"
@@ -3795,7 +3795,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2720,
+      "line": 2724,
       "labels": [
         "STATED"
       ],
@@ -3808,7 +3808,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2721,
+      "line": 2725,
       "labels": [
         "STATED"
       ],
@@ -3821,7 +3821,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2722,
+      "line": 2726,
       "labels": [
         "STATED"
       ],
@@ -3834,7 +3834,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2723,
+      "line": 2727,
       "labels": [
         "STATED"
       ],
@@ -3847,7 +3847,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2724,
+      "line": 2728,
       "labels": [
         "STATED"
       ],
@@ -3860,7 +3860,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2725,
+      "line": 2729,
       "labels": [
         "STATED"
       ],
@@ -3873,7 +3873,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2726,
+      "line": 2730,
       "labels": [
         "STATED"
       ],
@@ -3886,7 +3886,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2728,
+      "line": 2732,
       "labels": [
         "NOT_STATED"
       ],
@@ -3899,7 +3899,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2734,
+      "line": 2738,
       "labels": [
         "NOT_STATED"
       ],
@@ -3912,7 +3912,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2736,
+      "line": 2740,
       "labels": [
         "CLOSED",
         "OPEN"
@@ -3944,6 +3944,20 @@
       "predicated": false,
       "attested_labels": [],
       "verdict": "label_mention_without_predication"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2746,
+      "labels": [
+        "CLOSED",
+        "OPEN"
+      ],
+      "excerpt": "状态标签：**GOVERNANCE_ARTIFACT**（口径合并；不新增实验、不改任何轮次判定、不把 `OPEN` 改 `CLOSED`）。三份互盲审稿由 `nature-reviewer` 规程在独立上下文完成（材料包 `scratch/nature_review_packet.md`，报告与综合在仓库外 `M2A",
+      "line_len": 345,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
     },
     {
       "document": "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md",
@@ -5493,7 +5507,7 @@
       "labels": [
         "CLOSED"
       ],
-      "excerpt": "| L02-O2 | **CLOSED** | 18 | `literature/ROUND_L02_REPRESENTATION.md:65` | 关闭类措辞 | — |",
+      "excerpt": "| L02-O2 | **CLOSED** | 19 | `literature/ROUND_L02_REPRESENTATION.md:65` | 关闭类措辞 | — |",
       "line_len": 86,
       "anchors": [
         "L02"

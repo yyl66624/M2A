@@ -49,12 +49,12 @@
     "value_unattested_in_repo": 5,
     "stale_value_in_register": 1,
     "value_of_other_round": 42,
-    "value_only_in_transcription": 39,
-    "matches_round_records": 54,
-    "criterion_without_anchor": 790,
+    "value_only_in_transcription": 41,
+    "matches_round_records": 55,
+    "criterion_without_anchor": 792,
     "hard_findings": 6,
-    "rounded_matches": 29,
-    "claim_values": 2372,
+    "rounded_matches": 31,
+    "claim_values": 2387,
     "claim_documents": 44,
     "corpus_documents": 56,
     "round_families": 25
@@ -9772,7 +9772,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2079,
+      "line": 2081,
       "values": [
         "0.005",
         "0.008"
@@ -9819,7 +9819,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2104,
+      "line": 2106,
       "values": [
         "154.1",
         "5.1e-12"
@@ -9844,7 +9844,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2105,
+      "line": 2107,
       "values": [
         "1.0001"
       ],
@@ -9863,7 +9863,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2106,
+      "line": 2108,
       "values": [
         "170.130"
       ],
@@ -9882,7 +9882,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2107,
+      "line": 2109,
       "values": [
         "0.0084",
         "0.9990",
@@ -9913,7 +9913,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2108,
+      "line": 2110,
       "values": [
         "170.130"
       ],
@@ -9932,7 +9932,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2204,
+      "line": 2208,
       "values": [
         "1.0"
       ],
@@ -9976,7 +9976,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2219,
+      "line": 2223,
       "values": [
         "1.0"
       ],
@@ -10020,7 +10020,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2623,
+      "line": 2627,
       "values": [
         "0.1",
         "0.2",
@@ -10288,7 +10288,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2629,
+      "line": 2633,
       "values": [
         "0.0",
         "0.001349",
@@ -10384,7 +10384,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2630,
+      "line": 2634,
       "values": [
         "0.001111",
         "0.019885",
@@ -10478,7 +10478,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2631,
+      "line": 2635,
       "values": [
         "0.000628",
         "0.031487",
@@ -10565,7 +10565,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2632,
+      "line": 2636,
       "values": [
         "0.0",
         "0.000702",
@@ -10663,7 +10663,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2633,
+      "line": 2637,
       "values": [
         "0.000775",
         "0.054564",
@@ -10760,7 +10760,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2634,
+      "line": 2638,
       "values": [
         "0.000563",
         "0.099184",
@@ -10849,7 +10849,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2635,
+      "line": 2639,
       "values": [
         "0.0",
         "0.000910",
@@ -10952,7 +10952,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2636,
+      "line": 2640,
       "values": [
         "0.000350",
         "0.062829",
@@ -11059,7 +11059,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2637,
+      "line": 2641,
       "values": [
         "0.000021",
         "0.176347",
@@ -11162,7 +11162,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2639,
+      "line": 2643,
       "values": [
         "-0.001044",
         "0.000106",
@@ -11385,7 +11385,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2641,
+      "line": 2645,
       "values": [
         "0.36"
       ],
@@ -11417,7 +11417,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2664,
+      "line": 2668,
       "values": [
         "0.1",
         "0.259165",
@@ -11547,7 +11547,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2678,
+      "line": 2682,
       "values": [
         "0.1"
       ],
@@ -11590,7 +11590,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2682,
+      "line": 2686,
       "values": [
         "0.259076",
         "0.259165",
@@ -11643,7 +11643,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2683,
+      "line": 2687,
       "values": [
         "0.349149",
         "0.349254",
@@ -11696,7 +11696,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2684,
+      "line": 2688,
       "values": [
         "-0.000000",
         "-3.053e-16"
@@ -11748,7 +11748,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2685,
+      "line": 2689,
       "values": [
         "-0.000000",
         "-2.220e-16"
@@ -11800,7 +11800,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2687,
+      "line": 2691,
       "values": [
         "4.23e-05",
         "4.41e-05"
@@ -11830,7 +11830,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2691,
+      "line": 2695,
       "values": [
         "0.1"
       ],
@@ -11873,7 +11873,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2725,
+      "line": 2729,
       "values": [
         "6.1"
       ],
@@ -11890,6 +11890,295 @@
         }
       ],
       "verdict": "criterion_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2751,
+      "values": [
+        "-0.5584",
+        "0.001",
+        "0.5"
+      ],
+      "excerpt": "| L2 门符号 | `sign(∂p/∂x)=sign(2o−1)` 只对 `o ≠ 0.5`；`o=0.5` 恒等平坦 | `p0=p1`、`max_step=0`、饱和斜率 `<0.001` | 单调 CDF + 线性门开放度 | `ρ=±1` 不含 `o=0.5`；−0.5584 是常数曲线",
+      "anchors": [],
+      "phantom": [],
+      "per_value": [
+        {
+          "value": "-0.5584",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "3"
+          ]
+        },
+        {
+          "value": "0.001",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "10",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "2",
+            "23",
+            "24",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "9"
+          ]
+        },
+        {
+          "value": "0.5",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "2",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"
+          ]
+        }
+      ],
+      "verdict": "criterion_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2752,
+      "values": [
+        "0.000648",
+        "0.1944",
+        "0.19540",
+        "0.36",
+        "0.8"
+      ],
+      "excerpt": "| L3 表征质量 | 修正算子 `Δ=0.36(w(p1)−w(p0))`，`w(p)=2p/(3−p)`；q=0.8 的闭式 0.1944、复验 0.19540（SE 0.000648） | `phase5d_results.json` | 这台表格 Q-learning、这条覆盖规则 | 原式",
+      "anchors": [
+        "5"
+      ],
+      "phantom": [],
+      "per_value": [
+        {
+          "value": "0.000648",
+          "attested_in": {
+            "5": "rounded"
+          },
+          "registered_by_other_round": [
+            "5"
+          ]
+        },
+        {
+          "value": "0.1944",
+          "attested_in": {
+            "5": "transcription"
+          },
+          "registered_by_other_round": [
+            "24",
+            "5"
+          ]
+        },
+        {
+          "value": "0.19540",
+          "attested_in": {
+            "5": "transcription"
+          },
+          "registered_by_other_round": [
+            "5"
+          ]
+        },
+        {
+          "value": "0.36",
+          "attested_in": {
+            "5": "prereg"
+          },
+          "registered_by_other_round": [
+            "11",
+            "13",
+            "17",
+            "2",
+            "24",
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        {
+          "value": "0.8",
+          "attested_in": {
+            "5": "prereg"
+          },
+          "registered_by_other_round": [
+            "10",
+            "11",
+            "12",
+            "13",
+            "15",
+            "17",
+            "2",
+            "24",
+            "3",
+            "4",
+            "5",
+            "6",
+            "8",
+            "9"
+          ]
+        }
+      ],
+      "verdict": "value_only_in_transcription"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2753,
+      "values": [
+        "5.60e-3",
+        "6.459e-4"
+      ],
+      "excerpt": "| V2 间隙门槛 | `β·Δ ≥ κ_F(α)`；**243 是总格数，不是因子乘积** | `phase5_results.json` 的 `n_cells=243` | n∈{2,3,4} × 3 t-norm × 3 族 | 最大相对误差 6.459e-4；绝对最大差 5.60e-3 |",
+      "anchors": [
+        "5"
+      ],
+      "phantom": [],
+      "per_value": [
+        {
+          "value": "5.60e-3",
+          "attested_in": {
+            "5": "transcription"
+          },
+          "registered_by_other_round": [
+            "5"
+          ]
+        },
+        {
+          "value": "6.459e-4",
+          "attested_in": {
+            "5": "rounded"
+          },
+          "registered_by_other_round": [
+            "5"
+          ]
+        }
+      ],
+      "verdict": "value_only_in_transcription"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2755,
+      "values": [
+        "0.0488",
+        "0.90417",
+        "0.95242",
+        "0.99984"
+      ],
+      "excerpt": "| E1 合取 | 只能写“**与 AND 一致**”；OR 对照天花板失效 | 0.0488 / 0.95242 / 0.90417；OR 0.99984 | 合成 E1 装置 | 不能声称交互区分 AND/OR；E1 不单独支撑 I2 |",
+      "anchors": [],
+      "phantom": [],
+      "per_value": [
+        {
+          "value": "0.0488",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "2",
+            "5"
+          ]
+        },
+        {
+          "value": "0.90417",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "2"
+          ]
+        },
+        {
+          "value": "0.95242",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "2"
+          ]
+        },
+        {
+          "value": "0.99984",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "2"
+          ]
+        }
+      ],
+      "verdict": "criterion_without_anchor"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 2757,
+      "values": [
+        "0.1"
+      ],
+      "excerpt": "| AO 测度 | `G=1−I−Z` 在四个固定合成模型上分离；精确值落在采样 CI 内 | `phase23_results.json` | θ*=0.1、四个模型 | “CI 不含 0”是相对旧补集口径的分离，不是吻合证据；不声明真实主体 |",
+      "anchors": [
+        "23"
+      ],
+      "phantom": [],
+      "per_value": [
+        {
+          "value": "0.1",
+          "attested_in": {
+            "23": "prereg"
+          },
+          "registered_by_other_round": [
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "2",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"
+          ]
+        }
+      ],
+      "verdict": "matches_round_records"
     },
     {
       "document": "governance/NEGATIVE_AND_NULL_EVIDENCE_LOG.md",

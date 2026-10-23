@@ -3,7 +3,7 @@
 问题：散文写下的判定标签，能不能被它所说那一轮的工件推翻？（GOVERNANCE_ARTIFACT，不跑实验、不改任何轮次判定）
 
 翻译权威：`governance/build_status_label_table.py` 的注册映射（源码 SHA-256 `7b9c18a5e5a64832`，登记 27 个词）；本表不重新定义任何翻译。
-生成本表的推导器源码 SHA-256：`9f87c71d61da7e73`；工件文件 50 份，注册轮次数 24，标签词表 47 个，语料文档 58 份，产出主张行 797 行（文档 52 份）。
+生成本表的推导器源码 SHA-256：`9f87c71d61da7e73`；工件文件 50 份，注册轮次数 24，标签词表 47 个，语料文档 58 份，产出主张行 798 行（文档 52 份）。
 
 | 判定 | 条数 |
 |---|---|
@@ -19,7 +19,7 @@
 | `label_mention_without_predication` | 245 |
 | `cross_round_refutation` | 0 |
 | `paired_correction` | 0 |
-| `label_without_anchor` | 491 |
+| `label_without_anchor` | 492 |
 | `matches_artifact` | 56 |
 | **硬伤合计** | **1** |
 
