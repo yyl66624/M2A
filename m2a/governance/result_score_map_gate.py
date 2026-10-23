@@ -37,7 +37,8 @@ MAP = GOV / "result_score_reconciliation_v1.json"
 # so the pairing is declared here - and the declaration is checked (the file must exist and must name the gate)
 # rather than widening the glob, which would drag a non-`*_RESULTS` document into a score-claim namespace.
 EXTRA_RECORDS = {"l02_representation_gate.py": "literature/ROUND_L02_REPRESENTATION.md",
-                 "l04_i1_gate.py": "literature/ROUND_L04_I1.md"}
+                 "l04_i1_gate.py": "literature/ROUND_L04_I1.md",
+                 "l05_gate.py": "literature/ROUND_L05_SECOND_CODER.md"}
 MD = M / "report/RESULT_SCORE_RECONCILIATION_v1.md"
 CMAP = GOV / "gate_coverage_map_v1.json"
 

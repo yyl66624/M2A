@@ -1,0 +1,204 @@
+{
+  "agreement": {
+    "cohen_kappa": "UNDEFINED",
+    "kappa_note": "UNDEFINED means both margins have zero variance; it is not 1.0",
+    "matches": 21,
+    "n": 21,
+    "raw": 1.0
+  },
+  "boundary": "21 full-text review records; two AI contexts, not two human coders; the result audits the population, not I1 itself",
+  "defects": [],
+  "exit": "L05_DENOMINATOR_EMPTY",
+  "label_r17": "REFUTED",
+  "no_new_data": true,
+  "population": {
+    "papers": 21,
+    "source": "literature/fulltext_review.json"
+  },
+  "prereg_binding": {
+    "disk_sha256": "5114653224211c3c618259bf5ea6a4fba39a1a3a70bb8ba53927e91065b3b157",
+    "git_head_sha256": "5114653224211c3c618259bf5ea6a4fba39a1a3a70bb8ba53927e91065b3b157",
+    "path": "m2a/literature/L05_PREREGISTRATION.md",
+    "two_channel_match": true
+  },
+  "prereg_sha256": "5114653224211c3c618259bf5ea6a4fba39a1a3a70bb8ba53927e91065b3b157",
+  "preregistration": "literature/L05_PREREGISTRATION.md",
+  "primary_frozen_before_second": true,
+  "rows": [
+    {
+      "agree": true,
+      "paper": "R01",
+      "primary": "NEITHER",
+      "primary_rationale": "FrameNet lexicon construction; no action omission.",
+      "second": "NEITHER",
+      "second_rationale": "FrameNet describes frame-semantic valence annotation of lexical items, and its only \"representation\" claim concerns frame-element valences rather than any agent's selective non-response or an unchosen option's availability."
+    },
+    {
+      "agree": true,
+      "paper": "R02",
+      "primary": "NEITHER",
+      "primary_rationale": "AMR omits linguistic phenomena in its guidelines; excluded by the rule.",
+      "second": "NEITHER",
+      "second_rationale": "The AMR paper claims an abstract meaning representation that deliberately omits articles and other surface material, which is linguistic constituent omission, not action omission or counterfactual availability."
+    },
+    {
+      "agree": true,
+      "paper": "R05",
+      "primary": "NEITHER",
+      "primary_rationale": "Thermodynamics review; 'skipped' is reading advice.",
+      "second": "NEITHER",
+      "second_rationale": "This is a physics review of stochastic thermodynamics and fluctuation theorems, with no claim about a system selectively not responding or about representing an unchosen option."
+    },
+    {
+      "agree": true,
+      "paper": "R06",
+      "primary": "NEITHER",
+      "primary_rationale": "Self-replication entropy bound; no omission or availability claim.",
+      "second": "NEITHER",
+      "second_rationale": "England's self-replication paper derives a thermodynamic bound on heat production during replication and makes no claim about action omission or counterfactual availability."
+    },
+    {
+      "agree": true,
+      "paper": "R09",
+      "primary": "NEITHER",
+      "primary_rationale": "T-cell co-stimulation; 'availability' is tryptophan supply.",
+      "second": "NEITHER",
+      "second_rationale": "This immunology review of T cell co-stimulation and co-inhibition treats \"tolerance/anergy\" as a molecular unresponsive state, not a selective withholding of response among available options, and its only \"availability\" hits concern tryptophan and data access."
+    },
+    {
+      "agree": true,
+      "paper": "R13",
+      "primary": "NEITHER",
+      "primary_rationale": "Delayed postingestive learning; no selective action omission or unchosen-option representation.",
+      "second": "NEITHER",
+      "second_rationale": "The paper concerns a neural mechanism for learning from delayed postingestive feedback in mice, and its \"availability\" mention is the reward-availability window of a port in the task, an excluded stimulus/port availability."
+    },
+    {
+      "agree": true,
+      "paper": "R14",
+      "primary": "NEITHER",
+      "primary_rationale": "Reward omission, explicitly excluded by the rule.",
+      "second": "NEITHER",
+      "second_rationale": "All omission language in this dopamine/reward-timescale paper refers to trials where the reward outcome was omitted (reward omission), an explicitly excluded construct, and no skipped action option is claimed to be represented."
+    },
+    {
+      "agree": true,
+      "paper": "R15",
+      "primary": "NEITHER",
+      "primary_rationale": "Time-scale invariance; 'availability' is data availability.",
+      "second": "NEITHER",
+      "second_rationale": "This paper argues rats learn an instrumental action despite a 16-min reinforcement delay via information-theoretic contingency, mentioning alternative response distributions only as the authors' counterfactual analysis of reinforcement rate, not as a representation of a foregone option."
+    },
+    {
+      "agree": true,
+      "paper": "R17",
+      "primary": "NEITHER",
+      "primary_rationale": "Behaviour-change wheel; no omission.",
+      "second": "NEITHER",
+      "second_rationale": "The Behaviour Change Wheel paper characterizes behaviour via capability/opportunity/motivation and intervention functions, with no claim about selective non-response or a represented unchosen option (its \"barriers\" are generic behaviour-change barriers)."
+    },
+    {
+      "agree": true,
+      "paper": "R20",
+      "primary": "NEITHER",
+      "primary_rationale": "Control barrier functions; 'omit' is expository.",
+      "second": "NEITHER",
+      "second_rationale": "This control-barrier-function review discusses constraint satisfaction and collision avoidance, where \"omit\"/\"skip\"/\"refrain\" are authorial shorthand and \"avoidance\" is physical obstacle avoidance, not selective non-response with counterfactual availability."
+    },
+    {
+      "agree": true,
+      "paper": "R24",
+      "primary": "NEITHER",
+      "primary_rationale": "Safety-critical control; no omission.",
+      "second": "NEITHER",
+      "second_rationale": "This CBF reduced-order-model survey makes safety-control claims about constraint satisfaction, and its only related words are \"alternative approaches\" for controller design, unrelated to omission or unchosen-option representation."
+    },
+    {
+      "agree": true,
+      "paper": "G6-07",
+      "primary": "NEITHER",
+      "primary_rationale": "Implementation science; 'availability' is a programme name.",
+      "second": "NEITHER",
+      "second_rationale": "The Consolidated Framework for Implementation Research paper organizes implementation determinants and contains no claim about a system abstaining or about representing a skipped option."
+    },
+    {
+      "agree": true,
+      "paper": "G8-01",
+      "primary": "NEITHER",
+      "primary_rationale": "PropBank; 'omitted' is table notation.",
+      "second": "NEITHER",
+      "second_rationale": "PropBank adds semantic role labels to Treebank syntax, and its \"omitted\"/\"skip\" hits are zeros dropped from result tables and a table entry, i.e. data-reporting artifacts."
+    },
+    {
+      "agree": true,
+      "paper": "G8-03",
+      "primary": "NEITHER",
+      "primary_rationale": "Universal Dependencies; 'omission' is linguistic subject omission, excluded.",
+      "second": "NEITHER",
+      "second_rationale": "The Universal Dependencies v1 paper describes a cross-lingual annotation scheme and contains no omission, abstention, or counterfactual-availability claim."
+    },
+    {
+      "agree": true,
+      "paper": "G8-04",
+      "primary": "NEITHER",
+      "primary_rationale": "Annotation survey; 'availability' is corpus availability.",
+      "second": "NEITHER",
+      "second_rationale": "The ACE program paper describes entity/relation/event extraction tasks and evaluation, and its \"Availability\" hit is a table column about resource availability in the evaluation setup."
+    },
+    {
+      "agree": true,
+      "paper": "G8-05",
+      "primary": "NEITHER",
+      "primary_rationale": "Gene Ontology; 'availability' is data access.",
+      "second": "NEITHER",
+      "second_rationale": "The Gene Ontology paper describes a controlled vocabulary for molecular function and biological process annotation, with no claim bearing on action omission or an unchosen option's availability."
+    },
+    {
+      "agree": true,
+      "paper": "G8-08",
+      "primary": "NEITHER",
+      "primary_rationale": "Narrative event chains; no omission.",
+      "second": "NEITHER",
+      "second_rationale": "This narrative event-chain paper learns stereotyped event sequences from corpora and evaluates narrative cloze, making no claim about a system selectively not responding or representing an unchosen option."
+    },
+    {
+      "agree": true,
+      "paper": "X-K4-01",
+      "primary": "NEITHER",
+      "primary_rationale": "IL-12/B7 synergy in T cells; no omission.",
+      "second": "NEITHER",
+      "second_rationale": "An in vitro immunology paper on IL-12/B7-CD28 synergy, whose \"unresponsive\" mentions occur only in cited reference titles and involve global T cell unresponsiveness, not selective non-response among options."
+    },
+    {
+      "agree": true,
+      "paper": "X-K4-02",
+      "primary": "NEITHER",
+      "primary_rationale": "TLR/CD40 synergy; no omission.",
+      "second": "NEITHER",
+      "second_rationale": "A study of combined TLR/CD40 triggering of CD8+ T cell expansion, containing no omission, abstention, or counterfactual-availability claim beyond site-navigation text."
+    },
+    {
+      "agree": true,
+      "paper": "X-K4-05",
+      "primary": "NEITHER",
+      "primary_rationale": "Biofilm quorum sensing; no omission.",
+      "second": "NEITHER",
+      "second_rationale": "The quorum-sensing biofilm paper argues QS signals act as self-regulatory rather than neighbour-inducing cues, which is about signal design and stochastic escape, not a selective abstention whose skipped option would need representation."
+    },
+    {
+      "agree": true,
+      "paper": "X-K4-07",
+      "primary": "NEITHER",
+      "primary_rationale": "Coincidence detectors; no omission.",
+      "second": "NEITHER",
+      "second_rationale": "A slice-physiology study of two coincidence detectors for spike-timing-dependent plasticity, with no claim about response omission or the availability of a non-chosen option."
+    }
+  ],
+  "schema": "m2a.roundL05.secondcoder.v1",
+  "second_file": {
+    "exists": true,
+    "path": "/media/leonyao/新加卷/workshop/scratch/l05_second.md",
+    "sha256": "0e25f82a92e127a2bf81d02561e3aee94fcbbf31277ccde99a7dd3ec8ebd6405"
+  },
+  "single_round": true
+}

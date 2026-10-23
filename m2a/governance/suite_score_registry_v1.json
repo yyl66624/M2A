@@ -1,14 +1,14 @@
 {
   "counts": {
-    "claim_documents": 22,
-    "corpus_documents": 88,
+    "claim_documents": 23,
+    "corpus_documents": 90,
     "hard_findings": 0,
-    "quote_rows": 91,
-    "quotes_found": 109,
+    "quote_rows": 92,
+    "quotes_found": 111,
     "self_reference_quotes": 1,
-    "suites_live_green": 42,
-    "suites_run": 42,
-    "verdict_matches_live": 78,
+    "suites_live_green": 43,
+    "suites_run": 43,
+    "verdict_matches_live": 79,
     "verdict_paired_correction": 4,
     "verdict_possible_history": 7,
     "verdict_self_reference": 1,
@@ -99,6 +99,15 @@
         14
       ],
       "sha256": "ab54d1e295bad1d0d20378950a58c4e78954438dae03c0428654a9c52db3e0d0",
+      "why": ""
+    },
+    "l05_gate.py": {
+      "file": "literature/l05_gate.py",
+      "live": [
+        12,
+        12
+      ],
+      "sha256": "8186b669b436d53ad34b82a0d2ed005be663a21f0d30ca37b63d2773bf9162b7",
       "why": ""
     },
     "obligation_registry_gate.py": {
@@ -350,7 +359,7 @@
         12,
         12
       ],
-      "sha256": "c407716d18af5613079d239361e9ed49d8257b2e43bcc45d6b2df286b9b10964",
+      "sha256": "0bc65a91afc79caa22bac081fc53623e12eca443265b5362ae247252d9ffaca1",
       "why": ""
     },
     "runner_enforcement_map_gate.py": {
@@ -405,7 +414,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "ao_preflight_gate.py",
-      "line": 1387,
+      "line": 1389,
       "live": "8/8",
       "quoted": "8/8",
       "verdict": "matches_live"
@@ -415,7 +424,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "frozen_input_map_gate.py",
-      "line": 2537,
+      "line": 2545,
       "live": null,
       "quoted": "18/18",
       "verdict": "unmeasured_by_registration"
@@ -425,7 +434,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "gate_coverage_map_gate.py",
-      "line": 1746,
+      "line": 1748,
       "live": "18/18",
       "quoted": "17/17",
       "verdict": "paired_correction"
@@ -435,7 +444,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "gate_coverage_map_gate.py",
-      "line": 1630,
+      "line": 1632,
       "live": "18/18",
       "quoted": "18/18",
       "verdict": "matches_live"
@@ -445,7 +454,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "gate_discrimination_gate.py",
-      "line": 1414,
+      "line": 1416,
       "live": "59/59",
       "quoted": "5/5",
       "verdict": "possible_history"
@@ -455,7 +464,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "gate_discrimination_gate.py",
-      "line": 1814,
+      "line": 1816,
       "live": "59/59",
       "quoted": "59/59",
       "verdict": "matches_live"
@@ -465,7 +474,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "l02_representation_gate.py",
-      "line": 2722,
+      "line": 2730,
       "live": "16/16",
       "quoted": "16/16",
       "verdict": "matches_live"
@@ -475,7 +484,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "obligation_registry_gate.py",
-      "line": 1755,
+      "line": 1757,
       "live": "8/8",
       "quoted": "8/8",
       "verdict": "matches_live"
@@ -485,7 +494,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "p10_gate.py",
-      "line": 1679,
+      "line": 1681,
       "live": "6/6",
       "quoted": "6/6",
       "verdict": "matches_live"
@@ -495,7 +504,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "p23_gate.py",
-      "line": 2692,
+      "line": 2700,
       "live": "15/15",
       "quoted": "15/15",
       "verdict": "matches_live"
@@ -505,7 +514,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "p24_gate.py",
-      "line": 2637,
+      "line": 2645,
       "live": "15/15",
       "quoted": "15/15",
       "verdict": "matches_live"
@@ -515,7 +524,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "result_score_map_gate.py",
-      "line": 1701,
+      "line": 1703,
       "live": "12/12",
       "quoted": "12/12",
       "verdict": "matches_live"
@@ -525,7 +534,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "runner_enforcement_map_gate.py",
-      "line": 1661,
+      "line": 1663,
       "live": "14/14",
       "quoted": "14/14",
       "verdict": "matches_live"
@@ -535,7 +544,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "section_page_reconciliation_gate.py",
-      "line": 1837,
+      "line": 1839,
       "live": "23/23",
       "quoted": "22/22",
       "verdict": "possible_history"
@@ -545,7 +554,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "status_label_table_gate.py",
-      "line": 1357,
+      "line": 1359,
       "live": "6/6",
       "quoted": "6/6",
       "verdict": "matches_live"
@@ -555,7 +564,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "unmeasured_instruments_gate.py",
-      "line": 1753,
+      "line": 1755,
       "live": "25/25",
       "quoted": "25/25",
       "verdict": "matches_live"
@@ -565,7 +574,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "wiki_sync_map_gate.py",
-      "line": 1774,
+      "line": 1776,
       "live": "16/16",
       "quoted": "16/16",
       "verdict": "matches_live"
@@ -1161,6 +1170,16 @@
       "verdict": "matches_live"
     },
     {
+      "context": "> 门控 literature/l05_gate.py 12/12 checks passed ｜ 工件 literature/L05_SECOND_C",
+      "doc_kind": "run_record",
+      "document": "ROUND_L05_SECOND_CODER.md",
+      "instrument": "l05_gate.py",
+      "line": 4,
+      "live": "12/12",
+      "quoted": "12/12",
+      "verdict": "matches_live"
+    },
+    {
       "context": "| ao_preflight_gate.py | 8/8 | M2A_FINAL_REPORT.md, experiment",
       "doc_kind": "derived_summary",
       "document": "SECTION_PAGE_RECONCILIATION_v1.md",
@@ -1313,7 +1332,7 @@
   ],
   "schema": "m2a.suite_score_registry.v1",
   "verdict_distribution": {
-    "matches_live": 78,
+    "matches_live": 79,
     "paired_correction": 4,
     "possible_history": 7,
     "self_reference": 1,
