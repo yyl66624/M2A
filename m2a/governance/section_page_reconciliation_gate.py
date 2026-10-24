@@ -370,13 +370,16 @@ def main() -> int:
     all_vals = {v for vals in list(strict.values()) + list(loose.values()) for v in vals}
     assert sentinel_val not in all_vals
     assert ghost_file not in strict and ghost_file not in loose and ghost_file not in latest
-    bodies = [text_of(CACHE / (pages[0]["node_token"] + ".txt"))[:4000], text_of(REPORT)[:4000]]
+    # Strip a trailing newline at the 4000-character cut: splitlines() drops a final empty line, so a
+    # window that ends exactly at a newline would report a false line-count change (X-84 family).
+    bodies = [text_of(CACHE / (pages[0]["node_token"] + ".txt"))[:4000].rstrip("\n"),
+              text_of(REPORT)[:4000].rstrip("\n")]
     report("P14 the claim window cannot cross a newline on either path and normalization keeps line count",
            claims2(probe) == {} and B.claims(B.norm(probe))[0] == {}
            and claims_loose2(probe) == {}
            and len(strip_lines(probe_html).splitlines()) == len(probe_html.splitlines())
            and len(B.norm(probe_html).splitlines()) == len(probe_html.splitlines())
-           and all(len(strip_lines(x).splitlines()) == len(x.splitlines()) for x in bodies),
+           and all(len(strip_lines(x).split("\n")) == len(x.split("\n")) for x in bodies),
            "probe %s | max attested %d | sentinel %s | ghost %s" % (claims2(probe), m0,
                                                                     sentinel_val, ghost_file))
 
