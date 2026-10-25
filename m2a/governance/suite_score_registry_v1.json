@@ -1,14 +1,14 @@
 {
   "counts": {
-    "claim_documents": 25,
-    "corpus_documents": 95,
+    "claim_documents": 26,
+    "corpus_documents": 97,
     "hard_findings": 0,
-    "quote_rows": 96,
-    "quotes_found": 117,
+    "quote_rows": 98,
+    "quotes_found": 120,
     "self_reference_quotes": 1,
-    "suites_live_green": 45,
-    "suites_run": 45,
-    "verdict_matches_live": 83,
+    "suites_live_green": 46,
+    "suites_run": 46,
+    "verdict_matches_live": 85,
     "verdict_paired_correction": 4,
     "verdict_possible_history": 7,
     "verdict_self_reference": 1,
@@ -272,6 +272,15 @@
       "sha256": "f7f4415a1b1596862c914db0a3e3279c53dcf01362ea9d2da8fdf46be0b84d6c",
       "why": ""
     },
+    "p27_gate.py": {
+      "file": "experiments/p27_gate.py",
+      "live": [
+        12,
+        12
+      ],
+      "sha256": "e96dad3c44c2981fcf7846eda290d2e30db79aa92e10c9654f8f150ee59f831b",
+      "why": ""
+    },
     "p3_gate.py": {
       "file": "experiments/p3_gate.py",
       "live": [
@@ -432,7 +441,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "ao_preflight_gate.py",
-      "line": 1395,
+      "line": 1397,
       "live": "8/8",
       "quoted": "8/8",
       "verdict": "matches_live"
@@ -442,7 +451,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "frozen_input_map_gate.py",
-      "line": 2567,
+      "line": 2575,
       "live": null,
       "quoted": "18/18",
       "verdict": "unmeasured_by_registration"
@@ -452,7 +461,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "gate_coverage_map_gate.py",
-      "line": 1754,
+      "line": 1756,
       "live": "18/18",
       "quoted": "17/17",
       "verdict": "paired_correction"
@@ -462,7 +471,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "gate_coverage_map_gate.py",
-      "line": 1638,
+      "line": 1640,
       "live": "18/18",
       "quoted": "18/18",
       "verdict": "matches_live"
@@ -472,7 +481,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "gate_discrimination_gate.py",
-      "line": 1422,
+      "line": 1424,
       "live": "59/59",
       "quoted": "5/5",
       "verdict": "possible_history"
@@ -482,7 +491,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "gate_discrimination_gate.py",
-      "line": 1822,
+      "line": 1824,
       "live": "59/59",
       "quoted": "59/59",
       "verdict": "matches_live"
@@ -492,7 +501,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "l02_representation_gate.py",
-      "line": 2752,
+      "line": 2760,
       "live": "16/16",
       "quoted": "16/16",
       "verdict": "matches_live"
@@ -502,7 +511,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "obligation_registry_gate.py",
-      "line": 1763,
+      "line": 1765,
       "live": "8/8",
       "quoted": "8/8",
       "verdict": "matches_live"
@@ -512,7 +521,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "p10_gate.py",
-      "line": 1687,
+      "line": 1689,
       "live": "6/6",
       "quoted": "6/6",
       "verdict": "matches_live"
@@ -522,7 +531,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "p23_gate.py",
-      "line": 2722,
+      "line": 2730,
       "live": "15/15",
       "quoted": "15/15",
       "verdict": "matches_live"
@@ -532,7 +541,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "p24_gate.py",
-      "line": 2667,
+      "line": 2675,
       "live": "15/15",
       "quoted": "15/15",
       "verdict": "matches_live"
@@ -542,7 +551,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "result_score_map_gate.py",
-      "line": 1709,
+      "line": 1711,
       "live": "12/12",
       "quoted": "12/12",
       "verdict": "matches_live"
@@ -552,7 +561,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "runner_enforcement_map_gate.py",
-      "line": 1669,
+      "line": 1671,
       "live": "14/14",
       "quoted": "14/14",
       "verdict": "matches_live"
@@ -562,7 +571,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "section_page_reconciliation_gate.py",
-      "line": 1845,
+      "line": 1847,
       "live": "23/23",
       "quoted": "22/22",
       "verdict": "possible_history"
@@ -572,7 +581,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "status_label_table_gate.py",
-      "line": 1365,
+      "line": 1367,
       "live": "6/6",
       "quoted": "6/6",
       "verdict": "matches_live"
@@ -582,7 +591,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "unmeasured_instruments_gate.py",
-      "line": 1761,
+      "line": 1763,
       "live": "25/25",
       "quoted": "25/25",
       "verdict": "matches_live"
@@ -592,7 +601,7 @@
       "doc_kind": "append_only",
       "document": "M2A_FINAL_REPORT.md",
       "instrument": "wiki_sync_map_gate.py",
-      "line": 1782,
+      "line": 1784,
       "live": "16/16",
       "quoted": "16/16",
       "verdict": "matches_live"
@@ -848,6 +857,16 @@
       "verdict": "matches_live"
     },
     {
+      "context": "> 门控 experiments/p27_gate.py 12/12 checks passed ｜ 结果 experiments/phase27_res",
+      "doc_kind": "run_record",
+      "document": "PHASE27_RESULTS.md",
+      "instrument": "p27_gate.py",
+      "line": 4,
+      "live": "12/12",
+      "quoted": "12/12",
+      "verdict": "matches_live"
+    },
+    {
       "context": "> 门控：phase2_gate.py 7/7 PASS（确定性、解析已知答案、阴性对照、手算 Q 值、状态可辨识性、收敛、Spe",
       "doc_kind": "run_record",
       "document": "PHASE2_RESULTS.md",
@@ -872,7 +891,7 @@
       "doc_kind": "derived_summary",
       "document": "RESULT_SCORE_RECONCILIATION_v1.md",
       "instrument": "l01_gate.py",
-      "line": 47,
+      "line": 48,
       "live": "7/7",
       "quoted": "7/7",
       "verdict": "matches_live"
@@ -882,7 +901,7 @@
       "doc_kind": "derived_summary",
       "document": "RESULT_SCORE_RECONCILIATION_v1.md",
       "instrument": "l02_gate.py",
-      "line": 48,
+      "line": 49,
       "live": "16/16",
       "quoted": "16/16",
       "verdict": "matches_live"
@@ -892,7 +911,7 @@
       "doc_kind": "derived_summary",
       "document": "RESULT_SCORE_RECONCILIATION_v1.md",
       "instrument": "l03_gate.py",
-      "line": 49,
+      "line": 50,
       "live": "20/20",
       "quoted": "20/20",
       "verdict": "matches_live"
@@ -1068,11 +1087,21 @@
       "verdict": "matches_live"
     },
     {
+      "context": "| PHASE27_RESULTS.md | experiments/p27_gate.py | 12/12 | 12/12 | 0 | other_harness |",
+      "doc_kind": "derived_summary",
+      "document": "RESULT_SCORE_RECONCILIATION_v1.md",
+      "instrument": "p27_gate.py",
+      "line": 36,
+      "live": "12/12",
+      "quoted": "12/12",
+      "verdict": "matches_live"
+    },
+    {
       "context": "| PHASE3_RESULTS.md | experiments/p3_gate.py | 7/7 | 7/7 | 7 | aligned |",
       "doc_kind": "derived_summary",
       "document": "RESULT_SCORE_RECONCILIATION_v1.md",
       "instrument": "p3_gate.py",
-      "line": 37,
+      "line": 38,
       "live": "7/7",
       "quoted": "7/7",
       "verdict": "matches_live"
@@ -1082,7 +1111,7 @@
       "doc_kind": "derived_summary",
       "document": "RESULT_SCORE_RECONCILIATION_v1.md",
       "instrument": "p4_gate.py",
-      "line": 38,
+      "line": 39,
       "live": "5/5",
       "quoted": "5/5",
       "verdict": "matches_live"
@@ -1092,7 +1121,7 @@
       "doc_kind": "derived_summary",
       "document": "RESULT_SCORE_RECONCILIATION_v1.md",
       "instrument": "p5_gate.py",
-      "line": 42,
+      "line": 43,
       "live": "8/8",
       "quoted": "8/8",
       "verdict": "matches_live"
@@ -1102,7 +1131,7 @@
       "doc_kind": "derived_summary",
       "document": "RESULT_SCORE_RECONCILIATION_v1.md",
       "instrument": "p5b_gate.py",
-      "line": 39,
+      "line": 40,
       "live": "6/6",
       "quoted": "6/6",
       "verdict": "matches_live"
@@ -1112,7 +1141,7 @@
       "doc_kind": "derived_summary",
       "document": "RESULT_SCORE_RECONCILIATION_v1.md",
       "instrument": "p5c_gate.py",
-      "line": 40,
+      "line": 41,
       "live": "7/7",
       "quoted": "7/7",
       "verdict": "matches_live"
@@ -1122,7 +1151,7 @@
       "doc_kind": "derived_summary",
       "document": "RESULT_SCORE_RECONCILIATION_v1.md",
       "instrument": "p5d_gate.py",
-      "line": 41,
+      "line": 42,
       "live": "7/7",
       "quoted": "7/7",
       "verdict": "matches_live"
@@ -1132,7 +1161,7 @@
       "doc_kind": "derived_summary",
       "document": "RESULT_SCORE_RECONCILIATION_v1.md",
       "instrument": "p6_gate.py",
-      "line": 43,
+      "line": 44,
       "live": "7/7",
       "quoted": "7/7",
       "verdict": "matches_live"
@@ -1142,7 +1171,7 @@
       "doc_kind": "derived_summary",
       "document": "RESULT_SCORE_RECONCILIATION_v1.md",
       "instrument": "p7_gate.py",
-      "line": 44,
+      "line": 45,
       "live": "9/9",
       "quoted": "9/9",
       "verdict": "matches_live"
@@ -1152,7 +1181,7 @@
       "doc_kind": "derived_summary",
       "document": "RESULT_SCORE_RECONCILIATION_v1.md",
       "instrument": "p8_gate.py",
-      "line": 45,
+      "line": 46,
       "live": "6/6",
       "quoted": "6/6",
       "verdict": "matches_live"
@@ -1162,7 +1191,7 @@
       "doc_kind": "derived_summary",
       "document": "RESULT_SCORE_RECONCILIATION_v1.md",
       "instrument": "p9_gate.py",
-      "line": 46,
+      "line": 47,
       "live": "8/8",
       "quoted": "8/8",
       "verdict": "matches_live"
@@ -1172,7 +1201,7 @@
       "doc_kind": "derived_summary",
       "document": "RESULT_SCORE_RECONCILIATION_v1.md",
       "instrument": "phase2_gate.py",
-      "line": 36,
+      "line": 37,
       "live": "7/7",
       "quoted": "7/7",
       "verdict": "matches_live"
@@ -1390,7 +1419,7 @@
   ],
   "schema": "m2a.suite_score_registry.v1",
   "verdict_distribution": {
-    "matches_live": 83,
+    "matches_live": 85,
     "paired_correction": 4,
     "possible_history": 7,
     "self_reference": 1,

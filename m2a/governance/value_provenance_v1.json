@@ -49,15 +49,15 @@
     "value_unattested_in_repo": 5,
     "stale_value_in_register": 1,
     "value_of_other_round": 42,
-    "value_only_in_transcription": 45,
+    "value_only_in_transcription": 47,
     "matches_round_records": 55,
-    "criterion_without_anchor": 816,
+    "criterion_without_anchor": 829,
     "hard_findings": 6,
     "rounded_matches": 31,
-    "claim_values": 2459,
-    "claim_documents": 48,
-    "corpus_documents": 62,
-    "round_families": 27
+    "claim_values": 2510,
+    "claim_documents": 49,
+    "corpus_documents": 63,
+    "round_families": 28
   },
   "round_records": {
     "1": {
@@ -212,6 +212,14 @@
       "prereg_values": 32,
       "artifact_values": 43,
       "transcription_values": 45
+    },
+    "27": {
+      "files": [
+        "experiments/phase27_results.json"
+      ],
+      "prereg_values": 36,
+      "artifact_values": 51,
+      "transcription_values": 53
     },
     "3": {
       "files": [
@@ -379,6 +387,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -468,6 +477,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -535,6 +545,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -564,6 +575,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -608,6 +620,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -629,6 +642,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -682,6 +696,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -733,6 +748,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -770,6 +786,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -875,6 +892,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -1039,6 +1057,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -1082,6 +1101,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -1127,6 +1147,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -1195,7 +1216,8 @@
           },
           "registered_by_other_round": [
             "25",
-            "26"
+            "26",
+            "27"
           ]
         },
         {
@@ -1205,7 +1227,8 @@
           },
           "registered_by_other_round": [
             "25",
-            "26"
+            "26",
+            "27"
           ]
         },
         {
@@ -1263,7 +1286,8 @@
             "26": "transcription"
           },
           "registered_by_other_round": [
-            "26"
+            "26",
+            "27"
           ]
         },
         {
@@ -1274,7 +1298,8 @@
           "registered_by_other_round": [
             "17",
             "24",
-            "26"
+            "26",
+            "27"
           ]
         },
         {
@@ -1285,7 +1310,8 @@
           "registered_by_other_round": [
             "24",
             "25",
-            "26"
+            "26",
+            "27"
           ]
         },
         {
@@ -1294,7 +1320,8 @@
             "26": "transcription"
           },
           "registered_by_other_round": [
-            "26"
+            "26",
+            "27"
           ]
         },
         {
@@ -1306,7 +1333,8 @@
             "16",
             "17",
             "18",
-            "26"
+            "26",
+            "27"
           ]
         },
         {
@@ -1315,7 +1343,8 @@
             "26": "transcription"
           },
           "registered_by_other_round": [
-            "26"
+            "26",
+            "27"
           ]
         },
         {
@@ -1333,7 +1362,159 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 97,
+      "line": 93,
+      "values": [
+        "-0.000309",
+        "-0.001255",
+        "0.000350",
+        "0.000430",
+        "0.000563",
+        "0.000640",
+        "0.003832",
+        "0.02379",
+        "0.02382",
+        "0.02807",
+        "0.5472",
+        "2.86e-5"
+      ],
+      "excerpt": "**§5 I1 修入六（2026-10-23，Phase XXVII 校准 C；只追加不回写）**。同一 base model 加 Platt/isotonic 校准：isotonic log-loss `0.02382` vs 基础率 `0.02379`（仍差 `2.86e-5`），AUC `0.",
+      "anchors": [
+        "27"
+      ],
+      "phantom": [],
+      "per_value": [
+        {
+          "value": "-0.000309",
+          "attested_in": {
+            "27": "transcription"
+          },
+          "registered_by_other_round": [
+            "27"
+          ]
+        },
+        {
+          "value": "-0.001255",
+          "attested_in": {
+            "27": "transcription"
+          },
+          "registered_by_other_round": [
+            "26",
+            "27"
+          ]
+        },
+        {
+          "value": "0.000350",
+          "attested_in": {
+            "27": "transcription"
+          },
+          "registered_by_other_round": [
+            "17",
+            "24",
+            "26",
+            "27"
+          ]
+        },
+        {
+          "value": "0.000430",
+          "attested_in": {
+            "27": "transcription"
+          },
+          "registered_by_other_round": [
+            "15",
+            "18",
+            "27"
+          ]
+        },
+        {
+          "value": "0.000563",
+          "attested_in": {
+            "27": "transcription"
+          },
+          "registered_by_other_round": [
+            "24",
+            "25",
+            "26",
+            "27"
+          ]
+        },
+        {
+          "value": "0.000640",
+          "attested_in": {
+            "27": "transcription"
+          },
+          "registered_by_other_round": [
+            "27"
+          ]
+        },
+        {
+          "value": "0.003832",
+          "attested_in": {
+            "27": "transcription"
+          },
+          "registered_by_other_round": [
+            "27"
+          ]
+        },
+        {
+          "value": "0.02379",
+          "attested_in": {
+            "27": "transcription"
+          },
+          "registered_by_other_round": [
+            "16",
+            "17",
+            "18",
+            "26",
+            "27"
+          ]
+        },
+        {
+          "value": "0.02382",
+          "attested_in": {
+            "27": "transcription"
+          },
+          "registered_by_other_round": [
+            "18",
+            "27"
+          ]
+        },
+        {
+          "value": "0.02807",
+          "attested_in": {
+            "27": "transcription"
+          },
+          "registered_by_other_round": [
+            "26",
+            "27"
+          ]
+        },
+        {
+          "value": "0.5472",
+          "attested_in": {
+            "27": "transcription"
+          },
+          "registered_by_other_round": [
+            "27"
+          ]
+        },
+        {
+          "value": "2.86e-5",
+          "attested_in": {
+            "27": "transcription"
+          },
+          "registered_by_other_round": [
+            "18",
+            "27",
+            "5"
+          ]
+        }
+      ],
+      "verdict": "value_only_in_transcription"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 99,
       "values": [
         "3.290",
         "4.067",
@@ -1377,7 +1558,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 98,
+      "line": 100,
       "values": [
         "0.002"
       ],
@@ -1402,6 +1583,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -1416,7 +1598,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 106,
+      "line": 108,
       "values": [
         "0.5"
       ],
@@ -1445,6 +1627,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -1460,7 +1643,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 125,
+      "line": 127,
       "values": [
         "0.02"
       ],
@@ -1484,6 +1667,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -1498,7 +1682,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 144,
+      "line": 146,
       "values": [
         "0.02"
       ],
@@ -1522,6 +1706,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -1536,7 +1721,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 167,
+      "line": 169,
       "values": [
         "0.0",
         "0.02",
@@ -1573,6 +1758,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -1600,6 +1786,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -1621,7 +1808,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 168,
+      "line": 170,
       "values": [
         "3.290",
         "4.069",
@@ -1683,7 +1870,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 169,
+      "line": 171,
       "values": [
         "3.3e-4"
       ],
@@ -1707,7 +1894,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 176,
+      "line": 178,
       "values": [
         "0.36"
       ],
@@ -1735,7 +1922,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 177,
+      "line": 179,
       "values": [
         "0.1944",
         "0.1945",
@@ -1795,6 +1982,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -1816,7 +2004,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 181,
+      "line": 183,
       "values": [
         "0.5"
       ],
@@ -1845,6 +2033,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -1860,7 +2049,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 182,
+      "line": 184,
       "values": [
         "0.2140",
         "0.8"
@@ -1888,6 +2077,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -1902,7 +2092,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 183,
+      "line": 185,
       "values": [
         "0.02"
       ],
@@ -1926,6 +2116,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -1940,7 +2131,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 184,
+      "line": 186,
       "values": [
         "1e-13"
       ],
@@ -1961,7 +2152,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 191,
+      "line": 193,
       "values": [
         "0.0000"
       ],
@@ -1992,6 +2183,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -2007,7 +2199,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 237,
+      "line": 239,
       "values": [
         "-0.9999",
         "0.0"
@@ -2047,6 +2239,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -2062,7 +2255,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 238,
+      "line": 240,
       "values": [
         "-2.2745",
         "0.15",
@@ -2119,7 +2312,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 239,
+      "line": 241,
       "values": [
         "-0.9999",
         "0.0015"
@@ -2157,7 +2350,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 245,
+      "line": 247,
       "values": [
         "4.8835",
         "5.2955",
@@ -2209,7 +2402,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 264,
+      "line": 266,
       "values": [
         "0.0051",
         "0.2161",
@@ -2251,7 +2444,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 265,
+      "line": 267,
       "values": [
         "0.0011",
         "0.0066"
@@ -2288,7 +2481,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 269,
+      "line": 271,
       "values": [
         "0.008"
       ],
@@ -2315,7 +2508,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 272,
+      "line": 274,
       "values": [
         "0.02"
       ],
@@ -2339,6 +2532,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -2353,7 +2547,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 275,
+      "line": 277,
       "values": [
         "0.2160",
         "0.36",
@@ -2400,6 +2594,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -2414,7 +2609,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 276,
+      "line": 278,
       "values": [
         "0.2104",
         "0.9"
@@ -2460,7 +2655,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 277,
+      "line": 279,
       "values": [
         "0.1944"
       ],
@@ -2482,7 +2677,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 278,
+      "line": 280,
       "values": [
         "0.0007",
         "0.0011",
@@ -2535,7 +2730,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 282,
+      "line": 284,
       "values": [
         "0.5"
       ],
@@ -2564,6 +2759,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -2579,7 +2775,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 295,
+      "line": 297,
       "values": [
         "0.5",
         "0.75"
@@ -2609,6 +2805,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -2641,7 +2838,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 303,
+      "line": 305,
       "values": [
         "0.0006",
         "0.05"
@@ -2661,6 +2858,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "5",
             "7",
@@ -2697,7 +2895,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 304,
+      "line": 306,
       "values": [
         "0.0"
       ],
@@ -2728,6 +2926,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -2743,7 +2942,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 305,
+      "line": 307,
       "values": [
         "-0.9999",
         "-1.0001"
@@ -2774,7 +2973,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 306,
+      "line": 308,
       "values": [
         "3.2897",
         "3.2898",
@@ -2828,7 +3027,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 318,
+      "line": 320,
       "values": [
         "+1.6738",
         "0.0000",
@@ -2871,6 +3070,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -2911,7 +3111,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 319,
+      "line": 321,
       "values": [
         "+0.8750",
         "2.8752",
@@ -2961,7 +3161,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 322,
+      "line": 324,
       "values": [
         "5.8890",
         "6.5687",
@@ -3004,7 +3204,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 323,
+      "line": 325,
       "values": [
         "0.0015"
       ],
@@ -3037,7 +3237,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 333,
+      "line": 335,
       "values": [
         "0.0"
       ],
@@ -3072,6 +3272,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -3087,7 +3288,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 336,
+      "line": 338,
       "values": [
         "0.5685"
       ],
@@ -3111,7 +3312,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 338,
+      "line": 340,
       "values": [
         "100"
       ],
@@ -3134,6 +3335,7 @@
             "18",
             "24",
             "25",
+            "27",
             "3",
             "5",
             "8",
@@ -3146,7 +3348,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 340,
+      "line": 342,
       "values": [
         "-2.0949",
         "-2.2377"
@@ -3175,7 +3377,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 341,
+      "line": 343,
       "values": [
         "-2.0620",
         "-2.1583"
@@ -3209,7 +3411,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 343,
+      "line": 345,
       "values": [
         "0.82",
         "20.5"
@@ -3241,7 +3443,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 346,
+      "line": 348,
       "values": [
         "-2.0620",
         "-2.0949",
@@ -3292,7 +3494,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 348,
+      "line": 350,
       "values": [
         "0.012",
         "3.5"
@@ -3325,7 +3527,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 488,
+      "line": 490,
       "values": [
         "0.7636",
         "1.0",
@@ -3365,6 +3567,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -3387,7 +3590,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 490,
+      "line": 492,
       "values": [
         "0.00e+00",
         "1e-9"
@@ -3419,6 +3622,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -3452,7 +3656,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 492,
+      "line": 494,
       "values": [
         "1e-15",
         "8.3470e-02",
@@ -3496,7 +3700,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 493,
+      "line": 495,
       "values": [
         "1.14e+13",
         "9.5452e-04"
@@ -3525,7 +3729,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 529,
+      "line": 531,
       "values": [
         "0.0",
         "0.002"
@@ -3557,6 +3761,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -3583,6 +3788,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -3597,7 +3803,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 530,
+      "line": 532,
       "values": [
         "1.1e-16"
       ],
@@ -3620,7 +3826,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 532,
+      "line": 534,
       "values": [
         "1.99964",
         "2.00027"
@@ -3649,7 +3855,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 541,
+      "line": 543,
       "values": [
         "1.009e-3"
       ],
@@ -3670,7 +3876,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 542,
+      "line": 544,
       "values": [
         "0.7354",
         "2.2704"
@@ -3699,7 +3905,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 543,
+      "line": 545,
       "values": [
         "3.2e-5",
         "8.99e-4",
@@ -3739,7 +3945,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 547,
+      "line": 549,
       "values": [
         "0.0"
       ],
@@ -3774,6 +3980,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -3789,7 +3996,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 548,
+      "line": 550,
       "values": [
         "0.0"
       ],
@@ -3826,6 +4033,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -3841,7 +4049,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 569,
+      "line": 571,
       "values": [
         "1.4e-11"
       ],
@@ -3862,7 +4070,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 570,
+      "line": 572,
       "values": [
         "-2.062033944485"
       ],
@@ -3890,7 +4098,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 571,
+      "line": 573,
       "values": [
         "0.0"
       ],
@@ -3921,6 +4129,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -3936,7 +4145,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 573,
+      "line": 575,
       "values": [
         "0.01",
         "0.016762"
@@ -3966,6 +4175,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -3988,7 +4198,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 575,
+      "line": 577,
       "values": [
         "-2.1243"
       ],
@@ -4009,7 +4219,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 578,
+      "line": 580,
       "values": [
         "0.007328"
       ],
@@ -4030,7 +4240,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 579,
+      "line": 581,
       "values": [
         "-2.000000000000",
         "0.0108"
@@ -4067,7 +4277,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 582,
+      "line": 584,
       "values": [
         "-0.212"
       ],
@@ -4090,7 +4300,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 583,
+      "line": 585,
       "values": [
         "+0.5685",
         "-0.2157"
@@ -4128,7 +4338,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 585,
+      "line": 587,
       "values": [
         "-2.0620",
         "-2.1243"
@@ -4163,7 +4373,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 607,
+      "line": 609,
       "values": [
         "0.0"
       ],
@@ -4194,6 +4404,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -4209,7 +4420,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 608,
+      "line": 610,
       "values": [
         "0.3",
         "30.0",
@@ -4255,6 +4466,7 @@
             "15",
             "25",
             "26",
+            "27",
             "5",
             "8",
             "9"
@@ -4280,7 +4492,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 609,
+      "line": 611,
       "values": [
         "0.03",
         "0.15"
@@ -4302,6 +4514,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -4333,7 +4546,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 610,
+      "line": 612,
       "values": [
         "0.55"
       ],
@@ -4347,7 +4560,8 @@
           "registered_by_other_round": [
             "11",
             "13",
-            "2"
+            "2",
+            "27"
           ]
         }
       ],
@@ -4356,7 +4570,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 612,
+      "line": 614,
       "values": [
         "1.83e-4"
       ],
@@ -4381,7 +4595,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 613,
+      "line": 615,
       "values": [
         "0.3616"
       ],
@@ -4402,7 +4616,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 617,
+      "line": 619,
       "values": [
         "0.0"
       ],
@@ -4433,6 +4647,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -4448,7 +4663,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 639,
+      "line": 641,
       "values": [
         "-0.212"
       ],
@@ -4473,7 +4688,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 647,
+      "line": 649,
       "values": [
         "-0.431",
         "0.0385",
@@ -4556,7 +4771,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 648,
+      "line": 650,
       "values": [
         "-2.084778",
         "0.05",
@@ -4611,7 +4826,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 650,
+      "line": 652,
       "values": [
         "-2.0646",
         "-2.1793"
@@ -4640,7 +4855,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 651,
+      "line": 653,
       "values": [
         "1.53e-11"
       ],
@@ -4661,7 +4876,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 652,
+      "line": 654,
       "values": [
         "-2.062033944485",
         "0.0"
@@ -4709,6 +4924,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -4724,7 +4940,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 655,
+      "line": 657,
       "values": [
         "-2.085",
         "0.53"
@@ -4755,7 +4971,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 659,
+      "line": 661,
       "values": [
         "0.001",
         "3.95e-5"
@@ -4781,6 +4997,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -4802,7 +5019,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 660,
+      "line": 662,
       "values": [
         "0.8904"
       ],
@@ -4823,7 +5040,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 682,
+      "line": 684,
       "values": [
         "0.0114",
         "0.0397",
@@ -4915,7 +5132,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 683,
+      "line": 685,
       "values": [
         "0.0114",
         "0.093",
@@ -5000,6 +5217,7 @@
             "18",
             "23",
             "26",
+            "27",
             "5"
           ]
         },
@@ -5027,7 +5245,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 701,
+      "line": 703,
       "values": [
         "0.005"
       ],
@@ -5061,7 +5279,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 702,
+      "line": 704,
       "values": [
         "0.909",
         "1.96e-4"
@@ -5092,7 +5310,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 703,
+      "line": 705,
       "values": [
         "0.2",
         "0.49",
@@ -5159,7 +5377,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 704,
+      "line": 706,
       "values": [
         "3e-6",
         "4.09e-8"
@@ -5190,7 +5408,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 706,
+      "line": 708,
       "values": [
         "-1.137",
         "0.33556",
@@ -5227,7 +5445,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 707,
+      "line": 709,
       "values": [
         "-2.0620",
         "-2.0848",
@@ -5303,7 +5521,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 708,
+      "line": 710,
       "values": [
         "0.89"
       ],
@@ -5328,7 +5546,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 727,
+      "line": 729,
       "values": [
         "0.5"
       ],
@@ -5357,6 +5575,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -5372,7 +5591,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 731,
+      "line": 733,
       "values": [
         "1.817e-4",
         "1.833e-4",
@@ -5417,7 +5636,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 732,
+      "line": 734,
       "values": [
         "0.00e+00"
       ],
@@ -5448,6 +5667,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -5463,7 +5683,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 734,
+      "line": 736,
       "values": [
         "0.2"
       ],
@@ -5507,7 +5727,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 735,
+      "line": 737,
       "values": [
         "0.4950",
         "498"
@@ -5540,7 +5760,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 736,
+      "line": 738,
       "values": [
         "0.4896",
         "0.4906",
@@ -5577,7 +5797,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 740,
+      "line": 742,
       "values": [
         "1e-9"
       ],
@@ -5609,7 +5829,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 741,
+      "line": 743,
       "values": [
         "1e-9",
         "2.0e-4",
@@ -5668,7 +5888,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 743,
+      "line": 745,
       "values": [
         "1e-12"
       ],
@@ -5701,7 +5921,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 747,
+      "line": 749,
       "values": [
         "11.81",
         "13.52",
@@ -5738,7 +5958,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 767,
+      "line": 769,
       "values": [
         "8.1334e-5"
       ],
@@ -5760,7 +5980,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 768,
+      "line": 770,
       "values": [
         "0.0397",
         "3.2264e-6"
@@ -5789,7 +6009,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 769,
+      "line": 771,
       "values": [
         "0.011404",
         "0.02",
@@ -5822,6 +6042,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -5843,7 +6064,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 770,
+      "line": 772,
       "values": [
         "-2.092550616",
         "-2.092613606",
@@ -5905,7 +6126,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 773,
+      "line": 775,
       "values": [
         "6.3e-5"
       ],
@@ -5929,7 +6150,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 774,
+      "line": 776,
       "values": [
         "0.783",
         "4.81e+02"
@@ -5959,7 +6180,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 776,
+      "line": 778,
       "values": [
         "0.01"
       ],
@@ -5988,6 +6209,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -6003,7 +6225,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 777,
+      "line": 779,
       "values": [
         "0.0099994",
         "0.01"
@@ -6040,6 +6262,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -6055,7 +6278,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 779,
+      "line": 781,
       "values": [
         "0.01",
         "0.011404"
@@ -6085,6 +6308,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -6107,7 +6331,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 785,
+      "line": 787,
       "values": [
         "0.01097"
       ],
@@ -6128,7 +6352,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 795,
+      "line": 797,
       "values": [
         "12.4"
       ],
@@ -6153,7 +6377,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 798,
+      "line": 800,
       "values": [
         "0.00e+00"
       ],
@@ -6184,6 +6408,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -6199,7 +6424,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 802,
+      "line": 804,
       "values": [
         "1.385e-4",
         "4.735e-4",
@@ -6238,7 +6463,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 804,
+      "line": 806,
       "values": [
         "1.782",
         "5.663e-5"
@@ -6270,7 +6495,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 806,
+      "line": 808,
       "values": [
         "-0.5"
       ],
@@ -6299,7 +6524,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 814,
+      "line": 816,
       "values": [
         "0.5",
         "1.0",
@@ -6330,6 +6555,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -6362,6 +6588,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -6394,6 +6621,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -6409,7 +6637,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 824,
+      "line": 826,
       "values": [
         "54.0"
       ],
@@ -6436,7 +6664,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 826,
+      "line": 828,
       "values": [
         "0.5",
         "1.0",
@@ -6467,6 +6695,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -6499,6 +6728,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -6531,6 +6761,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -6546,7 +6777,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 827,
+      "line": 829,
       "values": [
         "1.100e-3",
         "2.0"
@@ -6587,6 +6818,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -6602,7 +6834,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 828,
+      "line": 830,
       "values": [
         "0.00e+00"
       ],
@@ -6639,6 +6871,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -6654,7 +6887,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 832,
+      "line": 834,
       "values": [
         "1.817e-4",
         "16.5"
@@ -6686,7 +6919,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 833,
+      "line": 835,
       "values": [
         "0.4",
         "0.9",
@@ -6763,6 +6996,7 @@
             "17",
             "23",
             "26",
+            "27",
             "5",
             "7",
             "9"
@@ -6774,7 +7008,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 834,
+      "line": 836,
       "values": [
         "0.891",
         "1.782",
@@ -6816,7 +7050,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 851,
+      "line": 853,
       "values": [
         "78.1"
       ],
@@ -6841,7 +7075,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 853,
+      "line": 855,
       "values": [
         "5.663e-5"
       ],
@@ -6864,7 +7098,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 854,
+      "line": 856,
       "values": [
         "0.5"
       ],
@@ -6893,6 +7127,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -6908,7 +7143,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 858,
+      "line": 860,
       "values": [
         "4.356e-4"
       ],
@@ -6929,7 +7164,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 859,
+      "line": 861,
       "values": [
         "1.0",
         "2.0",
@@ -6962,6 +7197,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -6994,6 +7230,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -7016,7 +7253,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 860,
+      "line": 862,
       "values": [
         "0.5",
         "3.595e-4"
@@ -7046,6 +7283,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -7068,7 +7306,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 862,
+      "line": 864,
       "values": [
         "0.00e+00",
         "0.5",
@@ -7101,6 +7339,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -7131,6 +7370,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -7163,6 +7403,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -7178,7 +7419,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 863,
+      "line": 865,
       "values": [
         "0.0574",
         "0.0934",
@@ -7223,7 +7464,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 866,
+      "line": 868,
       "values": [
         "0.093",
         "0.891",
@@ -7266,7 +7507,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 870,
+      "line": 872,
       "values": [
         "1.100e-3",
         "2.864e-3"
@@ -7297,7 +7538,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 871,
+      "line": 873,
       "values": [
         "200",
         "800"
@@ -7323,6 +7564,7 @@
             "18",
             "23",
             "26",
+            "27",
             "5"
           ]
         },
@@ -7347,7 +7589,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 884,
+      "line": 886,
       "values": [
         "1e-12"
       ],
@@ -7380,7 +7622,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 886,
+      "line": 888,
       "values": [
         "2251.8",
         "4.441e-16"
@@ -7417,7 +7659,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 887,
+      "line": 889,
       "values": [
         "1.900e+00",
         "6.738e-03"
@@ -7452,7 +7694,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 888,
+      "line": 890,
       "values": [
         "1.541e-01"
       ],
@@ -7476,7 +7718,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 906,
+      "line": 908,
       "values": [
         "1e-9",
         "4.4e-15"
@@ -7516,7 +7758,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 908,
+      "line": 910,
       "values": [
         "0.0e+00"
       ],
@@ -7551,6 +7793,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -7566,7 +7809,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 909,
+      "line": 911,
       "values": [
         "2251.8",
         "4.441e-16"
@@ -7603,7 +7846,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 924,
+      "line": 926,
       "values": [
         "1e-12",
         "1e-9"
@@ -7661,7 +7904,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 926,
+      "line": 928,
       "values": [
         "0.0e+00"
       ],
@@ -7696,6 +7939,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -7711,7 +7955,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 931,
+      "line": 933,
       "values": [
         "0.0999954600",
         "5.000e-07"
@@ -7741,7 +7985,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 932,
+      "line": 934,
       "values": [
         "1.000e-06",
         "1e-12"
@@ -7758,6 +8002,7 @@
             "14",
             "15",
             "21",
+            "27",
             "8"
           ]
         },
@@ -7786,7 +8031,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 934,
+      "line": 936,
       "values": [
         "1e-12"
       ],
@@ -7819,7 +8064,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 948,
+      "line": 950,
       "values": [
         "0.5"
       ],
@@ -7848,6 +8093,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -7863,7 +8109,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 949,
+      "line": 951,
       "values": [
         "1e-9"
       ],
@@ -7895,7 +8141,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 952,
+      "line": 954,
       "values": [
         "1e-9",
         "3.750e+01"
@@ -7935,7 +8181,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 953,
+      "line": 955,
       "values": [
         "0.0e+00"
       ],
@@ -7966,6 +8212,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -7981,7 +8228,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1035,
+      "line": 1037,
       "values": [
         "1.0"
       ],
@@ -8012,6 +8259,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -8027,7 +8275,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1037,
+      "line": 1039,
       "values": [
         "1.0"
       ],
@@ -8058,6 +8306,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -8073,7 +8322,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1046,
+      "line": 1048,
       "values": [
         "1.0"
       ],
@@ -8108,6 +8357,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -8123,7 +8373,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1401,
+      "line": 1403,
       "values": [
         "0.4",
         "0.5",
@@ -8176,6 +8426,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -8198,7 +8449,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1402,
+      "line": 1404,
       "values": [
         "0.400",
         "0.500",
@@ -8247,6 +8498,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -8286,7 +8538,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1409,
+      "line": 1411,
       "values": [
         "1.015e-01"
       ],
@@ -8305,7 +8557,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1410,
+      "line": 1412,
       "values": [
         "1.746e-04",
         "1.885e-04",
@@ -8338,7 +8590,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1411,
+      "line": 1413,
       "values": [
         "1e-1",
         "1e-15"
@@ -8361,6 +8613,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "8",
             "9"
@@ -8383,7 +8636,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1412,
+      "line": 1414,
       "values": [
         "8.425e-04"
       ],
@@ -8402,7 +8655,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1414,
+      "line": 1416,
       "values": [
         "9.992e-16"
       ],
@@ -8421,7 +8674,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1415,
+      "line": 1417,
       "values": [
         "8.4e-04"
       ],
@@ -8443,7 +8696,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1426,
+      "line": 1428,
       "values": [
         "1e-12",
         "1e-8"
@@ -8485,7 +8738,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1431,
+      "line": 1433,
       "values": [
         "1e-8"
       ],
@@ -8507,7 +8760,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1432,
+      "line": 1434,
       "values": [
         "1e-8"
       ],
@@ -8529,7 +8782,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1461,
+      "line": 1463,
       "values": [
         "1e-12",
         "1e-4",
@@ -8569,6 +8822,7 @@
             "17",
             "23",
             "26",
+            "27",
             "5",
             "7",
             "9"
@@ -8588,7 +8842,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1462,
+      "line": 1464,
       "values": [
         "0.5",
         "1e-4"
@@ -8618,6 +8872,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -8638,6 +8893,7 @@
             "17",
             "23",
             "26",
+            "27",
             "5",
             "7",
             "9"
@@ -8649,7 +8905,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1463,
+      "line": 1465,
       "values": [
         "1e-15",
         "1e-9",
@@ -8693,6 +8949,7 @@
           "attested_in": {},
           "registered_by_other_round": [
             "24",
+            "27",
             "3",
             "4",
             "5"
@@ -8704,7 +8961,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1464,
+      "line": 1466,
       "values": [
         "1.25e-3"
       ],
@@ -8730,7 +8987,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1482,
+      "line": 1484,
       "values": [
         "1e-4"
       ],
@@ -8749,6 +9006,7 @@
             "17",
             "23",
             "26",
+            "27",
             "5",
             "7",
             "9"
@@ -8760,7 +9018,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1496,
+      "line": 1498,
       "values": [
         "+1e-8"
       ],
@@ -8782,7 +9040,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1497,
+      "line": 1499,
       "values": [
         "+1e-8"
       ],
@@ -8804,7 +9062,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1507,
+      "line": 1509,
       "values": [
         "1e-4"
       ],
@@ -8823,6 +9081,7 @@
             "17",
             "23",
             "26",
+            "27",
             "5",
             "7",
             "9"
@@ -8834,7 +9093,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1510,
+      "line": 1512,
       "values": [
         "1e-6"
       ],
@@ -8850,6 +9109,7 @@
             "14",
             "15",
             "21",
+            "27",
             "8"
           ]
         }
@@ -8859,7 +9119,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1511,
+      "line": 1513,
       "values": [
         "1e-6"
       ],
@@ -8875,6 +9135,7 @@
             "14",
             "15",
             "21",
+            "27",
             "8"
           ]
         }
@@ -8884,7 +9145,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1520,
+      "line": 1522,
       "values": [
         "1e-4",
         "5.67",
@@ -8905,6 +9166,7 @@
             "17",
             "23",
             "26",
+            "27",
             "5",
             "7",
             "9"
@@ -8928,7 +9190,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1522,
+      "line": 1524,
       "values": [
         "0.0001"
       ],
@@ -8953,6 +9215,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -8966,7 +9229,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1523,
+      "line": 1525,
       "values": [
         "0.0050"
       ],
@@ -8998,7 +9261,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1544,
+      "line": 1546,
       "values": [
         "0.005"
       ],
@@ -9036,7 +9299,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1545,
+      "line": 1547,
       "values": [
         "0.06",
         "1e-4",
@@ -9076,6 +9339,7 @@
             "17",
             "23",
             "26",
+            "27",
             "5",
             "7",
             "9"
@@ -9092,7 +9356,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1547,
+      "line": 1549,
       "values": [
         "1e-1",
         "1e-2",
@@ -9119,6 +9383,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "8",
             "9"
@@ -9148,6 +9413,7 @@
             "15",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -9166,6 +9432,7 @@
             "17",
             "23",
             "26",
+            "27",
             "5",
             "7",
             "9"
@@ -9179,6 +9446,7 @@
             "14",
             "15",
             "21",
+            "27",
             "8"
           ]
         },
@@ -9206,7 +9474,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1557,
+      "line": 1559,
       "values": [
         "0.0001",
         "0.001",
@@ -9235,6 +9503,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -9259,6 +9528,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -9288,6 +9558,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -9319,6 +9590,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -9352,7 +9624,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1562,
+      "line": 1564,
       "values": [
         "1e-09",
         "1e-9"
@@ -9403,7 +9675,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1563,
+      "line": 1565,
       "values": [
         "1e-9"
       ],
@@ -9435,7 +9707,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1564,
+      "line": 1566,
       "values": [
         "1e-9"
       ],
@@ -9467,7 +9739,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1569,
+      "line": 1571,
       "values": [
         "0.005",
         "1e-2"
@@ -9521,7 +9793,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1570,
+      "line": 1572,
       "values": [
         "0.05",
         "1e-1",
@@ -9576,6 +9848,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "8",
             "9"
@@ -9594,6 +9867,7 @@
             "15",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -9615,6 +9889,7 @@
             "17",
             "23",
             "26",
+            "27",
             "5",
             "7",
             "9"
@@ -9626,7 +9901,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1573,
+      "line": 1575,
       "values": [
         "1e-4"
       ],
@@ -9649,6 +9924,7 @@
             "17",
             "23",
             "26",
+            "27",
             "5",
             "7",
             "9"
@@ -9660,7 +9936,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1580,
+      "line": 1582,
       "values": [
         "0.6",
         "1e-1"
@@ -9701,6 +9977,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "8",
             "9"
@@ -9712,7 +9989,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1581,
+      "line": 1583,
       "values": [
         "1e-4"
       ],
@@ -9731,6 +10008,7 @@
             "17",
             "23",
             "26",
+            "27",
             "5",
             "7",
             "9"
@@ -9742,7 +10020,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1582,
+      "line": 1584,
       "values": [
         "1e-4",
         "5.67",
@@ -9763,6 +10041,7 @@
             "17",
             "23",
             "26",
+            "27",
             "5",
             "7",
             "9"
@@ -9786,7 +10065,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1583,
+      "line": 1585,
       "values": [
         "1e-4",
         "1e-9"
@@ -9810,6 +10089,7 @@
             "17",
             "23",
             "26",
+            "27",
             "5",
             "7",
             "9"
@@ -9841,7 +10121,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1593,
+      "line": 1595,
       "values": [
         "1.0001"
       ],
@@ -9860,7 +10140,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1594,
+      "line": 1596,
       "values": [
         "1e-2",
         "1e-9"
@@ -9913,7 +10193,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1618,
+      "line": 1620,
       "values": [
         "0.6"
       ],
@@ -9945,7 +10225,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1748,
+      "line": 1750,
       "values": [
         "0.2710",
         "0.6570",
@@ -9993,7 +10273,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1749,
+      "line": 1751,
       "values": [
         "0.0084",
         "0.90"
@@ -10031,7 +10311,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1750,
+      "line": 1752,
       "values": [
         "0.0e+00",
         "0.195401",
@@ -10069,6 +10349,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -10111,7 +10392,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1752,
+      "line": 1754,
       "values": [
         "0.005",
         "0.008",
@@ -10192,7 +10473,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2113,
+      "line": 2119,
       "values": [
         "0.005",
         "0.008"
@@ -10240,7 +10521,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2138,
+      "line": 2144,
       "values": [
         "154.1",
         "5.1e-12"
@@ -10265,7 +10546,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2139,
+      "line": 2145,
       "values": [
         "1.0001"
       ],
@@ -10284,7 +10565,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2140,
+      "line": 2146,
       "values": [
         "170.130"
       ],
@@ -10303,7 +10584,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2141,
+      "line": 2147,
       "values": [
         "0.0084",
         "0.9990",
@@ -10334,7 +10615,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2142,
+      "line": 2148,
       "values": [
         "170.130"
       ],
@@ -10353,7 +10634,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2250,
+      "line": 2258,
       "values": [
         "1.0"
       ],
@@ -10384,6 +10665,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -10399,7 +10681,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2265,
+      "line": 2273,
       "values": [
         "1.0"
       ],
@@ -10430,6 +10712,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -10445,7 +10728,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2669,
+      "line": 2677,
       "values": [
         "0.1",
         "0.2",
@@ -10489,6 +10772,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -10576,6 +10860,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -10642,6 +10927,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -10703,6 +10989,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -10718,7 +11005,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2675,
+      "line": 2683,
       "values": [
         "0.0",
         "0.001349",
@@ -10754,6 +11041,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -10816,7 +11104,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2676,
+      "line": 2684,
       "values": [
         "0.001111",
         "0.019885",
@@ -10879,6 +11167,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -10912,7 +11201,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2677,
+      "line": 2685,
       "values": [
         "0.000628",
         "0.031487",
@@ -10999,7 +11288,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2678,
+      "line": 2686,
       "values": [
         "0.0",
         "0.000702",
@@ -11035,6 +11324,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -11085,6 +11375,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -11099,7 +11390,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2679,
+      "line": 2687,
       "values": [
         "0.000775",
         "0.054564",
@@ -11149,6 +11440,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -11184,6 +11476,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -11198,7 +11491,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2680,
+      "line": 2688,
       "values": [
         "0.000563",
         "0.099184",
@@ -11217,7 +11510,8 @@
           "registered_by_other_round": [
             "24",
             "25",
-            "26"
+            "26",
+            "27"
           ]
         },
         {
@@ -11275,6 +11569,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -11289,7 +11584,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2681,
+      "line": 2689,
       "values": [
         "0.0",
         "0.000910",
@@ -11324,6 +11619,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -11381,6 +11677,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -11396,7 +11693,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2682,
+      "line": 2690,
       "values": [
         "0.000350",
         "0.062829",
@@ -11415,7 +11712,8 @@
           "registered_by_other_round": [
             "17",
             "24",
-            "26"
+            "26",
+            "27"
           ]
         },
         {
@@ -11447,6 +11745,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -11493,6 +11792,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -11508,7 +11808,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2683,
+      "line": 2691,
       "values": [
         "0.000021",
         "0.176347",
@@ -11598,6 +11898,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -11613,7 +11914,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2685,
+      "line": 2693,
       "values": [
         "-0.001044",
         "0.000106",
@@ -11744,6 +12045,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -11794,6 +12096,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -11825,6 +12128,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -11840,7 +12144,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2687,
+      "line": 2695,
       "values": [
         "0.36"
       ],
@@ -11872,7 +12176,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2710,
+      "line": 2718,
       "values": [
         "0.1",
         "0.259165",
@@ -11910,6 +12214,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -11955,6 +12260,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "8",
             "9"
@@ -12006,7 +12312,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2724,
+      "line": 2732,
       "values": [
         "0.1"
       ],
@@ -12036,6 +12342,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -12051,7 +12358,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2728,
+      "line": 2736,
       "values": [
         "0.259076",
         "0.259165",
@@ -12104,7 +12411,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2729,
+      "line": 2737,
       "values": [
         "0.349149",
         "0.349254",
@@ -12157,7 +12464,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2730,
+      "line": 2738,
       "values": [
         "-0.000000",
         "-3.053e-16"
@@ -12189,6 +12496,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -12211,7 +12519,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2731,
+      "line": 2739,
       "values": [
         "-0.000000",
         "-2.220e-16"
@@ -12243,6 +12551,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -12265,7 +12574,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2733,
+      "line": 2741,
       "values": [
         "4.23e-05",
         "4.41e-05"
@@ -12295,7 +12604,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2737,
+      "line": 2745,
       "values": [
         "0.1"
       ],
@@ -12325,6 +12634,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -12340,7 +12650,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2771,
+      "line": 2779,
       "values": [
         "6.1"
       ],
@@ -12361,7 +12671,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2793,
+      "line": 2801,
       "values": [
         "-0.5584",
         "0.001",
@@ -12395,6 +12705,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -12424,6 +12735,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -12439,7 +12751,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2794,
+      "line": 2802,
       "values": [
         "0.000648",
         "0.1944",
@@ -12511,6 +12823,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -12525,7 +12838,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2795,
+      "line": 2803,
       "values": [
         "5.60e-3",
         "6.459e-4"
@@ -12560,7 +12873,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2797,
+      "line": 2805,
       "values": [
         "0.0488",
         "0.90417",
@@ -12606,7 +12919,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2799,
+      "line": 2807,
       "values": [
         "0.1"
       ],
@@ -12640,6 +12953,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -12808,6 +13122,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -12840,6 +13155,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -12922,6 +13238,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -13017,6 +13334,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -13278,6 +13596,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -13338,6 +13657,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -13362,6 +13682,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -13474,6 +13795,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -13596,6 +13918,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -13616,6 +13939,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "5",
             "7",
@@ -13681,6 +14005,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -13766,6 +14091,7 @@
             "18",
             "24",
             "25",
+            "27",
             "3",
             "5",
             "8",
@@ -13923,6 +14249,7 @@
             "14",
             "15",
             "21",
+            "27",
             "8"
           ]
         }
@@ -13964,6 +14291,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -13990,6 +14318,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -14303,6 +14632,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -14387,6 +14717,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -14439,6 +14770,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -14488,6 +14820,7 @@
             "15",
             "25",
             "26",
+            "27",
             "5",
             "8",
             "9"
@@ -14546,6 +14879,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -14589,6 +14923,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -14613,6 +14948,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -14644,6 +14980,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -14876,6 +15213,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -14986,6 +15324,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -15016,6 +15355,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -15545,6 +15885,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -15664,6 +16005,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -15762,6 +16104,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -15914,6 +16257,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -16072,6 +16416,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -16106,6 +16451,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -16140,6 +16486,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -16368,6 +16715,7 @@
             "17",
             "23",
             "26",
+            "27",
             "5",
             "7",
             "9"
@@ -16421,6 +16769,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -16554,6 +16903,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -16616,6 +16966,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -16661,6 +17012,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -16714,6 +17066,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -16822,6 +17175,7 @@
             "18",
             "23",
             "26",
+            "27",
             "5"
           ]
         },
@@ -16985,6 +17339,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -17120,6 +17475,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -17154,6 +17510,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -17260,6 +17617,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "8",
             "9"
@@ -17326,6 +17684,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -17356,6 +17715,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -17424,6 +17784,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "8",
             "9"
@@ -17531,6 +17892,7 @@
             "17",
             "23",
             "26",
+            "27",
             "5",
             "7",
             "9"
@@ -17713,6 +18075,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "8",
             "9"
@@ -17729,6 +18092,7 @@
             "17",
             "23",
             "26",
+            "27",
             "5",
             "7",
             "9"
@@ -17783,6 +18147,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -17982,6 +18347,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -18028,6 +18394,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -18081,6 +18448,7 @@
             "17",
             "23",
             "26",
+            "27",
             "5",
             "7",
             "9"
@@ -18159,6 +18527,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "8",
             "9"
@@ -18416,6 +18785,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "8",
             "9"
@@ -18531,6 +18901,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -18595,6 +18966,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "8",
             "9"
@@ -18639,6 +19011,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -18673,6 +19046,7 @@
             "17",
             "23",
             "26",
+            "27",
             "5",
             "7",
             "9"
@@ -18704,6 +19078,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -18775,6 +19150,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "8",
             "9"
@@ -18834,6 +19210,7 @@
             "17",
             "23",
             "26",
+            "27",
             "5",
             "7",
             "9"
@@ -19020,6 +19397,7 @@
             "15",
             "25",
             "26",
+            "27",
             "5",
             "8",
             "9"
@@ -19093,6 +19471,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -19159,6 +19538,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -19235,6 +19615,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -19255,6 +19636,7 @@
             "15",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -19299,6 +19681,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -19390,6 +19773,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -19417,6 +19801,7 @@
             "15",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -19505,6 +19890,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -19585,6 +19971,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -19640,6 +20027,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -19917,6 +20305,7 @@
             "2",
             "25",
             "26",
+            "27",
             "3",
             "5",
             "9"
@@ -19943,6 +20332,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -20049,6 +20439,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -20300,6 +20691,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -20355,6 +20747,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -20381,6 +20774,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -20427,6 +20821,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -20457,6 +20852,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -20497,6 +20893,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -20588,6 +20985,7 @@
             "2",
             "25",
             "26",
+            "27",
             "3",
             "5",
             "9"
@@ -20635,6 +21033,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -20688,6 +21087,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -20830,6 +21230,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -20925,6 +21326,7 @@
             "15",
             "25",
             "26",
+            "27",
             "5",
             "8",
             "9"
@@ -20964,7 +21366,8 @@
           "registered_by_other_round": [
             "11",
             "13",
-            "2"
+            "2",
+            "27"
           ]
         }
       ],
@@ -21037,6 +21440,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -21289,6 +21693,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -21347,6 +21752,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -21827,6 +22233,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -22139,6 +22546,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -22316,6 +22724,7 @@
             "2",
             "25",
             "26",
+            "27",
             "3",
             "5",
             "9"
@@ -22391,6 +22800,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -22458,6 +22868,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -22571,6 +22982,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -22690,6 +23102,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -22755,6 +23168,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -22866,6 +23280,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -23186,6 +23601,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -23295,6 +23711,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -23445,6 +23862,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -23477,6 +23895,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -23675,6 +24094,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -23782,6 +24202,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -23829,6 +24250,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -24101,6 +24523,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -24184,6 +24607,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -24230,6 +24654,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -24332,6 +24757,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -24457,6 +24883,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -24508,6 +24935,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -24764,6 +25192,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -24809,6 +25238,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -24868,6 +25298,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -24913,6 +25344,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -24966,6 +25398,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -25013,6 +25446,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -25059,6 +25493,7 @@
             "15",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -25174,6 +25609,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -25241,6 +25677,7 @@
             "16",
             "18",
             "24",
+            "27",
             "4",
             "5"
           ]
@@ -25304,6 +25741,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -25559,6 +25997,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -25593,6 +26032,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -25627,6 +26067,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -25677,6 +26118,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -25848,6 +26290,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -25883,6 +26326,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -26017,6 +26461,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -26073,6 +26518,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -26165,6 +26611,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -26185,6 +26632,7 @@
             "17",
             "23",
             "26",
+            "27",
             "5",
             "7",
             "9"
@@ -26213,6 +26661,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -26308,6 +26757,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -26340,6 +26790,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -26468,6 +26919,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -26503,6 +26955,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -26606,6 +27059,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -26641,6 +27095,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -26690,6 +27145,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -26839,6 +27295,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -26893,6 +27350,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -26964,6 +27422,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -26996,6 +27455,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -27048,6 +27508,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -27213,6 +27674,7 @@
             "18",
             "23",
             "26",
+            "27",
             "5"
           ]
         }
@@ -27254,6 +27716,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -27284,6 +27747,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -27331,6 +27795,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -27642,6 +28107,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -27699,6 +28165,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -27756,6 +28223,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -27857,6 +28325,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -27956,6 +28425,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -28063,6 +28533,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -28162,6 +28633,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -28219,6 +28691,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -28277,6 +28750,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -28368,6 +28842,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -28433,6 +28908,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -28486,6 +28962,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -28587,6 +29064,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -28636,6 +29114,7 @@
             "14",
             "15",
             "21",
+            "27",
             "8"
           ]
         },
@@ -28687,6 +29166,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -28755,6 +29235,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -28787,6 +29268,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -28834,6 +29316,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -28891,6 +29374,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -28949,6 +29433,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -29015,6 +29500,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -29172,6 +29658,7 @@
             "14",
             "15",
             "21",
+            "27",
             "8"
           ]
         },
@@ -29332,6 +29819,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -29412,6 +29900,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -29462,6 +29951,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -29551,6 +30041,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -29608,6 +30099,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -29665,6 +30157,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -29719,6 +30212,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -29841,6 +30335,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -30102,6 +30597,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -30276,6 +30772,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -30308,6 +30805,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -30340,6 +30838,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -30372,6 +30871,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -30396,6 +30896,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -30549,6 +31050,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -30588,6 +31090,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -30636,6 +31139,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -30675,6 +31179,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -30720,6 +31225,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -30770,6 +31276,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -30802,6 +31309,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -30846,6 +31354,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -30896,6 +31405,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -30941,6 +31451,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -30971,6 +31482,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -31021,6 +31533,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -31092,6 +31605,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -31142,6 +31656,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -31209,6 +31724,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -31262,6 +31778,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -31424,6 +31941,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -31712,6 +32230,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -31849,6 +32368,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -32161,6 +32681,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -32229,6 +32750,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -32302,6 +32824,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -32348,6 +32871,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -32462,6 +32986,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -32504,7 +33029,8 @@
           "registered_by_other_round": [
             "24",
             "25",
-            "26"
+            "26",
+            "27"
           ]
         },
         {
@@ -32573,6 +33099,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -32625,6 +33152,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -32768,6 +33296,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -33095,6 +33624,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -33159,6 +33689,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -33203,7 +33734,8 @@
           "registered_by_other_round": [
             "17",
             "24",
-            "26"
+            "26",
+            "27"
           ]
         },
         {
@@ -33235,6 +33767,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -33292,6 +33825,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -33434,6 +33968,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -33565,6 +34100,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -33716,6 +34252,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -33737,6 +34274,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -33812,6 +34350,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -33833,6 +34372,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -33881,6 +34421,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -33959,6 +34500,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -33991,6 +34533,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -34067,7 +34610,8 @@
           },
           "registered_by_other_round": [
             "25",
-            "26"
+            "26",
+            "27"
           ]
         },
         {
@@ -34100,7 +34644,8 @@
           "attested_in": {},
           "registered_by_other_round": [
             "25",
-            "26"
+            "26",
+            "27"
           ]
         },
         {
@@ -34108,7 +34653,8 @@
           "attested_in": {},
           "registered_by_other_round": [
             "25",
-            "26"
+            "26",
+            "27"
           ]
         },
         {
@@ -34207,6 +34753,7 @@
             "18",
             "24",
             "25",
+            "27",
             "3",
             "5",
             "8",
@@ -34255,7 +34802,8 @@
           "attested_in": {},
           "registered_by_other_round": [
             "25",
-            "26"
+            "26",
+            "27"
           ]
         },
         {
@@ -34263,7 +34811,8 @@
           "attested_in": {},
           "registered_by_other_round": [
             "25",
-            "26"
+            "26",
+            "27"
           ]
         },
         {
@@ -34372,7 +34921,8 @@
           "registered_by_other_round": [
             "24",
             "25",
-            "26"
+            "26",
+            "27"
           ]
         },
         {
@@ -34380,7 +34930,8 @@
           "attested_in": {},
           "registered_by_other_round": [
             "25",
-            "26"
+            "26",
+            "27"
           ]
         },
         {
@@ -34411,6 +34962,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -34447,7 +34999,8 @@
           "registered_by_other_round": [
             "17",
             "24",
-            "26"
+            "26",
+            "27"
           ]
         },
         {
@@ -34457,7 +35010,8 @@
           },
           "registered_by_other_round": [
             "25",
-            "26"
+            "26",
+            "27"
           ]
         },
         {
@@ -34466,7 +35020,8 @@
             "26": "transcription"
           },
           "registered_by_other_round": [
-            "26"
+            "26",
+            "27"
           ]
         },
         {
@@ -34501,14 +35056,16 @@
             "16",
             "17",
             "18",
-            "26"
+            "26",
+            "27"
           ]
         },
         {
           "value": "0.02807",
           "attested_in": {},
           "registered_by_other_round": [
-            "26"
+            "26",
+            "27"
           ]
         },
         {
@@ -34539,7 +35096,8 @@
           "value": "-0.001255",
           "attested_in": {},
           "registered_by_other_round": [
-            "26"
+            "26",
+            "27"
           ]
         },
         {
@@ -34548,7 +35106,8 @@
           "registered_by_other_round": [
             "17",
             "24",
-            "26"
+            "26",
+            "27"
           ]
         },
         {
@@ -34557,14 +35116,16 @@
           "registered_by_other_round": [
             "24",
             "25",
-            "26"
+            "26",
+            "27"
           ]
         },
         {
           "value": "0.003751",
           "attested_in": {},
           "registered_by_other_round": [
-            "26"
+            "26",
+            "27"
           ]
         }
       ],
@@ -34585,7 +35146,8 @@
           "value": "0.003590",
           "attested_in": {},
           "registered_by_other_round": [
-            "26"
+            "26",
+            "27"
           ]
         }
       ],
@@ -34609,7 +35171,8 @@
           "attested_in": {},
           "registered_by_other_round": [
             "25",
-            "26"
+            "26",
+            "27"
           ]
         },
         {
@@ -34617,14 +35180,16 @@
           "attested_in": {},
           "registered_by_other_round": [
             "25",
-            "26"
+            "26",
+            "27"
           ]
         },
         {
           "value": "0.003697",
           "attested_in": {},
           "registered_by_other_round": [
-            "26"
+            "26",
+            "27"
           ]
         }
       ],
@@ -34654,7 +35219,8 @@
           "value": "0.003751",
           "attested_in": {},
           "registered_by_other_round": [
-            "26"
+            "26",
+            "27"
           ]
         },
         {
@@ -34684,7 +35250,8 @@
           "value": "-0.001255",
           "attested_in": {},
           "registered_by_other_round": [
-            "26"
+            "26",
+            "27"
           ]
         },
         {
@@ -34693,7 +35260,8 @@
           "registered_by_other_round": [
             "17",
             "24",
-            "26"
+            "26",
+            "27"
           ]
         },
         {
@@ -34702,7 +35270,8 @@
           "registered_by_other_round": [
             "24",
             "25",
-            "26"
+            "26",
+            "27"
           ]
         }
       ],
@@ -34748,14 +35317,16 @@
             "16",
             "17",
             "18",
-            "26"
+            "26",
+            "27"
           ]
         },
         {
           "value": "0.02807",
           "attested_in": {},
           "registered_by_other_round": [
-            "26"
+            "26",
+            "27"
           ]
         }
       ],
@@ -34814,6 +35385,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -34844,7 +35416,8 @@
           "registered_by_other_round": [
             "17",
             "24",
-            "26"
+            "26",
+            "27"
           ]
         },
         {
@@ -34853,6 +35426,567 @@
           "registered_by_other_round": [
             "25",
             "26"
+          ]
+        }
+      ],
+      "verdict": "criterion_without_anchor"
+    },
+    {
+      "document": "experiments/PHASE27_RESULTS.md",
+      "kind": "run_record",
+      "line": 10,
+      "values": [
+        "0.000430",
+        "0.003402",
+        "0.003751",
+        "0.003832",
+        "0.02379",
+        "0.02382",
+        "0.5472"
+      ],
+      "excerpt": "wrote phase27_results.json | exit CALIBRATION_FAILED (NOT_IDENTIFIED) | S 0.003402 iso 0.003832 platt 0.003751 | iso contrast 0.000430 | auc 0.5472 ll",
+      "anchors": [
+        "27"
+      ],
+      "phantom": [],
+      "per_value": [
+        {
+          "value": "0.000430",
+          "attested_in": {
+            "27": "transcription"
+          },
+          "registered_by_other_round": [
+            "15",
+            "18",
+            "27"
+          ]
+        },
+        {
+          "value": "0.003402",
+          "attested_in": {
+            "27": "transcription"
+          },
+          "registered_by_other_round": [
+            "25",
+            "26",
+            "27"
+          ]
+        },
+        {
+          "value": "0.003751",
+          "attested_in": {
+            "27": "transcription"
+          },
+          "registered_by_other_round": [
+            "26",
+            "27"
+          ]
+        },
+        {
+          "value": "0.003832",
+          "attested_in": {
+            "27": "transcription"
+          },
+          "registered_by_other_round": [
+            "27"
+          ]
+        },
+        {
+          "value": "0.02379",
+          "attested_in": {
+            "27": "transcription"
+          },
+          "registered_by_other_round": [
+            "16",
+            "17",
+            "18",
+            "26",
+            "27"
+          ]
+        },
+        {
+          "value": "0.02382",
+          "attested_in": {
+            "27": "transcription"
+          },
+          "registered_by_other_round": [
+            "18",
+            "27"
+          ]
+        },
+        {
+          "value": "0.5472",
+          "attested_in": {
+            "27": "transcription"
+          },
+          "registered_by_other_round": [
+            "27"
+          ]
+        }
+      ],
+      "verdict": "value_only_in_transcription"
+    },
+    {
+      "document": "experiments/PHASE27_RESULTS.md",
+      "kind": "run_record",
+      "line": 15,
+      "values": [
+        "0.02382",
+        "0.02807"
+      ],
+      "excerpt": "同一 160 维 base model 加 **binned isotonic** 校准后，log-loss 从 XXVI 的 `0.02807` 拉回 `0.02382`，",
+      "anchors": [],
+      "phantom": [],
+      "per_value": [
+        {
+          "value": "0.02382",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "18",
+            "27"
+          ]
+        },
+        {
+          "value": "0.02807",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "26",
+            "27"
+          ]
+        }
+      ],
+      "verdict": "criterion_without_anchor"
+    },
+    {
+      "document": "experiments/PHASE27_RESULTS.md",
+      "kind": "run_record",
+      "line": 16,
+      "values": [
+        "0.02379",
+        "0.5472",
+        "2.86e-5"
+      ],
+      "excerpt": "但仍**略差于基础率** `0.02379`（差 `2.86e-5`）⇒ C2 不过；AUC `0.5472`。",
+      "anchors": [],
+      "phantom": [],
+      "per_value": [
+        {
+          "value": "0.02379",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "16",
+            "17",
+            "18",
+            "26",
+            "27"
+          ]
+        },
+        {
+          "value": "0.5472",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "27"
+          ]
+        },
+        {
+          "value": "2.86e-5",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "18",
+            "27",
+            "5"
+          ]
+        }
+      ],
+      "verdict": "criterion_without_anchor"
+    },
+    {
+      "document": "experiments/PHASE27_RESULTS.md",
+      "kind": "run_record",
+      "line": 17,
+      "values": [
+        "-0.000309",
+        "0.000350",
+        "0.000430",
+        "0.000640"
+      ],
+      "excerpt": "isotonic 的 `Contrast = 0.000430`，95% CI `[-0.000309, 0.000640]`；Platt 的 `Contrast = 0.000350`，",
+      "anchors": [],
+      "phantom": [],
+      "per_value": [
+        {
+          "value": "-0.000309",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "27"
+          ]
+        },
+        {
+          "value": "0.000350",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "17",
+            "24",
+            "26",
+            "27"
+          ]
+        },
+        {
+          "value": "0.000430",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "15",
+            "18",
+            "27"
+          ]
+        },
+        {
+          "value": "0.000640",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "27"
+          ]
+        }
+      ],
+      "verdict": "criterion_without_anchor"
+    },
+    {
+      "document": "experiments/PHASE27_RESULTS.md",
+      "kind": "run_record",
+      "line": 18,
+      "values": [
+        "-0.001255",
+        "0.000563"
+      ],
+      "excerpt": "CI `[-0.001255, 0.000563]`。出口 **`CALIBRATION_FAILED` / `NOT_IDENTIFIED`**：",
+      "anchors": [],
+      "phantom": [],
+      "per_value": [
+        {
+          "value": "-0.001255",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "26",
+            "27"
+          ]
+        },
+        {
+          "value": "0.000563",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "24",
+            "25",
+            "26",
+            "27"
+          ]
+        }
+      ],
+      "verdict": "criterion_without_anchor"
+    },
+    {
+      "document": "experiments/PHASE27_RESULTS.md",
+      "kind": "run_record",
+      "line": 27,
+      "values": [
+        "-2.3624",
+        "0.7567"
+      ],
+      "excerpt": "| calibration | 100k 行；isotonic 100 箱；Platt `a=0.7567`、`b=-2.3624` |",
+      "anchors": [],
+      "phantom": [],
+      "per_value": [
+        {
+          "value": "-2.3624",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "27"
+          ]
+        },
+        {
+          "value": "0.7567",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "27"
+          ]
+        }
+      ],
+      "verdict": "criterion_without_anchor"
+    },
+    {
+      "document": "experiments/PHASE27_RESULTS.md",
+      "kind": "run_record",
+      "line": 28,
+      "values": [
+        "0.002294",
+        "0.003402",
+        "0.003697"
+      ],
+      "excerpt": "| S-only | n=274 856，clicks=935，`Δ_S=0.003402`，CI `[0.002294, 0.003697]` |",
+      "anchors": [],
+      "phantom": [],
+      "per_value": [
+        {
+          "value": "0.002294",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "25",
+            "26",
+            "27"
+          ]
+        },
+        {
+          "value": "0.003402",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "25",
+            "26",
+            "27"
+          ]
+        },
+        {
+          "value": "0.003697",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "26",
+            "27"
+          ]
+        }
+      ],
+      "verdict": "criterion_without_anchor"
+    },
+    {
+      "document": "experiments/PHASE27_RESULTS.md",
+      "kind": "run_record",
+      "line": 29,
+      "values": [
+        "0.001984",
+        "0.003832",
+        "0.004040"
+      ],
+      "excerpt": "| Isotonic C | n=314 231，clicks=1204，`Δ_iso=0.003832`，CI `[0.001984, 0.004040]` |",
+      "anchors": [],
+      "phantom": [],
+      "per_value": [
+        {
+          "value": "0.001984",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "27"
+          ]
+        },
+        {
+          "value": "0.003832",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "27"
+          ]
+        },
+        {
+          "value": "0.004040",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "27"
+          ]
+        }
+      ],
+      "verdict": "criterion_without_anchor"
+    },
+    {
+      "document": "experiments/PHASE27_RESULTS.md",
+      "kind": "run_record",
+      "line": 30,
+      "values": [
+        "0.003751"
+      ],
+      "excerpt": "| Platt C | n=207 918，clicks=780，`Δ_platt=0.003751` |",
+      "anchors": [],
+      "phantom": [],
+      "per_value": [
+        {
+          "value": "0.003751",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "26",
+            "27"
+          ]
+        }
+      ],
+      "verdict": "criterion_without_anchor"
+    },
+    {
+      "document": "experiments/PHASE27_RESULTS.md",
+      "kind": "run_record",
+      "line": 31,
+      "values": [
+        "-0.000309",
+        "0.000430",
+        "0.000640"
+      ],
+      "excerpt": "| Contrast_iso | `0.000430`，CI `[-0.000309, 0.000640]` |",
+      "anchors": [],
+      "phantom": [],
+      "per_value": [
+        {
+          "value": "-0.000309",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "27"
+          ]
+        },
+        {
+          "value": "0.000430",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "15",
+            "18",
+            "27"
+          ]
+        },
+        {
+          "value": "0.000640",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "27"
+          ]
+        }
+      ],
+      "verdict": "criterion_without_anchor"
+    },
+    {
+      "document": "experiments/PHASE27_RESULTS.md",
+      "kind": "run_record",
+      "line": 32,
+      "values": [
+        "-0.001255",
+        "0.000350",
+        "0.000563"
+      ],
+      "excerpt": "| Contrast_platt | `0.000350`，CI `[-0.001255, 0.000563]` |",
+      "anchors": [],
+      "phantom": [],
+      "per_value": [
+        {
+          "value": "-0.001255",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "26",
+            "27"
+          ]
+        },
+        {
+          "value": "0.000350",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "17",
+            "24",
+            "26",
+            "27"
+          ]
+        },
+        {
+          "value": "0.000563",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "24",
+            "25",
+            "26",
+            "27"
+          ]
+        }
+      ],
+      "verdict": "criterion_without_anchor"
+    },
+    {
+      "document": "experiments/PHASE27_RESULTS.md",
+      "kind": "run_record",
+      "line": 33,
+      "values": [
+        "0.023792",
+        "0.023820",
+        "0.5472"
+      ],
+      "excerpt": "| AUC / log-loss / 基础率 | `0.5472` / `0.023820` / `0.023792` |",
+      "anchors": [],
+      "phantom": [],
+      "per_value": [
+        {
+          "value": "0.023792",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "26",
+            "27"
+          ]
+        },
+        {
+          "value": "0.023820",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "27"
+          ]
+        },
+        {
+          "value": "0.5472",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "27"
+          ]
+        }
+      ],
+      "verdict": "criterion_without_anchor"
+    },
+    {
+      "document": "experiments/PHASE27_RESULTS.md",
+      "kind": "run_record",
+      "line": 39,
+      "values": [
+        "0.02382",
+        "0.02807"
+      ],
+      "excerpt": "- 校准把 XXVI 的 miscalibration 基本修好（`0.02807 → 0.02382`），但**没有跨过基础率**；按预注册的严格不等式，C2 仍失败。",
+      "anchors": [],
+      "phantom": [],
+      "per_value": [
+        {
+          "value": "0.02382",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "18",
+            "27"
+          ]
+        },
+        {
+          "value": "0.02807",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "26",
+            "27"
+          ]
+        }
+      ],
+      "verdict": "criterion_without_anchor"
+    },
+    {
+      "document": "experiments/PHASE27_RESULTS.md",
+      "kind": "run_record",
+      "line": 40,
+      "values": [
+        "0.00043"
+      ],
+      "excerpt": "- 即使把 isotonic 的 take 率提高到 76%（314 231/412 299），C 的点估计只比 S-only 高 `0.00043`，CI 含 0。",
+      "anchors": [],
+      "phantom": [],
+      "per_value": [
+        {
+          "value": "0.00043",
+          "attested_in": {},
+          "registered_by_other_round": [
+            "15",
+            "16",
+            "18",
+            "24",
+            "27",
+            "4",
+            "5"
           ]
         }
       ],
@@ -34983,6 +36117,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -35240,6 +36375,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -35286,6 +36422,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -35363,6 +36500,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -35388,6 +36526,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -35434,6 +36573,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -35466,6 +36606,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -35514,6 +36655,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -35557,6 +36699,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -35603,6 +36746,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -35694,6 +36838,7 @@
             "22",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5"
@@ -35758,6 +36903,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -35820,6 +36966,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -35891,6 +37038,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -36446,6 +37594,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -36508,6 +37657,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -36603,6 +37753,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -36650,6 +37801,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -36714,6 +37866,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -36746,6 +37899,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -36789,6 +37943,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -36855,6 +38010,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -36931,6 +38087,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -36957,6 +38114,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -36982,6 +38140,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -37011,6 +38170,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -37051,6 +38211,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -37147,6 +38308,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -37240,6 +38402,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -37292,6 +38455,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -37335,6 +38499,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -37441,6 +38606,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -37467,6 +38633,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -37519,6 +38686,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -37555,6 +38723,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -37613,6 +38782,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -37652,6 +38822,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -37697,6 +38868,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -37818,6 +38990,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -37901,6 +39074,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -37989,6 +39163,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -38116,6 +39291,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -38364,6 +39540,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -38460,6 +39637,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -38554,6 +39732,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -38580,6 +39759,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -38605,6 +39785,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -38634,6 +39815,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -38684,6 +39866,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -38793,6 +39976,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -38895,6 +40079,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -38948,6 +40133,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -38997,6 +40183,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -39104,6 +40291,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -39130,6 +40318,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -39182,6 +40371,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -39228,6 +40418,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -39308,6 +40499,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -39421,6 +40613,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -39792,6 +40985,7 @@
             "17",
             "23",
             "26",
+            "27",
             "5",
             "7",
             "9"
@@ -39928,6 +41122,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -40094,6 +41289,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -40322,6 +41518,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -40523,6 +41720,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -40547,6 +41745,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -40591,6 +41790,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -40808,6 +42008,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -40920,6 +42121,7 @@
             "2",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -40971,6 +42173,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -41157,6 +42360,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -41264,6 +42468,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -41303,6 +42508,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -41396,6 +42602,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -41472,6 +42679,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -41517,6 +42725,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -41561,6 +42770,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -41648,6 +42858,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -41736,6 +42947,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -41783,6 +42995,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -41824,6 +43037,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -41915,6 +43129,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -41966,6 +43181,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -42034,6 +43250,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -42083,6 +43300,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -42201,6 +43419,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -42416,6 +43635,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -42594,6 +43814,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -42637,6 +43858,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -42692,6 +43914,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -42850,6 +44073,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -42996,6 +44220,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -43028,6 +44253,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -43050,6 +44276,7 @@
             "18",
             "23",
             "26",
+            "27",
             "5"
           ]
         }
@@ -43257,6 +44484,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -43326,6 +44554,7 @@
             "15",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -43573,6 +44802,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -44069,6 +45299,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -44254,6 +45485,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "5",
             "7",
@@ -44322,6 +45554,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -44394,6 +45627,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "5",
             "7",
@@ -44576,6 +45810,7 @@
             "17",
             "23",
             "26",
+            "27",
             "5",
             "7",
             "9"
@@ -44618,6 +45853,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -44697,6 +45933,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -44963,6 +46200,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -45010,6 +46248,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -45027,6 +46266,7 @@
             "14",
             "15",
             "21",
+            "27",
             "8"
           ]
         }
@@ -45651,6 +46891,7 @@
             "17",
             "2",
             "24",
+            "27",
             "3",
             "4",
             "5",
@@ -45751,6 +46992,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "8",
             "9"
@@ -45852,6 +47094,7 @@
             "18",
             "24",
             "25",
+            "27",
             "3",
             "5",
             "8",
@@ -46150,6 +47393,7 @@
             "18",
             "24",
             "25",
+            "27",
             "3",
             "5",
             "8",
@@ -46374,6 +47618,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -46428,6 +47673,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -46454,6 +47700,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -46582,6 +47829,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -46687,6 +47935,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -46823,6 +48072,7 @@
             "2",
             "25",
             "26",
+            "27",
             "3",
             "5",
             "9"
@@ -46867,6 +48117,7 @@
             "23",
             "24",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -46916,6 +48167,7 @@
             "2",
             "25",
             "26",
+            "27",
             "3",
             "5",
             "9"
@@ -47017,6 +48269,7 @@
             "15",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -47116,6 +48369,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -47168,6 +48422,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -47214,6 +48469,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -47260,6 +48516,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -47382,6 +48639,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -47477,6 +48735,7 @@
             "14",
             "15",
             "21",
+            "27",
             "8"
           ]
         }
@@ -47556,6 +48815,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -47611,6 +48871,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -47661,6 +48922,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -47711,6 +48973,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -47785,6 +49048,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -47831,6 +49095,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -47877,6 +49142,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -47923,6 +49189,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -47969,6 +49236,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -48015,6 +49283,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -48913,6 +50182,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -49004,6 +50274,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -49069,6 +50340,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -49134,6 +50406,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -49199,6 +50472,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -49264,6 +50538,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -49329,6 +50604,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -49394,6 +50670,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -49459,6 +50736,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -49524,6 +50802,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -49589,6 +50868,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -49654,6 +50934,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -49719,6 +51000,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -49784,6 +51066,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -49855,6 +51138,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -49920,6 +51204,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -49985,6 +51270,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -50050,6 +51336,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -50115,6 +51402,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -50180,6 +51468,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -50283,6 +51572,7 @@
             "24",
             "25",
             "26",
+            "27",
             "3",
             "4",
             "5",
@@ -50303,6 +51593,7 @@
             "15",
             "25",
             "26",
+            "27",
             "5",
             "8",
             "9"

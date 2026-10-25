@@ -2,7 +2,7 @@
  "schema": "m2a.gate-coverage-map.v1",
  "derived_from": "AST of every experiments/*_gate.py and literature/*_gate.py",
  "counts": {
-  "gates": 35,
+  "gates": 36,
   "checks": 199,
   "imported_instruments": 84,
   "never_reached": 7,
@@ -517,6 +517,23 @@
   {
    "gate": "experiments/p26_gate.py",
    "file": "p26_gate.py",
+   "imported_instruments": [],
+   "alias_modules": [
+    "R"
+   ],
+   "imported_data": [],
+   "imported_data_never_read": [],
+   "checks": [],
+   "self_comparison_checks": [],
+   "never_reached": [],
+   "never_reached_pairs": [],
+   "only_self_comparison": [],
+   "only_self_comparison_pairs": [],
+   "detail_only": []
+  },
+  {
+   "gate": "experiments/p27_gate.py",
+   "file": "p27_gate.py",
    "imported_instruments": [],
    "alias_modules": [
     "R"
@@ -1150,6 +1167,7 @@
  "gates_with_no_check_sites": [
   "experiments/p25_gate.py",
   "experiments/p26_gate.py",
+  "experiments/p27_gate.py",
   "literature/l01_gate.py",
   "literature/l02_gate.py",
   "literature/l02_representation_gate.py",

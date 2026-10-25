@@ -1,0 +1,91 @@
+{
+  "bootstrap": {
+    "buckets": 1000,
+    "resamples": 2000,
+    "seed": 20261024
+  },
+  "criteria": {
+    "C1_delta_iso": true,
+    "C2_calibration": false,
+    "C3_contrast_iso": false,
+    "C4_contract": true
+  },
+  "dataset": {
+    "bytes": 412931917,
+    "calibration": "rows 200001-300000",
+    "file": "/media/leonyao/新加卷/workshop/_m2a_data/open_bandit_dataset.zip",
+    "fit": "rows 1-200000",
+    "hash_ok": true,
+    "member": "open_bandit_dataset/random/all/all.csv",
+    "sha256": "e8ec18196582a5937381a1776382ca940689b90a18d2dcd1fb635be6df614d78",
+    "test": "last 30%"
+  },
+  "elapsed_sec": 19.128601551055908,
+  "estimates": {
+    "auc": 0.5471943100410565,
+    "base_log_loss": 0.023791729901024978,
+    "contrast_iso": 0.0004297948370934929,
+    "contrast_iso_ci95": [
+      -0.00030945099752439226,
+      0.0006404438702610061
+    ],
+    "contrast_platt": 0.0003496976520436664,
+    "contrast_platt_ci95": [
+      -0.0012551563824821136,
+      0.0005632722495267531
+    ],
+    "delta_iso": 0.0038315761334814197,
+    "delta_iso_ci95": [
+      0.001984126984126984,
+      0.00403979592671168
+    ],
+    "delta_platt": 0.003751478948431593,
+    "delta_s": 0.0034017812963879268,
+    "delta_s_ci95": [
+      0.0022935779816513763,
+      0.0036970018893413116
+    ],
+    "iso_take_clicks": 1204,
+    "iso_take_n": 314231,
+    "log_loss": 0.02382035020768428,
+    "platt_take_clicks": 780,
+    "platt_take_n": 207918,
+    "s_take_clicks": 935,
+    "s_take_n": 274856,
+    "test_click_rate": 0.0035896279156631475,
+    "test_rows": 412299,
+    "threshold_iso": 0.0029636363636363636,
+    "threshold_platt": 0.003176879158577429
+  },
+  "exit": "CALIBRATION_FAILED",
+  "label_r17": "NOT_IDENTIFIED",
+  "model": {
+    "bins": 100,
+    "calibration": 100000,
+    "features": 160,
+    "fit": 200000,
+    "platt": {
+      "a": 0.7566520143438372,
+      "b": -2.362367964584416
+    },
+    "seed": 20261024
+  },
+  "no_online_intervention": true,
+  "prereg_binding": {
+    "disk_sha256": "8a603a2deb185cd4866ce06ff536478633fad2922b7cdb2a81e5a2ae4a9bdc09",
+    "git_head_sha256": "8a603a2deb185cd4866ce06ff536478633fad2922b7cdb2a81e5a2ae4a9bdc09",
+    "path": "m2a/experiments/PHASE27_PREREGISTRATION.md",
+    "two_channel_match": true
+  },
+  "prereg_sha256": "8a603a2deb185cd4866ce06ff536478633fad2922b7cdb2a81e5a2ae4a9bdc09",
+  "preregistration": "experiments/PHASE27_PREREGISTRATION.md",
+  "scan": {
+    "click_violations": 0,
+    "first_timestamp": "2019-11-24 00:00:00.007365+00:00",
+    "last_timestamp": "2019-11-30 23:59:59.408889+00:00",
+    "position_violations": 0,
+    "timestamp_violations": 0,
+    "total_rows": 1374327
+  },
+  "schema": "m2a.phase27.v1"
+}

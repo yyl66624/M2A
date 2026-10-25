@@ -25,6 +25,7 @@ M = EXP.parent
 REPO = M.parent
 PREREG = EXP / "PHASE27_PREREGISTRATION.md"
 OUT = EXP / "phase27_results.json"
+DATA_FILE = "open_bandit_dataset.zip"  # outside the repository, under WORK/_m2a_data/
 FIT = 200000
 CAL = 100000
 BINS = 100
@@ -249,6 +250,10 @@ def build() -> dict:
         "threshold_iso": thr_iso, "threshold_platt": thr_platt,
     }
     exit_code, label = exit_of(scan, ev, True)
+    c4 = bool(scan["click_violations"] == 0 and scan["position_violations"] == 0
+              and scan["timestamp_violations"] <= TS_TOL * max(1, scan["total_rows"]))
+    c2 = bool(ev["log_loss"] < ev["base_log_loss"] and ev["auc"] > 0.5)
+    c3 = bool(ev["contrast_iso"] > 0 and ev["contrast_iso_ci95"][0] > 0)
     return {
         "schema": "m2a.phase27.v1",
         "preregistration": str(PREREG.relative_to(M)),
@@ -258,7 +263,7 @@ def build() -> dict:
                     "bytes": P26.ZIP_BYTES, "hash_ok": True,
                     "fit": "rows 1-200000", "calibration": "rows 200001-300000", "test": "last 30%"},
         "model": {"features": 160, "fit": FIT, "calibration": CAL, "bins": BINS,
-                  "platt": {"a": a, "b": b}, "seed": SEED},
+                  "platt": {"a": float(a), "b": float(b)}, "seed": SEED},
         "scan": scan, "estimates": ev,
         "criteria": {"C1_delta_iso": ev["delta_iso"] > 0 and ev["delta_iso_ci95"][0] > 0,
                      "C2_calibration": c2, "C3_contrast_iso": c3, "C4_contract": c4},

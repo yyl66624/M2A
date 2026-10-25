@@ -37,6 +37,7 @@ RULES = {
     "AO-SEPARATES": ("SUPPORTED", "Phase XXIII E1: the AO measure separates issuance from silence"),
     "S_ONLY_NONZERO_C_NOT_BETTER": ("INDETERMINATE", "Phase XXV E2: S-only effect nonzero, C advantage not detected"),
     "CONTEXT_MODEL_UNINFORMATIVE": ("NOT_IDENTIFIED", "Phase XXVI: context model miscalibrated; C advantage not tested"),
+    "CALIBRATION_FAILED": ("NOT_IDENTIFIED", "Phase XXVII: calibration did not beat the base rate; C advantage not tested"),
     "REFUTED": ("CONTRADICTED", "arm verdict used verbatim from Phase V/VI"),
     "O-REFUTED": ("CONTRADICTED", "Phase VI outcome string for the same judgement"),
     "UNSATISFIABLE": ("CONTRADICTED", "Phase XIX E3: the registered necessary condition cannot be met"),
