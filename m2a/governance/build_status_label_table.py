@@ -35,6 +35,7 @@ RULES = {
     "SEPARABLE": ("SUPPORTED", "Phase XXI E1 UNIQUE-AND-SEPARABLE"),
     "REGULARIZATION-DOES-NOT-REPAIR": ("SUPPORTED", "Phase XXIV E1: L2 weight decay did not repair the old-law deviation"),
     "AO-SEPARATES": ("SUPPORTED", "Phase XXIII E1: the AO measure separates issuance from silence"),
+    "S_ONLY_NONZERO_C_NOT_BETTER": ("INDETERMINATE", "Phase XXV E2: S-only effect nonzero, C advantage not detected"),
     "REFUTED": ("CONTRADICTED", "arm verdict used verbatim from Phase V/VI"),
     "O-REFUTED": ("CONTRADICTED", "Phase VI outcome string for the same judgement"),
     "UNSATISFIABLE": ("CONTRADICTED", "Phase XIX E3: the registered necessary condition cannot be met"),

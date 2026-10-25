@@ -1,0 +1,82 @@
+{
+  "bootstrap": {
+    "buckets": 1000,
+    "resamples": 2000,
+    "seed": 20261023
+  },
+  "criteria": {
+    "C1_delta_s": true,
+    "C2_independence": true,
+    "C3_contrast": false,
+    "C4_contract": true
+  },
+  "dataset": {
+    "bytes": 412931917,
+    "file": "/media/leonyao/新加卷/workshop/_m2a_data/open_bandit_dataset.zip",
+    "hash_ok": true,
+    "member": "open_bandit_dataset/random/all/all.csv",
+    "sha256": "e8ec18196582a5937381a1776382ca940689b90a18d2dcd1fb635be6df614d78",
+    "source": "https://research.zozo.com/data_release/open_bandit_dataset.zip",
+    "split": "first 70% rows train, last 30% test (row order)"
+  },
+  "elapsed_sec": 7.582242012023926,
+  "estimates": {
+    "c_take_clicks": 987,
+    "c_take_n": 207217,
+    "contrast": 0.0013613414203775898,
+    "contrast_ci95": [
+      -0.001358577409189874,
+      0.002159720704023145
+    ],
+    "ctr_threshold": 0.003160310247585233,
+    "delta_c": 0.004763122716765517,
+    "delta_c_ci95": [
+      0.001987577639751553,
+      0.005393636051533166
+    ],
+    "delta_s": 0.0034017812963879268,
+    "delta_s_ci95": [
+      0.0022935779816513763,
+      0.0036977781545014356
+    ],
+    "items_in_ctr": 80,
+    "items_seen_train": 80,
+    "s_skip_clicks": 545,
+    "s_skip_label_click_rate": 0.003965280152499581,
+    "s_skip_n": 137443,
+    "s_take_clicks": 935,
+    "s_take_label_click_rate": 0.0034017812963879268,
+    "s_take_n": 274856,
+    "test_rows": 412299,
+    "train_rows": 962028
+  },
+  "exit": "S_ONLY_NONZERO_C_NOT_BETTER",
+  "label_r17": "INDETERMINATE",
+  "no_online_intervention": true,
+  "policies": {
+    "c_only": "skip iff item training CTR < median of item CTRs (>=100 shows); else take",
+    "s_only": "skip iff position % 3 == 0; no item-value representation",
+    "skip_reward": 0.0,
+    "take_reward": "logged click"
+  },
+  "prereg_binding": {
+    "disk_sha256": "847ded6a0f1d1a59a9119a4a6bbc008026509a092e58d24ae736e2ed0b596a03",
+    "git_head_sha256": "847ded6a0f1d1a59a9119a4a6bbc008026509a092e58d24ae736e2ed0b596a03",
+    "path": "m2a/experiments/PHASE25_PREREGISTRATION.md",
+    "two_channel_match": true
+  },
+  "prereg_sha256": "847ded6a0f1d1a59a9119a4a6bbc008026509a092e58d24ae736e2ed0b596a03",
+  "preregistration": "experiments/PHASE25_PREREGISTRATION.md",
+  "scan": {
+    "click_violations": 0,
+    "first_timestamp": "2019-11-24 00:00:00.007365+00:00",
+    "last_timestamp": "2019-11-30 23:59:59.408889+00:00",
+    "position_violations": 0,
+    "propensity_values_sample": [
+      "0.0125"
+    ],
+    "timestamp_violations": 0,
+    "total_rows": 1374327
+  },
+  "schema": "m2a.phase25.v1"
+}

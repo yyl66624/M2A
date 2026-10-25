@@ -2,9 +2,9 @@
  "schema": "m2a.runner-gate-map.v1",
  "derived_from": "AST of every experiments/run_*.py and literature/run_*.py that writes a committed artifact, plus the registered reanalysis writers",
  "counts": {
-  "writers": 32,
-  "artifacts": 32,
-  "enforced": 28,
+  "writers": 33,
+  "artifacts": 33,
+  "enforced": 29,
   "ungated_round_runners": 0,
   "no_gate_registered": 4,
   "guards_that_do_not_stop": 6
@@ -585,6 +585,35 @@
    ],
    "artifacts_written": [
     "phase24_results.json"
+   ],
+   "writes_read_too": [],
+   "verdict": "enforced"
+  },
+  {
+   "runner": "experiments/run_phase25.py",
+   "file": "run_phase25.py",
+   "gate_calls": [
+    {
+     "line": 242,
+     "gate": "p25_gate.py"
+    }
+   ],
+   "gate_helpers": [],
+   "rc_guards": [
+    {
+     "line": 244,
+     "test": "pre.returncode != 0",
+     "stops": true
+    }
+   ],
+   "artifact_writes": [
+    {
+     "line": 258,
+     "artifact": "phase25_results.json"
+    }
+   ],
+   "artifacts_written": [
+    "phase25_results.json"
    ],
    "writes_read_too": [],
    "verdict": "enforced"

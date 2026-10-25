@@ -88,24 +88,25 @@ def main() -> int:
                "S_ONLY_NONZERO_AND_C_BETTER", "S_ONLY_NONZERO_C_NOT_BETTER",
                "S_ONLY_ZERO_OR_NEGLIGIBLE", "DATA_IDENTITY_MISMATCH"},
            "probes %s" % (probes,))
-    if art is None:
-        report("G5 the artifact records a non-empty scan and a 70/30 split", False, "artifact absent")
-        report("G6 every estimate is derived from the recorded counts", False, "artifact absent")
-    else:
-        sc, ev = art["scan"], art["estimates"]
-        report("G5 the artifact records a non-empty scan and a 70/30 split",
-               sc["total_rows"] > 0 and ev["train_rows"] + ev["test_rows"] == sc["total_rows"]
-               and sc["click_violations"] == 0 and sc["position_violations"] == 0
-               and sc["timestamp_violations"] <= R.TS_TOL * sc["total_rows"],
-               "rows %d train %d test %d" % (sc["total_rows"], ev["train_rows"], ev["test_rows"]))
-        d_s = ev["s_take_clicks"] / ev["s_take_n"] if ev["s_take_n"] else 0.0
-        d_c = ev["c_take_clicks"] / ev["c_take_n"] if ev["c_take_n"] else 0.0
-        report("G6 every estimate is derived from the recorded counts",
-               abs(ev["delta_s"] - d_s) < 1e-12 and abs(ev["delta_c"] - d_c) < 1e-12
-               and abs(ev["contrast"] - (d_c - d_s)) < 1e-12
-               and ev["delta_s_ci95"][0] <= ev["delta_s"] <= ev["delta_s_ci95"][1]
-               and ev["contrast_ci95"][0] <= ev["contrast"] <= ev["contrast_ci95"][1],
-               "S %.6f C %.6f contrast %.6f" % (ev["delta_s"], ev["delta_c"], ev["contrast"]))
+    if not PRE:
+        if art is None:
+            report("G5 the artifact records a non-empty scan and a 70/30 split", False, "artifact absent")
+            report("G6 every estimate is derived from the recorded counts", False, "artifact absent")
+        else:
+            sc, ev = art["scan"], art["estimates"]
+            report("G5 the artifact records a non-empty scan and a 70/30 split",
+                   sc["total_rows"] > 0 and ev["train_rows"] + ev["test_rows"] == sc["total_rows"]
+                   and sc["click_violations"] == 0 and sc["position_violations"] == 0
+                   and sc["timestamp_violations"] <= R.TS_TOL * sc["total_rows"],
+                   "rows %d train %d test %d" % (sc["total_rows"], ev["train_rows"], ev["test_rows"]))
+            d_s = ev["s_take_clicks"] / ev["s_take_n"] if ev["s_take_n"] else 0.0
+            d_c = ev["c_take_clicks"] / ev["c_take_n"] if ev["c_take_n"] else 0.0
+            report("G6 every estimate is derived from the recorded counts",
+                   abs(ev["delta_s"] - d_s) < 1e-12 and abs(ev["delta_c"] - d_c) < 1e-12
+                   and abs(ev["contrast"] - (d_c - d_s)) < 1e-12
+                   and ev["delta_s_ci95"][0] <= ev["delta_s"] <= ev["delta_s_ci95"][1]
+                   and ev["contrast_ci95"][0] <= ev["contrast"] <= ev["contrast_ci95"][1],
+                   "S %.6f C %.6f contrast %.6f" % (ev["delta_s"], ev["delta_c"], ev["contrast"]))
     report("G7 no new data: the runner reads only the OBD zip and the prereg, and fetches nothing",
            "urllib" not in src and "requests" not in src and "open_bandit_dataset.zip" in src
            and str(ZIP) not in src, "data path is outside the repo")

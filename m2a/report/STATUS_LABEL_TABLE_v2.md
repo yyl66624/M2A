@@ -55,6 +55,8 @@
 | `experiments/phase23_results.json` | `label_r17` | `SUPPORTED` | **SUPPORTED** | artifact-field | 02/05-era arm verdict: the registered criterion was met |
 | `experiments/phase24_results.json` | `exit` | `REGULARIZATION-DOES-NOT-REPAIR` | **SUPPORTED** | artifact-field | Phase XXIV E1: L2 weight decay did not repair the old-law deviation |
 | `experiments/phase24_results.json` | `label_r17` | `SUPPORTED` | **SUPPORTED** | artifact-field | 02/05-era arm verdict: the registered criterion was met |
+| `experiments/phase25_results.json` | `exit` | `S_ONLY_NONZERO_C_NOT_BETTER` | **INDETERMINATE** | artifact-field | Phase XXV E2: S-only effect nonzero, C advantage not detected |
+| `experiments/phase25_results.json` | `label_r17` | `INDETERMINATE` | **INDETERMINATE** | artifact-field | already canonical - this artifact field literally carries a rule-7 label |
 | `experiments/phase2_results.json` | `verdicts[E1]` | `SUPPORTED` | **SUPPORTED** | artifact-field | 02/05-era arm verdict: the registered criterion was met |
 | `experiments/phase2_results.json` | `verdicts[E1b]` | `SUPPORTED` | **SUPPORTED** | artifact-field | 02/05-era arm verdict: the registered criterion was met |
 | `experiments/phase2_results.json` | `verdicts[E2]` | `SUPPORTED` | **SUPPORTED** | artifact-field | 02/05-era arm verdict: the registered criterion was met |
@@ -103,6 +105,7 @@
 | `experiments/PHASE18_RESULTS.md` | `prose` | `NOT_RESOLVABLE` | **NOT_IDENTIFIED** | document-only | cell-level state: tolerance exceeds the signal, no reading |
 | `experiments/PHASE23_RESULTS.md` | `prose` | `SUPPORTED` | **SUPPORTED** | document-only | 02/05-era arm verdict: the registered criterion was met |
 | `experiments/PHASE24_RESULTS.md` | `prose` | `SUPPORTED` | **SUPPORTED** | document-only | 02/05-era arm verdict: the registered criterion was met |
+| `experiments/PHASE25_RESULTS.md` | `prose` | `INDETERMINATE` | **INDETERMINATE** | document-only | already canonical - this artifact field literally carries a rule-7 label |
 | `experiments/PHASE2_RESULTS.md` | `prose` | `SUPPORTED` | **SUPPORTED** | document-only | 02/05-era arm verdict: the registered criterion was met |
 | `experiments/PHASE3_RESULTS.md` | `prose` | `SUPPORTED` | **SUPPORTED** | document-only | 02/05-era arm verdict: the registered criterion was met |
 | `experiments/PHASE4_RESULTS.md` | `prose` | `SUPPORTED` | **SUPPORTED** | document-only | 02/05-era arm verdict: the registered criterion was met |
@@ -121,14 +124,14 @@
 ## 3 处置计数与两层缺口
 
 计数按**逐条主张**：`derived` 行（标签从同文件另一字段读来）只作出处指向，不重复计数。
-工件行共 100 行，其中派生行 2 行。
+工件行共 103 行，其中派生行 2 行。
 
 | 处置 | 主张计数 | 其中：工件字段 | 其中：仅文档措辞 |
 | --- | --- | --- | --- |
 | SUPPORTED | 51 | 39 | 12 |
 | CONTRADICTED | 22 | 14 | 8 |
 | NULL | 1 | 0 | 1 |
-| INDETERMINATE | 14 | 13 | 1 |
+| INDETERMINATE | 17 | 15 | 2 |
 | NOT_IDENTIFIED | 2 | 0 | 2 |
 | MANUAL_REVIEW | 0 | 0 | 0 |
 | ZERO_TEST_REANALYSIS | 2 | 2 | 0 |
@@ -138,7 +141,7 @@
 是否只存在于结果文档的行文。**两者不成对就是缺口**，因为第 7 条要求的是每轮的判定标签，
 而审计规则要求「报告里引用的每个标签都要能逐个对回结果 JSON」——只写在文档里的标签对不回任何字段。
 
-推导出的缺口（100 行中，工件字段 76 行、文档措辞 24 行）：
+推导出的缺口（103 行中，工件字段 78 行、文档措辞 25 行）：
 
 1. **只在文档里存在、工件字段里为 0 的标签**：`NULL`、`NOT_IDENTIFIED`。典型是格级状态 `NOT_RESOLVABLE` 与部分识别标签 `PARTIALLY_IDENTIFIED`——它们各自写在 `PHASE*_RESULTS.md` 的正文与表格里，但**没有任何 `phase*_results.json` 字段承载它**，所以按字段扫描时 `NOT_IDENTIFIED` 一栏为 0。这与 X-67 是同一条治理规律：**处置与标签必须写在承载判定的工件里，写在累计文档里等于没写**。
 2. **两个层级都为 0 的标签**：无。`NULL`（仪器正常、效应为零）在 24 个实验轮里从未被字面写出：实验侧的失败形态被归入`CONTRADICTED`（判据被否证）或格级 `NOT_RESOLVABLE`（不可判），而「零结果」这一档在预注册出口表里从未被单独命名。这不是漏改旧轮（R6 禁止），而是**下一轮的出口表必须显式含 `NULL` 一档**，否则第 7 条要求的五值区分在实验侧仍只有四值。

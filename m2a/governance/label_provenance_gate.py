@@ -188,8 +188,10 @@ def main() -> int:
     if d["errata"]:
         e0 = d["errata"][0]
         fake = {"document": e0["document"], "kind": "append_only", "line": 1,
-                "labels": [e0["quoted"]], "excerpt": "订正 %s 里提到 %s" % (e0["xid"], e0["quoted"]),
-                "line_len": 10, "line_text": "订正 %s 里提到 %s" % (e0["xid"], e0["quoted"])}
+                "labels": [e0["quoted"]],
+                "excerpt": "%s 里提到 %s" % (e0["marker"], e0["quoted"]),
+                "line_len": 10,
+                "line_text": "%s 里提到 %s" % (e0["marker"], e0["quoted"])}
         fam, phan = B.anchors_of(fake["excerpt"], B.registered_phases(B.population_a()))
         fake["anchors"] = sorted(str(x) for x in fam)
         doc_text = (M / e0["document"]).read_text(encoding="utf-8")

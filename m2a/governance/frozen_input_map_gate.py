@@ -135,7 +135,8 @@ def main() -> int:
         txt = p.read_text(encoding="utf-8")
         for m in re.finditer(r'"([^"]*)"\s*:\s*"([0-9a-f]{64})"', txt):
             second.append((str(p.relative_to(M)), m.group(1), m.group(2)))
-    inart = {(r["pinner"], r["key"], r["hash"]) for r in rows if r["hash"]}
+    inart = {(r["pinner"], r["key"], r["hash"]) for r in rows
+             if r["hash"] and not str(r.get("json_path", "")).startswith("line:")}
     report("Q6 a regex scan of the raw JSON text finds the same pinned hash values",
            {t for t in second if t in inart} == inart and len(inart) > 0,
            "independent=%d artifact=%d" % (len({t for t in second if t in inart}), len(inart)))
