@@ -1,0 +1,82 @@
+{
+  "bootstrap": {
+    "buckets": 1000,
+    "resamples": 2000,
+    "seed": 20261024
+  },
+  "criteria": {
+    "C1_delta_c": true,
+    "C2_model": false,
+    "C3_contrast": false,
+    "C4_contract": true
+  },
+  "dataset": {
+    "bytes": 412931917,
+    "file": "/media/leonyao/新加卷/workshop/_m2a_data/open_bandit_dataset.zip",
+    "hash_ok": true,
+    "member": "open_bandit_dataset/random/all/all.csv",
+    "sha256": "e8ec18196582a5937381a1776382ca940689b90a18d2dcd1fb635be6df614d78",
+    "split": "first 70% train, last 30% test"
+  },
+  "elapsed_sec": 17.759694576263428,
+  "estimates": {
+    "auc": 0.5410361128985389,
+    "base_log_loss": 0.023791729901024978,
+    "c_take_clicks": 780,
+    "c_take_n": 207918,
+    "contrast": 0.0003496976520436664,
+    "contrast_ci95": [
+      -0.0012551563824821136,
+      0.0005632722495267531
+    ],
+    "delta_c": 0.003751478948431593,
+    "delta_c_ci95": [
+      0.0010384215991692627,
+      0.003829453335455822
+    ],
+    "delta_s": 0.0034017812963879268,
+    "delta_s_ci95": [
+      0.0022935779816513763,
+      0.0036970018893413116
+    ],
+    "log_loss": 0.028072922739951146,
+    "s_take_clicks": 935,
+    "s_take_n": 274856,
+    "test_click_rate": 0.0035896279156631475,
+    "test_rows": 412299,
+    "threshold": 0.01125753778015402
+  },
+  "exit": "CONTEXT_MODEL_UNINFORMATIVE",
+  "label_r17": "NOT_IDENTIFIED",
+  "model": {
+    "affinity": 80,
+    "batch": 1024,
+    "epochs": 5,
+    "features": 160,
+    "item_onehot": 80,
+    "items": 80,
+    "l2": 0.0001,
+    "lr": 0.1,
+    "seed": 20261024,
+    "threshold": "test median predicted probability",
+    "train_sample": 200000
+  },
+  "no_online_intervention": true,
+  "prereg_binding": {
+    "disk_sha256": "77359cee5625371b87ddf8ed7bd2220d972ac30912ef59d9b84bc1f066c06da3",
+    "git_head_sha256": "77359cee5625371b87ddf8ed7bd2220d972ac30912ef59d9b84bc1f066c06da3",
+    "path": "m2a/experiments/PHASE26_PREREGISTRATION.md",
+    "two_channel_match": true
+  },
+  "prereg_sha256": "77359cee5625371b87ddf8ed7bd2220d972ac30912ef59d9b84bc1f066c06da3",
+  "preregistration": "experiments/PHASE26_PREREGISTRATION.md",
+  "scan": {
+    "click_violations": 0,
+    "first_timestamp": "2019-11-24 00:00:00.007365+00:00",
+    "last_timestamp": "2019-11-30 23:59:59.408889+00:00",
+    "position_violations": 0,
+    "timestamp_violations": 0,
+    "total_rows": 1374327
+  },
+  "schema": "m2a.phase26.v1"
+}

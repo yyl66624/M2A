@@ -488,8 +488,8 @@
     },
     {
       "draft": "M2A-治理-套件分数引用对账v1.md",
-      "draft_chars": 4931,
-      "draft_sha256": "a107a0866fa4379a12d675bbabf65b162eec75c520c51f77d52fe534e7c85ff8",
+      "draft_chars": 5108,
+      "draft_sha256": "179d4f144ae2d7c5c90639e029b77c3d140c79eb7400f0f596e5739258aef539",
       "markers": [
         "X-86",
         "X-87",
@@ -507,7 +507,7 @@
       "markers_ok_recorded": true,
       "node_token": "QuO5w9vGFiikp1kSKbgcrh1jnnb",
       "obj_token": "JOWndS5SXouZTexE3SFcXoB1nmf",
-      "read_back_chars_recorded": 6885,
+      "read_back_chars_recorded": 7096,
       "sections": [
         48
       ],
@@ -1119,9 +1119,9 @@
   "stale_claims": [],
   "tools": [
     {
-      "bytes": 120015,
+      "bytes": 120215,
       "file": "check_step_draft_numbers.py",
-      "sha256": "0aa5b1965ecf59d98c4f2c8c61407cd6415d6a2b12cdc88faa6ff72e26dded11"
+      "sha256": "e46dc8f975b330b15b43cb89a8822e4bd362c5310eb3dd56c5dab30e422f3e5d"
     },
     {
       "bytes": 12054,
@@ -1129,9 +1129,9 @@
       "sha256": "a51a6e6453f7bdff416bf589b567274ad1158c20d7daeb34538da2ee61bf60a0"
     },
     {
-      "bytes": 15570,
+      "bytes": 15616,
       "file": "feishu_wiki_nodes.json",
-      "sha256": "3517b91831a6b2ee23661b702b529c6d602f5d9b0cc26bfe3a0d9f0521bdf75d"
+      "sha256": "dd505f0904cd2564e0f4e21b79cff3e0945e0dbbf8b7ee2e949316532e07bfd8"
     }
   ],
   "unclaimed_sections": [],

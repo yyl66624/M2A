@@ -96,10 +96,11 @@ def main() -> int:
                    and abs(ev["contrast"] - (dc - ds)) < 1e-12
                    and ev["contrast_ci95"][0] <= ev["contrast"] <= ev["contrast_ci95"][1],
                    "S %.6f C %.6f" % (ev["delta_s"], ev["delta_c"]))
-    report("G7 the exit and label are re-derived from the artifact's own metrics",
-           (art is None and not PRE) or (art is not None and R.exit_of(art["scan"], art["estimates"], True)
-                                          == (art["exit"], art["label_r17"])),
-           art["exit"] if art else "pre")
+    if not PRE:
+        report("G7 the exit and label are re-derived from the artifact's own metrics",
+               art is not None and R.exit_of(art["scan"], art["estimates"], True)
+               == (art["exit"], art["label_r17"]),
+               art["exit"] if art else "absent")
     report("G8 no new data: the runner reads only the OBD zip and the prereg, and fetches nothing",
            "urllib" not in src and "requests" not in src and "open_bandit_dataset.zip" in src
            and str(ZIP) not in src, "sources: OBD + prereg")

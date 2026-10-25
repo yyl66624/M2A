@@ -9,7 +9,7 @@
 本表用**语法**回答「哪个量根本没有进入任何判定」。两者不可互相替代：
 本表能枚举没人想到去注入的缺口，注入能发现本表看不见的口径问题（见 §4）。
 
-覆盖人口：34 份轮次门控（`experiments/*_gate.py` + `literature/*_gate.py`），
+覆盖人口：35 份轮次门控（`experiments/*_gate.py` + `literature/*_gate.py`），
 199 条 `check()`，84 个从本地机制模块导入的可调用量。
 
 ## 2 缺口清单（每条都必须带登记理由；新增而未登记者构建失败）
@@ -58,7 +58,7 @@
 
 1. **被执行、但被一条容差太粗的检查判定**：Phase XIII 的 W2 容差是「一个计数」，Phase V-d 的 G4 是 ±0.005 绝对。这些名字在表里显示为「已覆盖」，注入实验却证明它们对 1e-4 级的机制错误全盲。
 2. **治理套件不在人口内**：`governance/*_gate.py` 用 `report()` 而非 `check()`，它们是工件审计，不是某一轮的仪器。
-3. **不用 `check()` 的轮次门控**：`experiments/p25_gate.py`、`literature/l01_gate.py`、`literature/l02_gate.py`、`literature/l02_representation_gate.py`、`literature/l03_gate.py`、`literature/l04_i1_gate.py`、`literature/l05_gate.py` 贡献 0 条 `check()`（它用自带的手段审计工件），本表对任何不使用 `check()` 的门控**沉默**——「表里没写」不等于「已覆盖」。
+3. **不用 `check()` 的轮次门控**：`experiments/p25_gate.py`、`experiments/p26_gate.py`、`literature/l01_gate.py`、`literature/l02_gate.py`、`literature/l02_representation_gate.py`、`literature/l03_gate.py`、`literature/l04_i1_gate.py`、`literature/l05_gate.py` 贡献 0 条 `check()`（它用自带的手段审计工件），本表对任何不使用 `check()` 的门控**沉默**——「表里没写」不等于「已覆盖」。
 
 与注入套件的三条已登记失明（`expect="blind_all"`）的对账：
 
