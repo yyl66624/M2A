@@ -61,6 +61,8 @@
 | `experiments/phase26_results.json` | `label_r17` | `NOT_IDENTIFIED` | **NOT_IDENTIFIED** | artifact-field | already canonical - this artifact field literally carries a rule-7 label |
 | `experiments/phase27_results.json` | `exit` | `CALIBRATION_FAILED` | **NOT_IDENTIFIED** | artifact-field | Phase XXVII: calibration did not beat the base rate; C advantage not tested |
 | `experiments/phase27_results.json` | `label_r17` | `NOT_IDENTIFIED` | **NOT_IDENTIFIED** | artifact-field | already canonical - this artifact field literally carries a rule-7 label |
+| `experiments/phase28_results.json` | `exit` | `GBDT_CALIBRATION_FAILED` | **NOT_IDENTIFIED** | artifact-field | Phase XXVIII: GBDT isotonic calibration degenerated to take-all |
+| `experiments/phase28_results.json` | `label_r17` | `NOT_IDENTIFIED` | **NOT_IDENTIFIED** | artifact-field | already canonical - this artifact field literally carries a rule-7 label |
 | `experiments/phase2_results.json` | `verdicts[E1]` | `SUPPORTED` | **SUPPORTED** | artifact-field | 02/05-era arm verdict: the registered criterion was met |
 | `experiments/phase2_results.json` | `verdicts[E1b]` | `SUPPORTED` | **SUPPORTED** | artifact-field | 02/05-era arm verdict: the registered criterion was met |
 | `experiments/phase2_results.json` | `verdicts[E2]` | `SUPPORTED` | **SUPPORTED** | artifact-field | 02/05-era arm verdict: the registered criterion was met |
@@ -112,6 +114,7 @@
 | `experiments/PHASE25_RESULTS.md` | `prose` | `INDETERMINATE` | **INDETERMINATE** | document-only | already canonical - this artifact field literally carries a rule-7 label |
 | `experiments/PHASE26_RESULTS.md` | `prose` | `NOT_IDENTIFIED` | **NOT_IDENTIFIED** | document-only | already canonical - this artifact field literally carries a rule-7 label |
 | `experiments/PHASE27_RESULTS.md` | `prose` | `NOT_IDENTIFIED` | **NOT_IDENTIFIED** | document-only | already canonical - this artifact field literally carries a rule-7 label |
+| `experiments/PHASE28_RESULTS.md` | `prose` | `NOT_IDENTIFIED` | **NOT_IDENTIFIED** | document-only | already canonical - this artifact field literally carries a rule-7 label |
 | `experiments/PHASE2_RESULTS.md` | `prose` | `SUPPORTED` | **SUPPORTED** | document-only | 02/05-era arm verdict: the registered criterion was met |
 | `experiments/PHASE3_RESULTS.md` | `prose` | `SUPPORTED` | **SUPPORTED** | document-only | 02/05-era arm verdict: the registered criterion was met |
 | `experiments/PHASE4_RESULTS.md` | `prose` | `SUPPORTED` | **SUPPORTED** | document-only | 02/05-era arm verdict: the registered criterion was met |
@@ -130,7 +133,7 @@
 ## 3 处置计数与两层缺口
 
 计数按**逐条主张**：`derived` 行（标签从同文件另一字段读来）只作出处指向，不重复计数。
-工件行共 109 行，其中派生行 2 行。
+工件行共 112 行，其中派生行 2 行。
 
 | 处置 | 主张计数 | 其中：工件字段 | 其中：仅文档措辞 |
 | --- | --- | --- | --- |
@@ -138,7 +141,7 @@
 | CONTRADICTED | 22 | 14 | 8 |
 | NULL | 1 | 0 | 1 |
 | INDETERMINATE | 17 | 15 | 2 |
-| NOT_IDENTIFIED | 8 | 4 | 4 |
+| NOT_IDENTIFIED | 11 | 6 | 5 |
 | MANUAL_REVIEW | 0 | 0 | 0 |
 | ZERO_TEST_REANALYSIS | 2 | 2 | 0 |
 | COUNT_NOT_STATUS | 6 | 6 | 0 |
@@ -147,7 +150,7 @@
 是否只存在于结果文档的行文。**两者不成对就是缺口**，因为第 7 条要求的是每轮的判定标签，
 而审计规则要求「报告里引用的每个标签都要能逐个对回结果 JSON」——只写在文档里的标签对不回任何字段。
 
-推导出的缺口（109 行中，工件字段 82 行、文档措辞 27 行）：
+推导出的缺口（112 行中，工件字段 84 行、文档措辞 28 行）：
 
 1. **只在文档里存在、工件字段里为 0 的标签**：`NULL`。典型是格级状态 `NOT_RESOLVABLE` 与部分识别标签 `PARTIALLY_IDENTIFIED`——它们各自写在 `PHASE*_RESULTS.md` 的正文与表格里，但**没有任何 `phase*_results.json` 字段承载它**，所以按字段扫描时 `NOT_IDENTIFIED` 一栏为 0。这与 X-67 是同一条治理规律：**处置与标签必须写在承载判定的工件里，写在累计文档里等于没写**。
 2. **两个层级都为 0 的标签**：无。`NULL`（仪器正常、效应为零）在 24 个实验轮里从未被字面写出：实验侧的失败形态被归入`CONTRADICTED`（判据被否证）或格级 `NOT_RESOLVABLE`（不可判），而「零结果」这一档在预注册出口表里从未被单独命名。这不是漏改旧轮（R6 禁止），而是**下一轮的出口表必须显式含 `NULL` 一档**，否则第 7 条要求的五值区分在实验侧仍只有四值。
