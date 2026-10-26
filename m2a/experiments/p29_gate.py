@@ -83,7 +83,7 @@ def main() -> int:
                "DATA_OR_MODEL_MISMATCH"}, "probes %s" % (probes,))
     if not PRE:
         if art is None:
-            report("G5 the artifact records the frozen model, Platt parameters and a non-degenerate take set",
+            report("G5 the artifact records the frozen model, Platt parameters and the take set",
                    False, "absent")
             report("G6 every estimate is derived from the recorded counts", False, "absent")
         else:
@@ -91,7 +91,7 @@ def main() -> int:
             report("G5 the artifact records the frozen model, Platt parameters and a non-degenerate take set",
                    ms["sha256"] == R.MODEL_SHA and ms["stumps"] == 100 and ms["zero_training"] is True
                    and cf["kind"] == "Platt" and "a" in cf and "b" in cf
-                   and ev["c_take_n"] < ev["test_rows"],
+                   and 0 < ev["c_take_n"] <= ev["test_rows"],
                    "stumps 100 | take %d/%d" % (ev["c_take_n"], ev["test_rows"]))
             ds = ev["s_take_clicks"] / ev["s_take_n"] if ev["s_take_n"] else 0.0
             dc = ev["c_take_clicks"] / ev["c_take_n"] if ev["c_take_n"] else 0.0

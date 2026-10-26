@@ -1,0 +1,80 @@
+{
+  "bootstrap": {
+    "buckets": 1000,
+    "resamples": 2000,
+    "seed": 20261026
+  },
+  "calibration": {
+    "a": 0.08556797386692835,
+    "b": -5.696329563076636,
+    "kind": "Platt",
+    "seed": 20261026
+  },
+  "criteria": {
+    "C1_delta_c": true,
+    "C2_calibration": false,
+    "C3_contrast": false,
+    "C4_contract": true
+  },
+  "dataset": {
+    "bytes": 412931917,
+    "file": "/media/leonyao/新加卷/workshop/_m2a_data/open_bandit_dataset.zip",
+    "hash_ok": true,
+    "sha256": "e8ec18196582a5937381a1776382ca940689b90a18d2dcd1fb635be6df614d78",
+    "split": "fit 1-200000; calibration 200001-300000; test last 30%"
+  },
+  "elapsed_sec": 14.973857164382935,
+  "estimates": {
+    "auc": 0.5842247511447634,
+    "base_log_loss": 0.023791729901024978,
+    "c_take_clicks": 1480,
+    "c_take_n": 412299,
+    "contrast": 0.0001878466192752207,
+    "contrast_ci95": [
+      -0.0007645259938837922,
+      0.00024373487792068733
+    ],
+    "delta_c": 0.0035896279156631475,
+    "delta_c_ci95": [
+      0.0015290519877675841,
+      0.003941513032422123
+    ],
+    "delta_s": 0.0034017812963879268,
+    "delta_s_ci95": [
+      0.0022935779816513763,
+      0.0036977781545014356
+    ],
+    "log_loss": 0.023687188151726716,
+    "s_take_clicks": 935,
+    "s_take_n": 274856,
+    "test_click_rate": 0.0035896279156631475,
+    "test_rows": 412299,
+    "threshold": 0.0027509223086425705
+  },
+  "exit": "PLATT_GBDT_CALIBRATION_FAILED",
+  "label_r17": "NOT_IDENTIFIED",
+  "model_source": {
+    "file": "experiments/phase28_results.json",
+    "sha256": "ab31800636fcc92f9a7c94b88090f3646e1a04be540838e924850e5b96f9d63d",
+    "stumps": 100,
+    "zero_training": true
+  },
+  "no_online_intervention": true,
+  "prereg_binding": {
+    "disk_sha256": "5a3dc9b1293a531b3b377fc167868b410d6fdcea5bd5f8042ed9cbaaad29bdbc",
+    "git_head_sha256": "5a3dc9b1293a531b3b377fc167868b410d6fdcea5bd5f8042ed9cbaaad29bdbc",
+    "path": "m2a/experiments/PHASE29_PREREGISTRATION.md",
+    "two_channel_match": true
+  },
+  "prereg_sha256": "5a3dc9b1293a531b3b377fc167868b410d6fdcea5bd5f8042ed9cbaaad29bdbc",
+  "preregistration": "experiments/PHASE29_PREREGISTRATION.md",
+  "scan": {
+    "click_violations": 0,
+    "first_timestamp": "2019-11-24 00:00:00.007365+00:00",
+    "last_timestamp": "2019-11-30 23:59:59.408889+00:00",
+    "position_violations": 0,
+    "timestamp_violations": 0,
+    "total_rows": 1374327
+  },
+  "schema": "m2a.phase29.v1"
+}

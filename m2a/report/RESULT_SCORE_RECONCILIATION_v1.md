@@ -8,9 +8,9 @@
 * **live**：这台门控今天被跑到时打印的 `n/N checks passed`；
 * **static**：§42 覆盖表按语法数出的 `check()` **站点数**（全库 199）。
 
-两个数会分开，本库现有 **8** 例（都已登记，见 §3.1）：一条写在 `for` 里的 `check()` 只有一个站点、却打印多条判定（`p17_gate.py`：6 站点 / 7 判定）；不使用 `check()` 的自带仪器在静态普查里记 0（`p25_gate.py`：0 站点 / 12 判定、`p26_gate.py`：0 站点 / 12 判定、`p27_gate.py`：0 站点 / 12 判定、`p28_gate.py`：0 站点 / 12 判定、`l01_gate.py`：0 站点 / 7 判定、`l02_gate.py`：0 站点 / 16 判定、`l03_gate.py`：0 站点 / 20 判定）。这就是为什么 §42 那句「199 条 `check()`」必须被读作**站点数**而不是执行量。
+两个数会分开，本库现有 **9** 例（都已登记，见 §3.1）：一条写在 `for` 里的 `check()` 只有一个站点、却打印多条判定（`p17_gate.py`：6 站点 / 7 判定）；不使用 `check()` 的自带仪器在静态普查里记 0（`p25_gate.py`：0 站点 / 12 判定、`p26_gate.py`：0 站点 / 12 判定、`p27_gate.py`：0 站点 / 12 判定、`p28_gate.py`：0 站点 / 12 判定、`p29_gate.py`：0 站点 / 12 判定、`l01_gate.py`：0 站点 / 7 判定、`l02_gate.py`：0 站点 / 16 判定、`l03_gate.py`：0 站点 / 20 判定）。这就是为什么 §42 那句「199 条 `check()`」必须被读作**站点数**而不是执行量。
 
-人口：**33 份轮次文档**；判定：**aligned 25**、已登记的静态口径差 8、坏判定 0、无分数声明 0。执行侧共打印 **283** 条判定，本表人口内 33 台仪器静态共 **191** 个站点（§42 全库 37 台是 199 个——**这两个总数是两条不同的抵消，不代表同一件事**，见 §1.1）。
+人口：**34 份轮次文档**；判定：**aligned 25**、已登记的静态口径差 9、坏判定 0、无分数声明 0。执行侧共打印 **295** 条判定，本表人口内 34 台仪器静态共 **191** 个站点（§42 全库 38 台是 199 个——**这两个总数是两条不同的抵消，不代表同一件事**，见 §1.1）。
 
 ## 2 逐轮对账
 
@@ -35,6 +35,7 @@
 | `PHASE26_RESULTS.md` | `experiments/p26_gate.py` | 12/12 | 12/12 | 0 | `other_harness` |
 | `PHASE27_RESULTS.md` | `experiments/p27_gate.py` | 12/12 | 12/12 | 0 | `other_harness` |
 | `PHASE28_RESULTS.md` | `experiments/p28_gate.py` | 12/12 | 12/12 | 0 | `other_harness` |
+| `PHASE29_RESULTS.md` | `experiments/p29_gate.py` | 12/12 | 12/12 | 0 | `other_harness` |
 | `PHASE2_RESULTS.md` | `experiments/phase2_gate.py` | 7/7 | 7/7 | 7 | `aligned` |
 | `PHASE3_RESULTS.md` | `experiments/p3_gate.py` | 7/7 | 7/7 | 7 | `aligned` |
 | `PHASE4_RESULTS.md` | `experiments/p4_gate.py` | 5/5 | 5/5 | 5 | `aligned` |
@@ -57,6 +58,7 @@
 - `p17_gate.py`（类别 `loop_nested`）：G1 的锚定比较写在 `for` 里（两条口径各一次），静态 6 个站点、执行 7 条判定。§42 的 169 是**站点数**，门控打印的是**判定条数**：本表把两个数放在一起，免得「169」被当成执行量引用。
 - `l01_gate.py`（类别 `other_harness`）：文献轮的 `l01_gate.py` 不使用 `check()`——它自带断言并打印 `7/7 checks passed`，所以 §42 的静态普查对它记 0。这是「两数不可比」，不是缺失：§42 的 §4 第三条已声明本库对不使用 `check()` 的门控**沉默**。
 - `l02_gate.py`（类别 `other_harness`）：L-02 的门控与 `l01_gate.py` 同一族：它用自己的 `report()` 记录判定并把条数钉在 `RULES` 常量上，`check()` 站点为 0，静态普查与打印的 `n/n` 不可比。它与打印数的唯一区别是判定条数由登记表决定，而不是由出现过几次 `check()` 决定。
+- `p29_gate.py`（类别 `other_harness`）：Phase XXIX 的门控用自带的 report() 记录判定，check() 站点为 0；静态站点数与打印的 n/n 不可比。
 - `p28_gate.py`（类别 `other_harness`）：Phase XXVIII 的门控用自带的 report() 记录判定，check() 站点为 0；静态站点数与打印的 n/n 不可比。
 - `p27_gate.py`（类别 `other_harness`）：Phase XXVII 的门控用自带的 report() 记录判定，check() 站点为 0；静态站点数与打印的 n/n 不可比。
 - `p26_gate.py`（类别 `other_harness`）：Phase XXVI 的门控用自带的 report() 记录判定，check() 站点为 0；静态站点数与打印的 n/n 不可比。
@@ -86,6 +88,6 @@ python3 governance/result_score_map_gate.py
 
 ### 1.1 两条不同的抵消，各自算出各自的总数
 
-文档人口内 33 台仪器的静态站点数之和是 **191**；§42 的人口比本表多 4 台（`ao_preflight_gate.py`、`l02_representation_gate.py`、`l04_i1_gate.py`、`l05_gate.py`），它们没有轮次文档、不参与三方对账；这些台在覆盖表里的站点数逐台相加得 8 个，所以全库是 **199** 个——这条等式由构建 assert，不成立则构建失败。
-执行侧打印总数是 **283** 条 = 191 + 自带仪器打印的 91 条（`p25_gate.py`、`p26_gate.py`、`p27_gate.py`、`p28_gate.py`、`l01_gate.py`、`l02_gate.py`、`l03_gate.py`，静态记 0）+ 循环内多出的 1 条（`p17_gate.py`），同样由构建 assert。
+文档人口内 34 台仪器的静态站点数之和是 **191**；§42 的人口比本表多 4 台（`ao_preflight_gate.py`、`l02_representation_gate.py`、`l04_i1_gate.py`、`l05_gate.py`），它们没有轮次文档、不参与三方对账；这些台在覆盖表里的站点数逐台相加得 8 个，所以全库是 **199** 个——这条等式由构建 assert，不成立则构建失败。
+执行侧打印总数是 **295** 条 = 191 + 自带仪器打印的 103 条（`p25_gate.py`、`p26_gate.py`、`p27_gate.py`、`p28_gate.py`、`p29_gate.py`、`l01_gate.py`、`l02_gate.py`、`l03_gate.py`，静态记 0）+ 循环内多出的 1 条（`p17_gate.py`），同样由构建 assert。
 在 L-02 之前这两个总数恰好相等：当时自带仪器补的判定条数与循环多出的那条，刚好等于 §42 多出那台的站点数。两条不同的抵消对上同一个数是巧合不是关系，本轮新增的自带仪器把它分开了。**只比总数会同时抹平两处口径差，抹平之后还看不出来**，所以本表逐台比对，不对总数。

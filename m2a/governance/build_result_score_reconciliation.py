@@ -55,6 +55,9 @@ KNOWN_STATIC_GAPS = {
                     "L-02 的门控与 `l01_gate.py` 同一族：它用自己的 `report()` 记录判定并把条数钉在 "
                     "`RULES` 常量上，`check()` 站点为 0，静态普查与打印的 `n/n` 不可比。它与打印数的唯一"
                     "区别是判定条数由登记表决定，而不是由出现过几次 `check()` 决定。"),
+    "p29_gate.py": ("other_harness",
+                    "Phase XXIX 的门控用自带的 report() 记录判定，check() 站点为 0；"
+                    "静态站点数与打印的 n/n 不可比。"),
     "p28_gate.py": ("other_harness",
                     "Phase XXVIII 的门控用自带的 report() 记录判定，check() 站点为 0；"
                     "静态站点数与打印的 n/n 不可比。"),

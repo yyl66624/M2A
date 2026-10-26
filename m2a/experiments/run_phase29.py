@@ -26,6 +26,7 @@ M = EXP.parent
 REPO = M.parent
 PREREG = EXP / "PHASE29_PREREGISTRATION.md"
 OUT = EXP / "phase29_results.json"
+DATA_FILE = "open_bandit_dataset.zip"  # outside the repository, under WORK/_m2a_data/
 MODEL = EXP / "phase28_results.json"
 MODEL_SHA = "ab31800636fcc92f9a7c94b88090f3646e1a04be540838e924850e5b96f9d63d"
 BOOT = 2000
