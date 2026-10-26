@@ -59,18 +59,18 @@
     "stale_attestation": 0,
     "named_object_absent": 1,
     "pin_of_this_layer_output": 0,
-    "frozen_by_round_instrument": 62,
-    "renewable_governance_pin": 105,
-    "hash_without_named_object": 107,
+    "frozen_by_round_instrument": 65,
+    "renewable_governance_pin": 107,
+    "hash_without_named_object": 113,
     "ambiguous_pairing": 14,
     "hard_findings": 1,
-    "rows": 289,
-    "pinning_documents": 72,
-    "pinned_objects": 116,
-    "repo_files_scanned": 358,
+    "rows": 300,
+    "pinning_documents": 74,
+    "pinned_objects": 118,
+    "repo_files_scanned": 363,
     "workshop_objects": 125,
     "instrument_collection_pins": 40,
-    "freeze_rows_visible": 62,
+    "freeze_rows_visible": 65,
     "freeze_visibility_states": 2,
     "freeze_not_visible": 0,
     "freeze_visibility_unread": 0
@@ -85,6 +85,7 @@
     "experiments/PHASE28_PREREGISTRATION.md",
     "experiments/PHASE29_PREREGISTRATION.md",
     "experiments/PHASE30_PREREGISTRATION.md",
+    "experiments/PHASE31_PREREGISTRATION.md",
     "experiments/p14_gate.py",
     "experiments/p15_gate.py",
     "experiments/p16_gate.py",
@@ -203,6 +204,36 @@
     },
     {
       "pinner": "experiments/PHASE30_PREREGISTRATION.md",
+      "key": "prereg_md",
+      "hash": "6eebc2cec84b5169b2023422a326acace3c9e7867dbb8c2e6bd032473d5ba2a7",
+      "pair": [],
+      "json_path": "line:13",
+      "pair_count": 0,
+      "verdict": "hash_without_named_object",
+      "visibility": null
+    },
+    {
+      "pinner": "experiments/PHASE31_PREREGISTRATION.md",
+      "key": "prereg_md",
+      "hash": "e8ec18196582a5937381a1776382ca940689b90a18d2dcd1fb635be6df614d78",
+      "pair": [],
+      "json_path": "line:11",
+      "pair_count": 0,
+      "verdict": "hash_without_named_object",
+      "visibility": null
+    },
+    {
+      "pinner": "experiments/PHASE31_PREREGISTRATION.md",
+      "key": "prereg_md",
+      "hash": "ab31800636fcc92f9a7c94b88090f3646e1a04be540838e924850e5b96f9d63d",
+      "pair": [],
+      "json_path": "line:12",
+      "pair_count": 0,
+      "verdict": "hash_without_named_object",
+      "visibility": null
+    },
+    {
+      "pinner": "experiments/PHASE31_PREREGISTRATION.md",
       "key": "prereg_md",
       "hash": "6eebc2cec84b5169b2023422a326acace3c9e7867dbb8c2e6bd032473d5ba2a7",
       "pair": [],
@@ -787,6 +818,90 @@
       "visibility": "json_key_reproduced"
     },
     {
+      "pinner": "experiments/phase31_results.json",
+      "key": "sha256",
+      "hash": "e8ec18196582a5937381a1776382ca940689b90a18d2dcd1fb635be6df614d78",
+      "pair": [],
+      "json_path": "dataset",
+      "pair_count": 0,
+      "verdict": "hash_without_named_object",
+      "visibility": null
+    },
+    {
+      "pinner": "experiments/phase31_results.json",
+      "key": "disk_sha256",
+      "hash": "98f74c683074064c053b775c8882478f157e63f74fbd8c6192f252adfedaf45f",
+      "pair": [],
+      "json_path": "prereg_binding",
+      "pair_count": 0,
+      "verdict": "hash_without_named_object",
+      "visibility": null
+    },
+    {
+      "pinner": "experiments/phase31_results.json",
+      "key": "git_head_sha256",
+      "hash": "98f74c683074064c053b775c8882478f157e63f74fbd8c6192f252adfedaf45f",
+      "pair": [],
+      "json_path": "prereg_binding",
+      "pair_count": 0,
+      "verdict": "hash_without_named_object",
+      "visibility": null
+    },
+    {
+      "pinner": "experiments/phase31_results.json",
+      "key": "prereg_sha256",
+      "hash": "98f74c683074064c053b775c8882478f157e63f74fbd8c6192f252adfedaf45f",
+      "pair": [
+        [
+          "preregistration",
+          "experiments/PHASE31_PREREGISTRATION.md"
+        ]
+      ],
+      "json_path": "",
+      "pair_count": 1,
+      "object_namespace": "repo",
+      "object": "experiments/PHASE31_PREREGISTRATION.md",
+      "bytes_match": true,
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "json_key_reproduced"
+    },
+    {
+      "pinner": "experiments/phase31_results.json",
+      "key": "sha256",
+      "hash": "6eebc2cec84b5169b2023422a326acace3c9e7867dbb8c2e6bd032473d5ba2a7",
+      "pair": [
+        [
+          "file",
+          "experiments/phase29_results.json"
+        ]
+      ],
+      "json_path": "sources/calibration",
+      "pair_count": 1,
+      "object_namespace": "repo",
+      "object": "experiments/phase29_results.json",
+      "bytes_match": true,
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "json_key_reproduced"
+    },
+    {
+      "pinner": "experiments/phase31_results.json",
+      "key": "sha256",
+      "hash": "ab31800636fcc92f9a7c94b88090f3646e1a04be540838e924850e5b96f9d63d",
+      "pair": [
+        [
+          "file",
+          "experiments/phase28_results.json"
+        ]
+      ],
+      "json_path": "sources/model",
+      "pair_count": 1,
+      "object_namespace": "repo",
+      "object": "experiments/phase28_results.json",
+      "bytes_match": true,
+      "verdict": "frozen_by_round_instrument",
+      "visibility": "json_key_reproduced"
+    },
+    {
       "pinner": "experiments/phase3_results.json",
       "key": "prereg_sha256",
       "hash": "10696eafc86c04a3f0057f4b47dfb07477bd5f46b1a5806b9945bffb80916b43",
@@ -1171,7 +1286,7 @@
     {
       "pinner": "governance/label_provenance_v1.json",
       "key": "sha256",
-      "hash": "6c504fe14f0031d8ae0322c8493a48dfb782037fd3a4af053890cdcead57ddff",
+      "hash": "4bfe739d069ed2446b31eccbcbded70b49f0f5c31d52362b0fe017ab41595678",
       "pair": [
         [
           "module",
@@ -1653,6 +1768,24 @@
     {
       "pinner": "governance/result_score_reconciliation_v1.json",
       "key": "gate_sha256",
+      "hash": "ada076c32b05042de4e68a438abeca08e73a9513555f394b883a35f310560efb",
+      "pair": [
+        [
+          "gate",
+          "experiments/p31_gate.py"
+        ]
+      ],
+      "json_path": "rows/22",
+      "pair_count": 1,
+      "object_namespace": "repo",
+      "object": "experiments/p31_gate.py",
+      "bytes_match": true,
+      "verdict": "renewable_governance_pin",
+      "visibility": null
+    },
+    {
+      "pinner": "governance/result_score_reconciliation_v1.json",
+      "key": "gate_sha256",
       "hash": "0dea02e14745c57f000373858b5de46f43eb74a88593347f602c6b0a60e0577d",
       "pair": [
         [
@@ -1660,7 +1793,7 @@
           "experiments/p3_gate.py"
         ]
       ],
-      "json_path": "rows/22",
+      "json_path": "rows/23",
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "experiments/p3_gate.py",
@@ -1678,7 +1811,7 @@
           "experiments/p4_gate.py"
         ]
       ],
-      "json_path": "rows/23",
+      "json_path": "rows/24",
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "experiments/p4_gate.py",
@@ -1696,7 +1829,7 @@
           "experiments/p5b_gate.py"
         ]
       ],
-      "json_path": "rows/24",
+      "json_path": "rows/25",
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "experiments/p5b_gate.py",
@@ -1714,7 +1847,7 @@
           "experiments/p5c_gate.py"
         ]
       ],
-      "json_path": "rows/25",
+      "json_path": "rows/26",
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "experiments/p5c_gate.py",
@@ -1732,7 +1865,7 @@
           "experiments/p5d_gate.py"
         ]
       ],
-      "json_path": "rows/26",
+      "json_path": "rows/27",
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "experiments/p5d_gate.py",
@@ -1754,7 +1887,7 @@
           "p5_gate.py"
         ]
       ],
-      "json_path": "rows/27",
+      "json_path": "rows/28",
       "pair_count": 2,
       "verdict": "ambiguous_pairing",
       "candidates": [
@@ -1773,7 +1906,7 @@
           "experiments/p6_gate.py"
         ]
       ],
-      "json_path": "rows/28",
+      "json_path": "rows/29",
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "experiments/p6_gate.py",
@@ -1791,7 +1924,7 @@
           "experiments/p7_gate.py"
         ]
       ],
-      "json_path": "rows/29",
+      "json_path": "rows/30",
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "experiments/p7_gate.py",
@@ -1809,7 +1942,7 @@
           "experiments/p8_gate.py"
         ]
       ],
-      "json_path": "rows/30",
+      "json_path": "rows/31",
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "experiments/p8_gate.py",
@@ -1831,7 +1964,7 @@
           "p9_gate.py"
         ]
       ],
-      "json_path": "rows/31",
+      "json_path": "rows/32",
       "pair_count": 2,
       "verdict": "ambiguous_pairing",
       "candidates": [
@@ -1854,7 +1987,7 @@
           "l01_gate.py"
         ]
       ],
-      "json_path": "rows/32",
+      "json_path": "rows/33",
       "pair_count": 2,
       "verdict": "ambiguous_pairing",
       "candidates": [
@@ -1873,7 +2006,7 @@
           "literature/l02_gate.py"
         ]
       ],
-      "json_path": "rows/33",
+      "json_path": "rows/34",
       "pair_count": 1,
       "object_namespace": "repo",
       "object": "literature/l02_gate.py",
@@ -1895,7 +2028,7 @@
           "l03_gate.py"
         ]
       ],
-      "json_path": "rows/34",
+      "json_path": "rows/35",
       "pair_count": 2,
       "verdict": "ambiguous_pairing",
       "candidates": [
@@ -2037,7 +2170,7 @@
     {
       "pinner": "governance/section_page_reconciliation_v1.json",
       "key": "page_sha256",
-      "hash": "2e92f4ec4ba1444861f5b6f69d16143c66a5f3d6c67fff9657b235767c223231",
+      "hash": "b64ad6f63ddc5c8b299302e48f43d4d1b5b646a4994334998ab9e31508e9a763",
       "pair": [],
       "json_path": "pages/13",
       "pair_count": 0,
@@ -2791,6 +2924,24 @@
     {
       "pinner": "governance/suite_score_registry_v1.json",
       "key": "sha256",
+      "hash": "ada076c32b05042de4e68a438abeca08e73a9513555f394b883a35f310560efb",
+      "pair": [
+        [
+          "file",
+          "experiments/p31_gate.py"
+        ]
+      ],
+      "json_path": "live/p31_gate.py",
+      "pair_count": 1,
+      "object_namespace": "repo",
+      "object": "experiments/p31_gate.py",
+      "bytes_match": true,
+      "verdict": "renewable_governance_pin",
+      "visibility": null
+    },
+    {
+      "pinner": "governance/suite_score_registry_v1.json",
+      "key": "sha256",
       "hash": "0dea02e14745c57f000373858b5de46f43eb74a88593347f602c6b0a60e0577d",
       "pair": [
         [
@@ -3331,7 +3482,7 @@
     {
       "pinner": "governance/wiki_sync_map_v1.json",
       "key": "draft_sha256",
-      "hash": "7d94dbfd2b9f89bd37b667018fca4fa8d9245371c9b1ab52953da247c8d23367",
+      "hash": "8b59f004ea72c4de04d754acab681730298259cd4e36836b2d57a6fadc973ea5",
       "pair": [
         [
           "draft",
@@ -3619,7 +3770,7 @@
     {
       "pinner": "governance/wiki_sync_map_v1.json",
       "key": "sha256",
-      "hash": "4986337ed77a807f55ac0c82d8ab133d0d0ed3e70c8208ac935f356b0c850a01",
+      "hash": "777609030ae376a0b51799649a513c7f2a110bb729b2811478ac15f4851ef128",
       "pair": [
         [
           "file",
@@ -3655,7 +3806,7 @@
     {
       "pinner": "governance/wiki_sync_map_v1.json",
       "key": "sha256",
-      "hash": "7d7373fe20fccc6a1db47fb26e5101a21da7377587b4fa0172bf64d6f6b1d8ad",
+      "hash": "488d6e75492f5d807bb04282b82313e64f1a7ceef266a945b80899a09d60732d",
       "pair": [
         [
           "file",

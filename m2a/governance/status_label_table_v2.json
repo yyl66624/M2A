@@ -561,6 +561,26 @@
    "layer": "artifact-field"
   },
   {
+   "artifact": "experiments/phase31_results.json",
+   "field": "exit",
+   "raw": "RANK20_C_NOT_BETTER",
+   "label": "INDETERMINATE",
+   "why": "Phase XXXI: rank-based 20% policy passed C2 but the contrast CI included zero",
+   "via": "RANK20_C_NOT_BETTER",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase31_results.json",
+   "field": "label_r17",
+   "raw": "INDETERMINATE",
+   "label": "INDETERMINATE",
+   "why": "already canonical - this artifact field literally carries a rule-7 label",
+   "via": "INDETERMINATE",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
    "artifact": "experiments/phase3_results.json",
    "field": "verdicts[L1]",
    "raw": "SUPPORTED",
@@ -1066,6 +1086,14 @@
    "layer": "document-only"
   },
   {
+   "artifact": "experiments/PHASE31_RESULTS.md",
+   "field": "prose",
+   "raw": "INDETERMINATE",
+   "label": "INDETERMINATE",
+   "why": "already canonical - this artifact field literally carries a rule-7 label",
+   "layer": "document-only"
+  },
+  {
    "artifact": "experiments/PHASE3_RESULTS.md",
    "field": "prose",
    "raw": "SUPPORTED",
@@ -1174,13 +1202,13 @@
   "SUPPORTED": 51,
   "CONTRADICTED": 22,
   "NULL": 1,
-  "INDETERMINATE": 17,
+  "INDETERMINATE": 20,
   "NOT_IDENTIFIED": 17,
   "MANUAL_REVIEW": 0,
   "ZERO_TEST_REANALYSIS": 2,
   "COUNT_NOT_STATUS": 6,
   "_derived_rows": 2,
-  "_rows_total": 118
+  "_rows_total": 121
  },
  "rules": {
   "SUPPORTED": {
@@ -1246,6 +1274,10 @@
   "FIXED20_CALIBRATION_FAILED": {
    "label": "NOT_IDENTIFIED",
    "why": "Phase XXX: the 20% probability threshold fell on a large atom; no abstention set"
+  },
+  "RANK20_C_NOT_BETTER": {
+   "label": "INDETERMINATE",
+   "why": "Phase XXXI: rank-based 20% policy passed C2 but the contrast CI included zero"
   },
   "REFUTED": {
    "label": "CONTRADICTED",
@@ -1330,15 +1362,15 @@
    "prose_only": 1
   },
   "INDETERMINATE": {
-   "artifact_fields": 15,
-   "prose_only": 2
+   "artifact_fields": 17,
+   "prose_only": 3
   },
   "NOT_IDENTIFIED": {
    "artifact_fields": 10,
    "prose_only": 7
   }
  },
- "artifact_field_rows": 88,
- "prose_rows": 30,
+ "artifact_field_rows": 90,
+ "prose_rows": 31,
  "reading": "one row per claim-bearing field, not per round; MANUAL_REVIEW rows are listed with the reason they cannot be translated mechanically"
 }

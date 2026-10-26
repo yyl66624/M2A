@@ -1,12 +1,12 @@
 {
  "schema": "m2a.result-score-reconciliation.v1",
  "counts": {
-  "docs": 35,
+  "docs": 36,
   "aligned": 25,
-  "static_gap_registered": 10,
+  "static_gap_registered": 11,
   "bad": 0,
   "no_claim": 0,
-  "checks_printed": 307,
+  "checks_printed": 319,
   "check_sites_static": 199,
   "static_sites_in_population": 191
  },
@@ -386,6 +386,23 @@
    "verdict": "other_harness"
   },
   {
+   "doc": "experiments/PHASE31_RESULTS.md",
+   "gate": "experiments/p31_gate.py",
+   "named_gate": null,
+   "claim_line": 4,
+   "claim": [
+    12,
+    12
+   ],
+   "live": [
+    12,
+    12
+   ],
+   "static_sites": 0,
+   "gate_sha256": "ada076c32b05042de4e68a438abeca08e73a9513555f394b883a35f310560efb",
+   "verdict": "other_harness"
+  },
+  {
    "doc": "experiments/PHASE3_RESULTS.md",
    "gate": "experiments/p3_gate.py",
    "named_gate": null,
@@ -620,6 +637,10 @@
   "l02_gate.py": {
    "kind": "other_harness",
    "why": "L-02 的门控与 `l01_gate.py` 同一族：它用自己的 `report()` 记录判定并把条数钉在 `RULES` 常量上，`check()` 站点为 0，静态普查与打印的 `n/n` 不可比。它与打印数的唯一区别是判定条数由登记表决定，而不是由出现过几次 `check()` 决定。"
+  },
+  "p31_gate.py": {
+   "kind": "other_harness",
+   "why": "Phase XXXI 的门控用自带的 report() 记录判定，check() 站点为 0；静态站点数与打印的 n/n 不可比。"
   },
   "p30_gate.py": {
    "kind": "other_harness",

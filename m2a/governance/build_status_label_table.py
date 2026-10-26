@@ -41,6 +41,7 @@ RULES = {
     "GBDT_CALIBRATION_FAILED": ("NOT_IDENTIFIED", "Phase XXVIII: GBDT isotonic calibration degenerated to take-all"),
     "PLATT_GBDT_CALIBRATION_FAILED": ("NOT_IDENTIFIED", "Phase XXIX: Platt fixed log-loss but the median threshold still took all rows"),
     "FIXED20_CALIBRATION_FAILED": ("NOT_IDENTIFIED", "Phase XXX: the 20% probability threshold fell on a large atom; no abstention set"),
+    "RANK20_C_NOT_BETTER": ("INDETERMINATE", "Phase XXXI: rank-based 20% policy passed C2 but the contrast CI included zero"),
     "REFUTED": ("CONTRADICTED", "arm verdict used verbatim from Phase V/VI"),
     "O-REFUTED": ("CONTRADICTED", "Phase VI outcome string for the same judgement"),
     "UNSATISFIABLE": ("CONTRADICTED", "Phase XIX E3: the registered necessary condition cannot be met"),

@@ -2,8 +2,8 @@
 
 问题：散文写下的判定标签，能不能被它所说那一轮的工件推翻？（GOVERNANCE_ARTIFACT，不跑实验、不改任何轮次判定）
 
-翻译权威：`governance/build_status_label_table.py` 的注册映射（源码 SHA-256 `6c504fe14f0031d8`，登记 33 个词）；本表不重新定义任何翻译。
-生成本表的推导器源码 SHA-256：`2e1409e1b3c2b5ff`；工件文件 58 份，注册轮次数 30，标签词表 55 个，语料文档 68 份，产出主张行 844 行（文档 60 份）。
+翻译权威：`governance/build_status_label_table.py` 的注册映射（源码 SHA-256 `4bfe739d069ed244`，登记 34 个词）；本表不重新定义任何翻译。
+生成本表的推导器源码 SHA-256：`2e1409e1b3c2b5ff`；工件文件 59 份，注册轮次数 31，标签词表 56 个，语料文档 69 份，产出主张行 850 行（文档 61 份）。
 
 | 判定 | 条数 |
 |---|---|
@@ -16,11 +16,11 @@
 | `not_a_round_verdict` | 0 |
 | `attested_in_other_round` | 0 |
 | `anchor_without_recorded_label` | 3 |
-| `label_mention_without_predication` | 265 |
+| `label_mention_without_predication` | 268 |
 | `cross_round_refutation` | 0 |
 | `paired_correction` | 0 |
-| `label_without_anchor` | 509 |
-| `matches_artifact` | 65 |
+| `label_without_anchor` | 511 |
+| `matches_artifact` | 66 |
 | **硬伤合计** | **1** |
 
 硬伤逐条（只列本层判据认定的，不解释成对旧轮的重判）：
