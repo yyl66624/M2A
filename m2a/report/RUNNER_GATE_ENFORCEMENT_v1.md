@@ -8,7 +8,7 @@
 * **拒绝真的会停**：针对返回码的 `if` 守卫，其体内有 `return <非零>` / `sys.exit` / `raise`——注意守卫可以隔一层（Phase XIV 的 `run_gate()` 自己返回 rc，真正的拒绝在调用处）；
 * **写盘在守卫之后**：所有工件写入的行号都晚于守卫，于是门控红了也不会留下 results 文件。
 
-人口：**37 个工件写入者**，写 **37 个**已提交 JSON。判定：**enforced 33**、其它 0、登记在册的无门控 4。
+人口：**38 个工件写入者**，写 **38 个**已提交 JSON。判定：**enforced 34**、其它 0、登记在册的无门控 4。
 
 ## 2 逐行结果
 
@@ -39,6 +39,7 @@
 | `experiments/run_phase28.py` | p28_gate.py@269 | 270（停） | phase28_results.json@285 | `enforced` |
 | `experiments/run_phase29.py` | p29_gate.py@175 | 176（停） | phase29_results.json@192 | `enforced` |
 | `experiments/run_phase3.py` | p3_gate.py@116 | 118（停） | phase3_results.json@127 | `enforced` |
+| `experiments/run_phase30.py` | p30_gate.py@183 | 184（停） | phase30_results.json@200 | `enforced` |
 | `experiments/run_phase4.py` | p4_gate.py@101 | 103（停） | phase4_results.json@112 | `enforced` |
 | `experiments/run_phase5.py` | p5_gate.py@190 | 192（停） | phase5_results.json@207 | `enforced` |
 | `experiments/run_phase5b.py` | p5b_gate.py@28 | 30（停） | phase5b_results.json@85 | `enforced` |

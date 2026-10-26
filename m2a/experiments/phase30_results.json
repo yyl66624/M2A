@@ -1,0 +1,90 @@
+{
+  "bootstrap": {
+    "buckets": 1000,
+    "resamples": 2000,
+    "seed": 20261027
+  },
+  "criteria": {
+    "C1_delta_c": true,
+    "C2_policy": false,
+    "C3_contrast": false,
+    "C4_contract": true
+  },
+  "dataset": {
+    "bytes": 412931917,
+    "file": "/media/leonyao/新加卷/workshop/_m2a_data/open_bandit_dataset.zip",
+    "hash_ok": true,
+    "sha256": "e8ec18196582a5937381a1776382ca940689b90a18d2dcd1fb635be6df614d78"
+  },
+  "elapsed_sec": 14.918709754943848,
+  "estimates": {
+    "auc": 0.5842247511447634,
+    "base_log_loss": 0.023791729901024978,
+    "c_skip_n": 0,
+    "c_take_clicks": 1480,
+    "c_take_n": 412299,
+    "contrast": 0.0001878466192752207,
+    "contrast_ci95": [
+      -0.0007645259938837922,
+      0.00024373487792068733
+    ],
+    "delta_c": 0.0035896279156631475,
+    "delta_c_ci95": [
+      0.0015290519877675841,
+      0.003941513032422123
+    ],
+    "delta_s": 0.0034017812963879268,
+    "delta_s_ci95": [
+      0.0022935779816513763,
+      0.0036977781545014356
+    ],
+    "log_loss": 0.023687188151726716,
+    "s_take_clicks": 935,
+    "s_take_n": 274856,
+    "take_rate": 1.0,
+    "test_click_rate": 0.0035896279156631475,
+    "test_rows": 412299,
+    "threshold": 0.0027509223086425705
+  },
+  "exit": "FIXED20_CALIBRATION_FAILED",
+  "label_r17": "NOT_IDENTIFIED",
+  "no_online_intervention": true,
+  "policy": {
+    "abstain_rate": 0.2,
+    "take_rule": "p >= threshold",
+    "threshold": "20th percentile of calibrated p",
+    "zero_refit": true,
+    "zero_training": true
+  },
+  "prereg_binding": {
+    "disk_sha256": "b8dec604054e1cdba1465d876bf6ae6118d430c4cd16585e4571cc4292d78c24",
+    "git_head_sha256": "b8dec604054e1cdba1465d876bf6ae6118d430c4cd16585e4571cc4292d78c24",
+    "path": "m2a/experiments/PHASE30_PREREGISTRATION.md",
+    "two_channel_match": true
+  },
+  "prereg_sha256": "b8dec604054e1cdba1465d876bf6ae6118d430c4cd16585e4571cc4292d78c24",
+  "preregistration": "experiments/PHASE30_PREREGISTRATION.md",
+  "scan": {
+    "click_violations": 0,
+    "first_timestamp": "2019-11-24 00:00:00.007365+00:00",
+    "last_timestamp": "2019-11-30 23:59:59.408889+00:00",
+    "position_violations": 0,
+    "timestamp_violations": 0,
+    "total_rows": 1374327
+  },
+  "schema": "m2a.phase30.v1",
+  "sources": {
+    "calibration": {
+      "a": 0.08556797386692835,
+      "b": -5.696329563076636,
+      "file": "experiments/phase29_results.json",
+      "kind": "Platt",
+      "sha256": "6eebc2cec84b5169b2023422a326acace3c9e7867dbb8c2e6bd032473d5ba2a7"
+    },
+    "model": {
+      "file": "experiments/phase28_results.json",
+      "sha256": "ab31800636fcc92f9a7c94b88090f3646e1a04be540838e924850e5b96f9d63d",
+      "stumps": 100
+    }
+  }
+}

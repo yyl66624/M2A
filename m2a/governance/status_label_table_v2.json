@@ -541,6 +541,26 @@
    "layer": "artifact-field"
   },
   {
+   "artifact": "experiments/phase30_results.json",
+   "field": "exit",
+   "raw": "FIXED20_CALIBRATION_FAILED",
+   "label": "NOT_IDENTIFIED",
+   "why": "Phase XXX: the 20% probability threshold fell on a large atom; no abstention set",
+   "via": "FIXED20_CALIBRATION_FAILED",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
+   "artifact": "experiments/phase30_results.json",
+   "field": "label_r17",
+   "raw": "NOT_IDENTIFIED",
+   "label": "NOT_IDENTIFIED",
+   "why": "already canonical - this artifact field literally carries a rule-7 label",
+   "via": "NOT_IDENTIFIED",
+   "unmatched_tokens": [],
+   "layer": "artifact-field"
+  },
+  {
    "artifact": "experiments/phase3_results.json",
    "field": "verdicts[L1]",
    "raw": "SUPPORTED",
@@ -1038,6 +1058,14 @@
    "layer": "document-only"
   },
   {
+   "artifact": "experiments/PHASE30_RESULTS.md",
+   "field": "prose",
+   "raw": "NOT_IDENTIFIED",
+   "label": "NOT_IDENTIFIED",
+   "why": "already canonical - this artifact field literally carries a rule-7 label",
+   "layer": "document-only"
+  },
+  {
    "artifact": "experiments/PHASE3_RESULTS.md",
    "field": "prose",
    "raw": "SUPPORTED",
@@ -1147,12 +1175,12 @@
   "CONTRADICTED": 22,
   "NULL": 1,
   "INDETERMINATE": 17,
-  "NOT_IDENTIFIED": 14,
+  "NOT_IDENTIFIED": 17,
   "MANUAL_REVIEW": 0,
   "ZERO_TEST_REANALYSIS": 2,
   "COUNT_NOT_STATUS": 6,
   "_derived_rows": 2,
-  "_rows_total": 115
+  "_rows_total": 118
  },
  "rules": {
   "SUPPORTED": {
@@ -1214,6 +1242,10 @@
   "PLATT_GBDT_CALIBRATION_FAILED": {
    "label": "NOT_IDENTIFIED",
    "why": "Phase XXIX: Platt fixed log-loss but the median threshold still took all rows"
+  },
+  "FIXED20_CALIBRATION_FAILED": {
+   "label": "NOT_IDENTIFIED",
+   "why": "Phase XXX: the 20% probability threshold fell on a large atom; no abstention set"
   },
   "REFUTED": {
    "label": "CONTRADICTED",
@@ -1302,11 +1334,11 @@
    "prose_only": 2
   },
   "NOT_IDENTIFIED": {
-   "artifact_fields": 8,
-   "prose_only": 6
+   "artifact_fields": 10,
+   "prose_only": 7
   }
  },
- "artifact_field_rows": 86,
- "prose_rows": 29,
+ "artifact_field_rows": 88,
+ "prose_rows": 30,
  "reading": "one row per claim-bearing field, not per round; MANUAL_REVIEW rows are listed with the reason they cannot be translated mechanically"
 }

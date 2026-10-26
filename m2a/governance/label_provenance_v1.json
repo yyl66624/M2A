@@ -10,8 +10,8 @@
   ],
   "translation_authority": {
     "module": "governance/build_status_label_table.py",
-    "sha256": "bf270848083f6d781af71654bc731d29a776884d91b1f3d06afcc88fd2ee699a",
-    "rules_tokens": 32
+    "sha256": "6c504fe14f0031d8ae0322c8493a48dfb782037fd3a4af053890cdcead57ddff",
+    "rules_tokens": 33
   },
   "label_keys": [
     "verdict",
@@ -71,17 +71,17 @@
     "not_a_round_verdict": 0,
     "attested_in_other_round": 0,
     "anchor_without_recorded_label": 3,
-    "label_mention_without_predication": 262,
+    "label_mention_without_predication": 265,
     "cross_round_refutation": 0,
-    "label_without_anchor": 506,
-    "matches_artifact": 64,
+    "label_without_anchor": 509,
+    "matches_artifact": 65,
     "hard_findings": 1,
     "paired_corrections": 0,
-    "claim_documents": 59,
-    "corpus_documents": 67,
-    "artifact_files": 57,
-    "vocabulary_tokens": 54,
-    "registered_phases": 29
+    "claim_documents": 60,
+    "corpus_documents": 68,
+    "artifact_files": 58,
+    "vocabulary_tokens": 55,
+    "registered_phases": 30
   },
   "artifact_labels": {
     "experiments/p5_v1_posthoc.json": {
@@ -280,6 +280,15 @@
       ],
       "raw": [
         "SUPPORTED"
+      ]
+    },
+    "experiments/phase30_results.json": {
+      "five": [
+        "NOT_IDENTIFIED"
+      ],
+      "raw": [
+        "FIXED20_CALIBRATION_FAILED",
+        "NOT_IDENTIFIED"
       ]
     },
     "experiments/phase3_results.json": {
@@ -915,7 +924,45 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 173,
+      "line": 99,
+      "labels": [
+        "FIXED20_CALIBRATION_FAILED",
+        "NOT_IDENTIFIED"
+      ],
+      "excerpt": "**§5 I1 修入九（2026-10-23，Phase XXX 固定 20% 弃权；只追加不回写）**。零训练/零重校准，按 20% 分位阈值 `p < τ` 跳过：`τ=0.002751` 落在大原子上，take 412 299/412 299（`take_rate=1.0`），`c_skip=0`；C2 不过；`",
+      "line_len": 324,
+      "anchors": [
+        "30"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "NOT_IDENTIFIED"
+      ],
+      "artifact_raw": [
+        "FIXED20_CALIBRATION_FAILED",
+        "NOT_IDENTIFIED"
+      ],
+      "predicated": true,
+      "attested_labels": [
+        "FIXED20_CALIBRATION_FAILED"
+      ],
+      "per_label": [
+        [
+          "FIXED20_CALIBRATION_FAILED",
+          "matches_artifact"
+        ],
+        [
+          "NOT_IDENTIFIED",
+          "label_mention_without_predication"
+        ]
+      ],
+      "errata": [],
+      "verdict": "matches_artifact"
+    },
+    {
+      "document": "M2A_FINAL_REPORT.md",
+      "kind": "append_only",
+      "line": 175,
       "labels": [
         "J_NOT_DECISIVE"
       ],
@@ -947,7 +994,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 174,
+      "line": 176,
       "labels": [
         "SUPPORTED"
       ],
@@ -970,7 +1017,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 175,
+      "line": 177,
       "labels": [
         "SUPPORTED"
       ],
@@ -983,7 +1030,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 210,
+      "line": 212,
       "labels": [
         "J_NOT_DECISIVE"
       ],
@@ -996,7 +1043,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 211,
+      "line": 213,
       "labels": [
         "SUPPORTED"
       ],
@@ -1009,7 +1056,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 244,
+      "line": 246,
       "labels": [
         "REFUTED"
       ],
@@ -1022,7 +1069,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 256,
+      "line": 258,
       "labels": [
         "O-REFUTED"
       ],
@@ -1035,7 +1082,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 270,
+      "line": 272,
       "labels": [
         "J_NOT_DECISIVE"
       ],
@@ -1048,7 +1095,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 271,
+      "line": 273,
       "labels": [
         "CONFIRMED"
       ],
@@ -1061,7 +1108,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 289,
+      "line": 291,
       "labels": [
         "J_NOT_DECISIVE"
       ],
@@ -1074,7 +1121,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 295,
+      "line": 297,
       "labels": [
         "CONFIRMED"
       ],
@@ -1100,7 +1147,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 354,
+      "line": 356,
       "labels": [
         "NOT-MINUS-TWO"
       ],
@@ -1113,7 +1160,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 355,
+      "line": 357,
       "labels": [
         "REFUTED"
       ],
@@ -1138,7 +1185,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 385,
+      "line": 387,
       "labels": [
         "PASS"
       ],
@@ -1151,7 +1198,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 426,
+      "line": 428,
       "labels": [
         "NOT_EXPLAINED",
         "REFUTED",
@@ -1183,7 +1230,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 428,
+      "line": 430,
       "labels": [
         "J_NOT_DECISIVE"
       ],
@@ -1213,7 +1260,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 429,
+      "line": 431,
       "labels": [
         "CONFIRMED"
       ],
@@ -1243,7 +1290,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 430,
+      "line": 432,
       "labels": [
         "O-REFUTED",
         "REFUTED"
@@ -1283,7 +1330,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 431,
+      "line": 433,
       "labels": [
         "CONFIRMED"
       ],
@@ -1309,7 +1356,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 432,
+      "line": 434,
       "labels": [
         "NOT-MINUS-TWO"
       ],
@@ -1334,7 +1381,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 435,
+      "line": 437,
       "labels": [
         "CONFIRMED"
       ],
@@ -1359,7 +1406,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 436,
+      "line": 438,
       "labels": [
         "CONFIRMED"
       ],
@@ -1384,7 +1431,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 437,
+      "line": 439,
       "labels": [
         "CONFIRMED"
       ],
@@ -1409,7 +1456,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 440,
+      "line": 442,
       "labels": [
         "EXACT"
       ],
@@ -1434,7 +1481,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 442,
+      "line": 444,
       "labels": [
         "K-DEPENDENT-RESIDUAL"
       ],
@@ -1459,7 +1506,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 443,
+      "line": 445,
       "labels": [
         "NOT-THE-CULPRIT"
       ],
@@ -1482,7 +1529,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 444,
+      "line": 446,
       "labels": [
         "LAW-K-INVARIANT-UNDER-3LAYER"
       ],
@@ -1507,7 +1554,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 468,
+      "line": 470,
       "labels": [
         "O-REFUTED",
         "REFUTED",
@@ -1534,7 +1581,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 470,
+      "line": 472,
       "labels": [
         "O-REFUTED"
       ],
@@ -1547,7 +1594,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 471,
+      "line": 473,
       "labels": [
         "REFUTED"
       ],
@@ -1560,7 +1607,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 519,
+      "line": 521,
       "labels": [
         "CLOSED"
       ],
@@ -1573,7 +1620,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 523,
+      "line": 525,
       "labels": [
         "CONFIRMED"
       ],
@@ -1607,7 +1654,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 564,
+      "line": 566,
       "labels": [
         "CONFIRMED"
       ],
@@ -1641,7 +1688,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 591,
+      "line": 593,
       "labels": [
         "REFUTED"
       ],
@@ -1666,7 +1713,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 601,
+      "line": 603,
       "labels": [
         "CONFIRMED"
       ],
@@ -1700,7 +1747,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 639,
+      "line": 641,
       "labels": [
         "CONFIRMED"
       ],
@@ -1734,7 +1781,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 707,
+      "line": 709,
       "labels": [
         "RECONCILED"
       ],
@@ -1747,7 +1794,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 708,
+      "line": 710,
       "labels": [
         "CONFIRMED"
       ],
@@ -1760,7 +1807,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 724,
+      "line": 726,
       "labels": [
         "EXACT"
       ],
@@ -1794,7 +1841,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 808,
+      "line": 810,
       "labels": [
         "PASS"
       ],
@@ -1807,7 +1854,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 809,
+      "line": 811,
       "labels": [
         "PASS"
       ],
@@ -1820,7 +1867,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 847,
+      "line": 849,
       "labels": [
         "NOT-THE-CULPRIT"
       ],
@@ -1833,7 +1880,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 854,
+      "line": 856,
       "labels": [
         "LAW-K-INVARIANT-UNDER-3LAYER"
       ],
@@ -1858,7 +1905,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 877,
+      "line": 879,
       "labels": [
         "NOT_RESOLVABLE"
       ],
@@ -1883,7 +1930,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 885,
+      "line": 887,
       "labels": [
         "UNSATISFIABLE"
       ],
@@ -1915,7 +1962,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 908,
+      "line": 910,
       "labels": [
         "USABLE"
       ],
@@ -1947,7 +1994,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 951,
+      "line": 953,
       "labels": [
         "PREDICTED"
       ],
@@ -1981,7 +2028,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1006,
+      "line": 1008,
       "labels": [
         "QUALIFIED"
       ],
@@ -1994,7 +2041,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1012,
+      "line": 1014,
       "labels": [
         "INDETERMINATE"
       ],
@@ -2036,7 +2083,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1026,
+      "line": 1028,
       "labels": [
         "INDETERMINATE"
       ],
@@ -2049,7 +2096,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1027,
+      "line": 1029,
       "labels": [
         "INDETERMINATE"
       ],
@@ -2062,7 +2109,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1028,
+      "line": 1030,
       "labels": [
         "INDETERMINATE"
       ],
@@ -2075,7 +2122,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1029,
+      "line": 1031,
       "labels": [
         "INDETERMINATE"
       ],
@@ -2088,7 +2135,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1031,
+      "line": 1033,
       "labels": [
         "CONTRADICTED",
         "NULL",
@@ -2103,7 +2150,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1040,
+      "line": 1042,
       "labels": [
         "VERIFIED_THIRD_CHANNEL"
       ],
@@ -2136,7 +2183,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1052,
+      "line": 1054,
       "labels": [
         "QUALIFIED"
       ],
@@ -2169,7 +2216,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1104,
+      "line": 1106,
       "labels": [
         "IDENTITY_VERIFIED"
       ],
@@ -2182,7 +2229,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1105,
+      "line": 1107,
       "labels": [
         "QUALIFIED"
       ],
@@ -2215,7 +2262,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1126,
+      "line": 1128,
       "labels": [
         "CONTRADICTED",
         "INDETERMINATE",
@@ -2232,7 +2279,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1132,
+      "line": 1134,
       "labels": [
         "NOT_EXPLAINED",
         "QUALIFIED",
@@ -2248,7 +2295,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1133,
+      "line": 1135,
       "labels": [
         "NOT_RESOLVABLE",
         "UNSATISFIABLE"
@@ -2262,7 +2309,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1134,
+      "line": 1136,
       "labels": [
         "PARTIALLY_IDENTIFIED"
       ],
@@ -2275,7 +2322,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1145,
+      "line": 1147,
       "labels": [
         "SUPPORTED"
       ],
@@ -2288,7 +2335,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1146,
+      "line": 1148,
       "labels": [
         "CONTRADICTED"
       ],
@@ -2301,7 +2348,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1147,
+      "line": 1149,
       "labels": [
         "NULL"
       ],
@@ -2314,7 +2361,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1148,
+      "line": 1150,
       "labels": [
         "INDETERMINATE"
       ],
@@ -2327,7 +2374,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1149,
+      "line": 1151,
       "labels": [
         "NOT_IDENTIFIED"
       ],
@@ -2340,7 +2387,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1150,
+      "line": 1152,
       "labels": [
         "MANUAL_REVIEW"
       ],
@@ -2353,7 +2400,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1154,
+      "line": 1156,
       "labels": [
         "NOT_IDENTIFIED"
       ],
@@ -2366,7 +2413,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1155,
+      "line": 1157,
       "labels": [
         "NOT_RESOLVABLE",
         "PARTIALLY_IDENTIFIED"
@@ -2380,7 +2427,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1157,
+      "line": 1159,
       "labels": [
         "NOT_IDENTIFIED"
       ],
@@ -2393,7 +2440,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1160,
+      "line": 1162,
       "labels": [
         "NULL"
       ],
@@ -2426,7 +2473,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1161,
+      "line": 1163,
       "labels": [
         "CONTRADICTED",
         "NOT_OBTAINED"
@@ -2440,7 +2487,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1162,
+      "line": 1164,
       "labels": [
         "NOT_RESOLVABLE"
       ],
@@ -2453,7 +2500,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1163,
+      "line": 1165,
       "labels": [
         "NULL"
       ],
@@ -2466,7 +2513,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1166,
+      "line": 1168,
       "labels": [
         "INDETERMINATE"
       ],
@@ -2479,7 +2526,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1171,
+      "line": 1173,
       "labels": [
         "MANUAL_REVIEW"
       ],
@@ -2492,7 +2539,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1217,
+      "line": 1219,
       "labels": [
         "CLOSED",
         "OPEN"
@@ -2506,7 +2553,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1224,
+      "line": 1226,
       "labels": [
         "OPEN"
       ],
@@ -2519,7 +2566,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1225,
+      "line": 1227,
       "labels": [
         "OPEN"
       ],
@@ -2552,7 +2599,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1231,
+      "line": 1233,
       "labels": [
         "OPEN"
       ],
@@ -2565,7 +2612,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1237,
+      "line": 1239,
       "labels": [
         "OPEN"
       ],
@@ -2598,7 +2645,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1272,
+      "line": 1274,
       "labels": [
         "CONTRADICTED",
         "INDETERMINATE"
@@ -2612,7 +2659,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1273,
+      "line": 1275,
       "labels": [
         "INDETERMINATE"
       ],
@@ -2625,7 +2672,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1274,
+      "line": 1276,
       "labels": [
         "INDETERMINATE"
       ],
@@ -2638,7 +2685,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1276,
+      "line": 1278,
       "labels": [
         "INDETERMINATE"
       ],
@@ -2651,7 +2698,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1277,
+      "line": 1279,
       "labels": [
         "CONTRADICTED"
       ],
@@ -2693,7 +2740,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1278,
+      "line": 1280,
       "labels": [
         "INDETERMINATE"
       ],
@@ -2706,7 +2753,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1303,
+      "line": 1305,
       "labels": [
         "MANUAL_REVIEW"
       ],
@@ -2719,7 +2766,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1311,
+      "line": 1313,
       "labels": [
         "MANUAL_REVIEW"
       ],
@@ -2732,7 +2779,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1313,
+      "line": 1315,
       "labels": [
         "NOT-THE-CULPRIT"
       ],
@@ -2745,7 +2792,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1316,
+      "line": 1318,
       "labels": [
         "UNSATISFIABLE"
       ],
@@ -2758,7 +2805,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1319,
+      "line": 1321,
       "labels": [
         "MANUAL_REVIEW"
       ],
@@ -2771,7 +2818,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1322,
+      "line": 1324,
       "labels": [
         "GAP-IS-NOISE",
         "SUPPORTED"
@@ -2797,7 +2844,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1328,
+      "line": 1330,
       "labels": [
         "SUPPORTED"
       ],
@@ -2810,7 +2857,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1329,
+      "line": 1331,
       "labels": [
         "CONTRADICTED"
       ],
@@ -2823,7 +2870,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1330,
+      "line": 1332,
       "labels": [
         "NULL"
       ],
@@ -2836,7 +2883,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1331,
+      "line": 1333,
       "labels": [
         "INDETERMINATE"
       ],
@@ -2849,12 +2896,12 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1332,
+      "line": 1334,
       "labels": [
         "NOT_IDENTIFIED"
       ],
-      "excerpt": "| `NOT_IDENTIFIED` | 14 | 8 | 6 |",
-      "line_len": 33,
+      "excerpt": "| `NOT_IDENTIFIED` | 17 | 10 | 7 |",
+      "line_len": 34,
       "anchors": [],
       "phantom": [],
       "verdict": "label_without_anchor"
@@ -2862,7 +2909,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1334,
+      "line": 1336,
       "labels": [
         "COUNT_NOT_STATUS",
         "MANUAL_REVIEW",
@@ -2877,7 +2924,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1338,
+      "line": 1340,
       "labels": [
         "SUPPORTED"
       ],
@@ -2890,7 +2937,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1340,
+      "line": 1342,
       "labels": [
         "AO-SEPARATES",
         "MANUAL_REVIEW",
@@ -2934,7 +2981,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1342,
+      "line": 1344,
       "labels": [
         "MANUAL_REVIEW",
         "REGULARIZATION-DOES-NOT-REPAIR",
@@ -2979,7 +3026,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1344,
+      "line": 1346,
       "labels": [
         "NOT_IDENTIFIED",
         "NULL"
@@ -2993,7 +3040,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1345,
+      "line": 1347,
       "labels": [
         "NOT_IDENTIFIED",
         "NULL"
@@ -3007,7 +3054,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1349,
+      "line": 1351,
       "labels": [
         "NULL"
       ],
@@ -3020,7 +3067,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1350,
+      "line": 1352,
       "labels": [
         "NULL"
       ],
@@ -3033,7 +3080,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1352,
+      "line": 1354,
       "labels": [
         "NOT_OBTAINED"
       ],
@@ -3066,7 +3113,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1360,
+      "line": 1362,
       "labels": [
         "NULL"
       ],
@@ -3079,7 +3126,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1361,
+      "line": 1363,
       "labels": [
         "NULL"
       ],
@@ -3092,7 +3139,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1365,
+      "line": 1367,
       "labels": [
         "MANUAL_REVIEW"
       ],
@@ -3105,7 +3152,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1378,
+      "line": 1380,
       "labels": [
         "PARTIALLY_IDENTIFIED"
       ],
@@ -3118,7 +3165,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1385,
+      "line": 1387,
       "labels": [
         "PARTIALLY_IDENTIFIED"
       ],
@@ -3131,7 +3178,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1387,
+      "line": 1389,
       "labels": [
         "NULL"
       ],
@@ -3144,7 +3191,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1391,
+      "line": 1393,
       "labels": [
         "NOT_OBTAINED",
         "PARTIALLY_IDENTIFIED"
@@ -3158,7 +3205,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1393,
+      "line": 1395,
       "labels": [
         "NOT_OBTAINED",
         "PARTIALLY_IDENTIFIED"
@@ -3172,7 +3219,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1397,
+      "line": 1399,
       "labels": [
         "PARTIALLY_IDENTIFIED"
       ],
@@ -3185,7 +3232,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1403,
+      "line": 1405,
       "labels": [
         "OPEN"
       ],
@@ -3198,7 +3245,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1443,
+      "line": 1445,
       "labels": [
         "CONTRADICTED",
         "SUPPORTED"
@@ -3244,7 +3291,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1538,
+      "line": 1540,
       "labels": [
         "CLOSED",
         "OPEN"
@@ -3258,7 +3305,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1599,
+      "line": 1601,
       "labels": [
         "PASS"
       ],
@@ -3271,7 +3318,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1603,
+      "line": 1605,
       "labels": [
         "PASS"
       ],
@@ -3284,7 +3331,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1618,
+      "line": 1620,
       "labels": [
         "CLOSED",
         "OPEN"
@@ -3298,7 +3345,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 1636,
+      "line": 1638,
       "labels": [
         "PASS"
       ],
@@ -3311,7 +3358,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2010,
+      "line": 2014,
       "labels": [
         "CONTRADICTED",
         "INDETERMINATE",
@@ -3328,7 +3375,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2011,
+      "line": 2015,
       "labels": [
         "SUPPORTED"
       ],
@@ -3362,7 +3409,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2034,
+      "line": 2038,
       "labels": [
         "SUPPORTED"
       ],
@@ -3375,7 +3422,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2040,
+      "line": 2044,
       "labels": [
         "IDENTITY_VERIFIED",
         "PASS"
@@ -3408,7 +3455,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2041,
+      "line": 2045,
       "labels": [
         "COUNT_NOT_STATUS",
         "MANUAL_REVIEW"
@@ -3422,7 +3469,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2164,
+      "line": 2170,
       "labels": [
         "OPEN"
       ],
@@ -3435,7 +3482,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2264,
+      "line": 2272,
       "labels": [
         "CONTRADICTED"
       ],
@@ -3448,7 +3495,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2273,
+      "line": 2281,
       "labels": [
         "CLAIM_LAYER_INFLATION",
         "CONTRADICTED",
@@ -3485,7 +3532,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2274,
+      "line": 2282,
       "labels": [
         "COMPETING_CODED",
         "CONTRADICTED"
@@ -3521,7 +3568,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2275,
+      "line": 2283,
       "labels": [
         "PASS"
       ],
@@ -3534,7 +3581,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2283,
+      "line": 2291,
       "labels": [
         "INDETERMINATE"
       ],
@@ -3576,7 +3623,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2292,
+      "line": 2300,
       "labels": [
         "CONTRADICTED"
       ],
@@ -3589,7 +3636,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2311,
+      "line": 2319,
       "labels": [
         "CONTRADICTED"
       ],
@@ -3633,7 +3680,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2332,
+      "line": 2340,
       "labels": [
         "PASS"
       ],
@@ -3646,7 +3693,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2356,
+      "line": 2364,
       "labels": [
         "CLOSED",
         "OPEN"
@@ -3660,7 +3707,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2360,
+      "line": 2368,
       "labels": [
         "CLAIM_LAYER_INFLATION"
       ],
@@ -3695,7 +3742,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2626,
+      "line": 2634,
       "labels": [
         "FULLTEXT_REVISES",
         "INDETERMINATE"
@@ -3736,7 +3783,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2644,
+      "line": 2652,
       "labels": [
         "FULLTEXT_REVISES",
         "INDETERMINATE"
@@ -3763,7 +3810,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2645,
+      "line": 2653,
       "labels": [
         "CLOSED",
         "OPEN"
@@ -3801,7 +3848,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2649,
+      "line": 2657,
       "labels": [
         "CONFIRMED"
       ],
@@ -3814,7 +3861,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2654,
+      "line": 2662,
       "labels": [
         "REFUTED"
       ],
@@ -3827,7 +3874,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2689,
+      "line": 2697,
       "labels": [
         "REGULARIZATION-DOES-NOT-REPAIR",
         "SUPPORTED"
@@ -3867,7 +3914,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2724,
+      "line": 2732,
       "labels": [
         "OPEN"
       ],
@@ -3880,7 +3927,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2734,
+      "line": 2742,
       "labels": [
         "AO-SEPARATES",
         "CONTRADICTED",
@@ -3898,7 +3945,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2742,
+      "line": 2750,
       "labels": [
         "AO-SEPARATES",
         "SUPPORTED"
@@ -3937,7 +3984,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2744,
+      "line": 2752,
       "labels": [
         "AO-SEPARATES",
         "SUPPORTED"
@@ -3976,7 +4023,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2757,
+      "line": 2765,
       "labels": [
         "AO-SEPARATES",
         "SUPPORTED"
@@ -3990,7 +4037,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2772,
+      "line": 2780,
       "labels": [
         "NOT_STATED",
         "STATED"
@@ -4026,7 +4073,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2774,
+      "line": 2782,
       "labels": [
         "CLOSED",
         "OPEN",
@@ -4100,7 +4147,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2783,
+      "line": 2791,
       "labels": [
         "REFUTED",
         "REPRESENTATION_CODED"
@@ -4136,7 +4183,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2790,
+      "line": 2798,
       "labels": [
         "STATED"
       ],
@@ -4149,7 +4196,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2791,
+      "line": 2799,
       "labels": [
         "STATED"
       ],
@@ -4162,7 +4209,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2792,
+      "line": 2800,
       "labels": [
         "STATED"
       ],
@@ -4175,7 +4222,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2793,
+      "line": 2801,
       "labels": [
         "STATED"
       ],
@@ -4188,7 +4235,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2794,
+      "line": 2802,
       "labels": [
         "STATED"
       ],
@@ -4201,7 +4248,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2795,
+      "line": 2803,
       "labels": [
         "STATED"
       ],
@@ -4214,7 +4261,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2796,
+      "line": 2804,
       "labels": [
         "STATED"
       ],
@@ -4227,7 +4274,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2798,
+      "line": 2806,
       "labels": [
         "NOT_STATED"
       ],
@@ -4240,7 +4287,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2804,
+      "line": 2812,
       "labels": [
         "NOT_STATED"
       ],
@@ -4253,7 +4300,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2806,
+      "line": 2814,
       "labels": [
         "CLOSED",
         "OPEN"
@@ -4289,7 +4336,7 @@
     {
       "document": "M2A_FINAL_REPORT.md",
       "kind": "append_only",
-      "line": 2812,
+      "line": 2820,
       "labels": [
         "CLOSED",
         "OPEN"
@@ -5245,7 +5292,7 @@
       "labels": [
         "CLOSED"
       ],
-      "excerpt": "| P5-O2 | **CLOSED** | 11 | `M2A_FINAL_REPORT.md:291` | 关闭类措辞 | — |",
+      "excerpt": "| P5-O2 | **CLOSED** | 11 | `M2A_FINAL_REPORT.md:293` | 关闭类措辞 | — |",
       "line_len": 67,
       "anchors": [],
       "phantom": [],
@@ -5271,7 +5318,7 @@
       "labels": [
         "CLOSED"
       ],
-      "excerpt": "| P6-O1 | **CLOSED** | 13 | `M2A_FINAL_REPORT.md:336` | 关闭类措辞 | — |",
+      "excerpt": "| P6-O1 | **CLOSED** | 13 | `M2A_FINAL_REPORT.md:338` | 关闭类措辞 | — |",
       "line_len": 67,
       "anchors": [],
       "phantom": [],
@@ -5349,7 +5396,7 @@
       "labels": [
         "CLOSED"
       ],
-      "excerpt": "| P8-O1 | **CLOSED** | 27 | `M2A_FINAL_REPORT.md:564` | 关闭类措辞 | — |",
+      "excerpt": "| P8-O1 | **CLOSED** | 27 | `M2A_FINAL_REPORT.md:566` | 关闭类措辞 | — |",
       "line_len": 67,
       "anchors": [],
       "phantom": [],
@@ -5362,7 +5409,7 @@
       "labels": [
         "CLOSED"
       ],
-      "excerpt": "| P8-O2 | **CLOSED** | 15 | `M2A_FINAL_REPORT.md:564` | 关闭类措辞 | — |",
+      "excerpt": "| P8-O2 | **CLOSED** | 15 | `M2A_FINAL_REPORT.md:566` | 关闭类措辞 | — |",
       "line_len": 67,
       "anchors": [],
       "phantom": [],
@@ -5388,7 +5435,7 @@
       "labels": [
         "CLOSED"
       ],
-      "excerpt": "| P9-O1 | **CLOSED** | 15 | `M2A_FINAL_REPORT.md:601` | 关闭类措辞 | — |",
+      "excerpt": "| P9-O1 | **CLOSED** | 15 | `M2A_FINAL_REPORT.md:603` | 关闭类措辞 | — |",
       "line_len": 67,
       "anchors": [],
       "phantom": [],
@@ -5401,7 +5448,7 @@
       "labels": [
         "CLOSED"
       ],
-      "excerpt": "| P9-O2 | **CLOSED** | 10 | `M2A_FINAL_REPORT.md:601` | 关闭类措辞 | — |",
+      "excerpt": "| P9-O2 | **CLOSED** | 10 | `M2A_FINAL_REPORT.md:603` | 关闭类措辞 | — |",
       "line_len": 67,
       "anchors": [],
       "phantom": [],
@@ -5414,7 +5461,7 @@
       "labels": [
         "CLOSED"
       ],
-      "excerpt": "| P9-O3 | **CLOSED** | 6 | `M2A_FINAL_REPORT.md:627` | 关闭类措辞 | — |",
+      "excerpt": "| P9-O3 | **CLOSED** | 6 | `M2A_FINAL_REPORT.md:629` | 关闭类措辞 | — |",
       "line_len": 66,
       "anchors": [],
       "phantom": [],
@@ -5427,7 +5474,7 @@
       "labels": [
         "CLOSED"
       ],
-      "excerpt": "| P10-O1 | **CLOSED** | 16 | `M2A_FINAL_REPORT.md:639` | 关闭类措辞 | — |",
+      "excerpt": "| P10-O1 | **CLOSED** | 16 | `M2A_FINAL_REPORT.md:641` | 关闭类措辞 | — |",
       "line_len": 68,
       "anchors": [],
       "phantom": [],
@@ -5440,7 +5487,7 @@
       "labels": [
         "CLOSED"
       ],
-      "excerpt": "| P10-O2 | **CLOSED** | 9 | `M2A_FINAL_REPORT.md:639` | 关闭类措辞 | — |",
+      "excerpt": "| P10-O2 | **CLOSED** | 9 | `M2A_FINAL_REPORT.md:641` | 关闭类措辞 | — |",
       "line_len": 67,
       "anchors": [],
       "phantom": [],
@@ -5453,7 +5500,7 @@
       "labels": [
         "CLOSED"
       ],
-      "excerpt": "| P10-O3 | **CLOSED** | 5 | `M2A_FINAL_REPORT.md:633` | 关闭类措辞 | — |",
+      "excerpt": "| P10-O3 | **CLOSED** | 5 | `M2A_FINAL_REPORT.md:635` | 关闭类措辞 | — |",
       "line_len": 67,
       "anchors": [],
       "phantom": [],
@@ -5531,7 +5578,7 @@
       "labels": [
         "CLOSED"
       ],
-      "excerpt": "| P13-O2 | **CLOSED** | 31 | `M2A_FINAL_REPORT.md:764` | 关闭类措辞 | — |",
+      "excerpt": "| P13-O2 | **CLOSED** | 31 | `M2A_FINAL_REPORT.md:766` | 关闭类措辞 | — |",
       "line_len": 68,
       "anchors": [],
       "phantom": [],
@@ -5557,7 +5604,7 @@
       "labels": [
         "OPEN"
       ],
-      "excerpt": "| P15-O1 | **OPEN** | 10 | `M2A_FINAL_REPORT.md:881` | 开放类措辞 | — |",
+      "excerpt": "| P15-O1 | **OPEN** | 10 | `M2A_FINAL_REPORT.md:883` | 开放类措辞 | — |",
       "line_len": 66,
       "anchors": [],
       "phantom": [],
@@ -5570,7 +5617,7 @@
       "labels": [
         "CLOSED"
       ],
-      "excerpt": "| P16-O1 | **CLOSED** | 11 | `M2A_FINAL_REPORT.md:832` | 执行/沿用类措辞 | — |",
+      "excerpt": "| P16-O1 | **CLOSED** | 11 | `M2A_FINAL_REPORT.md:834` | 执行/沿用类措辞 | — |",
       "line_len": 71,
       "anchors": [],
       "phantom": [],
@@ -5635,7 +5682,7 @@
       "labels": [
         "CLOSED"
       ],
-      "excerpt": "| P22-O1 | **CLOSED** | 10 | `M2A_FINAL_REPORT.md:971` | 关闭类措辞 | — |",
+      "excerpt": "| P22-O1 | **CLOSED** | 10 | `M2A_FINAL_REPORT.md:973` | 关闭类措辞 | — |",
       "line_len": 68,
       "anchors": [],
       "phantom": [],
@@ -6415,7 +6462,7 @@
     {
       "document": "report/RUNNER_GATE_ENFORCEMENT_v1.md",
       "kind": "derived_summary",
-      "line": 60,
+      "line": 61,
       "labels": [
         "ZERO_TEST_REANALYSIS"
       ],
@@ -10176,19 +10223,21 @@
       "kind": "derived_summary",
       "line": 71,
       "labels": [
-        "SUPPORTED"
+        "FIXED20_CALIBRATION_FAILED",
+        "NOT_IDENTIFIED"
       ],
-      "excerpt": "| `experiments/phase3_results.json` | `verdicts[L1]` | `SUPPORTED` | **SUPPORTED** | artifact-field | 02/05-era arm verdict: the registered criterion was met |",
-      "line_len": 159,
+      "excerpt": "| `experiments/phase30_results.json` | `exit` | `FIXED20_CALIBRATION_FAILED` | **NOT_IDENTIFIED** | artifact-field | Phase XXX: the 20% probability threshold fe",
+      "line_len": 199,
       "anchors": [
-        "3"
+        "30"
       ],
       "phantom": [],
       "allowed_five": [
-        "SUPPORTED"
+        "NOT_IDENTIFIED"
       ],
       "artifact_raw": [
-        "SUPPORTED"
+        "FIXED20_CALIBRATION_FAILED",
+        "NOT_IDENTIFIED"
       ],
       "predicated": false,
       "attested_labels": [],
@@ -10199,19 +10248,20 @@
       "kind": "derived_summary",
       "line": 72,
       "labels": [
-        "SUPPORTED"
+        "NOT_IDENTIFIED"
       ],
-      "excerpt": "| `experiments/phase3_results.json` | `verdicts[L2]` | `SUPPORTED` | **SUPPORTED** | artifact-field | 02/05-era arm verdict: the registered criterion was met |",
-      "line_len": 159,
+      "excerpt": "| `experiments/phase30_results.json` | `label_r17` | `NOT_IDENTIFIED` | **NOT_IDENTIFIED** | artifact-field | already canonical - this artifact field literally ",
+      "line_len": 184,
       "anchors": [
-        "3"
+        "30"
       ],
       "phantom": [],
       "allowed_five": [
-        "SUPPORTED"
+        "NOT_IDENTIFIED"
       ],
       "artifact_raw": [
-        "SUPPORTED"
+        "FIXED20_CALIBRATION_FAILED",
+        "NOT_IDENTIFIED"
       ],
       "predicated": false,
       "attested_labels": [],
@@ -10224,7 +10274,7 @@
       "labels": [
         "SUPPORTED"
       ],
-      "excerpt": "| `experiments/phase3_results.json` | `verdicts[L3]` | `SUPPORTED` | **SUPPORTED** | artifact-field | 02/05-era arm verdict: the registered criterion was met |",
+      "excerpt": "| `experiments/phase3_results.json` | `verdicts[L1]` | `SUPPORTED` | **SUPPORTED** | artifact-field | 02/05-era arm verdict: the registered criterion was met |",
       "line_len": 159,
       "anchors": [
         "3"
@@ -10247,6 +10297,52 @@
       "labels": [
         "SUPPORTED"
       ],
+      "excerpt": "| `experiments/phase3_results.json` | `verdicts[L2]` | `SUPPORTED` | **SUPPORTED** | artifact-field | 02/05-era arm verdict: the registered criterion was met |",
+      "line_len": 159,
+      "anchors": [
+        "3"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "SUPPORTED"
+      ],
+      "artifact_raw": [
+        "SUPPORTED"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
+    },
+    {
+      "document": "report/STATUS_LABEL_TABLE_v2.md",
+      "kind": "derived_summary",
+      "line": 75,
+      "labels": [
+        "SUPPORTED"
+      ],
+      "excerpt": "| `experiments/phase3_results.json` | `verdicts[L3]` | `SUPPORTED` | **SUPPORTED** | artifact-field | 02/05-era arm verdict: the registered criterion was met |",
+      "line_len": 159,
+      "anchors": [
+        "3"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "SUPPORTED"
+      ],
+      "artifact_raw": [
+        "SUPPORTED"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
+    },
+    {
+      "document": "report/STATUS_LABEL_TABLE_v2.md",
+      "kind": "derived_summary",
+      "line": 76,
+      "labels": [
+        "SUPPORTED"
+      ],
       "excerpt": "| `experiments/phase4_results.json` | `verdicts[L1]` | `SUPPORTED` | **SUPPORTED** | artifact-field | 02/05-era arm verdict: the registered criterion was met |",
       "line_len": 159,
       "anchors": [
@@ -10266,7 +10362,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 75,
+      "line": 77,
       "labels": [
         "SUPPORTED"
       ],
@@ -10289,7 +10385,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 76,
+      "line": 78,
       "labels": [
         "SUPPORTED"
       ],
@@ -10312,7 +10408,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 77,
+      "line": 79,
       "labels": [
         "INDETERMINATE",
         "NOT_EXPLAINED"
@@ -10343,7 +10439,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 78,
+      "line": 80,
       "labels": [
         "SUPPORTED"
       ],
@@ -10373,7 +10469,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 79,
+      "line": 81,
       "labels": [
         "CONTRADICTED",
         "REFUTED"
@@ -10404,7 +10500,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 80,
+      "line": 82,
       "labels": [
         "SUPPORTED"
       ],
@@ -10434,7 +10530,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 81,
+      "line": 83,
       "labels": [
         "INDETERMINATE",
         "J_NOT_DECISIVE"
@@ -10465,7 +10561,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 82,
+      "line": 84,
       "labels": [
         "INDETERMINATE",
         "NOT_EXPLAINED"
@@ -10496,7 +10592,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 83,
+      "line": 85,
       "labels": [
         "INDETERMINATE",
         "J_NOT_DECISIVE"
@@ -10527,7 +10623,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 84,
+      "line": 86,
       "labels": [
         "CONFIRMED",
         "SUPPORTED"
@@ -10561,7 +10657,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 85,
+      "line": 87,
       "labels": [
         "CONTRADICTED",
         "O-REFUTED"
@@ -10587,7 +10683,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 86,
+      "line": 88,
       "labels": [
         "CONTRADICTED",
         "REFUTED"
@@ -10621,7 +10717,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 87,
+      "line": 89,
       "labels": [
         "CONFIRMED",
         "SUPPORTED"
@@ -10648,7 +10744,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 88,
+      "line": 90,
       "labels": [
         "SUPPORTED"
       ],
@@ -10674,7 +10770,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 89,
+      "line": 91,
       "labels": [
         "CONTRADICTED",
         "REFUTED"
@@ -10711,7 +10807,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 90,
+      "line": 92,
       "labels": [
         "CONTRADICTED",
         "NOT-MINUS-TWO"
@@ -10737,7 +10833,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 91,
+      "line": 93,
       "labels": [
         "CONTRADICTED",
         "QUALIFIED"
@@ -10763,7 +10859,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 92,
+      "line": 94,
       "labels": [
         "CONTRADICTED",
         "REFUTED"
@@ -10801,7 +10897,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 93,
+      "line": 95,
       "labels": [
         "CONFIRMED",
         "SUPPORTED"
@@ -10830,7 +10926,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 94,
+      "line": 96,
       "labels": [
         "SUPPORTED"
       ],
@@ -10855,7 +10951,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 95,
+      "line": 97,
       "labels": [
         "CLOSED",
         "ZERO_TEST_REANALYSIS"
@@ -10881,7 +10977,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 96,
+      "line": 98,
       "labels": [
         "CONTRADICTED",
         "O-REFUTED"
@@ -10907,7 +11003,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 97,
+      "line": 99,
       "labels": [
         "ZERO_TEST_REANALYSIS"
       ],
@@ -10932,7 +11028,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 98,
+      "line": 100,
       "labels": [
         "CONTRADICTED",
         "O-REFUTED"
@@ -10958,7 +11054,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 99,
+      "line": 101,
       "labels": [
         "INDETERMINATE"
       ],
@@ -10991,7 +11087,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 100,
+      "line": 102,
       "labels": [
         "INDETERMINATE"
       ],
@@ -11024,7 +11120,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 101,
+      "line": 103,
       "labels": [
         "INDETERMINATE"
       ],
@@ -11057,7 +11153,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 102,
+      "line": 104,
       "labels": [
         "INDETERMINATE"
       ],
@@ -11090,7 +11186,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 103,
+      "line": 105,
       "labels": [
         "INDETERMINATE"
       ],
@@ -11132,7 +11228,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 104,
+      "line": 106,
       "labels": [
         "INDETERMINATE"
       ],
@@ -11174,7 +11270,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 105,
+      "line": 107,
       "labels": [
         "INDETERMINATE"
       ],
@@ -11216,7 +11312,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 106,
+      "line": 108,
       "labels": [
         "SUPPORTED"
       ],
@@ -11229,7 +11325,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 107,
+      "line": 109,
       "labels": [
         "CONTRADICTED",
         "REFUTED"
@@ -11260,7 +11356,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 108,
+      "line": 110,
       "labels": [
         "SUPPORTED"
       ],
@@ -11273,7 +11369,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 109,
+      "line": 111,
       "labels": [
         "SUPPORTED"
       ],
@@ -11286,7 +11382,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 110,
+      "line": 112,
       "labels": [
         "CONTRADICTED",
         "REFUTED"
@@ -11317,7 +11413,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 111,
+      "line": 113,
       "labels": [
         "CONTRADICTED",
         "REFUTED"
@@ -11348,7 +11444,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 112,
+      "line": 114,
       "labels": [
         "NOT_IDENTIFIED",
         "NOT_RESOLVABLE"
@@ -11362,7 +11458,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 113,
+      "line": 115,
       "labels": [
         "NOT_IDENTIFIED",
         "NOT_RESOLVABLE"
@@ -11376,7 +11472,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 114,
+      "line": 116,
       "labels": [
         "SUPPORTED"
       ],
@@ -11389,7 +11485,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 115,
+      "line": 117,
       "labels": [
         "SUPPORTED"
       ],
@@ -11402,7 +11498,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 116,
+      "line": 118,
       "labels": [
         "INDETERMINATE"
       ],
@@ -11415,7 +11511,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 117,
+      "line": 119,
       "labels": [
         "NOT_IDENTIFIED"
       ],
@@ -11428,7 +11524,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 118,
+      "line": 120,
       "labels": [
         "NOT_IDENTIFIED"
       ],
@@ -11441,7 +11537,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 119,
+      "line": 121,
       "labels": [
         "NOT_IDENTIFIED"
       ],
@@ -11454,7 +11550,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 120,
+      "line": 122,
       "labels": [
         "NOT_IDENTIFIED"
       ],
@@ -11467,7 +11563,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 121,
+      "line": 123,
       "labels": [
         "SUPPORTED"
       ],
@@ -11480,7 +11576,20 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 122,
+      "line": 124,
+      "labels": [
+        "NOT_IDENTIFIED"
+      ],
+      "excerpt": "| `experiments/PHASE30_RESULTS.md` | `prose` | `NOT_IDENTIFIED` | **NOT_IDENTIFIED** | document-only | already canonical - this artifact field literally carries",
+      "line_len": 177,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "report/STATUS_LABEL_TABLE_v2.md",
+      "kind": "derived_summary",
+      "line": 125,
       "labels": [
         "SUPPORTED"
       ],
@@ -11493,7 +11602,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 123,
+      "line": 126,
       "labels": [
         "SUPPORTED"
       ],
@@ -11506,7 +11615,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 124,
+      "line": 127,
       "labels": [
         "SUPPORTED"
       ],
@@ -11519,7 +11628,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 125,
+      "line": 128,
       "labels": [
         "CONTRADICTED",
         "REFUTED"
@@ -11550,7 +11659,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 126,
+      "line": 129,
       "labels": [
         "SUPPORTED"
       ],
@@ -11563,7 +11672,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 127,
+      "line": 130,
       "labels": [
         "CONTRADICTED",
         "REFUTED"
@@ -11594,7 +11703,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 128,
+      "line": 131,
       "labels": [
         "CONTRADICTED",
         "REFUTED"
@@ -11625,7 +11734,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 129,
+      "line": 132,
       "labels": [
         "CONTRADICTED",
         "REFUTED"
@@ -11656,7 +11765,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 130,
+      "line": 133,
       "labels": [
         "SUPPORTED"
       ],
@@ -11669,7 +11778,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 131,
+      "line": 134,
       "labels": [
         "SUPPORTED"
       ],
@@ -11682,7 +11791,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 132,
+      "line": 135,
       "labels": [
         "CONTRADICTED"
       ],
@@ -11695,7 +11804,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 133,
+      "line": 136,
       "labels": [
         "NULL"
       ],
@@ -11708,7 +11817,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 134,
+      "line": 137,
       "labels": [
         "INDETERMINATE"
       ],
@@ -11721,7 +11830,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 143,
+      "line": 146,
       "labels": [
         "SUPPORTED"
       ],
@@ -11734,7 +11843,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 144,
+      "line": 147,
       "labels": [
         "CONTRADICTED"
       ],
@@ -11747,7 +11856,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 145,
+      "line": 148,
       "labels": [
         "NULL"
       ],
@@ -11760,7 +11869,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 146,
+      "line": 149,
       "labels": [
         "INDETERMINATE"
       ],
@@ -11773,12 +11882,12 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 147,
+      "line": 150,
       "labels": [
         "NOT_IDENTIFIED"
       ],
-      "excerpt": "| NOT_IDENTIFIED | 14 | 8 | 6 |",
-      "line_len": 31,
+      "excerpt": "| NOT_IDENTIFIED | 17 | 10 | 7 |",
+      "line_len": 32,
       "anchors": [],
       "phantom": [],
       "verdict": "label_without_anchor"
@@ -11786,7 +11895,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 148,
+      "line": 151,
       "labels": [
         "MANUAL_REVIEW"
       ],
@@ -11799,7 +11908,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 149,
+      "line": 152,
       "labels": [
         "ZERO_TEST_REANALYSIS"
       ],
@@ -11812,7 +11921,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 150,
+      "line": 153,
       "labels": [
         "COUNT_NOT_STATUS"
       ],
@@ -11825,7 +11934,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 158,
+      "line": 161,
       "labels": [
         "NOT_IDENTIFIED",
         "NOT_RESOLVABLE",
@@ -11841,7 +11950,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 159,
+      "line": 162,
       "labels": [
         "CONTRADICTED",
         "NOT_RESOLVABLE",
@@ -11856,7 +11965,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 162,
+      "line": 165,
       "labels": [
         "MANUAL_REVIEW"
       ],
@@ -11869,7 +11978,7 @@
     {
       "document": "report/STATUS_LABEL_TABLE_v2.md",
       "kind": "derived_summary",
-      "line": 167,
+      "line": 170,
       "labels": [
         "MANUAL_REVIEW"
       ],
@@ -13140,6 +13249,58 @@
       ],
       "excerpt": "| E2 | SUPPORTED | 可及性敏感度要求状态含可用性信息 | \"S_only 学不会\"（构造性）、线索信息无效（已撤回） |",
       "line_len": 69,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "experiments/PHASE30_RESULTS.md",
+      "kind": "run_record",
+      "line": 10,
+      "labels": [
+        "FIXED20_CALIBRATION_FAILED",
+        "NOT_IDENTIFIED"
+      ],
+      "excerpt": "wrote phase30_results.json | exit FIXED20_CALIBRATION_FAILED (NOT_IDENTIFIED) | S 0.003402 C 0.003590 contrast 0.000188 | auc 0.5842 ll 0.02369/0.02379 | take 1",
+      "line_len": 165,
+      "anchors": [
+        "30"
+      ],
+      "phantom": [],
+      "allowed_five": [
+        "NOT_IDENTIFIED"
+      ],
+      "artifact_raw": [
+        "FIXED20_CALIBRATION_FAILED",
+        "NOT_IDENTIFIED"
+      ],
+      "predicated": false,
+      "attested_labels": [],
+      "verdict": "label_mention_without_predication"
+    },
+    {
+      "document": "experiments/PHASE30_RESULTS.md",
+      "kind": "run_record",
+      "line": 17,
+      "labels": [
+        "FIXED20_CALIBRATION_FAILED",
+        "NOT_IDENTIFIED"
+      ],
+      "excerpt": "C2 因此不过，出口 **`FIXED20_CALIBRATION_FAILED` / `NOT_IDENTIFIED`**。",
+      "line_len": 63,
+      "anchors": [],
+      "phantom": [],
+      "verdict": "label_without_anchor"
+    },
+    {
+      "document": "experiments/PHASE30_RESULTS.md",
+      "kind": "run_record",
+      "line": 41,
+      "labels": [
+        "FIXED20_CALIBRATION_FAILED"
+      ],
+      "excerpt": "- 本轮的 log-loss/AUC 与 XXIX 相同（校准没问题），因此它不是校准失败；出口名 `FIXED20_CALIBRATION_FAILED` 是预注册的",
+      "line_len": 84,
       "anchors": [],
       "phantom": [],
       "verdict": "label_without_anchor"

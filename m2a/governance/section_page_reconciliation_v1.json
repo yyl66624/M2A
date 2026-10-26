@@ -19,7 +19,7 @@
     "hard_findings": 0,
     "instrument_claims_pages": 16,
     "instrument_claims_sections": 18,
-    "instruments_attested_in_repo": 33,
+    "instruments_attested_in_repo": 34,
     "instruments_missing_from_pages": [
       "frozen_input_map_gate.py",
       "l02_representation_gate.py",
@@ -690,13 +690,13 @@
       "multi_value": {},
       "node_token": "QuO5w9vGFiikp1kSKbgcrh1jnnb",
       "not_on_page": [],
-      "page_chars": 7738,
+      "page_chars": 7952,
       "page_claims": {
         "suite_score_registry_gate.py": [
           "20/20"
         ]
       },
-      "page_sha256": "6d752a97119e6fbd4097764e9f75c9c962b0d74952c1c3d9c6e020727394486a",
+      "page_sha256": "2e92f4ec4ba1444861f5b6f69d16143c66a5f3d6c67fff9657b235767c223231",
       "prose_slashes_ignored": {},
       "section_claims": {},
       "sections": [
@@ -1316,6 +1316,10 @@
       "8/8"
     ],
     "p29_gate.py": [
+      "12/12",
+      "8/8"
+    ],
+    "p30_gate.py": [
       "12/12",
       "8/8"
     ],

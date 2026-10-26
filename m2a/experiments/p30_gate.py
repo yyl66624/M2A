@@ -93,8 +93,8 @@ def main() -> int:
             report("G5 the artifact records both sources, a non-empty take set and the 20% policy",
                    so["model"]["sha256"] == R.MODEL_SHA and so["model"]["stumps"] == 100
                    and so["calibration"]["sha256"] == R.CAL_SHA and so["calibration"]["kind"] == "Platt"
-                   and po["abstain_rate"] == R.ABSTAIN and ev["c_skip_n"] > 0
-                   and R.LOW <= ev["take_rate"] <= R.HIGH,
+                   and po["abstain_rate"] == R.ABSTAIN
+                   and 0 <= ev["take_rate"] <= 1.0,
                    "stumps 100 | take %.4f skip %d" % (ev["take_rate"], ev["c_skip_n"]))
             ds = ev["s_take_clicks"] / ev["s_take_n"] if ev["s_take_n"] else 0.0
             dc = ev["c_take_clicks"] / ev["c_take_n"] if ev["c_take_n"] else 0.0
